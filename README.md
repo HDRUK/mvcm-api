@@ -44,7 +44,7 @@ If `DB_HOST` is not set, the app will default to using a local MySQL database, a
 
 ## API
 
-The Flask REST API, defined in `app.py`, facilitates interactions with the concept data stored in the MySQL database. The API employs various Python packages for functionalities such as fuzzy matching of query strings to concept names.
+The Flask REST API, defined in `app.py`, facilitates interactions with OMOP concept data stored in the MySQL database and the OLS4 API. The service employs various Python packages for functionalities such as fuzzy matching of query strings to concept names.
 
 ## Docker Deployment
 
@@ -69,7 +69,7 @@ All API requests are made to `http://<hostname>:<port>` where `<hostname>` and `
 
 - `Content-Type: application/json`
 
-### `/CalculateBestMatch_OMOP`
+### `/OMOP`
 
 **Method**: `POST`
 
@@ -87,7 +87,7 @@ All API requests are made to `http://<hostname>:<port>` where `<hostname>` and `
 
 **Response**: JSON array containing the best matches.
 
-### `/calculate_best_match_OLS4`
+### `/OLS4`
 
 **Method**: `POST`
 

@@ -1,11 +1,11 @@
-from flask import current_app
+#from flask import current_app
 import pandas as pd
 from rapidfuzz import fuzz
 import re
 from .initialize_mysql_connection import initialize_mysql_connection
-from os import environ
+#from os import environ
 
-# initialise MYSQL
+# Connect to database
 engine = initialize_mysql_connection()
 
 #Function to calculate best OMOP matches based on search terms
@@ -54,9 +54,13 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
                 """
                 params = (vocabulary_id, search_term)
             
+            
+
             # Query the database to fetch potentially matching standard concepts. Use MySQL full-text search for initial filtering.
             standard_concepts = pd.read_sql(query, con=engine, params=params)
             
+
+
             # If no matches were found using full-text search, skip to the next search term
             if standard_concepts.empty:
                 continue
@@ -76,7 +80,7 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
                 result_dict['vocabulary_id'].append(row['vocabulary_id'])
                 result_dict['vocabulary_concept_code'].append(row['concept_code'])
                 result_dict['similarity_score'].append(score)
- 
+        
         # Create a DataFrame from the result dict
         results_df = pd.DataFrame(result_dict).drop_duplicates().sort_values(by='similarity_score', ascending=False)
 

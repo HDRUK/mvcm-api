@@ -60,5 +60,5 @@ fi
 
 pwd
 
-# Start Flask app with Gunicorn
-gunicorn --timeout 300 -b 0.0.0.0:80 app:app
+# Start Flask app with Gunicorn --workers=2 --threads=4
+gunicorn --timeout 300 --workers=2 --threads=4 -b 0.0.0.0:80 app:app

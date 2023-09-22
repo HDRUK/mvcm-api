@@ -5,7 +5,7 @@ USE mydb;
 -- Create TABLE
 CREATE TABLE IF NOT EXISTS CONCEPT (
     concept_id INT PRIMARY KEY,
-    concept_name VARCHAR(255),
+    concept_name VARCHAR(500),
     domain_id VARCHAR(20),
     vocabulary_id VARCHAR(20),
     concept_class_id VARCHAR(20),

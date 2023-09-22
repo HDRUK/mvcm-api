@@ -5,7 +5,7 @@ from flask import Flask
 from flask_restx import Api
 import unittest
 
-# import custom classes, functions and routes
+# import custom classes for running the app
 from utils.StandaloneApplication import StandaloneApplication
 
 # Initialize Flask application
@@ -21,21 +21,27 @@ ns = api.namespace('API', description='OMOP and OLS4 search functions')
 # Import routes
 from routes.CalculateBestMatch_OMOP import CalculateBestMatch_OMOP
 from routes.CalculateBestMatch_OLS4 import CalculateBestMatch_OLS4
+from routes.List_OMOP_Vocabularies import List_OMOP_Vocabularies
+from routes.Unit_Test import Test_the_App
 
 # Add the route to the namespace
-ns.add_resource(CalculateBestMatch_OMOP, '/OMOP')
-ns.add_resource(CalculateBestMatch_OLS4, '/OLS4')
-           
+ns.add_resource(CalculateBestMatch_OMOP, '/OMOP_search')
+ns.add_resource(CalculateBestMatch_OLS4, '/OLS4_search')
+ns.add_resource(List_OMOP_Vocabularies, '/List_OMOP_Vocabularies')
+ns.add_resource(Test_the_App, '/Test')
+          
 # Main entry point of the application
 if __name__ == '__main__':
 
         # Start the App only if tests pass
         options = {'bind': '0.0.0.0:80'}
         StandaloneApplication(app, options).run()
-        
+
+#import the unit tests
+from tests.testapp import TestApp
+
 # Run Unit Tests
 print("Running Unit Testing")
-from tests.testapp import TestApp
 suite = unittest.TestLoader().loadTestsFromTestCase(TestApp)
 runner = unittest.TextTestRunner()
 test_results = runner.run(suite)

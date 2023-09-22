@@ -9,9 +9,9 @@ search_term_model = api.model('SearchTerm', {
     'search_threshold': fields.Float(required=False, description='The filter threshold', default=80, min=0, max=100),
 })
 
-@ns.route('/OLS4')  # API route for the calculate_best_match_OLS4 function
+# API route for the OLS4_search endpoint
+@ns.route('/OLS4_search')  
 class CalculateBestMatch_OLS4(Resource):
-    # API endpoint to calculate the best OLS4 matches for a list of search terms
     
     @api.expect(search_term_model, validate=True)  # Expect data model matching 'search_term_model'; enable validation
     @api.response(200, 'Success')  # Successful operation returns 200

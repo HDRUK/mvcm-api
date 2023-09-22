@@ -9,10 +9,10 @@ search_term_model = api.model('SearchTerm', {
     'search_threshold': fields.Float(required=False, description='The filter threshold', default=80, min=0, max=100),
 })
 
-@ns.route('/OMOP')  # API route for the calculate_best_match_OMOP function
+# API route for the OMOP_search endpoint
+@ns.route('/OMOP_search')  
 class CalculateBestMatch_OMOP(Resource):
-    # API endpoint for calculating best matches based on OMOP concepts
-   
+    
     @api.expect(search_term_model, validate=True)  # Expect data model matching 'search_term_model'; enable validation
     @api.response(200, 'Success')  # Successful operation returns 200
     @api.response(400, 'Validation Error')  # Validation issues return 400

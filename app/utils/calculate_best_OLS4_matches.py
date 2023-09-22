@@ -76,8 +76,6 @@ def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_thresho
                     result_dict['vocabulary_concept_code'].append(vocabulary_concept_code)
                     result_dict['similarity_score'].append(score)
 
-                    
-
         # Create a DataFrame from the result dict
         results_df = pd.DataFrame(result_dict).drop_duplicates().sort_values(by='similarity_score', ascending=False)
 

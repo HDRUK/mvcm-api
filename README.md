@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ## Database Setup
 
-The MySQL database is initialized with data from the `CONCEPT.tsv` file, loaded into a table structured as defined in the `init_db.sql` script. The database configuration, including the host and credentials, can be set through environment variables.
+The MySQL database is initialized with data from the `.tsv` files in the data folder, these are loaded into a table structured as defined in the `init_db.sql` script. The database configuration, including the host and credentials, can be set through environment variables.
 
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. For Docker deployment, these variables can be set using the `-e` option with the `docker run` command. For example:
 
@@ -104,3 +104,8 @@ All API requests are made to `http://<hostname>:<port>` where `<hostname>` and `
 ```
 
 **Response**: JSON array containing the best matches.
+
+
+## break_up_CONCEPT.py
+Simple function to splits OMOP concept table into chunks for effective storage in Git. 
+

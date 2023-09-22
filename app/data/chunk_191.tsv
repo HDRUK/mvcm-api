@@ -1,0 +1,1652 @@
+concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+32606	Regular Discharge with Follow-up	Visit	UB04 Pt dis status	UB04 Pt dis status		108	20190417	20991231	
+32607	Return Transfer	Visit	UB04 Pt dis status	UB04 Pt dis status		109	20190417	20991231	
+32218	Expired	Visit	UB04 Pt dis status	UB04 Pt dis status		20	19700101	20991231	
+32219	Discharged / transferred to Court / Law Enforcement	Visit	UB04 Pt dis status	UB04 Pt dis status		21	19700101	20991231	
+32220	Still patient	Visit	UB04 Pt dis status	UB04 Pt dis status		30	19700101	20991231	
+32221	Expired at home (hospice claims only)	Visit	UB04 Pt dis status	UB04 Pt dis status		40	19700101	20991231	
+32222	Expired in a medical facility such as hospital, SNF, ICF, or freestanding hospice. (Hospice claims only)	Visit	UB04 Pt dis status	UB04 Pt dis status		41	19700101	20991231	
+32223	Expired - place unknown (Hospice claims only)	Visit	UB04 Pt dis status	UB04 Pt dis status		42	19700101	20991231	
+32224	Discharged / transferred to a federal hospital	Visit	UB04 Pt dis status	UB04 Pt dis status		43	19700101	20991231	
+32225	Hospice - home	Visit	UB04 Pt dis status	UB04 Pt dis status		50	19700101	20991231	
+32226	Hospice - medical facility	Visit	UB04 Pt dis status	UB04 Pt dis status		51	19700101	20991231	
+32227	Discharged / transferred within this institution to a hospital-based Medicare approved swing bed	Visit	UB04 Pt dis status	UB04 Pt dis status		61	19700101	20991231	
+32228	Discharged / transferred to an inpatient rehabilitation facility including distinct parts units of a hospital	Visit	UB04 Pt dis status	UB04 Pt dis status		62	19700101	20991231	
+32229	Discharged / transferred to a long term care hospitals	Visit	UB04 Pt dis status	UB04 Pt dis status		63	19700101	20991231	
+32230	Discharged / transferred to a nursing facility certified under Medicaid but not under Medicare	Visit	UB04 Pt dis status	UB04 Pt dis status		64	19700101	20991231	
+32231	Discharged / Transferred to a psychiatric hospital or psychiatric distinct unit of a hospital	Visit	UB04 Pt dis status	UB04 Pt dis status		65	19700101	20991231	
+32232	Discharged / transferred to a Critical Access Hospital (CAH)	Visit	UB04 Pt dis status	UB04 Pt dis status		66	19700101	20991231	
+32233	Discharged / transferred to a designated disaster alternative care site	Visit	UB04 Pt dis status	UB04 Pt dis status		69	19700101	20991231	
+32234	Discharged / transferred to another type of health care institution not defined elsewhere in code list.	Visit	UB04 Pt dis status	UB04 Pt dis status		70	19700101	20991231	
+32596	Discharged / transferred / referred another institution for outpatient services	Visit	UB04 Pt dis status	UB04 Pt dis status		71	20190417	20991231	
+32597	Discharged / transferred / referred to this institution for outpatient services	Visit	UB04 Pt dis status	UB04 Pt dis status		72	20190417	20991231	
+32594	Discharged / transferred to home under care of Home IV provider	Visit	UB04 Pt dis status	UB04 Pt dis status		8	20190417	20991231	
+32235	Discharged to home or self-care with a planned acute care hospital readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		81	19700101	20991231	
+32236	Discharged / transferred to a short term general hospital for inpatient care with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		82	19700101	20991231	
+32237	Discharged / transferred to a skilled nursing facility (SNF) with Medicare certification with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		83	19700101	20991231	
+32238	Discharged / transferred to a facility that provides custodial or supportive care with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		84	19700101	20991231	
+32239	Discharged / transferred to a designated cancer center or children?s hospital with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		85	19700101	20991231	
+32240	Discharged / transferred to home under care of organized home health service organization with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		86	19700101	20991231	
+32241	Discharged / transferred to court / law enforcement with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		87	19700101	20991231	
+32242	Discharged / transferred to a federal health care facility with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		88	19700101	20991231	
+32243	Discharged / transferred to a hospital-based Medicare approved swing bed with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		89	19700101	20991231	
+32244	Discharged / transferred to an inpatient rehabilitation facility (IRF) including rehabilitation distinct part units of a hospital with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		90	19700101	20991231	
+32245	Discharged / transferred to a Medicare certified long term care hospital (LTCH) with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		91	19700101	20991231	
+32246	Discharged / transferred to nursing facility certified under Medicaid but not certified under Medicare with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		92	19700101	20991231	
+32247	Discharged / transferred to a psychiatric hospital / distinct part unit of a hospital with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		93	19700101	20991231	
+32248	Discharged / transferred to a critical access hospital (CAH) with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		94	19700101	20991231	
+32249	Discharged / transferred to another type of health care institution not defined elsewhere in this code list with a planned acute care hospital inpatient readmission	Visit	UB04 Pt dis status	UB04 Pt dis status		95	19700101	20991231	
+32279	Non-Payment/Zero	Observation	UB04 Typ bill	Observation		0	19700101	20991231	
+32280	Admit through Discharge Claim	Observation	UB04 Typ bill	Observation		1	19700101	20991231	
+32250	Hospital Inpatient (Including Medicare Part A)	Visit	UB04 Typ bill	Visit		11	19700101	20991231	
+32299	Hospital Inpatient (Including Medicare Part A) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		110	19700101	20991231	
+32300	Hospital Inpatient (Including Medicare Part A) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		111	19700101	20991231	
+32301	Hospital Inpatient (Including Medicare Part A) @ Interim-first claim	Visit	UB04 Typ bill	Visit		112	19700101	20991231	
+32302	Hospital Inpatient (Including Medicare Part A) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		113	19700101	20991231	
+32303	Hospital Inpatient (Including Medicare Part A) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		114	19700101	20991231	
+32304	Hospital Inpatient (Including Medicare Part A) @ Late Charges Only	Visit	UB04 Typ bill	Visit		115	19700101	20991231	
+32305	Hospital Inpatient (Including Medicare Part A) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		117	19700101	20991231	
+32306	Hospital Inpatient (Including Medicare Part A) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		118	19700101	20991231	
+32307	Hospital Inpatient (Including Medicare Part A) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		11G	19700101	20991231	
+32308	Hospital Inpatient (Including Medicare Part A) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		11I	19700101	20991231	
+32309	Hospital Inpatient (Including Medicare Part A) @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		11X	19700101	20991231	
+32310	Hospital Inpatient (Including Medicare Part A) @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		11Y	19700101	20991231	
+32251	Hospital Inpatient (Medicare Part B only)	Visit	UB04 Typ bill	Visit		12	19700101	20991231	
+32311	Hospital Inpatient (Medicare Part B only) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		120	19700101	20991231	
+32312	Hospital Inpatient (Medicare Part B only) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		121	19700101	20991231	
+32313	Hospital Inpatient (Medicare Part B only) @ Interim-first claim	Visit	UB04 Typ bill	Visit		122	19700101	20991231	
+32314	Hospital Inpatient (Medicare Part B only) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		123	19700101	20991231	
+32315	Hospital Inpatient (Medicare Part B only) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		124	19700101	20991231	
+32316	Hospital Inpatient (Medicare Part B only) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		127	19700101	20991231	
+32317	Hospital Inpatient (Medicare Part B only) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		12I	19700101	20991231	
+32252	Hospital Outpatient	Visit	UB04 Typ bill	Visit		13	19700101	20991231	
+32318	Hospital Outpatient @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		130	19700101	20991231	
+32319	Hospital Outpatient @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		131	19700101	20991231	
+32320	Hospital Outpatient @ Interim-first claim	Visit	UB04 Typ bill	Visit		132	19700101	20991231	
+32321	Hospital Outpatient @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		133	19700101	20991231	
+32322	Hospital Outpatient @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		134	19700101	20991231	
+32323	Hospital Outpatient @ Late Charges Only	Visit	UB04 Typ bill	Visit		135	19700101	20991231	
+32324	Hospital Outpatient @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		137	19700101	20991231	
+32325	Hospital Outpatient @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		138	19700101	20991231	
+32326	Hospital Outpatient @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		139	19700101	20991231	
+32327	Hospital Outpatient @ Void / Cancel Hospice / CMS Coor Care / Non-med Religious / Cent for Excellence	Visit	UB04 Typ bill	Visit		13D	19700101	20991231	
+32328	Hospital Outpatient @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		13G	19700101	20991231	
+32329	Hospital Outpatient @ CMS Initiated Adjustment	Visit	UB04 Typ bill	Visit		13H	19700101	20991231	
+32330	Hospital Outpatient @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		13I	19700101	20991231	
+32331	Hospital Outpatient @ Initiated Adjustment Claim-other	Visit	UB04 Typ bill	Visit		13J	19700101	20991231	
+32332	Hospital Outpatient @ OIG Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		13K	19700101	20991231	
+32333	Hospital Outpatient @ MSP Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		13M	19700101	20991231	
+32334	Hospital Outpatient @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		13X	19700101	20991231	
+32335	Hospital Outpatient @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		13Y	19700101	20991231	
+32253	Outpatient Laboratory Visit	Visit	UB04 Typ bill	Visit	S	14	19700101	20991231	
+32336	Hospital -Laboratory Services provided to non-pt @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		140	19700101	20991231	
+32337	Hospital -Laboratory Services provided to non-pt @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		141	19700101	20991231	
+32338	Hospital -Laboratory Services provided to non-pt @ Interim-first claim	Visit	UB04 Typ bill	Visit		142	19700101	20991231	
+32339	Hospital -Laboratory Services provided to non-pt @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		143	19700101	20991231	
+32340	Hospital -Laboratory Services provided to non-pt @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		144	19700101	20991231	
+32341	Hospital -Laboratory Services provided to non-pt @ Late Charges Only	Visit	UB04 Typ bill	Visit		145	19700101	20991231	
+32342	Hospital -Laboratory Services provided to non-pt @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		147	19700101	20991231	
+32343	Hospital -Laboratory Services provided to non-pt @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		148	19700101	20991231	
+32254	Hospital-Swing Beds	Visit	UB04 Typ bill	Visit	S	18	19700101	20991231	
+32344	Hospital-Swing Beds @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		181	19700101	20991231	
+32345	Hospital-Swing Beds @ Interim-first claim	Visit	UB04 Typ bill	Visit		182	19700101	20991231	
+32346	Hospital-Swing Beds @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		183	19700101	20991231	
+32347	Hospital-Swing Beds @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		184	19700101	20991231	
+32348	Hospital-Swing Beds @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		187	19700101	20991231	
+32281	Interim-first claim	Observation	UB04 Typ bill	Observation		2	19700101	20991231	
+32255	Inpatient Skilled Nursing Facility Visit	Visit	UB04 Typ bill	Visit		21	19700101	20991231	
+32349	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		210	19700101	20991231	
+32350	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		211	19700101	20991231	
+32351	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Interim-first claim	Visit	UB04 Typ bill	Visit		212	19700101	20991231	
+32352	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		213	19700101	20991231	
+32353	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		214	19700101	20991231	
+32354	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		217	19700101	20991231	
+32355	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		218	19700101	20991231	
+32356	Skilled Nursing-Inpatient (Includes Medicare Part A) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		21G	19700101	20991231	
+32357	Skilled Nursing-Inpatient (Includes Medicare Part A) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		21I	19700101	20991231	
+32256	Skilled Nursing-Inpatient (Medicare Part B Only)	Visit	UB04 Typ bill	Visit		22	19700101	20991231	
+32358	Skilled Nursing-Inpatient (Medicare Part B Only) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		221	19700101	20991231	
+32359	Skilled Nursing-Inpatient (Medicare Part B Only) @ Interim-first claim	Visit	UB04 Typ bill	Visit		222	19700101	20991231	
+32360	Skilled Nursing-Inpatient (Medicare Part B Only) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		223	19700101	20991231	
+32361	Skilled Nursing-Inpatient (Medicare Part B Only) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		224	19700101	20991231	
+32362	Skilled Nursing-Inpatient (Medicare Part B Only) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		227	19700101	20991231	
+32363	Skilled Nursing-Inpatient (Medicare Part B Only) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		228	19700101	20991231	
+32364	Skilled Nursing-Inpatient (Medicare Part B Only) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		22I	19700101	20991231	
+32257	Outpatient Skilled Nursing Facility Visit	Visit	UB04 Typ bill	Visit		23	19700101	20991231	
+32365	Skilled Nursing-Outpatient @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		230	19700101	20991231	
+32366	Skilled Nursing-Outpatient @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		231	19700101	20991231	
+32367	Skilled Nursing-Outpatient @ Interim-first claim	Visit	UB04 Typ bill	Visit		232	19700101	20991231	
+32368	Skilled Nursing-Outpatient @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		233	19700101	20991231	
+32369	Skilled Nursing-Outpatient @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		234	19700101	20991231	
+32370	Skilled Nursing-Outpatient @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		237	19700101	20991231	
+32371	Skilled Nursing-Outpatient @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		239	19700101	20991231	
+32372	Skilled Nursing-Outpatient @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		23G	19700101	20991231	
+32373	Skilled Nursing-Outpatient @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		23I	19700101	20991231	
+32374	Skilled Nursing-Outpatient @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		23X	19700101	20991231	
+32282	Interim-Cont claim (b)	Observation	UB04 Typ bill	Observation		3	19700101	20991231	
+32258	Home Health-Inpatient (treatment Part B only)	Visit	UB04 Typ bill	Visit		32	19700101	20991231	
+32375	Home Health-Inpatient (treatment Part B only) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		320	19700101	20991231	
+32376	Home Health-Inpatient (treatment Part B only) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		321	19700101	20991231	
+32377	Home Health-Inpatient (treatment Part B only) @ Interim-first claim	Visit	UB04 Typ bill	Visit		322	19700101	20991231	
+32378	Home Health-Inpatient (treatment Part B only) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		323	19700101	20991231	
+32379	Home Health-Inpatient (treatment Part B only) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		324	19700101	20991231	
+32380	Home Health-Inpatient (treatment Part B only) @ Late Charges Only	Visit	UB04 Typ bill	Visit		325	19700101	20991231	
+32381	Home Health-Inpatient (treatment Part B only) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		327	19700101	20991231	
+32382	Home Health-Inpatient (treatment Part B only) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		328	19700101	20991231	
+32383	Home Health-Inpatient (treatment Part B only) @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		329	19700101	20991231	
+32384	Home Health-Inpatient (treatment Part B only) @ Initiated Adjustment Claim-other	Visit	UB04 Typ bill	Visit		32J	19700101	20991231	
+32259	Home Health-Outpatient (Part A, Includes DME Part A)	Visit	UB04 Typ bill	Visit		33	19700101	20991231	
+32385	Home Health-Outpatient (Part A, Includes DME Part A) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		330	19700101	20991231	
+32386	Home Health-Outpatient (Part A, Includes DME Part A) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		331	19700101	20991231	
+32387	Home Health-Outpatient (Part A, Includes DME Part A) @ Interim-first claim	Visit	UB04 Typ bill	Visit		332	19700101	20991231	
+32388	Home Health-Outpatient (Part A, Includes DME Part A) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		333	19700101	20991231	
+32389	Home Health-Outpatient (Part A, Includes DME Part A) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		334	19700101	20991231	
+32390	Home Health-Outpatient (Part A, Includes DME Part A) @ Late Charges Only	Visit	UB04 Typ bill	Visit		335	19700101	20991231	
+32391	Home Health-Outpatient (Part A, Includes DME Part A) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		337	19700101	20991231	
+32392	Home Health-Outpatient (Part A, Includes DME Part A) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		338	19700101	20991231	
+32393	Home Health-Outpatient (Part A, Includes DME Part A) @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		339	19700101	20991231	
+32394	Home Health-Outpatient (Part A, Includes DME Part A) @ MSP Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		33M	19700101	20991231	
+32260	Home Health-Other (Med & Surg under plan of treatment)	Visit	UB04 Typ bill	Visit		34	19700101	20991231	
+32395	Home Health-Other (Med & Surg under plan of treatment) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		340	19700101	20991231	
+32396	Home Health-Other (Med & Surg under plan of treatment) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		341	19700101	20991231	
+32048	Home Health-Other (Med & Surg under plan of treatment) @ Interim-first claim	Visit	UB04 Typ bill	Visit		342	19700101	20991231	
+32049	Home Health-Other (Med & Surg under plan of treatment) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		343	19700101	20991231	
+32050	Home Health-Other (Med & Surg under plan of treatment) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		344	19700101	20991231	
+32051	Home Health-Other (Med & Surg under plan of treatment) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		347	19700101	20991231	
+32052	Home Health-Other (Med & Surg under plan of treatment) @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		349	19700101	20991231	
+32053	Home Health-Other (Med & Surg under plan of treatment) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		34I	19700101	20991231	
+32054	Home Health-Other (Med & Surg under plan of treatment) @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		34X	19700101	20991231	
+32283	Interim-last claim (b)	Observation	UB04 Typ bill	Observation		4	19700101	20991231	
+32261	Religious Non-medical Health Care Inst-Outpatient Services	Visit	UB04 Typ bill	Visit	S	43	19700101	20991231	
+32055	Religious Non-medical Health Care Inst-Outpatient Services @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		431	19700101	20991231	
+32284	Late Charges Only	Observation	UB04 Typ bill	Observation		5	19700101	20991231	
+32262	Reserved for NUBC	Observation	UB04 Typ bill	Observation		59	19700101	20991231	
+32401	Intermediate Care - Level 1 (Including Medicare Part A)	Visit	UB04 Typ bill	Visit		65	19700101	20991231	
+32056	Intermediate Care - Level 1 (Including Medicare Part A) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		650	19700101	20991231	
+32057	Intermediate Care - Level 1 (Including Medicare Part A) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		651	19700101	20991231	
+32058	Intermediate Care - Level 1 (Including Medicare Part A) @ Interim-first claim	Visit	UB04 Typ bill	Visit		652	19700101	20991231	
+32059	Intermediate Care - Level 1 (Including Medicare Part A) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		653	19700101	20991231	
+32060	Intermediate Care - Level 1 (Including Medicare Part A) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		654	19700101	20991231	
+32061	Intermediate Care - Level 1 (Including Medicare Part A) @ Late Charges Only	Visit	UB04 Typ bill	Visit		655	19700101	20991231	
+32062	Intermediate Care - Level 1 (Including Medicare Part A) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		657	19700101	20991231	
+32063	Intermediate Care - Level 1 (Including Medicare Part A) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		658	19700101	20991231	
+32064	Intermediate Care - Level 1 (Including Medicare Part A) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		65G	19700101	20991231	
+32065	Intermediate Care - Level 1 (Including Medicare Part A) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		65I	19700101	20991231	
+32066	Intermediate Care - Level 1 (Including Medicare Part A) @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		65X	19700101	20991231	
+32067	Intermediate Care - Level 1 (Including Medicare Part A) @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		65Y	19700101	20991231	
+32402	Intermediate Care - Level 2 (Including Medicare Part A)	Visit	UB04 Typ bill	Visit		66	19700101	20991231	
+32068	Intermediate Care - Level 2 (Including Medicare Part A) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		660	19700101	20991231	
+32069	Intermediate Care - Level 2 (Including Medicare Part A) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		661	19700101	20991231	
+32070	Intermediate Care - Level 2 (Including Medicare Part A) @ Interim-first claim	Visit	UB04 Typ bill	Visit		662	19700101	20991231	
+32071	Intermediate Care - Level 2 (Including Medicare Part A) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		663	19700101	20991231	
+32072	Intermediate Care - Level 2 (Including Medicare Part A) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		664	19700101	20991231	
+32073	Intermediate Care - Level 2 (Including Medicare Part A) @ Late Charges Only	Visit	UB04 Typ bill	Visit		665	19700101	20991231	
+32074	Intermediate Care - Level 2 (Including Medicare Part A) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		667	19700101	20991231	
+32075	Intermediate Care - Level 2 (Including Medicare Part A) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		668	19700101	20991231	
+32076	Intermediate Care - Level 2 (Including Medicare Part A) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		66G	19700101	20991231	
+32077	Intermediate Care - Level 2 (Including Medicare Part A) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		66I	19700101	20991231	
+32078	Intermediate Care - Level 2 (Including Medicare Part A) @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		66X	19700101	20991231	
+32079	Intermediate Care - Level 2 (Including Medicare Part A) @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		66Y	19700101	20991231	
+32285	Replacement of Prior Claim	Observation	UB04 Typ bill	Observation		7	19700101	20991231	
+32263	Clinic-Rural Health	Visit	UB04 Typ bill	Visit		71	19700101	20991231	
+32080	Clinic-Rural Health @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		710	19700101	20991231	
+32081	Clinic-Rural Health @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		711	19700101	20991231	
+32082	Clinic-Rural Health @ Interim-first claim	Visit	UB04 Typ bill	Visit		712	19700101	20991231	
+32083	Clinic-Rural Health @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		713	19700101	20991231	
+32084	Clinic-Rural Health @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		717	19700101	20991231	
+32085	Clinic-Rural Health @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		718	19700101	20991231	
+32086	Clinic-Rural Health @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		71G	19700101	20991231	
+32087	Clinic-Rural Health @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		71I	19700101	20991231	
+32088	Clinic-Rural Health @ MSP Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		71M	19700101	20991231	
+32264	Hospital Based Clinic or Independent Renal Dialysis Center	Visit	UB04 Typ bill	Visit		72	19700101	20991231	
+32089	Clinic- Hosp Based or Indep Renal Dialysis Center @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		720	19700101	20991231	
+32090	Clinic- Hosp Based or Indep Renal Dialysis Center @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		721	19700101	20991231	
+32091	Clinic- Hosp Based or Indep Renal Dialysis Center @ Interim-first claim	Visit	UB04 Typ bill	Visit		722	19700101	20991231	
+32092	Clinic- Hosp Based or Indep Renal Dialysis Center @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		723	19700101	20991231	
+32093	Clinic- Hosp Based or Indep Renal Dialysis Center @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		724	19700101	20991231	
+32094	Clinic- Hosp Based or Indep Renal Dialysis Center @ Late Charges Only	Visit	UB04 Typ bill	Visit		725	19700101	20991231	
+32095	Clinic- Hosp Based or Indep Renal Dialysis Center @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		727	19700101	20991231	
+32096	Clinic- Hosp Based or Indep Renal Dialysis Center @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		728	19700101	20991231	
+32097	Clinic- Hosp Based or Indep Renal Dialysis Center @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		72G	19700101	20991231	
+32098	Clinic- Hosp Based or Indep Renal Dialysis Center @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		72I	19700101	20991231	
+32099	Clinic- Hosp Based or Indep Renal Dialysis Center @ Initiated Adjustment Claim-other	Visit	UB04 Typ bill	Visit		72J	19700101	20991231	
+32265	Clinic-Freestanding	Visit	UB04 Typ bill	Visit		73	19700101	20991231	
+32100	Clinic-Freestanding @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		731	19700101	20991231	
+32101	Clinic-Freestanding @ Interim-first claim	Visit	UB04 Typ bill	Visit		732	19700101	20991231	
+32102	Clinic-Freestanding @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		733	19700101	20991231	
+32103	Clinic-Freestanding @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		734	19700101	20991231	
+32104	Clinic-Freestanding @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		737	19700101	20991231	
+32266	Clinic-Outpatient Rehab Facility (ORF)	Visit	UB04 Typ bill	Visit		74	19700101	20991231	
+32105	Clinic-Outpatient Rehab Facility (ORF) @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		740	19700101	20991231	
+32106	Clinic-Outpatient Rehab Facility (ORF) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		741	19700101	20991231	
+32107	Clinic-Outpatient Rehab Facility (ORF) @ Interim-first claim	Visit	UB04 Typ bill	Visit		742	19700101	20991231	
+32108	Clinic-Outpatient Rehab Facility (ORF) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		743	19700101	20991231	
+32109	Clinic-Outpatient Rehab Facility (ORF) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		744	19700101	20991231	
+32110	Clinic-Outpatient Rehab Facility (ORF) @ Late Charges Only	Visit	UB04 Typ bill	Visit		745	19700101	20991231	
+32111	Clinic-Outpatient Rehab Facility (ORF) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		747	19700101	20991231	
+32112	Clinic-Outpatient Rehab Facility (ORF) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		748	19700101	20991231	
+32113	Clinic-Outpatient Rehab Facility (ORF) @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		749	19700101	20991231	
+32114	Clinic-Outpatient Rehab Facility (ORF) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		74G	19700101	20991231	
+32115	Clinic-Outpatient Rehab Facility (ORF) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		74I	19700101	20991231	
+32267	Clinic-Comprehensive Outpatient Rehab (CORF)	Visit	UB04 Typ bill	Visit		75	19700101	20991231	
+32116	Clinic-Comprehensive Outpatient Rehab (CORF) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		751	19700101	20991231	
+32117	Clinic-Comprehensive Outpatient Rehab (CORF) @ Interim-first claim	Visit	UB04 Typ bill	Visit		752	19700101	20991231	
+32118	Clinic-Comprehensive Outpatient Rehab (CORF) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		753	19700101	20991231	
+32119	Clinic-Comprehensive Outpatient Rehab (CORF) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		754	19700101	20991231	
+32120	Clinic-Comprehensive Outpatient Rehab (CORF) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		757	19700101	20991231	
+32121	Clinic-Comprehensive Outpatient Rehab (CORF) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		75G	19700101	20991231	
+32122	Clinic-Comprehensive Outpatient Rehab (CORF) @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		75I	19700101	20991231	
+32268	Clinic-Community Mental Health Center	Visit	UB04 Typ bill	Visit		76	19700101	20991231	
+32123	Clinic-Community Mental Health Center @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		760	19700101	20991231	
+32124	Clinic-Community Mental Health Center @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		761	19700101	20991231	
+32125	Clinic-Community Mental Health Center @ Interim-first claim	Visit	UB04 Typ bill	Visit		762	19700101	20991231	
+32126	Clinic-Community Mental Health Center @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		763	19700101	20991231	
+32127	Clinic-Community Mental Health Center @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		764	19700101	20991231	
+32128	Clinic-Community Mental Health Center @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		767	19700101	20991231	
+32129	Clinic-Community Mental Health Center @ Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		769	19700101	20991231	
+32269	Clinic-Federally Qualified Health Center (FQHC)	Visit	UB04 Typ bill	Visit		77	19700101	20991231	
+32130	Clinic-Federally Qualified Health Center (FQHC) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		771	19700101	20991231	
+32131	Clinic-Federally Qualified Health Center (FQHC) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		773	19700101	20991231	
+32132	Clinic-Federally Qualified Health Center (FQHC) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		777	19700101	20991231	
+32133	Clinic-Federally Qualified Health Center (FQHC) @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		778	19700101	20991231	
+32134	Clinic-Federally Qualified Health Center (FQHC) @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		77G	19700101	20991231	
+32270	Licensed Freestanding Emergency Medical Facility	Visit	UB04 Typ bill	Visit		78	19700101	20991231	
+32135	Licensed Freestanding Emergency Medical Facility @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		781	19700101	20991231	
+32271	Clinic-Other	Visit	UB04 Typ bill	Visit		79	19700101	20991231	
+32136	Clinic-Other @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		790	19700101	20991231	
+32137	Clinic-Other @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		791	19700101	20991231	
+32138	Clinic-Other @ Interim-first claim	Visit	UB04 Typ bill	Visit		792	19700101	20991231	
+32139	Clinic-Other @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		793	19700101	20991231	
+32140	Clinic-Other @ Late Charges Only	Visit	UB04 Typ bill	Visit		795	19700101	20991231	
+32141	Clinic-Other @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		797	19700101	20991231	
+32286	Void/ Cancel of Prior claim (a)	Observation	UB04 Typ bill	Observation		8	19700101	20991231	
+32272	Hospice (non-hospital based)	Visit	UB04 Typ bill	Visit		81	19700101	20991231	
+32142	Hospice (non-hospital based) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		811	19700101	20991231	
+32143	Hospice (non-hospital based) @ Interim-first claim	Visit	UB04 Typ bill	Visit		812	19700101	20991231	
+32144	Hospice (non-hospital based) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		813	19700101	20991231	
+32145	Hospice (non-hospital based) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		814	19700101	20991231	
+32146	Hospice (non-hospital based) @ Late Charges Only	Visit	UB04 Typ bill	Visit		815	19700101	20991231	
+32147	Hospice (non-hospital based) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		817	19700101	20991231	
+32148	Hospice (non-hospital based) @ Hospice / CMS Coord Care / Religious NonMed / Cent of ExcellenceDemonstration	Visit	UB04 Typ bill	Visit		81B	19700101	20991231	
+32273	Hospice (hospital based)	Visit	UB04 Typ bill	Visit		82	19700101	20991231	
+32149	Hospice (hospital based) @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		821	19700101	20991231	
+32150	Hospice (hospital based) @ Interim-first claim	Visit	UB04 Typ bill	Visit		822	19700101	20991231	
+32151	Hospice (hospital based) @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		823	19700101	20991231	
+32152	Hospice (hospital based) @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		824	19700101	20991231	
+32153	Hospice (hospital based) @ Late Charges Only	Visit	UB04 Typ bill	Visit		825	19700101	20991231	
+32154	Hospice (hospital based) @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		827	19700101	20991231	
+32274	Ambulatory Surgery Center	Visit	UB04 Typ bill	Visit		83	19700101	20991231	
+32155	Ambulatory Surgery Center @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		830	19700101	20991231	
+32156	Ambulatory Surgery Center @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		831	19700101	20991231	
+32157	Ambulatory Surgery Center @ Interim-first claim	Visit	UB04 Typ bill	Visit		832	19700101	20991231	
+32158	Ambulatory Surgery Center @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		833	19700101	20991231	
+32159	Ambulatory Surgery Center @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		834	19700101	20991231	
+32160	Ambulatory Surgery Center @ Late Charges Only	Visit	UB04 Typ bill	Visit		835	19700101	20991231	
+32161	Ambulatory Surgery Center @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		837	19700101	20991231	
+32162	Ambulatory Surgery Center @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		838	19700101	20991231	
+32275	Freestanding Birthing Center	Visit	UB04 Typ bill	Visit		84	19700101	20991231	
+32163	Freestanding Birthing Center @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		841	19700101	20991231	
+32276	Critical Access Hospital	Visit	UB04 Typ bill	Visit	S	85	19700101	20991231	
+32164	Critical Access Hospital @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		850	19700101	20991231	
+32165	Critical Access Hospital @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		851	19700101	20991231	
+32166	Critical Access Hospital @ Interim-first claim	Visit	UB04 Typ bill	Visit		852	19700101	20991231	
+32167	Critical Access Hospital @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		853	19700101	20991231	
+32168	Critical Access Hospital @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		854	19700101	20991231	
+32169	Critical Access Hospital @ Late Charges Only	Visit	UB04 Typ bill	Visit		855	19700101	20991231	
+32170	Critical Access Hospital @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		857	19700101	20991231	
+32171	Critical Access Hospital @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		85G	19700101	20991231	
+32172	Critical Access Hospital @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		85I	19700101	20991231	
+32277	Residential Facility	Visit	UB04 Typ bill	Visit		86	19700101	20991231	
+32173	Residential Facility @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		860	19700101	20991231	
+32174	Residential Facility @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		861	19700101	20991231	
+32175	Residential Facility @ Interim-first claim	Visit	UB04 Typ bill	Visit		862	19700101	20991231	
+32176	Residential Facility @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		863	19700101	20991231	
+32177	Residential Facility @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		864	19700101	20991231	
+32178	Residential Facility @ Late Charges Only	Visit	UB04 Typ bill	Visit		865	19700101	20991231	
+32179	Residential Facility @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		867	19700101	20991231	
+32180	Residential Facility @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		868	19700101	20991231	
+32181	Residential Facility @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		86G	19700101	20991231	
+32182	Residential Facility @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		86I	19700101	20991231	
+32183	Residential Facility @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		86X	19700101	20991231	
+32184	Residential Facility @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		86Y	19700101	20991231	
+32278	Special Facility-Other	Visit	UB04 Typ bill	Visit		89	19700101	20991231	
+32185	Special Facility - Other @ Non-Payment / Zero	Visit	UB04 Typ bill	Visit		890	19700101	20991231	
+32186	Special Facility - Other @ Admit through Discharge Claim	Visit	UB04 Typ bill	Visit		891	19700101	20991231	
+32187	Special Facility - Other @ Interim-first claim	Visit	UB04 Typ bill	Visit		892	19700101	20991231	
+32188	Special Facility - Other @ Interim-Cont claim (b)	Visit	UB04 Typ bill	Visit		893	19700101	20991231	
+32189	Special Facility - Other @ Interim-last claim (b)	Visit	UB04 Typ bill	Visit		894	19700101	20991231	
+32190	Special Facility - Other @ Late Charges Only	Visit	UB04 Typ bill	Visit		895	19700101	20991231	
+32191	Special Facility - Other @ Replacement of Prior Claim	Visit	UB04 Typ bill	Visit		897	19700101	20991231	
+32192	Special Facility - Other @ Void / Cancel of Prior claim (a)	Visit	UB04 Typ bill	Visit		898	19700101	20991231	
+32397	Special Facility - Other @ CWF Initiated Adjustment Claim	Visit	UB04 Typ bill	Visit		89G	19700101	20991231	
+32398	Special Facility - Other @ Intermediary Adjustment Claim (Other than QIO or Provider)	Visit	UB04 Typ bill	Visit		89I	19700101	20991231	
+32399	Special Facility - Other @ Void / Cance a Prior Abreviated Encounter Submission	Visit	UB04 Typ bill	Visit		89X	19700101	20991231	
+32400	Special Facility - Other @ Replacement of Prior Abbreviated Encounter Submission	Visit	UB04 Typ bill	Visit		89Y	19700101	20991231	
+32287	Final Claim for a Home Health PPS Episode	Visit	UB04 Typ bill	Visit		9	19700101	20991231	
+32288	Admission/Election Notice	Observation	UB04 Typ bill	Observation		A	19700101	20991231	
+32289	Hospice / CMS Coord Care / Religious NonMed / Cent of ExcellenceDemonstration	Visit	UB04 Typ bill	Visit		B	19700101	20991231	
+32290	Void/Cancel Hospice/CMS Coor Care/Non-med Religious/Cent for Excellence	Observation	UB04 Typ bill	Observation		D	19700101	20991231	
+32291	CWF Initiated Adjustment Claim	Observation	UB04 Typ bill	Observation		G	19700101	20991231	
+32292	CMS Initiated Adjustment	Observation	UB04 Typ bill	Observation		H	19700101	20991231	
+32293	Intermediary Adjustment Claim (Other than QIO or Provider)	Observation	UB04 Typ bill	Observation		I	19700101	20991231	
+32294	Initiated Adjustment Claim-other	Observation	UB04 Typ bill	Observation		J	19700101	20991231	
+32295	OIG Initiated Adjustment Claim	Observation	UB04 Typ bill	Observation		K	19700101	20991231	
+32296	MSP Initiated Adjustment Claim	Observation	UB04 Typ bill	Observation		M	19700101	20991231	
+32297	Void/Cance a Prior Abreviated Encounter Submission	Observation	UB04 Typ bill	Observation		X	19700101	20991231	
+32298	Replacement of Prior Abbreviated Encounter Submission	Observation	UB04 Typ bill	Observation		Y	19700101	20991231	
+8554	percent	Unit	UCUM	Unit	S	%	19700101	20991231	
+9211	minute	Unit	UCUM	Unit	S	'	19700101	20991231	
+9212	second	Unit	UCUM	Unit	S	''	19700101	20991231	
+8524	times	Unit	UCUM	Unit	S	.	19700101	20991231	
+9215	percent 0 to 3 hours	Unit	UCUM	Unit	S	%{0'to3'hours}	19700101	20991231	
+32912	Generic unit for indivisible thing	Unit	UCUM	Unit	S	1	19700101	20991231	
+9433	number ten	Unit	UCUM	Unit	S	10*	19700101	20991231	
+9447	the number ten	Unit	UCUM	Unit	S	10^	19700101	20991231	
+9243	per hundred	Unit	UCUM	Unit	S	/100	19700101	20991231	
+9244	per 100 spermatozoa	Unit	UCUM	Unit	S	/100.{sperm}	19700101	20991231	
+9213	Percent Per 100 WBC [Number Fraction Units]	Unit	UCUM	Unit		%/100{WBC}	19700101	20140103	U
+9032	per 100 white blood cells	Unit	UCUM	Unit	S	/100.{WBC}	19700101	20991231	
+9238	per ten billion	Unit	UCUM	Unit	S	/10*10	19700101	20991231	
+9239	per trillion	Unit	UCUM	Unit	S	/10*12	19700101	20991231	
+710260	trillion	Unit	UCUM	Unit	S	10*12	20220506	20991231	
+44777575	trillion cells per liter	Unit	UCUM	Unit	S	10*12.{cells}/L	19700101	20991231	
+32708	trillion copies per milliliter	Unit	UCUM	Unit	S	10*12.{copies}/mL	19700101	20991231	
+8734	trillion per liter	Unit	UCUM	Unit	S	10*12/L	19700101	20991231	
+710261	trillion per milliliter	Unit	UCUM	Unit	S	10*12/mL	20220506	20991231	
+9240	per trillion red blood cells	Unit	UCUM	Unit	S	/10*12.{RBC}	19700101	20991231	
+710257	hundred	Unit	UCUM	Unit	S	10*2	20220506	20991231	
+8566	thousand	Unit	UCUM	Unit	S	10*3	19700101	20991231	
+720846	kiloarbitary unit per liter	Unit	UCUM	Unit	S	10*3[arb'U]/L	20220407	20991231	
+44777580	thousand cells per liter	Unit	UCUM	Unit	S	10*3.{cells}/L	19700101	20991231	
+44777581	thousand copies per liter	Unit	UCUM	Unit	S	10*3.{copies}/L	19700101	20991231	
+9437	thousand copies per milliliter	Unit	UCUM	Unit	S	10*3.{copies}/mL	19700101	20991231	
+9551	milliequivalent	Unit	UCUM	Unit	S	10*-3.eq	19700101	20991231	
+44777582	milliequivalent per 24 hours	Unit	UCUM	Unit	S	10*-3.eq/(24.h)	19700101	20991231	
+9553	milliequivalent per deciliter	Unit	UCUM	Unit	S	10*-3.eq/dL	19700101	20991231	
+9554	milliequivalent per gram	Unit	UCUM	Unit	S	10*-3.eq/g	19700101	20991231	
+9555	milliequivalent per gram of creatinine	Unit	UCUM	Unit	S	10*-3.eq/g{creat}	19700101	20991231	
+9556	milliequivalent per kilogram	Unit	UCUM	Unit	S	10*-3.eq/kg	19700101	20991231	
+9557	milliequivalent per liter	Unit	UCUM	Unit	S	10*-3.eq/L	19700101	20991231	
+9558	milliequivalent per square meter	Unit	UCUM	Unit	S	10*-3.eq/m2	19700101	20991231	
+710205	milliequivalent per minute	Unit	UCUM	Unit	S	10*-3.eq/min	20220506	20991231	
+9559	milliequivalent per milliliter	Unit	UCUM	Unit	S	10*-3.eq/mL	19700101	20991231	
+9552	milliequivalent per specimen	Unit	UCUM	Unit	S	10*-3.eq/{spec}	19700101	20991231	
+44777577	milli-international unit	Unit	UCUM	Unit	S	10*-3.[iU]	19700101	20991231	
+710210	kilo-international unit	Unit	UCUM	Unit	S	10*3.[iU]	20220506	20991231	
+710211	milli-international unit per kilogram	Unit	UCUM	Unit	S	10*-3.[iU]/kg	20220506	20991231	
+9040	milli-international unit per liter	Unit	UCUM	Unit	S	10*-3.[iU]/L	19700101	20991231	
+9058	kilo-international unit per liter	Unit	UCUM	Unit	S	10*3.[iU]/L	19700101	20991231	
+9550	milli-international unit per milliliter	Unit	UCUM	Unit	S	10*-3.[iU]/mL	19700101	20991231	
+9525	kilo-international unit per milliliter	Unit	UCUM	Unit	S	10*3.[iU]/mL	19700101	20991231	
+9435	thousand per liter	Unit	UCUM	Unit	S	10*3/L	19700101	20991231	
+9436	thousand per milliliter	Unit	UCUM	Unit	S	10*3/mL	19700101	20991231	
+8961	thousand per cubic millimeter	Unit	UCUM	Unit	S	10*3/mm3	19700101	20991231	
+8978	Thousand per cubic millimeter4	Unit	UCUM	Unit		10*3/mm4	19700101	20140103	U
+44777576	thousand red blood cells	Unit	UCUM	Unit	S	10*3(rbc)	19700101	20991231	
+9434	thousand red blood cells	Unit	UCUM	Unit	S	10*3.{RBC}	19700101	20991231	
+710256	kilounit	Unit	UCUM	Unit	S	10*3.[U]	20220506	20991231	
+44777579	thousand allergen-specific IgE antibody units per liter	Unit	UCUM	Unit	S	10*3.[UA]/L	19700101	20991231	
+9594	milliunit per gram	Unit	UCUM	Unit	S	10*-3.[U]/g	19700101	20991231	
+9538	kilounit per gram	Unit	UCUM	Unit	S	10*3.[U]/g	19700101	20991231	
+9595	milliunit per gram of hemoglobin	Unit	UCUM	Unit	S	10*-3.[U]/g{HGB}	19700101	20991231	
+8938	thousandth per microliter	Unit	UCUM	Unit	S	10*-3/uL	19700101	20991231	
+8848	thousand per microliter	Unit	UCUM	Unit	S	10*3/uL	19700101	20991231	
+44777578	milliunit per liter	Unit	UCUM	Unit	S	10*-3.[U]/L	19700101	20991231	
+8810	kilounit per liter	Unit	UCUM	Unit	S	10*3.[U]/L	19700101	20991231	
+8924	kilounit per liter class	Unit	UCUM	Unit	S	10*3.[U]/L{class}	19700101	20991231	
+9596	milliunit per milligram	Unit	UCUM	Unit	S	10*-3.[U]/mg	19700101	20991231	
+9597	milliunit per milligram of creatinine	Unit	UCUM	Unit	S	10*-3.[U]/mg{creat}	19700101	20991231	
+8719	milliunit per milliliter	Unit	UCUM	Unit	S	10*-3.[U]/mL	19700101	20991231	
+710258	ten thousand	Unit	UCUM	Unit	S	10*4	20220506	20991231	
+32706	ten thousand per microliter	Unit	UCUM	Unit	S	10*4/uL	19700101	20991231	
+9438	hundred thousand	Unit	UCUM	Unit	S	10*5	19700101	20991231	
+9241	per million	Unit	UCUM	Unit	S	/10*6	19700101	20991231	
+8549	million	Unit	UCUM	Unit	S	10*6	19700101	20991231	
+44777586	million cells per liter	Unit	UCUM	Unit	S	10*6.{cells}/L	19700101	20991231	
+44777587	million copies per liter	Unit	UCUM	Unit	S	10*6.{copies}/L	19700101	20991231	
+32709	million copies per milliliter	Unit	UCUM	Unit	S	10*6.{copies}/mL	19700101	20991231	
+9653	microequivalent	Unit	UCUM	Unit	S	10*-6.eq	19700101	20991231	
+8928	microequivalent per 24 hours	Unit	UCUM	Unit	S	10*-6.eq/(24.h)	19700101	20991231	
+8929	microequivalent per kilogram	Unit	UCUM	Unit	S	10*-6.eq/kg	19700101	20991231	
+8875	microequivalent per liter	Unit	UCUM	Unit	S	10*-6.eq/L	19700101	20991231	
+9654	microequivalent per milliliter	Unit	UCUM	Unit	S	10*-6.eq/mL	19700101	20991231	
+9440	megaequivalent per milliliter	Unit	UCUM	Unit	S	10*6.eq/mL	19700101	20991231	
+9652	micro-international unit	Unit	UCUM	Unit	S	10*-6.[iU]	19700101	20991231	
+9439	mega-international unit	Unit	UCUM	Unit		10*6.[iU]	19700101	20160311	D
+44777583	micro-international unit per liter	Unit	UCUM	Unit	S	10*-6.[iU]/L	19700101	20991231	
+9093	micro-international unit per milliliter	Unit	UCUM	Unit	S	10*-6.[iU]/mL	19700101	20991231	
+720842	million per kilogram	Unit	UCUM	Unit	S	10*6/kg	20220407	20991231	
+9442	million per liter	Unit	UCUM	Unit	S	10*6/L	19700101	20991231	
+8816	million per milliliter	Unit	UCUM	Unit	S	10*6/mL	19700101	20991231	
+8931	million per cubic millimeter	Unit	UCUM	Unit	S	10*6/mm3	19700101	20991231	
+9441	million per specimen	Unit	UCUM	Unit	S	10*6/{spec}	19700101	20991231	
+9689	Million unit	Unit	UCUM	Unit	S	10*6.[U]	19700101	20991231	
+44777585	million allergen-specific IgE antibody units per liter	Unit	UCUM	Unit	S	10*6.[UA]/L	19700101	20991231	
+9016	microunit per gram of hemoglobin	Unit	UCUM	Unit	S	10*-6.[U]/g{HGB}	19700101	20991231	
+8815	million per microliter	Unit	UCUM	Unit	S	10*6/uL	19700101	20991231	
+8750	microunit per liter	Unit	UCUM	Unit	S	10*-6.[U]/L	19700101	20991231	
+9163	microunit per liter of thyroid stimulationg hormone (TSH)	Unit	UCUM	Unit	S	10*-6.[U]/L{TSH}	19700101	20991231	
+8860	microunit per milliliter	Unit	UCUM	Unit	S	10*-6.[U]/mL	19700101	20991231	
+45890995	Million unit per milliliter	Unit	UCUM	Unit	S	10*6.[U]/mL	19700101	20991231	
+44777584	microunit per specimen	Unit	UCUM	Unit	S	10*-6.[U]/{spec}	19700101	20991231	
+710259	ten million	Unit	UCUM	Unit	S	10*7	20220506	20991231	
+9443	hundred million	Unit	UCUM	Unit	S	10*8	19700101	20991231	
+9242	per billion	Unit	UCUM	Unit	S	/10*9	19700101	20991231	
+44777660	billion	Unit	UCUM	Unit	S	10*9	19700101	20991231	
+44777588	billion cells per liter	Unit	UCUM	Unit	S	10*9.{cellls}/L	19700101	20991231	
+44777589	billion copies per liter	Unit	UCUM	Unit	S	10*9.{copies}/L	19700101	20991231	
+9444	billion per liter	Unit	UCUM	Unit	S	10*9/L	19700101	20991231	
+9445	billion per milliliter	Unit	UCUM	Unit	S	10*9/mL	19700101	20991231	
+9446	billion per microliter	Unit	UCUM	Unit	S	10*9/uL	19700101	20991231	
+44777556	per 24 hours	Unit	UCUM	Unit	S	/(24.h)	19700101	20991231	
+44777661	trimester	Unit	UCUM	Unit	S	3.mo	19700101	20991231	
+9258	Invalid UCUM Concept, do not use	Unit	UCUM	Unit		9258	19700101	20220505	D
+9259	Invalid UCUM Concept, do not use	Unit	UCUM	Unit		9259	19700101	20220505	D
+9448	year	Unit	UCUM	Unit	S	a	19700101	20991231	
+8543	ampere	Unit	UCUM	Unit	S	A	19700101	20991231	
+9216	percent abnormal	Unit	UCUM	Unit	S	%{abnormal}	19700101	20991231	
+33049	acre (British)	Unit	UCUM	Unit	S	[acr_br]	19700101	20991231	
+33050	acre (US)	Unit	UCUM	Unit	S	[acr_us]	19700101	20991231	
+8687	percent activity	Unit	UCUM	Unit	S	%{activity}	19700101	20991231	
+8567	activity	Unit	UCUM	Unit		{activity}	19700101	20140103	U
+45744809	Actuation	Unit	UCUM	Unit	S	{actuat}	19700101	20991231	
+9449	mean gregorian year	Unit	UCUM	Unit	S	a_g	19700101	20991231	
+32695	attogram per cell	Unit	UCUM	Unit	S	ag/{cell}	19700101	20991231	
+9422	AHG-equivalent per milliliter	Unit	UCUM	Unit	S	{AHG}eq/mL	19700101	20991231	
+8478	avidity index	Unit	UCUM	Unit	S	{ai}	19700101	20991231	
+9450	mean julian year	Unit	UCUM	Unit	S	a_j	19700101	20991231	
+710192	attokatal	Unit	UCUM	Unit	S	akat	20220506	20991231	
+710235	alcohol unit	Unit	UCUM	Unit	S	[alcohol'U]	20220506	20991231	
+710236	alcohol unit per 24 hours	Unit	UCUM	Unit	S	[alcohol'U]/(24.h)	20220506	20991231	
+710237	alcohol unit per week	Unit	UCUM	Unit	S	[alcohol'U]/w	20220506	20991231	
+710189	attomole	Unit	UCUM	Unit	S	amol	20220506	20991231	
+9452	Angstrom	Unit	UCUM	Unit	S	Ang	19700101	20991231	
+9099	IgA phospholipid unit	Unit	UCUM	Unit	S	[APL'U]	19700101	20991231	
+9156	IgA phospholipid unit per milliliter	Unit	UCUM	Unit	S	[APL'U]/mL	19700101	20991231	
+45891000	application	Unit	UCUM	Unit	S	[App]	19700101	20991231	
+8542	anti-phosphatidylserine IgA concentration (APS) unit	Unit	UCUM	Unit	S	[APS'U]	19700101	20991231	
+8823	anti-phosphatidylserine IgA concentration (APS) unit per milliter	Unit	UCUM	Unit	S	[APS'U]/mL	19700101	20991231	
+9453	are	Unit	UCUM	Unit	S	ar	19700101	20991231	
+9235	per arbitrary unit	Unit	UCUM	Unit	S	/[arb'U]	19700101	20991231	
+9260	arbitrary unit	Unit	UCUM	Unit	S	[arb'U]	19700101	20991231	
+44777561	arbitrary unit per liter	Unit	UCUM	Unit	S	[arb'U]/L	19700101	20991231	
+8980	arbitrary unit per milliliter	Unit	UCUM	Unit	S	[arb'U]/mL	19700101	20991231	
+9451	tropical year	Unit	UCUM	Unit	S	a_t	19700101	20991231	
+8800	percent at 60 minutes	Unit	UCUM	Unit	S	%{at'60'min}	19700101	20991231	
+9454	standard atmosphere	Unit	UCUM	Unit	S	atm	19700101	20991231	
+9455	technical atmosphere	Unit	UCUM	Unit	S	att	19700101	20991231	
+45744811	allergenic unit	Unit	UCUM	Unit	S	{AU}	19700101	20991231	
+8664	astronomic unit	Unit	UCUM	Unit		AU	19700101	20140103	U
+9456	barn	Unit	UCUM	Unit	S	b	19700101	20991231	
+9457	bel	Unit	UCUM	Unit	S	B	19700101	20991231	
+45744815	bacteria	Unit	UCUM	Unit	S	{bacteria}	19700101	20991231	
+9464	bar	Unit	UCUM	Unit	S	bar	19700101	20991231	
+9217	percent basal activity	Unit	UCUM	Unit	S	%{basal'activity}	19700101	20991231	
+8688	percent baseline	Unit	UCUM	Unit	S	%{baseline}	19700101	20991231	
+8568	baseline	Unit	UCUM	Unit	S	{baseline}	19700101	20991231	
+45744810	bioequivalent allergenic unit	Unit	UCUM	Unit	S	{BAU}	19700101	20991231	
+9261	barrel	Unit	UCUM	Unit	S	[bbl_us]	19700101	20991231	
+9682	bone collagen equivalent per millimole of creatinine	Unit	UCUM	Unit	S	{BColl}eq/mmol{creat}	19700101	20991231	
+9683	bone collagen equivalent per micromole of creatinine	Unit	UCUM	Unit	S	{BColl}eq/umol{creat}	19700101	20991231	
+9465	baud	Unit	UCUM	Unit	S	Bd	19700101	20991231	
+9262	Bodansky unit	Unit	UCUM	Unit	S	[bdsk'U]	19700101	20991231	
+9161	Bethesda unit	Unit	UCUM	Unit	S	[beth'U]	19700101	20991231	
+44777562	Bethesda unit per milliliter	Unit	UCUM	Unit	S	[beth'U]/mL	19700101	20991231	
+9263	board foot	Unit	UCUM	Unit	S	[bf_i]	19700101	20991231	
+9466	biot	Unit	UCUM	Unit	S	Bi	19700101	20991231	
+9218	percent binding	Unit	UCUM	Unit	S	%{binding}	19700101	20991231	
+9467	bit	Unit	UCUM	Unit	S	bit	19700101	20991231	
+9468	bit [amount of information]	Unit	UCUM	Unit		bit_s	19700101	20140103	U
+9458	bel kilowatt	Unit	UCUM	Unit	S	B[kW]	19700101	20991231	
+9219	percent blockade	Unit	UCUM	Unit	S	%{blockade}	19700101	20991231	
+9459	bel millivolt	Unit	UCUM	Unit	S	B[mV]	19700101	20991231	
+9220	percent bound	Unit	UCUM	Unit	S	%{bound}	19700101	20991231	
+9469	becquerel	Unit	UCUM	Unit	S	Bq	19700101	20991231	
+9460	bel sound pressure	Unit	UCUM	Unit	S	B[SPL]	19700101	20991231	
+9264	thermal unit (British)	Unit	UCUM	Unit	S	[Btu]	19700101	20991231	
+9265	British thermal unit at 39 degrees Fahrenheit	Unit	UCUM	Unit	S	[Btu_39]	19700101	20991231	
+9266	british thermal unit at 59 degrees Fahrenheit	Unit	UCUM	Unit	S	[Btu_59]	19700101	20991231	
+9267	British thermal unit at 60 degrees Fahrenheit	Unit	UCUM	Unit	S	[Btu_60]	19700101	20991231	
+9268	thermal unit (international)	Unit	UCUM	Unit	S	[Btu_IT]	19700101	20991231	
+9269	mean British Thermal Unit	Unit	UCUM	Unit	S	[Btu_m]	19700101	20991231	
+9270	thermochemical British Thermal Unit	Unit	UCUM	Unit	S	[Btu_th]	19700101	20991231	
+8540	bushel	Unit	UCUM	Unit		bu	19700101	20140103	U
+9271	bushel (US)	Unit	UCUM	Unit	S	[bu_us]	19700101	20991231	
+8798	bushel per milliliter	Unit	UCUM	Unit	S	[bu_us]/mL	19700101	20991231	
+9461	bel microvolt	Unit	UCUM	Unit	S	B[uV]	19700101	20991231	
+9462	bel volt	Unit	UCUM	Unit	S	B[V]	19700101	20991231	
+9463	bel watt	Unit	UCUM	Unit	S	B[W]	19700101	20991231	
+9470	byte	Unit	UCUM	Unit	S	By	19700101	20991231	
+9272	velocity of light	Unit	UCUM	Unit	S	[c]	19700101	20991231	
+9471	coulomb	Unit	UCUM	Unit	S	C	19700101	20991231	
+8998	complement activity enzyme unit	Unit	UCUM	Unit	S	[CAE'U]	19700101	20991231	
+9472	calorie	Unit	UCUM	Unit	S	cal	19700101	20991231	
+9273	nutrition label calories	Unit	UCUM	Unit	S	[Cal]	19700101	20991231	
+9473	calorie at 15 degrees Celsius	Unit	UCUM	Unit	S	cal_[15]	19700101	20991231	
+9474	calorie at 20 degrees Celsius	Unit	UCUM	Unit	S	cal_[20]	19700101	20991231	
+44777555	percent calculated	Unit	UCUM	Unit	S	%{calc}	19700101	20991231	
+8596	calculated	Unit	UCUM	Unit	S	{calc}	19700101	20991231	
+9475	calorie (international table)	Unit	UCUM	Unit	S	cal_IT	19700101	20991231	
+9476	mean calorie	Unit	UCUM	Unit	S	cal_m	19700101	20991231	
+9477	thermochemical calorie	Unit	UCUM	Unit	S	cal_th	19700101	20991231	
+9274	carat of gold alloys	Unit	UCUM	Unit	S	[car_Au]	19700101	20991231	
+9221	percent carboxyhemoglobin	Unit	UCUM	Unit	S	%{carboxyhemoglobin}	19700101	20991231	
+9275	metric carat	Unit	UCUM	Unit	S	[car_m]	19700101	20991231	
+9276	50% cell culture infectious dose	Unit	UCUM	Unit	S	[CCID_50]	19700101	20991231	
+9478	candela	Unit	UCUM	Unit	S	cd	19700101	20991231	
+8659	percent CD19+ cells	Unit	UCUM	Unit	S	%{CD19+'cells}	19700101	20991231	
+8484	CD59-deficient cells	Unit	UCUM	Unit	S	{CD59-deficient cells}	19700101	20991231	
+586323	degree Celsius	Unit	UCUM	Unit	S	Cel	19700101	20991231	
+45744812	cells	Unit	UCUM	Unit	S	{cells}	19700101	20991231	
+720852	cells per 7.5 mililiters	Unit	UCUM	Unit	S	{cells}/(75.10*-1.mL)	20220407	20991231	
+8889	cells per high power field	Unit	UCUM	Unit	S	{cells}/[HPF]	19700101	20991231	
+44777569	cells per liter	Unit	UCUM	Unit	S	{cells}/L	19700101	20991231	
+8888	cells per cubic millimeter	Unit	UCUM	Unit	S	{cells}/mm3	19700101	20991231	
+8784	cells per microliter	Unit	UCUM	Unit	S	{cells}/uL	19700101	20991231	
+9277	cubic foot	Unit	UCUM	Unit	S	[cft_i]	19700101	20991231	
+9278	colony forming unit	Unit	UCUM	Unit	S	[CFU]	19700101	20991231	
+9423	colony forming unit per milliliter	Unit	UCUM	Unit	S	[CFU]/mL	19700101	20991231	
+9479	centigram	Unit	UCUM	Unit	S	cg	19700101	20991231	
+32666	centigray	Unit	UCUM	Unit	S	cGy	19700101	20991231	
+710222	centigray per hour	Unit	UCUM	Unit	S	cGy/h	20220506	20991231	
+710223	centigray per minute	Unit	UCUM	Unit	S	cGy/min	20220506	20991231	
+9279	charriere french	Unit	UCUM	Unit	S	[Ch]	19700101	20991231	
+9424	complement Ch50 unit per milliliter	Unit	UCUM	Unit	S	[CH50'U]/mL	19700101	20991231	
+9280	Gunter's chain (British)	Unit	UCUM	Unit	S	[ch_br]	19700101	20991231	
+9281	Gunter's chain (US)	Unit	UCUM	Unit	S	[ch_us]	19700101	20991231	
+9480	curie	Unit	UCUM	Unit	S	Ci	19700101	20991231	
+9282	cicero didot's pica	Unit	UCUM	Unit	S	[cicero]	19700101	20991231	
+9283	cubic inch	Unit	UCUM	Unit	S	[cin_i]	19700101	20991231	
+9481	circle	Unit	UCUM	Unit	S	circ	19700101	20991231	
+9482	centiliter	Unit	UCUM	Unit	S	cL	19700101	20991231	
+8582	centimeter	Unit	UCUM	Unit	S	cm	19700101	20991231	
+705179	per square centimeter	Unit	UCUM	Unit	S	/cm2	19700101	20991231	
+9483	square centimeter	Unit	UCUM	Unit	S	cm2	19700101	20991231	
+44777662	cubic centimeter	Unit	UCUM	Unit	S	cm3	19700101	20991231	
+44777590	centimeter watercolumn	Unit	UCUM	Unit	S	cm[H2O]	19700101	20991231	
+9284	circular mil	Unit	UCUM	Unit	S	[cml_i]	19700101	20991231	
+32738	centimeter per second	Unit	UCUM	Unit	S	cm/s	19700101	20991231	
+44777570	copies per liter	Unit	UCUM	Unit	S	{copies}/L	19700101	20991231	
+8799	copies per milliliter	Unit	UCUM	Unit	S	{copies}/mL	19700101	20991231	
+8483	counts per minute	Unit	UCUM	Unit	S	{counts}/min	19700101	20991231	
+8479	centipoise	Unit	UCUM	Unit	S	cP	19700101	20991231	
+9286	cord (US)	Unit	UCUM	Unit	S	[crd_us]	19700101	20991231	
+9285	cord (international)	Unit	UCUM	Unit	S	[cr_i]	19700101	20991231	
+720856	cycle threshold value	Unit	UCUM	Unit	S	{Ct_value}	20220407	20991231	
+45744813	clinical unit	Unit	UCUM	Unit	S	{CU}	19700101	20991231	
+9287	cup	Unit	UCUM	Unit	S	[cup_us]	19700101	20991231	
+9288	cubic yard	Unit	UCUM	Unit	S	[cyd_i]	19700101	20991231	
+8512	day	Unit	UCUM	Unit	S	d	19700101	20991231	
+32697	dalton	Unit	UCUM	Unit	S	Da	19700101	20991231	
+44777591	Decibel	Unit	UCUM	Unit	S	dB	19700101	20991231	
+32960	Decibel per megahertz	Unit	UCUM	Unit	S	dB/MHz	19700101	20991231	
+9484	degree	Unit	UCUM	Unit	S	deg	19700101	20991231	
+8653	degree Celsius	Unit	UCUM	Unit		[degC]	19700101	20180504	U
+9289	degree Fahrenheit	Unit	UCUM	Unit	S	[degF]	19700101	20991231	
+710227	degree per second	Unit	UCUM	Unit	S	deg/s	20220506	20991231	
+9485	decigram	Unit	UCUM	Unit	S	dg	19700101	20991231	
+9290	Didot's point	Unit	UCUM	Unit	S	[didot]	19700101	20991231	
+8503	DILS	Unit	UCUM	Unit		{DILS}	19700101	20140103	D
+9291	diopter	Unit	UCUM	Unit	S	[diop]	19700101	20991231	
+9245	per deciliter	Unit	UCUM	Unit	S	/dL	19700101	20991231	
+9486	deciliter	Unit	UCUM	Unit	S	dL	19700101	20991231	
+9487	decimeter	Unit	UCUM	Unit	S	dm	19700101	20991231	
+710233	day per month	Unit	UCUM	Unit	S	d/mo	20220506	20991231	
+8485	DNR	Unit	UCUM	Unit		{DNR}	19700101	20140103	D
+8531	DNRTNP	Unit	UCUM	Unit		{DNRTNP}	19700101	20140103	D
+8513	dose	Unit	UCUM	Unit		{dose}	19700101	20140103	D
+9292	dry pint	Unit	UCUM	Unit	S	[dpt_us]	19700101	20991231	
+9293	dry quart	Unit	UCUM	Unit	S	[dqt_us]	19700101	20991231	
+9294	dram (apothecary)	Unit	UCUM	Unit	S	[dr_ap]	19700101	20991231	
+9295	dram (avoirdupois)	Unit	UCUM	Unit	S	[dr_av]	19700101	20991231	
+9296	drop	Unit	UCUM	Unit	S	[drp]	19700101	20991231	
+32961	decisecond	Unit	UCUM	Unit	S	ds	19700101	20991231	
+8621	day per week	Unit	UCUM	Unit	S	d/wk	19700101	20991231	
+710234	day per year	Unit	UCUM	Unit	S	d/y	20220506	20991231	
+9297	dye unit	Unit	UCUM	Unit	S	[dye'U]	19700101	20991231	
+9488	dyne	Unit	UCUM	Unit	S	dyn	19700101	20991231	
+720841	dyne-second per centimeter to the fifth power per square meter	Unit	UCUM	Unit	S	dyn.s/cm5/m2	20220407	20991231	
+32703	dyne-second per centimeter to the fifth power	Unit	UCUM	Unit	S	dyn.sec/cm5	19700101	20991231	
+9298	elementary charge	Unit	UCUM	Unit	S	[e]	19700101	20991231	
+8556	EIA unit	Unit	UCUM	Unit	S	[EIA'U]	19700101	20991231	
+8573	EIA value	Unit	UCUM	Unit		[{EIA'value}]	19700101	20140103	U
+8600	Elisa unit	Unit	UCUM	Unit	S	[ELU]	19700101	20991231	
+9426	ELISA unit per milliliter	Unit	UCUM	Unit	S	[ELU]/mL	19700101	20991231	
+9236	per entity	Unit	UCUM	Unit	S	/{entity}	19700101	20991231	
+8849	percent enzyme activity	Unit	UCUM	Unit	S	%(enzyme'activity}	19700101	20991231	
+8654	Enzyme activity	Unit	UCUM	Unit		[{enzyme'activity}]	19700101	20140103	D
+9222	percent eosinophils	Unit	UCUM	Unit	S	%{eos}	19700101	20991231	
+8486	EOS	Unit	UCUM	Unit		{EOS}	19700101	20140103	U
+9299	permittivity of vacuum	Unit	UCUM	Unit	S	[eps_0]	19700101	20991231	
+9489	equivalent	Unit	UCUM	Unit	S	eq	19700101	20991231	
+9490	equivalent per liter	Unit	UCUM	Unit	S	eq/L	19700101	20991231	
+9491	equivalent per milliliter	Unit	UCUM	Unit	S	eq/mL	19700101	20991231	
+9492	equivalent per millimole	Unit	UCUM	Unit	S	eq/mmol	19700101	20991231	
+9493	equivalent per micromole	Unit	UCUM	Unit	S	eq/umol	19700101	20991231	
+9494	erg	Unit	UCUM	Unit	S	erg	19700101	20991231	
+8712	erythrocytes per microliter	Unit	UCUM	Unit	S	{ery}/uL	19700101	20991231	
+8480	Ehrlich unit	Unit	UCUM	Unit	S	[EU]	19700101	20991231	
+9425	Ehrlich unit per 100 gram	Unit	UCUM	Unit	S	[EU]/100.g	19700101	20991231	
+710217	Ehrlich unit per 24 hours	Unit	UCUM	Unit	S	[EU]/(24.h)	20220506	20991231	
+8829	Ehrlich unit per deciliter	Unit	UCUM	Unit	S	[EU]/dL	19700101	20991231	
+8670	EU per deciliter	Unit	UCUM	Unit		{EU}/dL	19700101	20140103	U
+8695	Ehrlich unit per milliliter	Unit	UCUM	Unit	S	[EU]/mL	19700101	20991231	
+9495	electronvolt	Unit	UCUM	Unit	S	eV	19700101	20991231	
+8481	EV	Unit	UCUM	Unit		{EV}	19700101	20140103	U
+9223	percent excretion	Unit	UCUM	Unit	S	%{excretion}	19700101	20991231	
+8517	Farad	Unit	UCUM	Unit	S	F	19700101	20991231	
+9300	fluid dram (British)	Unit	UCUM	Unit	S	[fdr_br]	19700101	20991231	
+9301	fluid dram (US)	Unit	UCUM	Unit	S	[fdr_us]	19700101	20991231	
+9224	percent fetal erythrocytes	Unit	UCUM	Unit	S	%{fetal'erythrocytes}	19700101	20991231	
+9302	focus forming unit	Unit	UCUM	Unit	S	[FFU]	19700101	20991231	
+9496	femtogram	Unit	UCUM	Unit	S	fg	19700101	20991231	
+44777592	femtogram per liter	Unit	UCUM	Unit	S	fg/L	19700101	20991231	
+710195	femtogram per milliliter	Unit	UCUM	Unit	S	fg/mL	20220506	20991231	
+44777563	fluorescence intensity unit	Unit	UCUM	Unit	S	[FiU]	19700101	20991231	
+710191	femtokatal	Unit	UCUM	Unit	S	fkat	20220506	20991231	
+710198	femtokatal per kilogram	Unit	UCUM	Unit	S	fkat/kg	20220506	20991231	
+710197	femtokatal per liter	Unit	UCUM	Unit	S	fkat/L	20220506	20991231	
+8583	femtoliter	Unit	UCUM	Unit	S	fL	19700101	20991231	
+8655	Farad per liter	Unit	UCUM	Unit	S	F/L	19700101	20991231	
+8496	femtoliter platelet mean volume	Unit	UCUM	Unit	S	fL{mpv}	19700101	20991231	
+720853	femtoliter per nanoliter	Unit	UCUM	Unit	S	fL/nL	20220407	20991231	
+9497	femtometer	Unit	UCUM	Unit	S	fm	19700101	20991231	
+9498	femtomole	Unit	UCUM	Unit	S	fmol	19700101	20991231	
+710204	femtomole per 24 hours	Unit	UCUM	Unit	S	fmol/(24.h)	20220506	20991231	
+9499	femtomole per gram	Unit	UCUM	Unit	S	fmol/g	19700101	20991231	
+710196	femtomole per kilogram	Unit	UCUM	Unit	S	fmol/kg	20220506	20991231	
+8745	femtomole per liter	Unit	UCUM	Unit	S	fmol/L	19700101	20991231	
+9500	femtomole per milligram	Unit	UCUM	Unit	S	fmol/mg	19700101	20991231	
+9501	femtomole per milliliter	Unit	UCUM	Unit	S	fmol/mL	19700101	20991231	
+9303	fluid ounce (British)	Unit	UCUM	Unit	S	[foz_br]	19700101	20991231	
+9304	fluid ounce (US)	Unit	UCUM	Unit	S	[foz_us]	19700101	20991231	
+720868	fraction	Unit	UCUM	Unit	S	{fraction}	20220407	20991231	
+9305	foot (British)	Unit	UCUM	Unit	S	[ft_br]	19700101	20991231	
+9308	fathom (British)	Unit	UCUM	Unit	S	[fth_br]	19700101	20991231	
+9309	fathom (international)	Unit	UCUM	Unit	S	[fth_i]	19700101	20991231	
+9310	fathom (US)	Unit	UCUM	Unit	S	[fth_us]	19700101	20991231	
+9306	foot (international)	Unit	UCUM	Unit	S	[ft_i]	19700101	20991231	
+720860	free thyroxine index	Unit	UCUM	Unit	S	{FTI%}	20220407	20991231	
+9307	foot (US)	Unit	UCUM	Unit	S	[ft_us]	19700101	20991231	
+9311	furlong	Unit	UCUM	Unit	S	[fur_us]	19700101	20991231	
+9246	per gram	Unit	UCUM	Unit	S	/g	19700101	20991231	
+9313	standard acceleration of free fall	Unit	UCUM	Unit	S	[g]	19700101	20991231	
+8504	gram	Unit	UCUM	Unit	S	g	19700101	20991231	
+9503	gram percent	Unit	UCUM	Unit	S	g%	19700101	20991231	
+9312	Newtonian constant of gravitation	Unit	UCUM	Unit	S	[G]	19700101	20991231	
+9502	Gauss	Unit	UCUM	Unit	S	G	19700101	20991231	
+44777519	per gram (10*3 per kilogram)	Unit	UCUM	Canonical Unit	S	g-1	19700101	20991231	
+9508	gram per 100 gram	Unit	UCUM	Unit	S	g/100.g	19700101	20991231	
+44777593	gram per 12 hours	Unit	UCUM	Unit	S	g/(12.h)	19700101	20991231	
+44777538	per gram and second	Unit	UCUM	Canonical Unit	S	g-1.s-1	19700101	20991231	
+8807	gram per 24 hours	Unit	UCUM	Unit	S	g/(24.h)	19700101	20991231	
+720847	gram per 48 hours	Unit	UCUM	Unit	S	g/(48.h)	20220407	20991231	
+8791	gram per 5 hours	Unit	UCUM	Unit	S	g/(5.h)	19700101	20991231	
+720844	gram per 72 hour	Unit	UCUM	Unit	S	g/(72.h)	20220407	20991231	
+45891018	gram per actuation	Unit	UCUM	Unit	S	g/{actuat}	19700101	20991231	
+9314	gallon (British)	Unit	UCUM	Unit	S	[gal_br]	19700101	20991231	
+9515	gallon (US)	Unit	UCUM	Unit	S	[gal_us]	19700101	20991231	
+9316	winchester gallon	Unit	UCUM	Unit	S	[gal_wi]	19700101	20991231	
+45891001	gram per application	Unit	UCUM	Unit	S	g/[App]	19700101	20991231	
+9516	gilbert	Unit	UCUM	Unit	S	Gb	19700101	20991231	
+45891031	Gigabecquerel	Unit	UCUM	Unit	S	GBq	19700101	20991231	
+45891028	Gigabecquerel per milliliter	Unit	UCUM	Unit	S	GBq/mL	19700101	20991231	
+32701	gram per square centimeter	Unit	UCUM	Unit	S	g/cm2	19700101	20991231	
+45956701	gram per cubical centimeter	Unit	UCUM	Unit	S	g/cm3	19700101	20991231	
+9247	per gram of creatinine	Unit	UCUM	Unit	S	/g{creat}	19700101	20991231	
+44777596	gram of creatinine	Unit	UCUM	Unit	S	g{creat}	19700101	20991231	
+8713	gram per deciliter	Unit	UCUM	Unit	S	g/dL	19700101	20991231	
+8967	Gram per deciliter and percent	Unit	UCUM	Unit		g/dL.[%]	19700101	20140103	U
+8950	gram per deciliter calculated	Unit	UCUM	Unit	S	g/dL{calc}	19700101	20991231	
+45890996	gram per dose	Unit	UCUM	Unit	S	g/[dose]	19700101	20991231	
+9517	gram-force	Unit	UCUM	Unit	S	gf	19700101	20991231	
+9510	gram per gram	Unit	UCUM	Unit	S	g/g	19700101	20991231	
+9511	gram per gram of creatinine	Unit	UCUM	Unit	S	g/g{creat}	19700101	20991231	
+44777594	gram per hour	Unit	UCUM	Unit	S	g/h	19700101	20991231	
+9248	per gram of hemoglobin	Unit	UCUM	Unit	S	/g{HBG}	19700101	20991231	
+44777597	gram of hemoglobin	Unit	UCUM	Unit	S	g{HGB}	19700101	20991231	
+710228	gigahertz	Unit	UCUM	Unit	S	GHz	20220506	20991231	
+9317	gill (British)	Unit	UCUM	Unit	S	[gil_br]	19700101	20991231	
+9318	gill (US)	Unit	UCUM	Unit	S	[gil_us]	19700101	20991231	
+9512	gram per kilogram	Unit	UCUM	Unit	S	g/kg	19700101	20991231	
+8636	gram per liter	Unit	UCUM	Unit	S	g/L	19700101	20991231	
+9504	gram-meter	Unit	UCUM	Unit	S	g.m	19700101	20991231	
+9513	gram per square meter	Unit	UCUM	Unit	S	g/m2	19700101	20991231	
+9507	gram-meter per heart beat	Unit	UCUM	Unit	S	g.m/{hb}	19700101	20991231	
+9506	gram meter per heartbeat [proportional to ventricular stroke work]	Unit	UCUM	Unit		g.m/{H.B.}	19700101	20140103	U
+9505	gram-meter per heart beat per square meter	Unit	UCUM	Unit	S	g.m/({hb}.m2)	19700101	20991231	
+9514	gram per milliliter	Unit	UCUM	Unit	S	g/mL	19700101	20991231	
+32702	gram per millimole	Unit	UCUM	Unit	S	g/mmol	19700101	20991231	
+44777595	gram per mole	Unit	UCUM	Unit	S	g/mol	19700101	20991231	
+9518	gon grade	Unit	UCUM	Unit	S	gon	19700101	20991231	
+8609	beta-2 GPI IgA Ab unit	Unit	UCUM	Unit	S	[GPI'IgA'U]	19700101	20991231	
+8610	beta-2 GPI IgG Ab unit	Unit	UCUM	Unit	S	[GPI'IgG'U]	19700101	20991231	
+8611	beta-2 GPI IgM Ab unit	Unit	UCUM	Unit	S	[GPI'IgM'U]	19700101	20991231	
+9100	IgG phospholipid unit	Unit	UCUM	Unit	S	[GPL'U]	19700101	20991231	
+9157	IgG phospholipid unit per milliliter	Unit	UCUM	Unit	S	[GPL'U]/mL	19700101	20991231	
+8545	GPS IgG	Unit	UCUM	Unit		[{GPS'IgG}]	19700101	20140103	U
+8487	anti-phosphatidylserine IgG concentration (GPS) unit	Unit	UCUM	Unit	S	[GPS'U]	19700101	20991231	
+8831	anti-phosphatidylserine IgG concentration (GPS) unit per milliliter	Unit	UCUM	Unit	S	[GPS'U]/mL	19700101	20991231	
+9319	grain	Unit	UCUM	Unit	S	[gr]	19700101	20991231	
+44777534	gram per second (10*-3 kilogram per second)	Unit	UCUM	Canonical Unit	S	g.s-1	19700101	20991231	
+8622	gram per time	Unit	UCUM	Unit	S	g/{time}	19700101	20991231	
+9249	per gram of total nitrogen	Unit	UCUM	Unit	S	/g{tot'nit}	19700101	20991231	
+44777598	gram of total nitrate	Unit	UCUM	Unit	S	g{tot'nit}	19700101	20991231	
+9250	per gram of total protein	Unit	UCUM	Unit	S	/g{tot'prot}	19700101	20991231	
+44777599	gram of total protein	Unit	UCUM	Unit	S	g{tot'prot}	19700101	20991231	
+9509	gram per total weight	Unit	UCUM	Unit	S	g/{tot'wt}	19700101	20991231	
+8574	G (anti-prothrombin IgG concentration) unit	Unit	UCUM	Unit	S	[G'U]	19700101	20991231	
+9251	per gram of wet tissue	Unit	UCUM	Unit	S	/g{wet'tis}	19700101	20991231	
+44777600	gram or wet tissue	Unit	UCUM	Unit	S	g{wet'tis}	19700101	20991231	
+9519	gray	Unit	UCUM	Unit	S	Gy	19700101	20991231	
+710239	gray per hour	Unit	UCUM	Unit	S	Gy/h	20220506	20991231	
+710240	gray per minute	Unit	UCUM	Unit	S	Gy/min	20220506	20991231	
+44777557	per hour	Unit	UCUM	Unit	S	/h	19700101	20991231	
+9320	planck constant	Unit	UCUM	Unit	S	[h]	19700101	20991231	
+8505	hour	Unit	UCUM	Unit	S	h	19700101	20991231	
+8518	Henry	Unit	UCUM	Unit	S	H	19700101	20991231	
+8581	heartbeat	Unit	UCUM	Unit	S	{hb}	19700101	20991231	
+9225	percent hemoglobin A1c	Unit	UCUM	Unit	S	%{HbA1c}	19700101	20991231	
+9321	hand	Unit	UCUM	Unit	S	[hd_i]	19700101	20991231	
+9226	percent hemolysis	Unit	UCUM	Unit	S	%{hemolysis}	19700101	20991231	
+9520	hectoliter	Unit	UCUM	Unit	S	hL	19700101	20991231	
+9322	Hounsfield unit	Unit	UCUM	Unit	S	[hnsf'U]	19700101	20991231	
+9323	horsepower	Unit	UCUM	Unit	S	[HP]	19700101	20991231	
+9324	homeopathic potency of centesimal series	Unit	UCUM	Unit	S	[hp_C]	19700101	20991231	
+8786	per high power field	Unit	UCUM	Unit	S	/[HPF]	19700101	20991231	
+8673	High Power Field	Unit	UCUM	Unit		[HPF]	19700101	20140103	U
+9325	homeopathic potency of decimal series	Unit	UCUM	Unit	S	[hp_X]	19700101	20991231	
+9521	Hertz	Unit	UCUM	Unit	S	Hz	19700101	20991231	
+9684	IgA Phospholipid Units Per MilliLiter [Arbitrary Concentration Units]	Unit	UCUM	Unit		{IgACardiolipin}U/mL	19700101	20140103	U
+9685	IgG Phospholipid Units Per MilliLiter [Arbitrary Concentration Units]	Unit	UCUM	Unit		{IgGCardiolipin}U/mL	19700101	20140103	U
+9686	IgM Phospholipid Units Per MilliLiter [Arbitrary Concentration Units]	Unit	UCUM	Unit		{IgMCardiolipin}U/mL	19700101	20140103	U
+8612	IM per liter	Unit	UCUM	Unit		{IM}/L	19700101	20140103	D
+8533	Inches	Unit	UCUM	Unit		in	19700101	20140103	U
+9326	inch (British)	Unit	UCUM	Unit	S	[in_br]	19700101	20991231	
+8529	index	Unit	UCUM	Unit	S	{index}	20220407	20991231	
+8608	index value	Unit	UCUM	Unit		[{index'value}]	19700101	20140103	U
+8660	percent in gate	Unit	UCUM	Unit	S	%{in'gate}	19700101	20991231	
+8738	percent inhibition	Unit	UCUM	Unit	S	%{inhibition}	19700101	20991231	
+8597	inhibition	Unit	UCUM	Unit		{inhibition}	19700101	20140103	U
+9327	inch (international)	Unit	UCUM	Unit	S	[in_i]	19700101	20991231	
+9328	inch of water column	Unit	UCUM	Unit	S	[in_i'H2O]	19700101	20991231	
+9329	inch of mercury column	Unit	UCUM	Unit	S	[in_i'Hg]	19700101	20991231	
+9330	inch (US)	Unit	UCUM	Unit	S	[in_us]	19700101	20991231	
+9693	index of reactivity	Unit	UCUM	Unit	S	{ir}	20141201	20991231	
+8488	immune status ratio	Unit	UCUM	Unit	S	{ISR}	19700101	20991231	
+8718	international unit	Unit	UCUM	Unit	S	[iU]	19700101	20991231	
+44777564	international unit per 24 hours	Unit	UCUM	Unit	S	[iU]/(24.h)	19700101	20991231	
+9332	international unit per deciliter	Unit	UCUM	Unit	S	[iU]/dL	19700101	20991231	
+9333	international unit per gram	Unit	UCUM	Unit	S	[iU]/g	19700101	20991231	
+9334	international unit per gram of hemoglobin	Unit	UCUM	Unit	S	[iU]/g{HBG}	19700101	20991231	
+9107	International Unit per gram of hemoglobin	Unit	UCUM	Unit		[iU]/g{HGB}	19700101	20140103	U
+9687	international unit per hour	Unit	UCUM	Unit	S	[iU]/h	19700101	20991231	
+9335	international unit per kilogram	Unit	UCUM	Unit	S	[iU]/kg	19700101	20991231	
+8923	international unit per liter	Unit	UCUM	Unit	S	[iU]/L	19700101	20991231	
+45891019	international unit per milligram	Unit	UCUM	Unit	S	[iU]/mg	19700101	20991231	
+8985	international unit per milliliter	Unit	UCUM	Unit	S	[iU]/mL	19700101	20991231	
+9522	joule	Unit	UCUM	Unit	S	J	19700101	20991231	
+8560	Juvenile Diabetes Foundation unit	Unit	UCUM	Unit	S	[JDF'U]	19700101	20991231	
+710253	joule per kilogram	Unit	UCUM	Unit	S	J/kg	20220506	20991231	
+710246	joule per milliliter	Unit	UCUM	Unit	S	J/mL	20220506	20991231	
+9338	Boltzmann constant	Unit	UCUM	Unit	S	[k]	19700101	20991231	
+9523	kelvin	Unit	UCUM	Unit	S	K	19700101	20991231	
+9526	katal	Unit	UCUM	Unit	S	kat	19700101	20991231	
+9527	katal per kilogram	Unit	UCUM	Unit	S	kat/kg	19700101	20991231	
+44777601	katal per liter	Unit	UCUM	Unit	S	kat/L	19700101	20991231	
+9339	King-Armstrong unit	Unit	UCUM	Unit	S	[ka'U]	19700101	20991231	
+45891008	kilobecquerel	Unit	UCUM	Unit	S	kBq	19700101	20991231	
+45891038	kilobecquerel per milliliter	Unit	UCUM	Unit	S	kBq/mL	19700101	20991231	
+710194	kilocalorie	Unit	UCUM	Unit	S	kcal	20220506	20991231	
+710212	kilocalorie per 24 hours	Unit	UCUM	Unit	S	kcal/(24.h)	20220506	20991231	
+710213	kilocalorie per hour	Unit	UCUM	Unit	S	kcal/h	20220506	20991231	
+710251	kilocalorie per kilogram	Unit	UCUM	Unit	S	kcal/kg	20220506	20991231	
+710218	kilocalorie per kilogram per 24 hours	Unit	UCUM	Unit	S	kcal/kg/(24.h)	20220506	20991231	
+710247	kilocalorie per milliliter	Unit	UCUM	Unit	S	kcal/mL	20220506	20991231	
+9528	kilocalories per ounce	Unit	UCUM	Unit	S	kcal/[oz_av]	19700101	20991231	
+32698	kilodalton	Unit	UCUM	Unit	S	kDa	19700101	20991231	
+9252	per kilogram	Unit	UCUM	Unit	S	/kg	19700101	20991231	
+9529	kilogram	Unit	UCUM	Unit	S	kg	19700101	20991231	
+710199	kilogram per 24 hours	Unit	UCUM	Unit	S	kg/(24.h)	20220506	20991231	
+9253	per kilogram body weight	Unit	UCUM	Unit	S	/kg{body'wt}	19700101	20991231	
+9530	kilogram per liter	Unit	UCUM	Unit	S	kg/L	19700101	20991231	
+9531	kilogram per square meter	Unit	UCUM	Unit	S	kg/m2	19700101	20991231	
+9532	kilogram per cubic meter	Unit	UCUM	Unit	S	kg/m3	19700101	20991231	
+9533	kilogram per mole	Unit	UCUM	Unit	S	kg/mol	19700101	20991231	
+9534	kilogram of wet tissue	Unit	UCUM	Unit	S	kg{wet'tis}	19700101	20991231	
+710231	kilohertz	Unit	UCUM	Unit	S	kHz	20220506	20991231	
+45891024	Kallikrein inactivator unit	Unit	UCUM	Unit	S	{KIU}	19700101	20991231	
+9108	Kelvin International Units per milliliter	Unit	UCUM	Unit		K[iU]/mL	19700101	20140103	U
+45891026	Kallikrein inactivator unit per milliliter	Unit	UCUM	Unit	S	[KIU]/mL	19700101	20991231	
+32962	kilojoule	Unit	UCUM	Unit	S	kJ	19700101	20991231	
+710214	kilojoule per 24 hours	Unit	UCUM	Unit	S	kJ/(24.h)	20220506	20991231	
+720845	kilojoule per mole	Unit	UCUM	Unit	S	kJ/mol	20220407	20991231	
+9535	kiloliter	Unit	UCUM	Unit	S	kL	19700101	20991231	
+9536	kilometer	Unit	UCUM	Unit	S	km	19700101	20991231	
+8903	Kelvin per cubic millimeter	Unit	UCUM	Unit		K/mm3	19700101	20140103	U
+9340	knot (British)	Unit	UCUM	Unit	S	[kn_br]	19700101	20991231	
+9341	knot (international)	Unit	UCUM	Unit	S	[kn_i]	19700101	20991231	
+9342	Kunkel unit	Unit	UCUM	Unit	S	[knk'U]	19700101	20991231	
+44777602	kilopascal	Unit	UCUM	Unit	S	kPa	19700101	20991231	
+9537	kilosecond	Unit	UCUM	Unit	S	ks	19700101	20991231	
+8792	Kelvin per microliter	Unit	UCUM	Unit		K/uL	19700101	20140103	U
+9524	kelvin per watt	Unit	UCUM	Unit	S	K/W	19700101	20991231	
+9539	kayser	Unit	UCUM	Unit	S	Ky	19700101	20991231	
+9540	liter [volume]	Unit	UCUM	Unit		l	19700101	20140103	U
+9254	per liter	Unit	UCUM	Unit	S	/L	19700101	20991231	
+8519	liter	Unit	UCUM	Unit	S	L	19700101	20991231	
+8857	liter per 24 hours	Unit	UCUM	Unit	S	L/(24.h)	19700101	20991231	
+9343	pound (apothecary)	Unit	UCUM	Unit	S	[lb_ap]	19700101	20991231	
+9346	pound force (avoirdupois)	Unit	UCUM	Unit	S	[lbf_av]	19700101	20991231	
+9345	pound (troy system)	Unit	UCUM	Unit	S	[lb_tr]	19700101	20991231	
+8739	pound (US)	Unit	UCUM	Unit	S	[lb_us]	19700101	20991231	
+710215	liter per centimeter of water column	Unit	UCUM	Unit	S	L/cm[H2O]	20220506	20991231	
+9347	long hundredweight	Unit	UCUM	Unit	S	[lcwt_av]	19700101	20991231	
+45744814	limit of flocculation unit	Unit	UCUM	Unit	S	{LFU}	19700101	20991231	
+44777605	log cells per milliliter	Unit	UCUM	Unit	S	lg({cells})/mL	19700101	20991231	
+8873	log copies per milliliter	Unit	UCUM	Unit	S	lg({copies})/mL	19700101	20991231	
+9084	log international unit per milliliter	Unit	UCUM	Unit	S	lg([iU])/mL	19700101	20991231	
+8623	log reduction	Unit	UCUM	Unit	S	lg({reduction})	19700101	20991231	
+9348	log10 unit per milliliter	Unit	UCUM	Unit	S	lg([U])/mL	19700101	20991231	
+44777603	liter per hour	Unit	UCUM	Unit	S	L/h	19700101	20991231	
+9349	ligne french line	Unit	UCUM	Unit	S	[ligne]	19700101	20991231	
+44777565	lyme index value	Unit	UCUM	Unit	S	[LIV]	19700101	20991231	
+8489	LIV	Unit	UCUM	Unit		{LIV}	19700101	20140103	D
+9350	link for Gunter's chain (British)	Unit	UCUM	Unit	S	[lk_br]	19700101	20991231	
+9542	liter per kilogram	Unit	UCUM	Unit	S	L/kg	19700101	20991231	
+710216	liter per kilopascal	Unit	UCUM	Unit	S	L/kPa	20220506	20991231	
+9351	link for Gunter's chain (US)	Unit	UCUM	Unit	S	[lk_us]	19700101	20991231	
+44777604	liter per liter	Unit	UCUM	Unit	S	L/L	19700101	20991231	
+9543	lumen	Unit	UCUM	Unit	S	lm	19700101	20991231	
+32963	liter per square meter	Unit	UCUM	Unit	S	L/m2	19700101	20991231	
+9544	lambert	Unit	UCUM	Unit	S	Lmb	19700101	20991231	
+8698	liter per minute	Unit	UCUM	Unit	S	L/min	19700101	20991231	
+32710	liter per minute per square meter	Unit	UCUM	Unit	S	L/min/m2	19700101	20991231	
+9352	line	Unit	UCUM	Unit	S	[lne]	19700101	20991231	
+8492	Log	Unit	UCUM	Unit		{log}	19700101	20140103	D
+9096	Log10 international units per milliliter	Unit	UCUM	Unit		[{log10}]'[iU]/mL	19700101	20140103	U
+8765	per low powered field	Unit	UCUM	Unit	S	/[LPF]	19700101	20991231	
+8656	Low Power Field	Unit	UCUM	Unit		[LPF]	19700101	20140103	U
+8490	LPU	Unit	UCUM	Unit		{LPU}	19700101	20140103	D
+32700	liter per second	Unit	UCUM	Unit	S	L/s	19700101	20991231	
+9541	liter-square second per second	Unit	UCUM	Unit	S	L.s2/s	19700101	20991231	
+9354	long ton (British)	Unit	UCUM	Unit	S	[lton_av]	19700101	20991231	
+8506	lytic unit 30 (number of cells to achieve 30% lysis of the target cells)	Unit	UCUM	Unit	S	{LU30}	19700101	20991231	
+8491	LUS	Unit	UCUM	Unit		{LUS}	19700101	20140103	D
+9545	lux	Unit	UCUM	Unit	S	lx	19700101	20991231	
+9355	light-year	Unit	UCUM	Unit	S	[ly]	19700101	20991231	
+8586	lymphocytes per 100 cells	Unit	UCUM	Unit	S	{lymphos}/100.{cells}	19700101	20991231	
+32959	per meter	Unit	UCUM	Unit	S	/m	19700101	20991231	
+9546	meter	Unit	UCUM	Unit	S	m	19700101	20991231	
+44777527	gram per meter and square second (10*-3 pascal)	Unit	UCUM	Canonical Unit	S	m-1.g.s-2	19700101	20991231	
+44777526	coulomb per meter and second (ampere per meter)	Unit	UCUM	Canonical Unit	S	m-1.s-1.C	19700101	20991231	
+9255	per square meter	Unit	UCUM	Unit	S	/m2	19700101	20991231	
+44777549	per square meter	Unit	UCUM	Canonical Unit	S	m-2	19700101	20991231	
+8617	square meter	Unit	UCUM	Unit	S	m2	19700101	20991231	
+44777536	gram per square meter (10*-3 kilogram per square meter)	Unit	UCUM	Canonical Unit	S	m-2.g	19700101	20991231	
+44777537	cubical second and kelvin per square meter and gram (10*3 kelvin per watt)	Unit	UCUM	Canonical Unit	S	m-2.g-1.s3.K	19700101	20991231	
+44777543	gram per square meter and second (10*-3 kilogram per square meter and second)	Unit	UCUM	Canonical Unit	S	m-2.g.s-1	19700101	20991231	
+44777540	square meter gram per square second (10*-3 joule)	Unit	UCUM	Canonical Unit	S	m2.g.s-2	19700101	20991231	
+44777552	square meter gram per square second and coulomb (10*-3 volt)	Unit	UCUM	Canonical Unit	S	m2.g.s-2.C-1	19700101	20991231	
+44777528	gram per square meter and cubical second (10*-3 pascal per second and meter)	Unit	UCUM	Canonical Unit	S	m-2.g.s-3	19700101	20991231	
+44777541	square meter gram per cubical second (10*-3 watt)	Unit	UCUM	Canonical Unit	S	m2.g.s-3	19700101	20991231	
+44777546	candela radiant per square meter (lux)	Unit	UCUM	Canonical Unit	S	m-2.rad2.cd	19700101	20991231	
+44777529	scquare meter per second	Unit	UCUM	Canonical Unit	S	m2.s-1	19700101	20991231	
+44777530	square meter pre square second	Unit	UCUM	Canonical Unit	S	m2.s-2	19700101	20991231	
+44777558	per cubic meter	Unit	UCUM	Unit	S	/m3	19700101	20991231	
+44777520	per cubical meter	Unit	UCUM	Canonical Unit	S	m-3	19700101	20991231	
+44777531	cubical meter	Unit	UCUM	Canonical Unit	S	m3	19700101	20991231	
+44777535	gram per cubical meter (10*-3 kilogram per cubical meter)	Unit	UCUM	Canonical Unit	S	m-3.g	19700101	20991231	
+44777545	cubical meter per gram (10*3 cubical meter per kilogram)	Unit	UCUM	Canonical Unit	S	m3.g-1	19700101	20991231	
+44777550	cubical meter per gram and second (10*3 cubical meter per kg and second)	Unit	UCUM	Canonical Unit	S	m3.g-1.s-1	19700101	20991231	
+44777553	cubical meter gram per second and square coulomb (10*-3 ohm meter)	Unit	UCUM	Canonical Unit	S	m3.g.s-1.C-2	19700101	20991231	
+44777544	cubical meter second	Unit	UCUM	Canonical Unit	S	m3.s	19700101	20991231	
+44777539	per cubical meter and second	Unit	UCUM	Canonical Unit	S	m-3.s-1	19700101	20991231	
+44777523	cubical meter per second	Unit	UCUM	Canonical Unit	S	m3.s-1	19700101	20991231	
+44777551	meter cubical meter square second per gram (10*3 cubical meter per pascal)	Unit	UCUM	Canonical Unit	S	m4.g-1.s2	19700101	20991231	
+44777525	gram per meter and cubical meter and second (10*-3 newton second per meter)	Unit	UCUM	Canonical Unit	S	m-4.g.s-1	19700101	20991231	
+44777524	gram per cubical meter and cubical meter and second (10*-3 newton second per meter and square meter)	Unit	UCUM	Canonical Unit	S	m-6.g.s-1	19700101	20991231	
+710220	milliampere	Unit	UCUM	Unit	S	mA	20220506	20991231	
+720858	millibar	Unit	UCUM	Unit	S	mbar	20220407	20991231	
+720867	millibar per liter	Unit	UCUM	Unit	S	mbar/L	20220407	20991231	
+45891007	Megabecquerel	Unit	UCUM	Unit	S	MBq	19700101	20991231	
+45891032	Megabecquerel per milliliter	Unit	UCUM	Unit	S	MBq/mL	19700101	20991231	
+44819154	millicurie	Unit	UCUM	Unit	S	mCi	19700101	20991231	
+9358	mac lagan unit	Unit	UCUM	Unit	S	[mclg'U]	19700101	20991231	
+9356	electron mass	Unit	UCUM	Unit	S	[m_e]	19700101	20991231	
+8604	percent mean normal	Unit	UCUM	Unit	S	%{mean'normal}	19700101	20991231	
+8624	MEG per liter	Unit	UCUM	Unit		{MEG}/L	19700101	20140103	D
+9359	mesh	Unit	UCUM	Unit	S	[mesh_i]	19700101	20991231	
+9360	metabolic equivalent	Unit	UCUM	Unit	S	[MET]	19700101	20991231	
+710241	megaelectronvolt	Unit	UCUM	Unit	S	MeV	20220506	20991231	
+9256	per milligram	Unit	UCUM	Unit	S	/mg	19700101	20991231	
+44777532	gram meter (10*-3 kilogram meter)	Unit	UCUM	Canonical Unit	S	m.g	19700101	20991231	
+8576	milligram	Unit	UCUM	Unit	S	mg	19700101	20991231	
+8908	milligram per 12 hours	Unit	UCUM	Unit	S	mg/(12.h)	19700101	20991231	
+45891021	milligram per 16 hours	Unit	UCUM	Unit	S	mg/(16.h)	19700101	20991231	
+8909	milligram per 24 hours	Unit	UCUM	Unit	S	mg/(24.h)	19700101	20991231	
+45891022	milligram per 72 hours	Unit	UCUM	Unit	S	mg/(72.h)	19700101	20991231	
+45891016	milligram per actuation	Unit	UCUM	Unit	S	mg/{actuat}	19700101	20991231	
+45891002	milligram per application	Unit	UCUM	Unit	S	mg/[App]	19700101	20991231	
+8794	Milligram C per Liter	Unit	UCUM	Unit		mg.{c}/L	19700101	20140103	D
+45891036	milligram per square centimeter	Unit	UCUM	Unit	S	mg/cm2	19700101	20991231	
+9566	milligram of creatinine	Unit	UCUM	Unit	S	mg{creat}	19700101	20991231	
+8700	Milligram per day	Unit	UCUM	Unit		mg/d	19700101	20140103	U
+8840	milligram per deciliter	Unit	UCUM	Unit	S	mg/dL	19700101	20991231	
+720861	milligram per deciliter per 24 hours	Unit	UCUM	Unit	S	mg/dL/(24.h)	20220407	20991231	
+8954	milligram per deciliter adult	Unit	UCUM	Unit	S	mg/dL{adult}	19700101	20991231	
+9028	milligram per deciliter calculated	Unit	UCUM	Unit	S	mg/dL{calc}	19700101	20991231	
+9098	milligram per deciliter of phenylalanine	Unit	UCUM	Unit	S	mg/dL{phenylalanine}	19700101	20991231	
+45890997	milligram per dose	Unit	UCUM	Unit	S	mg/[dose]	19700101	20991231	
+44777663	milligram of fibrinogen equivalent unit per liter	Unit	UCUM	Unit	S	mg{FEU}/L	19700101	20991231	
+8723	milligram per gram	Unit	UCUM	Unit	S	mg/g	19700101	20991231	
+9017	milligram per gram of creatinine	Unit	UCUM	Unit	S	mg/g{creat}	19700101	20991231	
+44777608	milligram per gram dry weight	Unit	UCUM	Unit	S	mg/g{dry'wt}	19700101	20991231	
+710206	milligram per gram of hemoglobin	Unit	UCUM	Unit	S	mg/g{HGB}	20220506	20991231	
+44777609	milligram per gram wet weight	Unit	UCUM	Unit	S	mg/g{wet'wt}	19700101	20991231	
+44777610	milligram per hour	Unit	UCUM	Unit	S	mg/h	19700101	20991231	
+9562	milligram per kilogram	Unit	UCUM	Unit	S	mg/kg	19700101	20991231	
+9691	milligram per kilogram per hour	Unit	UCUM	Unit	S	mg/kg/h	19700101	20991231	
+9692	milligram per kilogram per minute	Unit	UCUM	Unit	S	mg/kg/min	19700101	20991231	
+8751	milligram per liter	Unit	UCUM	Unit	S	mg/L	19700101	20991231	
+9563	milligram per square meter	Unit	UCUM	Unit	S	mg/m2	19700101	20991231	
+9564	milligram per cubic meter	Unit	UCUM	Unit	S	mg/m3	19700101	20991231	
+9565	milligram per milligram	Unit	UCUM	Unit	S	mg/mg	19700101	20991231	
+9074	milligram per milligram of creatinine	Unit	UCUM	Unit	S	mg/mg{creat}	19700101	20991231	
+44777611	milligram per minute	Unit	UCUM	Unit	S	mg/min	19700101	20991231	
+8861	milligram per milliliter	Unit	UCUM	Unit	S	mg/mL	19700101	20991231	
+44777612	milligram per millimole	Unit	UCUM	Unit	S	mg/mmol	19700101	20991231	
+9075	milligram per millimole of creatinine	Unit	UCUM	Unit	S	mg/mmol{creat}	19700101	20991231	
+9567	milligram of phenylketones per deciliter	Unit	UCUM	Unit	S	mg{phenylketone}/dL	19700101	20991231	
+710224	milligram radium equivalent	Unit	UCUM	Unit	S	mg{Ra}eq	20220506	20991231	
+44777542	gram meter per second (10*-3 kilogram meter per second)	Unit	UCUM	Canonical Unit	S	m.g.s-1	19700101	20991231	
+8776	milligram per sample	Unit	UCUM	Unit	S	mg/{sample}	19700101	20991231	
+8724	milligram per time	Unit	UCUM	Unit	S	mg/{time}	19700101	20991231	
+9560	milligram per total volume	Unit	UCUM	Unit	S	mg/{tot'vol}	19700101	20991231	
+32996	milligravity unit	Unit	UCUM	Unit	S	mgu	19700101	20991231	
+9561	milligram per volume	Unit	UCUM	Unit	S	mg/{vol}	19700101	20991231	
+710255	milligray	Unit	UCUM	Unit	S	mGy	20220506	20991231	
+9547	meter of water column	Unit	UCUM	Unit	S	m[H2O]	19700101	20991231	
+9548	meter of mercury column	Unit	UCUM	Unit	S	m[Hg]	19700101	20991231	
+9568	mho	Unit	UCUM	Unit	S	mho	19700101	20991231	
+710229	megahertz	Unit	UCUM	Unit	S	MHz	20220506	20991231	
+9361	mile (British)	Unit	UCUM	Unit	S	[mi_br]	19700101	20991231	
+9362	statute mile	Unit	UCUM	Unit	S	[mi_i]	19700101	20991231	
+9364	mil (international)	Unit	UCUM	Unit	S	[mil_i]	19700101	20991231	
+9365	mil (US)	Unit	UCUM	Unit	S	[mil_us]	19700101	20991231	
+8541	per minute	Unit	UCUM	Unit	S	/min	19700101	20991231	
+8550	minute	Unit	UCUM	Unit	S	min	19700101	20991231	
+9366	minim (British)	Unit	UCUM	Unit	S	[min_br]	19700101	20991231	
+9367	minim (US)	Unit	UCUM	Unit	S	[min_us]	19700101	20991231	
+32660	mitoses per 10 high power field	Unit	UCUM	Unit	S	{mitoses}/[10 HPF]	19700101	20991231	
+32661	mitoses per 40 high power field	Unit	UCUM	Unit	S	{mitoses}/[40 HPF]	19700101	20991231	
+32662	mitoses per 50 high power field	Unit	UCUM	Unit	S	{mitoses}/[50 HPF]	19700101	20991231	
+32667	mitoses per square millimeter	Unit	UCUM	Unit	S	{mitoses}/mm2	19700101	20991231	
+9363	mile (US)	Unit	UCUM	Unit	S	[mi_us]	19700101	20991231	
+710193	megajoule	Unit	UCUM	Unit	S	MJ	20220506	20991231	
+710250	megajoule per 12 hours	Unit	UCUM	Unit	S	MJ/(12.h)	20220506	20991231	
+710249	megajoule per 24 hours	Unit	UCUM	Unit	S	MJ/(24.h)	20220506	20991231	
+710248	megajoule per hour	Unit	UCUM	Unit	S	MJ/h	20220506	20991231	
+710252	megajoule per kilogram	Unit	UCUM	Unit	S	MJ/kg	20220506	20991231	
+710190	millikatal	Unit	UCUM	Unit	S	mkat	20220506	20991231	
+8927	meter per square kilogram	Unit	UCUM	Unit	S	m/kg2	19700101	20991231	
+9257	per milliliter	Unit	UCUM	Unit	S	/mL	19700101	20991231	
+8587	milliliter	Unit	UCUM	Unit	S	mL	19700101	20991231	
+44777664	milliliter per 12 hours	Unit	UCUM	Unit	S	mL/(12.h)	19700101	20991231	
+8930	milliliter per 24 hours	Unit	UCUM	Unit	S	mL/(24.h)	19700101	20991231	
+720866	millibar per centimeter of water	Unit	UCUM	Unit	S	ml/cm [H2O]	20220407	20991231	
+9570	milliliter per deciliter	Unit	UCUM	Unit	S	mL/dL	19700101	20991231	
+45891035	milliliter per gram	Unit	UCUM	Unit	S	mL/g	19700101	20991231	
+44777613	milliliter per hour	Unit	UCUM	Unit	S	mL/h	19700101	20991231	
+9569	milliliter per heart beat	Unit	UCUM	Unit	S	mL/{hb}	19700101	20991231	
+9571	milliliter per kilogram	Unit	UCUM	Unit	S	mL/kg	19700101	20991231	
+33014	milliliter per kilogram per 24 hours	Unit	UCUM	Unit	S	mL/kg/(24.h)	19700101	20991231	
+720838	milliliter per kilogram per minute	Unit	UCUM	Unit		ml/kg/min	20220407	20220523	U
+710219	milliliter per kilogram per minute	Unit	UCUM	Unit	S	mL/kg/min	20220506	20991231	
+45891013	milliliter per liter	Unit	UCUM	Unit	S	mL/L	19700101	20991231	
+720857	milliliter per pound (US)	Unit	UCUM	Unit	S	mL/[lb_us]	20220407	20991231	
+32739	milliliter per square meter	Unit	UCUM	Unit	S	ml/m2	19700101	20991231	
+720871	milliliter per square meter per beat	Unit	UCUM	Unit	S	ml/m2/{beat}	20220407	20991231	
+720865	milliliter per millibar	Unit	UCUM	Unit	S	ml/mbar	20220407	20991231	
+8795	milliliter per minute	Unit	UCUM	Unit	S	mL/min	19700101	20991231	
+720870	milliliter per minute per 1.73 square meter	Unit	UCUM	Unit	S	mL/min/(173.10*-2.m2)	20220407	20991231	
+9062	Milliliter per minute per 1.73 meter	Unit	UCUM	Unit		mL/min/{1.73}m	19700101	20140103	U
+9117	milliliter per minute per 1.73 square meter	Unit	UCUM	Unit		mL/min/1.73.m2	19700101	20220328	U
+710209	milliliter per minute per kilogram	Unit	UCUM	Unit	S	mL/min/kg	20220506	20991231	
+710208	milliliter per minute per square meter	Unit	UCUM	Unit	S	mL/min/m2	20220506	20991231	
+32699	milliliter per minute per millimeter mercury column	Unit	UCUM	Unit	S	mL/min/mm[Hg]	19700101	20991231	
+45891033	milliliter per milliliter	Unit	UCUM	Unit	S	mL/mL	19700101	20991231	
+44777614	milliliter per second	Unit	UCUM	Unit	S	mL/s	19700101	20991231	
+8493	MLS	Unit	UCUM	Unit		{MLS}	19700101	20140103	D
+720869	milliliter per second per 1.73 square meter	Unit	UCUM	Unit	S	mL/s/(173.10*-2.m2)	20220407	20991231	
+710207	milliliter per second per square meter	Unit	UCUM	Unit	S	mL/s/m2	20220506	20991231	
+8675	milliliter per specimen	Unit	UCUM	Unit	S	mL/{spec}	19700101	20991231	
+8588	millimeter	Unit	UCUM	Unit	S	mm	19700101	20991231	
+9572	square millimeter	Unit	UCUM	Unit	S	mm2	19700101	20991231	
+8785	per cubic millimeter	Unit	UCUM	Unit	S	/mm3	19700101	20991231	
+8686	cubic millimeter	Unit	UCUM	Unit	S	mm3	19700101	20991231	
+8752	millimeter per hour	Unit	UCUM	Unit	S	mm/h	19700101	20991231	
+8876	millimeter mercury column	Unit	UCUM	Unit	S	mm[Hg]	19700101	20991231	
+32704	millimeter mercury column-minute per liter	Unit	UCUM	Unit	S	mm[Hg].min/L	19700101	20991231	
+8891	Meter per cubic millimeter	Unit	UCUM	Unit		m/mm3	19700101	20140103	D
+9573	millimole	Unit	UCUM	Unit	S	mmol	19700101	20991231	
+8910	millimole per 24 hours	Unit	UCUM	Unit	S	mmol/(24.h)	19700101	20991231	
+9575	millimole per deciliter	Unit	UCUM	Unit	S	mmol/dL	19700101	20991231	
+9576	millimole per gram	Unit	UCUM	Unit	S	mmol/g	19700101	20991231	
+9018	millimole per gram of creatinine	Unit	UCUM	Unit	S	mmol/g{creat}	19700101	20991231	
+44777616	millimole per gram of wet weight	Unit	UCUM	Unit	S	mmol/g{dry'wt}	19700101	20991231	
+44777617	millimole per gram of dry weight	Unit	UCUM	Unit	S	mmol/g{wet'wt}	19700101	20991231	
+710201	millimole per hour	Unit	UCUM	Unit	S	mmol/h	20220506	20991231	
+9577	millimole per kilogram	Unit	UCUM	Unit	S	mmol/kg	19700101	20991231	
+8753	millimole per liter	Unit	UCUM	Unit	S	mmol/L	19700101	20991231	
+9578	millimole per square meter	Unit	UCUM	Unit	S	mmol/m2	19700101	20991231	
+710200	millimole per minute	Unit	UCUM	Unit	S	mmol/min	20220506	20991231	
+45891014	millimole per milliliter	Unit	UCUM	Unit	S	mmol/mL	19700101	20991231	
+44777618	millimole per millimole	Unit	UCUM	Unit	S	mmol/mmol	19700101	20991231	
+44777619	millimole per millimole of creatinine	Unit	UCUM	Unit	S	mmol/mmol{creat}	19700101	20991231	
+9579	millimole per mole	Unit	UCUM	Unit	S	mmol/mol	19700101	20991231	
+9019	millimole per mole of creatinine	Unit	UCUM	Unit	S	mmol/mol{creat}	19700101	20991231	
+44777620	millimole per mole of hemoglobin	Unit	UCUM	Unit	S	mmol/mol{HGB}	19700101	20991231	
+44777615	millimole per specimen	Unit	UCUM	Unit	S	mmol/{spec}	19700101	20991231	
+9574	millimole per total volume	Unit	UCUM	Unit	S	mmol/{tot'vol}	19700101	20991231	
+44777658	per month	Unit	UCUM	Unit	S	/mo	19700101	20991231	
+9580	month	Unit	UCUM	Unit	S	mo	19700101	20991231	
+9581	mean gregorian month	Unit	UCUM	Unit	S	mo_g	19700101	20991231	
+9582	mean julian month	Unit	UCUM	Unit	S	mo_j	19700101	20991231	
+9584	mole	Unit	UCUM	Unit	S	mol	19700101	20991231	
+8520	Molar	Unit	UCUM	Unit		{molar}	19700101	20140103	U
+9585	mole per kilogram	Unit	UCUM	Unit	S	mol/kg	19700101	20991231	
+9586	mole per liter	Unit	UCUM	Unit	S	mol/L	19700101	20991231	
+9587	mole per cubic meter	Unit	UCUM	Unit	S	mol/m3	19700101	20991231	
+9588	mole per milliliter	Unit	UCUM	Unit	S	mol/mL	19700101	20991231	
+44777621	mole per second	Unit	UCUM	Unit	S	mol/s	19700101	20991231	
+8494	multiple of the median	Unit	UCUM	Unit	S	{MOM}	19700101	20991231	
+9583	synodal month	Unit	UCUM	Unit	S	mo_s	19700101	20991231	
+8605	milliosmole	Unit	UCUM	Unit	S	mosm	19700101	20991231	
+8862	milliosmole per kilogram	Unit	UCUM	Unit	S	mosm/kg	19700101	20991231	
+8991	milliosmole per kilogram of H20	Unit	UCUM	Unit	S	mosm/kg{H20}	19700101	20991231	
+9591	milliosmole per liter	Unit	UCUM	Unit	S	mosm/L	19700101	20991231	
+45891004	month supply	Unit	UCUM	Unit	S	mo{supply}	19700101	20991231	
+8534	Motile	Unit	UCUM	Unit		{motile}	19700101	20140103	U
+9357	proton mass	Unit	UCUM	Unit	S	[m_p]	19700101	20991231	
+44777622	millipascal second	Unit	UCUM	Unit	S	mPa.s	19700101	20991231	
+44777623	millipascal	Unit	UCUM	Unit	S	mPas	19700101	20991231	
+9101	IgM phospholipid unit	Unit	UCUM	Unit	S	[MPL'U]	19700101	20991231	
+9158	IgM phospholipid unit per milliliter	Unit	UCUM	Unit	S	[MPL'U]/mL	19700101	20991231	
+8548	MPS IgM	Unit	UCUM	Unit		[{MPS'IgM}]	19700101	20140103	U
+8495	anti-phosphatidylserine IgM concentration (MPS) unit	Unit	UCUM	Unit	S	[MPS'U]	19700101	20991231	
+8836	anti-phosphatidylserine IgM concentration (MPS) unit per milliliter	Unit	UCUM	Unit	S	[MPS'U]/mL	19700101	20991231	
+44777606	meter per second	Unit	UCUM	Unit	S	m/s	19700101	20991231	
+9593	millisecond	Unit	UCUM	Unit	S	ms	19700101	20991231	
+9592	megasecond	Unit	UCUM	Unit	S	Ms	19700101	20991231	
+44777522	meter per second	Unit	UCUM	Canonical Unit	S	m.s-1	19700101	20991231	
+44777547	meter per square second	Unit	UCUM	Canonical Unit	S	m.s-2	19700101	20991231	
+44777607	meter per square second	Unit	UCUM	Unit	S	m/s2	19700101	20991231	
+8547	M (anti-prothrombin IgG concentration) unit	Unit	UCUM	Unit	S	[M'U]	19700101	20991231	
+9369	permeability of vacuum	Unit	UCUM	Unit	S	[mu_0]	19700101	20991231	
+8773	Meter per microliter	Unit	UCUM	Unit		m/uL	19700101	20140103	D
+32608	mutations per megabase	Unit	UCUM	Unit	S	{mutations}/{megabase}	19700101	20991231	
+720843	millivolt	Unit	UCUM	Unit	S	mV	20220407	20991231	
+710221	megavolt	Unit	UCUM	Unit	S	MV	20220506	20991231	
+710232	milliwatt	Unit	UCUM	Unit	S	mW	20220506	20991231	
+9598	maxwell	Unit	UCUM	Unit	S	Mx	19700101	20991231	
+9599	newton	Unit	UCUM	Unit	S	N	19700101	20991231	
+8497		Unit	UCUM	Unit		{n/a}	19700101	20160311	D
+8637	negative count	Unit	UCUM	Unit	S	[neg'count]	19700101	20991231	
+9600	nanogram	Unit	UCUM	Unit	S	ng	19700101	20991231	
+44777624	nanogram per 24 hours	Unit	UCUM	Unit	S	ng/(24.h)	19700101	20991231	
+8817	nanogram per deciliter	Unit	UCUM	Unit	S	ng/dL	19700101	20991231	
+8992	nanogram per deciliter per hour	Unit	UCUM	Unit	S	ng/dL/h	19700101	20991231	
+32707	nanogram of fibrinogen equivalent unit per milliliter	Unit	UCUM	Unit	S	ng{FEU}/mL	19700101	20991231	
+8701	nanogram per gram	Unit	UCUM	Unit	S	ng/g	19700101	20991231	
+9601	nanogram per gram of creatinine	Unit	UCUM	Unit	S	ng/g{creat}	19700101	20991231	
+9145	nanogram per hour per milligram of total protein	Unit	UCUM	Unit	S	ng/h/mg{tot'prot}	19700101	20991231	
+9602	nanogram per kilogram	Unit	UCUM	Unit	S	ng/kg	19700101	20991231	
+720839	nanogram per kilogram per minute	Unit	UCUM	Unit	S	ng/kg/min	20220407	20991231	
+8725	nanogram per liter	Unit	UCUM	Unit	S	ng/L	19700101	20991231	
+9603	nanogram per square meter	Unit	UCUM	Unit	S	ng/m2	19700101	20991231	
+8818	nanogram per milligram	Unit	UCUM	Unit	S	ng/mg	19700101	20991231	
+44777625	nanogram per milligram of creatinine	Unit	UCUM	Unit	S	ng/mg{creat}	19700101	20991231	
+9604	nanogram per milligram of protein	Unit	UCUM	Unit	S	ng/mg{prot}	19700101	20991231	
+8842	nanogram per milliliter	Unit	UCUM	Unit	S	ng/mL	19700101	20991231	
+9020	nanogram per milliliter and hour	Unit	UCUM	Unit	S	ng/mL/h	19700101	20991231	
+9113	nanogram per milliliter of red blood cells	Unit	UCUM	Unit	S	ng/mL{RBC}	19700101	20991231	
+9081	nanogram per milliliter of trypsinogen	Unit	UCUM	Unit	S	ng/mL{trypsinogen}	19700101	20991231	
+720859	nanogram per nanogram	Unit	UCUM	Unit	S	ng/ng	20220407	20991231	
+32965	nanogram per microliter	Unit	UCUM	Unit	S	ng/uL	19700101	20991231	
+44777626	nanokatal	Unit	UCUM	Unit	S	nkat	19700101	20991231	
+33013	nanokatal per liter	Unit	UCUM	Unit	S	nkat/L	19700101	20991231	
+9606	nanoliter	Unit	UCUM	Unit	S	nL	19700101	20991231	
+45891025	nanoliter per milliliter	Unit	UCUM	Unit	S	nL/mL	19700101	20991231	
+8577	nanometer	Unit	UCUM	Unit	S	nm	19700101	20991231	
+9370	nautical mile (British)	Unit	UCUM	Unit	S	[nmi_br]	19700101	20991231	
+9371	nautical mile (international)	Unit	UCUM	Unit	S	[nmi_i]	19700101	20991231	
+8754	NMIL per milliliter	Unit	UCUM	Unit		{NMIL}/mL	19700101	20140103	D
+8755	Nanometer per Liter	Unit	UCUM	Unit		nm/L	19700101	20140103	U
+9607	nanomole	Unit	UCUM	Unit	S	nmol	19700101	20991231	
+44777628	nanomole per billion platelets	Unit	UCUM	Unit	S	nmol/10*9.{platelets}	19700101	20991231	
+44777627	nanomole per 24 hours	Unit	UCUM	Unit	S	nmol/(24.h)	19700101	20991231	
+720864	nanomole per 24 hours per milligram	Unit	UCUM	Unit	S	nmol/(24.h)/mg	20220407	20991231	
+8665	nanomole of bone collagen equivalent	Unit	UCUM	Unit	S	nmol{BColl}eq	19700101	20991231	
+8881	nanomole of bone collagen equivalent per liter	Unit	UCUM	Unit	S	nmol{BColl}eq/L	19700101	20991231	
+9114	nanomole of bone collagen equivalent per millimole of creatinine	Unit	UCUM	Unit	S	nmol{BColl}eq/mmol{creat}	19700101	20991231	
+9608	nanomole per deciliter	Unit	UCUM	Unit	S	nmol/dL	19700101	20991231	
+9609	nanomole per gram	Unit	UCUM	Unit	S	nmol/g	19700101	20991231	
+9610	nanomole per gram of creatinine	Unit	UCUM	Unit	S	nmol/g{creat}	19700101	20991231	
+710203	nanomole per hour	Unit	UCUM	Unit	S	nmol/h	20220506	20991231	
+44777629	nanomole per hour and gram	Unit	UCUM	Unit	S	nmol/h/g	19700101	20991231	
+44777630	nanomole per hour and liter	Unit	UCUM	Unit	S	nmol/h/L	19700101	20991231	
+8993	nanomole per hour and milligram	Unit	UCUM	Unit	S	nmol/h/mg	19700101	20991231	
+44777631	nanomole per hour and milliliter	Unit	UCUM	Unit	S	nmol/h/mL	19700101	20991231	
+44777632	nanomole per hour and milliliter red blood cells	Unit	UCUM	Unit	S	nmol/h/mL{RBC}	19700101	20991231	
+44777633	nanomole per kilogram	Unit	UCUM	Unit	S	nmol/kg	19700101	20991231	
+8736	nanomole per liter	Unit	UCUM	Unit	S	nmol/L	19700101	20991231	
+9611	nanomole per milligram	Unit	UCUM	Unit	S	nmol/mg	19700101	20991231	
+44777634	nanomole per milligram of creatinine	Unit	UCUM	Unit	S	nmol/mg{creat}	19700101	20991231	
+720851	nanomole per minute per mg of protein	Unit	UCUM	Unit	S	nmol/min/mg{protein}	20220407	20991231	
+44777635	nanomole per minute and milliliter	Unit	UCUM	Unit	S	nmol/min/mL	19700101	20991231	
+8843	nanomole per milliliter	Unit	UCUM	Unit	S	nmol/mL	19700101	20991231	
+9612	nanomole per millimole	Unit	UCUM	Unit	S	nmol/mmol	19700101	20991231	
+9613	NanoMoles Per MilliMole Creatinine [Substance Ratio Or Substance Fraction Units]	Unit	UCUM	Unit		nmol/mmol{Cre}	19700101	20140103	U
+9063	nanomole per millimole of creatinine	Unit	UCUM	Unit	S	nmol/mmol{creat}	19700101	20991231	
+9614	nanomole per mole	Unit	UCUM	Unit	S	nmol/mol	19700101	20991231	
+44777636	nanomole per mole of creatinine	Unit	UCUM	Unit	S	nmol/mol{creat}	19700101	20991231	
+44777637	nanomole per second	Unit	UCUM	Unit	S	nmol/s	19700101	20991231	
+8955	nanomole per second and liter	Unit	UCUM	Unit	S	nmol/s/L	19700101	20991231	
+8535	Normal	Unit	UCUM	Unit		{normal}	19700101	20140103	U
+8613	normal forms	Unit	UCUM	Unit	S	%{normal'forms}	19700101	20991231	
+9681	percent normal pooled plasma	Unit	UCUM	Unit	S	%{normal'plasma}	19700101	20991231	
+8508	Note	Unit	UCUM	Unit		{note}	19700101	20160311	D
+9615	neper	Unit	UCUM	Unit	S	Np	19700101	20991231	
+9616	nanosecond	Unit	UCUM	Unit	S	ns	19700101	20991231	
+8589	O.D. ratio	Unit	UCUM	Unit	S	[OD'ratio]	19700101	20991231	
+8590	O.D. unit	Unit	UCUM	Unit	S	[OD'U]	19700101	20991231	
+9617	oersted	Unit	UCUM	Unit	S	Oe	19700101	20991231	
+9227	percent of bacteria	Unit	UCUM	Unit	S	%{of'bacteria}	19700101	20991231	
+8737	percent hemoglobin	Unit	UCUM	Unit	S	%{of'HGB}	19700101	20991231	
+8626	Of Inhibition	Unit	UCUM	Unit		[{of'inhibition}]	19700101	20140103	U
+9228	percent of lymphocytes	Unit	UCUM	Unit	S	%{of'lymphos}	19700101	20991231	
+8648	percent of normal	Unit	UCUM	Unit	S	%{of'normal}	19700101	20991231	
+8578	of normal	Unit	UCUM	Unit	S	[of'normal]	19700101	20991231	
+8561	Of Total	Unit	UCUM	Unit		[{of'tot}]	19700101	20140103	U
+8591	Of Total H	Unit	UCUM	Unit		[{of'total'H}]	19700101	20140103	U
+8758	Of Total Hemoglobin	Unit	UCUM	Unit		[{of'tot'HGB}]	19700101	20140103	U
+9229	percent of white blood cells	Unit	UCUM	Unit	S	%{of'WBC}	19700101	20991231	
+9618	ohm	Unit	UCUM	Unit	S	Ohm	19700101	20991231	
+9619	osmole	Unit	UCUM	Unit	S	osm	19700101	20991231	
+9620	osmole per kilogram	Unit	UCUM	Unit	S	osm/kg	19700101	20991231	
+9621	osmole per liter	Unit	UCUM	Unit	S	osm/L	19700101	20991231	
+9230	percent oxygen	Unit	UCUM	Unit	S	%{oxygen}	19700101	20991231	
+9372	ounce (apothecary)	Unit	UCUM	Unit	S	[oz_ap]	19700101	20991231	
+9373	ounce (avoirdupois)	Unit	UCUM	Unit	S	[oz_av]	19700101	20991231	
+9374	ounce (troy system)	Unit	UCUM	Unit	S	[oz_tr]	19700101	20991231	
+9622	poise	Unit	UCUM	Unit	S	P	19700101	20991231	
+9623	pascal	Unit	UCUM	Unit	S	Pa	19700101	20991231	
+8616	Panbio bacterial IgG and IgM unit	Unit	UCUM	Unit	S	[PANBIO'U]	19700101	20991231	
+9624	parsec	Unit	UCUM	Unit	S	pc	19700101	20991231	
+9376	pica	Unit	UCUM	Unit	S	[pca]	19700101	20991231	
+9377	printer's pica	Unit	UCUM	Unit	S	[pca_pr]	19700101	20991231	
+9375	pace	Unit	UCUM	Unit	S	[pc_br]	19700101	20991231	
+9378	prism diopter	Unit	UCUM	Unit	S	[p'diop]	19700101	20991231	
+9379	plaque forming unit	Unit	UCUM	Unit	S	[PFU]	19700101	20991231	
+8641	poise per gram	Unit	UCUM	Unit	S	p/g	19700101	20991231	
+8564	picogram	Unit	UCUM	Unit	S	pg	19700101	20991231	
+8704	picogram per cell	Unit	UCUM	Unit	S	pg/{cell}	19700101	20991231	
+8820	picogram per deciliter	Unit	UCUM	Unit	S	pg/dL	19700101	20991231	
+720850	picogram per gram of creatinine	Unit	UCUM	Unit	S	pg/g{creat}	20220407	20991231	
+9625	picogram per liter	Unit	UCUM	Unit	S	pg/L	19700101	20991231	
+720862	picogram per milligram of creatinine	Unit	UCUM	Unit	S	pg/mg{creat}	20220407	20991231	
+8845	picogram per milliliter	Unit	UCUM	Unit	S	pg/mL	19700101	20991231	
+9626	picogram per millimeter	Unit	UCUM	Unit	S	pg/mm	19700101	20991231	
+44777638	picogram per microliter	Unit	UCUM	Unit	S	pg/uL	19700101	20991231	
+9627	phot	Unit	UCUM	Unit	S	ph	19700101	20991231	
+8482	pH	Unit	UCUM	Unit	S	pH	19700101	20991231	
+8569	pH unit	Unit	UCUM	Unit		[{pH'U}]	19700101	20140103	U
+9380	the number pi	Unit	UCUM	Unit	S	[pi]	19700101	20991231	
+9381	pied french foot	Unit	UCUM	Unit	S	[pied]	19700101	20991231	
+44777639	picokatal	Unit	UCUM	Unit	S	pkat	19700101	20991231	
+9382	peck (British)	Unit	UCUM	Unit	S	[pk_br]	19700101	20991231	
+9383	peck (US)	Unit	UCUM	Unit	S	[pk_us]	19700101	20991231	
+9628	picoliter	Unit	UCUM	Unit	S	pL	19700101	20991231	
+9629	picometer	Unit	UCUM	Unit	S	pm	19700101	20991231	
+9630	picomole	Unit	UCUM	Unit	S	pmol	19700101	20991231	
+44777640	picomole per 24 hours	Unit	UCUM	Unit	S	pmol/(24.h)	19700101	20991231	
+9148	picomole per eight times 10 to the 8th red blood cells	Unit	UCUM	Unit	S	pmol/8.10*8.{RBC}	19700101	20991231	
+9631	picomole per deciliter	Unit	UCUM	Unit	S	pmol/dL	19700101	20991231	
+44777641	picomole per gram hemoglobin	Unit	UCUM	Unit	S	pmol/g{HGB}	19700101	20991231	
+44777642	picomole per hour and milligram of hemoglobin	Unit	UCUM	Unit	S	pmol/h/mg{HGB}	19700101	20991231	
+720863	picomole per hour per microliter	Unit	UCUM	Unit	S	pmol/hr/uL	20220407	20991231	
+44777643	picomole per kilogram	Unit	UCUM	Unit	S	pmol/kg	19700101	20991231	
+8729	picomole per liter	Unit	UCUM	Unit	S	pmol/L	19700101	20991231	
+32696	picomole per milligram	Unit	UCUM	Unit	S	pmol/mg	19700101	20991231	
+9632	picomole per milliliter	Unit	UCUM	Unit	S	pmol/mL	19700101	20991231	
+9633	picomole per micromole	Unit	UCUM	Unit	S	pmol/umol	19700101	20991231	
+9384	point	Unit	UCUM	Unit	S	[pnt]	19700101	20991231	
+9385	printer's point	Unit	UCUM	Unit	S	[pnt_pr]	19700101	20991231	
+45744816	protein nitrogen unit	Unit	UCUM	Unit	S	{PNU}	19700101	20991231	
+9231	percent positive	Unit	UCUM	Unit	S	%{positive}	19700101	20991231	
+9386	pouce french inch	Unit	UCUM	Unit	S	[pouce]	19700101	20991231	
+8703	parts per billion	Unit	UCUM	Unit	S	[ppb]	19700101	20991231	
+9387	parts per million	Unit	UCUM	Unit	S	[ppm]	19700101	20991231	
+9154	parts per thousand	Unit	UCUM	Unit	S	[ppth]	19700101	20991231	
+9155	parts per trillion	Unit	UCUM	Unit	S	[pptr]	19700101	20991231	
+9388	peripheral vascular resistance unit	Unit	UCUM	Unit	S	[PRU]	19700101	20991231	
+9634	picosecond	Unit	UCUM	Unit	S	ps	19700101	20991231	
+9389	pound per sqare inch	Unit	UCUM	Unit	S	[psi]	19700101	20991231	
+9390	pint (British)	Unit	UCUM	Unit	S	[pt_br]	19700101	20991231	
+9391	pint (US)	Unit	UCUM	Unit	S	[pt_us]	19700101	20991231	
+9392	pennyweight	Unit	UCUM	Unit	S	[pwt_tr]	19700101	20991231	
+9393	quart (British)	Unit	UCUM	Unit	S	[qt_br]	19700101	20991231	
+9394	quart (US)	Unit	UCUM	Unit	S	[qt_us]	19700101	20991231	
+9635	roentgen	Unit	UCUM	Unit	S	R	19700101	20991231	
+9636	radian	Unit	UCUM	Unit	S	rad	19700101	20991231	
+9637	radiation absorbed dose	Unit	UCUM	Unit	S	RAD	19700101	20991231	
+710245	radiation absorbed dose per minute	Unit	UCUM	Unit	S	RAD/min	20220506	20991231	
+8523	ratio	Unit	UCUM	Unit	S	{ratio}	19700101	20991231	
+8606	ratio unit	Unit	UCUM	Unit	S	[ratio'U]	19700101	20991231	
+9427	red blood cell count [number]	Unit	UCUM	Unit		{rbc}	19700101	20140103	D
+44777571	red blood cells per high power field	Unit	UCUM	Unit	S	{RBC}/[HPF]	19700101	20991231	
+9428	red blood cells per microliter	Unit	UCUM	Unit	S	{RBC}/uL	19700101	20991231	
+9395	Ramden's chain	Unit	UCUM	Unit	S	[rch_us]	19700101	20991231	
+9396	rod (British)	Unit	UCUM	Unit	S	[rd_br]	19700101	20991231	
+9397	rod (US)	Unit	UCUM	Unit	S	[rd_us]	19700101	20991231	
+8530	{ref}	Unit	UCUM	Unit		{ref}	19700101	20140103	D
+8514	% REF	Unit	UCUM	Unit		%{REF}	19700101	20140103	D
+8598	relative	Unit	UCUM	Unit	S	{relative}	19700101	20991231	
+9429	Relative Percent [General Fraction Unit]	Unit	UCUM	Unit		{Relative}%	19700101	20140103	D
+44777572	relative to H2O	Unit	UCUM	Unit	S	{relative'to'H2O}	19700101	20991231	
+44777573	relative to saline	Unit	UCUM	Unit	S	{relative'to'saline}	19700101	20991231	
+9638	radiation equivalent man	Unit	UCUM	Unit	S	REM	19700101	20991231	
+8498	RES	Unit	UCUM	Unit		{res}	19700101	20140103	D
+8607	Result unit	Unit	UCUM	Unit		[{res'U}]	19700101	20140103	D
+8499	REV	Unit	UCUM	Unit		{rev}	19700101	20140103	D
+710243	roentgen per hour	Unit	UCUM	Unit	S	R/h	20220506	20991231	
+8509	risk	Unit	UCUM	Unit	S	{risk}	19700101	20991231	
+9398	link for Ramden's chain	Unit	UCUM	Unit	S	[rlk_us]	19700101	20991231	
+710244	roentgen per minute	Unit	UCUM	Unit	S	R/min	20220506	20991231	
+44777659	per second	Unit	UCUM	Unit	S	/s	19700101	20991231	
+8555	second	Unit	UCUM	Unit	S	s	19700101	20991231	
+9399	Svedberg unit	Unit	UCUM	Unit	S	[S]	19700101	20991231	
+9639	siemens	Unit	UCUM	Unit	S	S	19700101	20991231	
+44777521	per second	Unit	UCUM	Canonical Unit	S	s-1	19700101	20991231	
+44777554	coulomb per second (ampere)	Unit	UCUM	Canonical Unit	S	s-1.C	19700101	20991231	
+44777533	gram per square second (10*-3 kilogram per square second)	Unit	UCUM	Canonical Unit	S	s-2.g	19700101	20991231	
+8728	percent saturation	Unit	UCUM	Unit	S	%{sat}	19700101	20991231	
+8500	SAU	Unit	UCUM	Unit		{sau}	19700101	20140103	U
+9640	stilb	Unit	UCUM	Unit	S	sb	19700101	20991231	
+9400	scruple	Unit	UCUM	Unit	S	[sc_ap]	19700101	20991231	
+8644	Seconds per CO	Unit	UCUM	Unit		s/{CO}	19700101	20140103	U
+44777566	score	Unit	UCUM	Unit	S	[score]	19700101	20991231	
+9401	section	Unit	UCUM	Unit	S	[sct]	19700101	20991231	
+9402	hundredweight (US)	Unit	UCUM	Unit	S	[scwt_av]	19700101	20991231	
+8579	See below	Unit	UCUM	Unit		[{see'below}]	19700101	20140103	D
+8593	See report	Unit	UCUM	Unit		[{see'report}]	19700101	20140103	D
+8580	See table	Unit	UCUM	Unit		[{see'table)]	19700101	20140103	D
+9403	square foot	Unit	UCUM	Unit	S	[sft_i]	19700101	20991231	
+8501	SGU	Unit	UCUM	Unit		{sgu}	19700101	20140103	U
+8779	signal to cutoff ratio	Unit	UCUM	Unit	S	{signal}/[{CO'ratio}]	19700101	20991231	
+9404	square inch	Unit	UCUM	Unit	S	[sin_i]	19700101	20991231	
+9214	percent slope	Unit	UCUM	Unit	S	%[slope]	19700101	20991231	
+9405	Somogyi unit	Unit	UCUM	Unit	S	[smgy'U]	19700101	20991231	
+9406	square mile	Unit	UCUM	Unit	S	[smi_us]	19700101	20991231	
+9407	smoot	Unit	UCUM	Unit	S	[smoot]	19700101	20991231	
+8502	SMU	Unit	UCUM	Unit		{smu}	19700101	20140103	U
+8553	percent of sperm with positive binding	Unit	UCUM	Unit	S	%{sperm'binding}	19700101	20991231	
+9430	spermatozoa per milliliter	Unit	UCUM	Unit	S	{sperm}/mL	19700101	20991231	
+9232	percent sperm motility	Unit	UCUM	Unit	S	%{sperm'motility}	19700101	20991231	
+8631	sperm motility at 60 minutes	Unit	UCUM	Unit	S	%{sperm'motility'at'60'min}	19700101	20991231	
+9641	sphere	Unit	UCUM	Unit	S	sph	19700101	20991231	
+32407	standardized quality unit	Unit	UCUM	Unit	S	[SQU]	19700101	20991231	
+710254	standardized quality unit per milliliter	Unit	UCUM	Unit	S	[SQU]/mL	20220506	20991231	
+9642	steradian	Unit	UCUM	Unit	S	sr	19700101	20991231	
+9408	square rod	Unit	UCUM	Unit	S	[srd_us]	19700101	20991231	
+9643	stere	Unit	UCUM	Unit	S	st	19700101	20991231	
+9644	stokes	Unit	UCUM	Unit	S	St	19700101	20991231	
+9409	short ton (US)	Unit	UCUM	Unit	S	[ston_av]	19700101	20991231	
+9410	stone	Unit	UCUM	Unit	S	[stone_av]	19700101	20991231	
+8565	streptozyme (STZ) agglutination titer unit	Unit	UCUM	Unit	S	[STZ'unit]	19700101	20991231	
+9645	sievert	Unit	UCUM	Unit	S	Sv	19700101	20991231	
+9411	square yard	Unit	UCUM	Unit	S	[syd_i]	19700101	20991231	
+9647	tonne	Unit	UCUM	Unit	S	t	19700101	20991231	
+9646	tesla	Unit	UCUM	Unit	S	T	19700101	20991231	
+9431	tablet	Unit	UCUM	Unit	S	{tbl}	19700101	20991231	
+9412	tablespoon	Unit	UCUM	Unit	S	[tbs_us]	19700101	20991231	
+9413	tuberculin unit	Unit	UCUM	Unit	S	[tb'U]	19700101	20991231	
+45891003	tuberculin unit per milliliter	Unit	UCUM	Unit	S	[tb'U]/mL	19700101	20991231	
+9414	50% tissue culture infectious dose	Unit	UCUM	Unit	S	[tcid_50]	19700101	20991231	
+8628	times average	Unit	UCUM	Unit	S	{times'avg}	19700101	20991231	
+8525	titer	Unit	UCUM	Unit	S	{titer}	19700101	20991231	
+9415	Todd unit	Unit	UCUM	Unit	S	[todd'U]	19700101	20991231	
+8632	percent total	Unit	UCUM	Unit	S	%{tot}	19700101	20991231	
+9237	per total count	Unit	UCUM	Unit	S	/{tot}	19700101	20991231	
+8526	Total	Unit	UCUM	Unit		{tot}	19700101	20140103	U
+8683	Total creatinine	Unit	UCUM	Unit		[{tot'creat}]	19700101	20140103	D
+8684	Total hemoglobin	Unit	UCUM	Unit		[{tot'HGB}]	19700101	20140103	U
+9233	percent total protein	Unit	UCUM	Unit	S	%{tot'prot}	19700101	20991231	
+9416	teaspoon	Unit	UCUM	Unit	S	[tsp_us]	19700101	20991231	
+9417	township	Unit	UCUM	Unit	S	[twp]	19700101	20991231	
+9648	unified atomic mass unit	Unit	UCUM	Unit	S	u	19700101	20991231	
+8510	unit	Unit	UCUM	Unit	S	[U]	19700101	20991231	
+8662	unit per 10	Unit	UCUM	Unit	S	[U]/10	19700101	20991231	
+720848	unit per 10 to the 10th power cells	Unit	UCUM	Unit	S	[U]/10*10.{cells}	20220407	20991231	
+9031	unit per billion red blood cells	Unit	UCUM	Unit	S	[U]/10*12.{RBC}	19700101	20991231	
+8783	unit per 10 cells	Unit	UCUM	Unit	S	[U]/10.{cells}	19700101	20991231	
+44777567	unit per 24 hours	Unit	UCUM	Unit	S	[U]/(24.h)	19700101	20991231	
+720855	unit per 2 hours	Unit	UCUM	Unit	S	[U]/(2.h)	20220407	20991231	
+45891017	unit per actuation	Unit	UCUM	Unit	S	[U]/{actuat}	19700101	20991231	
+45891034	unit per square centimeter	Unit	UCUM	Unit	S	[U]/cm2	19700101	20991231	
+44777568	unit per deciliter	Unit	UCUM	Unit	S	[U]/dL	19700101	20991231	
+45890999	unit per dose	Unit	UCUM	Unit	S	[U]/[dose]	19700101	20991231	
+45891006	unit per drop	Unit	UCUM	Unit	S	[U]/[drop]	19700101	20991231	
+9655	microgram	Unit	UCUM	Unit	S	ug	19700101	20991231	
+8629	unit per gram	Unit	UCUM	Unit	S	[U]/g	19700101	20991231	
+9656	microgram per 100 gram	Unit	UCUM	Unit	S	ug/100.g	19700101	20991231	
+8953	microgram per milliequivalent	Unit	UCUM	Unit	S	ug/10*-3.eq	19700101	20991231	
+8906	microgram per 24 hours	Unit	UCUM	Unit	S	ug/(24.h)	19700101	20991231	
+45891023	microgram per 72 hours	Unit	UCUM	Unit	S	ug/(72.h)	19700101	20991231	
+45891015	microgram per actuation	Unit	UCUM	Unit	S	ug/{actuat}	19700101	20991231	
+45891027	microgram per square centimeter	Unit	UCUM	Unit	S	ug/cm2	19700101	20991231	
+9650	Units Per Gram Creatinine [Substance Rate Content Units]	Unit	UCUM	Unit		U/g{Cre}	19700101	20140103	U
+8915	unit per gram of creatinine	Unit	UCUM	Unit	S	[U]/g{creat}	19700101	20991231	
+8837	microgram per deciliter	Unit	UCUM	Unit	S	ug/dL	19700101	20991231	
+9659	microgram per deciliter of red blood cells	Unit	UCUM	Unit	S	ug/dL{RBC}	19700101	20991231	
+9061	microgram per deciliter of thyroxine	Unit	UCUM	Unit	S	ug/dL{thyroxine}	19700101	20991231	
+45890998	microgram per dose	Unit	UCUM	Unit	S	ug/[dose]	19700101	20991231	
+9046	microgram equivalent per milliliter	Unit	UCUM	Unit	S	ug{eq}/mL	19700101	20991231	
+8989	microgram of fibrinogen equivalent unit per milliliter	Unit	UCUM	Unit	S	ug{FEU}/mL	19700101	20991231	
+8720	microgram per gram	Unit	UCUM	Unit	S	ug/g	19700101	20991231	
+9014	microgram per gram of creatinine	Unit	UCUM	Unit	S	ug/g{creat}	19700101	20991231	
+9660	microgram per gram dry weight	Unit	UCUM	Unit	S	ug/g{dry'wt}	19700101	20991231	
+9661	microgram per gram of hemoglobin	Unit	UCUM	Unit	S	ug/g{HBG}	19700101	20991231	
+44777644	microgram per gram wet weight	Unit	UCUM	Unit	S	ug/g{wet'wt}	19700101	20991231	
+44777645	microgram per hour	Unit	UCUM	Unit	S	ug/h	19700101	20991231	
+9651	unit per gram of hemoglobin	Unit	UCUM	Unit	S	[U]/g{HGB}	19700101	20991231	
+8916	Unit per gram of Hemoglobin	Unit	UCUM	Unit		U/g{HGB}	19700101	20140103	U
+9662	microgram per kilogram	Unit	UCUM	Unit	S	ug/kg	19700101	20991231	
+9690	microgram per kilogram per hour	Unit	UCUM	Unit	S	ug/kg/h	19700101	20991231	
+9688	microgram per kilogram per minute	Unit	UCUM	Unit	S	ug/kg/min	19700101	20991231	
+8748	microgram per liter	Unit	UCUM	Unit	S	ug/L	19700101	20991231	
+9663	microgram per square meter	Unit	UCUM	Unit	S	ug/m2	19700101	20991231	
+32964	microgram per cubic meter	Unit	UCUM	Unit	S	ug/m3	19700101	20991231	
+8838	microgram per milligram	Unit	UCUM	Unit	S	ug/mg	19700101	20991231	
+9072	microgram per milligram of creatinine	Unit	UCUM	Unit	S	ug/mg{creat}	19700101	20991231	
+8774	microgram per minute	Unit	UCUM	Unit	S	ug/min	19700101	20991231	
+8859	microgram per milliliter	Unit	UCUM	Unit	S	ug/mL	19700101	20991231	
+8990	Microgram per milliliter of FEU	Unit	UCUM	Unit		ug/mL{FEU}	19700101	20140103	U
+32408	microgram per millimole	Unit	UCUM	Unit	S	ug/mmol	19700101	20991231	
+44777646	microgram per millimole of creatinine	Unit	UCUM	Unit	S	ug/mmol{creat}	19700101	20991231	
+9664	microgram per nanogram	Unit	UCUM	Unit	S	ug/ng	19700101	20991231	
+9657	microgram per specimen	Unit	UCUM	Unit	S	ug/{spec}	19700101	20991231	
+8721	Microgram per SPEC	Unit	UCUM	Unit		ug/{SPEC}	19700101	20140103	U
+8722	microgram per time	Unit	UCUM	Unit	S	ug/{time}	19700101	20991231	
+8979	unit per gram of total protein	Unit	UCUM	Unit	S	[U]/g{tot'prot}	19700101	20991231	
+9658	microgram per total volume	Unit	UCUM	Unit	S	ug/{tot'vol}	19700101	20991231	
+710242	microgray	Unit	UCUM	Unit	S	uGy	20220506	20991231	
+710225	microgray per hour	Unit	UCUM	Unit	S	uGy/h	20220506	20991231	
+710226	microgray per minute	Unit	UCUM	Unit	S	uGy/min	20220506	20991231	
+8630	unit per hour	Unit	UCUM	Unit	S	[U]/h	19700101	20991231	
+44777647	microkatal	Unit	UCUM	Unit	S	ukat	19700101	20991231	
+32995	microkatal per liter	Unit	UCUM	Unit	S	ukat/L	19700101	20991231	
+720854	unit per kilogram of hemoglobin	Unit	UCUM	Unit	S	[U]/kg{HGB}	20220407	20991231	
+8647	per microliter	Unit	UCUM	Unit	S	/uL	19700101	20991231	
+9665	microliter	Unit	UCUM	Unit	S	uL	19700101	20991231	
+8645	unit per liter	Unit	UCUM	Unit	S	[U]/L	19700101	20991231	
+45891037	microliter per gram	Unit	UCUM	Unit	S	uL/g	19700101	20991231	
+45891029	microliter per milliliter	Unit	UCUM	Unit	S	uL/mL	19700101	20991231	
+9666	micrometer	Unit	UCUM	Unit	S	um	19700101	20991231	
+45891030	unit per milligram	Unit	UCUM	Unit	S	[U]/mg	19700101	20991231	
+8775	micrometer per liter	Unit	UCUM	Unit	S	um/L	19700101	20991231	
+8763	unit per milliliter	Unit	UCUM	Unit	S	[U]/mL	19700101	20991231	
+9083	unit per milliliter of red blood cells	Unit	UCUM	Unit	S	[U]/mL{RBC}	19700101	20991231	
+9667	micromole	Unit	UCUM	Unit	S	umol	19700101	20991231	
+8907	micromole per 24 hours	Unit	UCUM	Unit	S	umol/(24.h)	19700101	20991231	
+8839	micromole per deciliter	Unit	UCUM	Unit	S	umol/dL	19700101	20991231	
+9668	micromole per gram	Unit	UCUM	Unit	S	umol/g	19700101	20991231	
+9015	micromole per gram of creatinine	Unit	UCUM	Unit	S	umol/g{creat}	19700101	20991231	
+44777648	micromole per gram of dry weight	Unit	UCUM	Unit	S	umol/g{dry'wt}	19700101	20991231	
+9669	micromole per gram of hemoglobin	Unit	UCUM	Unit	S	umol/g{HBG}	19700101	20991231	
+44777649	micromole per gram of wet weight	Unit	UCUM	Unit	S	umol/g{wet'wt}	19700101	20991231	
+710202	micromole per hour	Unit	UCUM	Unit	S	umol/h	20220506	20991231	
+44777650	micromole per hour and gram of hemoglobin	Unit	UCUM	Unit	S	umol/h/g{HGB}	19700101	20991231	
+44777651	micromole per hour and gram of protein	Unit	UCUM	Unit	S	umol/h/g{prot}	19700101	20991231	
+44777652	micromole per hour and liter	Unit	UCUM	Unit	S	umol/h/L	19700101	20991231	
+44777653	micromole per hour and milliliter	Unit	UCUM	Unit	S	umol/h/mL	19700101	20991231	
+44777654	micromole per kilogram	Unit	UCUM	Unit	S	umol/kg	19700101	20991231	
+8749	micromole per liter	Unit	UCUM	Unit	S	umol/L	19700101	20991231	
+9670	micromole per milligram	Unit	UCUM	Unit	S	umol/mg	19700101	20991231	
+9671	micromole per milligram of creatinine	Unit	UCUM	Unit	S	umol/mg{creat}	19700101	20991231	
+44777655	micromole per minute	Unit	UCUM	Unit	S	umol/min	19700101	20991231	
+9672	micromole per minute and gram	Unit	UCUM	Unit	S	umol/min/g	19700101	20991231	
+9673	micromole per milliliter	Unit	UCUM	Unit	S	umol/mL	19700101	20991231	
+44777656	micromole per millimole	Unit	UCUM	Unit	S	umol/mmol	19700101	20991231	
+9073	micromole per millimole of creatinine	Unit	UCUM	Unit	S	umol/mmol{creat}	19700101	20991231	
+9674	micromole per mole	Unit	UCUM	Unit	S	umol/mol	19700101	20991231	
+9675	micromole per mole of creatinine	Unit	UCUM	Unit	S	umol/mol{creat}	19700101	20991231	
+44777657	micromole per mole of hemoglobin	Unit	UCUM	Unit	S	umol/mol{HGB}	19700101	20991231	
+720849	micrometer per second	Unit	UCUM	Unit	S	um/s	20220407	20991231	
+8649	percent uptake	Unit	UCUM	Unit	S	%{uptake}	19700101	20991231	
+8538	Uptake	Unit	UCUM	Unit		{uptake}	19700101	20140103	U
+9676	microsecond	Unit	UCUM	Unit	S	us	19700101	20991231	
+9418	US pharmacopeia unit	Unit	UCUM	Unit	S	[USP'U]	19700101	20991231	
+710238	unit per week	Unit	UCUM	Unit	S	U/wk	20220506	20991231	
+9677	volt	Unit	UCUM	Unit	S	V	19700101	20991231	
+32018	Vector-genome	Unit	UCUM	Unit	S	{vector-genome}	19700101	20991231	
+9234	volume percent	Unit	UCUM	Unit	S	%{vol}	19700101	20991231	
+8646	Volume percent	Unit	UCUM	Unit		[{vol}'%]	19700101	20140103	U
+8539	Volume	Unit	UCUM	Unit		{vol}	19700101	20140103	D
+45891010	volume percent volume	Unit	UCUM	Unit	S	{vol}%{vol}	19700101	20991231	
+45891012	volume percent weight	Unit	UCUM	Unit	S	{vol}%{wt}	19700101	20991231	
+44777559	per week	Unit	UCUM	Unit	S	/w	19700101	20991231	
+9678	watt	Unit	UCUM	Unit	S	W	19700101	20991231	
+9679	Weber	Unit	UCUM	Unit	S	Wb	19700101	20991231	
+44777574	white blood cells per high power field	Unit	UCUM	Unit	S	{WBC}/[HPF]	19700101	20991231	
+710230	watt per square centimeter	Unit	UCUM	Unit	S	W/cm2	20220506	20991231	
+8511	week	Unit	UCUM	Unit	S	wk	19700101	20991231	
+45891005	week supply	Unit	UCUM	Unit	S	wk{supply}	19700101	20991231	
+32705	wood unit	Unit	UCUM	Unit	S	[wood'U]	19700101	20991231	
+720840	wood unit per square meter	Unit	UCUM	Unit	S	[wood'U]/m2	20220407	20991231	
+45891009	weight percent volume	Unit	UCUM	Unit	S	{wt}%{vol}	19700101	20991231	
+45891011	weight percent weight	Unit	UCUM	Unit	S	{wt}%{wt}	19700101	20991231	
+44777560	per year	Unit	UCUM	Unit	S	/y	19700101	20991231	
+8528	year	Unit	UCUM	Unit		y	19700101	20160311	D
+9419	yard (British)	Unit	UCUM	Unit	S	[yd_br]	19700101	20991231	
+9420	yard (international)	Unit	UCUM	Unit	S	[yd_i]	19700101	20991231	
+9421	yard (US)	Unit	UCUM	Unit	S	[yd_us]	19700101	20991231	
+42084626	Northeast	Geography	US Census	US Census Region	S	0200000US1	19700101	20991231	
+42084627	Midwest	Geography	US Census	US Census Region	S	0200000US2	19700101	20991231	
+42084629	South	Geography	US Census	US Census Region	S	0200000US3	19700101	20991231	
+42084628	West	Geography	US Census	US Census Region	S	0200000US4	19700101	20991231	
+42084630	New England	Geography	US Census	US Census Division	S	0300000US1	19700101	20991231	
+42084631	Middle Atlantic	Geography	US Census	US Census Division	S	0300000US2	19700101	20991231	
+42084632	East North Central	Geography	US Census	US Census Division	S	0300000US3	19700101	20991231	
+42084633	West North Central	Geography	US Census	US Census Division	S	0300000US4	19700101	20991231	
+42084637	South Atlantic	Geography	US Census	US Census Division	S	0300000US5	19700101	20991231	
+42084634	East South Central	Geography	US Census	US Census Division	S	0300000US6	19700101	20991231	
+42084635	West South Central	Geography	US Census	US Census Division	S	0300000US7	19700101	20991231	
+42084636	Mountain	Geography	US Census	US Census Division	S	0300000US8	19700101	20991231	
+42084638	Pacific	Geography	US Census	US Census Division	S	0300000US9	19700101	20991231	
+9203	Emergency Room Visit	Visit	Visit	Visit	S	ER	19700101	20991231	
+262	Emergency Room and Inpatient Visit	Visit	Visit	Visit	S	ERIP	19700101	20991231	
+32693	Health examination	Visit	Visit	Visit	S	HE	19700101	20991231	
+9201	Inpatient Visit	Visit	Visit	Visit	S	IP	19700101	20991231	
+42898160	Non-hospital institution Visit	Visit	Visit	Visit	S	LTCP	19700101	20991231	
+581479	Ambulatory Rehabilitation Visit	Visit	Visit	Visit	S	OMOP4822456	19700101	20991231	
+581478	Ambulance Visit	Visit	Visit	Visit	S	OMOP4822457	19700101	20991231	
+581477	Office Visit	Visit	Visit	Visit	S	OMOP4822458	19700101	20991231	
+581476	Home Visit	Visit	Visit	Visit	S	OMOP4822459	19700101	20991231	
+32037	Intensive Care	Visit	Visit	Visit	S	OMOP4822460	19700101	20991231	
+32036	Laboratory Visit	Visit	Visit	Visit	S	OMOP4822461	19700101	20991231	
+581458	Pharmacy visit	Visit	Visit	Visit	S	OMOP4822462	19700101	20991231	
+32759	Home isolation	Visit	Visit	Visit	S	OMOP4873970	19700101	20991231	
+32760	Isolation in inpatient setting	Visit	Visit	Visit	S	OMOP4873971	19700101	20991231	
+32761	Person Under Investigation (PUI)	Visit	Visit	Visit	S	OMOP4873972	19700101	20991231	
+33004	Supplier / Service Provider	Visit	Visit	Visit	S	OMOP5117446	20210727	20991231	
+33007	Alternate care site (ACS)	Visit	Visit	Visit	S	OMOP5117447	20210727	20991231	
+705159	Ambulatory long COVID clinic	Visit	Visit	Visit	S	OMOP5160862	20211215	20991231	
+9202	Outpatient Visit	Visit	Visit	Visit	S	OP	19700101	20991231	
+44818519	Clinical Study visit	Type Concept	Visit Type	Visit Type		OMOP4822463	19700101	20991231	
+44818518	Visit derived from EHR record	Type Concept	Visit Type	Visit Type		OMOP4822464	19700101	20991231	
+44818517	Visit derived from encounter on claim	Type Concept	Visit Type	Visit Type		OMOP4822465	19700101	20991231	
+32021	Visit derived from encounter on medical claim	Type Concept	Visit Type	Visit Type		OMOP4822466	19700101	20991231	
+32022	Visit derived from encounter on pharmacy claim	Type Concept	Visit Type	Visit Type		OMOP4822467	19700101	20991231	
+32023	Visit derived from encounter on medical facility claim	Type Concept	Visit Type	Visit Type		OMOP4822468	19700101	20991231	
+32024	Visit derived from encounter on medical professional claim	Type Concept	Visit Type	Visit Type		OMOP4822469	19700101	20991231	
+32025	Visit derived from encounter on medical facility claim paid	Type Concept	Visit Type	Visit Type		OMOP4822470	19700101	20991231	
+32026	Visit derived from encounter on medical facility claim denied	Type Concept	Visit Type	Visit Type		OMOP4822471	19700101	20991231	
+32027	Visit derived from encounter on medical facility claim deferred	Type Concept	Visit Type	Visit Type		OMOP4822472	19700101	20991231	
+32028	Visit derived from encounter on medical professional claim paid	Type Concept	Visit Type	Visit Type		OMOP4822473	19700101	20991231	
+32029	Visit derived from encounter on medical professional claim denied	Type Concept	Visit Type	Visit Type		OMOP4822474	19700101	20991231	
+32030	Visit derived from encounter on medical professional claim deferred	Type Concept	Visit Type	Visit Type		OMOP4822475	19700101	20991231	
+32031	Visit derived from encounter on claim authorization	Type Concept	Visit Type	Visit Type		OMOP4822476	19700101	20991231	
+32032	Visit derived from encounter on vision claim	Type Concept	Visit Type	Visit Type		OMOP4822477	19700101	20991231	
+32033	Visit derived from encounter on dental claim	Type Concept	Visit Type	Visit Type		OMOP4822478	19700101	20991231	
+32034	Visit derived from EHR billing record	Type Concept	Visit Type	Visit Type		OMOP4822479	19700101	20991231	
+32035	Visit derived from EHR encounter record	Type Concept	Visit Type	Visit Type		OMOP4822480	19700101	20991231	
+33072	Catalogue Of Somatic Mutations In Cancer	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33051	OMOP Investigational Drugs	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32918	Human Gene Nomenclature (European Bioinformatics Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20211020	D
+32537	Medication Reference Terminology MED-RT (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20211020	D
+33008	OncoTree (MSK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33002	OMOP Genomic vocabulary	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32956	Operations and Procedures Classification (OPS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32422	Korean Drug Code (HIRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+45756746	Provider Specialty (American Board of Medical Specialties)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819135	OMOP Death Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819136	Medical Subject Headings (NLM)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819137	National Uniform Claim Committee Health Care Provider Taxonomy Code Set (NUCC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819138	Medicare Specialty	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819139	LOINC Multidimensional Classification (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20141201	D
+44819140	Structured Product Labeling (FDA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819141	Clinical Formulation ID (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+45905710	Columbia International eHealth Laboratory (Columbia University)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819121	Standardised MedDRA Queries (MSSO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819122	VA National Drug File Class (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819123	Legacy OMOP HOI or DOI cohort	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819124	International Classification of Diseases, Tenth Revision (WHO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819125	ICD-10 Procedure Coding System (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819126	OMOP Drug Exposure Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819127	OMOP Condition Occurrence Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819128	OMOP Procedure Occurrence Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819129	OMOP Observation Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819130	Diagnosis-related group (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819131	Major Diagnostic Categories (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819132	Ambulatory Payment Classification (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819133	UB04/CMS1450 Revenue Codes (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819134	OMOP Ethnicity	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819150	OMOP Visit Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819151	OMOP Device Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819152	OMOP Measurement Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819153	International Currency Symbol (ISO 4217)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819233	OMOP Concept Class	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819232	OMOP Vocabulary	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819235	OMOP Relationship	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819234	OMOP Cohort Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819096	OMOP Standardized Vocabularies	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819097	Systematic Nomenclature of Medicine - Clinical Terms (IHTSDO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819098	International Classification of Diseases, Tenth Revision, Clinical Modification (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819099	International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 3 (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5047	Global Reference Repository (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581450	GGR	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819104	RxNorm (NLM)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819115	Indications and Contraindications (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819116	Enhanced Therapeutic Classification (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819117	WHO Anatomic Therapeutic Chemical Classification	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32485	OMOP Common DataModel	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819100	Current Procedural Terminology version 4 (AMA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819101	Healthcare Common Procedure Coding System (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819102	Logical Observation Identifiers Names and Codes (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819103	National Drug File - Reference Terminology (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819105	National Drug Code (FDA and manufacturers)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819106	Medi-Span Generic Product Identifier (Wolters Kluwer Health)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819107	Unified Code for Units of Measure (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819108	OMOP Gender	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819109	Race and Ethnicity Code Set (USBC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819110	CMS Place of Service	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819111	Medical Dictionary for Regulatory Activities (MSSO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819112	Cerner Multum (Cerner)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819113	NHS UK Read Codes Version 2 (HSCIC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819114	Oxford Medical Information System (OCHP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819118	Multilex (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819119	OMOP Visit	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819142	Clinical Classifications Software for ICD-9-CM (HCUP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819143	OPCS Classification of Interventions and Procedures version 4 (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819144	Gemscript (Resip)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819145	Hospital Episode Statistics Specialty (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819146	OMOP Note Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819147	OMOP Domain	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819148	National Patient-Centered Clinical Research Network (PCORI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819149	OMOP Observation Period Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581438	CDT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32046	UB04 Claim Inpatient Admission Type Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32047	UB04 Patient Discharge Status Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32473	SOPT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32523	OMOP Episode	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+232	Dictionary of Medicines and Devices (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+204	Disease Analyzer France (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+231	Drug Product Database (Health Canada)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+236	Public Database of Medications (Social-Sante)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+237	Medicinal Products Information System (DIMDI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+238	Australian Medicines Terminology (NEHTA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+239	Community Register of Medicinal Products for Human Use (European Commission)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+243	Anatomical Classification of Pharmaceutical Products (EphMRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+245	New Form Code (EphMRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32542	OMOP Episode Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5029	OMOP Cost Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5045	Longitudinal Patient Data Australia (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5046	International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 1 and 2 (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32808	OMOP Type Concept	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32887	OMOP Condition Status	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581376	OMOP Specimen Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581367	Modernizing Medicine (MMI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32613	HemOnc	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581400	CDC Vaccine Administered CVX (NCIRD)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581404	AllOfUs_PPI (Columbia)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581441	Information Standard for Blood and Transplant 128 Product (ICCBBA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581426	International Classification of Diseases for Oncology, Third Edition (WHO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581457	OMOP Cost	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32044	UB04 Type of Bill - Institutional (USHIK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581451	LPD_Belgium	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32573	OMOP Provider	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32574	OMOP Supplier	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32557	Japan Medical Data Center Drug Code (JMDC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32446	Table of Procedures, Drugs, Orthoses, Protheses and Special Materials (Brazilian Unified Health System)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32045	UB04 Claim Source Inpatient Admission Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581442	Information Standard for Blood and Transplant 128 Product Attribute (ICCBBA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32642	Data Standards & Data Dictionary Volume II (NAACCR)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32758	OMOP Extension (OHDSI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32913	Clinical Interpretation of Variants in Cancer (civicdb.org)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32914	Cancer Genome Interpreter (Pompeu Fabra University)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32915	ClinVar (NCBI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32916	The Clinical Knowledgebase (The Jackson Laboratory)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32917	NCI Thesaurus (National Cancer Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32771	CAP electronic Cancer Checklists (College of American Pathologists)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32928	International Classification of Diseases, Tenth Revision, German Edition	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32929	Diagnostic Modifiers of Cancer (OMOP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32999	Oncology Knowledge Base (MSK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32570	Census regions of the United States (USCB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819120	Veterans Health Administration National Drug File (VA))	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32976	UK Biobank (UK Biobank)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32472	OMOP Sponsor	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32549	SNOMED Veterinary Extension (VTSL)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+252	OMOP RxNorm Extension	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32471	OMOP Health Plan	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32474	OMOP Plan Stop Reason	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32541	OpenStreetMap (OSMF)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32757	Nebraska Lexicon (UNMC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32807	Normalized Chinese Clinical Drug knowledge base (UTHealth)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32675	OMOP Metadata	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33069	OMOP Language	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32724	Korean Revenue Code (KNHIS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32723	Korean Payer (KNHIS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32688	Korean Standard Classfication of Diseases and Causes of Death, 7th Revision (STATISTICS KOREA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32740	International Classification of Diseases, Tenth Revision, Chinese Edition (CAMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32744	International Classification of Diseases, Ninth Revision, Chinese Edition, Procedures (CAMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32736	Korean Electronic Data Interchange code system (HIRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32735	Comparative Toxicogenomic Database (NCSU)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32806	International Classification of Diseases, Tenth Revision, French Edition (ATIH)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32957	Common Classification of Medical Acts (ATIH)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33091	IQVIA CO-CONNECT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33092	IQVIA CO-CONNECT MIABIS	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33093	IQVIA CO-CONNECT TWINS	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33095	NHS Ethnic Category	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33096	NHS Admission Source and Discharge Destination	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	

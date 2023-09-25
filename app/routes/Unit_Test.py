@@ -1,24 +1,18 @@
 import unittest
 from flask_restx import Resource
 from tests.testapp import TestApp
+from utils.custom_test_result import CustomTestRunner 
+from utils.Basic_auth import auth
 
 # API route for the unit tests
+
 class Test_the_App(Resource):
+    @auth.login_required
     def get(self):
         try:
-            # Run the Unit tests
             suite = unittest.TestLoader().loadTestsFromTestCase(TestApp)
-            runner = unittest.TextTestRunner()
+            runner = CustomTestRunner()
             test_results = runner.run(suite)
-
-            # Return the result as JSON
-            return {
-                "status": "success",
-                "total_tests": test_results.testsRun,
-                "failures": len(test_results.failures),
-                "errors": len(test_results.errors),
-                "successful": test_results.wasSuccessful()
-            }
-
+            return {"status": "success", "data": test_results}
         except Exception as e:
             return {"status": "error", "message": str(e)}, 500

@@ -4,26 +4,26 @@
 ## Introduction
  
 This repository contains a Flask REST API application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model and OLS4. The application provides endpoints to interact with the concept data, offering functionalities such as searching for concepts based on textual queries.
+
+## Setup
+
+1. Install the required packages: `pip install -r requirements.txt`
+2. Run the Flask application: `flask run`
  
 
 ## Dependencies
 
 Ensure that the following Python packages are installed (see `requirements.txt` for versions):
 
-- numpy==1.25.2
 - Flask==2.2.5
 - flask-restx==1.1.0
+- flask-httpauth==4.8.0
 - pandas==2.1.0
 - SQLAlchemy==2.0.20
-- scikit-learn==1.3.0
-- docker==6.1.3
-- pyopenssl==23.2.0
 - gunicorn==21.2.0
-- tqdm==4.66.1
 - requests==2.31.0
 - pymysql==1.1.0
 - rapidfuzz==3.3.0
-- python-Levenshtein==0.21.1
 
 Install the necessary packages with the following command:
 ```
@@ -42,9 +42,35 @@ docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWO
 
 If `DB_HOST` is not set, the app will default to using a local MySQL database, and the `MYSQL_ROOT_PASSWORD` environment variable will be used as the root password for the local database.
 
-## API
+## General App Structure and File Relationships
 
-The Flask REST API, defined in `app.py`, facilitates interactions with OMOP concept data stored in the MySQL database and the OLS4 API. The service employs various Python packages for functionalities such as fuzzy matching of query strings to concept names.
+### Directory Structure
+
+- `/app`: Main directory containing the Flask application.
+  - `app.py`: Main Flask application file where the API and its routes are defined.
+  - `Credentials.py`: File where API credentials (username and password) are stored.
+  - `/data`: Directory containing OMOP data.
+  - `/routes`: Directory containing individual route files.
+    - `OMOP_search.py`: API route for OMOP database search.
+    - `OLS4_search.py`: API route for OLS4 database search.
+    - `List_OMOP_Vocabularies.py`: API route for listing OMOP vocabularies.
+    - `Unit_Test.py`: API route for executing unit tests.
+  - `/tests`: Directory containing unit tests.
+    - `testapp.py`: Unit test file.
+  - `/utils`: Directory containing utility functions and database initialization.
+    - `initialize_mysql_connection.py`: Initializes MySQL database connection.
+    - `ols4_request.py`: Utility for sending requests to OLS4 API.
+    - `common.py`: Common utility functions for the application.
+    - `fuzzy_matching.py`: Utility functions for fuzzy matching of terms.
+    - `testapp.py`: Utility functions for handling test cases.
+
+## Testing
+
+Unit tests are located in the `/tests` directory. To run the tests:
+
+```
+python -m unittest discover tests
+```
 
 ## Docker Deployment
 
@@ -54,58 +80,83 @@ docker build -t app .
 docker run -p 80:80 app
 ```
 
+## API Endpoints
+
+### `/API/OMOP_search`
+
+#### Method: `POST`
+
+Searches for standard concepts in the OMOP vocabulary based on search terms provided.
+
+**Request Body:**
+
+- `search_term`: List of search terms to find the best match for (e.g., `["Asthma", "Heart"]`)
+- `vocabulary_id`: Vocabulary ID to filter the results by (e.g., "snomed"). Optional.
+- `search_threshold`: Filter threshold (default is 80). Optional.
+
+**Example Request:**
+
+```json
+{
+  "search_term": ["Asthma", "Heart"],
+  "vocabulary_id": "snomed",
+  "search_threshold": 80
+}
+```
+
+### `/API/OLS4_search`
+
+#### Method: `POST`
+
+Searches for standard concepts using the OLS4 API based on search terms provided.
+
+**Request Body:**
+
+- `search_term`: List of search terms to find the best match for (e.g., `["Asthma", "Heart"]`)
+- `vocabulary_id`: Vocabulary ID to filter the results by (e.g., "snomed"). Optional.
+- `search_threshold`: Filter threshold (default is 80). Optional.
+
+**Example Request:**
+
+```json
+{
+  "search_term": ["Asthma", "Heart"],
+  "vocabulary_id": "snomed",
+  "search_threshold": 80
+}
+```
+
+### `/API/List_OMOP_Vocabularies`
+
+#### Method: `GET`
+
+Lists all unique vocabularies in the CONCEPT table along with their frequencies.
+
+**Example Request:**
+
+GET `/API/List_OMOP_Vocabularies`
+
+
+### `/API/Run_Tests`
+
+#### Method: `GET`
+
+Executes unit tests for the API and returns the status of the tests.
+
+**Example Request:**
+
+GET `/API/Run_Tests`
+
+## Authentication
+
+The API uses Basic Authentication. Set the username and password in the `/app/Credentials.py` file.
+
+**Response**: JSON array containing the best matches.
+
+
+## note: break_up_CONCEPT.py
+Simple function to splits OMOP concept table into chunks for effective storage in Git. 
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0. See the `LICENSE` file for details.
-
-
-## API Endpoints
-
-### General Information
-
-All API requests are made to `http://<hostname>:<port>` where `<hostname>` and `<port>` are the IP address and port where the Docker container is running.
-
-#### Common Headers
-
-- `Content-Type: application/json`
-
-### `/OMOP`
-
-**Method**: `POST`
-
-**Description**: Calculate the best matches for a list of search terms using OMOP concepts.
-
-**Request Body**:
-
-```json
-{
-  "search_term": ["Asthma", "Heart"],
-  "vocabulary_id": "snomed",
-  "search_threshold": 80
-}
-```
-
-**Response**: JSON array containing the best matches.
-
-### `/OLS4`
-
-**Method**: `POST`
-
-**Description**: Calculate the best OLS4 matches for a list of search terms.
-
-**Request Body**:
-
-```json
-{
-  "search_term": ["Asthma", "Heart"],
-  "vocabulary_id": "snomed",
-  "search_threshold": 80
-}
-```
-
-**Response**: JSON array containing the best matches.
-
-
-## break_up_CONCEPT.py
-Simple function to splits OMOP concept table into chunks for effective storage in Git. 
-

@@ -2,6 +2,7 @@ from app import api, ns
 from flask import  request, jsonify
 from flask_restx import Resource, fields  
 from utils.calculate_best_OMOP_matches import calculate_best_OMOP_matches
+from utils.Basic_auth import auth
 
 search_term_model = api.model('SearchTerm', {
     'search_term': fields.List(fields.String, required=True, description='The list of search terms to find the best match for', default=['Asthma', 'Heart']),
@@ -12,7 +13,7 @@ search_term_model = api.model('SearchTerm', {
 # API route for the OMOP_search endpoint
 @ns.route('/OMOP_search')  
 class CalculateBestMatch_OMOP(Resource):
-    
+    @auth.login_required
     @api.expect(search_term_model, validate=True)  # Expect data model matching 'search_term_model'; enable validation
     @api.response(200, 'Success')  # Successful operation returns 200
     @api.response(400, 'Validation Error')  # Validation issues return 400

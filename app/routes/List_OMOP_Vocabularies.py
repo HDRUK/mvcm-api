@@ -3,6 +3,7 @@ import pandas as pd
 from flask_restx import Resource, fields  
 from utils.initialize_mysql_connection import initialize_mysql_connection
 from sqlalchemy import text
+from utils.Basic_auth import auth
 
 search_term_model = api.model('SearchTerm', {
     'search_term': fields.List(fields.String, required=True, description='The list of search terms to find the best match for', default=['Asthma', 'Heart']),
@@ -16,6 +17,7 @@ engine = initialize_mysql_connection()
 # API route for the List_OMOP_Vocabularies endpoint
 @ns.route('/List_OMOP_Vocabularies')  
 class List_OMOP_Vocabularies(Resource):
+    @auth.login_required
     def get(self):
         try:
             query = """

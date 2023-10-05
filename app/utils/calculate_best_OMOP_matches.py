@@ -111,4 +111,3 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
         ValueError(f"Error in calculate_best_OMOP_matches: {e}")
         return pd.DataFrame()
     
-terms=["fracture of carpal bone"] 

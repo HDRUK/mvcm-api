@@ -3,8 +3,17 @@ import pandas as pd
 from rapidfuzz import fuzz
 import re
 from .initialize_mysql_connection import initialize_mysql_connection
-#from os import environ
+import hashlib
 
+# Dictionary to hold cached DataFrames
+cache = {}
+
+def hash_args(*args, **kwargs):
+    """
+    Create a hashable representation of the function's arguments.
+    """
+    return hashlib.sha256(repr((args, kwargs)).encode()).hexdigest()
+    
 # Connect to database
 engine = initialize_mysql_connection()
 
@@ -14,6 +23,11 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
+        
+        # Check cache
+        cache_key = hash_args(search_terms, vocabulary_id, search_threshold)
+        if cache_key in cache:
+            return cache[cache_key]
 
         # Initialize an empty dictionary to store the search results. This dictionary will be converted to a DataFrame at the end.
         result_dict = {
@@ -84,12 +98,17 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
         # Create a DataFrame from the result dict
         results_df = pd.DataFrame(result_dict).drop_duplicates().sort_values(by='similarity_score', ascending=False)
 
-        if search_threshold is None:
-            return results_df
-        else:
-            return results_df[results_df['similarity_score'] > search_threshold]
+        if search_threshold is not None:
+            results_df = results_df[results_df['similarity_score'] > search_threshold]
         
+        # Cache the result before returning it
+        cache[cache_key] = results_df
+
+        return results_df
+    
     # Fail gracefully and log
     except Exception as e:
         ValueError(f"Error in calculate_best_OMOP_matches: {e}")
         return pd.DataFrame()
+    
+terms=["fracture of carpal bone"] 

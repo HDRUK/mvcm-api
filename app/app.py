@@ -28,15 +28,21 @@ def require_auth():
 
        
 # Import routes
+from routes.CalculateBestMatch_ALL import CalculateBestMatch_ALL    
 from routes.CalculateBestMatch_OMOP import CalculateBestMatch_OMOP
 from routes.CalculateBestMatch_OLS4 import CalculateBestMatch_OLS4
+from routes.CalculateBestMatch_UMLS import CalculateBestMatch_UMLS
 from routes.List_OMOP_Vocabularies import List_OMOP_Vocabularies
 from routes.Unit_Test import Test_the_App
 
 # Add the route to the namespace
+ns.add_resource(CalculateBestMatch_ALL, '/Global_search')
 ns.add_resource(CalculateBestMatch_OMOP, '/OMOP_search')
 ns.add_resource(CalculateBestMatch_OLS4, '/OLS4_search')
+ns.add_resource(CalculateBestMatch_UMLS, '/UMLS_search')
 ns.add_resource(List_OMOP_Vocabularies, '/List_OMOP_Vocabularies')
+
+
 ns.add_resource(Test_the_App, '/Test')
           
 # Main entry point of the application

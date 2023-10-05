@@ -3,9 +3,10 @@ import pandas as pd
 from rapidfuzz import fuzz
 from urllib.parse import quote
 import requests
-from rapidfuzz import fuzz
 import re
 import hashlib
+
+APIKEY="e8ac4aea-f310-4bcd-aded-3c256465fd94"
 
 # Define a helper function for the API call to be cached
 @lru_cache(maxsize=512)
@@ -27,10 +28,11 @@ def hash_args(*args, **kwargs):
     Create a hashable representation of the function's arguments.
     """
     return hashlib.sha256(repr((args, kwargs)).encode()).hexdigest()
-    
+  
+
 # Function to calculate best OLS4 matches based on search terms
 # This function queries the OLS4 API and returns concept matches based on given search terms.
-def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_threshold=None,engine=None):
+def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_threshold=None):
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
@@ -40,71 +42,52 @@ def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_thresho
         if cache_key in cache:
             return cache[cache_key]
 
-        # Initialize an empty dictionary to store the search results. This dictionary will be converted to a DataFrame at the end.
         result_dict = {
-            'search_term': [], 
-            'closely_mapped_term': [], 
-            'relationship_type': [], 
-            'concept_id': [], 
+            'search_term': [],
+            'closely_mapped_term': [],
+            'relationship_type': [],
+            'concept_id': [],
             'vocabulary_id': [],
             'vocabulary_concept_code': [],
-            'similarity_score': []  
+            'similarity_score': []
         }
 
-        # Iterate through each search term provided in the list to perform individual concept matching.
         for search_term in search_terms:
-            search_term_encoded = quote(f"{search_term.upper()},{search_term.lower()},{search_term.capitalize()}")
+            search_term_encoded = quote(search_term)
 
             if vocabulary_id is None:
-                url = f"http://www.ebi.ac.uk/ols4/api/search/?q={search_term_encoded}&queryFields=label&rows=10000"
+                url = f"https://uts-ws.nlm.nih.gov/rest/search/current?apiKey={APIKEY}&pageSize=10000&string={search_term_encoded}"
             else:
                 vocabulary_id_encoded = quote(vocabulary_id)
-                url = f"http://www.ebi.ac.uk/ols4/api/search/?q={search_term_encoded}&queryFields=label&ontology={vocabulary_id_encoded}&rows=10000"
+                url = f"https://uts-ws.nlm.nih.gov/rest/search/current?apiKey={APIKEY}&pageSize=10000&sabs={vocabulary_id_encoded}&string={search_term}"
 
-            headers = {
-                "Accept": "application/json",
-            }
-
-            # Send a GET request to the OLS4 API to fetch potentially matching concepts. Use query parameters for initial filtering.
-            response = requests.get(url, headers=headers)
             json_data = api_call(url)
-
+            
             if json_data is not None:
-
-                results_data = json_data['response']['docs']
-                
-                # Check if 'numFound' is greater than 0, if not continue to the next iteration
-                if json_data['response']['numFound'] <= 0:
-                    continue
+                results_data = json_data['result']['results']
 
                 if not results_data:
                     continue
 
-                # Iterate through each document in the API response to perform additional filtering and similarity scoring.
-                for doc in results_data:
-                    label = doc.get('label')
-                    obo_id = doc.get('obo_id')
-                    
+                for result in results_data:
+                    label = result.get('name')
+                    ui = result.get('ui')
+                    vocab = result.get('rootSource')
+
                     if label is None:
                         continue
-                    
+
                     cleaned_concept_name = re.sub(r'\(.*?\)', '', label).strip()
                     score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
 
-                    if obo_id and ':' in obo_id:
-                        vocabulary_concept_code = obo_id.split(':')[1]
-                    else:
-                        vocabulary_concept_code = obo_id
-
                     result_dict['search_term'].append(search_term)
                     result_dict['closely_mapped_term'].append(label)
-                    result_dict['relationship_type'].append('OLS4_mapping')
-                    result_dict['concept_id'].append(doc.get('obo_id'))
-                    result_dict['vocabulary_id'].append(doc.get('ontology_prefix'))
-                    result_dict['vocabulary_concept_code'].append(vocabulary_concept_code)
+                    result_dict['relationship_type'].append('UMLS_mapping')
+                    result_dict['concept_id'].append(ui)
+                    result_dict['vocabulary_id'].append(vocab)
+                    result_dict['vocabulary_concept_code'].append(ui)
                     result_dict['similarity_score'].append(score)
 
-        # Create a DataFrame from the result dict
         results_df = pd.DataFrame(result_dict).drop_duplicates().sort_values(by='similarity_score', ascending=False)
 
         if search_threshold is not None:
@@ -114,11 +97,10 @@ def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_thresho
         cache[cache_key] = results_df
 
         return results_df
-    
-    # Fail gracefully and log
+
     except Exception as e:
-        ValueError(f"Error in calculate_best_OLS4_matches: {e}")
-        return pd.DataFrame()
+        raise(ValueError(f"Error in calculate_best_UMLS_matches: {e}"))
+      
 
 #terms=["fracture of carpal bone"] 
 #test = calculate_best_OLS4_matches(search_terms=terms, vocabulary_id=None, search_threshold=80)

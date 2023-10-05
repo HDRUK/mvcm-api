@@ -149,7 +149,7 @@ GET `/API/Run_Tests`
 
 ## Authentication
 
-The API uses Basic Authentication. Set the username and password in the `/app/Credentials.py` file.
+The API and SWAGGER both uses Basic Authentication. Set the username and password for these services in the `/app/Credentials.py` file.
 
 **Response**: JSON array containing the best matches.
 

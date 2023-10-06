@@ -10,6 +10,7 @@ ULMS_search_term_model = api.model('UMLS_search', {
     'search_term': fields.List(fields.String, required=True, description='The list of search terms to find the best match for', default=['Asthma', 'Heart']),
     'vocabulary_id': fields.String(required=False, description='The vocabulary ID to filter the results by', default='MTH'),
     'search_threshold': fields.Float(required=False, description='The filter threshold', default=80, min=0, max=100),
+    'search_tool': fields.String(required=False, description='The list of search tools to use for matching', default='rapidFuzz'),
 })
 
 # Dictionary to hold Global_cached DataFrames with a limit of 1000 queries
@@ -44,7 +45,8 @@ class CalculateBestMatch_UMLS(Resource):
             search_terms = request_data.get('search_term')  # Extract 'search_term' parameter
             vocabulary_id = request_data.get('vocabulary_id')  # Extract 'vocabulary_id' parameter
             search_threshold = request_data.get('search_threshold')  # Extract 'search_threshold' parameter
-            
+            search_tool = request_data.get('search_tool')  # Extract 'search_tool' parameter
+                        
             if not search_terms:  # Validate 'search_term' parameter
                 return {'error': "search_term parameter is required"}, 400
 
@@ -53,7 +55,7 @@ class CalculateBestMatch_UMLS(Resource):
             if ULMS_cache_key in UMLS_cache:
                 return jsonify(UMLS_cache[ULMS_cache_key].to_dict(orient='records'))
             # Call function to get best UMLS matches and convert result to dictionary
-            result_df = calculate_best_UMLS_matches(search_terms, vocabulary_id, search_threshold)
+            result_df = calculate_best_UMLS_matches(search_terms, vocabulary_id, search_threshold,search_tool)
 
             # Cache the result and enforce cache limit of 1000
             if len(UMLS_cache) >= 1000:

@@ -15,8 +15,8 @@ app = Flask(__name__)
 
 # Initialize API with Flask-RESTx and set metadata
 # Initialize Flask-RESTx API. Set API metadata like version and title for the Swagger UI documentation.
-api = Api(app, version='1.0', title='Medical Vocabulary Concept Mapping API (MVCM-API)', description='A Flask REST API application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model and the OLS4 API.')
-ns = api.namespace('API', description='OMOP and OLS4 search functions')
+api = Api(app, version='1.1', title='Medical Vocabulary Concept Mapping API (MVCM-API)', description='A Flask REST API application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model, the OLS4 API and the Unified Medical Language System (UMLS) API.')
+ns = api.namespace('API', description='OMOP, OLS4 and UMLS search functions')
 
 # Add swagger auth
 @app.before_request

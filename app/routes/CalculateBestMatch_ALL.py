@@ -13,7 +13,8 @@ GLOBAL_search_term_model = api.model('Global_search', {
     'search_term': fields.List(fields.String, required=True, description='The list of search terms to find the best match for', default=['Asthma', 'Heart']),
     'vocabulary_id': fields.String(required=False, description='The vocabulary ID to filter the results by', default=''),
     'search_threshold': fields.Float(required=False, description='The filter threshold', default=80, min=0, max=100),
-    'search_tools': fields.List(fields.String, required=False, description='The list of search tools to use for matching', default=['OMOP', 'OLS4',"UMLS"]),
+    'search_tool': fields.String(required=False, description='The list of search tools to use for matching', default='rapidFuzz'),
+    'data_sources': fields.List(fields.String, required=False, description='The list of data sources to search', default=['OMOP', 'OLS4','UMLS']),
 
 })
 
@@ -33,7 +34,7 @@ class CalculateBestMatch_ALL(Resource):
     - search_term: The list of search terms to find the best match for.
     - vocabulary_id: The vocabulary ID to filter the results by. If not provided, no filtering is done.
     - search_threshold: The filter threshold for similarity matching.
-    - search_tools: The list of search tools to use for finding the best match. Options are "OMOP", "OLS4", "UMLS".
+    - data_sources: The list of search tools to use for finding the best match. Options are "OMOP", "OLS4", "UMLS".
 
     Returns:
     A JSON array containing the best matches sorted by similarity score.
@@ -51,37 +52,38 @@ class CalculateBestMatch_ALL(Resource):
             search_terms = request_data.get('search_term')  # Extract 'search_term' parameter
             vocabulary_id = request_data.get('vocabulary_id')  # Extract 'vocabulary_id' parameter
             search_threshold = request_data.get('search_threshold')  # Extract 'search_threshold' parameter
-            search_tools = request_data.get('search_tools')  # Extract 'search_threshold' parameter
+            search_tool = request_data.get('search_tool')  # Extract 'search_tool' parameter
+            data_sources = request_data.get('data_sources')  # Extract 'data_sources' parameter
             
             if vocabulary_id == "":
                 vocabulary_id = None
 
-            if search_tools == "":
-                search_tools = ["OMOP","OLS4","UMLS"]
+            if data_sources == "":
+                data_sources = ["OMOP","OLS4","UMLS"]
 
-            if not search_tools:
-                search_tools = ["OMOP","OLS4","UMLS"]
+            if not data_sources:
+                data_sources = ["OMOP","OLS4","UMLS"]
                 
             if not search_terms:  # Validate 'search_term' parameter
                 return {'error': "search_term parameter is required"}, 400
 
             # Check Global_cache
-            Global_cache_key = hash_args(search_terms, vocabulary_id, search_threshold, search_tools)
+            Global_cache_key = hash_args(search_terms, vocabulary_id, search_threshold, data_sources)
             if Global_cache_key in Global_cache:
                 return jsonify(Global_cache[Global_cache_key].to_dict(orient='records'))
 
             dfs = []  # List to hold individual DataFrames
 
-            if 'OMOP' in search_tools:
-                result_df1 = calculate_best_OMOP_matches(search_terms, vocabulary_id, search_threshold)
+            if 'OMOP' in data_sources:
+                result_df1 = calculate_best_OMOP_matches(search_terms, vocabulary_id, search_threshold,search_tool)
                 dfs.append(result_df1)
 
-            if 'OLS4' in search_tools:
-                result_df2 = calculate_best_OLS4_matches(search_terms, vocabulary_id, search_threshold)
+            if 'OLS4' in data_sources:
+                result_df2 = calculate_best_OLS4_matches(search_terms, vocabulary_id, search_threshold,search_tool)
                 dfs.append(result_df2)
 
-            if 'UMLS' in search_tools:
-                result_df3 = calculate_best_UMLS_matches(search_terms, vocabulary_id, search_threshold)
+            if 'UMLS' in data_sources:
+                result_df3 = calculate_best_UMLS_matches(search_terms, vocabulary_id, search_threshold,search_tool)
                 dfs.append(result_df3)
 
             # Merge the DataFrames

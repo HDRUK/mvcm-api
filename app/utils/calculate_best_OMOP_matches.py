@@ -3,13 +3,14 @@ import pandas as pd
 from rapidfuzz import fuzz
 import re
 from .initialize_mysql_connection import initialize_mysql_connection
+from utils.Bert_match import bert_similarity
 
 # Connect to database
 engine = initialize_mysql_connection()
 
 #Function to calculate best OMOP matches based on search terms
 # This function queries the MySQL database and performs string matching.
-def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshold=None):
+def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshold=None,search_tool=None):
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
@@ -70,8 +71,14 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
                 # Remove the bracketed part from the concept_name
                 cleaned_concept_name = re.sub(r'\(.*?\)', '', row['concept_name']).strip()
 
-                score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+                if search_tool == "rapidFuzz":
+                    score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
 
+                elif search_tool == "pubmedBERT":
+                    score = bert_similarity(search_term.lower(), cleaned_concept_name.lower())
+                else: 
+                    score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+                    
                 result_dict['search_term'].append(search_term)
                 result_dict['closely_mapped_term'].append(row['concept_name'])
                 result_dict['relationship_type'].append('OMOP_hit')

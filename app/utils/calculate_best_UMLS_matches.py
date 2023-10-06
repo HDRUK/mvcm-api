@@ -4,6 +4,7 @@ from rapidfuzz import fuzz
 from urllib.parse import quote
 import requests
 import re
+from utils.Bert_match import bert_similarity
 
 APIKEY="e8ac4aea-f310-4bcd-aded-3c256465fd94"
 
@@ -21,7 +22,7 @@ def api_call(url):
 
 # Function to calculate best OLS4 matches based on search terms
 # This function queries the OLS4 API and returns concept matches based on given search terms.
-def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_threshold=None):
+def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_threshold=None,search_tool=None):
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
@@ -62,7 +63,14 @@ def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_thresho
                         continue
 
                     cleaned_concept_name = re.sub(r'\(.*?\)', '', label).strip()
-                    score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+                    
+                    if search_tool == "rapidFuzz":
+                        score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+
+                    elif search_tool == "pubmedBERT":
+                        score = bert_similarity(search_term.lower(), cleaned_concept_name.lower())
+                    else: 
+                        score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
 
                     result_dict['search_term'].append(search_term)
                     result_dict['closely_mapped_term'].append(label)

@@ -13,5 +13,5 @@ def bert_similarity(text1, text2):
         features2 = nlp(text2)
         emb1 = torch.tensor(features1[0]).mean(dim=0)
         emb2 = torch.tensor(features2[0]).mean(dim=0)
-        similarity = torch.cosine_similarity(emb1, emb2, dim=0)
+        similarity = torch.cosine_similarity(emb1, emb2, dim=0)  * 100
     return similarity.item()

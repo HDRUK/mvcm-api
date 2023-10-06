@@ -4,7 +4,6 @@ from rapidfuzz import fuzz
 from urllib.parse import quote
 import requests
 import re
-import hashlib
 
 APIKEY="e8ac4aea-f310-4bcd-aded-3c256465fd94"
 
@@ -19,16 +18,6 @@ def api_call(url):
         return response.json()
     else:
         return None
-    
-# Dictionary to hold cached DataFrames
-cache = {}
-
-def hash_args(*args, **kwargs):
-    """
-    Create a hashable representation of the function's arguments.
-    """
-    return hashlib.sha256(repr((args, kwargs)).encode()).hexdigest()
-  
 
 # Function to calculate best OLS4 matches based on search terms
 # This function queries the OLS4 API and returns concept matches based on given search terms.
@@ -36,11 +25,6 @@ def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_thresho
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
-        
-        # Check cache
-        cache_key = hash_args(search_terms, vocabulary_id, search_threshold)
-        if cache_key in cache:
-            return cache[cache_key]
 
         result_dict = {
             'search_term': [],
@@ -92,9 +76,6 @@ def calculate_best_UMLS_matches(search_terms, vocabulary_id=None, search_thresho
 
         if search_threshold is not None:
             results_df = results_df[results_df['similarity_score'] > search_threshold]
-        
-        # Cache the result before returning it
-        cache[cache_key] = results_df
 
         return results_df
 

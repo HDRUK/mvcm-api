@@ -21,12 +21,11 @@ ns = api.namespace('API', description='OMOP and OLS4 search functions')
 # Add swagger auth
 @app.before_request
 def require_auth():
-    if request.path in ['/', '/.json']:
+    if request.path == '/' or request.path.startswith('/swagger') or request.path.endswith('.json'):
         auth = request.authorization
         if not auth or not (auth.username == Swaggerusername and auth.password == Swaggerpassword):
             return Response(status=401, headers={'WWW-Authenticate': 'Basic realm="Login Required"'})
-
-       
+           
 # Import routes
 from routes.CalculateBestMatch_ALL import CalculateBestMatch_ALL    
 from routes.CalculateBestMatch_OMOP import CalculateBestMatch_OMOP

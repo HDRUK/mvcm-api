@@ -5,7 +5,6 @@ from urllib.parse import quote
 import requests
 from rapidfuzz import fuzz
 import re
-import hashlib
 
 # Define a helper function for the API call to be cached
 @lru_cache(maxsize=512)
@@ -19,15 +18,6 @@ def api_call(url):
     else:
         return None
     
-# Dictionary to hold cached DataFrames
-cache = {}
-
-def hash_args(*args, **kwargs):
-    """
-    Create a hashable representation of the function's arguments.
-    """
-    return hashlib.sha256(repr((args, kwargs)).encode()).hexdigest()
-    
 # Function to calculate best OLS4 matches based on search terms
 # This function queries the OLS4 API and returns concept matches based on given search terms.
 def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_threshold=None,engine=None):
@@ -35,10 +25,7 @@ def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_thresho
         if not search_terms:
             raise ValueError("No valid search_term values provided")
         
-        # Check cache
-        cache_key = hash_args(search_terms, vocabulary_id, search_threshold)
-        if cache_key in cache:
-            return cache[cache_key]
+
 
         # Initialize an empty dictionary to store the search results. This dictionary will be converted to a DataFrame at the end.
         result_dict = {
@@ -109,9 +96,6 @@ def calculate_best_OLS4_matches(search_terms, vocabulary_id=None, search_thresho
 
         if search_threshold is not None:
             results_df = results_df[results_df['similarity_score'] > search_threshold]
-        
-        # Cache the result before returning it
-        cache[cache_key] = results_df
 
         return results_df
     

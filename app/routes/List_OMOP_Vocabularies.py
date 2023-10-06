@@ -17,6 +17,23 @@ engine = initialize_mysql_connection()
 # API route for the List_OMOP_Vocabularies endpoint
 @ns.route('/List_OMOP_Vocabularies')  
 class List_OMOP_Vocabularies(Resource):
+    """
+    List OMOP Vocabularies
+    -----------------------
+    This endpoint returns a list of available vocabularies in the OMOP framework along with their usage frequency in the database.
+
+    Returns:
+    A JSON object containing:
+    - status: Indicates the operation's status as 'success' or 'error'.
+    - data: A list of vocabularies along with their frequencies.
+
+    Authentication:
+    Requires Basic Authentication.
+
+    Errors:
+    Returns 500 Internal Server Error if an exception occurs.
+    """
+
     @auth.login_required
     def get(self):
         try:

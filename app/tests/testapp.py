@@ -22,7 +22,6 @@ class TestApp(unittest.TestCase):
 
         self.invalid_payload = {
             "search_term": [],
-            "vocabulary_id": "",
             "search_threshold": 80
         }
     
@@ -37,12 +36,14 @@ class TestApp(unittest.TestCase):
 
     def test_Global_search_bad_request(self):
         response = self.app.post('API/Global_search', headers=self.headers, json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 400:
+            self.json_response = {'status_code': 400}
         self.assertEqual(response.status_code, 400)  # Expecting bad request
 
     def test_Global_search_auth(self):
         response = self.app.post('API/Global_search', json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 401:
+            self.json_response = {'status_code': 401}
         self.assertEqual(response.status_code, 401)  # Expecting 401 bad request
 
     # OMOP Search Tests
@@ -56,12 +57,14 @@ class TestApp(unittest.TestCase):
 
     def test_OMOP_search_bad_request(self):
         response = self.app.post('API/OMOP_search', headers=self.headers, json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 400:
+            self.json_response = {'status_code': 400}
         self.assertEqual(response.status_code, 400)  # Expecting bad request
 
     def test_OMOP_search_auth(self):
         response = self.app.post('API/OMOP_search', json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 401:
+            self.json_response = {'status_code': 401}
         self.assertEqual(response.status_code, 401)  # Expecting 401 bad request
 
     # OLS4 Search Tests
@@ -75,12 +78,14 @@ class TestApp(unittest.TestCase):
 
     def test_OLS4_search_bad_request(self):
         response = self.app.post('API/OLS4_search', headers=self.headers, json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 400:
+            self.json_response = {'status_code': 400}
         self.assertEqual(response.status_code, 400)  # Expecting 400 bad request
 
     def test_OLS4_search_auth(self):
         response = self.app.post('API/OLS4_search', json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 401:
+            self.json_response = {'status_code': 401}
         self.assertEqual(response.status_code, 401)  # Expecting 401 bad request
 
     # ULMS Search Tests
@@ -94,12 +99,14 @@ class TestApp(unittest.TestCase):
 
     def test_UMLS_search_bad_request(self):
         response = self.app.post('API/UMLS_search', headers=self.headers, json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 400:
+            self.json_response = {'status_code': 400}
         self.assertEqual(response.status_code, 400)  # Expecting 400 bad request
 
     def test_UMLS_search_auth(self):
         response = self.app.post('API/UMLS_search', json=self.invalid_payload)
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 401:
+            self.json_response = {'status_code': 401}
         self.assertEqual(response.status_code, 401)  # Expecting 401 bad request
 
     # List OMOP vocabs Tests
@@ -113,5 +120,6 @@ class TestApp(unittest.TestCase):
 
     def test_List_OMOP_Vocabularies_auth(self):
         response = self.app.get('API/List_OMOP_Vocabularies')
-        self.json_response = jsonify(response.status_code)
+        if response.status_code == 400:
+            self.json_response = {'status_code': 400}
         self.assertEqual(response.status_code, 401)  # Expecting 401 bad request

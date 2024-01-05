@@ -10,7 +10,7 @@ engine = initialize_mysql_connection()
 
 #Function to calculate best OMOP matches based on search terms
 # This function queries the MySQL database and performs string matching.
-def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshold=None):
+def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,ancestors="y",relatives="y",search_threshold=None):
     try:
         if not search_terms:
             raise ValueError("No valid search_term values provided")
@@ -61,6 +61,8 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
             if standard_concepts.empty:
                 continue
 
+            
+
             # Iterate through each row of the fetched standard concepts to perform additional filtering and similarity scoring.
             for idx, row in standard_concepts.iterrows():
 
@@ -76,77 +78,80 @@ def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,search_threshol
                 result_dict['vocabulary_id'].append(row['vocabulary_id'])
                 result_dict['vocabulary_concept_code'].append(row['concept_code'])
                 result_dict['similarity_score'].append(score)
+                
+                if ancestors == "y":
 
-                # Query to fetch ancestors for the concept
-                ancestor_query = """
-                SELECT 
-                    ancestor_concept_id
-                FROM 
-                    CONCEPT_ANCESTOR
-                WHERE 
-                    descendant_concept_id = %s
-                """
-                ancestor_params = (row['concept_id'],)
-                ancestors = pd.read_sql(ancestor_query, con=engine, params=ancestor_params)
-
-                # Iterate through each ancestor and append to result_dict
-                for anc_idx, anc_row in ancestors.iterrows():
-                    # Fetch details of the ancestor concept
-                    ancestor_details_query = """
+                    # Query to fetch ancestors for the concept
+                    ancestor_query = """
                     SELECT 
-                        concept_name, vocabulary_id, concept_code
+                        ancestor_concept_id
                     FROM 
-                        CONCEPT
+                        CONCEPT_ANCESTOR
                     WHERE 
-                        concept_id = %s
+                        descendant_concept_id = %s
                     """
-                    ancestor_details = pd.read_sql(ancestor_details_query, con=engine, params=(anc_row['ancestor_concept_id'],))
+                    ancestor_params = (row['concept_id'],)
+                    ancestors_concepts = pd.read_sql(ancestor_query, con=engine, params=ancestor_params)
 
-                    # For each ancestor concept, add a new entry to result_dict
-                    for anc_detail_idx, anc_detail_row in ancestor_details.iterrows():
-                        result_dict['search_term'].append(search_term)
-                        result_dict['closely_mapped_term'].append(anc_detail_row['concept_name'])
-                        result_dict['relationship_type'].append('OMOP_Ancestor')
-                        result_dict['concept_id'].append(anc_row['ancestor_concept_id'])
-                        result_dict['vocabulary_id'].append(anc_detail_row['vocabulary_id'])
-                        result_dict['vocabulary_concept_code'].append(anc_detail_row['concept_code'])
-                        result_dict['similarity_score'].append(score) # No similarity score for ancestor concepts
+                    # Iterate through each ancestor and append to result_dict
+                    for anc_idx, anc_row in ancestors_concepts.iterrows():
+                        # Fetch details of the ancestor concept
+                        ancestor_details_query = """
+                        SELECT 
+                            concept_name, vocabulary_id, concept_code
+                        FROM 
+                            CONCEPT
+                        WHERE 
+                            concept_id = %s
+                        """
+                        ancestor_details = pd.read_sql(ancestor_details_query, con=engine, params=(anc_row['ancestor_concept_id'],))
 
-                # Query to fetch related concepts for the matched concept
-                related_concepts_query = """
-                SELECT 
-                    concept_id_2, relationship_id
-                FROM 
-                    CONCEPT_RELATIONSHIP
-                WHERE 
-                    concept_id_1 = %s AND
-                    valid_end_date > NOW()
-                """
-                related_concepts_params = (row['concept_id'],)
-                related_concepts = pd.read_sql(related_concepts_query, con=engine, params=related_concepts_params)
+                        # For each ancestor concept, add a new entry to result_dict
+                        for anc_detail_idx, anc_detail_row in ancestor_details.iterrows():
+                            result_dict['search_term'].append(search_term)
+                            result_dict['closely_mapped_term'].append(anc_detail_row['concept_name'])
+                            result_dict['relationship_type'].append('OMOP_Ancestor')
+                            result_dict['concept_id'].append(anc_row['ancestor_concept_id'])
+                            result_dict['vocabulary_id'].append(anc_detail_row['vocabulary_id'])
+                            result_dict['vocabulary_concept_code'].append(anc_detail_row['concept_code'])
+                            result_dict['similarity_score'].append(score) # No similarity score for ancestor concepts
 
-                # Iterate through each related concept and append to result_dict
-                for rel_idx, rel_row in related_concepts.iterrows():
-                    # Fetch details of the related concept
-                    related_concept_details_query = """
+                if relatives == "y":
+                    # Query to fetch related concepts for the matched concept
+                    related_concepts_query = """
                     SELECT 
-                        concept_name, vocabulary_id, concept_code
+                        concept_id_2, relationship_id
                     FROM 
-                        CONCEPT
+                        CONCEPT_RELATIONSHIP
                     WHERE 
-                        concept_id = %s
+                        concept_id_1 = %s AND
+                        valid_end_date > NOW()
                     """
-                    related_concept_details = pd.read_sql(related_concept_details_query, con=engine, params=(rel_row['concept_id_2'],))
+                    related_concepts_params = (row['concept_id'],)
+                    related_concepts = pd.read_sql(related_concepts_query, con=engine, params=related_concepts_params)
 
-                    # For each related concept, add a new entry to result_dict
-                    for rel_detail_idx, rel_detail_row in related_concept_details.iterrows():
-                        result_dict['search_term'].append(search_term)
-                        result_dict['closely_mapped_term'].append(rel_detail_row['concept_name'])
-                        result_dict['relationship_type'].append('OMOP_Related')
-                        result_dict['concept_id'].append(rel_row['concept_id_2'])
-                        result_dict['vocabulary_id'].append(rel_detail_row['vocabulary_id'])
-                        result_dict['vocabulary_concept_code'].append(rel_detail_row['concept_code'])
-                        result_dict['similarity_score'].append(score) # No similarity score for related concepts
+                    # Iterate through each related concept and append to result_dict
+                    for rel_idx, rel_row in related_concepts.iterrows():
+                        # Fetch details of the related concept
+                        related_concept_details_query = """
+                        SELECT 
+                            concept_name, vocabulary_id, concept_code
+                        FROM 
+                            CONCEPT
+                        WHERE 
+                            concept_id = %s
+                        """
+                        related_concept_details = pd.read_sql(related_concept_details_query, con=engine, params=(rel_row['concept_id_2'],))
+
+                        # For each related concept, add a new entry to result_dict
+                        for rel_detail_idx, rel_detail_row in related_concept_details.iterrows():
+                            result_dict['search_term'].append(search_term)
+                            result_dict['closely_mapped_term'].append(rel_detail_row['concept_name'])
+                            result_dict['relationship_type'].append('OMOP_Related')
+                            result_dict['concept_id'].append(rel_row['concept_id_2'])
+                            result_dict['vocabulary_id'].append(rel_detail_row['vocabulary_id'])
+                            result_dict['vocabulary_concept_code'].append(rel_detail_row['concept_code'])
+                            result_dict['similarity_score'].append(score) # No similarity score for related concepts
 
         # Create a DataFrame from the result dict
         # Combine all dictionaries into a single DataFrame

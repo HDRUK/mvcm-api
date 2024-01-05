@@ -7,6 +7,8 @@ from utils.Basic_auth import auth
 search_term_model = api.model('SearchTerm', {
     'search_term': fields.List(fields.String, required=True, description='The list of search terms to find the best match for', default=['Asthma', 'Heart']),
     'vocabulary_id': fields.String(required=False, description='The vocabulary ID to filter the results by', default='snomed'),
+    'ancestors': fields.String(required=False, description='Return Ancestor results', default='y'),
+    'relatives': fields.String(required=False, description='Return Relative results', default='y'),
     'search_threshold': fields.Float(required=False, description='The filter threshold', default=80, min=0, max=100),
 })
 
@@ -25,13 +27,15 @@ class CalculateBestMatch_OMOP(Resource):
             request_data = request.get_json()  # Parse incoming JSON data
             search_terms = request_data.get('search_term')  # Extract 'search_term' parameter
             vocabulary_id = request_data.get('vocabulary_id')  # Extract 'vocabulary_id' parameter
+            ancestors = request_data.get('ancestors')  # Extract 'ancestors' parameter
+            relatives = request_data.get('relatives')  # Extract 'relatives' parameter
             search_threshold = request_data.get('search_threshold')  # Extract 'search_threshold' parameter
             
             if not search_terms:  # Validate 'search_term' parameter
                 return {'error': "search_term parameter is required"}, 400
             
             # Call function to get best OMOP matches and convert result to dictionary
-            result_df = calculate_best_OMOP_matches(search_terms, vocabulary_id, search_threshold)
+            result_df = calculate_best_OMOP_matches(search_terms, vocabulary_id, ancestors, relatives, search_threshold)
             return jsonify(result_df.to_dict(orient='records'))  # Return result as JSON
         
         except Exception as e:  # Handle exceptions

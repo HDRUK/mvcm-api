@@ -20,14 +20,14 @@ if [ -z "$DB_HOST" ]; then
     mysql -u root -p${MYSQL_ROOT_PASSWORD} < /app/init_db.sql
 
     # Count the number of .tsv files in the data directory
-    file_count=$(ls -1 ./data/*.tsv 2>/dev/null | wc -l)
+    file_count=$(ls -1 ./data/*/*.tsv 2>/dev/null | wc -l)
     echo $file_count "files to process"
 
     # Initialize a counter for the loop
     counter=1
 
-    # Loop through each .tsv file in the data directory
-    for file in ./data/*.tsv; do
+    # Loop through each CONCEPT .tsv file in the data directory
+    for file in ./data/CONCEPT/*.tsv; do
         echo "Processing file $counter of $file_count: Importing $file"
 
         # Get the full path of the file
@@ -37,6 +37,46 @@ if [ -z "$DB_HOST" ]; then
         mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
         LOAD DATA INFILE '$full_path'
         INTO TABLE CONCEPT
+        FIELDS TERMINATED BY '\t'
+        LINES TERMINATED BY '\n'
+        IGNORE 1 ROWS;
+        "
+
+        # Increment the counter
+        ((counter++))
+    done
+
+    # Loop through each CONCEPT_ANCESTOR .tsv file in the data directory
+    for file in ./data/CONCEPT_ANCESTOR/*.tsv; do
+        echo "Processing file $counter of $file_count: Importing $file"
+
+        # Get the full path of the file
+        full_path=$(realpath $file)
+
+        # Run SQL command to load data from the .tsv file into the CONCEPT table
+        mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
+        LOAD DATA INFILE '$full_path'
+        INTO TABLE CONCEPT_ANCESTOR
+        FIELDS TERMINATED BY '\t'
+        LINES TERMINATED BY '\n'
+        IGNORE 1 ROWS;
+        "
+
+        # Increment the counter
+        ((counter++))
+    done
+
+    # Loop through each CONCEPT_RELATIONSHIP .tsv file in the data directory
+    for file in ./data/CONCEPT_RELATIONSHIP/*.tsv; do
+        echo "Processing file $counter of $file_count: Importing $file"
+
+        # Get the full path of the file
+        full_path=$(realpath $file)
+
+        # Run SQL command to load data from the .tsv file into the CONCEPT table
+        mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
+        LOAD DATA INFILE '$full_path'
+        INTO TABLE CONCEPT_RELATIONSHIP
         FIELDS TERMINATED BY '\t'
         LINES TERMINATED BY '\n'
         IGNORE 1 ROWS;

@@ -28,10 +28,9 @@ def split_tsv_into_fixed_chunks(file_path, chunk_size=10000):
 
 # Create a sample TSV file for demonstration purposes
 # For this example, the file will have only 15 rows, but the function can handle larger files as well
-sample_tsv_path = 'CONCEPT.tsv'
+sample_tsv_path = 'CONCEPT_RELATIONSHIP.tsv'
 
 
 # Split the sample TSV file into chunks of 5 lines each (for demonstration)
 # In your case, the chunk_size would be 10000 as you specified
 output_files = split_tsv_into_fixed_chunks(sample_tsv_path, chunk_size=10000)
-output_files

@@ -13,7 +13,6 @@ CONCEPT_ANCESTOR = pd.read_csv('CONCEPT_ANCESTOR.tsv', sep='\t', low_memory=Fals
 # Read CONCEPT_SYNONYM data
 CONCEPT_SYNONYM = pd.read_csv('CONCEPT_SYNONYM.tsv', sep='\t', low_memory=False)
 
-
 CONCEPT_filtered_rows = CONCEPT[CONCEPT['concept_name'].str.contains('Asthma', case=False, na=False)]
 
 # Filter CONCEPT_RELATIONSHIP based on CONCEPT_filtered_rows

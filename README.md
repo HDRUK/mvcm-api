@@ -32,7 +32,10 @@ pip install -r requirements.txt
 
 ## Database Setup
 
-The MySQL database is initialized with data from the `.tsv` files in the data folder, these are loaded into a table structured as defined in the `init_db.sql` script. The database configuration, including the host and credentials, can be set through environment variables.
+The MySQL database is initialized with data from the `.tsv` files in the `data` folder, these are loaded into a table structured as defined in the `init_db.sql` script. The database configuration, including the host and credentials, can be set through environment variables.
+
+For Testing a `data.supermin` folder is also provided, this only has asthma terms to reduce container build time. 
+
 
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. For Docker deployment, these variables can be set using the `-e` option with the `docker run` command. For example:
 
@@ -51,12 +54,12 @@ If `DB_HOST` is not set, the app will default to using a local MySQL database, a
   - `/data`: Directory containing OMOP data.
   - `/utils`: Directory containing utility functions and database initialization.
     - `calculate_best_OLS4_matches.py`: Initializes MySQL database connection.
-    - `ols4_request.py`: Utility for sending requests to OLS4 API.
-    - `testapp.py`: Utility functions for handling test cases.
+    - `break_up_CONCEPT.py`: Utility for breaking up OMOP tables into chunks for GIT storage.
+    - `Extract_supermin_data.py`: Utility for extracting the asthma only data in the `data.supermin` folder.
     
 ## Docker Deployment
 
-Build and deploy the application using Docker, following the instructions defined in the `Dockerfile` and `entrypoint.sh`. The application is containerized with all necessary files and scripts, and can be run with the following command:
+Build and deploy the application using Docker, following the instructions defined in the `Dockerfile` and `entrypoint.sh`. SQL setup is also defined in the `int_db.sql` file. The application is containerized with all necessary files and scripts, and can be run with the following command:
 ```
 docker build -t app .
 docker run -p 80:80 app
@@ -121,8 +124,6 @@ Searches for standard concepts using the OLS4 API based on search terms provided
   "search_threshold": 80
 }
 ```
-## note: break_up_CONCEPT.py
-Simple function to splits OMOP concept table into chunks for effective storage in Git. 
 
 ## License
 

@@ -1,170 +1,196 @@
-#from flask import current_app
 import pandas as pd
-from rapidfuzz import fuzz
 import re
-from .initialize_mysql_connection import initialize_mysql_connection
-#from os import environ
+from rapidfuzz import fuzz
+from sqlalchemy import create_engine
+from os import environ
 
-# Connect to database
-engine = initialize_mysql_connection()
-
-#Function to calculate best OMOP matches based on search terms
-# This function queries the MySQL database and performs string matching.
-def calculate_best_OMOP_matches(search_terms, vocabulary_id=None,ancestors="y",relatives="y",search_threshold=None):
-    try:
-        if not search_terms:
-            raise ValueError("No valid search_term values provided")
-
-        # Initialize separate dictionaries for each type of result
-        result_dict = {
-            'search_term': [], 
-            'closely_mapped_term': [], 
-            'relationship_type': [], 
-            'concept_id': [], 
-            'vocabulary_id': [],
-            'vocabulary_concept_code':[],
-            'similarity_score': []  
-        }
-
-        # Iterate through each search term provided in the list to perform individual concept matching.
-        for search_term in search_terms:
-
-            # Fetch potentially matching standard concepts from the database
-            if vocabulary_id is None:
-                query = """
-                SELECT 
-                    concept_name, concept_id, vocabulary_id, concept_code
-                FROM 
-                    CONCEPT 
-                WHERE 
-                    standard_concept = 'S' AND
-                    MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
-                """
-                params = (search_term,)
-            else:
-                query = """
-                SELECT 
-                    concept_name, concept_id, vocabulary_id, concept_code
-                FROM 
-                    CONCEPT 
-                WHERE 
-                    vocabulary_id = %s AND
-                    standard_concept = 'S' AND
-                    MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
-                """
-                params = (vocabulary_id, search_term)
+class OMOPMatcher:
+    def __init__(self):
+        # Connect to database
+        try:
+            print("Initialize the MySQL connection based on the configuration.")
+            MYSQL_HOST = environ.get('DB_HOST', '127.0.0.1')
+            MYSQL_USER = environ.get('DB_USER', 'root')
+            MYSQL_PASSWORD = environ.get('DB_PASSWORD', 'psw4MYSQL')
+            MYSQL_DB = environ.get('DB_NAME', 'mydb')
+            engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}')
             
-            # Query the database to fetch potentially matching standard concepts. Use MySQL full-text search for initial filtering.
-            standard_concepts = pd.read_sql(query, con=engine, params=params)
-            
-            # If no matches were found using full-text search, skip to the next search term
-            if standard_concepts.empty:
+        except Exception as e:
+            ValueError(f"Failed to connect to MySQL: {e}")
+
+        self.engine = engine
+
+    def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
+        try:
+            if not search_terms:
+                raise ValueError("No valid search_term values provided")
+
+            overall_results = []
+
+            # Assuming vocabulary_id is meant to be a not empty string
+            if not isinstance(vocabulary_id, str) or not vocabulary_id.strip():
+                vocabulary_id = None
+
+            # search_threshold should be a float or integer, so check if it's a number
+            if not isinstance(search_threshold, (float, int)):
+                search_threshold = None
+         
+            for search_term in search_terms:
+                OMOP_concepts = self.fetch_OMOP_concepts(search_term, vocabulary_id)
+                if OMOP_concepts.empty:
+                    continue
+
+                term_results = {
+                    'search_term': search_term,
+                    'CONCEPT': self.process_concepts(OMOP_concepts, search_term, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor)
+                }
+
+                overall_results.append(term_results)
+
+            return overall_results
+        
+        except Exception as e:
+            raise ValueError(f"Error in calculate_best_OMOP_matches: {e}")
+
+    def process_concepts(self, OMOP_concepts, search_term, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor):
+        matches = []
+
+        # Remove duplicate rows based on 'concept_id'
+        OMOP_concepts = OMOP_concepts.drop_duplicates(subset='concept_id')
+
+        for _, row in OMOP_concepts.iterrows():
+            cleaned_concept_name = re.sub(r'\(.*?\)', '', row['concept_name']).strip()
+            score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+
+            # Continue to the next iteration if the score is below the threshold
+            if search_threshold is not None and score < search_threshold:
                 continue
 
-            
+            # Add match to the list if it meets or exceeds the threshold
+            match = {
+                'concept_name': row['concept_name'],
+                'concept_id': row['concept_id'],
+                'vocabulary_id': row['vocabulary_id'],
+                'concept_code': row['concept_code'],
+                'similarity_score': score,
+                'CONCEPT_ANCESTOR': self.fetch_concept_ancestor(row['concept_id'],max_separation_descendant,max_separation_ancestor) if concept_ancestor == "y" else [],
+                'CONCEPT_RELATIONSHIP': self.fetch_concept_relationship(row['concept_id']) if concept_relationship == "y" else []
+            }
+            matches.append(match)
+        return matches
+    
+    def fetch_OMOP_concepts(self, search_term, vocabulary_id):
+        query = """
+        SELECT 
+            C.concept_id,
+            C.concept_name, 
+            C.vocabulary_id, 
+            C.concept_code
+        FROM 
+            CONCEPT AS C
+        LEFT JOIN CONCEPT_SYNONYM AS CS ON C.concept_id = CS.concept_id
+        WHERE 
+            C.standard_concept = 'S' AND
+            (%s IS NULL OR C.vocabulary_id = %s) AND
+            (MATCH(C.concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) OR
+            MATCH(CS.concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE))
+        """
+        params = (vocabulary_id, vocabulary_id, search_term, search_term)
 
-            # Iterate through each row of the fetched standard concepts to perform additional filtering and similarity scoring.
-            for idx, row in standard_concepts.iterrows():
+        return pd.read_sql(query, con=self.engine, params=params)
+    
 
-                # Remove the bracketed part from the concept_name
-                cleaned_concept_name = re.sub(r'\(.*?\)', '', row['concept_name']).strip()
+    def fetch_concept_ancestor(self, concept_id,max_separation_descendant,max_separation_ancestor):
+        query = """
+            (
+                SELECT 
+                    'Ancestor' as relationship_type,
+                    ca.ancestor_concept_id AS concept_id,
+                    ca.ancestor_concept_id,
+                    ca.descendant_concept_id,
+                    c.concept_name, 
+                    c.vocabulary_id, 
+                    c.concept_code,
+                    ca.min_levels_of_separation,
+                    ca.max_levels_of_separation
+                FROM 
+                    CONCEPT_ANCESTOR ca
+                JOIN 
+                    CONCEPT c ON ca.ancestor_concept_id = c.concept_id
+                WHERE 
+                    ca.descendant_concept_id = %s AND
+                    ca.min_levels_of_separation >= %s AND
+                    ca.max_levels_of_separation <= %s
+            )
+            UNION
+            (
+                SELECT 
+                    'Descendant' as relationship_type,
+                    ca.descendant_concept_id AS concept_id,
+                    ca.ancestor_concept_id,
+                    ca.descendant_concept_id,
+                    c.concept_name, 
+                    c.vocabulary_id, 
+                    c.concept_code,
+                    ca.min_levels_of_separation,
+                    ca.max_levels_of_separation
+                FROM 
+                    CONCEPT_ANCESTOR ca
+                JOIN 
+                    CONCEPT c ON ca.descendant_concept_id = c.concept_id
+                WHERE 
+                    ca.ancestor_concept_id = %s AND
+                    ca.min_levels_of_separation >= %s AND
+                    ca.max_levels_of_separation <= %s
+            )   
+        """
+        min_separation_ancestor =1 
+        min_separation_descendant=1
+        results = pd.read_sql(query, con=self.engine, params=(concept_id, min_separation_ancestor, max_separation_ancestor, concept_id, min_separation_descendant, max_separation_descendant)).drop_duplicates().query("concept_id != @concept_id")
 
-                score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+        return [{
+            'concept_name': row['concept_name'],
+            'concept_id': row['concept_id'],
+            'vocabulary_id': row['vocabulary_id'],
+            'concept_code': row['concept_code'],
+            'relationship': {
+                'relationship_type': row['relationship_type'],
+                'ancestor_concept_id': row['ancestor_concept_id'],
+                'descendant_concept_id': row['descendant_concept_id'],
+                'min_levels_of_separation': row['min_levels_of_separation'],
+                'max_levels_of_separation': row['max_levels_of_separation']
+            }
+        } for _, row in results.iterrows()]
 
-                result_dict['search_term'].append(search_term)
-                result_dict['closely_mapped_term'].append(row['concept_name'])
-                result_dict['relationship_type'].append('OMOP_hit')
-                result_dict['concept_id'].append(row['concept_id'])
-                result_dict['vocabulary_id'].append(row['vocabulary_id'])
-                result_dict['vocabulary_concept_code'].append(row['concept_code'])
-                result_dict['similarity_score'].append(score)
-                
-                if ancestors == "y":
 
-                    # Query to fetch ancestors for the concept
-                    ancestor_query = """
-                    SELECT 
-                        ancestor_concept_id
-                    FROM 
-                        CONCEPT_ANCESTOR
-                    WHERE 
-                        descendant_concept_id = %s
-                    """
-                    ancestor_params = (row['concept_id'],)
-                    ancestors_concepts = pd.read_sql(ancestor_query, con=engine, params=ancestor_params)
+    def fetch_concept_relationship(self, concept_id):
+        query = """
+            SELECT 
+                cr.concept_id_2 AS concept_id,
+                cr.concept_id_1,
+                cr.relationship_id,
+                cr.concept_id_2, 
+                c.concept_name, 
+                c.vocabulary_id, 
+                c.concept_code
+            FROM 
+                CONCEPT_RELATIONSHIP cr
+            JOIN 
+                CONCEPT c ON cr.concept_id_2 = c.concept_id
+            WHERE 
+                cr.concept_id_1 = %s AND
+                cr.valid_end_date > NOW()
+        """
+        results = pd.read_sql(query, con=self.engine, params=(concept_id,)).drop_duplicates().query("concept_id != @concept_id")
 
-                    # Iterate through each ancestor and append to result_dict
-                    for anc_idx, anc_row in ancestors_concepts.iterrows():
-                        # Fetch details of the ancestor concept
-                        ancestor_details_query = """
-                        SELECT 
-                            concept_name, vocabulary_id, concept_code
-                        FROM 
-                            CONCEPT
-                        WHERE 
-                            concept_id = %s
-                        """
-                        ancestor_details = pd.read_sql(ancestor_details_query, con=engine, params=(anc_row['ancestor_concept_id'],))
-
-                        # For each ancestor concept, add a new entry to result_dict
-                        for anc_detail_idx, anc_detail_row in ancestor_details.iterrows():
-                            result_dict['search_term'].append(search_term)
-                            result_dict['closely_mapped_term'].append(anc_detail_row['concept_name'])
-                            result_dict['relationship_type'].append('OMOP_Ancestor')
-                            result_dict['concept_id'].append(anc_row['ancestor_concept_id'])
-                            result_dict['vocabulary_id'].append(anc_detail_row['vocabulary_id'])
-                            result_dict['vocabulary_concept_code'].append(anc_detail_row['concept_code'])
-                            result_dict['similarity_score'].append(score) # No similarity score for ancestor concepts
-
-                if relatives == "y":
-                    # Query to fetch related concepts for the matched concept
-                    related_concepts_query = """
-                    SELECT 
-                        concept_id_2, relationship_id
-                    FROM 
-                        CONCEPT_RELATIONSHIP
-                    WHERE 
-                        concept_id_1 = %s AND
-                        valid_end_date > NOW()
-                    """
-                    related_concepts_params = (row['concept_id'],)
-                    related_concepts = pd.read_sql(related_concepts_query, con=engine, params=related_concepts_params)
-
-                    # Iterate through each related concept and append to result_dict
-                    for rel_idx, rel_row in related_concepts.iterrows():
-                        # Fetch details of the related concept
-                        related_concept_details_query = """
-                        SELECT 
-                            concept_name, vocabulary_id, concept_code
-                        FROM 
-                            CONCEPT
-                        WHERE 
-                            concept_id = %s
-                        """
-                        related_concept_details = pd.read_sql(related_concept_details_query, con=engine, params=(rel_row['concept_id_2'],))
-
-                        # For each related concept, add a new entry to result_dict
-                        for rel_detail_idx, rel_detail_row in related_concept_details.iterrows():
-                            result_dict['search_term'].append(search_term)
-                            result_dict['closely_mapped_term'].append(rel_detail_row['concept_name'])
-                            result_dict['relationship_type'].append('OMOP_Related')
-                            result_dict['concept_id'].append(rel_row['concept_id_2'])
-                            result_dict['vocabulary_id'].append(rel_detail_row['vocabulary_id'])
-                            result_dict['vocabulary_concept_code'].append(rel_detail_row['concept_code'])
-                            result_dict['similarity_score'].append(score) # No similarity score for related concepts
-
-        # Create a DataFrame from the result dict
-        # Combine all dictionaries into a single DataFrame
-        combined_results = pd.DataFrame(result_dict)
-
-        results_df = combined_results.drop_duplicates().sort_values(by='similarity_score', ascending=False)
-
-        if search_threshold is None:
-            return results_df
-        else:
-            return results_df[results_df['similarity_score'] > search_threshold]
-        
-    # Fail gracefully and log
-    except Exception as e:
-        ValueError(f"Error in calculate_best_OMOP_matches: {e}")
-        return pd.DataFrame()
+        return [{
+            'concept_name': row['concept_name'],
+            'concept_id': row['concept_id'],
+            'vocabulary_id': row['vocabulary_id'],
+            'concept_code': row['concept_code'],
+            'relationship': {
+                'concept_id_1': row['concept_id_1'],
+                'relationship_id': row['relationship_id'],
+                'concept_id_2': row['concept_id_2']
+            }
+        } for _, row in results.iterrows()]

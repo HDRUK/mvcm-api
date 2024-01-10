@@ -5,7 +5,7 @@ import os
 def split_tsv_into_fixed_chunks(file_path, chunk_size=10000):
     # Read the TSV file into a Pandas DataFrame
     df = pd.read_csv(file_path, sep='\t')
-    
+
     # Initialize an empty list to hold output file paths
     output_files = []
     
@@ -28,7 +28,7 @@ def split_tsv_into_fixed_chunks(file_path, chunk_size=10000):
 
 # Create a sample TSV file for demonstration purposes
 # For this example, the file will have only 15 rows, but the function can handle larger files as well
-sample_tsv_path = 'CONCEPT_RELATIONSHIP.tsv'
+sample_tsv_path = 'CONCEPT_SYNONYM.tsv'
 
 
 # Split the sample TSV file into chunks of 5 lines each (for demonstration)

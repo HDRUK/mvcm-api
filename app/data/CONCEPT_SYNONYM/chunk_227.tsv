@@ -1,0 +1,2390 @@
+concept_id	concept_synonym_name	language_concept_id
+40335946	Bypass of jejunum by anastomosis of jejunum to jejunum	4180186
+40335946	Jejunal bypass by jejuno-jejunostomy (& Abbe) (procedure)	4180186
+40335948	Jejunocolostomy (& [Dewind] or [Payne] or [Scott]) (procedure)	4180186
+40335948	Payne jejunocolostomy	4180186
+40335948	Scott jejunocolostomy	4180186
+40335948	Bypass of jejunum by anastomosis of jejunum to colon	4180186
+40335948	Dewind jejunocolostomy	4180186
+40335948	Jejunocolostomy	4180186
+40335951	Open endoscopic operations on jejunum (procedure)	4180186
+40335960	Cervical smear - moderate dyskaryosis	4180186
+40335960	Cerv.smear: mod.dyskaryosis	4180186
+40335960	Cerv smear moderate dyskaryosis: (& CIN II) (finding)	4180186
+40335960	CIN II - moderate dyskaryosis	4180186
+40335964	Smear NAD - no endocervical cells (finding)	4180186
+40335965	Cervical smear result NOS	4180186
+40335965	Nuclear abnormality on C/S	4180186
+40335965	Nuclear abnormality on smear	4180186
+40335965	Smear: [cervical result NOS] or [nuclear abnormality] (finding)	4180186
+40335978	Cervical smear - mild inflammation (finding)	4180186
+40335979	Cervical smear - moderate inflammation (finding)	4180186
+40336023	Postmortem examination (procedure)	4180186
+40336023	Postmortem result	4180186
+40336036	Urine cytology (finding)	4180186
+40336037	Urine cytology normal (finding)	4180186
+40336038	Urine cytology abnormal (finding)	4180186
+40336043	Genetic observations (procedure)	4180186
+40336044	Phenotype (finding)	4180186
+40336046	Cholinesterase phenotype (finding)	4180186
+40336048	Karyotype (procedure)	4180186
+40336051	Physics in medicine	4180186
+40336051	Radiology	4180186
+40336051	(Radiology &/or physics in medicine) or (radiology) or (X-rays) (procedure)	4180186
+40336051	Radiology/physics in medicine	4180186
+40336051	X-rays	4180186
+40336128	Postschool T+P vaccination	4180186
+40336128	Tetanus + polio vaccination	4180186
+40336128	Tetanus + polio vaccination (& [postschool]) (procedure)	4180186
+40336151	First DTP polio and Hib vaccination (procedure)	4180186
+40336153	Third DTP polio and Hib vaccination (procedure)	4180186
+40336166	Leptospirosis prophylaxis	4180186
+40336166	Leptospirosis prophylaxis (& [Weil's disease]) (procedure)	4180186
+40336166	Weil's disease prophylaxis	4180186
+40336168	Gammaglobulin administration	4180186
+40336168	Immunoglobulin injection	4180186
+40336168	Immunoglobulin injection (& [gammaglobulin administration]) (procedure)	4180186
+40336168	Immunoglobulin injections	4180186
+40336169	Hep A gammaglobulin given	4180186
+40336169	Hepatitis A gamma globulin given	4180186
+40336169	Infectious hepatitis vaccinat	4180186
+40336169	Normal immunoglobulin given	4180186
+40336169	(Normal immunoglobulin given (& [hep A gammaglobulin]) or (infectious hepatitis vaccination) (procedure)	4180186
+40336170	Anti-varic-Zoster immunoglob.	4180186
+40336170	Anti-varic-Zoster immunoglob	4180186
+40336170	Anti-varic-Zoster immunoglob (& injection) (procedure)	4180186
+40336185	Gonorrhea contact	4180186
+40336185	Gonorrhoea contact	4180186
+40336185	Syphilis contact	4180186
+40336185	VD contact	4180186
+40336185	VD - venereal disease contact	4180186
+40336185	Venereal disease contact	4180186
+40336185	Venereal disease contact (& [gonorrhoea] or [syphilis])	4180186
+40336185	Venereal disease contact (& [gonorrhoea] or [syphilis]) (procedure)	4180186
+40336189	Threadworm contact	4180186
+40336189	(Threadworm contact) or (worms in the family) (procedure)	4180186
+40336189	Worms in the family	4180186
+40336194	Salmonella contact (procedure)	4180186
+40336195	Food poisoning contact (finding)	4180186
+40336196	Varicella contact (finding)	4180186
+40336220	Correction epicanthus (& Mustarde) (procedure)	4180186
+40336220	Correction of epicanthus	4180186
+40336220	Mustarde canthoplasty	4180186
+40336222	Plant oil (substance)	4180186
+40336222	Vegetable oil	4180186
+40336224	Canthotomy (procedure)	4180186
+40336231	Lateral canthoplasty (procedure)	4180186
+40336243	Debulking of cartilage graft of eyelid (procedure)	4180186
+40336247	Blepharoplasty	4180186
+40336247	Excision of redundant skin of eyelid	4180186
+40336247	(Excision of redundant skin of eyelid) or (blepharoplasty) (procedure)	4180186
+40336262	Correction entropion (& [Wheeler] or [Weiss]) (procedure)	4180186
+40336262	Correction of entropion	4180186
+40336262	Weiss repair of entropion	4180186
+40336262	Wheeler repair of entropion	4180186
+40336264	Retropunctal cautery (procedure)	4180186
+40336269	Other plastic repair eyelid (& tarsorrhaphy) (procedure)	4180186
+40336269	Other plastic repair of eyelid	4180186
+40336269	Tarsorrhaphy	4180186
+40336278	Retired procedure (procedure)	4180186
+40336284	Fasanella-Servat procedure	4180186
+40336284	Fasanella tarsomullerectomy	4180186
+40336284	Servat tarsomullerectomy	4180186
+40336284	Tarsomullerectomy	4180186
+40336284	Tarsomullerectomy (& [Fasanella] or [Servat]) (procedure)	4180186
+40336304	Other operations on eyelid (procedure)	4180186
+40336309	Electrolysis of eyelash	4180186
+40336309	Epilation of eyelash	4180186
+40336309	(Eyelash: [epilation] or [electrolysis]) or (retropunctal cautery) (procedure)	4180186
+40336309	Retro-punctal cautery	4180186
+40336309	Retropunctal cautery	4180186
+40336324	Canaliculodacryocystorhinostomy (& Jones) (procedure)	4180186
+40336324	Jones canaliculodacrocystorhinostomy	4180186
+40336324	Canaliculodacryocystorhinostomy	4180186
+40336328	Other specified connection between lacrimal gland and nose (procedure)	4180186
+40336354	Diagnostic endoscopic examination of jejunum NOS	4180186
+40336354	Jejunoscopy: [diagnostic NOS] or [NEC] (procedure)	4180186
+40336354	Jejunoscopy NEC	4180186
+40336366	Ileum operations	4180186
+40336366	Small intestine operations	4180186
+40336401	Creation of continent ileostomy (procedure)	4180186
+40336405	Creation defunctioning ileostomy (& [Brooke] or [split]) (procedure)	4180186
+40336405	Creation of Brooke ileostomy	4180186
+40336405	Creation of defunctioning ileostomy	4180186
+40336405	Creation of split ileostomy	4180186
+40336406	Creation ileostomy: [OS] or [Gross] (procedure)	4180186
+40336406	Creation of Gross ileostomy	4180186
+40336406	Other specified creation of ileostomy	4180186
+40336437	Therapeutic endoscopic operations on ileum	4180186
+40336437	Therapeutic enteroscopy	4180186
+40336437	Therapeutic enteroscopy (& ileoscopy) (procedure)	4180186
+40336437	Therapeutic ileoscopy	4180186
+40336444	Diagnostic enteroscopy	4180186
+40336444	Diagnostic endoscopic examination of ileum	4180186
+40336444	Diagnostic enteroscopy (& ileoscopy) (procedure)	4180186
+40336444	Diagnostic ileoscopy	4180186
+40336478	Dental X-ray (procedure)	4180186
+40336497	Back X-ray	4180186
+40336497	Lumbar spine X-ray	4180186
+40336497	Plain X-ray spine	4180186
+40336497	Sacral spine X-ray	4180186
+40336497	Spine X-ray	4180186
+40336497	Vert. column X-ray	4180186
+40336497	Vertebral column X-ray	4180186
+40336497	X-ray spine (& [plain] or [lumbar] or [sacral]) (procedure)	4180186
+40336502	Cervical spine X-ray	4180186
+40336502	Neck X-ray	4180186
+40336502	Plain X-ray cervical spine	4180186
+40336502	X-ray neck (& cervical spine) (procedure)	4180186
+40336520	Retired procedure (procedure)	4180186
+40336534	Pelvic X-ray	4180186
+40336534	Pelvimetry X-ray	4180186
+40336534	Pelvis X-ray (& pelvimetry) (procedure)	4180186
+40336534	Plain X-ray pelvis	4180186
+40336534	X-ray pelvimetry	4180186
+40336539	Ilium X-ray (procedure)	4180186
+40336544	Arm X-ray	4180186
+40336544	Humerus X-ray	4180186
+40336544	Plain X-ray shoulder/arm	4180186
+40336544	Radius X-ray	4180186
+40336544	Shoulder X-ray	4180186
+40336544	Ulna X-ray	4180186
+40336544	X-ray (& plain): [shoulder &/or arm] or [humerus] or [radius] or [ulna] (procedure)	4180186
+40336547	Glenoid X-ray	4180186
+40336547	Shoulder X-ray (procedure)	4180186
+40336573	Plain X-ray shoulder/arm NOS (procedure)	4180186
+40336583	Metacarpal X-ray (procedure)	4180186
+40336588	Thumb X-ray (procedure)	4180186
+40336596	Isolation of infected patient (finding)	4180186
+40336620	Hepatitis notification	4180186
+40336620	Notification of infectious jaundice	4180186
+40336620	Notification of infectious jaundice (& [hepatitis]) (procedure)	4180186
+40336620	Notification of inf. jaundice	4180186
+40336692	Cardiac disease treatment started (& [digitalised])	4180186
+40336692	Cardiac disease treatment started (& [digitalised]) (finding)	4180186
+40336692	Cardiac dis.treatment started	4180186
+40336692	Digitalised	4180186
+40336692	Digitalized	4180186
+40336715	Borderline blood pressure (finding)	4180186
+40336716	Normal blood pressure (finding)	4180186
+40336718	Asthma monitoring	4180186
+40336718	Chronic resp. dis. monitoring	4180186
+40336718	Respiratory disease monitoring	4180186
+40336718	Respiratory disease monitoring (& [asthma] or [chronic]) (regime/therapy)	4180186
+40336746	Insertion of silicon plug into lacrimal canaliculus (procedure)	4180186
+40336758	Vitamin B>4<	4180186
+40336758	Vitamin B>4< (substance)	4180186
+40336775	Advancement of medial rectus muscle of eye	4180186
+40336775	Medial rectus advancement	4180186
+40336775	Medial rectus: [resection NEC] or [advancement] (procedure)	4180186
+40336775	Resection of medial rectus muscle of eye NEC	4180186
+40336786	Colpopoiesis	4180186
+40336786	Vaginal reconstruction (procedure)	4180186
+40336804	Other operations on eye muscle (procedure)	4180186
+40336805	Freeing of adhesions of eye muscle	4180186
+40336805	Freeing of adhesions of eye muscle (procedure)	4180186
+40336811	Advancement of eye muscle (procedure)	4180186
+40336812	Medial rectus advancement (procedure)	4180186
+40336814	Lateral rectus advancement (procedure)	4180186
+40336816	Inferior rectus advancement (procedure)	4180186
+40336817	Superior oblique advancement (procedure)	4180186
+40336823	Removal of corneal lesion (procedure)	4180186
+40336824	Excision of conjunctival lesion (procedure)	4180186
+40336832	Retired procedure (procedure)	4180186
+40336855	Retired procedure (procedure)	4180186
+40336857	Other operations on ileum	4180186
+40336857	Other operations on small intestine	4180186
+40336887	Appendicectomy NEC	4180186
+40336887	Appendicectomy: [Other NOS] or [NEC] (procedure)	4180186
+40336887	Other excision of appendix NOS	4180186
+40336905	Hampton ileo-rectal anastomosis	4180186
+40336905	Total colectomy and anastomosis of ileum to rectum	4180186
+40336905	Total colectomy & ileo-rectal anastomosis (& Hampton) (procedure)	4180186
+40336938	Left hemicolectomy and ileostomy however further qualified (procedure)	4180186
+40336942	Retired procedure (procedure)	4180186
+40336947	Sigmoid colectomy and ileostomy however further qualified (procedure)	4180186
+40336960	Colectomy NEC	4180186
+40336960	Colectomy: [other NOS] or [NEC] or [hemi- NEC] or [Rankin] (procedure)	4180186
+40336960	Hemicolectomy NEC	4180186
+40336960	Other excision of colon NOS	4180186
+40336960	Rankin partial colectomy	4180186
+40336962	Femur X-ray	4180186
+40336962	Hip X-ray	4180186
+40336962	Knee X-ray	4180186
+40336962	Leg X-ray	4180186
+40336962	Plain X-ray hip/leg	4180186
+40336962	X-ray: [hip &/or leg] or [femur] or [knee] (procedure)	4180186
+40336994	Plain X-ray hip/leg NOS (procedure)	4180186
+40336997	Tarsus X-ray (procedure)	4180186
+40337000	Toe X-ray (procedure)	4180186
+40337003	Hallux X-ray (procedure)	4180186
+40337007	Skeletal X-ray	4180186
+40337007	Skeletal X-ray (& general survey) (procedure)	4180186
+40337007	X-ray: general skeletal survey	4180186
+40337017	Soft tissue imaging (& plain) (procedure)	4180186
+40337017	Tissue imaging - soft	4180186
+40337017	Imaging - soft tissue	4180186
+40337017	Soft tissue imaging	4180186
+40337017	Soft tissue imaging - plain	4180186
+40337041	Salivary gland X-ray	4180186
+40337041	Salivary gland X-ray (procedure)	4180186
+40337053	Larynx soft tissue X-ray	4180186
+40337053	Larynx soft tis. X-ray	4180186
+40337053	Trachea soft tis. X-ray	4180186
+40337053	X-ray larynx/trachea	4180186
+40337053	X-ray (& soft tissue) larynx &/or trachea (procedure)	4180186
+40337054	Bronchus soft tis.X-ray	4180186
+40337054	Lung soft tis. X-ray	4180186
+40337054	Soft tissue X-ray lung &/or bronchus (procedure)	4180186
+40337054	Soft tiss.X-ray lung/bronchus	4180186
+40337056	Soft tissue X-ray chest wall (procedure)	4180186
+40337068	Mammography not attended (situation)	4180186
+40337082	Biliary soft tissue X-ray	4180186
+40337082	Biliary soft tis. X-ray	4180186
+40337082	Gallbladder soft tissue X-ray	4180186
+40337082	Gall-bladder soft tiss. X-ray	4180186
+40337082	Gall bladder str. X-ray	4180186
+40337082	Gallbladder str. X-ray	4180186
+40337086	Abd.lower-soft tis.X-r.	4180186
+40337086	Genitalia soft tis. X-r	4180186
+40337086	Kids.,urets, bladder abdo xray	4180186
+40337086	Lower abd. soft tissue X-ray	4180186
+40337086	X-ray: [lower abdomen soft tissue] or [genitalia soft tissue] or [kidneys &/or ureters &/or bladder &/or abdominal] (procedure)	4180186
+40337089	Pelvic soft tis. X-ray	4180186
+40337089	Pelvic X-ray (& [non-obstetric of organs] or [soft tissue]) (procedure)	4180186
+40337089	X-ray non-obst. pelvic organs	4180186
+40337129	Occasional asthma (procedure)	4180186
+40337131	Moderate asthma (procedure)	4180186
+40337132	Severe asthma (procedure)	4180186
+40337152	Asthma - currently dormant (finding)	4180186
+40337154	Reversibility trial by steroids (procedure)	4180186
+40337155	Spacer device in use (regime/therapy)	4180186
+40337207	Pearly disease (disorder)	4180186
+40337208	Nocturnal epilepsy (disorder)	4180186
+40337209	Epilepsy control good (finding)	4180186
+40337210	Epilepsy control poor (finding)	4180186
+40337212	Eye disease monitoring	4180186
+40337212	Ophthal. dis.monitoring	4180186
+40337212	Ophthal. disorder monitoring	4180186
+40337212	Ophthalmological monitoring	4180186
+40337212	Ophthalmological monitoring (& disease) (regime/therapy)	4180186
+40337221	Registered partially blind	4180186
+40337221	Registered partially sighted	4180186
+40337221	Registered: [partially sighted] or [partially blind] (finding)	4180186
+40337242	D'Ombrain excision of pterygium of cornea and corneal graft	4180186
+40337242	Excision of pterygium of cornea and corneal graft	4180186
+40337242	Excision pterygium & corneal graft (& D'Ombrain) (procedure)	4180186
+40337243	Laser keratectomy (procedure)	4180186
+40337247	Laser assisted in situ keratomileusis (procedure)	4180186
+40337248	Second stage Dacron mesh keratoprosthesis (procedure)	4180186
+40337267	Other operations on cornea (procedure)	4180186
+40337278	Removal of scleral lesion (procedure)	4180186
+40337289	Arruga string operation for detached retina	4180186
+40337289	Buckling of sclera and local or encircling explant however further qualified	4180186
+40337289	Scleral buckling: [explant HFQ] or [Arruga for detachment] (procedure)	4180186
+40337301	Incision sclera: [OS] or [Scheie cautery] (procedure)	4180186
+40337301	Other specified incision of sclera	4180186
+40337301	Scheie cautery incision of sclera	4180186
+40337307	Poisoning by reserpine (disorder)	4180186
+40337312	Filtering operations on iris (procedure)	4180186
+40337315	Iridoplasty NEC	4180186
+40337315	Iridoplasty (& NEC) (procedure)	4180186
+40337315	Pupilloplasty	4180186
+40337316	Insertion anterior chamber drainage tube (& Molteno tube) (procedure)	4180186
+40337316	Insertion of Molteno implantation tube into anterior chamber of eye	4180186
+40337316	Insertion of tube into anterior chamber of eye to assist drainage of aqueous humor	4180186
+40337316	Insertion of tube into anterior chamber of eye to assist drainage of aqueous humour	4180186
+40337318	Retired procedure (procedure)	4180186
+40337325	Barkan goniopuncture	4180186
+40337325	Goniopuncture	4180186
+40337325	Goniopuncture (& Barkan) (procedure)	4180186
+40337331	YAG laser iridotomy	4180186
+40337331	Laser iridotomy (procedure)	4180186
+40337339	Excision of pupillary membrane (procedure)	4180186
+40337342	Resuturing of trabeculectomy (procedure)	4180186
+40337346	Other specified operations on sclera or iris (procedure)	4180186
+40337347	Sclera and iris operations NOS (procedure)	4180186
+40337371	Retired procedure (procedure)	4180186
+40337382	Caecostomy operations	4180186
+40337382	Caecostomy operations (procedure)	4180186
+40337384	Allen-Welch caecostomy	4180186
+40337384	Allen-Welch cecostomy	4180186
+40337384	Tube caecostomy	4180186
+40337384	Tube caecostomy (& Allen-Welch)	4180186
+40337384	Tube caecostomy (& Allen-Welch) (procedure)	4180186
+40337384	Tube cecostomy	4180186
+40337386	Caecostomy NEC	4180186
+40337386	Caecostomy: [NEC] or [closure]	4180186
+40337386	Caecostomy: [NEC] or [closure] (procedure)	4180186
+40337386	Cecostomy NEC	4180186
+40337386	Closure of caecostomy	4180186
+40337386	Closure of cecostomy	4180186
+40337387	(Exteriorisation caecum OS) or (Weir appendicostomy)	4180186
+40337387	(Exteriorisation caecum OS) or (Weir appendicostomy) (procedure)	4180186
+40337387	Other specified exteriorisation of caecum	4180186
+40337387	Other specified exteriorization of cecum	4180186
+40337387	Weir appendicostomy	4180186
+40337389	Colostomy	4180186
+40337389	(Colostomy) or (other exteriorisation of colon)	4180186
+40337389	(Colostomy) or (other exteriorisation of colon) (procedure)	4180186
+40337389	Other exteriorisation of colon	4180186
+40337389	Other exteriorization of colon	4180186
+40337390	Loop colostomy	4180186
+40337390	(Loop colostomy) or (operation) (procedure)	4180186
+40337392	Closure of colostomy	4180186
+40337392	Closure of colostomy (& Paul-Mikulicz) (procedure)	4180186
+40337392	Mikulicz closure of colostomy	4180186
+40337392	Paul closure of colostomy	4180186
+40337397	Colostomy NEC	4180186
+40337397	Colostomy: [other NOS] or [NEC] (procedure)	4180186
+40337397	Other exteriorisation of colon NOS	4180186
+40337397	Other exteriorization of colon NOS	4180186
+40337412	Open endoscopic operations on colon (procedure)	4180186
+40337416	Retired procedure (procedure)	4180186
+40337422	Moschowitz sigmoidopexy	4180186
+40337422	Sigmoidopexy	4180186
+40337422	Sigmoidopexy (& Moschowitz) (procedure)	4180186
+40337432	Colonoscopic polypectomy (procedure)	4180186
+40337435	Other therapeutic colonoscopy	4180186
+40337435	Other therapeutic colonoscopy (& fibreoptic)	4180186
+40337435	Other therapeutic colonoscopy (& fibreoptic) (procedure)	4180186
+40337435	Other therapeutic endoscopic operations on colon	4180186
+40337435	Other therapeutic fiberoptic colonoscopy	4180186
+40337435	Other therapeutic fibreoptic colonoscopy	4180186
+40337444	Check colonoscopy (procedure)	4180186
+40337447	Colonoscopic extirpation of lesion of lower bowel	4180186
+40337447	Endoscopic extirpation lesion lower bowel: [fibreoptic sigmoidoscope (& rectum)] or [colonoscopic]	4180186
+40337447	Endoscopic extirpation lesion lower bowel: [fibreoptic sigmoidoscope (& rectum)] or [colonoscopic] (procedure)	4180186
+40337447	Endoscopic extirpation of lesion of lower bowel using fiberoptic sigmoidoscope	4180186
+40337447	Endoscopic extirpation of lesion of lower bowel using fibreoptic sigmoidoscope	4180186
+40337447	Endoscopic extirpation of lesion of rectum using fiberoptic sigmoidoscope	4180186
+40337447	Endoscopic extirpation of lesion of rectum using fibreoptic sigmoidoscope	4180186
+40337449	Other specified muscle disorder, NEC (disorder)	4180186
+40337466	Diagnostic endoscopic examination of lower bowel using fiberoptic sigmoidoscope NOS	4180186
+40337466	Diagnostic endoscopic examination of lower bowel using fibreoptic sigmoidoscope NOS	4180186
+40337466	Fiberoptic sigmoidoscopy NEC	4180186
+40337466	Fibreoptic sigmoidoscopy: [diagnostic NOS] or [NEC]	4180186
+40337466	Fibreoptic sigmoidoscopy: [diagnostic NOS] or [NEC] (procedure)	4180186
+40337466	Fibreoptic sigmoidoscopy NEC	4180186
+40337480	Contrast procedure: [Head &/or neck] or [ventriculography] (procedure)	4180186
+40337480	Contrast radiography head/neck	4180186
+40337480	Head and neck contrast procedure	4180186
+40337480	Ventriculog.- contrast	4180186
+40337484	Contrast radiography: [paranasal sinuses] or [sinuses] (procedure)	4180186
+40337484	Contr.radiog.paranasal sinuses	4180186
+40337484	Sinuses contrast radiog	4180186
+40337484	Sinuses contrast radiography	4180186
+40337485	Contrast radiography of nasopharynx (procedure)	4180186
+40337492	Contrast radiog.larynx/trachea	4180186
+40337492	Contrast radiography larynx &/or trachea (procedure)	4180186
+40337492	Larynx - contrast radiography	4180186
+40337492	Larynx - contr. radiog.	4180186
+40337492	Trachea - contrast radiography	4180186
+40337492	Trachea - contr.radiog.	4180186
+40337511	Barium meal (procedure)	4180186
+40337587	Dacryocystography	4180186
+40337587	Dacrocystogram	4180186
+40337587	Dacryocystogram (procedure)	4180186
+40337587	DCG - Dacryocystogram	4180186
+40337615	Frequency of GP or paramedic-treated hypoglycaemia	4180186
+40337615	Frequency of GP or paramedic-treated hypoglycaemia (observable entity)	4180186
+40337618	Injection sites	4180186
+40337618	Injection sites - diabetic	4180186
+40337618	Injection sites (& diabetic) (finding)	4180186
+40337629	Diabetic - poor control	4180186
+40337629	Diabetic - poor control (& unstable) (finding)	4180186
+40337629	Unstable diabetes	4180186
+40337659	Thyroid dis.treatment stopped	4180186
+40337659	Thyroid dis treatment stopped (& thyroxine) (regime/therapy)	4180186
+40337659	Thyroxine Rx stopped	4180186
+40337672	Target weight discussed	4180186
+40337672	Weight loss advised	4180186
+40337672	Weight: [target discussed] or [loss advised] (finding)	4180186
+40337746	Capsulotomy of eye lens	4180186
+40337746	Capsulotomy of lens capsule	4180186
+40337746	Capsulotomy of lens capsule (procedure)	4180186
+40337756	Other extraction lens (& for cataract) (procedure)	4180186
+40337756	Other extraction of cataract	4180186
+40337756	Other extraction of lens	4180186
+40337761	Intraocular lens procedures	4180186
+40337761	(Intraocular lens prosthesis) & (operation) (procedure)	4180186
+40337761	IOL - Intraocular lens procedure	4180186
+40337761	Prosthesis of lens	4180186
+40337765	Other operations on lens (procedure)	4180186
+40337766	Capsulectomy of lens capsule (procedure)	4180186
+40337785	Destruction of lesion of retina	4180186
+40337785	Destruction retinal lesion (& other) (procedure)	4180186
+40337785	Other destruction of retina	4180186
+40337786	Cauterisation of lesion of retina	4180186
+40337786	Cauterization of lesion of retina	4180186
+40337786	Electrocoagulation of lesion of retina NEC	4180186
+40337786	Laser therapy lesion of retina	4180186
+40337786	Photocoagulation of lesion of retina NEC	4180186
+40337786	Retinal lesion cauterisation: (& [electro NEC] or [photo NEC] or [laser])	4180186
+40337786	Retinal lesion cauterisation: (& [electro NEC] or [photo NEC] or [laser]) (procedure)	4180186
+40337803	Removal foreign body eye (& NEC) (procedure)	4180186
+40337803	Removal of foreign body from eye	4180186
+40337803	Removal of foreign body from eye NEC	4180186
+40337828	Excision of polyp from external auditory canal (procedure)	4180186
+40337855	Anterior crurotomy of ear	4180186
+40337855	Anterior crurotomy of ear (& Fowler) (procedure)	4180186
+40337855	Fowler anterior crurotomy of ear	4180186
+40337873	Other therapeutic endoscopic operations on rectum using rigid sigmoidoscope	4180186
+40337873	Other therapeutic endoscopic operations on sigmoid colon using rigid sigmoidoscope	4180186
+40337873	Other therapeutic rigid endoscopic operations on sigmoid colon	4180186
+40337873	Other therapeutic rigid sigmoidoscopic operation: [sigmoid] or [rectum] (procedure)	4180186
+40337879	Diagnostic endoscopic examination of rectum using rigid sigmoidoscope	4180186
+40337879	Diagnostic endoscopic examination of sigmoid colon using rigid sigmoidoscope	4180186
+40337879	Diagnostic rigid endoscopic examination of sigmoid colon	4180186
+40337879	Diagnostic rigid sigmoidoscopy: [sigmoid colon] or [rectum] (procedure)	4180186
+40337893	Acute disease of genitourinary system (disorder)	4180186
+40337895	Partial excision of rectum and sigmoid colon for prolapse	4180186
+40337895	Rectosigmoidectomy	4180186
+40337895	Rectosigmoidectomy (& partial for prolapse) (procedure)	4180186
+40337899	Excision of rectum NEC	4180186
+40337899	Excision of rectum (& NEC) (procedure)	4180186
+40337899	Proctectomy	4180186
+40337900	Abdominoperineal excision of rectum and end colostomy	4180186
+40337900	Abdominoperineal excision of rectum and end colostomy (& named variants) (procedure)	4180186
+40337900	Abdominoperineal resection of rectum and end colostomy	4180186
+40337900	Gabriel abdominoperineal excision of rectum & end colostomy	4180186
+40337900	Lloyd - Davies abdominoperineal excision rectum and end colostomy	4180186
+40337900	Miles abdominoperineal excision of rectum and end colostomy	4180186
+40337900	Rankin abdominoperineal excision of rectum and end colostomy	4180186
+40337908	Open extirpation of lesion of rectum	4180186
+40337908	Open operation on rectal polyp	4180186
+40337908	Open operation rectal lesion: [extirpation] or [polyp] or [excision polyp] (procedure)	4180186
+40337908	Open polypectomy of rectum	4180186
+40337922	Fixation of rectum using fascia lata	4180186
+40337922	Fixation rectum using fascia lata (& Ripstein) (procedure)	4180186
+40337922	Ripstein fixation of rectum using fascia lata	4180186
+40337923	Erickman repair of prolapse of rectum	4180186
+40337923	Proctopexy for prolapse (& Erickman) (procedure)	4180186
+40337923	Proctopexy for prolapse of rectum	4180186
+40337925	Insertion of sponge for rectal prolapse	4180186
+40337925	Insertion of Wells sponge for rectal prolapse	4180186
+40337925	Insertion sponge for rectal prolapse (& Wells) (procedure)	4180186
+40337925	Wells operation	4180186
+40337929	Abdominal repair levator ani (& Roscoe Graham) (procedure)	4180186
+40337929	Abdominal repair of levator ani muscles	4180186
+40337929	Graham repair for rectal prolapse	4180186
+40337929	Roscoe repair for rectal prolapse	4180186
+40337930	Delorme repair of rectum for prolapse	4180186
+40337930	Dunphy repair for rectal prolapse	4180186
+40337930	Other specified other abdominal operation for rectal prolapse	4180186
+40337930	Rectal prolapse repair: [other abdominal OS] or [Delorme] or [Dunphy] (procedure)	4180186
+40337944	Peranal polypectomy of rectum	4180186
+40337944	Peranal excision of lesion of rectum	4180186
+40337944	Peranal excision of rectal polyp	4180186
+40337944	Peranal excision rectal lesion (& polyp) (procedure)	4180186
+40337950	Swenson Hirschsprung proctect	4180186
+40337950	Duhamel Hirschsprung abdoperin	4180186
+40337950	Other specified other peranal operation on rectum	4180186
+40337950	Peranal rectal operation: [OS] or [Duhamel] or [Soave] or [Swenson] (procedure)	4180186
+40337950	Soave endorectal pull through operation for Hirschsprung's disease	4180186
+40337957	Retired procedure (procedure)	4180186
+40337970	Barium meal and follow through (procedure)	4180186
+40337994	Renal angiography	4180186
+40337994	Renal arteriography	4180186
+40337994	Renal arteriography - general	4180186
+40337994	Renal arteriography (& general) (procedure)	4180186
+40338036	Leg venogram (procedure)	4180186
+40338036	Lower limb venogram	4180186
+40338045	Abdominal lymphangiogram (procedure)	4180186
+40338045	Lymphangiography abdomen	4180186
+40338048	Vascular studies performed (procedure)	4180186
+40338124	Autopsied body (observable entity)	4180186
+40338142	Drug - risk monitoring	4180186
+40338142	High risk drug monitoring	4180186
+40338142	Medication -risk monit.	4180186
+40338142	Medication - risk monitoring	4180186
+40338142	Medication - risk monitoring (& [high risk]) (regime/therapy)	4180186
+40338151	Anticoag. monitoring	4180186
+40338151	Anticoagulant monitoring	4180186
+40338151	Anticoagulant monitoring (& [Warfarin]) (regime/therapy)	4180186
+40338151	Warfarin monitoring	4180186
+40338165	Prescription dose change	4180186
+40338165	Prescription treatment changed (& [dose] or [repeat]) (finding)	4180186
+40338165	Rep.presc. treatment changed	4180186
+40338165	Treatment dose changed	4180186
+40338172	Full care by consultant	4180186
+40338172	Full care by specialist	4180186
+40338172	Full care by: [specialist] or [consultant] (regime/therapy)	4180186
+40338188	Hormone replacement therapy	4180186
+40338188	Menopause monitoring	4180186
+40338188	(Menopause monitoring) or (hormone replacement therapy) (regime/therapy)	4180186
+40338206	Patient refuses HRT (situation)	4180186
+40338217	Health education	4180186
+40338217	Counselling	4180186
+40338217	Counselling/health education	4180186
+40338217	Counselling &/or health education (procedure)	4180186
+40338217	Education - health	4180186
+40338225	Calcium oxalate and calcium phosphate calculus (qualifier value)	4180186
+40338243	Excision of cholesteatoma of external auditory canal (procedure)	4180186
+40338249	Reduced sodium diet	4180186
+40338249	No added salt diet	4180186
+40338249	Reduced salt diet	4180186
+40338249	Low sodium diet (finding)	4180186
+40338249	Na - Low sodium diet	4180186
+40338249	NAS - No added salt diet	4180186
+40338250	Mastoid and middle ear operations	4180186
+40338250	Mastoid and middle ear procedure	4180186
+40338250	Mastoid operations	4180186
+40338250	Mastoid &/or middle ear operations (procedure)	4180186
+40338250	Middle ear operations	4180186
+40338251	Exenteration of mastoid air cells	4180186
+40338251	Mastoidectomy	4180186
+40338251	Mastoid: [exenteration air cells] or [mastoidectomy] (procedure)	4180186
+40338252	Radical mastoidectomy	4180186
+40338252	Radical mastoidectomy (& Stacke) (procedure)	4180186
+40338252	Stacke radical mastoidectomy	4180186
+40338253	Cortical mastoidectomy	4180186
+40338253	Cortical mastoidectomy (& Schwartze) (procedure)	4180186
+40338253	Schwartze cortical mastoidectomy	4180186
+40338258	Excision of cholesteatoma of mastoid (procedure)	4180186
+40338261	Other operations on mastoid (procedure)	4180186
+40338266	Almoor drainage of petrous apex of mastoid	4180186
+40338266	Drainage of petrous apex of mastoid	4180186
+40338266	Drainage petrous apex mastoid (& Almoor) (procedure)	4180186
+40338270	Insertion of bone anchors for subcutaneous bone anchored hearing aid (procedure)	4180186
+40338276	Myringoplasty using biological graft	4180186
+40338276	Myringoplasty using graft	4180186
+40338276	Myringoplasty using graft (& biological) (procedure)	4180186
+40338276	Myringoplasty with tympanotomy	4180186
+40338279	Myringoplasty NEC (procedure)	4180186
+40338288	Myringotomy and insertion of Armstrong tube	4180186
+40338288	Myringotomy and insertion of long term grommet	4180186
+40338288	Myringotomy and insertion of Perlee tube	4180186
+40338288	Myringotomy and insertion of Silverstein tube	4180186
+40338288	Myringotomy and insertion tube: [long term grommet] or [named tube] (procedure)	4180186
+40338301	Revision of stapedectomy (procedure)	4180186
+40338305	Derlacki graft tympanoplasty	4180186
+40338305	Plastic repair of middle ear	4180186
+40338305	Tympanoplasty	4180186
+40338305	Tympanoplasty (& Derlacki) (procedure)	4180186
+40338318	Removal of grommet from middle ear	4180186
+40338318	Removal of ventilation tube from tympanic membrane	4180186
+40338318	Removal of ventilation tube: [from tympanic membrane] or [grommet from middle ear] (procedure)	4180186
+40338322	Maintenance of grommet through tympanic membrane	4180186
+40338322	Maintenance of ventilation tube through tympanic membrane	4180186
+40338322	Maintenance tympanic membrane ventilation tube (& grommet) (procedure)	4180186
+40338326	Replacement of ventilation tube through tympanic membrane (procedure)	4180186
+40338327	Replacement of grommet in tympanic membrane (procedure)	4180186
+40338342	Insufflation of eustachian tube to examine patency (procedure)	4180186
+40338359	Manipulation of rectum	4180186
+40338359	Manual procedures on rectum	4180186
+40338359	Manual rectal procedures (& manipulation) (procedure)	4180186
+40338421	Chronic paranoid schizophrenia with acute exacerbations (disorder)	4180186
+40338424	Haemorrhoidectomy	4180186
+40338424	Haemorrhoidectomy (& Whitehead)	4180186
+40338424	Haemorrhoidectomy (& Whitehead) (procedure)	4180186
+40338424	Hemorrhoidectomy	4180186
+40338424	Whitehead haemorrhoidectomy	4180186
+40338424	Whitehead hemorrhoidectomy	4180186
+40338441	Anal stretch	4180186
+40338441	Anorectal stretch	4180186
+40338441	Anorectal stretch (& anal) (procedure)	4180186
+40338478	Cineradiography	4180186
+40338478	(Cineradiography) or (movement radiography) (procedure)	4180186
+40338478	Movement radiogr.	4180186
+40338478	Movement radiography	4180186
+40338490	Kymography	4180186
+40338490	Kymography/electrokymography	4180186
+40338490	Kymography &/or electrokymography (procedure)	4180186
+40338504	CAT scan abnormal (finding)	4180186
+40338516	Bone densimetry normal (situation)	4180186
+40338520	Magnetic resonance imaging	4180186
+40338520	Magnetic resonance: [imaging] or [study] (procedure)	4180186
+40338520	NMR Scan	4180186
+40338520	Nuclear magnetic resonance	4180186
+40338526	Stereographic radiogr.	4180186
+40338526	Stereographic radiography	4180186
+40338526	Stereo-tactic/scopic investig.	4180186
+40338526	(Stereo-tactic/scopic investigation) or (stereographic radiography) (procedure)	4180186
+40338559	Miscellaneous imaging procedures (procedure)	4180186
+40338567	Cervical plexus cutaneous branch	4180186
+40338567	Entire cervical plexus cutaneous branch (body structure)	4180186
+40338568	B12 isotope studies	4180186
+40338568	Blood isotope studies	4180186
+40338568	Bone isotope studies	4180186
+40338568	Brain isotope studies	4180186
+40338568	Cardiac isotope studies	4180186
+40338568	CSF isotope study	4180186
+40338568	Cystographic isotope studies	4180186
+40338568	Cystogr.isotope studies	4180186
+40338568	Diagnostic nuclear med.	4180186
+40338568	Diagnostic nuclear medicine	4180186
+40338568	Diagnostic nuclear medicine (& various isotope studies) (procedure)	4180186
+40338568	Heart isotope studies	4180186
+40338568	Iron isotope studies	4180186
+40338568	Isotope diagnostic rad.	4180186
+40338568	Isotope diagnostic radiology	4180186
+40338568	Joint isotope studies	4180186
+40338568	Kidney isotope studies	4180186
+40338568	Liver isotope studies	4180186
+40338568	Lung isotope studies	4180186
+40338568	Lymph isotope studies	4180186
+40338568	Nuclear med.-diagnostic	4180186
+40338568	Placenta isotope study	4180186
+40338568	Renal isotope studies	4180186
+40338568	Skull isotope studies	4180186
+40338568	Spleen isotope studies	4180186
+40338568	Thorax isotope studies	4180186
+40338568	Thyroid isotope studies	4180186
+40338568	Urinary isotope studies	4180186
+40338568	Vitamin B12 isotope studies	4180186
+40338576	Dynamic non-imaging isotope: brain (& [study]) (procedure)	4180186
+40338576	Dynam.non-im.isotope: brain	4180186
+40338578	Dynamic non-imaging isotope: thyroid (& [study]) (procedure)	4180186
+40338578	Dynam.non-im.isotope: thyroid	4180186
+40338582	Dynamic non-imaging isotope: liver (& [study]) (procedure)	4180186
+40338582	Dynam.non-im.isotope: liver	4180186
+40338584	Dynam.non-im.isotope:blood flo	4180186
+40338584	Dynamic non-imaging isotope:blood flow (& [study]) (procedure)	4180186
+40338603	Thalium scan of heart	4180186
+40338603	Isotope static scan heart	4180186
+40338603	Isotope static scan heart (& thalium) (procedure)	4180186
+40338630	Folic acid advice - pre-pregnancy (procedure)	4180186
+40338632	Disease counseling (regime/therapy)	4180186
+40338632	Disease counselling	4180186
+40338637	Counselling for contraceptive implant (procedure)	4180186
+40338639	Procreative &/or fertility counselling (procedure)	4180186
+40338639	Fertility counselling	4180186
+40338639	Procreat/fertility counselling	4180186
+40338644	Advice about temperature control (procedure)	4180186
+40338646	Counselling about serious diagnosis (procedure)	4180186
+40338647	Prognosis counselling (procedure)	4180186
+40338657	Health ed. - smoking	4180186
+40338657	Health education - smoking (regime/therapy)	4180186
+40338658	Health education - alcohol (regime/therapy)	4180186
+40338661	Health ed. - rubella status	4180186
+40338661	Health education - rubella (& status) (procedure)	4180186
+40338661	Rubella - health ed.	4180186
+40338665	Health education - exercise (regime/therapy)	4180186
+40338666	Health education - diet (regime/therapy)	4180186
+40338669	Health educn - back problems (regime/therapy)	4180186
+40338671	Subcutaneous tissue of wrist and hand (body structure)	4180186
+40338691	Informing patient of diagnosis (procedure)	4180186
+40338692	Informing patient of prognosis (procedure)	4180186
+40338702	Informing relative (procedure)	4180186
+40338706	Informing next of kin (procedure)	4180186
+40338708	Informing next of kin of prognosis (procedure)	4180186
+40338710	Lifestyle counselling (procedure)	4180186
+40338711	Advice (procedure)	4180186
+40338712	Advice about child safety (procedure)	4180186
+40338714	Advice about HIV prevention (procedure)	4180186
+40338717	Advice about fluid intake (procedure)	4180186
+40338718	Advice about posture (procedure)	4180186
+40338720	Advice about foot care (procedure)	4180186
+40338721	Advice about taking aspirin (procedure)	4180186
+40338722	Stress counselling (procedure)	4180186
+40338723	Counselling/health ed. NOS (regime/therapy)	4180186
+40338724	Screening	4180186
+40338724	Screening - health check	4180186
+40338724	Screening (& [health check]) (procedure)	4180186
+40338749	Salmonella 1,40;z4,z23;-	4180186
+40338749	Salmonella IV 1,40:z4,z23:-	4180186
+40338749	Salmonella IV sachsenwald (organism)	4180186
+40338749	Salmonella sachsenwald	4180186
+40338774	Revision rhinoplasty (procedure)	4180186
+40338805	Excision lesion nasal septum (& spur) (procedure)	4180186
+40338805	Excision of lesion of nasal septum	4180186
+40338805	Removal of nasal septal spur	4180186
+40338812	Nasal septal polypectomy (procedure)	4180186
+40338813	Adams crushing of nasal septum	4180186
+40338813	Nasal septum: [operation OS] or [Adams crushing] (procedure)	4180186
+40338813	Other specified operation on nasal septum	4180186
+40338816	Fetal presentation (finding)	4180186
+40338823	Excision of concha bullosa (procedure)	4180186
+40338833	Cauterisation of Little's area	4180186
+40338833	Cauterisation of Little's area (procedure)	4180186
+40338837	Packing of anterior nasal cavity (procedure)	4180186
+40338842	Other operations on internal nose	4180186
+40338842	Other procedures on internal nose (procedure)	4180186
+40338850	Nasal polypectomy using auto-debrider (procedure)	4180186
+40338863	Correction cleft lip nasal deformity (& [primary] or [McComb] or [Pigott]) (procedure)	4180186
+40338863	McComb primary correction of cleft nose	4180186
+40338863	Pigott alar leap-frog correction	4180186
+40338863	Primary correction of alar cartilage	4180186
+40338863	Primary correction of cleft lip nasal deformity	4180186
+40338865	Alar base advancement	4180186
+40338865	Correction cleft lip nasal tip deformity (& [advancement alar base] or [Kilner]) (procedure)	4180186
+40338865	Correction of cleft lip nasal tip deformity	4180186
+40338865	Kilner inroll	4180186
+40338911	Destruction of liver lesion (procedure)	4180186
+40338928	Exploration liver (& transplanted) (procedure)	4180186
+40338928	Exploration of liver	4180186
+40338928	Exploration of liver transplant	4180186
+40338943	Percutaneous transluminal operations on blood vessel of liver	4180186
+40338943	Transluminal operation liver blood vessel (& percutaneous) (procedure)	4180186
+40338943	Transluminal operations on blood vessel of liver	4180186
+40338963	Biopsy of lesion of liver NEC	4180186
+40338963	Biopsy of liver NEC	4180186
+40338963	Liver biopsy: [NEC] or [lesion NEC] (procedure)	4180186
+40338980	Tc99m-DMSA renal study (procedure)	4180186
+40338993	VQ scan requested (procedure)	4180186
+40338998	Haematology - isotopic	4180186
+40338998	Hematology - isotopic	4180186
+40338998	Isotope - haematology	4180186
+40338998	Isotope - hematology	4180186
+40338998	Isotopic haematological study (& [plasma volume] or [red cell volume])	4180186
+40338998	Isotopic haematological study (& [plasma volume] or [red cell volume]) (procedure)	4180186
+40338998	Plasma vol.- isotopic	4180186
+40338998	Plasma volume - isotopic	4180186
+40338998	Red cell vol.-isotopic	4180186
+40338998	Red cell volume - isotopic	4180186
+40339003	Hormone radioassay - thalamus &/or hypothalamus (procedure)	4180186
+40339003	Hormone radioassay-thal/hypoth	4180186
+40339003	Hypothalamus hormone radioass.	4180186
+40339003	Thalamus hormone radioassay	4180186
+40339003	Thalamus horm.radioass.	4180186
+40339013	Other radioimmunoassay (procedure)	4180186
+40339022	Hormone radiobioassay	4180186
+40339022	Radiobioassay (procedure)	4180186
+40339022	Steroid radiobioassay	4180186
+40339022	Vitamin radiobioassay	4180186
+40339029	Orchiopexy, any type, second stage (procedure)	4180186
+40339033	Radiobioassay - thyroid hormones (procedure)	4180186
+40339039	Other specified erythematous condition, NEC (disorder)	4180186
+40339044	Infrared radiation - diagn.NOS (procedure)	4180186
+40339046	Laser radiation scanning	4180186
+40339046	Laser radiation scanning (& retinal) (procedure)	4180186
+40339046	Retinal scan - laser	4180186
+40339049	Fetal U-S scan	4180186
+40339049	Fetal US scan	4180186
+40339049	Obstetric ultrasound scan (& [diagnostic] or [fetal]) (procedure)	4180186
+40339049	Obst.scan- ultra-sound	4180186
+40339049	Scan-ultrasound, obst.	4180186
+40339049	Ultrasound in obstetric diagn.	4180186
+40339049	Ultrasound - obstetrics	4180186
+40339049	Ultra-sound scan-obst.	4180186
+40339049	Ultra-sound scan - obstetric	4180186
+40339049	Ultrasound scan - obstetric	4180186
+40339049	U-S scan - obst. diagn.	4180186
+40339049	U-S scan - obstetric, diagn.	4180186
+40339049	US scan - obstetric, diagn.	4180186
+40339068	Diagnostic ultrasound: [other] or [non-obstetric] (procedure)	4180186
+40339068	Other diagnostic ultrasound	4180186
+40339068	Scan,U-S,non obst.diag.	4180186
+40339068	Ultrasound,non obst.dia	4180186
+40339068	Ultrasound - non obstetrics	4180186
+40339068	Ultrasound scan, non obst.diag	4180186
+40339068	U-S scan,non obst.diagn	4180186
+40339068	U-S scan, non obstetric, diagn	4180186
+40339068	US scan, non obstetric, diagn	4180186
+40339071	Echocardiography (procedure)	4180186
+40339078	Orthopaedic ultrasound scan (& [skeletal])	4180186
+40339078	Orthopaedic ultrasound scan (& [skeletal]) (procedure)	4180186
+40339078	Orthopaedic US scan	4180186
+40339078	Orthopedic US scan	4180186
+40339078	U-S skeletal scan	4180186
+40339078	US skeletal scan	4180186
+40339079	Doppler studies	4180186
+40339079	Doppler studies (& vascular) (procedure)	4180186
+40339079	U-S vascular - Doppler effect	4180186
+40339079	U-S vascular - Doppler -effect	4180186
+40339079	US vascular - Doppler effect	4180186
+40339080	Doppler studies normal (situation)	4180186
+40339091	Thermography - deep veins (procedure)	4180186
+40339093	Thermography - bones/joints (procedure)	4180186
+40339094	Thermography - lymph nodes (procedure)	4180186
+40339119	Chlorhexidine (product)	4180186
+40339158	Cervical smear non-responder	4180186
+40339158	Ca cervix screen -not attended	4180186
+40339158	(Ca cervix screen - not attended) or (cervical smear non-responder) (situation)	4180186
+40339160	Ca cervix - screen done	4180186
+40339160	Cervical cytology examination	4180186
+40339160	(Cervical cytology examination) or (Ca cervix - screen done) (situation)	4180186
+40339169	No smear - benign hysterectomy	4180186
+40339169	No smear - hysterectomy	4180186
+40339169	No smear - hysterectomy (& [benign]) (procedure)	4180186
+40339178	Breast neoplasm screen	4180186
+40339178	Breast neoplasm screen (& [mammography]) (procedure)	4180186
+40339178	Mammography - screening	4180186
+40339183	Colon neoplasm screen	4180186
+40339183	Large bowel neoplasm screen	4180186
+40339183	Large bowel neoplasm screen (& [colon] or [rectal]) (procedure)	4180186
+40339183	Rectal neoplasm screen	4180186
+40339198	Obesity screen	4180186
+40339198	Weight screen	4180186
+40339198	Weight screen (& [obesity]) (procedure)	4180186
+40339199	Cholesterol screen	4180186
+40339199	Hyperlipidaemia screen	4180186
+40339199	Hyperlipidaemia screen (& [cholesterol])	4180186
+40339199	Hyperlipidaemia screen (& [cholesterol]) (procedure)	4180186
+40339199	Hyperlipidemia screen	4180186
+40339199	Lipid screen	4180186
+40339201	Hyperlipidaemia risk assessment with New Zealand table	4180186
+40339201	Hyperlipidaemia risk assessment with New Zealand table (regime/therapy)	4180186
+40339203	Anaemia/blood screening	4180186
+40339203	Anaemia &/or blood screening	4180186
+40339203	Anaemia &/or blood screening (procedure)	4180186
+40339203	Anaemia screen	4180186
+40339203	Anemia/blood screening	4180186
+40339203	Anemia screen	4180186
+40339210	Thalassaemia screening	4180186
+40339210	Thalassaemia screening (procedure)	4180186
+40339214	Develop h'cap screen	4180186
+40339214	Developmental h'cap screen	4180186
+40339214	Handicap screen	4180186
+40339214	Mental/dev. handicap screen	4180186
+40339214	Mental handicap screen	4180186
+40339214	Mental h'cap screen	4180186
+40339214	Mental &/or developmental handicap screen (procedure)	4180186
+40339241	Retired procedure (procedure)	4180186
+40339246	Asympt. bacteriuria screen	4180186
+40339246	Bacteriuria (& [asymptomatic]) screen (procedure)	4180186
+40339246	Bacteriuria screen	4180186
+40339255	Chemical/other poison screen	4180186
+40339255	Chemical poison screen (& other) (procedure)	4180186
+40339277	Maxillary antrum: [other operations] or [reconstruction] (procedure)	4180186
+40339277	Other operations on maxillary antrum	4180186
+40339277	Reconstruction of maxillary antrum	4180186
+40339283	Denker radical maxillary antrotomy	4180186
+40339283	Denker's operation	4180186
+40339283	Radical maxillary antrotomy	4180186
+40339283	Radical maxillary antrotomy (& Denker) (procedure)	4180186
+40339291	Intranasal antrostomy and biopsy of maxillary antrum (procedure)	4180186
+40339292	Intranasal antrostomy and excision of lesion of maxillary antrum (procedure)	4180186
+40339302	Horgan transantral ethmoidectomy	4180186
+40339302	Jansen-Horgan operation	4180186
+40339302	Transantral ethmoidectomy	4180186
+40339302	Transantral ethmoidectomy (& Horgan) (procedure)	4180186
+40339311	Drainage of sphenoid sinus (procedure)	4180186
+40339314	Operations on unspecified nasal sinus	4180186
+40339314	Reconstruction of defect of nasal sinus	4180186
+40339314	Unspecified nasal sinus: [operations] or [reconstruction defect] (procedure)	4180186
+40339364	Anastomosis of gall bladder to jejunum	4180186
+40339364	Anastomosis of gallbladder to jejunum	4180186
+40339364	Cholecystojejunostomy	4180186
+40339364	Cholecysto-jejunostomy	4180186
+40339364	Cholecystojejunostomy (& Roux en Y) (procedure)	4180186
+40339364	Roux-en-y cholecystojejunostomy	4180186
+40339365	Anastomosis of gall bladder to intestine NEC	4180186
+40339365	Anastomosis of gallbladder to intestine NEC	4180186
+40339365	Cholecystoenterostomy	4180186
+40339365	Cholecysto-enterostomy	4180186
+40339365	Cholecystoenterostomy (& [NEC] or [Winiwater]) (procedure)	4180186
+40339365	Winiwater cholecystoenterostomy	4180186
+40339376	Bobb cholelithotomy	4180186
+40339376	Open cholelithotomy	4180186
+40339376	Open cholelithotomy (& [gallbladder] or [Bobb]) (procedure)	4180186
+40339376	Open removal of calculus from gallbladder	4180186
+40339376	Open removal of calculus from gall bladder	4180186
+40339377	Cholecystostomy NEC	4180186
+40339377	Drainage of gallbladder	4180186
+40339377	Drainage of gall bladder	4180186
+40339402	Mycoplasmosis (disorder)	4180186
+40339406	Bile duct operations	4180186
+40339406	(Bile duct operations) or (pancreas endoscopic operations) (procedure)	4180186
+40339406	Choledochus operations	4180186
+40339406	Pancreas endoscopic operations	4180186
+40339422	Anastomosis hepatic duct (& Longmire) (procedure)	4180186
+40339422	Anastomosis of hepatic duct	4180186
+40339422	Connection of hepatic duct	4180186
+40339422	Hepatic duct anastomosis	4180186
+40339422	Longmire anastomosis of hepatic duct	4180186
+40339436	(Connection common bile duct NOS) or (pancreatectomy NEC) (procedure)	4180186
+40339436	Connection of common bile duct NOS	4180186
+40339436	Pancreatectomy NEC	4180186
+40339443	Roux-en-y procedure biliary atresia (& Sawaguchi) (procedure)	4180186
+40339443	Roux-en-y procedure for biliary atresia	4180186
+40339443	Sawaguchi roux-en-y procedure for biliary atresia	4180186
+40339446	Repair of bile duct (procedure)	4180186
+40339447	Reconstruction of bile duct (procedure)	4180186
+40339467	Retinal photography (procedure)	4180186
+40339468	Ultrasound scan (procedure)	4180186
+40339471	Bone density scan (procedure)	4180186
+40339473	Teletherapy (procedure)	4180186
+40339474	Complete bilateral cleft palate with cleft lip (disorder)	4180186
+40339497	Retired procedure (procedure)	4180186
+40339556	Radioth.: temporary implant	4180186
+40339556	Radiotherapy implant: [needles] or [therapy] (procedure)	4180186
+40339556	Radium needles	4180186
+40339595	Keen sportsman	4180186
+40339595	Sportsman	4180186
+40339595	Sportsman (& [keen]) (person)	4180186
+40339643	No consent DT immunisation	4180186
+40339643	No consent DT immunisation (situation)	4180186
+40339644	Consent given for pneumococcal vaccine (situation)	4180186
+40339645	No consent for meningitis C immunisation	4180186
+40339645	No consent for meningitis C immunisation (situation)	4180186
+40339682	Drugs of abuse screening (procedure)	4180186
+40339740	Hynes pharyngoplasty	4180186
+40339740	Orticochea pharyngoplasty	4180186
+40339740	Pharyngoplasty using lateral pharyngeal flap	4180186
+40339740	Pharyngoplasty using lateral pharyngeal flap (& [Orticochea] or [Hynes]) (procedure)	4180186
+40339742	Pharyngeal reconstruction by direct closure (procedure)	4180186
+40339753	Dohlman repair of pharyngeal pouch	4180186
+40339753	Operation on pharyngeal pouch	4180186
+40339753	Pharyngeal pouch operation (& Dohlman) (procedure)	4180186
+40339767	CDC group DF-2 (organism)	4180186
+40339774	Diagnostic endoscopic examination of pharynx NOS	4180186
+40339774	Pharyngoscopy: [diagnostic NOS] or [NEC] (procedure)	4180186
+40339774	Pharyngoscopy NEC	4180186
+40339809	Attention to laryngeal prosthetic device (procedure)	4180186
+40339817	Open silastic insert to vocal cord (procedure)	4180186
+40339825	Microlaryngoscopic vocal cord polypectomy (procedure)	4180186
+40339833	Laryngoscopic vocal cord polypectomy (procedure)	4180186
+40339834	Adenoviridae	4180186
+40339834	Adenovirus group	4180186
+40339834	Adenovirus (organism)	4180186
+40339834	Family: Adenovirus	4180186
+40339849	Cortisol titer - urine	4180186
+40339849	Cortisol titre - urine	4180186
+40339849	Cortisol urine titer	4180186
+40339849	Cortisol urine titre	4180186
+40339849	Urine cortisol titre &/or free	4180186
+40339849	Urine cortisol titre &/or free (procedure)	4180186
+40339849	Urine free cortisol titer	4180186
+40339849	Urine free cortisol titre	4180186
+40339857	Estriol - 24hr. urine	4180186
+40339857	Oestriol - 24hr. urine	4180186
+40339857	Urine estriol 24 hour assay	4180186
+40339857	Urine oestriol 24 hour assay	4180186
+40339857	Urine oestriol 24 hour &/or assay	4180186
+40339857	Urine oestriol 24 hour &/or assay (procedure)	4180186
+40339864	Urine free cortisol 24hr.assay	4180186
+40339864	Cortisol - 24 hour urine	4180186
+40339864	Cortisol - 24hr. urine	4180186
+40339864	Urine cortisol 24hr assay &/or free (procedure)	4180186
+40339875	Dopamine - urine	4180186
+40339875	Urine dopamine	4180186
+40339875	Urine dopamine (& level) (procedure)	4180186
+40339881	HVA - urine	4180186
+40339881	Urine HVA	4180186
+40339881	Urine HVA (& level) (procedure)	4180186
+40339882	24 hour urine free adrenaline output (procedure)	4180186
+40339883	24 hour urine free dopamine output (procedure)	4180186
+40339886	Urine catecholamine test (procedure)	4180186
+40339890	Urine free noradrenaline level (procedure)	4180186
+40339892	Electrolytes - urine	4180186
+40339892	Urine electrolytes	4180186
+40339892	Urine electrolytes (& level) (procedure)	4180186
+40339895	Potassium - urine	4180186
+40339895	Urine potassium	4180186
+40339895	Urine potassium (& level) (procedure)	4180186
+40339896	Sodium - urine	4180186
+40339896	Urine sodium	4180186
+40339896	Urine sodium (& level) (procedure)	4180186
+40339901	Urea - urine	4180186
+40339901	Urine urea	4180186
+40339901	Urine urea (& level) (procedure)	4180186
+40339902	Creatinine - urine	4180186
+40339902	Urine creatinine	4180186
+40339902	Urine creatinine (& level) (procedure)	4180186
+40339911	24 hour urine oxalate output (procedure)	4180186
+40339914	24 hour urine sodium output (procedure)	4180186
+40339915	24 hour urine urate output (procedure)	4180186
+40339917	Urine chloride level (procedure)	4180186
+40339919	Protein - urine	4180186
+40339919	Urine protein	4180186
+40339919	Urine protein (& level) (procedure)	4180186
+40339923	Urine total protein	4180186
+40339923	Urine total protein (& level) (procedure)	4180186
+40339924	Albumin - urine	4180186
+40339924	Urine albumin	4180186
+40339924	Urine albumin (& level) (procedure)	4180186
+40339925	24 hour urine protein excretion test (procedure)	4180186
+40339926	24 hour urine albumin output (procedure)	4180186
+40339937	Urine trace metals	4180186
+40339937	Urine trace metals (& level) (procedure)	4180186
+40339939	Copper - urine	4180186
+40339939	Urine copper	4180186
+40339939	Urine copper (& level) (procedure)	4180186
+40339940	Lithium - urine	4180186
+40339940	Urine lithium	4180186
+40339940	Urine lithium (& level) (procedure)	4180186
+40339941	Calcium - urine	4180186
+40339941	Urine calcium	4180186
+40339941	Urine calcium (& level) (procedure)	4180186
+40339945	Mercury - urine	4180186
+40339945	Urine mercury	4180186
+40339945	Urine mercury (& level) (procedure)	4180186
+40339949	24 hour urine iron output (procedure)	4180186
+40339951	Urine lead level (procedure)	4180186
+40339957	Paracetamol in urine	4180186
+40339957	Urine paracetamol	4180186
+40339957	(Urine paracetamol) or (paracetamol in urine) (procedure)	4180186
+40339958	Urine imipramine	4180186
+40339958	Imipramine in urine	4180186
+40339958	(Urine imipramine) or (Imipramine in urine) (procedure)	4180186
+40339961	Phenothiazine in urine	4180186
+40339961	Urine phenothiazine	4180186
+40339961	(Urine phenothiazine) or (phenothiazine in urine) (procedure)	4180186
+40339964	Urine cocaine	4180186
+40339964	Urine cocaine (& level) (procedure)	4180186
+40339970	Urine opiates screening (procedure)	4180186
+40339971	Urine cannabinoids screening (procedure)	4180186
+40339973	Urine phenothiazine level (procedure)	4180186
+40339974	Urine codeine level (procedure)	4180186
+40339978	Urine opiate level (procedure)	4180186
+40339979	Urine cannabinoid level (procedure)	4180186
+40339980	Urine Methylenedioxyamphetamine level (procedure)	4180186
+40339981	Urine 3,4-methylenedioxyethamphetamine level (procedure)	4180186
+40340044	Partner had vasectomy	4180186
+40340044	Partner sterilised	4180186
+40340044	Partner sterilised: (& [vasectomy])	4180186
+40340044	Partner sterilised: (& [vasectomy]) (procedure)	4180186
+40340044	Partner sterilized	4180186
+40340064	Combined oral contraceptive	4180186
+40340064	Combined oral contraceptive: [preventive procedure] or [drug] (procedure)	4180186
+40340073	Emergency contraception advice (procedure)	4180186
+40340077	Intrauterine contraceptive device removed (situation)	4180186
+40340093	Contraceptive IUD in situ (finding)	4180186
+40340094	Difficulty in feeding at breast (finding)	4180186
+40340106	Contraceptive sheath	4180186
+40340106	(Contraceptive sheath) or (sheath contraception (& spermicide)) (finding)	4180186
+40340106	Sheath contraception	4180186
+40340106	Spermicide + sheath contracep.	4180186
+40340106	Spermicide +sheath only	4180186
+40340118	Morning after pill	4180186
+40340118	Morning-after pill	4180186
+40340118	Post-coital contraception	4180186
+40340118	Post-coital contraception (& [morning-after pill]) (finding)	4180186
+40340118	Post-coital contracept.methods	4180186
+40340119	Morning after pills given (situation)	4180186
+40340122	Depot contraception	4180186
+40340122	Depot contraceptive	4180186
+40340122	(Depot contraceptive) or (Depot contraception) (procedure)	4180186
+40340132	Retired procedure (procedure)	4180186
+40340170	Geriatric annual health check	4180186
+40340170	Geriatric health exam.	4180186
+40340170	Geriatric health examination	4180186
+40340170	Geriatric health examination (& [annual check]) (procedure)	4180186
+40340171	Well Man health examination	4180186
+40340171	Well Man health check	4180186
+40340171	Well man health examination	4180186
+40340171	Adult health exam.	4180186
+40340171	Adult health examination	4180186
+40340171	Adult health examination (& [triennial] or [well man] or [well woman]) (procedure)	4180186
+40340171	Triennial health check	4180186
+40340171	Triennial health examination	4180186
+40340171	Well man health check	4180186
+40340171	Well woman health check	4180186
+40340171	Well Woman health check	4180186
+40340171	Well woman health examination	4180186
+40340171	Well Woman health examination	4180186
+40340190	Chemical agent (substance)	4180186
+40340191	Coronary heart disease annual review (procedure)	4180186
+40340193	Nurse health promotion (procedure)	4180186
+40340194	Primary prevention (procedure)	4180186
+40340195	Primary prevention of ischaemic heart disease	4180186
+40340195	Primary prevention of ischaemic heart disease (procedure)	4180186
+40340196	Secondary prevention (procedure)	4180186
+40340253	Diagnostic fiberoptic endoscopic examination of larynx	4180186
+40340253	Diagnostic fiberoptic endoscopic examination of pharynx and larynx	4180186
+40340253	Diagnostic fibreoptic endoscopic examination of larynx	4180186
+40340253	Diagnostic fibreoptic endoscopic examination of pharynx and larynx	4180186
+40340253	Diagnostic fibreoptic endoscopy: [pharynx & larynx] or [larynx]	4180186
+40340253	Diagnostic fibreoptic endoscopy: [pharynx & larynx] or [larynx] (procedure)	4180186
+40340255	Direct laryngoscopy (procedure)	4180186
+40340262	Injection of Teflon into vocal cord (procedure)	4180186
+40340291	Suction clearance of tracheostomy tube (procedure)	4180186
+40340315	Diagnostic endoscopic examination of trachea using rigid bronchoscope NOS	4180186
+40340315	Tracheal endoscopy: [diagnostic rigid NOS] or [NEC] (procedure)	4180186
+40340315	Tracheoscopy NEC	4180186
+40340324	Closed fracture of unspecified bone of lower limb (disorder)	4180186
+40340358	Porphyrins in urine	4180186
+40340358	Urine porphyrins	4180186
+40340358	(Urine porphyrins) or (porphyrins in urine) (procedure)	4180186
+40340359	Porphobilinogen in urine	4180186
+40340359	Porphobilinogen - urine	4180186
+40340359	Urine porphobilinogen	4180186
+40340359	(Urine porphobilinogen (& level)) or (porphobilinogen in urine) (procedure)	4180186
+40340360	Bilirubin in urine	4180186
+40340360	Urine bilirubin	4180186
+40340360	(Urine bilirubin) or (bilirubin in urine) (procedure)	4180186
+40340362	Urine urobilinogen	4180186
+40340362	(Urine urobilinogen) or (urobilinogen in urine) (procedure)	4180186
+40340362	Urobilinogen in urine	4180186
+40340369	Galactose - urine	4180186
+40340369	Urine galactose	4180186
+40340369	Urine galactose (& level) (procedure)	4180186
+40340372	Sucrose - urine	4180186
+40340372	Urine sucrose	4180186
+40340372	Urine sucrose (& level) (procedure)	4180186
+40340374	Urine xylose	4180186
+40340374	Urine xylose (& level) (procedure)	4180186
+40340374	Xylose - urine	4180186
+40340379	Cysteine - urine	4180186
+40340379	Urine cysteine	4180186
+40340379	Urine cysteine (& level) (procedure)	4180186
+40340383	Amino-acids, urine	4180186
+40340383	Aminoaciduria	4180186
+40340383	Urine amino acids	4180186
+40340383	(Urine amino acids) or (aminoaciduria) (procedure)	4180186
+40340390	Urine microalb:creatnine ratio	4180186
+40340390	Urine microalbumin:creatinine ratio	4180186
+40340390	Urine microalbumin:creatinine ratio (& level) (procedure)	4180186
+40340392	24 hour urine adrenaline output (procedure)	4180186
+40340396	24 hour urine cortisol output (procedure)	4180186
+40340398	24 hour urine dopamine output (procedure)	4180186
+40340399	Urine N-methyl histamine level (procedure)	4180186
+40340401	Urine alanine level (procedure)	4180186
+40340402	Urine arsenic level (procedure)	4180186
+40340408	Urine homocystine level (procedure)	4180186
+40340409	Urine melanin level (procedure)	4180186
+40340410	Urine oligosaccharide level (procedure)	4180186
+40340422	Petit mal (disorder)	4180186
+40340431	Urine volume over other time	4180186
+40340431	Urine volume over other time (& level) (procedure)	4180186
+40340437	Microalbumin excretion rate (procedure)	4180186
+40340439	Urine nitrite positive (finding)	4180186
+40340440	Urine nitrite negative (finding)	4180186
+40340441	Urine DNPH level (procedure)	4180186
+40340443	Urine sugar chromatography (procedure)	4180186
+40340462	Faeces colour: pale	4180186
+40340462	Feces color: pale (finding)	4180186
+40340466	Faeces colour: dark	4180186
+40340466	Feces color: dark (finding)	4180186
+40340468	Feces color: tarry	4180186
+40340468	Faeces colour: tarry	4180186
+40340468	Faeces: [tarry colour] or [O/E melaena]	4180186
+40340468	Faeces: [tarry colour] or [O/E melaena] (finding)	4180186
+40340468	Melaena - O/E of faeces	4180186
+40340468	Melena - O/E of feces	4180186
+40340473	Faeces consistency:semi-fluid	4180186
+40340473	Feces consistency:semi-fluid (finding)	4180186
+40340475	Faeces consistency: hard	4180186
+40340475	Feces consistency: hard (finding)	4180186
+40340476	Faeces consistency: dry	4180186
+40340476	Feces consistency: dry (finding)	4180186
+40340488	Faeces:red currant jelly stool	4180186
+40340488	Faeces: [red currant jelly stool] or [pus]	4180186
+40340488	Faeces: [red currant jelly stool] or [pus] (finding)	4180186
+40340488	Feces:red currant jelly stool	4180186
+40340488	Pus in faeces	4180186
+40340488	Pus in feces	4180186
+40340488	Red currant jelly stool	4180186
+40340504	Check of subcutaneous contraceptive (procedure)	4180186
+40340506	Spermicidal contraceptive	4180186
+40340506	(Spermicidal contraceptive) or (spermicide alone contraception) (procedure)	4180186
+40340506	Spermicide alone	4180186
+40340506	Spermicide alone contraception	4180186
+40340513	Contraceptive sponge NOS (product)	4180186
+40340523	Morning after intrauterine contraceptive device fitted (finding)	4180186
+40340527	Male surgical sterilisation procedure	4180186
+40340527	Male surgical sterilisation procedure (procedure)	4180186
+40340538	Emergency contraception (procedure)	4180186
+40340552	Unplanned pregnancy (situation)	4180186
+40340598	Salmonella III arizonae 42:z10:z56 (organism)	4180186
+40340649	Aspiration of brain abscess (procedure)	4180186
+40340680	Renewal of cerebroventricular shunt (procedure)	4180186
+40340682	Cerebroventricular shunt: [revision NEC] or [conversion NEC] (procedure)	4180186
+40340682	Conversion of cerebroventricular shunt NEC	4180186
+40340682	Revision of cerebroventricular shunt NEC	4180186
+40340698	Diagnostic endoscopic examination of ventricle of brain NOS	4180186
+40340698	Ventriculoscopy: [diagnostic NOS] or [NEC] (procedure)	4180186
+40340698	Ventriculoscopy NEC	4180186
+40340700	Drainage brain ventricle: [NEC] or [Holter valve] (procedure)	4180186
+40340700	Drainage of ventricle of brain NEC	4180186
+40340700	Drainage of ventricle of brain using Holter valve	4180186
+40340715	Graft to cranial nerve	4180186
+40340715	Cranial nerve graft (& microsurgical) (procedure)	4180186
+40340715	Microsurgical graft to cranial nerve	4180186
+40340736	Angioendotheliomatosis (disorder)	4180186
+40340738	Aspiration of bronchus NEC	4180186
+40340738	Clearance of airway	4180186
+40340738	Clearance of airway (& aspiration bronchus NEC) (procedure)	4180186
+40340764	Therapeutic endoscopic operations below trachea using fiberoptic bronchoscope	4180186
+40340764	Therapeutic endoscopic operations below trachea using fibreoptic bronchoscope	4180186
+40340764	Therapeutic fiberoptic endoscopic examination of lung	4180186
+40340764	Therapeutic fibreoptic endoscopic examination of lung	4180186
+40340764	Therapeutic fibreoptic endoscopy: [below trachea] or [lung]	4180186
+40340764	Therapeutic fibreoptic endoscopy: [below trachea] or [lung] (procedure)	4180186
+40340777	Diagnostic fiberoptic bronchoscopy NOS	4180186
+40340777	Diagnostic fibreoptic bronchoscopy NOS	4180186
+40340777	Fiberoptic bronchoscopy NEC	4180186
+40340777	Fibreoptic bronchoscopy: [diagnostic NOS] or [NEC]	4180186
+40340777	Fibreoptic bronchoscopy: [diagnostic NOS] or [NEC] (procedure)	4180186
+40340777	Fibreoptic bronchoscopy NEC	4180186
+40340780	Lung and mediastinum operations	4180186
+40340780	Lung operations	4180186
+40340780	Lung &/or mediastinum operations (procedure)	4180186
+40340809	Biopsy of lesion of lung NEC	4180186
+40340809	Lung biopsy: [lesion NEC] or [open] (procedure)	4180186
+40340809	Open biopsy of lung	4180186
+40340831	Cervical mediastinoscopy NEC	4180186
+40340831	Diagnostic endoscopic examination of mediastinum NOS	4180186
+40340831	Mediastinoscopy: [diagnostic NOS] or [cervical NEC] or [NEC] (procedure)	4180186
+40340831	Mediastinoscopy NEC	4180186
+40340836	Oral, dental and salivary procedures (procedure)	4180186
+40340866	3 day faecal fat estimation	4180186
+40340866	3 day faecal fat estimation (& level)	4180186
+40340866	3 day faecal fat estimation (& level) (procedure)	4180186
+40340866	3 day fecal fat estimation	4180186
+40340871	24 hour faecal fat output	4180186
+40340871	24 hour faecal fat output (procedure)	4180186
+40340872	Faecal A1 antitrypsin	4180186
+40340872	Faecal A1 antitrypsin (procedure)	4180186
+40340879	Faecal occult blood: trace	4180186
+40340879	Fecal occult blood: trace (procedure)	4180186
+40340891	Faecal reducing substance level	4180186
+40340891	Faecal reducing substance level (procedure)	4180186
+40340911	Faecal porphyrins	4180186
+40340911	Faecal porphyrins (& level)	4180186
+40340911	Faecal porphyrins (& level) (procedure)	4180186
+40340911	Fecal porphyrins	4180186
+40340911	Porphyrins - faecal	4180186
+40340911	Porphyrins - fecal	4180186
+40340954	Cerebrospinal fluid albumin level (procedure)	4180186
+40340956	CSF glucose	4180186
+40340956	CSF: glucose level	4180186
+40340956	CSF: glucose &/or level (procedure)	4180186
+40340956	Glucose - CSF	4180186
+40340977	Cerebrospinal fluid lactate level (procedure)	4180186
+40341002	Antenatal amniocentesis for possible chromosomal abnormality (finding)	4180186
+40341003	Antenatal amniocentesis for possible neural tube (finding)	4180186
+40341013	Antenatal ultrasound scan normal +? dates (finding)	4180186
+40341015	Antenatal ultrasound scan for possible abnormality (finding)	4180186
+40341021	Antenatal ultrasound scan at 22-40 weeks (procedure)	4180186
+40341055	Antenatal syphilis screening NOS (finding)	4180186
+40341060	Antenatal blood group screening NOS (finding)	4180186
+40341085	Fetal maturity - A/N	4180186
+40341085	Maturity - fetal - A/N	4180186
+40341085	Misc. antenatal data	4180186
+40341085	Miscellaneous antenatal data (& [fetal maturity - A/N] or [static weight gain pregnancy]) (observable entity)	4180186
+40341085	Static weight gain pregnancy	4180186
+40341092	Show - vaginal - A/N	4180186
+40341092	"Vaginal ""show"""	4180186
+40341092	"Vaginal ""show"" - A/N"	4180186
+40341092	"Vaginal ""show"" (& [A/N]) (finding)"	4180186
+40341093	Pregnancy prolonged - 41 weeks (disorder)	4180186
+40341100	Bottle fed	4180186
+40341100	Bottle fed (& [infant]) (finding)	4180186
+40341100	Bottle feeding	4180186
+40341100	Infant bottle fed	4180186
+40341119	Postnatal care (regime/therapy)	4180186
+40341138	Keratitis bullosa (disorder)	4180186
+40341161	Laboratory animal dander allergy (disorder)	4180186
+40341240	Lemesurier cleft lip repair	4180186
+40341240	Millard cleft lip correction	4180186
+40341240	Primary closure of cleft lip, unspecified	4180186
+40341240	Randall cleft lip repair	4180186
+40341240	Repair cleft lip: [primary] or [named variants] (procedure)	4180186
+40341240	Tenison cleft lip repair	4180186
+40341246	Millard repair unilateral cleft lip	4180186
+40341246	Millard unilateral cleft lip repair	4180186
+40341246	Repair of unilateral cleft lip - rotation advancement flap technique	4180186
+40341246	Repair of unilateral cleft lip using rotation advancement flap technique	4180186
+40341246	Repair unilateral cleft lip using rotation advancement flap technique (& Millard) (procedure)	4180186
+40341249	Millard bilateral cleft lip repair	4180186
+40341249	Millard rotation advancement bilateral cleft lip repair	4180186
+40341249	Repair bilateral cleft lip - rotation advancement flap technique	4180186
+40341249	Repair bilateral cleft lip using rotational advancement flap technique (& Millard) (procedure)	4180186
+40341249	Repair of bilateral cleft lip using rotational advancement flap technique	4180186
+40341249	Rep bilat cleft lip Millard	4180186
+40341251	Barsky repair bilateral cleft lip	4180186
+40341251	Repair bilateral cleft lip with quadrilateral flap (& Barsky) (procedure)	4180186
+40341251	Repair of bilateral cleft lip with quadrilateral flap	4180186
+40341252	Manchester bilateral cleft lip repair	4180186
+40341252	Manchester repair bilateral cleft lip	4180186
+40341252	Repair bilateral cleft lip using straight line technique (& [Manchester] or [Veau III]) (procedure)	4180186
+40341252	Repair of bilateral cleft lip using straight line technique	4180186
+40341252	Veau type III bilateral cleft lip repair	4180186
+40341290	Implantation of tooth (procedure)	4180186
+40341298	Surgical extraction of tooth	4180186
+40341298	S/R - Surgical removal of tooth	4180186
+40341298	SR - Surgical removal of tooth	4180186
+40341298	Surgical removal of tooth (procedure)	4180186
+40341298	Xsurg - Surgical removal of tooth	4180186
+40341320	Endodontics	4180186
+40341320	Endodontics (& surgery on apex of tooth) (procedure)	4180186
+40341320	Surgery on apex of tooth	4180186
+40341321	Apicectomy of tooth (procedure)	4180186
+40341337	Placement of orthodontic band (procedure)	4180186
+40341341	Adjust removable orthodontic appliance (procedure)	4180186
+40341392	Infection of navel cord (disorder)	4180186
+40341414	Salmonella III arizonae 65:c:z (organism)	4180186
+40341462	Repair of urethra (procedure)	4180186
+40341530	Naphthalene (substance)	4180186
+40341540	Neck of femur (body structure)	4180186
+40341550	n-Pentane (substance)	4180186
+40341567	Tetrachloromethane (substance)	4180186
+40341580	Topical corticosteroid, group II (product)	4180186
+40341583	1,1-Dichloroethylene (substance)	4180186
+40341608	GDH - Glutamate dehydrogenase	4180186
+40341608	Glutamate dehydrogenase (substance)	4180186
+40341609	Glutathione reductase (substance)	4180186
+40341609	GSR - Glutathione reductase	4180186
+40341630	17-Ketosteroids	4180186
+40341630	17-oxosteroids	4180186
+40341630	17-Oxosteroid (substance)	4180186
+40341645	Indirect hernia (qualifier value)	4180186
+40341645	Oblique hernia	4180186
+40341664	Bone grafting - action (qualifier value)	4180186
+40341674	Closure of fistula (qualifier value)	4180186
+40341684	Creation	4180186
+40341684	Creation - action (qualifier value)	4180186
+40341694	Diathermy cautery - action (qualifier value)	4180186
+40341694	Electrocautery	4180186
+40341714	Laser endarterectomy	4180186
+40341714	Laser endarterectomy - action (qualifier value)	4180186
+40341715	Laser photocoagulation	4180186
+40341715	Laser photocoagulation - action (qualifier value)	4180186
+40341720	Patellar ligament reconstruction (qualifier value)	4180186
+40341723	Prosthetic ligament reconstruction (qualifier value)	4180186
+40341739	Division - action (qualifier value)	4180186
+40341746	Retired procedure (procedure)	4180186
+40341872	Phage type Dean and Williams (qualifier value)	4180186
+40341932	Retired procedure (procedure)	4180186
+40341948	Excision of hydrocele (procedure)	4180186
+40341954	Retired procedure (procedure)	4180186
+40341990	Excision of subcutaneous tissue	4180186
+40341990	Removal of skin or subcutaneous tissue (procedure)	4180186
+40342013	Anterior semicircular canal (body structure)	4180186
+40342051	Total avulsion of nail plate (procedure)	4180186
+40342064	ANH - Atrial natriuretic hormone	4180186
+40342064	ANP - Atrial natriuretic peptide	4180186
+40342064	Atrial natriuretic hormone	4180186
+40342064	Atrial natriuretic peptide (substance)	4180186
+40342073	Hormones and their metabolites and precursors H - S (navigational concept)	4180186
+40342081	Hormones and their metabolites and precursors T - Z (navigational concept)	4180186
+40342101	Ornithine carbamoyltransferase (substance)	4180186
+40342105	Gamma-cystathionase (substance)	4180186
+40342106	Homocysteine-methyl tetrahydrofolate methyltransferase (substance)	4180186
+40342113	Fructose-1-6-bisphosphatase (substance)	4180186
+40342120	Ketone (substance)	4180186
+40342130	Alpha-fucosidase (substance)	4180186
+40342149	Fumarase (substance)	4180186
+40342154	Apolipoprotein E isoform (substance)	4180186
+40342168	Alpha-galactosidase A (substance)	4180186
+40342187	Alpha-L-iduronidase (substance)	4180186
+40342191	Iduronate sulfatase (substance)	4180186
+40342191	Iduronate sulphatase	4180186
+40342202	3-Methylcrotonyl glycine (substance)	4180186
+40342294	Hyaline membrane disease (disorder)	4180186
+40342320	Coronary inclusion technique (regime/therapy)	4180186
+40342328	Felis pardalis (organism)	4180186
+40342328	Ocelot	4180186
+40342329	Body of conduit (physical object)	4180186
+40342360	Coronary interposition technique (regime/therapy)	4180186
+40342397	Calcification (morphologic abnormality)	4180186
+40342436	Dematiaceae (organism)	4180186
+40342471	Funicular (qualifier value)	4180186
+40342472	Gangrene (disorder)	4180186
+40342476	Greenstick fracture (disorder)	4180186
+40342480	Green hellebore (organism)	4180186
+40342541	Osteochondral fracture (disorder)	4180186
+40342630	Injection of therapeutic substance	4180186
+40342630	Injection of therapeutic substance (procedure)	4180186
+40342655	Topical local anaesthetic	4180186
+40342655	Topical local anaesthetic (procedure)	4180186
+40342663	[SO]Tooth NEC (body structure)	4180186
+40342666	[SO]Abdominal aorta NEC (body structure)	4180186
+40342698	Corneal operation	4180186
+40342698	Corneal operations	4180186
+40342698	Corneal operations (& keratoplasty) (procedure)	4180186
+40342698	Keratoplasty	4180186
+40342712	Glycolic acid (substance)	4180186
+40342718	Octanoyl carnitine (substance)	4180186
+40342721	Suberyl glycine (substance)	4180186
+40342724	Bile acid (substance)	4180186
+40342750	Cobalamin (substance)	4180186
+40342759	Adenylate deaminase (substance)	4180186
+40342801	Free cholesterol (substance)	4180186
+40342801	Unesterified cholesterol	4180186
+40342832	PGE2 - Prostaglandin E2	4180186
+40342832	Prostaglandin E2 (substance)	4180186
+40342833	PGF2 - Prostaglandin F2 alpha	4180186
+40342833	Prostaglandin F2 alpha (substance)	4180186
+40342842	Retired procedure (procedure)	4180186
+40342905	Henbane (organism)	4180186
+40342921	Retired procedure (procedure)	4180186
+40342934	Asteatotic eczema (disorder)	4180186
+40342934	Eczema craquel	4180186
+40342934	Eczema craquele	4180186
+40342934	Winter eczema	4180186
+40342934	Xerotic eczema	4180186
+40342995	Left free wall accessory pathway (body structure)	4180186
+40343061	Rupture (morphologic abnormality)	4180186
+40343100	Mouse polyomavirus	4180186
+40343100	Polyomavirus (organism)	4180186
+40343192	Ciliary body ops.	4180186
+40343192	Iris/ciliary body operations	4180186
+40343192	Iris operations	4180186
+40343192	Iris &/or ciliary body operations (procedure)	4180186
+40343196	Iridotomy	4180186
+40343196	(Iridotomy) or (trabeculotomy) (procedure)	4180186
+40343196	Trabeculotomy	4180186
+40343198	Choroid operation	4180186
+40343198	Choroid operations	4180186
+40343198	Retina/choroid/vitreous operat	4180186
+40343198	Retinal operation	4180186
+40343198	Retinal operations	4180186
+40343198	Retina &/or choroid &/or vitreous operations (procedure)	4180186
+40343198	Vitreous operation	4180186
+40343198	Vitreous operations	4180186
+40343200	Nose operations	4180186
+40343200	Nose &/or mouth &/or pharynx operations (procedure)	4180186
+40343200	Nasal operations	4180186
+40343200	Nose/mouth/pharynx operations	4180186
+40343201	Nose: [septoplasty] or [rhinoplasty NOS] (procedure)	4180186
+40343201	Rhinoplasty NOS	4180186
+40343201	Nasal septoplasty	4180186
+40343208	Extraction of impacted wisdom tooth	4180186
+40343208	Impacted tooth removed	4180186
+40343208	Impacted tooth removed (& wisdom) (finding)	4180186
+40343208	Impacted wisdom tooth extract.	4180186
+40343208	Removal - impacted tooth	4180186
+40343208	Removal of impacted tooth	4180186
+40343210	Alveolar (gum) operations	4180186
+40343210	Alveolar(gum)operations	4180186
+40343210	Gingiva (gum) &/or alveolus operations (procedure)	4180186
+40343210	Gingival operations	4180186
+40343210	Gum operation	4180186
+40343210	Gums/alveolus operations	4180186
+40343211	Glossectomy	4180186
+40343211	Tongue operation (& glossectomy) (procedure)	4180186
+40343211	Tongue operations	4180186
+40343214	Tonsil operation	4180186
+40343214	Tonsil &/or adenoid operations (procedure)	4180186
+40343214	Adenoid operation	4180186
+40343214	Tonsil/adenoid operations	4180186
+40343215	Neck operation NOS	4180186
+40343215	Nose/mouth/pharynx op. NOS	4180186
+40343215	Nose &/or mouth &/or pharynx &/or neck operations NOS (procedure)	4180186
+40343218	Tracheostomy	4180186
+40343218	Tracheostomy op.	4180186
+40343218	(Tracheostomy) or (operation) (procedure)	4180186
+40343223	Aortic valve replacement NOS	4180186
+40343223	Heart valve replacement NOS	4180186
+40343223	Heart valve replacement NOS (& [aortic NOS] or [mitral NOS]) (procedure)	4180186
+40343223	Mitral valve replacement NOS	4180186
+40343224	Heart septum operations (procedure)	4180186
+40343228	Embolectomy	4180186
+40343228	Embolectomy (& by vessel incision) (procedure)	4180186
+40343228	Vessel incision - embolectomy	4180186
+40343229	Endarterectomy of aorta	4180186
+40343229	Endarterectomy: [other] or [aortic] (procedure)	4180186
+40343229	Other endarterectomy	4180186
+40343229	Aortic endarterectomy	4180186
+40343230	Aneurysm excision+reanastomos.	4180186
+40343230	Aneurysm excision and reanastomosis	4180186
+40343230	Aneurysm operation: [excision + reanastomosis] or [repair (& aortic)] (procedure)	4180186
+40343230	Aneurysm repair	4180186
+40343230	Aortic aneurysm repair	4180186
+40343231	Aortic bifurcation graft	4180186
+40343231	Femoro-popliteal bypass opn.	4180186
+40343231	Vessel resection and replacement	4180186
+40343231	Vessel resection + replacement	4180186
+40343231	(Vessel resection + replacement) or (aortic bifurcation graft) or (femoro-popliteal bypass opn) (procedure)	4180186
+40343232	Ligation of varicose vein	4180186
+40343232	Ligation -varicose vein	4180186
+40343232	Strip - varicose vein	4180186
+40343232	Varicose vein ligation/strip	4180186
+40343232	Varicose vein operation	4180186
+40343232	Varicose vein operation (& [ligation] or [stripping]) (procedure)	4180186
+40343232	Vein,varicose,operation	4180186
+40343236	Aneurysm clipping	4180186
+40343236	Aneurysn clipping	4180186
+40343236	Clipping aneurysm	4180186
+40343236	Clipping - aneurysm	4180186
+40343236	Clipping aneurysm (& intracerebral) (procedure)	4180186
+40343236	Intracerebral aneurysm clipped	4180186
+40343243	Cardioplasty	4180186
+40343243	(Cardioplasty) or (hiatus hernia repair) (procedure)	4180186
+40343243	Hiatus hernia repair	4180186
+40343245	Vagotomy and pyloroplasty	4180186
+40343245	Vagotomy NOS	4180186
+40343245	Vagotomy: [with pyloroplasty] or [NOS] (procedure)	4180186
+40343251	Partial colectomy	4180186
+40343251	Partial colectomy (& sigmoid) (procedure)	4180186
+40343251	Sigmoid colectomy	4180186
+40343252	Other rectum operations NOS	4180186
+40343252	Rectal prolapse repair	4180186
+40343252	Rectum operation: [prolapse repair] or [other NOS] (procedure)	4180186
+40343253	Haemorrhoidectomy	4180186
+40343253	Haemorrhoid operations	4180186
+40343253	Haemorrhoid operations (& haemorrhoidectomy)	4180186
+40343253	Haemorrhoid operations (& haemorrhoidectomy) (procedure)	4180186
+40343253	Hemorrhoidectomy	4180186
+40343253	Hemorrhoid operations	4180186
+40343256	Femoral herniorrhaphy	4180186
+40343256	Herniorrhaphy - ing/fem	4180186
+40343256	Inguinal/femoral hernia repair	4180186
+40343256	Inguinal herniorrhaphy	4180186
+40343256	Inguinal &/or femoral hernia repair (procedure)	4180186
+40343258	Repair of umbilical hernia	4180186
+40343258	Repair of umbilical hernia NOS	4180186
+40343258	Umbilical hernia repair	4180186
+40343258	Umbilical hernia repair NOS	4180186
+40343258	Umbilical hernia repair (& NOS) (procedure)	4180186
+40343260	Urinary tract operations	4180186
+40343260	Bladder operations	4180186
+40343260	Calculus removal - GUT	4180186
+40343260	Kidney operations	4180186
+40343260	Renal operations	4180186
+40343260	Stone removal - GUT	4180186
+40343260	Ureter operations	4180186
+40343260	Urinary operations	4180186
+40343260	Urinary tract operations (& [kidney] or [ureter] or [bladder] or [for calculus]) (procedure)	4180186
+40343262	Bladder polypectomy	4180186
+40343262	Bladder polypectomy (& transurethral) (procedure)	4180186
+40343262	TUR: bladder polypectomy	4180186
+40343262	Vesical polypectomy	4180186
+40343268	Oophorectomy	4180186
+40343268	(Oophorectomy) or (salpingoophorectomy) (procedure)	4180186
+40343268	Oophorectomy/ovarian excision	4180186
+40343268	Salpingo-oophorectomy	4180186
+40343270	Fallopian tube repair	4180186
+40343270	Salpingo-oophorostomy	4180186
+40343271	Cervical excision/destruction NOS	4180186
+40343271	Cervical excision/destruct NOS	4180186
+40343271	Cervix: [excision/destruction NOS] or [excision] (procedure)	4180186
+40343271	Cervix excision op.	4180186
+40343271	Cervix excision operation	4180186
+40343276	Fothergill's vaginal repair	4180186
+40343276	Vaginal repair NOS	4180186
+40343276	Vaginal repair: [NOS] or [Fothergill] (procedure)	4180186
+40343277	Excision of vulva &/or perineum (procedure)	4180186
+40343277	Excision vulva/perineum	4180186
+40343277	Vulvectomy	4180186
+40343278	Vulva/perineum repair	4180186
+40343278	(Vulva/perineum repair) or (perineoplasty) (procedure)	4180186
+40343278	Perineoplasty	4180186
+40343279	Breech delivery op.	4180186
+40343279	Breech/instrumental delivery operations	4180186
+40343279	Breech/instrumental deliv.ops.	4180186
+40343279	Breech &/or instrumental delivery operation (procedure)	4180186
+40343279	Forceps delivery op.	4180186
+40343280	Tubal pregnancy removal operation	4180186
+40343280	Tubal pregnancy removal operation (& aspiration) (procedure)	4180186
+40343280	Tubal preg. removal op.	4180186
+40343281	Breast plastic surgery	4180186
+40343281	Breast plastic surgery (& mammoplasty) (procedure)	4180186
+40343281	Mammoplasty	4180186
+40343282	Abscess drainage NOS	4180186
+40343282	Drainage: [skin] or [abscess NOS] (procedure)	4180186
+40343282	Skin/s.c. tissue drainage	4180186
+40343287	Grafting - skin	4180186
+40343287	Plastic operation - skin	4180186
+40343287	Plastic op.- skin	4180186
+40343287	Skin grafting	4180186
+40343287	Skin plastic surgery	4180186
+40343287	Skin plastic surgery (& skin grafting) (procedure)	4180186
+40343290	Excision sebaceous cyst	4180186
+40343290	Removal of sebaceous cyst (& excision) (procedure)	4180186
+40343290	Sebaceous cyst removal	4180186
+40343292	Female sterilization op. NOS	4180186
+40343292	Laparoscopic sterilisation	4180186
+40343292	Laparoscopic sterilization	4180186
+40343292	Female sterilisation: [NOS] or [laparoscopic]	4180186
+40343292	Female sterilisation: [NOS] or [laparoscopic] (procedure)	4180186
+40343292	Female sterilisation operation NOS	4180186
+40343292	Female sterilisation op. NOS	4180186
+40343292	Female sterilization operation NOS	4180186
+40343293	Bi-lateral vasectomy	4180186
+40343293	Vasectomy: [bilateral] or [sterilisation]	4180186
+40343293	Vasectomy: [bilateral] or [sterilisation] (procedure)	4180186
+40343293	Vasectomy-sterilise op.	4180186
+40343294	Minor surgical procedure	4180186
+40343294	(Minor surgical procedure) or (other operative procedures) (procedure)	4180186
+40343294	Other operative procedures	4180186
+40343358	Beta-endorphin (substance)	4180186
+40343372	Osteocalcin (substance)	4180186
+40343397	Carbohydrate (substance)	4180186
+40343416	Vitamin B>12<	4180186
+40343416	B12 - Cyanocobalamin	4180186
+40343416	B12 - Vitamin B12	4180186
+40343416	Cyanocobalamin	4180186
+40343416	Vitamin B12	4180186
+40343416	Vitamin B12 (substance)	4180186
+40343427	Hexanoic acid	4180186
+40343427	n-Caproic acid (substance)	4180186
+40343429	n-Valeric acid (substance)	4180186
+40343429	Pentanoic acid	4180186
+40343439	Acanthocyte (morphologic abnormality)	4180186
+40343445	Retired procedure (procedure)	4180186
+40343452	Unstable haemoglobin	4180186
+40343452	Unstable hemoglobin (substance)	4180186
+40343456	Retired procedure (procedure)	4180186
+40343462	Glucose-6-phosphate dehydrogenase (substance)	4180186
+40343465	Triosephosphate isomerase (substance)	4180186
+40343466	Haem synthetase	4180186
+40343466	Heme synthetase (substance)	4180186
+40343486	Platelet (body structure)	4180186
+40343486	Platelets	4180186
+40343486	PLT - Platelet	4180186
+40343486	PLT - Platelets	4180186
+40343486	Thrombocyte	4180186
+40343487	Megakaryocyte (substance)	4180186
+40343488	Promegakaryocyte (substance)	4180186
+40343489	Megakaryoblast (substance)	4180186
+40343509	Monoctanoin (substance)	4180186
+40343543	Nerve sparing not attempted (qualifier value)	4180186
+40343583	Bengal (qualifier value)	4180186
+40343591	Hepatectomy (procedure)	4180186
+40343597	Oxidised cellulose	4180186
+40343597	Oxidized cellulose (substance)	4180186
+40343651	Prosthetic ligament supporting tissue ingrowth reconstruction (qualifier value)	4180186
+40343657	Contact dermatitis due to keratolytic agent (disorder)	4180186
+40343662	Radiofrequency destruction (qualifier value)	4180186
+40343665	Gastrojejunal junction (body structure)	4180186
+40343694	Retired procedure (procedure)	4180186
+40343703	Intrathoracic organ (body structure)	4180186
+40343714	Common peroneal nerve (body structure)	4180186
+40343729	Lingula (body structure)	4180186
+40343978	von Willebrand factor ristocetin cofactor (substance)	4180186
+40343978	vWFRiCoF - von Willebrand factor ristocetin cofactor	4180186
+40343984	Antithrombin II (substance)	4180186
+40343993	H antigen (substance)	4180186
+40343999	MNS system antigen (substance)	4180186
+40344003	Lewis system antigen (substance)	4180186
+40344005	Kidd system antigen (substance)	4180186
+40344009	Anti A1 (substance)	4180186
+40344011	Anti i (substance)	4180186
+40344028	C4d - Complement component 4d	4180186
+40344028	Complement component 4d (substance)	4180186
+40344092	Angiocardiography of combined right and left heart for ventriculography (procedure)	4180186
+40344126	Haemoglobin Anantharaj	4180186
+40344126	Hb 11(A9), Lys-glu	4180186
+40344126	Hemoglobin Anantharaj (substance)	4180186
+40344131	Right nerve sparing attempt (qualifier value)	4180186
+40344193	Solid prosthetic ligament reconstruction (qualifier value)	4180186
+40344226	Strip biopsy - action (qualifier value)	4180186
+40344251	Tomograms	4180186
+40344251	Tomographic imaging, plain radiologic - action (qualifier value)	4180186
+40344280	Unilateral nerve sparing attempt (qualifier value)	4180186
+40344344	Subtemporal region (body structure)	4180186
+40344392	Meckel's diverticulum (body structure)	4180186
+40344424	Allergen extract (substance)	4180186
+40344438	Cytotoxin (substance)	4180186
+40344440	Digoxin	4180186
+40344440	Digoxin - chemical (substance)	4180186
+40344442	Giardiasis (disorder)	4180186
+40344447	Ill-defined intestinal tract infections (disorder)	4180186
+40344452	Tuberculosis of bones and joints (disorder)	4180186
+40344455	Pulmonary mycobacterial infection (disorder)	4180186
+40344456	Cutaneous mycobacterial infections (disorder)	4180186
+40344471	Cataracta complicata	4180186
+40344471	Cataract secondary to ocular disorder (disorder)	4180186
+40344474	California viral encephalitis (disorder)	4180186
+40344474	CE - California encephalitis	4180186
+40344508	Tabes dorsalis (disorder)	4180186
+40344524	OM - Onychomycosis	4180186
+40344524	Onychomycosis	4180186
+40344524	Tinea of nail	4180186
+40344524	Tinea unguium	4180186
+40344524	Dermatophytosis of nail (disorder)	4180186
+40344524	Fungal infection of nail	4180186
+40344529	Keratomycosis nigricans	4180186
+40344529	Tinea nigra (disorder)	4180186
+40344532	Candidal balanitis (disorder)	4180186
+40344549	Parasitic diseases	4180186
+40344549	Infectious/parasitic disease	4180186
+40344549	Infectious diseases	4180186
+40344549	Infectious &/or parasitic disease (disorder)	4180186
+40344551	Bacterial gastroenteritis	4180186
+40344551	Diarrhea-bact.GIT inf.	4180186
+40344551	Diarrhoea-bact.GIT inf.	4180186
+40344551	Dysentery	4180186
+40344551	Gastroenteritis - bact.	4180186
+40344551	Specific gastrointestinal infectious disease	4180186
+40344551	Specific GIT infectious dis.	4180186
+40344551	(Specific GIT infectious disease) or (dysentery) or (bacterial: [gastroenteritis] or [diarrhoea])	4180186
+40344551	(Specific GIT infectious disease) or (dysentery) or (bacterial: [gastroenteritis] or [diarrhoea]) (disorder)	4180186
+40344552	Paratyphoid	4180186
+40344552	Typhoid	4180186
+40344552	Typhoid &/or paratyphoid fevers (disorder)	4180186
+40344552	Typhoid/paratyphoid fevers	4180186
+40344553	Bacillary dysentery	4180186
+40344553	(Bacillary dysentery) or (shigellosis) (disorder)	4180186
+40344553	Bacillary dysentry	4180186
+40344553	Shigellosis	4180186
+40344554	Colitis - giardial	4180186
+40344554	Giardial colitis	4180186
+40344554	Giardiasis	4180186
+40344554	Giardiasis (& [colitis]) (disorder)	4180186
+40344554	Lambliasis	4180186
+40344557	(Gastroenteritis (& [viral NOS])) or (vomiting: [viral] or [& diarrhoea infection]) or (gastric flu)	4180186
+40344557	Diarrhea&vomiting, infection	4180186
+40344557	Diarrhea+vomiting,infection	4180186
+40344557	Diarrhoea&vomiting, infection	4180186
+40344557	Diarrhoea+vomiting,infection	4180186
+40344557	Gastric flu	4180186
+40344557	Gastric 'flu	4180186
+40344557	Gastroenteritis	4180186
+40344557	Gastroenteritis - viral + NOS	4180186
+40344557	(Gastroenteritis (& [viral NOS])) or (vomiting: [viral] or [& diarrhoea infection]) or (gastric flu) (disorder)	4180186
+40344557	Viral vomiting	4180186
+40344557	Vomiting - viral	4180186
+40344559	Diarrhea-infective NOS	4180186
+40344559	Diarrhoea-infective NOS	4180186
+40344559	Infectious: [intestinal disease NOS] or [diarrhoea NOS]	4180186
+40344559	Infectious: [intestinal disease NOS] or [diarrhoea NOS] (disorder)	4180186
+40344559	Intestinal infectious dis. NOS	4180186
+40344561	Bacterial diseases	4180186
+40344561	Bacterial diseases - excl. T.B	4180186
+40344561	Bacterial diseases (& [excl TB]) (disorder)	4180186
+40344561	Bacterial diseases excluding tuberculosis	4180186
+40344562	Other zoonotic bacterial dis.	4180186
+40344562	Other zoonotic bacterial disease	4180186
+40344562	(Other zoonotic bacterial disease) or (tuluraemia)	4180186
+40344562	(Other zoonotic bacterial disease) or (tuluraemia) (disorder)	4180186
+40344562	Tuluraemia	4180186
+40344562	Tuluremia	4180186
+40344565	(Legionella) or (Legionnaire's disease) (disorder)	4180186
+40344565	Legionnaire's disease	4180186
+40344565	Legionnaires disease	4180186
+40344565	Legionella	4180186
+40344567	Exanthem - viral	4180186
+40344567	Viral diseases	4180186
+40344567	Viral: [diseases] or [exanthem] (disorder)	4180186
+40344567	Viral exanthem	4180186
+40344587	Mast cell tryptase (substance)	4180186
+40344587	MCT - Mast cell tryptase	4180186
+40344625	p-29 antibody (substance)	4180186
+40344637	LA - Lupus anticoagulant	4180186
+40344637	Lupus anticoagulant (substance)	4180186
+40344643	U-1 ribonucleoprotein antibody	4180186
+40344643	U-2 ribonucleoprotein antibody	4180186
+40344643	Heterogeneous ribonucleoprotein antibody	4180186
+40344643	RNP - U-1 ribonucleoprotein antibody	4180186
+40344643	RNP - U-2 ribonucleoprotein antibody	4180186
+40344643	Small ribonucleoprotein antibody (substance)	4180186
+40344643	snRNP - Small nuclear ribonucleoprotein antibody	4180186
+40344651	Retired procedure (procedure)	4180186
+40344664	Cytochrome p-450 antibody	4180186
+40344664	Liver-kidney microsomal antibody (substance)	4180186
+40344679	CD71 - Cluster of differentiation antigen 71	4180186
+40344679	Cluster of differentiation antigen 71 (substance)	4180186
+40344679	Transferrin receptor	4180186
+40344705	Class-II marker	4180186
+40344705	HLA-DR - Human leucocyte antigen DR	4180186
+40344705	HLA-DR - Human leukocyte antigen DR	4180186
+40344705	Human leucocyte antigen DR	4180186
+40344705	Human leukocyte antigen DR (substance)	4180186
+40344793	Repair of cleft soft palate with Z-plasty (procedure)	4180186
+40344803	Retired procedure (procedure)	4180186
+40344870	Eleven (qualifier value)	4180186
+40344870	Eleven - serotype	4180186
+40344889	Hainan (qualifier value)	4180186
+40344922	Magnesium ammonium phosphate (substance)	4180186
+40344925	Paracetamol - chemical (substance)	4180186
+40344932	Teratogen (product)	4180186
+40344934	Valproate (substance)	4180186
+40344935	Plant material (substance)	4180186
+40344956	White hellebore (organism)	4180186
+40344964	Entonox (product)	4180186
+40345000	Dermanyssus gallinae (organism)	4180186
+40345001	Blood group antigen Deal (substance)	4180186
+40345002	Pyemotes tritici (organism)	4180186
+40345004	Cheyletiella parasitivorax (organism)	4180186
+40345010	Dipylidium caninum (organism)	4180186
+40345027	Gram-positive coccobacillus (organism)	4180186
+40345028	Hemiptera (organism)	4180186
+40345030	Raillietina madagascariensis (organism)	4180186
+40345033	Leishmania panamensis (organism)	4180186
+40345035	Neisseria meningococcus (organism)	4180186
+40345036	Opisthorchis felineus (organism)	4180186
+40345053	Toxocara mystax (organism)	4180186
+40345069	Herpes simplex	4180186
+40345069	(Herpes simplex (& [type 1] or [type 2])) or (scrumpox) (disorder)	4180186
+40345069	Herpes simplex virus type 1	4180186
+40345069	Herpes simplex virus type 2	4180186
+40345069	Scrumpox	4180186
+40345069	Simplex - herpes	4180186
+40345071	Cowpox	4180186
+40345071	Fifth disease	4180186
+40345071	Fourth disease	4180186
+40345071	Milker's node	4180186
+40345071	Milkers' node	4180186
+40345071	Orf	4180186
+40345071	Other viral exanthemata	4180186
+40345071	Parascarlatina	4180186
+40345071	Pseudocowpox	4180186
+40345071	Roseola infantum	4180186
+40345071	Smallpox	4180186
+40345071	Variola major	4180186
+40345071	(Viral exanthemata [& variants]) or (orf) or (milkers node) (disorder)	4180186
+40345078	Ornithosis	4180186
+40345078	AIDS with viral/chlamydial disease NOS	4180186
+40345078	Aids +viral/chlamydial dis.NOS	4180186
+40345078	(AIDS with viral/chlamydial dis NOS) or (ornithosis) or (trachoma) (disorder)	4180186
+40345078	Trachoma	4180186
+40345079	Pyruvate (substance)	4180186
+40345082	Cat scratch fever	4180186
+40345082	Cat-scratch fever	4180186
+40345082	Chlamydia conjunctivitis	4180186
+40345082	Chlamydial conjunctivitis	4180186
+40345082	Trachoma inc. conjunctivitis	4180186
+40345082	(Viral and chlamydial disease NOS) or (catscratch fever) or (conjunctivitis: [chlamydia] or [trachoma]) (disorder)	4180186
+40345082	Viral + chlamydial dis. NOS	4180186
+40345084	Arthropod diseases	4180186
+40345084	Rickettsioses/arthropod dis.	4180186
+40345084	Rickettsioses &/or arthropod diseases (disorder)	4180186
+40345085	Q fever	4180186
+40345085	Rickettsioses etc	4180186
+40345085	Rickettsioses etc.	4180186
+40345085	(Rickettsioses [& named variants]) or (trypanosomiasis) (disorder)	4180186
+40345085	Rocky Mountain spotted fever	4180186
+40345085	Trypanosomiasis	4180186
+40345085	Typhus	4180186
+40345086	Leishmaniasis	4180186
+40345086	Rickettsioses/arthropod NOS	4180186
+40345086	(Rickettsioses/arthropod NOS) or (leishmaniasis) (disorder)	4180186
+40345088	Syphilis/venereal/spiroch.dis.	4180186
+40345088	Syphilitic/venereal/spirochaetal disease	4180186
+40345088	Venereal diseases	4180186
+40345088	Sexually transmitted diseases	4180186
+40345088	Spirochaetal disease	4180186
+40345088	Spirochaete diseases	4180186
+40345088	(Venereal &/or spirochaete diseases [& syphilis]) or (STDs) (disorder)	4180186
+40345090	Neurosyphilis	4180186
+40345090	GPI-general paralysis insane	4180186
+40345090	GPI - General paresis of the insane	4180186
+40345090	Neurosyphilis (& [GPI] or [tabes dorsalis]) (disorder)	4180186
+40345090	Tabes dorsalis	4180186
+40345095	Dermatophytosis	4180186
+40345095	(Dermatophytosis &/or tinea &/or ringworm) or (fungal infections) or (mycoses) (disorder)	4180186
+40345095	Dermatophytosis-tinea/ringworm	4180186
+40345095	Fungal infection	4180186
+40345095	Fungal infections	4180186
+40345095	Mycoses	4180186
+40345095	Ringworm	4180186
+40345095	Tinea	4180186
+40345096	Onychomycosis	4180186
+40345096	Onychomycosis (& [tinea of nail]) (disorder)	4180186
+40345096	Tinea of nail - onychomycosis	4180186
+40345099	Aspergillosis	4180186
+40345099	Coccidioidomycosis	4180186
+40345099	Histoplasmosis	4180186
+40345099	Mycoses - other	4180186
+40345099	Other mycoses	4180186
+40345099	Other mycoses (& [aspergillosis] or [coccidioidomycosis] or [histoplasmosis] or [piedra] or [sporotrichosis]) (disorder)	4180186
+40345099	Piedra	4180186
+40345099	Sporotrichosis	4180186
+40345100	Cestode infestation	4180186
+40345100	Helminthiases	4180186
+40345100	(Helminthiases) or (cestode infestation) or (trematode infestation) or (worms) (disorder)	4180186
+40345100	Trematode infestation	4180186
+40345100	Worms	4180186
+40345104	Filaria	4180186
+40345104	Flukes	4180186
+40345104	Other helminthiases	4180186
+40345104	(Other helminthiases (& [oxyuriasis] or [schistosomiasis] or [taenia infestation] or [trichinosis])) or ([filaria] or [flukes] or [tapeworms] or [toxocara]) (disorder)	4180186
+40345104	Oxyuriasis	4180186
+40345104	Schistosomiasis	4180186
+40345104	Taenia infestation	4180186
+40345104	Tapeworms	4180186
+40345104	Toxocara	4180186
+40345104	Trichinosis	4180186
+40345105	Nits - lice eggs/larvae	4180186
+40345105	Pediculosis	4180186
+40345105	Pediculosis and other lice	4180186
+40345105	Pediculosis + lice NOS	4180186
+40345105	Pediculosis (& [other lice NOS]) or (nits) (disorder)	4180186
+40345106	(Scabies) or (acariasis) (disorder)	4180186
+40345106	Acariasis	4180186
+40345106	Scabies	4180186
+40345129	Left bundle branch hemiblock (disorder)	4180186
+40345143	Cerebral atherosclerosis (disorder)	4180186
+40345150	Leucocytoclastic vasculitis	4180186
+40345150	Leucocytoclastic vasculitis (finding)	4180186
+40345162	Cardiovascular disease	4180186
+40345162	Cardiovascular disease (& [circulatory] or [heart]) (disorder)	4180186
+40345162	Circulatory disease	4180186
+40345162	Circulatory system diseases	4180186
+40345162	CVS disease	4180186
+40345162	Heart disease	4180186
+40345163	Acute rheumatic fever	4180186
+40345163	Rheumatic fever	4180186
+40345163	Rheumatic fever (& [acute]) (disorder)	4180186
+40345166	Mitral insuffic.-rheum.	4180186
+40345166	Rheumatic mitral insufficiency	4180186
+40345166	Rheumatic mitral insufficiency (& [stenosis with]) (disorder)	4180186
+40345166	RH. mitral stenosis + insuffic	4180186
+40345167	Aortic RH valve dis.	4180186
+40345167	Chronic rheumatic aortic valve	4180186
+40345167	Rheumatic aortic valve disease (& [chronic]) (finding)	4180186
+40345170	Rheumatic tricuspid incompetence	4180186
+40345170	Rheumatic tricuspid stenosis	4180186
+40345170	Rheumatic tricuspid valve disease (& [incompetence] or [stenosis]) (disorder)	4180186
+40345170	RH. tricuspid valve disease	4180186
+40345170	Tricuspid incomp(rheumatic)	4180186
+40345170	Tricuspid stenosis, rheumatic	4180186
+40345171	Pulmonary incompetence-rheum.	4180186
+40345171	Pulmonary stenosis-rheumatic	4180186
+40345171	Rheumatic pulmonary incompetence	4180186
+40345171	Rheumatic pulmonary valve disease	4180186
+40345171	Rheumatic pulmonary valve disease (& [incompetence] or [stenosis]) (disorder)	4180186
+40345171	RH. pulmonary valve disease	4180186
+40345172	Endocarditis-RH chronic	4180186
+40345172	Rheumatic endocardium disease	4180186
+40345172	Rheumatic endocardium disease (& [chronic endocarditis]) (disorder)	4180186
+40345173	Myocarditis-RH chronic	4180186
+40345173	Rheumatic myocarditis	4180186
+40345173	Rheumatic myocarditis (& [chronic]) (disorder)	4180186
+40345175	Hypertension	4180186
+40345175	Hypertensive disease	4180186
+40345175	(Hypertensive disease) or (hypertension) (disorder)	4180186
+40345178	Chr. ischemic heart dis. NOS	4180186
+40345178	Chronic ischaemic heart disease NOS	4180186
+40345178	Chronic ischemic heart disease NOS	4180186
+40345178	Heart disease: [arteriosclerotic] or [chronic ischaemic NOS]	4180186
+40345178	Heart disease: [arteriosclerotic] or [chronic ischaemic NOS] (disorder)	4180186
+40345178	Arteriosclerotic heart disease	4180186
+40345178	Chr. ischaemic heart dis. NOS	4180186
+40345181	Pulmonary infarct	4180186
+40345181	Embolus - pulmonary	4180186
+40345181	Pulmonary embolism	4180186
+40345181	(Pulmonary embolism) or (pulmonary infarct) (disorder)	4180186
+40345181	Pulmonary embolus	4180186
+40345184	Cardiac tamponade	4180186
+40345184	(Cardiac tamponade) or (pericardial disease NOS) (disorder)	4180186
+40345184	Pericardial disease NOS	4180186
+40345184	Tamponade, cardiac	4180186
+40345185	Non-rheum. tricuspid stenosis	4180186
+40345185	Tricuspid stenosis	4180186
+40345185	Tricuspid stenosis, non-rheum	4180186
+40345185	Tricuspid stenosis, non-rheumatic	4180186
+40345185	Tricuspid stenosis (& [non-rheumatic]) (disorder)	4180186
+40345187	Non-rheum. tricuspid incomp.	4180186
+40345187	Tricuspid incompetence	4180186
+40345187	Tricuspid incompetence, non-rheumatic	4180186
+40345187	Tricuspid incompetence (& [non-rheumatic]) (disorder)	4180186
+40345187	Tricuspid incomp(non-rheum)	4180186
+40345188	Non-rheum. pulmonary regurg.	4180186
+40345188	Pulmonary incompetence, non-rheumatic	4180186
+40345188	Pulmonary incomp.-non rheum.	4180186
+40345188	Pulmonary regurg.	4180186
+40345188	Pulmonary regurgitation	4180186
+40345188	Pulmonary regurgitation, non-rheumatic	4180186
+40345188	Pulmonary regurgitation (& [non-rheumatic]) (disorder)	4180186
+40345189	Non-rheumatic endocarditis NOS	4180186
+40345189	(Non-rheumatic endocarditis NOS) or (pulmonary stenosis NOS) (disorder)	4180186
+40345189	Non-rheum. endocarditis NOS	4180186
+40345189	Pulmonary stenosis NOS	4180186
+40345192	Cardiomyopathy	4180186
+40345192	Cardiomyopathy (& [congest. obst.] or [hyper. obst.]) or endomyocardial fibrosis (disorder)	4180186
+40345192	Congestive obstructive cardiomyopathy	4180186
+40345192	Congest. obst. cardiomyopathy	4180186
+40345192	Endomyocardial fibrosis	4180186
+40345192	Hyper. obst. cardiomyopathy	4180186
+40345192	Hypertrophic obstructive cardiomyopathy	4180186
+40345193	Block - heart	4180186
+40345193	Conduction disorders	4180186
+40345193	Conduction disorders (& [heart block]) (disorder)	4180186
+40345193	Heart block	4180186
+40345197	Atrial fibrillation	4180186
+40345197	(Atrial fibrillation) or (atrial flutter) (disorder)	4180186
+40345197	Atrial flutter	4180186
+40345197	Fibrillation - atrial	4180186
+40345197	Flutter - atrial	4180186
+40345198	Cardiac dysrhythmias NOS	4180186
+40345198	Gallop rhythm	4180186
+40345198	Gallop rhythym	4180186
+40345198	Sick sinus syndrome	4180186
+40345198	Wandering pacemaker	4180186
+40345198	Wandering pacemeker	4180186
+40345199	Dropsy	4180186
+40345199	Congestive cardiac fail	4180186
+40345199	Congestive cardiac failure	4180186
+40345199	(Congestive cardiac failure) or (dropsy) or (cardiac insufficiency) or (right heart failure) or (right ventricular failure) (disorder)	4180186
+40345199	Congetive cardiac failure	4180186
+40345199	Insufficiency - cardiac	4180186
+40345199	Right heart failure	4180186
+40345199	Right ventricular failure	4180186
+40345203	Carditis NOS	4180186
+40345203	(Carditis NOS) or (heart disease NOS) (disorder)	4180186
+40345203	Heart disease NOS	4180186
+40345204	Cerebrovascular accident	4180186
+40345204	Cerebrovascular disease	4180186
+40345204	Cerebrovascular: [disease] or [accident] (disorder)	4180186
+40345207	Accident - cerebrovascular	4180186
+40345207	Cerebral infarct	4180186
+40345207	(Cerebral infarct) or (cerebrovascular accident) or (undefined stroke/CVA) or (stroke NOS) (disorder)	4180186
+40345207	Cerebrovascular accident	4180186
+40345207	Stroke/CVA - undefined	4180186
+40345207	Stroke NOS	4180186
+40345208	Aneurysm-cer.non rupt.	4180186
+40345208	Cerebral aneurysm	4180186
+40345208	Cerebral aneurysm-non ruptured	4180186
+40345208	Cerebral aneurysm (& [non-ruptured]) or cerebrovascular insufficiency (disorder)	4180186
+40345208	Insufficiency-cerebrovascular	4180186
+40345246	Secondary localized osteoarthrosis (disorder)	4180186
+40345246	Secondary localised osteoarthrosis	4180186
+40345253	HLA - Human leucocyte antigen B65(14)	4180186
+40345253	HLA - Human leukocyte antigen B65(14)	4180186
+40345253	Human leucocyte antigen B65(14)	4180186
+40345253	Human leukocyte antigen B65(14) (substance)	4180186
+40345292	HLA - Human leucocyte antigen DQ1	4180186
+40345292	HLA - Human leukocyte antigen DQ1	4180186
+40345292	Human leucocyte antigen DQ1	4180186
+40345292	Human leukocyte antigen DQ1 (substance)	4180186
+40345318	Specific immunoglobulin E (substance)	4180186
+40345322	Cocksfoot grass pollen (substance)	4180186
+40345371	Monte Valerio (qualifier value)	4180186
+40345407	Common swift (organism)	4180186
+40345433	Bilateral nerve sparing attempt (qualifier value)	4180186
+40345446	Injury of body region (disorder)	4180186
+40345447	Injury of head region (disorder)	4180186
+40345503	Hysterosalpingography with positive contrast (procedure)	4180186
+40345515	Degloving injury of arm (disorder)	4180186
+40345567	Long head of biceps brachii (body structure)	4180186
+40345594	Cellular proliferative disease (disorder)	4180186
+40345602	Early red lesion (qualifier value)	4180186
+40345614	Hereditary disease (disorder)	4180186
+40345624	Ischaemic necrosis	4180186
+40345624	Ischemic necrosis (qualifier value)	4180186
+40345629	Littre's hernia (qualifier value)	4180186
+40345632	Malignant disease (disorder)	4180186
+40345640	Neuropathy (disorder)	4180186
+40345640	Peripheral neuropathy	4180186
+40345640	PN - Peripheral neuropathy	4180186
+40345641	Ophthalmological disorder (disorder)	4180186
+40345645	Penile intraepithelial neoplasia (disorder)	4180186
+40345653	Retinal correspondence (finding)	4180186
+40345664	Superadded infection (disorder)	4180186
+40345671	Arterial disease	4180186
+40345671	Artery/arteriole/capillary dis	4180186
+40345671	Artery &/or arteriole &/or capillary disease (disorder)	4180186
+40345673	Raynaud's syndrome	4180186
+40345673	Raynaud's syndrome (& [vibration white finger]) (disorder)	4180186
+40345673	Vibration white fing /Raynaud	4180186
+40345674	Peripheral vasc. disease NOS	4180186
+40345674	Peripheral vascular disease	4180186
+40345674	Peripheral vascular disease NOS	4180186
+40345674	Peripheral vascular disease (& [NOS]) (disorder)	4180186
+40345674	Peripheral vascular dis. NOS	4180186
+40345674	Vasc. dis. periph. NOS	4180186
+40345676	Acrocyanosis	4180186
+40345676	(Acrocyanosis) or (erythocyanosis) or (vasospasm) or (peripheral vascular disease NOS) (disorder)	4180186
+40345676	Erythocyanosis	4180186
+40345676	Erythrocyanosis	4180186
+40345676	Peripheral vasc. disease NOS	4180186
+40345676	Peripheral vascular disease NOS	4180186
+40345676	Vasospasm	4180186
+40345677	Aortic thromboembolism	4180186
+40345677	(Embolus &/or thrombosis of abdominal aorta) or (aortic thromboembolism) (disorder)	4180186
+40345677	Embolus/thrombosis abd. aorta	4180186
+40345680	(Acquired A-V fistula) or (angiitis) or (artery &/or capillary disease NOS) or (arteritis NOS) (disorder)	4180186
+40345680	Angiitis	4180186
+40345680	Arteritis NOS	4180186
+40345680	Artery/capillary disease NOS	4180186
+40345680	A-V fistula - acquired	4180186
+40345688	Anal tag	4180186
+40345688	(Anal tag) or (residual pile skin tags) (disorder)	4180186
+40345688	Residual pile skin tags	4180186
+40345688	Tag - anal	4180186
+40345691	Lymphangitis NOS	4180186
+40345691	(Non-infective lymphatic disease NOS) or (lymphangitis NOS) (disorder)	4180186
+40345691	Non-infect. lymphatic dis. NOS	4180186
+40345696	Acute lower respiratory tract infection (disorder)	4180186
+40345696	Chest infection	4180186
+40345696	CI - Chest infection	4180186
+40345716	Allergic atopic asthma (disorder)	4180186
+40345717	Extrinsic asthma without status asthmaticus (disorder)	4180186
+40345721	Intrinsic asthma with status asthmaticus (disorder)	4180186
+40345737	Common cold	4180186
+40345737	Coryza - acute	4180186
+40345737	Acute coryza	4180186
+40345737	Acute nasopharyngitis	4180186
+40345737	(Acute nasopharyngitis) or (common cold) or (acute coryza) or (acute rhinitis) or (sniffles) or (snuffles) (disorder)	4180186
+40345737	Acute rhinitis	4180186
+40345737	Nasopharyngitis - acute	4180186
+40345737	Rhinitis - acute	4180186
+40345737	Sniffles	4180186
+40345737	Snuffles	4180186
+40345738	Acute sinusitis NOS	4180186
+40345738	(Acute sinusitis: [NOS] or [ethmoidal] or [sphenoidal]) or ([pansinusitis]) (disorder)	4180186
+40345738	Ethmoidal sinus - acute	4180186
+40345738	Pansinusitis	4180186
+40345738	Sphenoidal sinus -acute	4180186
+40345739	Acute pharyngitis	4180186
+40345739	Pharyngitis - acute	4180186
+40345739	Sore throat	4180186
+40345739	Throat: [acute pharyngitis] or [infection NOS] or [sore] (disorder)	4180186
+40345739	Throat infection NOS	4180186
+40345742	Acute resp. infection NOS	4180186
+40345742	Acute respiratory infection NOS	4180186
+40345742	Acute respiratory infection: [NOS] or [pharyngotracheitis] or [tracheopharyngitis] (disorder)	4180186
+40345742	Pharyngotracheitis - acute	4180186
+40345742	Tracheopharyngitis - acute	4180186
+40345743	Other upper resp. tract diseas	4180186
+40345743	Upper resp. disease	4180186
+40345743	Upper respiratory disease (& upper) (disorder)	4180186
+40345744	Catarrh	4180186
+40345744	(Chronic pharyngitis/nasopharyngitis) or (catarrh) or (congested nose) (disorder)	4180186
+40345744	Chronic pharyn/nasopharyngitis	4180186
+40345744	Congested nose	4180186
+40345747	Allergic rhinitis	4180186
+40345747	Allergic rhinitis NOS	4180186
+40345747	(Allergic rhinitis: [NOS] or [perennial] or [seasonal]) or (vasomotor rhinitis) (disorder)	4180186
+40345747	Perenial allergic rhinitis	4180186
+40345747	Perennial allergic rhinitis	4180186
+40345747	Rhinitis - allergic	4180186
+40345747	Seasonal allergic rhinitis	4180186
+40345747	Vasomotor rhinitis	4180186
+40345754	Pneumococcal lobar pneumonia	4180186
+40345754	Pneumococcal pneumonia	4180186
+40345754	Pneumonia: [lobar] or [pneumococcal] (disorder)	4180186
+40345754	Lobar -pneumococcal -pneumonia	4180186
+40345754	Lobar pneumonia	4180186
+40345756	Cough - smoker's	4180186
+40345756	Simple chronic bronchitis	4180186
+40345756	(Simple chronic bronchitis) or (smoker's cough) or (senile tracheobronchitis) (disorder)	4180186
+40345756	Smoker's cough	4180186
+40345756	Smokers' cough	4180186
+40345756	Tracheobronchitis - senile	4180186
+40345757	Chronic bronchitis NOS	4180186
+40345757	Chronic: [bronchitis NOS] or [tracheobronchitis] (disorder)	4180186
+40345757	Chronic tracheobronchitis	4180186
+40345757	Tracheobronchitis - chronic	4180186
+40345759	Asthma: [intrinsic] or [late onset] (disorder)	4180186
+40345759	Intrinsic asthma	4180186
+40345759	Late onset asthma	4180186
+40345759	Late-onset asthma	4180186
+40345759	Late-onset asthma (LOA)	4180186
+40345759	LOA - late onset asthma	4180186
+40345761	Allergic alveolitis	4180186
+40345761	Alveolitis - allergic	4180186
+40345761	Extrinsic allergic alveolitis	4180186
+40345761	Farmers lung	4180186
+40345761	Farmers' lung	4180186
+40345761	Pneumonitis, allergic NOS	4180186
+40345762	Asbestosis	4180186
+40345762	(Asbestosis) or (byssinosis) or (pleural plaque disease) (disorder)	4180186
+40345762	Byssinosis	4180186
+40345762	Pleural plaque disease	4180186
+40345763	True histiocytic lymphoma (morphologic abnormality)	4180186
+40345771	Haemothorax	4180186
+40345771	Hemothorax	4180186
+40345771	Hydrothorax	4180186
+40345771	Pleural effusion NOS	4180186
+40345771	(Pleural effusion NOS) or (haemothorax) or (hydrothorax)	4180186
+40345771	(Pleural effusion NOS) or (haemothorax) or (hydrothorax) (disorder)	4180186
+40345772	Congestion - lung	4180186
+40345772	Edema - pulmonary NOS	4180186
+40345772	Lung: [pulmonary oedema NOS] or [congestion]	4180186
+40345772	Lung: [pulmonary oedema NOS] or [congestion] (disorder)	4180186
+40345772	Oedema - pulmonary NOS	4180186
+40345772	Pulmonary edema NOS	4180186
+40345772	Pulmonary oedema NOS	4180186
+40345776	Adult respiratory distress syndrome	4180186
+40345776	Pmeumomediastinum	4180186
+40345776	Pneumomediastinum	4180186
+40345776	Resp. distress synd. - adult	4180186
+40345776	Respirat distress synd-adult	4180186
+40345776	Respiratory disease NOS	4180186
+40345776	(Respiratory disease NOS) or (adult respiratory distress syndrome) or (pneumomediastinum) or (tracheomalacia) (disorder)	4180186
+40345776	Tracheomalacia	4180186
+40345790	Sialosis (disorder)	4180186
+40345793	Gangrenous stomatitis (disorder)	4180186
+40345891	Cogan syndrome	4180186
+40345891	Cogan's syndrome (disorder)	4180186
+40345891	Oculomotor apraxia	4180186
+40345891	Oculomotor apraxia - Cogan type	4180186
+40345891	Oculovestibuloauditory syndrome	4180186
+40345912	Echinococcus (organism)	4180186
+40345926	Mumps virus antibody (substance)	4180186
+40345983	Deep full thickness burn of a single finger with loss of body part (disorder)	4180186
+40345984	Deep full thickness burn of a single finger without loss of body part (disorder)	4180186
+40345997	Terpin hydrate (substance)	4180186
+40346043	Bruise of gingivae (disorder)	4180186
+40346045	Bruise of floor of mouth (disorder)	4180186
+40346047	Bruise of intraoral surface of lip (disorder)	4180186
+40346048	Bruise of oral alveolar mucosa (disorder)	4180186
+40346052	Amebicide (product)	4180186
+40346052	Amoebicide	4180186
+40346076	Open wound of larynx without complication (disorder)	4180186
+40346089	Injury of abdominal viscera (disorder)	4180186
+40346129	Lithotripsy	4180186
+40346129	Lithotripsy - action (procedure)	4180186
+40346130	Magnetic peripheral nerve stimulation (procedure)	4180186
+40346133	Perineural neurolysis (qualifier value)	4180186
+40346137	Radical neurolysis (qualifier value)	4180186
+40346270	day (qualifier value)	4180186
+40346305	Ventral hernia (disorder)	4180186
+40346310	Ulcerative colitis (disorder)	4180186
+40346311	Chronic mesenteric ischaemia	4180186
+40346311	Chronic mesenteric ischaemia (disorder)	4180186
+40346316	Dietetic gastroenteritis (disorder)	4180186
+40346344	Coeliac disease (disorder)	4180186
+40346351	Oral/salivary/jaw diseases	4180186
+40346351	Disease of jaw	4180186
+40346351	Jaw disease	4180186
+40346351	Oral cavity, salivary glands and jaw diseases	4180186
+40346351	Oral disease	4180186
+40346351	Oral &/or salivary &/or jaw diseases (disorder)	4180186
+40346353	Abrasion/erosion of teeth	4180186
+40346353	Erosion of teeth	4180186
+40346353	Teeth abrasion &/or erosion (procedure)	4180186
+40346353	Teeth erosion	4180186
+40346356	Gingival and periodontal disease	4180186
+40346356	Gingival disease	4180186
+40346356	Gingival &/or periodontal disease (disorder)	4180186
+40346356	Gingival/periodontal disease	4180186
+40346362	Parotitis - non mumps	4180186
+40346362	Sialoadenitis	4180186
+40346362	Sialoadenitis (& [parotitis - non mumps]) (disorder)	4180186
+40346367	Acute gastric ulcer with perforation	4180186
+40346367	GU - acute + perforation	4180186
+40346367	Perforated GU	4180186
+40346367	Perforated GU (& [acute]) (disorder)	4180186
+40346373	Gastritis	4180186
+40346373	Gastritis and duodenitis	4180186
+40346373	Gastritis &/or duodenitis (disorder)	4180186
+40346380	Inguinal hernia NOS	4180186
+40346380	Inguinal hernia: [NOS] or [left] or [right] (disorder)	4180186
+40346380	Left inguinal hernia	4180186
+40346380	Right inguinal hernia	4180186
+40346382	Hiatus hernia	4180186
+40346382	Diaphragmatic hernia	4180186
+40346382	Diaphragmatic hernia (& [hiatus hernia]) (disorder)	4180186
+40346382	Diaphragmatic - hiatus -hernia	4180186
+40346382	Diaphragmatic hiatus hernia	4180186
+40346382	Hernia - diagphragmatic	4180186
+40346387	Inflammatory bowel disease	4180186
+40346387	Inflammatory bowel disease (& [noninfective enteritis/colitis]) (disorder)	4180186
+40346387	Noninfective enteritis and colitis	4180186
+40346387	Noninfective enteritis/colitis	4180186
+40346388	Crohn's disease	4180186
+40346388	Crohn's disease (& [regional enteritis]) (disorder)	4180186
+40346388	Crohn's regional enteritis	4180186
+40346388	Enteritis - regional	4180186
+40346388	Regional enteritis	4180186
+40346388	Regional enteritis - Crohn	4180186
+40346389	Mesenteric vasc. dis.	4180186
+40346389	(Vascular insufficiency of the intestine) or (mesenteric vasc dis) (disorder)	4180186
+40346389	Vascular insuff.- intestine	4180186
+40346396	Constipation - functional	4180186
+40346396	Constipation-functional	4180186
+40346396	Faeces - impacted	4180186
+40346396	Feces - impacted	4180186
+40346396	(Functional constipation) or (impacted faeces)	4180186
+40346396	(Functional constipation) or (impacted faeces) (disorder)	4180186
+40346396	Impacted faeces	4180186
+40346396	Impacted feces	4180186
+40346397	Pseudomembranous colitis	4180186
+40346397	Spastic colon	4180186
+40346397	(Irritable bowel syndrome) or (pseudomembranous colitis) (disorder)	4180186
+40346397	Colitis - pseudomembranous	4180186
+40346397	Irritable bowel - IBS	4180186
+40346397	Irritable bowel syndrome	4180186
+40346399	Dumping syndrome	4180186
+40346399	Postgastrectomy syndr.	4180186
+40346399	Postgastrectomy syndrome	4180186
+40346399	Postgastric surgery syndromes	4180186
+40346399	Postgastric surgery syndromes (& [dumping]) (disorder)	4180186
+40346400	Functional GIT disorder NOS	4180186
+40346400	(Functional GIT disorder NOS) or (megacolon excluding Hirschsprung's disease) (disorder)	4180186
+40346400	Megacolon excluding Hirschsprung's disease	4180186
+40346400	Megacolon -not Hirschsprung	4180186
+40346401	Abscess - ischiorectal	4180186
+40346401	Ischiorectal abscess	4180186
+40346401	Ischiorectal abscess/fistula	4180186
+40346401	Ischiorectal abscess &/or fistula (disorder)	4180186
+40346402	Abscess - anal/rectal	4180186
+40346402	Anal/rectal abscess	4180186
+40346402	Anal/rectal abscess NOS	4180186
+40346402	(Anal/rectal abscess NOS) or (anorectal abscess) (disorder)	4180186
+40346402	Anorectal abscess	4180186
+40346404	Anal &/or rectal polyp (disorder)	4180186
+40346404	Anal polyp	4180186
+40346404	Anal/rectal polyp	4180186
+40346404	Polyp - anal/rectal	4180186
+40346404	Rectal polyp	4180186
+40346405	Anal &/or rectal haemorrhage	4180186
+40346405	Anal &/or rectal haemorrhage (disorder)	4180186
+40346405	Anal/rectal haemorrhage	4180186
+40346405	Anal/rectal hemorrhage	4180186
+40346405	Bleeding - rectal	4180186
+40346405	Haemorrhage - rectal	4180186
+40346405	Hemorrhage - rectal	4180186
+40346405	Rectal bleeding	4180186
+40346405	Rectal haemorrhage	4180186
+40346405	Rectal hemorrhage	4180186
+40346407	Anus - kraurosis	4180186
+40346407	Gastrointestinal tract disorders NOS	4180186
+40346407	GIT disorders NOS	4180186
+40346407	(GIT disorders NOS) or (kraurosis of anus) or (proctitis) or (rectal irritation) or (stercoral ulcer) (disorder)	4180186
+40346407	Irritation - rectum	4180186
+40346407	Kraurosis ani	4180186
+40346407	Kraurosis of anus	4180186
+40346407	Proctitis	4180186
+40346407	Rectal irritation	4180186
+40346407	Ulcer - stercoral	4180186
+40346408	Biliary disease	4180186
+40346408	Gall bladder disease	4180186
+40346408	Gallbladder disease	4180186
+40346408	Liver/biliary/pancreas+GIT NOS	4180186
+40346408	Liver disease	4180186
+40346413	Biliary cirrhosis	4180186
+40346413	Biliary cirrhosis (& [primary]) (disorder)	4180186
+40346413	Primary biliary cirrhosis	4180186
+40346417	Gall bladder disorders NOS	4180186
+40346417	Gallbladder disorders NOS	4180186
+40346417	Mucocele - gall bladder	4180186
+40346417	Mucocele of gallbladder	4180186
+40346419	Biliary tract disorders NOS	4180186
+40346419	(Biliary tract disorders NOS) or (obstructive jaundice NOS) (disorder)	4180186
+40346419	Obstructive jaundice NOS	4180186
+40346420	Cyst of pancreas	4180186
+40346420	Diseases of pancreas NOS	4180186
+40346420	(Diseases of pancreas NOS) or (cyst of pancreas) or (pseudocyst of pancreas) (disorder)	4180186
+40346420	Pancreatic cyst	4180186
+40346420	Pseudocyst of pancreas	4180186
+40346421	Intestinal malabsorption NOS	4180186
+40346421	(Intestinal malabsorption NOS) or (tropical sprue) (disorder)	4180186
+40346421	Sprue - tropical	4180186
+40346421	Tropical sprue	4180186
+40346422	Posterior semicircular canal (body structure)	4180186
+40346533	Retired procedure (procedure)	4180186
+40346559	Diminished (qualifier value)	4180186
+40346610	Left oblique projection (qualifier value)	4180186
+40346614	Right oblique projection (qualifier value)	4180186
+40346633	Injury of spinal nerve root (disorder)	4180186
+40346758	Open grade I (qualifier value)	4180186
+40346759	Open grade II (qualifier value)	4180186
+40346770	Open grade II (qualifier value)	4180186
+40346773	Open grade IIIb (qualifier value)	4180186
+40346775	Stage 1a1 (qualifier value)	4180186
+40346775	Stage Ia1	4180186
+40346776	Stage 1a2 (qualifier value)	4180186
+40346776	Stage Ia2	4180186
+40346785	Nosema (organism)	4180186
+40346825	Mengla (qualifier value)	4180186
+40346833	Salmonella II, group D2 (organism)	4180186
+40346879	Minimal urticarial dose (finding)	4180186
+40346887	No stain (substance)	4180186
+40346920	Pyeloureteritis cystica (disorder)	4180186
+40346939	Balanitis (disorder)	4180186
+40346969	Scanty and infrequent menstruation (disorder)	4180186
+40346979	Premenopausal menorrhagia (disorder)	4180186
+40346984	Renal diseases	4180186
+40346984	Genitourinary diseases	4180186
+40346984	Genitourinary system diseases	4180186
+40346984	Genitourinary system diseases (& [kidney] or [urinary]) (disorder)	4180186
+40346984	Kidney diseases	4180186
+40346984	Urinary diseases	4180186
+40346985	Acute glomerulonephritis	4180186
+40346985	(Acute glomerulonephritis) or (acute nephritis) (disorder)	4180186
+40346985	Acute nephritis	4180186
+40346985	Glomeruloneph.- acute	4180186
+40346985	Nephritis - acute	4180186
+40346989	Glomerulosclerosis	4180186
+40346989	Nephritis/nephrosis NOS	4180186
+40346989	(Nephritis &/or nephrosis NOS) or (glomerulosclerosis) or (renal osteodystrophy) (disorder)	4180186
+40346989	Renal osteodystrophy	4180186
+40346994	Abscess - renal	4180186
+40346994	Abscess: [renal] or [nephric] or [perinephric] (disorder)	4180186
+40346994	Nephric abscess	4180186
+40346994	Perinephric abscess	4180186
+40346994	Renal abscess	4180186
+40346994	Renal/perinephric abscess	4180186
+40347000	Pyoureter	4180186
+40347000	Renal disease NOS	4180186
+40347000	(Renal disease NOS) or (pyoureter) (disorder)	4180186
+40347001	Acute cystitis	4180186
+40347001	Acute cystitis (& [recurrent]) (disorder)	4180186
+40347001	Acute recurrent cystitis	4180186
+40347001	Recurrent acute cystitis	4180186
+40347010	RECURRENT URINARY TRACT INFECN	4180186
+40347010	Urinary obstruction unspecif	4180186
+40347010	Urinary obstruction unspecified	4180186
+40347010	(Urinary obstruction unspecified) or (recurrent urinary tract infection) (disorder)	4180186
+40347012	Foreskin problems	4180186
+40347012	Prepuce problems	4180186

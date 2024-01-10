@@ -30,6 +30,8 @@ CREATE TABLE IF NOT EXISTS CONCEPT_RELATIONSHIP (
     FOREIGN KEY (concept_id_2) REFERENCES CONCEPT(concept_id)
 );
 
+SELECT 'Table CONCEPT_RELATIONSHIP created' AS message;
+
 CREATE TABLE IF NOT EXISTS CONCEPT_ANCESTOR (
     ancestor_concept_id INT,
     descendant_concept_id INT,
@@ -40,4 +42,15 @@ CREATE TABLE IF NOT EXISTS CONCEPT_ANCESTOR (
     FOREIGN KEY (descendant_concept_id) REFERENCES CONCEPT(concept_id)
 );
 
-SELECT 'Table CONCEPT_RELATIONSHIP created' AS message;
+SELECT 'Table CONCEPT_ANCESTOR created' AS message;
+
+CREATE TABLE IF NOT EXISTS CONCEPT_SYNONYM (
+    concept_id INT,
+    concept_synonym_name VARCHAR(1000) COLLATE utf8_bin,
+    language_concept_id INT,
+    PRIMARY KEY (concept_id, concept_synonym_name, language_concept_id),
+    FOREIGN KEY (concept_id) REFERENCES CONCEPT(concept_id),
+    FOREIGN KEY (language_concept_id) REFERENCES CONCEPT(concept_id)
+);
+
+SELECT 'Table CONCEPT_SYNONYM created' AS message;

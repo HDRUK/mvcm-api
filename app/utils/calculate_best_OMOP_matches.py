@@ -36,70 +36,91 @@ class OMOPMatcher:
                 search_threshold = None
          
             for search_term in search_terms:
-                OMOP_concepts = self.fetch_OMOP_concepts(search_term, vocabulary_id)
-                if OMOP_concepts.empty:
-                    continue
+                OMOP_concepts = self.fetch_OMOP_concepts(search_term, vocabulary_id, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor)
 
-                term_results = {
+                overall_results.append({
                     'search_term': search_term,
-                    'CONCEPT': self.process_concepts(OMOP_concepts, search_term, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor)
-                }
-
-                overall_results.append(term_results)
+                    'CONCEPT': OMOP_concepts
+                })
 
             return overall_results
         
         except Exception as e:
             raise ValueError(f"Error in calculate_best_OMOP_matches: {e}")
 
-    def process_concepts(self, OMOP_concepts, search_term, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor):
-        matches = []
-
-        # Remove duplicate rows based on 'concept_id'
-        OMOP_concepts = OMOP_concepts.drop_duplicates(subset='concept_id')
-
-        for _, row in OMOP_concepts.iterrows():
-            cleaned_concept_name = re.sub(r'\(.*?\)', '', row['concept_name']).strip()
-            score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
-
-            # Continue to the next iteration if the score is below the threshold
-            if search_threshold is not None and score < search_threshold:
-                continue
-
-            # Add match to the list if it meets or exceeds the threshold
-            match = {
-                'concept_name': row['concept_name'],
-                'concept_id': row['concept_id'],
-                'vocabulary_id': row['vocabulary_id'],
-                'concept_code': row['concept_code'],
-                'similarity_score': score,
-                'CONCEPT_ANCESTOR': self.fetch_concept_ancestor(row['concept_id'],max_separation_descendant,max_separation_ancestor) if concept_ancestor == "y" else [],
-                'CONCEPT_RELATIONSHIP': self.fetch_concept_relationship(row['concept_id']) if concept_relationship == "y" else []
-            }
-            matches.append(match)
-        return matches
     
-    def fetch_OMOP_concepts(self, search_term, vocabulary_id):
+    def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, search_threshold,max_separation_descendant,max_separation_ancestor):
         query = """
-        SELECT 
-            C.concept_id,
-            C.concept_name, 
-            C.vocabulary_id, 
-            C.concept_code
-        FROM 
-            CONCEPT AS C
-        LEFT JOIN CONCEPT_SYNONYM AS CS ON C.concept_id = CS.concept_id
-        WHERE 
-            C.standard_concept = 'S' AND
-            (%s IS NULL OR C.vocabulary_id = %s) AND
-            (MATCH(C.concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) OR
-            MATCH(CS.concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE))
-        """
-        params = (vocabulary_id, vocabulary_id, search_term, search_term)
+            SELECT 
+                C.concept_id,
+                C.concept_name, 
+                CS.concept_synonym_name,
+                C.vocabulary_id, 
+                C.concept_code
+            FROM 
+                CONCEPT AS C
+            LEFT JOIN CONCEPT_SYNONYM AS CS ON C.concept_id = CS.concept_id
+            WHERE 
+                C.standard_concept = 'S' AND
+                
+                (%s IS NULL OR C.vocabulary_id = %s) AND
+                (MATCH(C.concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) OR
+                MATCH(CS.concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE))
+            """
+        
+        # use CS.language_concept_id = '4180186' as additional filter if needed
 
-        return pd.read_sql(query, con=self.engine, params=params)
+        # Calculate similarity scores and add a new column
+            
+
+        params = (vocabulary_id, 
+                  vocabulary_id, 
+                  search_term, 
+                  search_term,)
+
+        results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates()
+        
+        # Define a function to calculate similarity score using the provided logic
+        def calculate_similarity(row):
+            cleaned_concept_name = re.sub(r'\(.*?\)', '', row).strip()
+            score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+            return score
+
+        # Apply the score function to 'concept_name' and 'concept_synonym_name' columns
+        results['concept_name_similarity_score'] = results['concept_name'].apply(calculate_similarity)
+        results['concept_synonym_name_similarity_score'] = results['concept_synonym_name'].apply(calculate_similarity)
+        
+        # Filter the DataFrame by score
+        filtered_results = results[(results['concept_name_similarity_score'] > search_threshold) | (results['concept_synonym_name_similarity_score'] > search_threshold)]
+
+        # Sort the filtered results by the highest score (descending order)
+        filtered_results = filtered_results.sort_values(by=['concept_name_similarity_score', 'concept_synonym_name_similarity_score'], ascending=False)
+
+        # Group by 'concept_id' and aggregate the relevant columns
+        grouped_results = filtered_results.groupby('concept_id').agg({
+            'concept_name': 'first',
+            'vocabulary_id': 'first',
+            'concept_code': 'first',
+            'concept_name_similarity_score': 'first',
+            'concept_synonym_name': list,
+            'concept_synonym_name_similarity_score': list,
+        }).reset_index()
+
+        # Define the final output format
+        return [{
+            'concept_name': row['concept_name'],
+            'concept_id': row['concept_id'],
+            'vocabulary_id': row['vocabulary_id'],
+            'concept_code': row['concept_code'],
+            'concept_name_similarity_score': row['concept_name_similarity_score'],
+            'CONCEPT_SYNONYM': [{
+                'concept_synonym_name': syn_name,
+                'concept_synonym_name_similarity_score': syn_score
+            } for syn_name, syn_score in zip(row['concept_synonym_name'], row['concept_synonym_name_similarity_score'])],
+            'CONCEPT_ANCESTOR': self.fetch_concept_ancestor(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
+            'CONCEPT_RELATIONSHIP': self.fetch_concept_relationship(row['concept_id']) if concept_relationship == "y" else []
+        } for _, row in grouped_results.iterrows()]
     
-
     def fetch_concept_ancestor(self, concept_id,max_separation_descendant,max_separation_ancestor):
         query = """
             (
@@ -146,7 +167,15 @@ class OMOPMatcher:
         """
         min_separation_ancestor =1 
         min_separation_descendant=1
-        results = pd.read_sql(query, con=self.engine, params=(concept_id, min_separation_ancestor, max_separation_ancestor, concept_id, min_separation_descendant, max_separation_descendant)).drop_duplicates().query("concept_id != @concept_id")
+
+        params = (concept_id, 
+                  min_separation_ancestor, 
+                  max_separation_ancestor, 
+                  concept_id, 
+                  min_separation_descendant, 
+                  max_separation_descendant,)
+        
+        results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates().query("concept_id != @concept_id")
 
         return [{
             'concept_name': row['concept_name'],

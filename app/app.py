@@ -7,17 +7,33 @@ import os
 
 from utils.calculate_best_OMOP_matches import OMOPMatcher
 from utils.calculate_best_OLS4_matches import OLS4Matcher
+from utils.calculate_best_UMLS_matches import UMLSMatcher
 
-app = FastAPI()
+app = FastAPI(
+    title="MVCM",
+    description="HDR-UK Medical Vocabualry Concept Mapper",
+    version="1.1.0",
+    contact={
+        "name": "Tom Giles",
+        "email": "tom.giles@hdruk.ac.uk",
+    },
+)
+
 security = HTTPBasic()
 
 # Import OLS4Matcher, OMOPMatcher
 omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
+UMLS_matcher = UMLSMatcher()
 
 class OLS4Request(BaseModel):
     search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
     vocabulary_id: Optional[str] = "snomed"
+    search_threshold: Optional[int] = 80
+
+class UMLSRequest(BaseModel):
+    search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
+    vocabulary_id: Optional[str] = "MTH"
     search_threshold: Optional[int] = 80
 
 class OMOPRequest(BaseModel):
@@ -57,6 +73,12 @@ def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> 
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
     return ols4_matcher.calculate_best_matches(request.search_terms, 
+                                               request.vocabulary_id, 
+                                               request.search_threshold)
+
+@app.post("/search/ulms/")
+async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
+    return UMLS_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 

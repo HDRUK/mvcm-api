@@ -2,8 +2,8 @@
 # Medical Vocabulary Concept Mapping Application Programming Interface (MVCM API)
 
 ## Introduction
- 
-This repository contains a FastAPI application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model and OLS4. The application provides endpoints to interact with the concept data, offering functionalities such as searching for concepts based on textual queries.
+
+This repository contains a FastAPI application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model UMLS, and OLS4. The application provides endpoints to interact with the concept data, offering functionalities such as searching for concepts based on textual queries.
 
 ## Setup
 
@@ -101,6 +101,32 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 }
 ```
 
+### `/API/UMLS_search`
+
+#### Method: `POST`
+
+Searches for standard concepts using the UMLS API based on search terms provided.
+Please note, the advanced functionality supported by UMLS (relations, parents, children etc is not yet supported in this API)
+
+**Request Body:**
+
+- `search_term`: List of search terms to find the best match for (e.g., `["Asthma", "Heart"]`)
+- `vocabulary_id`: Vocabulary ID to filter the results by (e.g., "snomed"). Optional.
+- `search_threshold`: Filter threshold (default is 80). Optional.
+
+**Example Request:**
+
+```json
+{
+  "search_term": [
+    "Asthma", 
+    "Heart"
+  ],
+  "vocabulary_id": "MSH",
+  "search_threshold": 80
+}
+```
+
 ### `/API/OLS4_search`
 
 #### Method: `POST`
@@ -125,6 +151,8 @@ Searches for standard concepts using the OLS4 API based on search terms provided
   "search_threshold": 80
 }
 ```
+
+
 
 ## License
 

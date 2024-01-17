@@ -2,7 +2,7 @@
 # Medical Vocabulary Concept Mapping Application Programming Interface (MVCM API)
 
 ## Introduction
- 
+
 This repository contains a FastAPI application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model UMLS, and OLS4. The application provides endpoints to interact with the concept data, offering functionalities such as searching for concepts based on textual queries.
 
 ## Setup

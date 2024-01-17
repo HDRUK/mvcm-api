@@ -33,7 +33,7 @@ class OMOPMatcher:
 
             # search_threshold should be a float or integer, so check if it's a number
             if not isinstance(search_threshold, (float, int)):
-                search_threshold = None
+                search_threshold = 0
          
             for search_term in search_terms:
                 OMOP_concepts = self.fetch_OMOP_concepts(search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_synonym, search_threshold,max_separation_descendant,max_separation_ancestor)

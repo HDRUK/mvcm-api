@@ -12,10 +12,15 @@ class OLS4Matcher:
             if not search_terms:
                 raise ValueError("No valid search_term values provided")
             
-            if vocabulary_id is not None and not vocabulary_id.strip():
-                vocabulary_id=None
-                
             overall_results = []
+
+            # Assuming vocabulary_id is meant to be a not empty string
+            if not isinstance(vocabulary_id, str) or not vocabulary_id.strip():
+                vocabulary_id = None
+
+            # search_threshold should be a float or integer, so check if it's a number
+            if not isinstance(search_threshold, (float, int)):
+                search_threshold = 0
 
             for search_term in search_terms:
                 response_data = self.fetch_ols4_data(search_term, vocabulary_id, search_threshold)
@@ -57,19 +62,18 @@ class OLS4Matcher:
             score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
 
             # Continue to the next iteration if the score is below the threshold
-            if search_threshold is not None and score < search_threshold:
+            if score < search_threshold:
                 continue
 
             obo_id = doc.get('obo_id')
             vocabulary_concept_code = obo_id.split(':')[1] if obo_id and ':' in obo_id else obo_id
 
             match = {
-                'closely_mapped_term': label,
-                'relationship_type': 'OLS4_mapping',
+                'concept_name': label,
                 'concept_id': obo_id,
                 'vocabulary_id': doc.get('ontology_prefix'),
                 'vocabulary_concept_code': vocabulary_concept_code,
-                'similarity_score': score
+                'concept_name_similarity_score': score
             }
             matches.append(match)
             

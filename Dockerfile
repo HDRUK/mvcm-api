@@ -8,7 +8,7 @@ ENV BASIC_AUTH_USERNAME=APIuser
 ENV BASIC_AUTH_PASSWORD=psw4API
 
 # Set environment variables for OMOP Data Model (adjust as needed)
-ENV OMOP_DATA_FOLDER=data
+ENV OMOP_DATA_FOLDER=data.supermin
 
 # Copy the database initialization script, your Flask app, and requirements file
 COPY app/ /app/

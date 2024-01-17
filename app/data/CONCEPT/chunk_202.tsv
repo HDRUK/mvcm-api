@@ -1,0 +1,597 @@
+concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+8520	Molar	Unit	UCUM	Unit		{molar}	19700101	20140103	U
+9585	mole per kilogram	Unit	UCUM	Unit	S	mol/kg	19700101	20991231	
+9586	mole per liter	Unit	UCUM	Unit	S	mol/L	19700101	20991231	
+9587	mole per cubic meter	Unit	UCUM	Unit	S	mol/m3	19700101	20991231	
+9588	mole per milliliter	Unit	UCUM	Unit	S	mol/mL	19700101	20991231	
+44777621	mole per second	Unit	UCUM	Unit	S	mol/s	19700101	20991231	
+8494	multiple of the median	Unit	UCUM	Unit	S	{MOM}	19700101	20991231	
+9583	synodal month	Unit	UCUM	Unit	S	mo_s	19700101	20991231	
+8605	milliosmole	Unit	UCUM	Unit	S	mosm	19700101	20991231	
+8862	milliosmole per kilogram	Unit	UCUM	Unit	S	mosm/kg	19700101	20991231	
+8991	milliosmole per kilogram of H20	Unit	UCUM	Unit	S	mosm/kg{H20}	19700101	20991231	
+9591	milliosmole per liter	Unit	UCUM	Unit	S	mosm/L	19700101	20991231	
+45891004	month supply	Unit	UCUM	Unit	S	mo{supply}	19700101	20991231	
+8534	Motile	Unit	UCUM	Unit		{motile}	19700101	20140103	U
+9357	proton mass	Unit	UCUM	Unit	S	[m_p]	19700101	20991231	
+44777622	millipascal second	Unit	UCUM	Unit	S	mPa.s	19700101	20991231	
+44777623	millipascal	Unit	UCUM	Unit	S	mPas	19700101	20991231	
+9101	IgM phospholipid unit	Unit	UCUM	Unit	S	[MPL'U]	19700101	20991231	
+9158	IgM phospholipid unit per milliliter	Unit	UCUM	Unit	S	[MPL'U]/mL	19700101	20991231	
+8548	MPS IgM	Unit	UCUM	Unit		[{MPS'IgM}]	19700101	20140103	U
+8495	anti-phosphatidylserine IgM concentration (MPS) unit	Unit	UCUM	Unit	S	[MPS'U]	19700101	20991231	
+8836	anti-phosphatidylserine IgM concentration (MPS) unit per milliliter	Unit	UCUM	Unit	S	[MPS'U]/mL	19700101	20991231	
+44777606	meter per second	Unit	UCUM	Unit	S	m/s	19700101	20991231	
+9593	millisecond	Unit	UCUM	Unit	S	ms	19700101	20991231	
+9592	megasecond	Unit	UCUM	Unit	S	Ms	19700101	20991231	
+44777522	meter per second	Unit	UCUM	Canonical Unit	S	m.s-1	19700101	20991231	
+44777547	meter per square second	Unit	UCUM	Canonical Unit	S	m.s-2	19700101	20991231	
+44777607	meter per square second	Unit	UCUM	Unit	S	m/s2	19700101	20991231	
+8547	M (anti-prothrombin IgG concentration) unit	Unit	UCUM	Unit	S	[M'U]	19700101	20991231	
+9369	permeability of vacuum	Unit	UCUM	Unit	S	[mu_0]	19700101	20991231	
+8773	Meter per microliter	Unit	UCUM	Unit		m/uL	19700101	20140103	D
+32608	mutations per megabase	Unit	UCUM	Unit	S	{mutations}/{megabase}	19700101	20991231	
+720843	millivolt	Unit	UCUM	Unit	S	mV	20220407	20991231	
+710221	megavolt	Unit	UCUM	Unit	S	MV	20220506	20991231	
+710232	milliwatt	Unit	UCUM	Unit	S	mW	20220506	20991231	
+9598	maxwell	Unit	UCUM	Unit	S	Mx	19700101	20991231	
+9599	newton	Unit	UCUM	Unit	S	N	19700101	20991231	
+8497		Unit	UCUM	Unit		{n/a}	19700101	20160311	D
+8637	negative count	Unit	UCUM	Unit	S	[neg'count]	19700101	20991231	
+9600	nanogram	Unit	UCUM	Unit	S	ng	19700101	20991231	
+44777624	nanogram per 24 hours	Unit	UCUM	Unit	S	ng/(24.h)	19700101	20991231	
+8817	nanogram per deciliter	Unit	UCUM	Unit	S	ng/dL	19700101	20991231	
+8992	nanogram per deciliter per hour	Unit	UCUM	Unit	S	ng/dL/h	19700101	20991231	
+32707	nanogram of fibrinogen equivalent unit per milliliter	Unit	UCUM	Unit	S	ng{FEU}/mL	19700101	20991231	
+8701	nanogram per gram	Unit	UCUM	Unit	S	ng/g	19700101	20991231	
+9601	nanogram per gram of creatinine	Unit	UCUM	Unit	S	ng/g{creat}	19700101	20991231	
+9145	nanogram per hour per milligram of total protein	Unit	UCUM	Unit	S	ng/h/mg{tot'prot}	19700101	20991231	
+9602	nanogram per kilogram	Unit	UCUM	Unit	S	ng/kg	19700101	20991231	
+720839	nanogram per kilogram per minute	Unit	UCUM	Unit	S	ng/kg/min	20220407	20991231	
+8725	nanogram per liter	Unit	UCUM	Unit	S	ng/L	19700101	20991231	
+9603	nanogram per square meter	Unit	UCUM	Unit	S	ng/m2	19700101	20991231	
+8818	nanogram per milligram	Unit	UCUM	Unit	S	ng/mg	19700101	20991231	
+44777625	nanogram per milligram of creatinine	Unit	UCUM	Unit	S	ng/mg{creat}	19700101	20991231	
+9604	nanogram per milligram of protein	Unit	UCUM	Unit	S	ng/mg{prot}	19700101	20991231	
+8842	nanogram per milliliter	Unit	UCUM	Unit	S	ng/mL	19700101	20991231	
+9020	nanogram per milliliter and hour	Unit	UCUM	Unit	S	ng/mL/h	19700101	20991231	
+9113	nanogram per milliliter of red blood cells	Unit	UCUM	Unit	S	ng/mL{RBC}	19700101	20991231	
+9081	nanogram per milliliter of trypsinogen	Unit	UCUM	Unit	S	ng/mL{trypsinogen}	19700101	20991231	
+720859	nanogram per nanogram	Unit	UCUM	Unit	S	ng/ng	20220407	20991231	
+32965	nanogram per microliter	Unit	UCUM	Unit	S	ng/uL	19700101	20991231	
+44777626	nanokatal	Unit	UCUM	Unit	S	nkat	19700101	20991231	
+33013	nanokatal per liter	Unit	UCUM	Unit	S	nkat/L	19700101	20991231	
+9606	nanoliter	Unit	UCUM	Unit	S	nL	19700101	20991231	
+45891025	nanoliter per milliliter	Unit	UCUM	Unit	S	nL/mL	19700101	20991231	
+8577	nanometer	Unit	UCUM	Unit	S	nm	19700101	20991231	
+9370	nautical mile (British)	Unit	UCUM	Unit	S	[nmi_br]	19700101	20991231	
+9371	nautical mile (international)	Unit	UCUM	Unit	S	[nmi_i]	19700101	20991231	
+8754	NMIL per milliliter	Unit	UCUM	Unit		{NMIL}/mL	19700101	20140103	D
+8755	Nanometer per Liter	Unit	UCUM	Unit		nm/L	19700101	20140103	U
+9607	nanomole	Unit	UCUM	Unit	S	nmol	19700101	20991231	
+44777628	nanomole per billion platelets	Unit	UCUM	Unit	S	nmol/10*9.{platelets}	19700101	20991231	
+44777627	nanomole per 24 hours	Unit	UCUM	Unit	S	nmol/(24.h)	19700101	20991231	
+720864	nanomole per 24 hours per milligram	Unit	UCUM	Unit	S	nmol/(24.h)/mg	20220407	20991231	
+8665	nanomole of bone collagen equivalent	Unit	UCUM	Unit	S	nmol{BColl}eq	19700101	20991231	
+8881	nanomole of bone collagen equivalent per liter	Unit	UCUM	Unit	S	nmol{BColl}eq/L	19700101	20991231	
+9114	nanomole of bone collagen equivalent per millimole of creatinine	Unit	UCUM	Unit	S	nmol{BColl}eq/mmol{creat}	19700101	20991231	
+9608	nanomole per deciliter	Unit	UCUM	Unit	S	nmol/dL	19700101	20991231	
+9609	nanomole per gram	Unit	UCUM	Unit	S	nmol/g	19700101	20991231	
+9610	nanomole per gram of creatinine	Unit	UCUM	Unit	S	nmol/g{creat}	19700101	20991231	
+710203	nanomole per hour	Unit	UCUM	Unit	S	nmol/h	20220506	20991231	
+44777629	nanomole per hour and gram	Unit	UCUM	Unit	S	nmol/h/g	19700101	20991231	
+44777630	nanomole per hour and liter	Unit	UCUM	Unit	S	nmol/h/L	19700101	20991231	
+8993	nanomole per hour and milligram	Unit	UCUM	Unit	S	nmol/h/mg	19700101	20991231	
+44777631	nanomole per hour and milliliter	Unit	UCUM	Unit	S	nmol/h/mL	19700101	20991231	
+44777632	nanomole per hour and milliliter red blood cells	Unit	UCUM	Unit	S	nmol/h/mL{RBC}	19700101	20991231	
+44777633	nanomole per kilogram	Unit	UCUM	Unit	S	nmol/kg	19700101	20991231	
+8736	nanomole per liter	Unit	UCUM	Unit	S	nmol/L	19700101	20991231	
+9611	nanomole per milligram	Unit	UCUM	Unit	S	nmol/mg	19700101	20991231	
+44777634	nanomole per milligram of creatinine	Unit	UCUM	Unit	S	nmol/mg{creat}	19700101	20991231	
+720851	nanomole per minute per mg of protein	Unit	UCUM	Unit	S	nmol/min/mg{protein}	20220407	20991231	
+44777635	nanomole per minute and milliliter	Unit	UCUM	Unit	S	nmol/min/mL	19700101	20991231	
+8843	nanomole per milliliter	Unit	UCUM	Unit	S	nmol/mL	19700101	20991231	
+9612	nanomole per millimole	Unit	UCUM	Unit	S	nmol/mmol	19700101	20991231	
+9613	NanoMoles Per MilliMole Creatinine [Substance Ratio Or Substance Fraction Units]	Unit	UCUM	Unit		nmol/mmol{Cre}	19700101	20140103	U
+9063	nanomole per millimole of creatinine	Unit	UCUM	Unit	S	nmol/mmol{creat}	19700101	20991231	
+9614	nanomole per mole	Unit	UCUM	Unit	S	nmol/mol	19700101	20991231	
+44777636	nanomole per mole of creatinine	Unit	UCUM	Unit	S	nmol/mol{creat}	19700101	20991231	
+44777637	nanomole per second	Unit	UCUM	Unit	S	nmol/s	19700101	20991231	
+8955	nanomole per second and liter	Unit	UCUM	Unit	S	nmol/s/L	19700101	20991231	
+8535	Normal	Unit	UCUM	Unit		{normal}	19700101	20140103	U
+8613	normal forms	Unit	UCUM	Unit	S	%{normal'forms}	19700101	20991231	
+9681	percent normal pooled plasma	Unit	UCUM	Unit	S	%{normal'plasma}	19700101	20991231	
+8508	Note	Unit	UCUM	Unit		{note}	19700101	20160311	D
+9615	neper	Unit	UCUM	Unit	S	Np	19700101	20991231	
+9616	nanosecond	Unit	UCUM	Unit	S	ns	19700101	20991231	
+8589	O.D. ratio	Unit	UCUM	Unit	S	[OD'ratio]	19700101	20991231	
+8590	O.D. unit	Unit	UCUM	Unit	S	[OD'U]	19700101	20991231	
+9617	oersted	Unit	UCUM	Unit	S	Oe	19700101	20991231	
+9227	percent of bacteria	Unit	UCUM	Unit	S	%{of'bacteria}	19700101	20991231	
+8737	percent hemoglobin	Unit	UCUM	Unit	S	%{of'HGB}	19700101	20991231	
+8626	Of Inhibition	Unit	UCUM	Unit		[{of'inhibition}]	19700101	20140103	U
+9228	percent of lymphocytes	Unit	UCUM	Unit	S	%{of'lymphos}	19700101	20991231	
+8648	percent of normal	Unit	UCUM	Unit	S	%{of'normal}	19700101	20991231	
+8578	of normal	Unit	UCUM	Unit	S	[of'normal]	19700101	20991231	
+8561	Of Total	Unit	UCUM	Unit		[{of'tot}]	19700101	20140103	U
+8591	Of Total H	Unit	UCUM	Unit		[{of'total'H}]	19700101	20140103	U
+8758	Of Total Hemoglobin	Unit	UCUM	Unit		[{of'tot'HGB}]	19700101	20140103	U
+9229	percent of white blood cells	Unit	UCUM	Unit	S	%{of'WBC}	19700101	20991231	
+9618	ohm	Unit	UCUM	Unit	S	Ohm	19700101	20991231	
+9619	osmole	Unit	UCUM	Unit	S	osm	19700101	20991231	
+9620	osmole per kilogram	Unit	UCUM	Unit	S	osm/kg	19700101	20991231	
+9621	osmole per liter	Unit	UCUM	Unit	S	osm/L	19700101	20991231	
+9230	percent oxygen	Unit	UCUM	Unit	S	%{oxygen}	19700101	20991231	
+9372	ounce (apothecary)	Unit	UCUM	Unit	S	[oz_ap]	19700101	20991231	
+9373	ounce (avoirdupois)	Unit	UCUM	Unit	S	[oz_av]	19700101	20991231	
+9374	ounce (troy system)	Unit	UCUM	Unit	S	[oz_tr]	19700101	20991231	
+9622	poise	Unit	UCUM	Unit	S	P	19700101	20991231	
+9623	pascal	Unit	UCUM	Unit	S	Pa	19700101	20991231	
+8616	Panbio bacterial IgG and IgM unit	Unit	UCUM	Unit	S	[PANBIO'U]	19700101	20991231	
+9624	parsec	Unit	UCUM	Unit	S	pc	19700101	20991231	
+9376	pica	Unit	UCUM	Unit	S	[pca]	19700101	20991231	
+9377	printer's pica	Unit	UCUM	Unit	S	[pca_pr]	19700101	20991231	
+9375	pace	Unit	UCUM	Unit	S	[pc_br]	19700101	20991231	
+9378	prism diopter	Unit	UCUM	Unit	S	[p'diop]	19700101	20991231	
+9379	plaque forming unit	Unit	UCUM	Unit	S	[PFU]	19700101	20991231	
+8641	poise per gram	Unit	UCUM	Unit	S	p/g	19700101	20991231	
+8564	picogram	Unit	UCUM	Unit	S	pg	19700101	20991231	
+8704	picogram per cell	Unit	UCUM	Unit	S	pg/{cell}	19700101	20991231	
+8820	picogram per deciliter	Unit	UCUM	Unit	S	pg/dL	19700101	20991231	
+720850	picogram per gram of creatinine	Unit	UCUM	Unit	S	pg/g{creat}	20220407	20991231	
+9625	picogram per liter	Unit	UCUM	Unit	S	pg/L	19700101	20991231	
+720862	picogram per milligram of creatinine	Unit	UCUM	Unit	S	pg/mg{creat}	20220407	20991231	
+8845	picogram per milliliter	Unit	UCUM	Unit	S	pg/mL	19700101	20991231	
+9626	picogram per millimeter	Unit	UCUM	Unit	S	pg/mm	19700101	20991231	
+44777638	picogram per microliter	Unit	UCUM	Unit	S	pg/uL	19700101	20991231	
+9627	phot	Unit	UCUM	Unit	S	ph	19700101	20991231	
+8482	pH	Unit	UCUM	Unit	S	pH	19700101	20991231	
+8569	pH unit	Unit	UCUM	Unit		[{pH'U}]	19700101	20140103	U
+9380	the number pi	Unit	UCUM	Unit	S	[pi]	19700101	20991231	
+9381	pied french foot	Unit	UCUM	Unit	S	[pied]	19700101	20991231	
+44777639	picokatal	Unit	UCUM	Unit	S	pkat	19700101	20991231	
+9382	peck (British)	Unit	UCUM	Unit	S	[pk_br]	19700101	20991231	
+9383	peck (US)	Unit	UCUM	Unit	S	[pk_us]	19700101	20991231	
+9628	picoliter	Unit	UCUM	Unit	S	pL	19700101	20991231	
+9629	picometer	Unit	UCUM	Unit	S	pm	19700101	20991231	
+9630	picomole	Unit	UCUM	Unit	S	pmol	19700101	20991231	
+44777640	picomole per 24 hours	Unit	UCUM	Unit	S	pmol/(24.h)	19700101	20991231	
+9148	picomole per eight times 10 to the 8th red blood cells	Unit	UCUM	Unit	S	pmol/8.10*8.{RBC}	19700101	20991231	
+9631	picomole per deciliter	Unit	UCUM	Unit	S	pmol/dL	19700101	20991231	
+44777641	picomole per gram hemoglobin	Unit	UCUM	Unit	S	pmol/g{HGB}	19700101	20991231	
+44777642	picomole per hour and milligram of hemoglobin	Unit	UCUM	Unit	S	pmol/h/mg{HGB}	19700101	20991231	
+720863	picomole per hour per microliter	Unit	UCUM	Unit	S	pmol/hr/uL	20220407	20991231	
+44777643	picomole per kilogram	Unit	UCUM	Unit	S	pmol/kg	19700101	20991231	
+8729	picomole per liter	Unit	UCUM	Unit	S	pmol/L	19700101	20991231	
+32696	picomole per milligram	Unit	UCUM	Unit	S	pmol/mg	19700101	20991231	
+9632	picomole per milliliter	Unit	UCUM	Unit	S	pmol/mL	19700101	20991231	
+9633	picomole per micromole	Unit	UCUM	Unit	S	pmol/umol	19700101	20991231	
+9384	point	Unit	UCUM	Unit	S	[pnt]	19700101	20991231	
+9385	printer's point	Unit	UCUM	Unit	S	[pnt_pr]	19700101	20991231	
+45744816	protein nitrogen unit	Unit	UCUM	Unit	S	{PNU}	19700101	20991231	
+9231	percent positive	Unit	UCUM	Unit	S	%{positive}	19700101	20991231	
+9386	pouce french inch	Unit	UCUM	Unit	S	[pouce]	19700101	20991231	
+8703	parts per billion	Unit	UCUM	Unit	S	[ppb]	19700101	20991231	
+9387	parts per million	Unit	UCUM	Unit	S	[ppm]	19700101	20991231	
+9154	parts per thousand	Unit	UCUM	Unit	S	[ppth]	19700101	20991231	
+9155	parts per trillion	Unit	UCUM	Unit	S	[pptr]	19700101	20991231	
+9388	peripheral vascular resistance unit	Unit	UCUM	Unit	S	[PRU]	19700101	20991231	
+9634	picosecond	Unit	UCUM	Unit	S	ps	19700101	20991231	
+9389	pound per sqare inch	Unit	UCUM	Unit	S	[psi]	19700101	20991231	
+9390	pint (British)	Unit	UCUM	Unit	S	[pt_br]	19700101	20991231	
+9391	pint (US)	Unit	UCUM	Unit	S	[pt_us]	19700101	20991231	
+9392	pennyweight	Unit	UCUM	Unit	S	[pwt_tr]	19700101	20991231	
+9393	quart (British)	Unit	UCUM	Unit	S	[qt_br]	19700101	20991231	
+9394	quart (US)	Unit	UCUM	Unit	S	[qt_us]	19700101	20991231	
+9635	roentgen	Unit	UCUM	Unit	S	R	19700101	20991231	
+9636	radian	Unit	UCUM	Unit	S	rad	19700101	20991231	
+9637	radiation absorbed dose	Unit	UCUM	Unit	S	RAD	19700101	20991231	
+710245	radiation absorbed dose per minute	Unit	UCUM	Unit	S	RAD/min	20220506	20991231	
+8523	ratio	Unit	UCUM	Unit	S	{ratio}	19700101	20991231	
+8606	ratio unit	Unit	UCUM	Unit	S	[ratio'U]	19700101	20991231	
+9427	red blood cell count [number]	Unit	UCUM	Unit		{rbc}	19700101	20140103	D
+44777571	red blood cells per high power field	Unit	UCUM	Unit	S	{RBC}/[HPF]	19700101	20991231	
+9428	red blood cells per microliter	Unit	UCUM	Unit	S	{RBC}/uL	19700101	20991231	
+9395	Ramden's chain	Unit	UCUM	Unit	S	[rch_us]	19700101	20991231	
+9396	rod (British)	Unit	UCUM	Unit	S	[rd_br]	19700101	20991231	
+9397	rod (US)	Unit	UCUM	Unit	S	[rd_us]	19700101	20991231	
+8530	{ref}	Unit	UCUM	Unit		{ref}	19700101	20140103	D
+8514	% REF	Unit	UCUM	Unit		%{REF}	19700101	20140103	D
+8598	relative	Unit	UCUM	Unit	S	{relative}	19700101	20991231	
+9429	Relative Percent [General Fraction Unit]	Unit	UCUM	Unit		{Relative}%	19700101	20140103	D
+44777572	relative to H2O	Unit	UCUM	Unit	S	{relative'to'H2O}	19700101	20991231	
+44777573	relative to saline	Unit	UCUM	Unit	S	{relative'to'saline}	19700101	20991231	
+9638	radiation equivalent man	Unit	UCUM	Unit	S	REM	19700101	20991231	
+8498	RES	Unit	UCUM	Unit		{res}	19700101	20140103	D
+8607	Result unit	Unit	UCUM	Unit		[{res'U}]	19700101	20140103	D
+8499	REV	Unit	UCUM	Unit		{rev}	19700101	20140103	D
+710243	roentgen per hour	Unit	UCUM	Unit	S	R/h	20220506	20991231	
+8509	risk	Unit	UCUM	Unit	S	{risk}	19700101	20991231	
+9398	link for Ramden's chain	Unit	UCUM	Unit	S	[rlk_us]	19700101	20991231	
+710244	roentgen per minute	Unit	UCUM	Unit	S	R/min	20220506	20991231	
+44777659	per second	Unit	UCUM	Unit	S	/s	19700101	20991231	
+8555	second	Unit	UCUM	Unit	S	s	19700101	20991231	
+9399	Svedberg unit	Unit	UCUM	Unit	S	[S]	19700101	20991231	
+9639	siemens	Unit	UCUM	Unit	S	S	19700101	20991231	
+44777521	per second	Unit	UCUM	Canonical Unit	S	s-1	19700101	20991231	
+44777554	coulomb per second (ampere)	Unit	UCUM	Canonical Unit	S	s-1.C	19700101	20991231	
+44777533	gram per square second (10*-3 kilogram per square second)	Unit	UCUM	Canonical Unit	S	s-2.g	19700101	20991231	
+8728	percent saturation	Unit	UCUM	Unit	S	%{sat}	19700101	20991231	
+8500	SAU	Unit	UCUM	Unit		{sau}	19700101	20140103	U
+9640	stilb	Unit	UCUM	Unit	S	sb	19700101	20991231	
+9400	scruple	Unit	UCUM	Unit	S	[sc_ap]	19700101	20991231	
+8644	Seconds per CO	Unit	UCUM	Unit		s/{CO}	19700101	20140103	U
+44777566	score	Unit	UCUM	Unit	S	[score]	19700101	20991231	
+9401	section	Unit	UCUM	Unit	S	[sct]	19700101	20991231	
+9402	hundredweight (US)	Unit	UCUM	Unit	S	[scwt_av]	19700101	20991231	
+8579	See below	Unit	UCUM	Unit		[{see'below}]	19700101	20140103	D
+8593	See report	Unit	UCUM	Unit		[{see'report}]	19700101	20140103	D
+8580	See table	Unit	UCUM	Unit		[{see'table)]	19700101	20140103	D
+9403	square foot	Unit	UCUM	Unit	S	[sft_i]	19700101	20991231	
+8501	SGU	Unit	UCUM	Unit		{sgu}	19700101	20140103	U
+8779	signal to cutoff ratio	Unit	UCUM	Unit	S	{signal}/[{CO'ratio}]	19700101	20991231	
+9404	square inch	Unit	UCUM	Unit	S	[sin_i]	19700101	20991231	
+9214	percent slope	Unit	UCUM	Unit	S	%[slope]	19700101	20991231	
+9405	Somogyi unit	Unit	UCUM	Unit	S	[smgy'U]	19700101	20991231	
+9406	square mile	Unit	UCUM	Unit	S	[smi_us]	19700101	20991231	
+9407	smoot	Unit	UCUM	Unit	S	[smoot]	19700101	20991231	
+8502	SMU	Unit	UCUM	Unit		{smu}	19700101	20140103	U
+8553	percent of sperm with positive binding	Unit	UCUM	Unit	S	%{sperm'binding}	19700101	20991231	
+9430	spermatozoa per milliliter	Unit	UCUM	Unit	S	{sperm}/mL	19700101	20991231	
+9232	percent sperm motility	Unit	UCUM	Unit	S	%{sperm'motility}	19700101	20991231	
+8631	sperm motility at 60 minutes	Unit	UCUM	Unit	S	%{sperm'motility'at'60'min}	19700101	20991231	
+9641	sphere	Unit	UCUM	Unit	S	sph	19700101	20991231	
+32407	standardized quality unit	Unit	UCUM	Unit	S	[SQU]	19700101	20991231	
+710254	standardized quality unit per milliliter	Unit	UCUM	Unit	S	[SQU]/mL	20220506	20991231	
+9642	steradian	Unit	UCUM	Unit	S	sr	19700101	20991231	
+9408	square rod	Unit	UCUM	Unit	S	[srd_us]	19700101	20991231	
+9643	stere	Unit	UCUM	Unit	S	st	19700101	20991231	
+9644	stokes	Unit	UCUM	Unit	S	St	19700101	20991231	
+9409	short ton (US)	Unit	UCUM	Unit	S	[ston_av]	19700101	20991231	
+9410	stone	Unit	UCUM	Unit	S	[stone_av]	19700101	20991231	
+8565	streptozyme (STZ) agglutination titer unit	Unit	UCUM	Unit	S	[STZ'unit]	19700101	20991231	
+9645	sievert	Unit	UCUM	Unit	S	Sv	19700101	20991231	
+9411	square yard	Unit	UCUM	Unit	S	[syd_i]	19700101	20991231	
+9647	tonne	Unit	UCUM	Unit	S	t	19700101	20991231	
+9646	tesla	Unit	UCUM	Unit	S	T	19700101	20991231	
+9431	tablet	Unit	UCUM	Unit	S	{tbl}	19700101	20991231	
+9412	tablespoon	Unit	UCUM	Unit	S	[tbs_us]	19700101	20991231	
+9413	tuberculin unit	Unit	UCUM	Unit	S	[tb'U]	19700101	20991231	
+45891003	tuberculin unit per milliliter	Unit	UCUM	Unit	S	[tb'U]/mL	19700101	20991231	
+9414	50% tissue culture infectious dose	Unit	UCUM	Unit	S	[tcid_50]	19700101	20991231	
+8628	times average	Unit	UCUM	Unit	S	{times'avg}	19700101	20991231	
+8525	titer	Unit	UCUM	Unit	S	{titer}	19700101	20991231	
+9415	Todd unit	Unit	UCUM	Unit	S	[todd'U]	19700101	20991231	
+8632	percent total	Unit	UCUM	Unit	S	%{tot}	19700101	20991231	
+9237	per total count	Unit	UCUM	Unit	S	/{tot}	19700101	20991231	
+8526	Total	Unit	UCUM	Unit		{tot}	19700101	20140103	U
+8683	Total creatinine	Unit	UCUM	Unit		[{tot'creat}]	19700101	20140103	D
+8684	Total hemoglobin	Unit	UCUM	Unit		[{tot'HGB}]	19700101	20140103	U
+9233	percent total protein	Unit	UCUM	Unit	S	%{tot'prot}	19700101	20991231	
+9416	teaspoon	Unit	UCUM	Unit	S	[tsp_us]	19700101	20991231	
+9417	township	Unit	UCUM	Unit	S	[twp]	19700101	20991231	
+9648	unified atomic mass unit	Unit	UCUM	Unit	S	u	19700101	20991231	
+8510	unit	Unit	UCUM	Unit	S	[U]	19700101	20991231	
+8662	unit per 10	Unit	UCUM	Unit	S	[U]/10	19700101	20991231	
+720848	unit per 10 to the 10th power cells	Unit	UCUM	Unit	S	[U]/10*10.{cells}	20220407	20991231	
+9031	unit per billion red blood cells	Unit	UCUM	Unit	S	[U]/10*12.{RBC}	19700101	20991231	
+8783	unit per 10 cells	Unit	UCUM	Unit	S	[U]/10.{cells}	19700101	20991231	
+44777567	unit per 24 hours	Unit	UCUM	Unit	S	[U]/(24.h)	19700101	20991231	
+720855	unit per 2 hours	Unit	UCUM	Unit	S	[U]/(2.h)	20220407	20991231	
+45891017	unit per actuation	Unit	UCUM	Unit	S	[U]/{actuat}	19700101	20991231	
+45891034	unit per square centimeter	Unit	UCUM	Unit	S	[U]/cm2	19700101	20991231	
+44777568	unit per deciliter	Unit	UCUM	Unit	S	[U]/dL	19700101	20991231	
+45890999	unit per dose	Unit	UCUM	Unit	S	[U]/[dose]	19700101	20991231	
+45891006	unit per drop	Unit	UCUM	Unit	S	[U]/[drop]	19700101	20991231	
+9655	microgram	Unit	UCUM	Unit	S	ug	19700101	20991231	
+8629	unit per gram	Unit	UCUM	Unit	S	[U]/g	19700101	20991231	
+9656	microgram per 100 gram	Unit	UCUM	Unit	S	ug/100.g	19700101	20991231	
+8953	microgram per milliequivalent	Unit	UCUM	Unit	S	ug/10*-3.eq	19700101	20991231	
+8906	microgram per 24 hours	Unit	UCUM	Unit	S	ug/(24.h)	19700101	20991231	
+45891023	microgram per 72 hours	Unit	UCUM	Unit	S	ug/(72.h)	19700101	20991231	
+45891015	microgram per actuation	Unit	UCUM	Unit	S	ug/{actuat}	19700101	20991231	
+45891027	microgram per square centimeter	Unit	UCUM	Unit	S	ug/cm2	19700101	20991231	
+9650	Units Per Gram Creatinine [Substance Rate Content Units]	Unit	UCUM	Unit		U/g{Cre}	19700101	20140103	U
+8915	unit per gram of creatinine	Unit	UCUM	Unit	S	[U]/g{creat}	19700101	20991231	
+8837	microgram per deciliter	Unit	UCUM	Unit	S	ug/dL	19700101	20991231	
+9659	microgram per deciliter of red blood cells	Unit	UCUM	Unit	S	ug/dL{RBC}	19700101	20991231	
+9061	microgram per deciliter of thyroxine	Unit	UCUM	Unit	S	ug/dL{thyroxine}	19700101	20991231	
+45890998	microgram per dose	Unit	UCUM	Unit	S	ug/[dose]	19700101	20991231	
+9046	microgram equivalent per milliliter	Unit	UCUM	Unit	S	ug{eq}/mL	19700101	20991231	
+8989	microgram of fibrinogen equivalent unit per milliliter	Unit	UCUM	Unit	S	ug{FEU}/mL	19700101	20991231	
+8720	microgram per gram	Unit	UCUM	Unit	S	ug/g	19700101	20991231	
+9014	microgram per gram of creatinine	Unit	UCUM	Unit	S	ug/g{creat}	19700101	20991231	
+9660	microgram per gram dry weight	Unit	UCUM	Unit	S	ug/g{dry'wt}	19700101	20991231	
+9661	microgram per gram of hemoglobin	Unit	UCUM	Unit	S	ug/g{HBG}	19700101	20991231	
+44777644	microgram per gram wet weight	Unit	UCUM	Unit	S	ug/g{wet'wt}	19700101	20991231	
+44777645	microgram per hour	Unit	UCUM	Unit	S	ug/h	19700101	20991231	
+9651	unit per gram of hemoglobin	Unit	UCUM	Unit	S	[U]/g{HGB}	19700101	20991231	
+8916	Unit per gram of Hemoglobin	Unit	UCUM	Unit		U/g{HGB}	19700101	20140103	U
+9662	microgram per kilogram	Unit	UCUM	Unit	S	ug/kg	19700101	20991231	
+9690	microgram per kilogram per hour	Unit	UCUM	Unit	S	ug/kg/h	19700101	20991231	
+9688	microgram per kilogram per minute	Unit	UCUM	Unit	S	ug/kg/min	19700101	20991231	
+8748	microgram per liter	Unit	UCUM	Unit	S	ug/L	19700101	20991231	
+9663	microgram per square meter	Unit	UCUM	Unit	S	ug/m2	19700101	20991231	
+32964	microgram per cubic meter	Unit	UCUM	Unit	S	ug/m3	19700101	20991231	
+8838	microgram per milligram	Unit	UCUM	Unit	S	ug/mg	19700101	20991231	
+9072	microgram per milligram of creatinine	Unit	UCUM	Unit	S	ug/mg{creat}	19700101	20991231	
+8774	microgram per minute	Unit	UCUM	Unit	S	ug/min	19700101	20991231	
+8859	microgram per milliliter	Unit	UCUM	Unit	S	ug/mL	19700101	20991231	
+8990	Microgram per milliliter of FEU	Unit	UCUM	Unit		ug/mL{FEU}	19700101	20140103	U
+32408	microgram per millimole	Unit	UCUM	Unit	S	ug/mmol	19700101	20991231	
+44777646	microgram per millimole of creatinine	Unit	UCUM	Unit	S	ug/mmol{creat}	19700101	20991231	
+9664	microgram per nanogram	Unit	UCUM	Unit	S	ug/ng	19700101	20991231	
+9657	microgram per specimen	Unit	UCUM	Unit	S	ug/{spec}	19700101	20991231	
+8721	Microgram per SPEC	Unit	UCUM	Unit		ug/{SPEC}	19700101	20140103	U
+8722	microgram per time	Unit	UCUM	Unit	S	ug/{time}	19700101	20991231	
+8979	unit per gram of total protein	Unit	UCUM	Unit	S	[U]/g{tot'prot}	19700101	20991231	
+9658	microgram per total volume	Unit	UCUM	Unit	S	ug/{tot'vol}	19700101	20991231	
+710242	microgray	Unit	UCUM	Unit	S	uGy	20220506	20991231	
+710225	microgray per hour	Unit	UCUM	Unit	S	uGy/h	20220506	20991231	
+710226	microgray per minute	Unit	UCUM	Unit	S	uGy/min	20220506	20991231	
+8630	unit per hour	Unit	UCUM	Unit	S	[U]/h	19700101	20991231	
+44777647	microkatal	Unit	UCUM	Unit	S	ukat	19700101	20991231	
+32995	microkatal per liter	Unit	UCUM	Unit	S	ukat/L	19700101	20991231	
+720854	unit per kilogram of hemoglobin	Unit	UCUM	Unit	S	[U]/kg{HGB}	20220407	20991231	
+8647	per microliter	Unit	UCUM	Unit	S	/uL	19700101	20991231	
+9665	microliter	Unit	UCUM	Unit	S	uL	19700101	20991231	
+8645	unit per liter	Unit	UCUM	Unit	S	[U]/L	19700101	20991231	
+45891037	microliter per gram	Unit	UCUM	Unit	S	uL/g	19700101	20991231	
+45891029	microliter per milliliter	Unit	UCUM	Unit	S	uL/mL	19700101	20991231	
+9666	micrometer	Unit	UCUM	Unit	S	um	19700101	20991231	
+45891030	unit per milligram	Unit	UCUM	Unit	S	[U]/mg	19700101	20991231	
+8775	micrometer per liter	Unit	UCUM	Unit	S	um/L	19700101	20991231	
+8763	unit per milliliter	Unit	UCUM	Unit	S	[U]/mL	19700101	20991231	
+9083	unit per milliliter of red blood cells	Unit	UCUM	Unit	S	[U]/mL{RBC}	19700101	20991231	
+9667	micromole	Unit	UCUM	Unit	S	umol	19700101	20991231	
+8907	micromole per 24 hours	Unit	UCUM	Unit	S	umol/(24.h)	19700101	20991231	
+8839	micromole per deciliter	Unit	UCUM	Unit	S	umol/dL	19700101	20991231	
+9668	micromole per gram	Unit	UCUM	Unit	S	umol/g	19700101	20991231	
+9015	micromole per gram of creatinine	Unit	UCUM	Unit	S	umol/g{creat}	19700101	20991231	
+44777648	micromole per gram of dry weight	Unit	UCUM	Unit	S	umol/g{dry'wt}	19700101	20991231	
+9669	micromole per gram of hemoglobin	Unit	UCUM	Unit	S	umol/g{HBG}	19700101	20991231	
+44777649	micromole per gram of wet weight	Unit	UCUM	Unit	S	umol/g{wet'wt}	19700101	20991231	
+710202	micromole per hour	Unit	UCUM	Unit	S	umol/h	20220506	20991231	
+44777650	micromole per hour and gram of hemoglobin	Unit	UCUM	Unit	S	umol/h/g{HGB}	19700101	20991231	
+44777651	micromole per hour and gram of protein	Unit	UCUM	Unit	S	umol/h/g{prot}	19700101	20991231	
+44777652	micromole per hour and liter	Unit	UCUM	Unit	S	umol/h/L	19700101	20991231	
+44777653	micromole per hour and milliliter	Unit	UCUM	Unit	S	umol/h/mL	19700101	20991231	
+44777654	micromole per kilogram	Unit	UCUM	Unit	S	umol/kg	19700101	20991231	
+8749	micromole per liter	Unit	UCUM	Unit	S	umol/L	19700101	20991231	
+9670	micromole per milligram	Unit	UCUM	Unit	S	umol/mg	19700101	20991231	
+9671	micromole per milligram of creatinine	Unit	UCUM	Unit	S	umol/mg{creat}	19700101	20991231	
+44777655	micromole per minute	Unit	UCUM	Unit	S	umol/min	19700101	20991231	
+9672	micromole per minute and gram	Unit	UCUM	Unit	S	umol/min/g	19700101	20991231	
+9673	micromole per milliliter	Unit	UCUM	Unit	S	umol/mL	19700101	20991231	
+44777656	micromole per millimole	Unit	UCUM	Unit	S	umol/mmol	19700101	20991231	
+9073	micromole per millimole of creatinine	Unit	UCUM	Unit	S	umol/mmol{creat}	19700101	20991231	
+9674	micromole per mole	Unit	UCUM	Unit	S	umol/mol	19700101	20991231	
+9675	micromole per mole of creatinine	Unit	UCUM	Unit	S	umol/mol{creat}	19700101	20991231	
+44777657	micromole per mole of hemoglobin	Unit	UCUM	Unit	S	umol/mol{HGB}	19700101	20991231	
+720849	micrometer per second	Unit	UCUM	Unit	S	um/s	20220407	20991231	
+8649	percent uptake	Unit	UCUM	Unit	S	%{uptake}	19700101	20991231	
+8538	Uptake	Unit	UCUM	Unit		{uptake}	19700101	20140103	U
+9676	microsecond	Unit	UCUM	Unit	S	us	19700101	20991231	
+9418	US pharmacopeia unit	Unit	UCUM	Unit	S	[USP'U]	19700101	20991231	
+710238	unit per week	Unit	UCUM	Unit	S	U/wk	20220506	20991231	
+9677	volt	Unit	UCUM	Unit	S	V	19700101	20991231	
+32018	Vector-genome	Unit	UCUM	Unit	S	{vector-genome}	19700101	20991231	
+9234	volume percent	Unit	UCUM	Unit	S	%{vol}	19700101	20991231	
+8646	Volume percent	Unit	UCUM	Unit		[{vol}'%]	19700101	20140103	U
+8539	Volume	Unit	UCUM	Unit		{vol}	19700101	20140103	D
+45891010	volume percent volume	Unit	UCUM	Unit	S	{vol}%{vol}	19700101	20991231	
+45891012	volume percent weight	Unit	UCUM	Unit	S	{vol}%{wt}	19700101	20991231	
+44777559	per week	Unit	UCUM	Unit	S	/w	19700101	20991231	
+9678	watt	Unit	UCUM	Unit	S	W	19700101	20991231	
+9679	Weber	Unit	UCUM	Unit	S	Wb	19700101	20991231	
+44777574	white blood cells per high power field	Unit	UCUM	Unit	S	{WBC}/[HPF]	19700101	20991231	
+710230	watt per square centimeter	Unit	UCUM	Unit	S	W/cm2	20220506	20991231	
+8511	week	Unit	UCUM	Unit	S	wk	19700101	20991231	
+45891005	week supply	Unit	UCUM	Unit	S	wk{supply}	19700101	20991231	
+32705	wood unit	Unit	UCUM	Unit	S	[wood'U]	19700101	20991231	
+720840	wood unit per square meter	Unit	UCUM	Unit	S	[wood'U]/m2	20220407	20991231	
+45891009	weight percent volume	Unit	UCUM	Unit	S	{wt}%{vol}	19700101	20991231	
+45891011	weight percent weight	Unit	UCUM	Unit	S	{wt}%{wt}	19700101	20991231	
+44777560	per year	Unit	UCUM	Unit	S	/y	19700101	20991231	
+8528	year	Unit	UCUM	Unit		y	19700101	20160311	D
+9419	yard (British)	Unit	UCUM	Unit	S	[yd_br]	19700101	20991231	
+9420	yard (international)	Unit	UCUM	Unit	S	[yd_i]	19700101	20991231	
+9421	yard (US)	Unit	UCUM	Unit	S	[yd_us]	19700101	20991231	
+42084626	Northeast	Geography	US Census	US Census Region	S	0200000US1	19700101	20991231	
+42084627	Midwest	Geography	US Census	US Census Region	S	0200000US2	19700101	20991231	
+42084629	South	Geography	US Census	US Census Region	S	0200000US3	19700101	20991231	
+42084628	West	Geography	US Census	US Census Region	S	0200000US4	19700101	20991231	
+42084630	New England	Geography	US Census	US Census Division	S	0300000US1	19700101	20991231	
+42084631	Middle Atlantic	Geography	US Census	US Census Division	S	0300000US2	19700101	20991231	
+42084632	East North Central	Geography	US Census	US Census Division	S	0300000US3	19700101	20991231	
+42084633	West North Central	Geography	US Census	US Census Division	S	0300000US4	19700101	20991231	
+42084637	South Atlantic	Geography	US Census	US Census Division	S	0300000US5	19700101	20991231	
+42084634	East South Central	Geography	US Census	US Census Division	S	0300000US6	19700101	20991231	
+42084635	West South Central	Geography	US Census	US Census Division	S	0300000US7	19700101	20991231	
+42084636	Mountain	Geography	US Census	US Census Division	S	0300000US8	19700101	20991231	
+42084638	Pacific	Geography	US Census	US Census Division	S	0300000US9	19700101	20991231	
+9203	Emergency Room Visit	Visit	Visit	Visit	S	ER	19700101	20991231	
+262	Emergency Room and Inpatient Visit	Visit	Visit	Visit	S	ERIP	19700101	20991231	
+32693	Health examination	Visit	Visit	Visit	S	HE	19700101	20991231	
+9201	Inpatient Visit	Visit	Visit	Visit	S	IP	19700101	20991231	
+42898160	Non-hospital institution Visit	Visit	Visit	Visit	S	LTCP	19700101	20991231	
+581479	Ambulatory Rehabilitation Visit	Visit	Visit	Visit	S	OMOP4822456	19700101	20991231	
+581478	Ambulance Visit	Visit	Visit	Visit	S	OMOP4822457	19700101	20991231	
+581477	Office Visit	Visit	Visit	Visit	S	OMOP4822458	19700101	20991231	
+581476	Home Visit	Visit	Visit	Visit	S	OMOP4822459	19700101	20991231	
+32037	Intensive Care	Visit	Visit	Visit	S	OMOP4822460	19700101	20991231	
+32036	Laboratory Visit	Visit	Visit	Visit	S	OMOP4822461	19700101	20991231	
+581458	Pharmacy visit	Visit	Visit	Visit	S	OMOP4822462	19700101	20991231	
+32759	Home isolation	Visit	Visit	Visit	S	OMOP4873970	19700101	20991231	
+32760	Isolation in inpatient setting	Visit	Visit	Visit	S	OMOP4873971	19700101	20991231	
+32761	Person Under Investigation (PUI)	Visit	Visit	Visit	S	OMOP4873972	19700101	20991231	
+33004	Supplier / Service Provider	Visit	Visit	Visit	S	OMOP5117446	20210727	20991231	
+33007	Alternate care site (ACS)	Visit	Visit	Visit	S	OMOP5117447	20210727	20991231	
+705159	Ambulatory long COVID clinic	Visit	Visit	Visit	S	OMOP5160862	20211215	20991231	
+9202	Outpatient Visit	Visit	Visit	Visit	S	OP	19700101	20991231	
+44818519	Clinical Study visit	Type Concept	Visit Type	Visit Type		OMOP4822463	19700101	20991231	
+44818518	Visit derived from EHR record	Type Concept	Visit Type	Visit Type		OMOP4822464	19700101	20991231	
+44818517	Visit derived from encounter on claim	Type Concept	Visit Type	Visit Type		OMOP4822465	19700101	20991231	
+32021	Visit derived from encounter on medical claim	Type Concept	Visit Type	Visit Type		OMOP4822466	19700101	20991231	
+32022	Visit derived from encounter on pharmacy claim	Type Concept	Visit Type	Visit Type		OMOP4822467	19700101	20991231	
+32023	Visit derived from encounter on medical facility claim	Type Concept	Visit Type	Visit Type		OMOP4822468	19700101	20991231	
+32024	Visit derived from encounter on medical professional claim	Type Concept	Visit Type	Visit Type		OMOP4822469	19700101	20991231	
+32025	Visit derived from encounter on medical facility claim paid	Type Concept	Visit Type	Visit Type		OMOP4822470	19700101	20991231	
+32026	Visit derived from encounter on medical facility claim denied	Type Concept	Visit Type	Visit Type		OMOP4822471	19700101	20991231	
+32027	Visit derived from encounter on medical facility claim deferred	Type Concept	Visit Type	Visit Type		OMOP4822472	19700101	20991231	
+32028	Visit derived from encounter on medical professional claim paid	Type Concept	Visit Type	Visit Type		OMOP4822473	19700101	20991231	
+32029	Visit derived from encounter on medical professional claim denied	Type Concept	Visit Type	Visit Type		OMOP4822474	19700101	20991231	
+32030	Visit derived from encounter on medical professional claim deferred	Type Concept	Visit Type	Visit Type		OMOP4822475	19700101	20991231	
+32031	Visit derived from encounter on claim authorization	Type Concept	Visit Type	Visit Type		OMOP4822476	19700101	20991231	
+32032	Visit derived from encounter on vision claim	Type Concept	Visit Type	Visit Type		OMOP4822477	19700101	20991231	
+32033	Visit derived from encounter on dental claim	Type Concept	Visit Type	Visit Type		OMOP4822478	19700101	20991231	
+32034	Visit derived from EHR billing record	Type Concept	Visit Type	Visit Type		OMOP4822479	19700101	20991231	
+32035	Visit derived from EHR encounter record	Type Concept	Visit Type	Visit Type		OMOP4822480	19700101	20991231	
+33072	Catalogue Of Somatic Mutations In Cancer	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33051	OMOP Investigational Drugs	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32918	Human Gene Nomenclature (European Bioinformatics Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20211020	D
+32537	Medication Reference Terminology MED-RT (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20211020	D
+33008	OncoTree (MSK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33002	OMOP Genomic vocabulary	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32956	Operations and Procedures Classification (OPS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32422	Korean Drug Code (HIRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+45756746	Provider Specialty (American Board of Medical Specialties)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819135	OMOP Death Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819136	Medical Subject Headings (NLM)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819137	National Uniform Claim Committee Health Care Provider Taxonomy Code Set (NUCC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819138	Medicare Specialty	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819139	LOINC Multidimensional Classification (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20141201	D
+44819140	Structured Product Labeling (FDA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819141	Clinical Formulation ID (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+45905710	Columbia International eHealth Laboratory (Columbia University)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819121	Standardised MedDRA Queries (MSSO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819122	VA National Drug File Class (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819123	Legacy OMOP HOI or DOI cohort	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819124	International Classification of Diseases, Tenth Revision (WHO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819125	ICD-10 Procedure Coding System (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819126	OMOP Drug Exposure Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819127	OMOP Condition Occurrence Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819128	OMOP Procedure Occurrence Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819129	OMOP Observation Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819130	Diagnosis-related group (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819131	Major Diagnostic Categories (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819132	Ambulatory Payment Classification (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819133	UB04/CMS1450 Revenue Codes (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819134	OMOP Ethnicity	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819150	OMOP Visit Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819151	OMOP Device Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819152	OMOP Measurement Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819153	International Currency Symbol (ISO 4217)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819233	OMOP Concept Class	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819232	OMOP Vocabulary	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819235	OMOP Relationship	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819234	OMOP Cohort Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819096	OMOP Standardized Vocabularies	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819097	Systematic Nomenclature of Medicine - Clinical Terms (IHTSDO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819098	International Classification of Diseases, Tenth Revision, Clinical Modification (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819099	International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 3 (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5047	Global Reference Repository (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581450	GGR	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819104	RxNorm (NLM)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819115	Indications and Contraindications (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819116	Enhanced Therapeutic Classification (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819117	WHO Anatomic Therapeutic Chemical Classification	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32485	OMOP Common DataModel	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819100	Current Procedural Terminology version 4 (AMA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819101	Healthcare Common Procedure Coding System (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819102	Logical Observation Identifiers Names and Codes (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819103	National Drug File - Reference Terminology (VA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819105	National Drug Code (FDA and manufacturers)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819106	Medi-Span Generic Product Identifier (Wolters Kluwer Health)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819107	Unified Code for Units of Measure (Regenstrief Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819108	OMOP Gender	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819109	Race and Ethnicity Code Set (USBC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819110	CMS Place of Service	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819111	Medical Dictionary for Regulatory Activities (MSSO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819112	Cerner Multum (Cerner)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819113	NHS UK Read Codes Version 2 (HSCIC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819114	Oxford Medical Information System (OCHP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819118	Multilex (FDB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819119	OMOP Visit	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819142	Clinical Classifications Software for ICD-9-CM (HCUP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819143	OPCS Classification of Interventions and Procedures version 4 (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819144	Gemscript (Resip)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819145	Hospital Episode Statistics Specialty (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819146	OMOP Note Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819147	OMOP Domain	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819148	National Patient-Centered Clinical Research Network (PCORI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819149	OMOP Observation Period Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581438	CDT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32046	UB04 Claim Inpatient Admission Type Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32047	UB04 Patient Discharge Status Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32473	SOPT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32523	OMOP Episode	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+232	Dictionary of Medicines and Devices (NHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+204	Disease Analyzer France (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+231	Drug Product Database (Health Canada)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+236	Public Database of Medications (Social-Sante)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+237	Medicinal Products Information System (DIMDI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+238	Australian Medicines Terminology (NEHTA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+239	Community Register of Medicinal Products for Human Use (European Commission)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+243	Anatomical Classification of Pharmaceutical Products (EphMRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+245	New Form Code (EphMRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32542	OMOP Episode Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5029	OMOP Cost Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5045	Longitudinal Patient Data Australia (IMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+5046	International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 1 and 2 (NCHS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32808	OMOP Type Concept	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32887	OMOP Condition Status	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581376	OMOP Specimen Type	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581367	Modernizing Medicine (MMI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32613	HemOnc	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581400	CDC Vaccine Administered CVX (NCIRD)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581404	AllOfUs_PPI (Columbia)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581441	Information Standard for Blood and Transplant 128 Product (ICCBBA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581426	International Classification of Diseases for Oncology, Third Edition (WHO)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581457	OMOP Cost	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32044	UB04 Type of Bill - Institutional (USHIK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581451	LPD_Belgium	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32573	OMOP Provider	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32574	OMOP Supplier	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32557	Japan Medical Data Center Drug Code (JMDC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32446	Table of Procedures, Drugs, Orthoses, Protheses and Special Materials (Brazilian Unified Health System)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32045	UB04 Claim Source Inpatient Admission Code (CMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+581442	Information Standard for Blood and Transplant 128 Product Attribute (ICCBBA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32642	Data Standards & Data Dictionary Volume II (NAACCR)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32758	OMOP Extension (OHDSI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32913	Clinical Interpretation of Variants in Cancer (civicdb.org)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32914	Cancer Genome Interpreter (Pompeu Fabra University)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32915	ClinVar (NCBI)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32916	The Clinical Knowledgebase (The Jackson Laboratory)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32917	NCI Thesaurus (National Cancer Institute)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32771	CAP electronic Cancer Checklists (College of American Pathologists)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32928	International Classification of Diseases, Tenth Revision, German Edition	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32929	Diagnostic Modifiers of Cancer (OMOP)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32999	Oncology Knowledge Base (MSK)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32570	Census regions of the United States (USCB)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+44819120	Veterans Health Administration National Drug File (VA))	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32976	UK Biobank (UK Biobank)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32472	OMOP Sponsor	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32549	SNOMED Veterinary Extension (VTSL)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+252	OMOP RxNorm Extension	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32471	OMOP Health Plan	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32474	OMOP Plan Stop Reason	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32541	OpenStreetMap (OSMF)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32757	Nebraska Lexicon (UNMC)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32807	Normalized Chinese Clinical Drug knowledge base (UTHealth)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32675	OMOP Metadata	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33069	OMOP Language	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32724	Korean Revenue Code (KNHIS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32723	Korean Payer (KNHIS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32688	Korean Standard Classfication of Diseases and Causes of Death, 7th Revision (STATISTICS KOREA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32740	International Classification of Diseases, Tenth Revision, Chinese Edition (CAMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32744	International Classification of Diseases, Ninth Revision, Chinese Edition, Procedures (CAMS)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32736	Korean Electronic Data Interchange code system (HIRA)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32735	Comparative Toxicogenomic Database (NCSU)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32806	International Classification of Diseases, Tenth Revision, French Edition (ATIH)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+32957	Common Classification of Medical Acts (ATIH)	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33091	IQVIA CO-CONNECT	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33092	IQVIA CO-CONNECT MIABIS	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33093	IQVIA CO-CONNECT TWINS	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33095	NHS Ethnic Category	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	
+33096	NHS Admission Source and Discharge Destination	Metadata	Vocabulary	Vocabulary		OMOP generated	19700101	20991231	

@@ -1,0 +1,1111 @@
+concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+3959244	H/O ASTHMA	Observation	CO-CONNECT	Clinical Finding		CC-COVID-001	20220101	20991231	
+3955425	Family history asthma child	Observation	CO-CONNECT TWINS	Clinical Finding		P000991	20220101	20991231	
+3955667	Ever had asthma	Observation	CO-CONNECT TWINS	Clinical Finding		P001771	20220101	20991231	
+3955668	Asthma currently taken medication	Observation	CO-CONNECT TWINS	Clinical Finding		P001772	20220101	20991231	
+3955669	Asthma medication frequency	Observation	CO-CONNECT TWINS	Clinical Finding		P001773	20220101	20991231	
+3955670	Asthma time since last taken medication	Observation	CO-CONNECT TWINS	Clinical Finding		P001774	20220101	20991231	
+3955671	Asthma using inhalers	Observation	CO-CONNECT TWINS	Clinical Finding		P001775	20220101	20991231	
+3955672	Asthma date time used inhaler	Observation	CO-CONNECT TWINS	Clinical Finding		P001776	20220101	20991231	
+3955780	Family history asthma mother	Observation	CO-CONNECT TWINS	Context-dependent		P001998	20220101	20991231	
+3955781	Family history asthma father	Observation	CO-CONNECT TWINS	Context-dependent		P001999	20220101	20991231	
+3955782	Family history asthma sister	Observation	CO-CONNECT TWINS	Context-dependent		P002000	20220101	20991231	
+3955783	Family history asthma brother	Observation	CO-CONNECT TWINS	Context-dependent		P002001	20220101	20991231	
+3956128	Asthma chest wheezing whistling past	Observation	CO-CONNECT TWINS	Clinical Finding		P002779	20220101	20991231	
+3956129	Asthma chest wheezing whistling last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		P002780	20220101	20991231	
+3956130	Asthma chest tightness waking up last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		P002781	20220101	20991231	
+3956131	Asthma woken up by shortness of breath last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		P002782	20220101	20991231	
+3956133	Asthma woken up by coughing attack last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		P002783	20220101	20991231	
+3956134	Ever had asthma	Observation	CO-CONNECT TWINS	Clinical Finding		P002784	20220101	20991231	
+3956135	Asthma attack last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		P002785	20220101	20991231	
+3956686	Lifetime occurrence of asthma diagnosed by a doctor	Observation	CO-CONNECT TWINS	Clinical Finding		PH0000410	20220101	20991231	
+3956687	Ongoing asthma	Observation	CO-CONNECT TWINS	Clinical Finding		PH0000412	20220101	20991231	
+3957327	Common conditions blood relatives asthma	Observation	CO-CONNECT TWINS	Context-dependent		Q11A_109	20220101	20991231	
+3957375	Asthma	Observation	CO-CONNECT TWINS	Clinical Finding		Q11A_234	20220101	20991231	
+3957825	Prescription drugs asthma inhaler daily month	Observation	CO-CONNECT TWINS	Procedure		Q11B_115	20220101	20991231	
+3957826	Prescription drugs asthma inhaler daily month age first use	Observation	CO-CONNECT TWINS	Procedure		Q11B_116	20220101	20991231	
+3957827	Prescription drugs asthma inhaler total years taken	Observation	CO-CONNECT TWINS	Procedure		Q11B_117	20220101	20991231	
+3957828	Prescription drugs asthma inhaler currently taking daily	Observation	CO-CONNECT TWINS	Procedure		Q11B_118	20220101	20991231	
+3958129	Asthma diagnosed	Observation	CO-CONNECT TWINS	Clinical Finding		Q17B_4	20220101	20991231	
+3958140	Asthma diagnosis age	Observation	CO-CONNECT TWINS	Procedure		Q17B_5	20220101	20991231	
+3958151	Asthma diagnosed last 10 years	Observation	CO-CONNECT TWINS	Clinical Finding		Q17B_6	20220101	20991231	
+3958379	Family history asthma	Observation	CO-CONNECT TWINS	Clinical Finding		Q18_34	20220101	20991231	
+3958608	Asthma	Observation	CO-CONNECT TWINS	Clinical Finding		Q2_119	20220101	20991231	
+3958610	Asthma last 12 months	Observation	CO-CONNECT TWINS	Clinical Finding		Q2_120	20220101	20991231	
+3958576	Diagnosed treated condition asthma	Observation	CO-CONNECT TWINS	Clinical Finding		Q21_79	20220101	20991231	
+3958811	Regularly taking antiasthmatic drugs	Observation	CO-CONNECT TWINS	Clinical Finding		Q2_92	20220101	20991231	
+3958875	Asthma frequency last year	Observation	CO-CONNECT TWINS	Clinical Finding		Q4_19	20220101	20991231	
+3958876	Asthma bothering you last year	Observation	CO-CONNECT TWINS	Clinical Finding		Q4_20	20220101	20991231	
+45596282	Asthma	Condition	ICD10	ICD10 Hierarchy		J45	19900501	20991231	
+45557624	Predominantly allergic asthma	Condition	ICD10	ICD10 code		J45.0	19900501	20991231	
+45557625	Nonallergic asthma	Condition	ICD10	ICD10 code		J45.1	19900501	20991231	
+45548118	Mixed asthma	Condition	ICD10	ICD10 code		J45.8	19900501	20991231	
+45562456	Asthma, unspecified	Condition	ICD10	ICD10 code		J45.9	19900501	20991231	
+45591560	Status asthmaticus	Condition	ICD10	ICD10 Hierarchy		J46	19900501	20991231	
+45551273	Poisoning: Antiasthmatics, not elsewhere classified	Condition	ICD10	ICD10 code		T48.6	19900501	20991231	
+45571268	Adverse effects in the therapeutic use of antiasthmatics, not elsewhere classified	Observation	ICD10	ICD10 code		Y55.6	19900501	20991231	
+45547346	Family history of asthma and other chronic lower respiratory diseases	Observation	ICD10	ICD10 code		Z82.5	19900501	20991231	
+1569488	Asthma	Condition	ICD10CM	3-char nonbill code		J45	20120101	20991231	
+45572168	Mild intermittent asthma	Condition	ICD10CM	4-char nonbill code		J45.2	20061230	20991231	
+45548116	Mild intermittent asthma, uncomplicated	Condition	ICD10CM	5-char billing code		J45.20	19700101	20991231	
+45572169	Mild intermittent asthma with (acute) exacerbation	Condition	ICD10CM	5-char billing code		J45.21	19700101	20991231	
+45572170	Mild intermittent asthma with status asthmaticus	Condition	ICD10CM	5-char billing code		J45.22	19700101	20991231	
+45581859	Mild persistent asthma	Condition	ICD10CM	4-char nonbill code		J45.3	20061230	20991231	
+45576951	Mild persistent asthma, uncomplicated	Condition	ICD10CM	5-char billing code		J45.30	19700101	20991231	
+45548117	Mild persistent asthma with (acute) exacerbation	Condition	ICD10CM	5-char billing code		J45.31	19700101	20991231	
+45576952	Mild persistent asthma with status asthmaticus	Condition	ICD10CM	5-char billing code		J45.32	19700101	20991231	
+45591558	Moderate persistent asthma	Condition	ICD10CM	4-char nonbill code		J45.4	20061230	20991231	
+45601133	Moderate persistent asthma, uncomplicated	Condition	ICD10CM	5-char billing code		J45.40	19700101	20991231	
+45543269	Moderate persistent asthma with (acute) exacerbation	Condition	ICD10CM	5-char billing code		J45.41	19700101	20991231	
+45557626	Moderate persistent asthma with status asthmaticus	Condition	ICD10CM	5-char billing code		J45.42	19700101	20991231	
+45591559	Severe persistent asthma	Condition	ICD10CM	4-char nonbill code		J45.5	20061230	20991231	
+45567265	Severe persistent asthma, uncomplicated	Condition	ICD10CM	5-char billing code		J45.50	19700101	20991231	
+45567266	Severe persistent asthma with (acute) exacerbation	Condition	ICD10CM	5-char billing code		J45.51	19700101	20991231	
+45581860	Severe persistent asthma with status asthmaticus	Condition	ICD10CM	5-char billing code		J45.52	19700101	20991231	
+1569489	Other and unspecified asthma	Condition	ICD10CM	4-char nonbill code		J45.9	20120101	20991231	
+1569490	Unspecified asthma	Condition	ICD10CM	5-char nonbill code		J45.90	20120101	20991231	
+45601134	Unspecified asthma with (acute) exacerbation	Condition	ICD10CM	6-char billing code		J45.901	19700101	20991231	
+45543270	Unspecified asthma with status asthmaticus	Condition	ICD10CM	6-char billing code		J45.902	19700101	20991231	
+45562457	Unspecified asthma, uncomplicated	Condition	ICD10CM	6-char billing code		J45.909	19700101	20991231	
+1569491	Other asthma	Condition	ICD10CM	5-char nonbill code		J45.99	20120101	20991231	
+45586675	Cough variant asthma	Condition	ICD10CM	6-char billing code		J45.991	19700101	20991231	
+45572171	Other asthma	Condition	ICD10CM	6-char billing code		J45.998	19700101	20991231	
+725355	Eosinophilic asthma	Condition	ICD10CM	5-char billing code		J82.83	20210101	20991231	
+1574865	Poisoning by, adverse effect of and underdosing of antiasthmatics, not elsewhere classified	Condition	ICD10CM	4-char nonbill code		T48.6	20120101	20991231	
+1574866	Poisoning by, adverse effect of and underdosing of antiasthmatics	Condition	ICD10CM	5-char nonbill code		T48.6X	20120101	20991231	
+18420	Poisoning by antiasthmatics, accidental (unintentional)	Condition	ICD10CM	6-char nonbill code		T48.6X1	20140101	20991231	
+45585016	Poisoning by antiasthmatics, accidental (unintentional), initial encounter	Condition	ICD10CM	7-char billing code		T48.6X1A	19700101	20991231	
+45594711	Poisoning by antiasthmatics, accidental (unintentional), subsequent encounter	Condition	ICD10CM	7-char billing code		T48.6X1D	19700101	20991231	
+45585017	Poisoning by antiasthmatics, accidental (unintentional), sequela	Condition	ICD10CM	7-char billing code		T48.6X1S	19700101	20991231	
+18421	Poisoning by antiasthmatics, intentional self-harm	Condition	ICD10CM	6-char nonbill code		T48.6X2	20140101	20991231	
+45589860	Poisoning by antiasthmatics, intentional self-harm, initial encounter	Condition	ICD10CM	7-char billing code		T48.6X2A	19700101	20991231	
+45575364	Poisoning by antiasthmatics, intentional self-harm, subsequent encounter	Condition	ICD10CM	7-char billing code		T48.6X2D	19700101	20991231	
+45609118	Poisoning by antiasthmatics, intentional self-harm, sequela	Condition	ICD10CM	7-char billing code		T48.6X2S	19700101	20991231	
+18422	Poisoning by antiasthmatics, assault	Condition	ICD10CM	6-char nonbill code		T48.6X3	20140101	20991231	
+45551274	Poisoning by antiasthmatics, assault, initial encounter	Condition	ICD10CM	7-char billing code		T48.6X3A	19700101	20991231	
+45594712	Poisoning by antiasthmatics, assault, subsequent encounter	Condition	ICD10CM	7-char billing code		T48.6X3D	19700101	20991231	
+45560831	Poisoning by antiasthmatics, assault, sequela	Condition	ICD10CM	7-char billing code		T48.6X3S	19700101	20991231	
+18423	Poisoning by antiasthmatics, undetermined	Condition	ICD10CM	6-char nonbill code		T48.6X4	20140101	20991231	
+45599547	Poisoning by antiasthmatics, undetermined, initial encounter	Condition	ICD10CM	7-char billing code		T48.6X4A	19700101	20991231	
+45604356	Poisoning by antiasthmatics, undetermined, subsequent encounter	Condition	ICD10CM	7-char billing code		T48.6X4D	19700101	20991231	
+45565666	Poisoning by antiasthmatics, undetermined, sequela	Condition	ICD10CM	7-char billing code		T48.6X4S	19700101	20991231	
+18424	Adverse effect of antiasthmatics	Observation	ICD10CM	6-char nonbill code		T48.6X5	20140101	20991231	
+45551275	Adverse effect of antiasthmatics, initial encounter	Observation	ICD10CM	7-char billing code		T48.6X5A	19700101	20991231	
+45546470	Adverse effect of antiasthmatics, subsequent encounter	Observation	ICD10CM	7-char billing code		T48.6X5D	19700101	20991231	
+45536832	Adverse effect of antiasthmatics, sequela	Condition	ICD10CM	7-char billing code		T48.6X5S	19700101	20991231	
+18425	Underdosing of antiasthmatics	Observation	ICD10CM	6-char nonbill code		T48.6X6	20140101	20991231	
+45604357	Underdosing of antiasthmatics, initial encounter	Observation	ICD10CM	7-char billing code		T48.6X6A	19700101	20991231	
+45609119	Underdosing of antiasthmatics, subsequent encounter	Observation	ICD10CM	7-char billing code		T48.6X6D	19700101	20991231	
+45560832	Underdosing of antiasthmatics, sequela	Condition	ICD10CM	7-char billing code		T48.6X6S	19700101	20991231	
+35225323	Family history of asthma and other chronic lower respiratory diseases	Observation	ICD10CM	4-char billing code		Z82.5	20070101	20991231	
+44821987	Asthma	Condition	ICD9CM	3-dig nonbill code		493	19700101	20991231	
+44832423	Extrinsic asthma	Condition	ICD9CM	4-dig nonbill code		493.0	19700101	20991231	
+44824287	Extrinsic asthma, unspecified	Condition	ICD9CM	5-dig billing code		493.00	19700101	20991231	
+44824288	Extrinsic asthma with status asthmaticus	Condition	ICD9CM	5-dig billing code		493.01	19700101	20991231	
+44831278	Extrinsic asthma with (acute) exacerbation	Condition	ICD9CM	5-dig billing code		493.02	19700101	20991231	
+44831279	Intrinsic asthma	Condition	ICD9CM	4-dig nonbill code		493.1	19700101	20991231	
+44824289	Intrinsic asthma, unspecified	Condition	ICD9CM	5-dig billing code		493.10	19700101	20991231	
+44834769	Intrinsic asthma with status asthmaticus	Condition	ICD9CM	5-dig billing code		493.11	19700101	20991231	
+44837135	Intrinsic asthma with (acute) exacerbation	Condition	ICD9CM	5-dig billing code		493.12	19700101	20991231	
+44829012	Chronic obstructive asthma	Condition	ICD9CM	4-dig nonbill code		493.2	19700101	20991231	
+44831280	Chronic obstructive asthma, unspecified	Condition	ICD9CM	5-dig billing code		493.20	19700101	20991231	
+44820889	Chronic obstructive asthma with status asthmaticus	Condition	ICD9CM	5-dig billing code		493.21	19700101	20991231	
+44837136	Chronic obstructive asthma with (acute) exacerbation	Condition	ICD9CM	5-dig billing code		493.22	19700101	20991231	
+44830115	Other forms of asthma	Condition	ICD9CM	4-dig nonbill code		493.8	19700101	20991231	
+44833611	Cough variant asthma	Condition	ICD9CM	5-dig billing code		493.82	19700101	20991231	
+44826679	Asthma, unspecified	Condition	ICD9CM	4-dig nonbill code		493.9	19700101	20991231	
+44821988	Asthma, unspecified type, unspecified	Condition	ICD9CM	5-dig billing code		493.90	19700101	20991231	
+44832424	Asthma, unspecified type, with status asthmaticus	Condition	ICD9CM	5-dig billing code		493.91	19700101	20991231	
+44823144	Asthma, unspecified type, with (acute) exacerbation	Condition	ICD9CM	5-dig billing code		493.92	19700101	20991231	
+44822511	Poisoning by antiasthmatics	Condition	ICD9CM	4-dig billing code		975.7	19700101	20991231	
+44821468	Antiasthmatics causing adverse effects in therapeutic use	Observation	ICD9CM	4-dig billing E code		E945.7	19700101	20991231	
+44828510	Family history of asthma	Observation	ICD9CM	4-dig billing V code		V17.5	19700101	20991231	
+3044695	Asthma [Minimum Data Set]	Observation	LOINC	Survey	S	45669-9	19700101	20991231	
+40757953	Asthma/chronic obstructive lung disease or chronic lung disease in last 7 days [MDSv3]	Observation	LOINC	Survey	S	54822-2	19700101	20991231	
+40758532	Asthma tracking panel	Measurement	LOINC	Clinical Observation	S	55403-0	20090423	20991231	
+40758533	Asthma spells per week	Measurement	LOINC	Clinical Observation	S	55404-8	20090423	20991231	
+40764829	PROMIS pediatric item bank - asthma - version 1.0	Observation	LOINC	Survey	S	62068-2	20101028	20991231	
+40764830	I felt scared that I might have trouble breathing because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62069-0	20101028	20991231	
+40764831	My chest felt tight because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62070-8	20101028	20991231	
+40764832	I felt wheezy because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62071-6	20101028	20991231	
+40764833	I had trouble sleeping at night because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62072-4	20101028	20991231	
+40764834	It was hard for me to play sports or exercise because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62073-2	20101028	20991231	
+40764835	It was hard to take a deep breath because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62074-0	20101028	20991231	
+40764836	My asthma bothered me in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62075-7	20101028	20991231	
+40764837	I coughed because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62076-5	20101028	20991231	
+40764838	I got tired easily because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62077-3	20101028	20991231	
+40764839	I had asthma attacks in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62078-1	20101028	20991231	
+40764840	I had trouble walking because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62079-9	20101028	20991231	
+40764841	I missed school because of asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62080-7	20101028	20991231	
+40764843	It was hard for me to play with pets because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62082-3	20101028	20991231	
+40764844	My asthma bothered me when I was with my friends in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62083-1	20101028	20991231	
+40764969	PROMIS pediatric short form - asthma 8a - version 1.0	Observation	LOINC	Survey	S	62208-4	20101109	20991231	
+40764974	I had trouble breathing because of my asthma in past 7 days [PROMIS]	Observation	LOINC	Survey	S	62213-4	20101109	20991231	
+40766907	Have you ever had asthma [PhenX]	Observation	LOINC	Clinical Observation	S	64195-1	20110413	20991231	
+40766908	Do you still have asthma [PhenX]	Observation	LOINC	Clinical Observation	S	64196-9	20110413	20991231	
+40766909	Was asthma confirmed by a doctor [PhenX]	Observation	LOINC	Clinical Observation	S	64197-7	20110413	20991231	
+40766910	At what age did asthma start [PhenX]	Observation	LOINC	Clinical Observation	S	64198-5	20110413	20991231	
+40766911	If you no longer have asthma, at what age did it stop [PhenX]	Observation	LOINC	Clinical Observation	S	64199-3	20110413	20991231	
+40766952	Was your parent ever told by a doctor that he or she had asthma [PhenX]	Observation	LOINC	Clinical Observation	S	64241-3	20110413	20991231	
+40767110	Has your child ever had asthma [PhenX]	Observation	LOINC	Clinical Observation	S	64399-9	20110414	20991231	
+40769049	Do you have a long-term health problem with heart disease, lung disease, asthma, kidney disease, metabolic disease, diabetes, anemia, or other blood disorder [PhenX]	Observation	LOINC	Clinical Observation	S	66376-5	20110613	20991231	
+42868470	Asthma action plan	Note	LOINC	Clinical Observation	S	69981-9	20120914	20991231	
+46236702	PROMIS pediatric short form - asthma 8a - version 1.0 raw score	Observation	LOINC	Survey	S	77842-3	20150612	20991231	
+46236608	PROMIS pediatric asthma - version 1.0 Tscore	Observation	LOINC	Survey	S	77872-0	20150612	20991231	
+42529245	How much of the time did your asthma keep you from getting as much done at work, school or at home in the past 4 weeks [ACT]	Observation	LOINC	Survey	S	82669-3	20170221	20991231	
+42529247	How often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning during the past 4 weeks [ACT]	Observation	LOINC	Survey	S	82671-9	20170221	20991231	
+42528833	How would you rate your asthma control during the past 4 weeks [ACT]	Observation	LOINC	Survey	S	82673-5	20170221	20991231	
+42528834	Asthma Control Test [ACT]	Observation	LOINC	Survey	S	82674-3	20170221	20991231	
+37020650	It was hard for my child to play sports or exercise because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91408-5	20190621	20991231	
+37020738	It was hard for my child to play with pets because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91409-3	20190621	20991231	
+37020798	It was hard for my child to take a deep breath because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91410-1	20190621	20991231	
+37020832	My child coughed because of his or her asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91411-9	20190621	20991231	
+37019874	My child felt scared that he or she might have trouble breathing because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91412-7	20190621	20991231	
+37020600	My child felt wheezy because of his or her asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91413-5	20190621	20991231	
+37020512	My child got tired easily because of his or her asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91414-3	20190621	20991231	
+37019498	My child had asthma attacks in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91415-0	20190621	20991231	
+37020726	My child had trouble breathing because of his or her asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91416-8	20190621	20991231	
+37019491	My child had trouble sleeping at night because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91417-6	20190621	20991231	
+37021006	My child had trouble walking because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91418-4	20190621	20991231	
+37020515	My child missed school because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91419-2	20190621	20991231	
+37021495	My child was bothered by asthma when he or she was with friends in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91420-0	20190621	20991231	
+37020406	My child's asthma bothered him or her in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91422-6	20190621	20991231	
+37019481	My child's chest felt tight because of asthma in past 7 days [PROMIS.PARENTPROXY]	Observation	LOINC	Survey	S	91424-2	20190621	20991231	
+37019705	PROMIS parent proxy asthma impact - version 2.0 T-score	Observation	LOINC	Survey	S	91425-9	20190621	20991231	
+37021412	PROMIS parent proxy item bank - asthma impact - version 2.0	Observation	LOINC	Survey	S	91426-7	20190621	20991231	
+37019697	PROMIS pediatric asthma impact - version 2.0 T-score	Observation	LOINC	Survey	S	91537-1	20190621	20991231	
+37021421	PROMIS pediatric item bank - asthma impact - version 2.0	Observation	LOINC	Survey	S	91538-9	20190621	20991231	
+45882052	-- Asthma	Meas Value	LOINC	Answer		LA10564-5	19700101	20191212	D
+45884519	Asthma, doctor diagnosed	Meas Value	LOINC	Answer	S	LA14299-4	19700101	20991231	
+45877009	Asthma	Meas Value	LOINC	Answer	S	LA16982-3	19700101	20991231	
+45884823	Medical-respiratory distress/asthma/COPD/reactive airway disease	Meas Value	LOINC	Answer	S	LA17559-8	19700101	20991231	
+36308969	Cardio/pulm: Asthma	Meas Value	LOINC	Answer	S	LA25631-5	19700101	20991231	
+36311307	Med: Sports injury, non-musculoskeletal (e.g. Heat-related illness, skin lesions, exercise -induced asthma)	Meas Value	LOINC	Answer	S	LA25687-7	19700101	20991231	
+36309893	Asthma, chronic obstructive pulmonary disease (COPD), or chronic lung disease (e.g., chronic bronchitis and restrictive lung diseases such as asbestosis)	Meas Value	LOINC	Answer	S	LA27872-3	19700101	20991231	
+1005068	PROMIS pediatric item bank - asthma - version 1.0	Observation	LOINC	LOINC Component		LP103259-0	19700101	20991231	
+1005069	I felt scared that I might have trouble breathing because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103260-8	19700101	20991231	
+1005070	My chest felt tight because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103261-6	19700101	20991231	
+1005071	I felt wheezy because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103262-4	19700101	20991231	
+1005072	I had trouble sleeping at night because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103263-2	19700101	20991231	
+1005073	It was hard for me to play sports or exercise because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103264-0	19700101	20991231	
+1005074	It was hard to take a deep breath because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103265-7	19700101	20991231	
+1005075	My asthma bothered me in past 7 days	Observation	LOINC	LOINC Component		LP103266-5	19700101	20991231	
+1005076	I coughed because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103267-3	19700101	20991231	
+1005077	I got tired easily because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103268-1	19700101	20991231	
+1005078	I had asthma attacks in past 7 days	Observation	LOINC	LOINC Component		LP103269-9	19700101	20991231	
+1005079	I had trouble walking because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103270-7	19700101	20991231	
+1005080	I missed school because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP103271-5	19700101	20991231	
+1005082	It was hard for me to play with pets because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP103273-1	19700101	20991231	
+1005083	My asthma bothered me when I was with my friends in past 7 days	Observation	LOINC	LOINC Component		LP103274-9	19700101	20991231	
+1005212	PROMIS pediatric short form - asthma 8a - version 1.0	Observation	LOINC	LOINC Component		LP105019-6	19700101	20991231	
+1005216	I had trouble breathing because of my asthma in past 7 days	Observation	LOINC	LOINC Component		LP105024-6	19700101	20991231	
+1003886	Have you ever had asthma	Observation	LOINC	LOINC Component		LP115915-3	19700101	20991231	
+1006433	Do you still have asthma	Observation	LOINC	LOINC Component		LP115916-1	19700101	20991231	
+1006434	Was asthma confirmed by a doctor	Observation	LOINC	LOINC Component		LP115917-9	19700101	20991231	
+1006435	At what age did asthma start	Observation	LOINC	LOINC Component		LP115918-7	19700101	20991231	
+1006436	If you no longer have asthma, at what age did it stop	Observation	LOINC	LOINC Component		LP115919-5	19700101	20991231	
+1006474	Was your parent ever told by a doctor that he or she had asthma	Observation	LOINC	LOINC Component		LP116150-6	19700101	20991231	
+1006617	Has your child ever had asthma	Observation	LOINC	LOINC Component		LP116311-4	19700101	20991231	
+1008287	Do you have a long-term health problem with heart disease, lung disease, asthma, kidney disease, metabolic disease, diabetes, anemia, or other blood disorder	Observation	LOINC	LOINC Component		LP128197-3	19700101	20991231	
+44787579	Asthma action plan	Observation	LOINC	LOINC Component		LP145599-9	19700101	20991231	
+37079530	Asthma action plan	Meas Value	LOINC	Doc Type of Service		LP173208-2	20190621	20191212	D
+706387	Asthma action plan	Meas Value	LOINC	Doc Kind	S	LP173756-0	20180615	20991231	
+1012865	Asthma Control Test	Observation	LOINC	LOINC Method		LP186136-0	19700101	20991231	
+1014109	PROMIS pediatric short form - asthma 8a - version 1.0 raw score	Observation	LOINC	LOINC Component		LP193403-5	19700101	20991231	
+1014143	PROMIS pediatric asthma - version 1.0 Tscore	Observation	LOINC	LOINC Component		LP193437-3	19700101	20991231	
+1015253	Asthma Control Test	Observation	LOINC	LOINC Component		LP221219-1	19700101	20991231	
+1015254	How much of the time did your asthma keep you from getting as much done at work, school or at home in the past 4 weeks	Observation	LOINC	LOINC Component		LP221220-9	19700101	20991231	
+1015256	How often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning during the past 4 weeks	Observation	LOINC	LOINC Component		LP221222-5	19700101	20991231	
+1015258	How would you rate your asthma control during the past 4 weeks	Observation	LOINC	LOINC Component		LP221224-1	19700101	20991231	
+36207191	Asthma action plan | {Setting}	Measurement	LOINC	LOINC Hierarchy		LP261059-2	19700101	20191212	D
+1019267	It was hard for me to play with pets because of my asthma	Observation	LOINC	LOINC Component		LP270539-2	19700101	20991231	
+1019268	My child felt scared that he or she might have trouble breathing because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270556-6	19700101	20991231	
+1019269	My child got tired easily because of his or her asthma in past 7 days	Observation	LOINC	LOINC Component		LP270557-4	19700101	20991231	
+1019270	My child was bothered by asthma when he or she was with friends in past 7 days	Observation	LOINC	LOINC Component		LP270558-2	19700101	20991231	
+1019273	My child had trouble walking because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270561-6	19700101	20991231	
+1019274	It was hard for my child to play sports or exercise because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270562-4	19700101	20991231	
+1019275	My child had trouble sleeping at night because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270563-2	19700101	20991231	
+1019276	It was hard for my child to play with pets because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270564-0	19700101	20991231	
+1019277	My child's chest felt tight because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270565-7	19700101	20991231	
+1019278	My child felt wheezy because of his or her asthma in past 7 days	Observation	LOINC	LOINC Component		LP270566-5	19700101	20991231	
+1019279	My child had asthma attacks in past 7 days	Observation	LOINC	LOINC Component		LP270567-3	19700101	20991231	
+1019280	My child coughed because of his or her asthma in past 7 days	Observation	LOINC	LOINC Component		LP270568-1	19700101	20991231	
+1019281	It was hard for my child to take a deep breath because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270569-9	19700101	20991231	
+1019282	My child had trouble breathing because of his or her asthma in past 7 days	Observation	LOINC	LOINC Component		LP270570-7	19700101	20991231	
+1019283	My child's asthma bothered him or her in past 7 days	Observation	LOINC	LOINC Component		LP270571-5	19700101	20991231	
+1019284	My child missed school because of asthma in past 7 days	Observation	LOINC	LOINC Component		LP270572-3	19700101	20991231	
+1019468	PROMIS parent proxy asthma impact - version 2.0 T-score	Observation	LOINC	LOINC Component		LP270806-5	19700101	20991231	
+1019469	PROMIS parent proxy item bank - asthma impact - version 2.0	Observation	LOINC	LOINC Component		LP270807-3	19700101	20991231	
+1019470	PROMIS pediatric item bank - asthma impact - version 2.0	Observation	LOINC	LOINC Component		LP270809-9	19700101	20991231	
+1019471	PROMIS pediatric asthma impact - version 2.0 T-score	Observation	LOINC	LOINC Component		LP270810-7	19700101	20991231	
+37029192	Asthma spells | Patient | Respiratory measures and Ventilator management	Measurement	LOINC	LOINC Hierarchy	C	LP408856-5	19700101	20991231	
+1002745	Asthma action plan | {Setting} | Document ontology	Note	LOINC	LOINC Hierarchy	C	LP416830-0	20191213	20991231	
+1031992	Asthma	Observation	LOINC	LOINC Component		LP74511-4	19700101	20991231	
+1034039	Asthma/chronic obstructive lung disease or chronic lung disease in last 7 days	Observation	LOINC	LOINC Component		LP90041-2	19700101	20991231	
+1034341	Asthma tracking panel	Observation	LOINC	LOINC Component		LP94641-5	19700101	20991231	
+37034850	Asthma spells	Observation	LOINC	LOINC Component		LP94642-3	19700101	20991231	
+19237766	asthmalgine	Observation	MeSH	Suppl Concept		C018460	20230501	20991231	
+19237767	asthmasedine	Observation	MeSH	Suppl Concept		C018461	20230501	20991231	
+19373243	Asthma and Nasal Polyps	Condition	MeSH	Suppl Concept		C565739	20230501	20991231	
+19373342	Asthma, Short Stature, and Elevated IgA	Condition	MeSH	Suppl Concept		C565934	20230501	20991231	
+19373343	Asthma, Nasal Polyps, And Aspirin Intolerance	Condition	MeSH	Suppl Concept		C565935	20230501	20991231	
+908216	Asthma-Chronic Obstructive Pulmonary Disease Overlap Syndrome	Condition	MeSH	Main Heading		D000080445	20191104	20991231	
+45612832	Asthma	Condition	MeSH	Main Heading		D001249	19700101	20991231	
+45611599	Asthma, Exercise-Induced	Condition	MeSH	Main Heading		D001250	19700101	20991231	
+45616948	Status Asthmaticus	Condition	MeSH	Main Heading		D013224	19700101	20991231	
+19396652	Anti-Asthmatic Agents	Drug	MeSH	Main Heading		D018927	20230501	20991231	
+45613609	Asthma, Aspirin-Induced	Condition	MeSH	Main Heading		D055963	19700101	20991231	
+45612419	Asthma, Occupational	Condition	MeSH	Main Heading		D059366	19700101	20991231	
+45438192	No family history of asthma	Observation	Read	Read		122C000	19700101	20991231	
+45478352	FH: Asthma	Observation	Read	Read		12D2.00	19700101	20991231	
+45451516	Asthma society member	Observation	Read	Read		13Y4.00	19700101	20991231	
+45444893	H/O: asthma	Observation	Read	Read		14B4.00	19700101	20991231	
+45774175	At risk of asthma	Condition	Read	Read		14Ok.00	20141001	20991231	
+46277575	At risk of severe asthma exacerbation	Condition	Read	Read		14Ok000	20150917	20991231	
+45451580	Exercise induced asthma	Condition	Read	Read		173A.00	19700101	20991231	
+45471800	Occupational asthma	Condition	Read	Read		173c.00	19700101	20991231	
+45515017	Work aggravated asthma	Condition	Read	Read		173d.00	19700101	20991231	
+45461665	Asthma trigger	Observation	Read	Read		178..00	19700101	20991231	
+45435008	Aspirin induced asthma	Condition	Read	Read		1780.00	19700101	20991231	
+45515018	Asthma trigger - pollen	Condition	Read	Read		1781.00	19700101	20991231	
+45508251	Asthma trigger - tobacco smoke	Condition	Read	Read		1782.00	19700101	20991231	
+45441606	Asthma trigger - warm air	Condition	Read	Read		1783.00	19700101	20991231	
+45438313	Asthma trigger - emotion	Condition	Read	Read		1784.00	19700101	20991231	
+45508252	Asthma trigger - damp	Condition	Read	Read		1785.00	19700101	20991231	
+45441607	Asthma trigger - animals	Condition	Read	Read		1786.00	19700101	20991231	
+45454884	Asthma trigger - seasonal	Condition	Read	Read		1787.00	19700101	20991231	
+45418553	Asthma trigger - cold air	Condition	Read	Read		1788.00	19700101	20991231	
+45431657	Asthma trigger - respiratory infection	Condition	Read	Read		1789.00	19700101	20991231	
+45485123	Asthma trigger - airborne dust	Condition	Read	Read		178A.00	19700101	20991231	
+45425047	Asthma trigger - exercise	Condition	Read	Read		178B.00	19700101	20991231	
+45498361	Suspected asthma	Observation	Read	Read		1J70.00	19700101	20991231	
+45491767	Asthma confirmed	Condition	Read	Read		1O2..00	19700101	20991231	
+45508307	Asthma resolved	Condition	Read	Read		2126200	19700101	20991231	
+45471853	Asthma resolved	Condition	Read	Read		212G.00	19700101	20991231	
+45428541	Royal College of Physicians asthma assessment	Measurement	Read	Read		388t.00	19700101	20991231	
+45431832	Royal College of Physicians asthma assessment three questions score	Measurement	Read	Read		388t000	19700101	20991231	
+46277605	Severe asthma exacerbation risk assessment	Procedure	Read	Read		38B8.00	20150917	20991231	
+45425208	Asthma control test	Measurement	Read	Read		38DL.00	19700101	20991231	
+45498495	Asthma control questionnaire	Measurement	Read	Read		38DT.00	19700101	20991231	
+45418711	Mini asthma quality of life questionnaire	Measurement	Read	Read		38DV.00	20140401	20991231	
+45448398	Childhood Asthma Control Test	Measurement	Read	Read		38QM.00	20140401	20991231	
+45442088	Asthma self-management plan agreed	Observation	Read	Read		661M100	20140401	20991231	
+45508701	Asthma self-management plan review	Procedure	Read	Read		661N100	20140401	20991231	
+45492230	Asthma monitoring	Observation	Read	Read		663..11	19700101	20991231	
+45518801	Emergency asthma admission since last appointment	Observation	Read	Read		663d.00	19700101	20991231	
+45502137	Asthma restricts exercise	Observation	Read	Read		663e.00	19700101	20991231	
+45502138	Asthma sometimes restricts exercise	Observation	Read	Read		663e000	19700101	20991231	
+45512134	Asthma severely restricts exercise	Observation	Read	Read		663e100	19700101	20991231	
+45475604	Asthma never restricts exercise	Condition	Read	Read		663f.00	19700101	20991231	
+45458711	Asthma - currently dormant	Condition	Read	Read		663h.00	19700101	20991231	
+45512135	Asthma - currently active	Condition	Read	Read		663j.00	19700101	20991231	
+45442094	Asthma accident and emergency attendance since last visit	Observation	Read	Read		663m.00	19700101	20991231	
+45445419	Asthma treatment compliance satisfactory	Condition	Read	Read		663n.00	19700101	20991231	
+45455389	Asthma disturbing sleep	Condition	Read	Read		663N.00	19700101	20991231	
+45438794	Asthma causing night waking	Condition	Read	Read		663N000	19700101	20991231	
+45512131	Asthma disturbs sleep weekly	Condition	Read	Read		663N100	19700101	20991231	
+45522090	Asthma disturbs sleep frequently	Condition	Read	Read		663N200	19700101	20991231	
+45488929	Asthma not disturbing sleep	Condition	Read	Read		663O.00	19700101	20991231	
+45458710	Asthma never disturbs sleep	Condition	Read	Read		663O000	19700101	20991231	
+45442095	Asthma treatment compliance unsatisfactory	Condition	Read	Read		663p.00	19700101	20991231	
+45468994	Asthma limiting activities	Observation	Read	Read		663P.00	19700101	20991231	
+45445418	Asthma limits activities 1 to 2 times per month	Observation	Read	Read		663P000	20140401	20991231	
+45512132	Asthma limits activities 1 to 2 times per week	Observation	Read	Read		663P100	20140401	20991231	
+45468995	Asthma limits activities most days	Observation	Read	Read		663P200	20140401	20991231	
+45518803	Asthma daytime symptoms	Condition	Read	Read		663q.00	19700101	20991231	
+45438795	Asthma not limiting activities	Condition	Read	Read		663Q.00	19700101	20991231	
+45482262	Asthma causes night symptoms 1 to 2 times per month	Condition	Read	Read		663r.00	19700101	20991231	
+45472290	Asthma never causes daytime symptoms	Condition	Read	Read		663s.00	19700101	20991231	
+45452052	Asthma causes daytime symptoms 1 to 2 times per month	Condition	Read	Read		663t.00	19700101	20991231	
+45482263	Asthma causes daytime symptoms 1 to 2 times per week	Observation	Read	Read		663u.00	19700101	20991231	
+45492232	Asthma management plan given	Observation	Read	Read		663U.00	19700101	20991231	
+45445420	Asthma causes daytime symptoms most days	Condition	Read	Read		663v.00	19700101	20991231	
+45438796	Asthma severity	Observation	Read	Read		663V.00	19700101	20991231	
+45482260	Occasional asthma	Condition	Read	Read		663V000	19700101	20991231	
+45422247	Mild asthma	Condition	Read	Read		663V100	19700101	20991231	
+45505411	Moderate asthma	Condition	Read	Read		663V200	19700101	20991231	
+45472288	Severe asthma	Condition	Read	Read		663V300	19700101	20991231	
+45445421	Asthma limits walking up hills or stairs	Observation	Read	Read		663w.00	19700101	20991231	
+45428845	Asthma prophylactic medication used	Observation	Read	Read		663W.00	19700101	20991231	
+45465545	Asthma limits walking on the flat	Observation	Read	Read		663x.00	19700101	20991231	
+45432131	Number of asthma exacerbations in past year	Observation	Read	Read		663y.00	19700101	20991231	
+45445434	Change in asthma management plan	Observation	Read	Read		66Y5.00	19700101	20991231	
+45515517	Step up change in asthma management plan	Observation	Read	Read		66Y9.00	19700101	20991231	
+45482281	Step down change in asthma management plan	Observation	Read	Read		66YA.00	19700101	20991231	
+45438809	Absent from work or school due to asthma	Observation	Read	Read		66YC.00	19700101	20991231	
+45462170	Asthma monitoring due	Observation	Read	Read		66YE.00	19700101	20991231	
+45442109	Asthma annual review	Observation	Read	Read		66YJ.00	19700101	20991231	
+45522110	Asthma follow-up	Observation	Read	Read		66YK.00	19700101	20991231	
+45428867	Asthma review using Royal College of Physicians three questions	Observation	Read	Read		66Yp.00	19700101	20991231	
+45455412	Asthma night-time symptoms	Condition	Read	Read		66YP.00	19700101	20991231	
+45419049	Asthma causes night time symptoms 1 to 2 times per week	Condition	Read	Read		66Yq.00	19700101	20991231	
+45469011	Asthma monitoring by nurse	Observation	Read	Read		66YQ.00	19700101	20991231	
+45492247	Asthma causes symptoms most nights	Condition	Read	Read		66Yr.00	19700101	20991231	
+45438812	Asthma monitoring by doctor	Observation	Read	Read		66YR.00	19700101	20991231	
+45442110	Asthma never causes night symptoms	Condition	Read	Read		66Ys.00	20140401	20991231	
+45505432	Number of days absent from school due to asthma in past 6 months	Observation	Read	Read		66Yu.00	20140401	20991231	
+45425536	Does not have asthma management plan	Observation	Read	Read		66YZ.00	19700101	20991231	
+45518822	Asthma management plan declined	Observation	Read	Read		66Yz000	20140401	20991231	
+45891416	Telehealth asthma monitoring	Observation	Read	Read		66Yz500	20150326	20991231	
+45495500	Health education - asthma	Procedure	Read	Read		679J.00	19700101	20991231	
+45419053	Health education - asthma self management	Procedure	Read	Read		679J000	19700101	20991231	
+45462178	Health education - structured asthma discussion	Procedure	Read	Read		679J100	19700101	20991231	
+45515524	Health education - structured patient focused asthma discussion	Procedure	Read	Read		679J200	19700101	20991231	
+45475645	Asthma screening	Measurement	Read	Read		68C3.00	19700101	20991231	
+45774151	Review of patient at risk of asthma	Procedure	Read	Read		6AP..00	20141001	20991231	
+45455995	Further asthma - drug prevent.	Observation	Read	Read		8791.00	19700101	20991231	
+45509338	Asthma control step 0	Procedure	Read	Read		8793.00	19700101	20991231	
+45429456	Asthma control step 1	Procedure	Read	Read		8794.00	19700101	20991231	
+45499382	Asthma control step 2	Procedure	Read	Read		8795.00	19700101	20991231	
+45419645	Asthma control step 3	Procedure	Read	Read		8796.00	19700101	20991231	
+45476230	Asthma control step 4	Procedure	Read	Read		8797.00	19700101	20991231	
+45439371	Asthma control step 5	Procedure	Read	Read		8798.00	19700101	20991231	
+45496084	Asthma medication review	Procedure	Read	Read		8B3j.00	19700101	20991231	
+45466182	Asthma leaflet given	Observation	Read	Read		8CE2.00	19700101	20991231	
+45492815	Patient has a written asthma personal action plan	Observation	Read	Read		8CMA000	19700101	20991231	
+45432754	Asthma clinical management plan	Type Concept	Read	Read		8CR0.00	19700101	20991231	
+45489560	Emergency admission, asthma	Observation	Read	Read		8H2P.00	19700101	20991231	
+45432790	Referral to asthma clinic	Observation	Read	Read		8HTT.00	19700101	20991231	
+45423110	Exception reporting: asthma quality indicators	Observation	Read	Read		9hA..00	19700101	20991231	
+45442880	Excepted from asthma quality indicators: Patient unsuitable	Observation	Read	Read		9hA1.00	19700101	20991231	
+45506232	Excepted from asthma quality indicators: Informed dissent	Observation	Read	Read		9hA2.00	19700101	20991231	
+45462916	Seen in asthma clinic	Observation	Read	Read		9N1d.00	19700101	20991231	
+45439506	Seen in school asthma clinic	Observation	Read	Read		9N1d000	20140401	20991231	
+45436222	DNA - Did not attend asthma clinic	Observation	Read	Read		9N4Q.00	19700101	20991231	
+45429608	Asthma outreach clinic	Visit	Read	Read		9NI8.00	19700101	20991231	
+45459506	Under care of asthma specialist nurse	Observation	Read	Read		9NNX.00	20140401	20991231	
+45436265	Asthma monitoring admin.	Type Concept	Read	Read		9OJ..00	19700101	20991231	
+45456193	Attends asthma monitoring	Observation	Read	Read		9OJ1.00	19700101	20991231	
+45522895	Asthma clinic administration	Type Concept	Read	Read		9OJ..11	19700101	20991231	
+45519577	Refuses asthma monitoring	Observation	Read	Read		9OJ2.00	19700101	20991231	
+45512932	Asthma monitor offer default	Observation	Read	Read		9OJ3.00	19700101	20991231	
+45483063	Asthma monitor 1st letter	Observation	Read	Read		9OJ4.00	19700101	20991231	
+45459535	Asthma monitor 2nd letter	Observation	Read	Read		9OJ5.00	19700101	20991231	
+45479765	Asthma monitor 3rd letter	Observation	Read	Read		9OJ6.00	19700101	20991231	
+45452856	Asthma monitor verbal invite	Observation	Read	Read		9OJ7.00	19700101	20991231	
+45456194	Asthma monitor phone invite	Observation	Read	Read		9OJ8.00	19700101	20991231	
+45419835	Asthma monitoring deleted	Observation	Read	Read		9OJ9.00	19700101	20991231	
+45506181	Asthma monitoring check done	Observation	Read	Read		9OJA.00	19700101	20991231	
+45452857	Asthma monitored	Observation	Read	Read		9OJA.11	19700101	20991231	
+45773997	Asthma monitoring invitation SMS (short message service) text message	Observation	Read	Read		9OJB.00	20141001	20991231	
+45891493	Asthma monitoring SMS (short message service) text message first invitation	Observation	Read	Read		9OJB000	20150326	20991231	
+45891465	Asthma monitoring SMS (short message service) text message second invitation	Observation	Read	Read		9OJB100	20150326	20991231	
+45891408	Asthma monitoring SMS (short message service) text message third invitation	Observation	Read	Read		9OJB200	20150326	20991231	
+45774158	Asthma monitoring invitation email	Observation	Read	Read		9OJC.00	20141001	20991231	
+45509550	Asthma monitoring admin.NOS	Type Concept	Read	Read		9OJZ.00	19700101	20991231	
+45469809	Patient in asthma study	Observation	Read	Read		9Q21.00	19700101	20991231	
+45453337	Asthma - cardiac	Condition	Read	Read		G581.11	19700101	20991231	
+45473600	Chronic asthmatic bronchitis	Condition	Read	Read		H312000	19700101	20991231	
+45453378	Asthma	Condition	Read	Read		H33..00	19700101	20991231	
+45483596	Extrinsic (atopic) asthma	Condition	Read	Read		H330.00	19700101	20991231	
+45490231	Extrinsic asthma without status asthmaticus	Condition	Read	Read		H330000	19700101	20991231	
+45426846	Hay fever with asthma	Condition	Read	Read		H330011	19700101	20991231	
+45463541	Extrinsic asthma with status asthmaticus	Condition	Read	Read		H330100	19700101	20991231	
+45436803	Allergic asthma	Condition	Read	Read		H330.11	19700101	20991231	
+45523433	Extrinsic asthma with asthma attack	Condition	Read	Read		H330111	19700101	20991231	
+45483597	Childhood asthma	Condition	Read	Read		H330.12	19700101	20991231	
+45466923	Hay fever with asthma	Condition	Read	Read		H330.13	19700101	20991231	
+45513485	Pollen asthma	Condition	Read	Read		H330.14	19700101	20991231	
+45463542	Extrinsic asthma NOS	Condition	Read	Read		H330z00	19700101	20991231	
+45510098	Intrinsic asthma	Condition	Read	Read		H331.00	19700101	20991231	
+45456788	Intrinsic asthma without status asthmaticus	Condition	Read	Read		H331000	19700101	20991231	
+45506742	Bronchial asthma	Condition	Read	Read		H33..11	19700101	20991231	
+45466924	Intrinsic asthma with status asthmaticus	Condition	Read	Read		H331100	19700101	20991231	
+45430183	Late onset asthma	Condition	Read	Read		H331.11	19700101	20991231	
+45466925	Intrinsic asthma with asthma attack	Condition	Read	Read		H331111	19700101	20991231	
+45486960	Intrinsic asthma NOS	Condition	Read	Read		H331z00	19700101	20991231	
+45516876	Mixed asthma	Condition	Read	Read		H332.00	19700101	20991231	
+45430184	Acute exacerbation of asthma	Condition	Read	Read		H333.00	19700101	20991231	
+45440095	Brittle asthma	Condition	Read	Read		H334.00	19700101	20991231	
+45460087	Chronic asthma with fixed airflow obstruction	Condition	Read	Read		H335.00	20140401	20991231	
+45500123	Asthma unspecified	Condition	Read	Read		H33z.00	19700101	20991231	
+45523434	Status asthmaticus NOS	Condition	Read	Read		H33z000	19700101	20991231	
+45423566	Severe asthma attack	Condition	Read	Read		H33z011	19700101	20991231	
+45496787	Asthma attack	Condition	Read	Read		H33z100	19700101	20991231	
+45466926	Asthma attack NOS	Condition	Read	Read		H33z111	19700101	20991231	
+45493511	Late-onset asthma	Condition	Read	Read		H33z200	19700101	20991231	
+45516877	Asthma NOS	Condition	Read	Read		H33zz00	19700101	20991231	
+45443389	Exercise induced asthma	Condition	Read	Read		H33zz11	19700101	20991231	
+45430185	Allergic asthma NEC	Condition	Read	Read		H33zz12	19700101	20991231	
+45520110	Sequoiosis (red-cedar asthma)	Condition	Read	Read		H35y600	19700101	20991231	
+45453379	Wood asthma	Condition	Read	Read		H35y700	19700101	20991231	
+45891835	Asthma-chronic obstructive pulmonary disease overlap syndrome	Condition	Read	Read		H3B..00	20150326	20991231	
+45523439	Detergent asthma	Condition	Read	Read		H47y000	19700101	20991231	
+45481047	Antiasthmatic poisoning	Condition	Read	Read		SLF7.00	20140401	20991231	
+45471060	Antiasthmatic poisoning NOS	Condition	Read	Read		SLF7z00	19700101	20991231	
+45461036	Adverse reaction to antiasthmatics	Observation	Read	Read		TJF7.00	19700101	20991231	
+45450978	Adverse reaction to theophylline (asthma)	Observation	Read	Read		TJF7300	19700101	20991231	
+45511019	Adverse reaction to antiasthmatic NOS	Observation	Read	Read		TJF7z00	19700101	20991231	
+45457806	[X]Antiasthmatics causing adverse effects in therapeutic use, not elsewhere classified	Observation	Read	Read		U60F600	19700101	20991231	
+45511172	[X] Adverse reaction to antiasthmatics	Observation	Read	Read		U60F611	20140401	20991231	
+45421369	[X] Adverse reaction to theophylline - asthma	Observation	Read	Read		U60F615	19700101	20991231	
+45507790	[X] Adverse reaction to antiasthmatic NOS	Observation	Read	Read		U60F61A	20140401	20991231	
+45514792	[V]Family history of asthma	Observation	Read	Read		ZV17500	19700101	20991231	
+45451403	[X]Family history of asthma and other chronic lower respiratory diseases	Observation	Read	Read		ZVu6700	19700101	20991231	
+3551669	Did not attend asthma clinic	Observation	SNOMED	Undefined		102281000000108	19700101	20040131	U
+3576514	Exception reporting: asthma quality indicators	Observation	SNOMED	Undefined		103131000000109	19700101	20040131	D
+3576515	Excepted from asthma quality indicators: Patient unsuitable	Observation	SNOMED	Undefined		103141000000100	19700101	20040131	D
+3576516	Excepted from asthma quality indicators: Informed dissent	Observation	SNOMED	Undefined		103151000000102	19700101	20040131	D
+3548003	Acute severe exacerbation of asthma	Condition	SNOMED	Clinical Finding		1064771000000103	19700101	20170401	U
+42690582	Moderate acute exacerbation of asthma	Condition	SNOMED	Clinical Finding		1064811000000103	20170401	20180401	U
+42690663	Life threatening acute exacerbation of asthma	Condition	SNOMED	Clinical Finding		1064821000000109	20170401	20180401	U
+42689544	Use of asthma symptom diary	Observation	SNOMED	Procedure		1065181000000104	20170401	20180401	U
+46269767	Acute severe exacerbation of asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10674711000119105	20150731	20991231	
+37310241	Intermittent allergic asthma	Condition	SNOMED	Clinical Finding	S	10674991000119104	20200131	20991231	
+37108580	Severe controlled persistent asthma	Condition	SNOMED	Clinical Finding	S	10675391000119101	20170731	20991231	
+46269770	Severe persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10675431000119106	20150731	20991231	
+46274059	Acute severe exacerbation of severe persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10675471000119109	20150731	20991231	
+46269771	Acute severe exacerbation of severe persistent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10675551000119104	20150731	20991231	
+46269772	Severe persistent allergic asthma controlled	Condition	SNOMED	Clinical Finding	S	10675591000119109	20150731	20991231	
+46269773	Severe persistent asthma controlled co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10675631000119109	20150731	20991231	
+46269774	Severe persistent allergic asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	10675671000119107	20150731	20991231	
+46269775	Severe persistent asthma uncontrolled co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10675711000119106	20150731	20991231	
+37108581	Severe uncontrolled persistent asthma	Condition	SNOMED	Clinical Finding	S	10675751000119107	20170731	20991231	
+46269776	Mild persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10675871000119106	20150731	20991231	
+46274124	Acute severe exacerbation of mild persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10675911000119109	20150731	20991231	
+46269777	Acute severe exacerbation of mild persistent allergic asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10675991000119100	20150731	20991231	
+46274060	Mild persistent allergic asthma controlled	Condition	SNOMED	Clinical Finding	S	10676031000119106	20150731	20991231	
+46269778	Mild persistent asthma controlled	Condition	SNOMED	Clinical Finding	S	10676071000119109	20150731	20991231	
+46269779	Mild persistent asthma controlled co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10676111000119102	20150731	20991231	
+46269780	Mild persistent allergic asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	10676151000119101	20150731	20991231	
+46269781	Mild persistent asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	10676191000119106	20150731	20991231	
+46269782	Mild persistent asthma uncontrolled co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10676231000119102	20150731	20991231	
+46269783	Moderate persistent asthma controlled	Condition	SNOMED	Clinical Finding	S	10676351000119103	20150731	20991231	
+46269784	Moderate persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10676391000119108	20150731	20991231	
+46273462	Acute severe exacerbation of moderate persistent allergic asthma	Condition	SNOMED	Clinical Finding	S	10676431000119103	20150731	20991231	
+46269785	Acute severe exacerbation of moderate persistent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10676511000119109	20150731	20991231	
+46269786	Moderate persistent allergic asthma controlled	Condition	SNOMED	Clinical Finding	S	10676551000119105	20150731	20991231	
+46269787	Moderate persistent controlled asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10676591000119100	20150731	20991231	
+46269788	Moderate persistent allergic asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	10676631000119100	20150731	20991231	
+46269789	Moderate persistent asthma uncontrolled co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	10676671000119102	20150731	20991231	
+46269790	Moderate persistent asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	10676711000119103	20150731	20991231	
+46269802	Chronic obstructive asthma co-occurrent with acute exacerbation of asthma	Condition	SNOMED	Clinical Finding	S	10692721000119102	20150731	20991231	
+46274062	Asthma-chronic obstructive pulmonary disease overlap syndrome	Condition	SNOMED	Clinical Finding	S	10692761000119107	20150731	20991231	
+45772073	Asthma in mother complicating childbirth	Condition	SNOMED	Clinical Finding	S	10742121000119104	20140731	20991231	
+35609756	Assessment using ACQ (Asthma Control Questionnaire)	Procedure	SNOMED	Procedure		1085531000000106	20171001	20181001	U
+35609757	ACQ (Asthma Control Questionnaire) score	Observation	SNOMED	Observable Entity		1085541000000102	20171001	20181001	U
+35609795	Assessment using Mini AQLQ (Asthma Quality of Life Questionnaire)	Procedure	SNOMED	Procedure		1086131000000109	20171001	20181001	U
+35609796	Mini AQLQ (Asthma Quality of Life Questionnaire) score	Observation	SNOMED	Observable Entity		1086141000000100	20171001	20181001	U
+35609846	Life threatening acute exacerbation of allergic asthma	Condition	SNOMED	Clinical Finding	S	1086701000000102	20171001	20991231	
+35609847	Life threatening acute exacerbation of intrinsic asthma	Condition	SNOMED	Clinical Finding	S	1086711000000100	20171001	20991231	
+37208352	Severe asthma with fungal sensitisation	Condition	SNOMED	Clinical Finding	S	1103911000000103	20190601	20991231	
+37208759	Excepted from asthma quality indicators - service unavailable	Observation	SNOMED	Clinical Finding	S	1108701000000106	20190601	20991231	
+37208964	QOF (Quality and Outcomes Framework) asthma quality indicator-related care invitation	Observation	SNOMED	Procedure	S	1110841000000103	20190601	20991231	
+3571714	Brittle asthma	Observation	SNOMED	Undefined		111991000000106	19700101	20040731	U
+3656331	Asthma action plan declined	Observation	SNOMED	Context-dependent	S	11291000175103	20200731	20991231	
+4022592	Millers' asthma	Condition	SNOMED	Clinical Finding	S	11641008	20020131	20991231	
+3523311	Asthma clinical management plan	Observation	SNOMED	Undefined		116961000000106	19700101	20040731	U
+3565098	Asthma clinic administration	Type Concept	SNOMED	Admin Concept		11731000000100	20040131	20101001	U
+3657425	Asthma medication not indicated	Observation	SNOMED	Context-dependent	S	1187871000000108	20200805	20991231	
+3576797	Asthma clinical management plan	Observation	SNOMED	Undefined		121701000000107	19700101	20040731	D
+252658	Intrinsic asthma without status asthmaticus	Condition	SNOMED	Clinical Finding	S	12428000	20020131	20991231	
+35611666	Quality and Outcomes Framework general practice extraction - chronic asthma medication prescribable within general practice simple reference set	Metadata	SNOMED	Model Comp		12463601000001108	20150916	20991231	
+46270028	Severe persistent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	124991000119109	20150731	20991231	
+46273454	Moderate persistent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	125001000119103	20150731	20991231	
+46270029	Mild persistent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	125011000119100	20150731	20991231	
+46270030	Intermittent asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	125021000119107	20150731	20991231	
+4046879	Asthma Accident and Emergency attendance since last visit	Procedure	SNOMED	Procedure		134380003	20020131	20150131	U
+40297857	Asthma treatment compliance satisfactory	Observation	SNOMED	Procedure		134381004	20020131	20220127	U
+40297859	Asthma treatment compliance unsatisfactory	Observation	SNOMED	Procedure		134383001	20020131	20220127	U
+40297860	Asthma daytime symptoms	Observation	SNOMED	Clinical Finding		134384007	20020131	20220127	U
+46273487	Acute exacerbation of moderate persistent asthma	Condition	SNOMED	Clinical Finding		135171000119106	20150731	20210731	U
+46270082	Acute exacerbation of mild persistent asthma	Condition	SNOMED	Clinical Finding		135181000119109	20150731	20210731	U
+40300133	asthma causes night symptoms 1 to 2 times per month	Observation	SNOMED	Procedure		135854001	20020131	20020731	U
+40300134	Asthma never causes daytime symptoms	Observation	SNOMED	Procedure		135855000	20020131	20020731	U
+40300136	Asthma causes daytime symptoms 1 to 2 times per month	Observation	SNOMED	Procedure		135857008	20020131	20020731	U
+40300137	Asthma causes daytime symptoms 1 to 2 times per week	Observation	SNOMED	Procedure		135858003	20020131	20020731	U
+40300138	asthma causes daytime symptoms most days	Observation	SNOMED	Procedure		135859006	20020131	20020731	U
+40300141	Asthma limits walking up hills or stairs	Observation	SNOMED	Procedure		135861002	20020131	20220127	U
+40300142	Asthma limits walking on the flat	Observation	SNOMED	Procedure		135862009	20020131	20020731	U
+40300143	Number of asthma exacerbations in past year	Observation	SNOMED	Procedure		135863004	20020131	20220127	U
+40298013	FH: Asthma	Observation	SNOMED	Context-dependent		137774002	19700101	20020131	U
+40300394	Asthma society member	Condition	SNOMED	Clinical Finding		138412007	19700101	20020131	U
+40302112	H/O: asthma	Observation	SNOMED	Context-dependent		138796005	19700101	20020131	U
+40303860	Exercise-induced asthma	Condition	SNOMED	Clinical Finding		139202009	19700101	20020131	U
+37310765	Registration for access to online asthma self-management application	Observation	SNOMED	Procedure	S	143901000000108	20191001	20991231	
+37310762	Declined to register for access to online asthma self-management application	Observation	SNOMED	Context-dependent	S	143931000000102	20191001	20991231	
+40307509	Respiratory disease monitoring (& [asthma] or [chronic])	Procedure	SNOMED	Procedure		147853009	19700101	20020131	D
+40307535	Asthma disturbing sleep	Condition	SNOMED	Clinical Finding		147877003	19700101	20020131	U
+40307536	Asthma not disturbing sleep	Condition	SNOMED	Clinical Finding		147878008	19700101	20020131	U
+40307537	Asthma limiting activities	Condition	SNOMED	Clinical Finding		147879000	19700101	20020131	U
+40307538	Asthma not limiting activities	Condition	SNOMED	Clinical Finding		147880002	19700101	20020131	U
+40307542	Asthma management plan given	Procedure	SNOMED	Procedure		147883000	19700101	20020131	D
+40307543	Asthma severity	Procedure	SNOMED	Procedure		147884006	19700101	20020131	D
+40307544	Asthma prophylactic medication used	Procedure	SNOMED	Procedure		147885007	19700101	20020131	U
+40307552	Emergency asthma admission since last appointment	Procedure	SNOMED	Procedure		147892002	19700101	20220127	U
+40307553	Asthma restricts exercise	Condition	SNOMED	Clinical Finding		147893007	19700101	20020131	U
+40307554	Asthma never restricts exercise	Condition	SNOMED	Clinical Finding		147894001	19700101	20020131	U
+40307556	Asthma - currently dormant	Condition	SNOMED	Clinical Finding		147896004	19700101	20020131	U
+40307557	Asthma - currently active	Condition	SNOMED	Clinical Finding		147897008	19700101	20020131	U
+40309802	Asthma screening	Procedure	SNOMED	Procedure		148446006	19700101	20020131	U
+40312649	Further asthma - drug prevention	Procedure	SNOMED	Procedure		150988003	19700101	20020131	U
+40312651	Asthma control step 0	Procedure	SNOMED	Procedure		150990002	19700101	20020131	U
+40312653	Asthma control step 1	Procedure	SNOMED	Procedure		150991003	19700101	20020131	U
+40312654	Asthma control step 2	Procedure	SNOMED	Procedure		150992005	19700101	20020131	U
+40312655	Asthma control step 3	Procedure	SNOMED	Procedure		150993000	19700101	20020131	U
+40312656	Asthma control step 4	Procedure	SNOMED	Procedure		150994006	19700101	20020131	U
+40312657	Asthma control step 5	Procedure	SNOMED	Procedure		150995007	19700101	20020131	U
+40322619	Asthma leaflet given	Observation	SNOMED	Context-dependent		151370005	19700101	20020131	U
+40315757	Emergency admission, asthma	Procedure	SNOMED	Procedure		151715009	19700101	20020131	U
+40323849	Seen in asthma clinic	Condition	SNOMED	Clinical Finding		153445004	19700101	20020131	U
+40317526	Asthma administration: [monitoring] or [clinic]	Procedure	SNOMED	Procedure		153906000	19700101	20020131	D
+40317527	Attends asthma monitoring	Procedure	SNOMED	Procedure		153907009	19700101	20020131	U
+40317528	Refuses asthma monitoring	Procedure	SNOMED	Procedure		153908004	19700101	20020131	U
+40317529	Asthma monitor offer default	Procedure	SNOMED	Procedure		153909007	19700101	20020131	U
+40317530	Asthma monitoring call first letter	Procedure	SNOMED	Procedure		153910002	19700101	20020131	U
+40317532	Asthma monitoring call second letter	Procedure	SNOMED	Procedure		153911003	19700101	20020131	U
+40317533	Asthma monitoring call third letter	Procedure	SNOMED	Procedure		153912005	19700101	20020131	U
+40317534	Asthma monitoring call verbal invite	Procedure	SNOMED	Procedure		153913000	19700101	20020131	U
+40317535	Asthma monitoring call telephone invite	Procedure	SNOMED	Procedure		153914006	19700101	20020131	U
+40317536	Asthma monitoring deleted	Procedure	SNOMED	Procedure		153915007	19700101	20020131	U
+40317537	Asthma monitored (& check done)	Procedure	SNOMED	Procedure		153916008	19700101	20020131	U
+40317538	Asthma monitoring admin.NOS	Procedure	SNOMED	Procedure		153917004	19700101	20020131	D
+608758	Network Contract Directed Enhanced Service - short-acting beta-agonist (SABA) inhalers used in asthma and chronic obstructive pulmonary disease (COPD) excluding salbutamol simple reference set	Metadata	SNOMED	Model Comp		154081000001100	20210804	20991231	
+40318547	Patient in asthma study	Condition	SNOMED	Clinical Finding		154115000	19700101	20020131	U
+608763	Network Contract Directed Enhanced Service - non-salbutamol asthma and chronic obstructive pulmonary disease (COPD) metered dose inhalers simple reference set	Metadata	SNOMED	Model Comp		154191000001104	20210804	20991231	
+608764	Network Contract Directed Enhanced Service - non-salbutamol asthma and chronic obstructive pulmonary disease (COPD) inhalers simple reference set	Metadata	SNOMED	Model Comp		154231000001106	20210804	20991231	
+40316543	Asthma	Condition	SNOMED	Clinical Finding		155574008	19700101	20020131	U
+40316544	Extrinsic asthma - atopy (& pollen)	Condition	SNOMED	Clinical Finding		155575009	19700101	20020131	D
+40316545	Asthma: [intrinsic] or [late onset]	Condition	SNOMED	Clinical Finding		155576005	19700101	20020131	D
+40316546	Status asthmaticus	Condition	SNOMED	Clinical Finding		155577001	19700101	20020131	U
+40316547	Asthma attack (& NOS)	Condition	SNOMED	Clinical Finding		155578006	19700101	20020131	U
+40316548	Asthma: [NOS] or [attack]	Condition	SNOMED	Clinical Finding		155579003	19700101	20020131	D
+4051241	Family history of asthma	Observation	SNOMED	Context-dependent	S	160377001	20020131	20991231	
+761844	Inhaled steroid-dependent asthma	Condition	SNOMED	Clinical Finding	S	16055311000119107	20160301	20991231	
+4052339	Asthma society member	Observation	SNOMED	Clinical Finding	S	161105008	20020131	20991231	
+4059321	H/O: asthma	Observation	SNOMED	Context-dependent		161527007	20020131	20991231	
+4036799	Asthma resolved	Condition	SNOMED	Clinical Finding	S	162660004	20020131	20991231	
+3523365	Asthma resolved	Observation	SNOMED	Undefined		164481000000103	19700101	20050131	U
+3523380	Asthma resolved	Observation	SNOMED	Undefined		164991000000109	19700101	20050131	U
+3523398	Brittle asthma	Observation	SNOMED	Undefined		165621000000103	19700101	20050131	U
+37109103	Oral steroid-dependent asthma	Condition	SNOMED	Clinical Finding	S	16584951000119101	20170731	20991231	
+40336554	Extrinsic asthma	Condition	SNOMED	Clinical Finding		16862005	20020131	20030131	D
+3552716	Does not have asthma management plan	Observation	SNOMED	Undefined		169591000000104	19700101	20050131	U
+3552740	Referral to asthma clinic	Observation	SNOMED	Undefined		170191000000108	19700101	20050131	U
+40336718	Respiratory disease monitoring (& [asthma] or [chronic])	Procedure	SNOMED	Procedure		170607007	19700101	20020131	D
+4017025	Asthma disturbing sleep	Condition	SNOMED	Clinical Finding	S	170631002	20020131	20991231	
+4015947	Asthma causing night waking	Condition	SNOMED	Clinical Finding	S	170632009	20020131	20991231	
+4015819	Asthma disturbs sleep weekly	Condition	SNOMED	Clinical Finding	S	170633004	20020131	20991231	
+4017182	Asthma disturbs sleep frequently	Condition	SNOMED	Clinical Finding	S	170634005	20020131	20991231	
+4017183	Asthma not disturbing sleep	Condition	SNOMED	Clinical Finding	S	170635006	20020131	20991231	
+4017184	Asthma never disturbs sleep	Condition	SNOMED	Clinical Finding	S	170636007	20020131	20991231	
+4015948	Asthma limiting activities	Observation	SNOMED	Clinical Finding	S	170637003	20020131	20991231	
+4017026	Asthma not limiting activities	Condition	SNOMED	Clinical Finding	S	170638008	20020131	20991231	
+4017187	Asthma management plan given	Observation	SNOMED	Procedure		170641004	20020131	20140731	D
+4017188	Asthma severity	Observation	SNOMED	Procedure		170642006	20020131	20210131	D
+40337129	Occasional asthma	Procedure	SNOMED	Procedure		170643001	20020131	20020731	U
+40337130	Mild asthma	Procedure	SNOMED	Procedure		170644007	20020131	20020731	U
+40337131	Moderate asthma	Procedure	SNOMED	Procedure		170645008	20020131	20020731	U
+40337132	Severe asthma	Procedure	SNOMED	Procedure		170646009	20020131	20020731	U
+4017189	Asthma prophylactic medication used	Observation	SNOMED	Context-dependent	S	170647000	20020131	20991231	
+4015823	Emergency asthma admission since last appointment	Procedure	SNOMED	Procedure		170654006	20020131	20150131	U
+4015951	Asthma restricts exercise	Observation	SNOMED	Clinical Finding	S	170655007	20020131	20991231	
+4017191	Asthma sometimes restricts exercise	Observation	SNOMED	Clinical Finding	S	170656008	20020131	20991231	
+4017192	Asthma severely restricts exercise	Observation	SNOMED	Clinical Finding	S	170657004	20020131	20991231	
+4017293	Asthma never restricts exercise	Condition	SNOMED	Clinical Finding	S	170658009	20020131	20991231	
+40337152	Asthma - currently dormant	Condition	SNOMED	Clinical Finding		170664002	19700101	20020131	U
+40337153	Asthma - currently active	Condition	SNOMED	Clinical Finding		170665001	19700101	20020131	U
+4062501	Asthma screening	Measurement	SNOMED	Procedure	S	171231001	20020131	20991231	
+46270322	Intermittent asthma uncontrolled	Condition	SNOMED	Clinical Finding	S	1741000119102	20150731	20991231	
+3552996	Does not have asthma management plan	Observation	SNOMED	Undefined		174171000000100	19700101	20050131	U
+3553021	Referral to asthma clinic	Observation	SNOMED	Undefined		174851000000102	19700101	20050131	U
+43530693	Acute exacerbation of chronic obstructive airways disease with asthma	Condition	SNOMED	Clinical Finding	S	1751000119100	20130731	20991231	
+43530700	Chronic obstructive airway disease with asthma	Condition	SNOMED	Clinical Finding		1761000119103	20130731	20150731	U
+44788435	Does not have asthma management plan	Observation	SNOMED	Clinical Finding	S	176711000000100	20050131	20991231	
+4080516	Printers' asthma	Condition	SNOMED	Clinical Finding	S	18041002	20020131	20991231	
+4057863	Asthmatoid wheeze	Condition	SNOMED	Clinical Finding	S	18197001	20020131	20991231	
+4056816	Further asthma - drug prevention	Observation	SNOMED	Procedure	S	182724005	20020131	20991231	
+4080962	Asthma control step 0	Procedure	SNOMED	Procedure	S	182726007	20020131	20991231	
+4080963	Asthma control step 1	Procedure	SNOMED	Procedure	S	182727003	20020131	20991231	
+4080964	Asthma control step 2	Procedure	SNOMED	Procedure	S	182728008	20020131	20991231	
+4082252	Asthma control step 3	Procedure	SNOMED	Procedure	S	182729000	20020131	20991231	
+4057273	Asthma control step 4	Procedure	SNOMED	Procedure	S	182730005	20020131	20991231	
+4082254	Asthma control step 5	Procedure	SNOMED	Procedure	S	182731009	20020131	20991231	
+4079383	Asthma leaflet given	Observation	SNOMED	Context-dependent	S	183099005	20020131	20991231	
+4084667	Emergency hospital admission for asthma	Observation	SNOMED	Procedure	S	183478001	20020131	20991231	
+4083422	Seen in asthma clinic	Observation	SNOMED	Clinical Finding	S	185242005	20020131	20991231	
+4085315	Attends asthma monitoring	Observation	SNOMED	Clinical Finding	S	185728001	20020131	20991231	
+4088882	Refuses asthma monitoring	Observation	SNOMED	Clinical Finding		185729009	20020131	20180731	U
+4088883	Asthma monitor offer default	Observation	SNOMED	Clinical Finding	S	185730004	20020131	20991231	
+4086119	Asthma monitoring call first letter	Observation	SNOMED	Procedure	S	185731000	20020131	20991231	
+4085316	Asthma monitoring call second letter	Observation	SNOMED	Procedure	S	185732007	20020131	20991231	
+4085318	Asthma monitoring call third letter	Observation	SNOMED	Procedure	S	185734008	20020131	20991231	
+4090836	Asthma monitoring call verbal invite	Observation	SNOMED	Procedure	S	185735009	20020131	20991231	
+4090837	Asthma monitoring call telephone invite	Observation	SNOMED	Procedure	S	185736005	20020131	20991231	
+4086120	Asthma monitoring deleted	Observation	SNOMED	Clinical Finding	S	185737001	20020131	20991231	
+40380713	Asthma monitored (& check done)	Condition	SNOMED	Clinical Finding		185738006	19700101	20220127	U
+4090381	Patient in asthma study	Observation	SNOMED	Clinical Finding	S	185940009	20020131	20991231	
+3523762	Occupational asthma	Observation	SNOMED	Undefined		186071000000103	19700101	20050731	U
+3523763	Work aggravated asthma	Observation	SNOMED	Undefined		186081000000101	19700101	20050731	U
+40381380	Asthma (disorder)	Condition	SNOMED	Clinical Finding		187687003	19700101	20020131	U
+3523900	Occupational asthma	Observation	SNOMED	Undefined		189511000000105	19700101	20050731	U
+3523901	Work aggravated asthma	Observation	SNOMED	Undefined		189521000000104	19700101	20050731	U
+40389375	Allergic asthma with stated cause	Condition	SNOMED	Clinical Finding		1945002	20020131	20070131	D
+40392299	(Left ventricular: [failure] or [impaired function]) or (cardiac asthma) or (acute pulmonary edema)	Condition	SNOMED	Clinical Finding		195113008	19700101	20020131	D
+40395540	Asthmatic bronchitis	Condition	SNOMED	Clinical Finding		195939005	19700101	20020131	D
+256448	Chronic asthmatic bronchitis	Condition	SNOMED	Clinical Finding	S	195949008	20020131	20991231	
+317009	Asthma	Condition	SNOMED	Clinical Finding	S	195967001	20020131	20991231	
+40395874	Asthma: [extrinsic - atopic] or [allergic] or [pollen] or [childhood] or [with hay fever]	Condition	SNOMED	Clinical Finding		195968006	19700101	20020131	D
+40395876	(Hay fever with asthma) or (extrinsic asthma without status asthmaticus)	Condition	SNOMED	Clinical Finding		195970002	19700101	20220127	U
+40395878	Extrinsic asthma with: [asthma attack] or [status asthmaticus]	Condition	SNOMED	Clinical Finding		195971003	19700101	20020131	D
+4112831	Extrinsic asthma NOS	Condition	SNOMED	Clinical Finding		195972005	20020131	20220127	U
+40395880	(Intrinsic asthma) or (late onset asthma)	Condition	SNOMED	Clinical Finding		195973000	19700101	20220127	U
+40395881	Intrinsic asthma without status asthmaticus	Condition	SNOMED	Clinical Finding		195974006	19700101	20020131	U
+40395882	Intrinsic asthma with: [asthma attack] or [status asthmaticus]	Condition	SNOMED	Clinical Finding		195975007	19700101	20020131	D
+4112669	Intrinsic asthma NOS	Condition	SNOMED	Clinical Finding		195976008	20020131	20100131	U
+4110051	Mixed asthma	Condition	SNOMED	Clinical Finding	S	195977004	20020131	20991231	
+40395885	Exacerbation of asthma	Condition	SNOMED	Clinical Finding		195978009	19700101	20020131	U
+4112670	Asthma unspecified	Condition	SNOMED	Clinical Finding		195979001	20020131	20220127	U
+40395887	(Severe asthma attack) or (status asthmaticus NOS)	Condition	SNOMED	Clinical Finding		195980003	19700101	20020131	D
+40395889	Asthma attack (& NOS)	Condition	SNOMED	Clinical Finding		195981004	19700101	20020131	D
+40395890	Late onset asthma	Condition	SNOMED	Clinical Finding		195982006	19700101	20020131	U
+40395891	(Asthma: [exercise induced] or [allergic NEC] or [NOS]) or (allergic bronchitis NEC)	Observation	SNOMED	Undefined		195983001	19700101	20020131	D
+4057952	Meat-wrappers' asthma	Condition	SNOMED	Clinical Finding	S	19849005	20020131	20991231	
+44788870	Asthma outreach clinic	Visit	SNOMED	Location		198971000000102	20060401	20991231	
+44788779	Asthma trigger - respiratory infection	Condition	SNOMED	Clinical Finding	S	201031000000108	20060401	20991231	
+44788780	Asthma trigger - seasonal	Condition	SNOMED	Clinical Finding	S	201041000000104	20060401	20991231	
+44788781	Asthma trigger: animals	Condition	SNOMED	Clinical Finding	S	201051000000101	20060401	20991231	
+44788789	Asthma trigger - cold air	Condition	SNOMED	Clinical Finding	S	201191000000108	20060401	20991231	
+44788824	Asthma trigger - damp	Condition	SNOMED	Clinical Finding	S	201201000000105	20060401	20991231	
+44788825	Asthma trigger - emotion	Condition	SNOMED	Clinical Finding	S	201211000000107	20060401	20991231	
+3521979	Asthma administration: [monitoring] or [clinic]	Type Concept	SNOMED	Admin Concept		20191000000103	19700101	20040131	D
+44789217	Nocturnal asthma	Condition	SNOMED	Clinical Finding		202571000000105	20060401	20151001	U
+3575186	Asthma monitoring administration NOS	Type Concept	SNOMED	Admin Concept		20581000000108	20040131	20101001	D
+3553487	Asthma outreach clinic	Observation	SNOMED	Undefined		207461000000104	19700101	20060401	U
+3553488	Asthma outreach clinic	Observation	SNOMED	Undefined		207471000000106	19700101	20060401	U
+3597254	Taumasthman tablet	Observation	SNOMED	Context-dependent		2098601000001109	20040131	20040731	D
+4020163	Antiasthmatic poisoning NOS	Condition	SNOMED	Clinical Finding		212766001	20020131	20220127	U
+40410639	Asthma	Condition	SNOMED	Clinical Finding		21341004	19700101	20020131	D
+440912	Adverse reaction to antiasthmatic	Observation	SNOMED	Clinical Finding	S	219036002	20020131	20991231	
+40421675	Adverse reaction to theophylline - asthma	Observation	SNOMED	Clinical Finding		219040006	20020131	20040131	U
+4317234	Adverse reaction to antiasthmatic NOS	Observation	SNOMED	Clinical Finding		219043008	20020131	20100131	D
+40424943	[X]Antiasthmatics causing adverse effects in therapeutic use, not elsewhere classified	Observation	SNOMED	Clinical Finding		223108004	20020131	20090131	D
+3568225	Asthma monitoring administration	Type Concept	SNOMED	Admin Concept		22491000000108	20040131	20101001	U
+4075237	Brittle asthma	Condition	SNOMED	Clinical Finding	S	225057002	20020131	20991231	
+3656688	Coronavirus disease 2019 (COVID-19) general practice extraction - severe asthma medication simple reference set	Metadata	SNOMED	Model Comp		225591000001109	20200415	20991231	
+4051466	Childhood asthma	Condition	SNOMED	Clinical Finding	S	233678006	20020131	20991231	
+4119298	Late onset asthma	Condition	SNOMED	Clinical Finding	S	233679003	20020131	20991231	
+40436408	Allergic asthma	Condition	SNOMED	Clinical Finding		233680000	19700101	20020131	D
+259055	Extrinsic asthma with asthma attack	Condition	SNOMED	Clinical Finding		233681001	20020131	20150131	U
+4119299	Allergic asthma NEC	Condition	SNOMED	Clinical Finding		233682008	20020131	20220127	U
+4123253	Hay fever with asthma	Condition	SNOMED	Clinical Finding	S	233683003	20020131	20991231	
+40436413	Allergic non-atopic asthma	Condition	SNOMED	Clinical Finding		233684009	20020131	20030131	U
+254980	Intrinsic asthma with asthma attack	Condition	SNOMED	Clinical Finding		233685005	20020131	20150131	U
+4120260	Aspirin-sensitive asthma with nasal polyps	Observation	SNOMED	Clinical Finding		233686006	20020131	20170731	U
+4119300	Colophony asthma	Condition	SNOMED	Clinical Finding	S	233687002	20020131	20991231	
+4120261	Sulfite-induced asthma	Condition	SNOMED	Clinical Finding	S	233688007	20020131	20991231	
+4123254	Factitious asthma	Condition	SNOMED	Clinical Finding	S	233690008	20020131	20991231	
+252942	Asthmatic pulmonary eosinophilia	Condition	SNOMED	Clinical Finding	S	233691007	20020131	20991231	
+46273635	Steroid dependent asthma	Condition	SNOMED	Clinical Finding	S	2360001000004109	20150731	20991231	
+4086436	Poisoning by herbal asthma mixture	Condition	SNOMED	Clinical Finding		241758002	20020131	20210731	D
+40345716	Allergic atopic asthma	Condition	SNOMED	Clinical Finding		266358007	19700101	20020131	D
+40345717	Extrinsic asthma without status asthmaticus	Condition	SNOMED	Clinical Finding		266359004	19700101	20020131	U
+40345719	Extrinsic asthma with status asthmaticus	Condition	SNOMED	Clinical Finding		266360009	19700101	20020131	U
+4145497	Intrinsic asthma	Condition	SNOMED	Clinical Finding	S	266361008	20020131	20991231	
+40345721	Intrinsic asthma with status asthmaticus	Condition	SNOMED	Clinical Finding		266362001	19700101	20220127	U
+4144104	Status asthmaticus NOS	Condition	SNOMED	Clinical Finding		266363006	20020131	20220127	U
+4141621	Asthma attack	Condition	SNOMED	Clinical Finding		266364000	20020131	20150131	U
+4141622	Asthma NOS	Condition	SNOMED	Clinical Finding		266365004	20020131	20220127	U
+40345758	Extrinsic asthma - atopy (& pollen)	Condition	SNOMED	Clinical Finding		266396008	19700101	20020131	D
+40345759	Asthma: [intrinsic] or [late onset]	Condition	SNOMED	Clinical Finding		266397004	19700101	20020131	D
+40345760	Asthma: [NOS] or [attack]	Condition	SNOMED	Clinical Finding		266398009	19700101	20020131	D
+4148757	Asthma monitoring check done	Observation	SNOMED	Clinical Finding	S	270442000	20020131	20991231	
+4170623	Asthma attack NOS	Condition	SNOMED	Clinical Finding		274105009	20020131	20100131	U
+4077802	Asthma monitoring	Observation	SNOMED	Procedure	S	275908000	20020131	20991231	
+40362681	Asthmatic bronchitis	Condition	SNOMED	Clinical Finding		278517007	20020131	20220127	U
+257581	Acute asthma	Condition	SNOMED	Clinical Finding	S	281239006	20020131	20991231	
+4160262	Accidental poisoning by herbal asthma mixture	Condition	SNOMED	Clinical Finding		291366007	20020131	20210731	D
+4160263	Intentional poisoning by herbal asthma mixture	Condition	SNOMED	Clinical Finding		291367003	20020131	20210731	D
+4157218	Poisoning by herbal asthma mixture of undetermined intent	Condition	SNOMED	Clinical Finding		291368008	20020131	20210731	D
+316577	Poisoning by antiasthmatic	Condition	SNOMED	Clinical Finding	S	2935001	20020131	20991231	
+4199706	Asthma control steps	Procedure	SNOMED	Procedure	S	302220000	20020131	20991231	
+44795853	Royal College of Physicians asthma assessment	Measurement	SNOMED	Staging / Scales	S	302331000000106	20071001	20991231	
+3526770	Royal College of Physicians asthma outcome measure	Observation	SNOMED	Undefined		302341000000102	19700101	20071001	U
+3526771	Royal College of Physicians asthma outcome measure	Observation	SNOMED	Undefined		302351000000104	19700101	20071001	U
+4147509	Allergic-infective asthma	Condition	SNOMED	Clinical Finding		30352005	20020131	20190131	D
+4125022	Acute asthma	Condition	SNOMED	Clinical Finding		304527002	20020131	20210731	U
+4145108	Recent asthma management	Observation	SNOMED	Procedure		307580006	20020131	20150731	D
+4203281	Asthma monitoring call	Observation	SNOMED	Procedure	S	308500005	20020131	20991231	
+4202191	Asthma monitoring status	Observation	SNOMED	Clinical Finding	S	308501009	20020131	20991231	
+4194289	Asthma - currently active	Condition	SNOMED	Clinical Finding	S	312453004	20020131	20991231	
+4207479	Asthma - currently dormant	Condition	SNOMED	Clinical Finding	S	312454005	20020131	20991231	
+443801	Exercise-induced asthma	Condition	SNOMED	Clinical Finding	S	31387002	20020131	20991231	
+40524344	[V]Family history of asthma	Observation	SNOMED	Context-dependent		315823007	20020131	20090131	D
+37007748	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States))	Drug	SNOMED	Pharma/Biol Product		31681811000001107	20160302	20991231	
+37014070	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States)) 30 vial	Drug	SNOMED	Pharma/Biol Product		31682011000001109	20160302	20991231	
+40521909	[X]Family history of asthma and other chronic lower respiratory diseases	Observation	SNOMED	Context-dependent		316835004	20020131	20090131	D
+40521592	Asthma prophylaxis	Drug	SNOMED	Pharma/Biol Product		320636008	20020131	20080131	U
+40521593	Sodium cromoglycate [asthma]	Drug	SNOMED	Pharma/Biol Product		320637004	20020131	20220127	U
+40521605	Ketotifen [asthma prophylaxis]	Drug	SNOMED	Pharma/Biol Product		320662004	20020131	20070731	U
+40521613	Nedocromil sodium [asthma]	Drug	SNOMED	Pharma/Biol Product		320672001	20020131	20080131	D
+3575495	Asthma administration: [monitoring] or [clinic]	Observation	SNOMED	Undefined		32861000000103	19700101	20040131	D
+3575496	Asthma monitoring admin.NOS	Observation	SNOMED	Undefined		32871000000105	19700101	20040131	D
+4143474	Bakers' asthma	Condition	SNOMED	Clinical Finding	S	34015007	20020131	20991231	
+44792262	Asthma trigger - airborne dust	Condition	SNOMED	Clinical Finding	S	340891000000106	20081001	20991231	
+44792263	Asthma trigger - exercise	Condition	SNOMED	Clinical Finding	S	340901000000107	20081001	20991231	
+44792264	Asthma trigger - pollen	Condition	SNOMED	Clinical Finding	S	340911000000109	20081001	20991231	
+44799960	Asthma trigger - tobacco smoke	Condition	SNOMED	Clinical Finding	S	340921000000103	20081001	20991231	
+44792265	Asthma trigger - warm air	Condition	SNOMED	Clinical Finding	S	340931000000101	20081001	20991231	
+4227776	Corticosteroids used in the treatment of asthma	Drug	SNOMED	Pharma/Biol Product		353867005	20020131	20180731	D
+4236213	Antiasthmatic agent	Drug	SNOMED	Pharma/Biol Product		360253007	20020131	20991231	
+40545245	Asthma accident and emergency attendance since last visit	Procedure	SNOMED	Procedure		366786000	19700101	20020131	U
+40545246	Asthma treatment compliance satisfactory	Condition	SNOMED	Clinical Finding		366787009	19700101	20020131	U
+40545247	Asthma treatment compliance unsatisfactory	Condition	SNOMED	Clinical Finding		366788004	19700101	20020131	U
+40545248	Asthma causes night symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding		366789007	19700101	20020131	U
+40545249	Asthma never causes daytime symptoms	Condition	SNOMED	Clinical Finding		366790003	19700101	20020131	U
+40545251	Asthma causes daytime symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding		366791004	19700101	20020131	U
+40545252	Asthma causes daytime symptoms 1 to 2 times per week	Condition	SNOMED	Clinical Finding		366792006	19700101	20020131	U
+40545253	Asthma causes daytime symptoms most days	Condition	SNOMED	Clinical Finding		366793001	19700101	20020131	U
+40545254	Asthma limits walking up hills or stairs	Condition	SNOMED	Clinical Finding		366794007	19700101	20020131	U
+40545255	Asthma limits walking on the flat	Condition	SNOMED	Clinical Finding		366795008	19700101	20020131	U
+40545256	Number of asthma exacerbations in past year	Condition	SNOMED	Clinical Finding		366796009	19700101	20020131	U
+40545661	Asthma accident and emergency attendance since last visit	Procedure	SNOMED	Procedure		366864005	19700101	20020131	U
+40545662	Asthma treatment compliance satisfactory	Condition	SNOMED	Clinical Finding		366865006	19700101	20020131	U
+40545663	Asthma treatment compliance unsatisfactory	Condition	SNOMED	Clinical Finding		366866007	19700101	20020131	U
+40545664	Asthma causes night symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding		366867003	19700101	20020131	U
+40545665	Asthma never causes daytime symptoms	Condition	SNOMED	Clinical Finding		366868008	19700101	20020131	U
+40545666	Asthma causes daytime symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding		366869000	19700101	20020131	U
+40545667	Asthma causes daytime symptoms 1 to 2 times per week	Condition	SNOMED	Clinical Finding		366870004	19700101	20020131	U
+40545669	Asthma causes daytime symptoms most days	Condition	SNOMED	Clinical Finding		366871000	19700101	20020131	U
+40545670	Asthma limits walking up hills or stairs	Condition	SNOMED	Clinical Finding		366872007	19700101	20020131	U
+40545671	Asthma limits walking on the flat	Condition	SNOMED	Clinical Finding		366873002	19700101	20020131	U
+40545672	Number of asthma exacerbations in past year	Observation	SNOMED	Observable Entity	S	366874008	20170131	20991231	
+40546155	Asthma daytime symptoms	Condition	SNOMED	Clinical Finding		367039004	19700101	20020131	U
+40546234	Exacerbation of asthma	Condition	SNOMED	Clinical Finding		367110001	19700101	20020131	U
+40547144	Asthma daytime symptoms	Condition	SNOMED	Clinical Finding		367268006	19700101	20020131	U
+40547227	FH: Asthma	Observation	SNOMED	Context-dependent		367342002	19700101	20020131	U
+4279553	Eosinophilic asthma	Condition	SNOMED	Clinical Finding	S	367542003	20020131	20991231	
+40544275	Status asthmaticus	Condition	SNOMED	Clinical Finding		36979006	19700101	20220127	U
+4156136	Asthma causes daytime symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding	S	370202007	20020731	20991231	
+4155464	Asthma causes daytime symptoms 1 to 2 times per week	Observation	SNOMED	Clinical Finding	S	370203002	20020731	20991231	
+4152911	Asthma causes daytime symptoms most days	Condition	SNOMED	Clinical Finding	S	370204008	20020731	20991231	
+4152292	Asthma causes night symptoms 1 to 2 times per month	Condition	SNOMED	Clinical Finding	S	370205009	20020731	20991231	
+4155465	Asthma limits walking on the flat	Observation	SNOMED	Clinical Finding	S	370206005	20020731	20991231	
+4152417	Asthma limits walking up hills or stairs	Observation	SNOMED	Clinical Finding	S	370207001	20020731	20991231	
+4152418	Asthma never causes daytime symptoms	Condition	SNOMED	Clinical Finding	S	370208006	20020731	20991231	
+4152912	Number of asthma exacerbations in past year	Observation	SNOMED	Clinical Finding		370210008	20020731	20170131	U
+4155468	Mild asthma	Condition	SNOMED	Clinical Finding	S	370218001	20020731	20991231	
+4155469	Moderate asthma	Condition	SNOMED	Clinical Finding	S	370219009	20020731	20991231	
+4155470	Occasional asthma	Condition	SNOMED	Clinical Finding	S	370220003	20020731	20991231	
+4152913	Severe asthma	Condition	SNOMED	Clinical Finding	S	370221004	20020731	20991231	
+4152420	Asthma treatment compliance unsatisfactory	Condition	SNOMED	Clinical Finding	S	370225008	20020731	20991231	
+4155473	Asthma treatment compliance satisfactory	Condition	SNOMED	Clinical Finding	S	370226009	20020731	20991231	
+4161595	Asthma daytime symptoms	Condition	SNOMED	Clinical Finding	S	373899003	20020731	20991231	
+4191479	Allergic asthma	Condition	SNOMED	Clinical Finding	S	389145006	20030131	20991231	
+40561687	Extrinsic asthma	Condition	SNOMED	Clinical Finding		389146007	20030131	20070131	U
+40564962	Change in asthma management plan	Procedure	SNOMED	Procedure		389853000	19700101	20030131	U
+40564966	Step up change in asthma management plan	Procedure	SNOMED	Procedure		389857004	19700101	20030131	U
+40564967	Step down change in asthma management plan	Procedure	SNOMED	Procedure		389858009	19700101	20030131	U
+40564969	Absent from work or school due to asthma	Observation	SNOMED	Context-dependent		389860006	19700101	20030131	U
+40564972	Asthma monitoring due	Condition	SNOMED	Clinical Finding		389862003	19700101	20030131	U
+40560099	Change in asthma management plan	Procedure	SNOMED	Procedure		390585000	19700101	20030131	U
+40560103	Step up change in asthma management plan	Procedure	SNOMED	Procedure		390589006	19700101	20030131	U
+40560104	Step down change in asthma management plan	Procedure	SNOMED	Procedure		390590002	19700101	20030131	U
+40560107	Absent from work or school due to asthma	Observation	SNOMED	Context-dependent		390592005	19700101	20030131	U
+40560109	Asthma monitoring due	Procedure	SNOMED	Procedure		390594006	19700101	20030131	U
+4308356	Asthma finding	Condition	SNOMED	Clinical Finding	S	390798007	20030131	20991231	
+4305736	Change in asthma management plan	Observation	SNOMED	Procedure	S	390872009	20030131	20991231	
+4190879	Step up change in asthma management plan	Observation	SNOMED	Procedure	S	390877003	20030131	20991231	
+4308378	Step down change in asthma management plan	Observation	SNOMED	Procedure	S	390878008	20030131	20991231	
+4193019	Absent from work or school due to asthma	Observation	SNOMED	Clinical Finding	S	390921001	20030131	20991231	
+4193023	Asthma monitoring due	Observation	SNOMED	Clinical Finding	S	390940007	20030131	20991231	
+44794188	[X]Antiasthmatics causing adverse effects in therapeutic use, not elsewhere classified	Observation	SNOMED	Clinical Finding		392391000000105	20090401	20151001	U
+40561392	Suspected asthma	Observation	SNOMED	Context-dependent		392739007	19700101	20030131	U
+40563015	Asthma annual review	Procedure	SNOMED	Procedure		393030008	19700101	20030131	U
+40563017	Asthma follow-up	Procedure	SNOMED	Procedure		393031007	19700101	20030131	U
+40563020	Asthma night-time symptoms	Condition	SNOMED	Clinical Finding		393036002	19700101	20030131	U
+40563070	Asthma medication review	Procedure	SNOMED	Procedure		393082005	19700101	20030131	U
+40572458	Suspected asthma	Observation	SNOMED	Context-dependent		393694000	19700101	20030131	U
+40566164	Asthma annual review	Procedure	SNOMED	Procedure		393986005	19700101	20030131	U
+40566165	Asthma follow-up	Procedure	SNOMED	Procedure		393987001	19700101	20030131	U
+40566169	Asthma night-time symptoms	Condition	SNOMED	Clinical Finding		393992004	19700101	20030131	U
+40566215	Asthma medication review	Procedure	SNOMED	Procedure		394033000	19700101	20030131	U
+4214588	Asthma annual review	Observation	SNOMED	Procedure	S	394700004	20030131	20991231	
+4214589	Asthma follow-up	Observation	SNOMED	Procedure	S	394701000	20030131	20991231	
+4214676	Asthma medication review	Procedure	SNOMED	Procedure	S	394720003	20030131	20991231	
+4192890	Suspected asthma	Observation	SNOMED	Context-dependent	S	394967008	20030131	20991231	
+4191827	Asthma night-time symptoms	Condition	SNOMED	Clinical Finding	S	395022009	20030131	20991231	
+3550558	Asthma confirmed	Observation	SNOMED	Undefined		39531000000101	19700101	20040131	U
+4265861	Asthma trigger finding	Condition	SNOMED	Clinical Finding	S	397579009	20030731	20991231	
+4268284	Asthma trigger	Observation	SNOMED	Observable Entity	S	400987003	20030731	20991231	
+43530745	Asthma with irreversible airway obstruction	Condition	SNOMED	Clinical Finding	S	401000119107	20130731	20991231	
+4293727	Asthma education	Procedure	SNOMED	Procedure	S	401135008	20030731	20991231	
+4293732	Asthma monitoring by nurse	Observation	SNOMED	Procedure	S	401182001	20030731	20991231	
+4293733	Asthma monitoring by doctor	Observation	SNOMED	Procedure	S	401183006	20030731	20991231	
+4293734	Asthma confirmed	Condition	SNOMED	Context-dependent	S	401193004	20030731	20991231	
+4232595	Platinum asthma	Condition	SNOMED	Clinical Finding	S	404804003	20040131	20991231	
+4225553	Cheese-makers' asthma	Condition	SNOMED	Clinical Finding	S	404806001	20040131	20991231	
+4225554	Isocyanate induced asthma	Condition	SNOMED	Clinical Finding	S	404808000	20040131	20991231	
+4225719	Asthma self-management behavior	Observation	SNOMED	Observable Entity	S	405010009	20040131	20991231	
+4233784	Asthmatic bronchitis	Condition	SNOMED	Clinical Finding	S	405944004	20040131	20991231	
+4235703	Asthma management	Observation	SNOMED	Procedure	S	406162001	20040131	20991231	
+3550616	Asthma monitoring by nurse	Observation	SNOMED	Undefined		40621000000105	19700101	20040131	U
+3550617	Asthma monitoring by doctor	Observation	SNOMED	Undefined		40631000000107	19700101	20040131	U
+3522331	Health education - asthma	Observation	SNOMED	Undefined		40701000000108	19700101	20040131	U
+4250128	Aspirin-induced asthma	Condition	SNOMED	Clinical Finding	S	407674008	20040131	20991231	
+313236	Cough variant asthma	Condition	SNOMED	Clinical Finding	S	409663006	20040731	20991231	
+44795595	[V]Family history of asthma	Observation	SNOMED	Context-dependent		412351000000109	20090401	20161001	U
+4136456	Asthma clinical management plan	Observation	SNOMED	Qualifier Value		412775002	20040731	20180131	U
+4213782	Referral to asthma clinic	Observation	SNOMED	Procedure	S	415265005	20050131	20991231	
+4217558	Detergent asthma	Condition	SNOMED	Clinical Finding	S	41553006	20020131	20991231	
+40595784	Work aggravated asthma	Condition	SNOMED	Clinical Finding		416601004	20050731	20070131	U
+3550649	Asthma confirmed	Observation	SNOMED	Undefined		41791000000109	19700101	20040131	U
+4301938	Tea-makers' asthma	Condition	SNOMED	Clinical Finding	S	418395004	20060131	20991231	
+4170900	Asthmatic pulmonary alveolitis	Condition	SNOMED	Clinical Finding	S	41997000	20020131	20991231	
+4309833	Non-IgE mediated allergic asthma	Condition	SNOMED	Clinical Finding	S	423889005	20070131	20991231	
+4312524	Substance induced asthma	Condition	SNOMED	Clinical Finding	S	424199006	20070131	20991231	
+312950	IgE-mediated allergic asthma	Condition	SNOMED	Clinical Finding	S	424643009	20070131	20991231	
+4138760	Exacerbation of intermittent asthma	Condition	SNOMED	Clinical Finding	S	425969006	20070731	20991231	
+4145356	Severe persistent asthma	Condition	SNOMED	Clinical Finding	S	426656000	20070731	20991231	
+4143828	Mild persistent asthma	Condition	SNOMED	Clinical Finding	S	426979002	20070731	20991231	
+4142738	Moderate persistent asthma	Condition	SNOMED	Clinical Finding	S	427295004	20070731	20991231	
+4144757	Exacerbation of persistent asthma	Condition	SNOMED	Clinical Finding		427354000	20070731	20150731	D
+4141978	Intermittent asthma	Condition	SNOMED	Clinical Finding	S	427603009	20070731	20991231	
+4146581	Mild intermittent asthma	Condition	SNOMED	Clinical Finding	S	427679007	20070731	20991231	
+765656	Asthma trigger education	Procedure	SNOMED	Procedure	S	428511000124103	20120901	20991231	
+765657	Asthma attack education	Procedure	SNOMED	Procedure	S	428531000124109	20120901	20991231	
+3550708	Asthma monitoring by nurse	Observation	SNOMED	Undefined		42931000000103	19700101	20040131	U
+3550709	Asthma monitoring by doctor	Observation	SNOMED	Undefined		42941000000107	19700101	20040131	U
+3522446	Health education - asthma	Procedure	SNOMED	Procedure		43011000000101	19700101	20040131	U
+44797404	[X]Family history of asthma and other chronic lower respiratory diseases	Observation	SNOMED	Context-dependent		431481000000106	20090401	20151001	U
+765844	Documentation of asthma medication action plan	Observation	SNOMED	Procedure	S	432961000124106	20120901	20991231	
+763381	Asthma treatment assessment questionnaire	Measurement	SNOMED	Staging / Scales	S	439821000124100	20140301	20991231	
+4207298	Knowledge level about asthma management	Observation	SNOMED	Observable Entity	S	440666007	20090131	20991231	
+40481763	Acute exacerbation of chronic asthmatic bronchitis	Condition	SNOMED	Clinical Finding	S	442025000	20090731	20991231	
+36713252	Asthma medication not prescribed	Observation	SNOMED	Context-dependent	S	4431000175103	20170131	20991231	
+40480107	Asthma control test score	Measurement	SNOMED	Observable Entity	S	443117005	20100131	20991231	
+40481511	Asthma control test	Measurement	SNOMED	Staging / Scales	S	443450003	20100131	20991231	
+40482037	Mini asthma quality of life questionnaire	Measurement	SNOMED	Staging / Scales	S	445074007	20100731	20991231	
+37395612	Asthma action plan not done	Observation	SNOMED	Context-dependent	S	4451000175106	20160731	20991231	
+40482943	Asthma nurse specialist	Provider	SNOMED	Social Context		445313000	20100731	20991231	
+40483397	Seasonal asthma	Condition	SNOMED	Clinical Finding	S	445427006	20100731	20991231	
+40483854	Asthma control questionnaire	Measurement	SNOMED	Staging / Scales	S	445531003	20100731	20991231	
+3550766	Asthma monitoring by nurse	Procedure	SNOMED	Procedure		44571000000104	19700101	20040131	U
+3550767	Asthma monitoring by doctor	Procedure	SNOMED	Procedure		44581000000102	19700101	20040131	U
+3550773	Asthma confirmed	Observation	SNOMED	Context-dependent		44681000000101	19700101	20040131	U
+764331	Referral for management of asthma	Observation	SNOMED	Procedure	S	453601000124105	20170301	20991231	
+37208056	Asthma Predictive Index	Measurement	SNOMED	Observable Entity	S	460011000124102	20190301	20991231	
+3550832	Asthma trigger	Observation	SNOMED	Undefined		46671000000107	19700101	20040131	U
+3550845	Asthma monitoring by nurse	Observation	SNOMED	Undefined		47111000000105	19700101	20040131	U
+43021747	Asthma never causes night symptoms	Observation	SNOMED	Context-dependent		473391009	20130131	20190131	D
+3550851	Asthma trigger	Observation	SNOMED	Undefined		47611000000100	19700101	20040131	U
+3575808	Asthma monitoring by nurse	Observation	SNOMED	Undefined		48331000000100	19700101	20040131	D
+3564735	Asthma control test	Measurement	SNOMED	Staging / Scales		503301000000106	20091001	20100401	U
+3581628	Asthma control test	Observation	SNOMED	Undefined		503311000000108	19700101	20091001	D
+3581629	Asthma control test	Observation	SNOMED	Undefined		503321000000102	19700101	20091001	D
+3556874	Asthma control test score	Observation	SNOMED	Observable Entity		503331000000100	20091001	20100401	U
+44802634	Assessment using asthma control test	Procedure	SNOMED	Procedure	S	503351000000107	20091001	20991231	
+3563811	Asthma control questionnaire	Measurement	SNOMED	Staging / Scales		512181000000107	20100401	20101001	U
+3581773	Asthma control questionnaire	Observation	SNOMED	Undefined		512191000000109	19700101	20100401	D
+3572888	Mini asthma quality of life questionnaire	Measurement	SNOMED	Staging / Scales		512201000000106	20100401	20101001	U
+3581775	Mini asthma quality of life questionnaire	Observation	SNOMED	Undefined		512211000000108	19700101	20100401	D
+3557058	Under care of asthma specialist nurse	Observation	SNOMED	Clinical Finding		512231000000100	20100401	20140401	U
+3557059	Under care of asthma specialist nurse	Observation	SNOMED	Undefined		512241000000109	19700101	20100401	U
+44802254	No family history of asthma	Observation	SNOMED	Context-dependent		513551000000103	20100401	20150401	U
+3530118	No family history of asthma	Observation	SNOMED	Undefined		513561000000100	19700101	20100401	U
+3557204	Did not attend asthma review	Observation	SNOMED	Clinical Finding		521381000000109	20100401	20140401	U
+44802475	Patient has a written asthma personal action plan	Observation	SNOMED	Clinical Finding	S	527171000000103	20100401	20991231	
+3557259	Patient has a written asthma personal action plan	Observation	SNOMED	Undefined		527181000000101	19700101	20100401	U
+44802476	Health education - asthma self management	Procedure	SNOMED	Procedure	S	527191000000104	20100401	20991231	
+3530523	Health education - asthma self management	Observation	SNOMED	Undefined		527201000000102	19700101	20100401	U
+44802477	Health education - structured asthma discussion	Procedure	SNOMED	Procedure	S	527211000000100	20100401	20991231	
+3530525	Health education - structured asthma discussion	Observation	SNOMED	Undefined		527221000000106	19700101	20100401	U
+44802478	Health education - structured patient focused asthma discussion	Procedure	SNOMED	Procedure	S	527231000000108	20100401	20991231	
+3530526	Health education - structured patient focussed asthma discussion	Observation	SNOMED	Undefined		527241000000104	19700101	20100401	U
+764677	Persistent asthma	Condition	SNOMED	Clinical Finding	S	5281000124103	20120301	20991231	
+4206340	Asthma without status asthmaticus	Condition	SNOMED	Clinical Finding	S	55570000	20020131	20991231	
+4211530	Asthma caused by wood dust	Condition	SNOMED	Clinical Finding	S	56968009	20020131	20991231	
+256716	Asthma with status asthmaticus	Condition	SNOMED	Clinical Finding		57546000	20020131	20150131	U
+4212099	Occupational asthma	Condition	SNOMED	Clinical Finding	S	57607007	20020131	20991231	
+3557638	Intrinsic asthma NOS	Condition	SNOMED	Clinical Finding		579691000000102	20100401	20120401	U
+3557675	Extrinsic asthma NOS	Condition	SNOMED	Clinical Finding		589231000000108	20100401	20220127	D
+3534450	Asthma unspecified	Condition	SNOMED	Clinical Finding		589241000000104	20100401	20220127	D
+261048	Intrinsic asthma with status asthmaticus	Condition	SNOMED	Clinical Finding		59327009	20020131	20150131	U
+4271333	Allergic asthma without status asthmaticus	Condition	SNOMED	Clinical Finding	S	63088003	20020131	20991231	
+3537440	Antiasthmatic poisoning NOS	Condition	SNOMED	Clinical Finding		635511000000100	20100401	20220127	D
+46270573	Intermittent asthma well controlled	Condition	SNOMED	Clinical Finding	S	641000119106	20140901	20991231	
+3573386	Allergic asthma NEC	Condition	SNOMED	Clinical Finding		644281000000107	20100401	20101001	D
+3538741	Asthma attack NOS	Condition	SNOMED	Clinical Finding		653751000000109	20100401	20110401	U
+3540057	Adverse reaction to antiasthmatic NOS	Condition	SNOMED	Clinical Finding		673711000000108	20100401	20220127	D
+4283362	Hay asthma	Condition	SNOMED	Clinical Finding		67415000	20020131	20110131	U
+3573628	Status asthmaticus NOS	Condition	SNOMED	Clinical Finding		689421000000104	20100401	20120401	U
+3584392	Asthma NOS	Condition	SNOMED	Clinical Finding		689431000000102	20100401	20110401	D
+44784373	Under care of asthma specialist nurse	Observation	SNOMED	Clinical Finding	S	698509001	20140131	20991231	
+44784453	Education about asthma self management	Procedure	SNOMED	Procedure	S	698605001	20140131	20991231	
+44783144	Did not attend asthma review	Observation	SNOMED	Clinical Finding	S	699191007	20140131	20991231	
+44783610	Asthma self management	Observation	SNOMED	Procedure	S	699728000	20140131	20991231	
+45765802	Asthma clinic	Visit	SNOMED	Location		702823004	20140731	20991231	
+45766727	Allergic asthma due to Dermatophagoides pteronyssinus	Condition	SNOMED	Clinical Finding	S	703953004	20150131	20991231	
+45766728	Allergic asthma due to Dermatophagoides farinae	Condition	SNOMED	Clinical Finding	S	703954005	20150131	20991231	
+45766769	No family history of asthma	Observation	SNOMED	Context-dependent	S	704008007	20150131	20991231	
+45768910	Uncomplicated asthma	Condition	SNOMED	Clinical Finding	S	707444001	20150131	20991231	
+45768911	Exacerbation of mild persistent asthma	Condition	SNOMED	Clinical Finding	S	707445000	20150131	20991231	
+45772937	Exacerbation of moderate persistent asthma	Condition	SNOMED	Clinical Finding	S	707446004	20150131	20991231	
+45768912	Exacerbation of severe persistent asthma	Condition	SNOMED	Clinical Finding	S	707447008	20150131	20991231	
+45768963	Uncomplicated mild persistent asthma	Condition	SNOMED	Clinical Finding	S	707511009	20150131	20991231	
+45768964	Uncomplicated moderate persistent asthma	Condition	SNOMED	Clinical Finding	S	707512002	20150131	20991231	
+45768965	Uncomplicated severe persistent asthma	Condition	SNOMED	Clinical Finding	S	707513007	20150131	20991231	
+45769350	Acute severe exacerbation of severe persistent asthma	Condition	SNOMED	Clinical Finding	S	707979007	20150131	20991231	
+45769351	Acute severe exacerbation of moderate persistent asthma	Condition	SNOMED	Clinical Finding	S	707980005	20150131	20991231	
+45769352	Acute severe exacerbation of mild persistent asthma	Condition	SNOMED	Clinical Finding	S	707981009	20150131	20991231	
+45771045	Acute exacerbation of asthma	Condition	SNOMED	Clinical Finding		708038006	20150131	20210731	U
+45769438	Acute severe exacerbation of asthma	Condition	SNOMED	Clinical Finding	S	708090002	20150131	20991231	
+45769441	Acute exacerbation of allergic asthma	Condition	SNOMED	Clinical Finding	S	708093000	20150131	20991231	
+45773005	Acute exacerbation of intrinsic asthma	Condition	SNOMED	Clinical Finding	S	708094006	20150131	20991231	
+45769442	Acute severe exacerbation of immunoglobin E-mediated allergic asthma	Condition	SNOMED	Clinical Finding	S	708095007	20150131	20991231	
+45769443	Acute severe exacerbation of intrinsic asthma	Condition	SNOMED	Clinical Finding	S	708096008	20150131	20991231	
+45769660	Emergency asthma admission since last encounter	Observation	SNOMED	Context-dependent		708358003	20150131	20991231	
+45769673	Emergency asthma patient visit since last encounter	Observation	SNOMED	Context-dependent		708373002	20150131	20991231	
+46272934	Acute asthma control management	Procedure	SNOMED	Procedure	S	711388008	20150731	20991231	
+46272979	Recent asthma management	Observation	SNOMED	Context-dependent	S	711442001	20150731	20991231	
+44803332	Asthma monitoring administration	Type Concept	SNOMED	Record Artifact		713701000000108	20101001	20991231	
+44813670	Asthma clinic administration	Type Concept	SNOMED	Record Artifact		713711000000105	20101001	20991231	
+3542790	Asthma monitoring administration NOS	Type Concept	SNOMED	Record Artifact		713721000000104	19700101	20101001	U
+37395677	Telehealth asthma monitoring	Observation	SNOMED	Procedure	S	715191006	20160731	20991231	
+44803641	Exception reporting - asthma quality indicators	Observation	SNOMED	Clinical Finding	S	715801000000103	20101001	20991231	
+44803764	Excepted from asthma quality indicators - informed dissent	Observation	SNOMED	Clinical Finding	S	716491000000100	20101001	20991231	
+37396658	Asthma action care planning	Procedure	SNOMED	Procedure	S	716542004	20160731	20991231	
+44813771	Excepted from asthma quality indicators - patient unsuitable	Observation	SNOMED	Clinical Finding	S	717291000000103	20101001	20991231	
+4215802	Cardiac asthma	Condition	SNOMED	Clinical Finding	S	71892000	20020131	20991231	
+42535716	Asthma in pregnancy	Condition	SNOMED	Clinical Finding	S	72301000119103	20180131	20991231	
+37116845	Acute severe refractory exacerbation of asthma	Condition	SNOMED	Clinical Finding	S	733858005	20170731	20991231	
+42535849	Use of asthma symptom diary	Observation	SNOMED	Procedure	S	734346005	20180131	20991231	
+42536207	Life threatening acute exacerbation of asthma	Condition	SNOMED	Clinical Finding	S	734904007	20180131	20991231	
+42536208	Moderate acute exacerbation of asthma	Condition	SNOMED	Clinical Finding	S	734905008	20180131	20991231	
+42536648	Acute severe exacerbation of asthma co-occurrent and due to allergic asthma	Condition	SNOMED	Clinical Finding		735587000	20180131	20190131	U
+42539549	Uncomplicated allergic asthma	Condition	SNOMED	Clinical Finding	S	735588005	20180131	20991231	
+42536649	Uncomplicated non-allergic asthma	Condition	SNOMED	Clinical Finding	S	735589002	20180131	20991231	
+42536973	Asthma clinical management plan	Type Concept	SNOMED	Record Artifact		736056000	20180131	20991231	
+3550885	Asthma confirmed	Observation	SNOMED	Undefined		75001000000101	19700101	20040131	U
+44805526	Asthma review using Royal College of Physicians three questions	Observation	SNOMED	Procedure	S	754061000000100	20101001	20991231	
+3558478	Asthma review (three Royal College of Pysicisan questions)	Observation	SNOMED	Undefined		754071000000107	19700101	20101001	U
+42538744	Exacerbation of allergic asthma	Condition	SNOMED	Clinical Finding	S	762521001	20180131	20991231	
+35621821	Asthma Control Questionnaire score	Measurement	SNOMED	Observable Entity	S	763077003	20180731	20991231	
+35621822	Assessment using Asthma Control Questionnaire	Procedure	SNOMED	Procedure	S	763078008	20180731	20991231	
+35621931	Asthma monitoring refused	Observation	SNOMED	Context-dependent	S	763221007	20180731	20991231	
+35622290	Assessment using Mini AQLQ (Asthma Quality of Life Questionnaire)	Procedure	SNOMED	Procedure	S	763694000	20180731	20991231	
+35622291	Mini AQLQ (Asthma Quality of Life Questionnaire) score	Measurement	SNOMED	Observable Entity	S	763695004	20180731	20991231	
+3576087	Asthma monitoring by doctor	Observation	SNOMED	Undefined		76821000000108	19700101	20040131	D
+3522784	Health education - asthma	Observation	SNOMED	Undefined		76901000000107	19700101	20040131	U
+44805087	Asthma causes night time symptoms 1 to 2 times per week	Condition	SNOMED	Clinical Finding	S	771901000000100	20110401	20991231	
+3543941	Asthma causes night time symptoms 1 to 2 times per week	Observation	SNOMED	Undefined		771911000000103	19700101	20110401	U
+44805089	Asthma causes symptoms most nights	Condition	SNOMED	Clinical Finding	S	771941000000102	20110401	20991231	
+3543942	Asthma causes night time symptoms most nights	Observation	SNOMED	Undefined		771951000000104	19700101	20110401	U
+44805091	Asthma limits activities 1 to 2 times per month	Observation	SNOMED	Clinical Finding	S	771981000000105	20110401	20991231	
+3558688	Asthma limits activities 1 to 2 times per month	Observation	SNOMED	Undefined		771991000000107	19700101	20110401	U
+44805092	Asthma limits activities 1 to 2 times per week	Observation	SNOMED	Clinical Finding	S	772011000000107	20110401	20991231	
+3558689	Asthma limits activities 1 to 2 time per week	Observation	SNOMED	Undefined		772021000000101	19700101	20110401	U
+44805093	Asthma limits activities most days	Observation	SNOMED	Clinical Finding	S	772051000000106	20110401	20991231	
+3558690	Asthma limits activities most days	Observation	SNOMED	Undefined		772061000000109	19700101	20110401	U
+44805095	Royal College of Physicians asthma assessment three questions score	Observation	SNOMED	Observable Entity		772091000000103	20110401	20151001	U
+3558691	Royal College of Physicians asthma assessment three questions score	Observation	SNOMED	Undefined		772101000000106	19700101	20110401	U
+36674432	Antiasthmatic therapeutic role	Observation	SNOMED	Qualifier Value	S	773860003	20190131	20991231	
+3544181	Asthma trigger - pollen	Observation	SNOMED	Undefined		778521000000106	19700101	20110401	U
+3544182	Asthma trigger - tobacco smoke	Observation	SNOMED	Undefined		778531000000108	19700101	20110401	U
+3544183	Asthma trigger - warm air	Observation	SNOMED	Undefined		778541000000104	19700101	20110401	U
+3544184	Asthma trigger - emotion	Observation	SNOMED	Undefined		778551000000101	19700101	20110401	U
+3544185	Asthma trigger - damp	Observation	SNOMED	Undefined		778561000000103	19700101	20110401	U
+3544186	Asthma trigger - animals	Observation	SNOMED	Undefined		778571000000105	19700101	20110401	U
+3544187	Asthma trigger - seasonal	Observation	SNOMED	Undefined		778581000000107	19700101	20110401	U
+3544188	Asthma trigger - cold air	Observation	SNOMED	Undefined		778591000000109	19700101	20110401	U
+3544189	Asthma trigger - respiratory infection	Observation	SNOMED	Undefined		778601000000103	19700101	20110401	U
+3544191	Asthma trigger - airborne dust	Observation	SNOMED	Undefined		778611000000101	19700101	20110401	U
+3544192	Asthma trigger - exercise	Observation	SNOMED	Undefined		778621000000107	19700101	20110401	U
+36684328	Acute severe exacerbation of allergic asthma	Condition	SNOMED	Clinical Finding	S	782513000	20190131	20991231	
+36684335	Exacerbation of allergic asthma due to infection	Condition	SNOMED	Clinical Finding	S	782520007	20190131	20991231	
+36674599	Asthma never causes night symptoms	Condition	SNOMED	Clinical Finding	S	782559003	20190131	20991231	
+37206717	Near fatal asthma	Condition	SNOMED	Clinical Finding	S	786836003	20190731	20991231	
+3544586	Asthma never causes night symptoms	Condition	SNOMED	Clinical Finding		791171000000104	20111003	20220127	D
+3544587	Asthma causes no night symptoms	Observation	SNOMED	Undefined		791181000000102	19700101	20220127	D
+44806313	Seen in school asthma clinic	Observation	SNOMED	Clinical Finding	S	791401000000104	20111003	20991231	
+3558906	Seen in school based asthma clinic	Observation	SNOMED	Undefined		791411000000102	19700101	20111003	U
+3550984	Asthma confirmed	Observation	SNOMED	Undefined		79241000000105	19700101	20040131	U
+44807446	Acute asthma control management	Observation	SNOMED	Procedure		796291000000102	20111003	20151001	U
+44807084	Asthma monitoring due date	Observation	SNOMED	Observable Entity	S	804621000000108	20111003	20991231	
+3551072	Asthma monitoring by doctor	Observation	SNOMED	Undefined		81081000000101	19700101	20040131	U
+44806120	Asthma self-management plan review	Procedure	SNOMED	Procedure	S	810901000000102	20120401	20991231	
+44806236	Number of days absent from school due to asthma in past 6 months	Observation	SNOMED	Observable Entity	S	811151000000105	20120401	20991231	
+3545106	Number of days absent from school due to asthma in past 6 months	Observation	SNOMED	Undefined		811161000000108	19700101	20120401	U
+44806367	Asthma self-management plan agreed	Observation	SNOMED	Clinical Finding	S	811921000000103	20120401	20991231	
+3559115	Asthma self-management plan agreed	Observation	SNOMED	Undefined		811931000000101	19700101	20120401	U
+44807127	Asthma trigger - wind	Condition	SNOMED	Clinical Finding	S	815631000000106	20120401	20991231	
+44807733	Asthma trigger - perfume	Condition	SNOMED	Clinical Finding	S	818161000000104	20120401	20991231	
+3661412	Thunderstorm asthma	Condition	SNOMED	Clinical Finding	S	829976001	20200731	20991231	
+40640771	Intrinsic asthma	Condition	SNOMED	Clinical Finding		8312004	19700101	20220127	U
+3545347	Asthma self-management plan review	Observation	SNOMED	Undefined		832091000000103	19700101	20120401	U
+44813908	Provision of written information about asthma	Procedure	SNOMED	Procedure	S	837861000000104	20121001	20991231	
+3661634	Consultation for asthma	Observation	SNOMED	Procedure	S	866203004	20200731	20991231	
+44810117	Chronic asthma with fixed airflow obstruction	Condition	SNOMED	Clinical Finding	S	866881000000101	20130401	20991231	
+3546068	Chronic asthma with fixed airflow obstruction	Observation	SNOMED	Undefined		866891000000104	19700101	20130401	U
+44810131	No asthma trigger identified by subject	Condition	SNOMED	Clinical Finding	S	867171000000106	20130401	20991231	
+3551170	Did not attend asthma clinic	Observation	SNOMED	Undefined		87161000000103	19700101	20040131	U
+3551236	Excepted from asthma quality indicators: Patient unsuitable	Condition	SNOMED	Clinical Finding		88141000000103	20040131	20101001	U
+3551237	Excepted from asthma quality indicators: Informed dissent	Condition	SNOMED	Clinical Finding		88151000000100	20040131	20101001	U
+44811196	Asthma management plan declined	Observation	SNOMED	Context-dependent	S	892301000000100	20140401	20991231	
+44809985	Did not attend asthma clinic	Observation	SNOMED	Clinical Finding	S	89581000000109	20040131	20991231	
+3551257	Exception reporting: asthma quality indicators	Condition	SNOMED	Clinical Finding		89901000000109	20040131	20101001	U
+764949	Persistent asthma, well controlled	Condition	SNOMED	Clinical Finding	S	901000119100	20130901	20991231	
+44811605	Childhood Asthma Control Test	Measurement	SNOMED	Staging / Scales	S	905271000000101	20140401	20991231	
+3546601	Childhood Asthma Control Test	Observation	SNOMED	Undefined		905281000000104	19700101	20140401	U
+44811606	Assessment using Childhood Asthma Control Test	Procedure	SNOMED	Procedure	S	905291000000102	20140401	20991231	
+44811607	Childhood Asthma Control Test score	Measurement	SNOMED	Observable Entity	S	905301000000103	20140401	20991231	
+252341	Extrinsic asthma with status asthmaticus	Condition	SNOMED	Clinical Finding		91340006	20020131	20150131	U
+3546766	Asthma management plan declined	Observation	SNOMED	Undefined		916481000000109	19700101	20140401	U
+37310868	QOF (Quality and Outcomes Framework) asthma quality indicator-related care invitation using preferred method of communication	Observation	SNOMED	Procedure	S	92161000000104	20191001	20991231	
+4245676	Chemical-induced asthma	Condition	SNOMED	Clinical Finding	S	92807009	20020131	20991231	
+45770425	Asthma monitoring invitation SMS (short message service) text message	Observation	SNOMED	Procedure	S	928451000000107	20141001	20991231	
+3560837	Asthma monitoring invitation SMS (short message service) text message	Observation	SNOMED	Undefined		928461000000105	19700101	20141001	U
+45770428	Asthma monitoring invitation email	Observation	SNOMED	Procedure	S	928511000000107	20141001	20991231	
+3560838	Asthma monitoring invitation email	Observation	SNOMED	Undefined		928521000000101	19700101	20141001	U
+45770432	Review of patient at risk of asthma	Procedure	SNOMED	Procedure	S	928651000000105	20141001	20991231	
+3546963	Review of patient at risk of asthma	Observation	SNOMED	Undefined		928661000000108	19700101	20141001	U
+45770434	At risk of asthma	Condition	SNOMED	Clinical Finding	S	928691000000102	20141001	20991231	
+3546964	At risk of asthma	Observation	SNOMED	Undefined		928701000000102	19700101	20141001	U
+4244339	Drug-induced asthma	Observation	SNOMED	Clinical Finding	S	93432008	20020131	20991231	
+3547213	Asthma-chronic obstructive pulmonary disease overlap syndrome	Condition	SNOMED	Clinical Finding		944961000000107	20150401	20151001	U
+3547214	Asthma-chronic obstructive pulmonary disease overlap syndrome	Observation	SNOMED	Undefined		944971000000100	19700101	20150401	U
+46286983	Telehealth asthma monitoring	Observation	SNOMED	Procedure		948091000000109	20150401	20161001	U
+3587145	Telehealth asthma monitoring	Observation	SNOMED	Undefined		948101000000101	19700101	20150401	D
+3551307	Aspirin-induced asthma	Observation	SNOMED	Undefined		95111000000105	19700101	20040131	U
+3656330	Asthma medication declined	Observation	SNOMED	Context-dependent	S	9521000175103	20200731	20991231	
+46284991	Asthma monitoring SMS (short message service) text message first invitation	Observation	SNOMED	Procedure	S	959401000000101	20150401	20991231	
+3561228	Asthma monitoring SMS (short message service) text message first invitation	Observation	SNOMED	Undefined		959411000000104	19700101	20150401	U
+46287045	Asthma monitoring SMS (short message service) text message second invitation	Observation	SNOMED	Procedure	S	959421000000105	20150401	20991231	
+3561229	Asthma monitoring SMS (short message service text message) second invitation	Observation	SNOMED	Undefined		959431000000107	19700101	20150401	U
+46284992	Asthma monitoring SMS (short message service) text message third invitation	Observation	SNOMED	Procedure	S	959441000000103	20150401	20991231	
+3561230	Asthma monitoring SMS (short message service text message) third invitation	Observation	SNOMED	Undefined		959451000000100	19700101	20150401	U
+35630685	Asthma action plan	Type Concept	SNOMED	Record Artifact		959901000000107	20180401	20991231	
+46287068	At risk of severe asthma exacerbation	Condition	SNOMED	Clinical Finding	S	966011000000109	20151001	20991231	
+3547698	At risk of severe asthma exacerbation	Observation	SNOMED	Undefined		966021000000103	19700101	20151001	U
+46285153	Severe asthma exacerbation risk assessment	Procedure	SNOMED	Procedure	S	966031000000101	20151001	20991231	
+3551475	Exception reporting: asthma quality indicators	Observation	SNOMED	Undefined		98221000000100	19700101	20040131	U
+3576443	Excepted from asthma quality indicators: Patient unsuitable	Observation	SNOMED	Undefined		98231000000103	19700101	20040131	D
+3551476	Excepted from asthma quality indicators: Informed dissent	Observation	SNOMED	Undefined		98241000000107	19700101	20040131	U
+46273452	Acute exacerbation of asthma co-occurrent with allergic rhinitis	Condition	SNOMED	Clinical Finding	S	99031000119107	20150731	20991231	
+3547832	Severe asthma exacerbation risk assessment	Observation	SNOMED	Undefined		990611000000100	19700101	20151001	U
+35632074	Enhanced services general practice extraction - Seasonal Flu asthma inhaled corticosteroids simple reference set	Metadata	SNOMED	Model Comp		999000921000001109	20180516	20991231	
+3551579	Aspirin-induced asthma	Observation	SNOMED	Undefined		99981000000103	19700101	20040131	U
+35816092	Asthma	Observation	UK Biobank	Answer	S	100610-8	20120105	20991231	
+36299527	Reason for skipping weight: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20041-47-411	20210323	20991231	
+36299120	Reason for skipping spirometry: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20042-47-411	20210323	20991231	
+36299494	Reason for skipping waist: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20045-47-411	20210323	20991231	
+36299388	Reason for skipping hip measurement: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20046-47-411	20210323	20991231	
+36299413	Reason for skipping standing height: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20047-47-411	20210323	20991231	
+36299956	Reason for skipping sitting height: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20048-47-411	20210323	20991231	
+36299906	Reason for skipping ECG: Asthma/lung disease	Observation	UK Biobank	Precoordinated pair		20058-47-411	20210323	20991231	
+35811529	Doctor diagnosed asthma	Observation	UK Biobank	Question	S	22127	20150710	20991231	
+35811545	Age asthma diagnosed by doctor	Observation	UK Biobank	Question		22147	20150710	20991231	
+35811561	Recent medication for asthma	Observation	UK Biobank	Question	S	22167	20150710	20991231	
+35810400	Age asthma diagnosed	Observation	UK Biobank	Question		3786	20120105	20991231	
+35824125	taumasthman tablet	Observation	UK Biobank	Value		4-1140855538	20120112	20991231	
+35825514	Asthma/lung disease	Observation	UK Biobank	Value	S	47-411	20120821	20991231	
+35825513	asthma	Observation	UK Biobank	Value		6-1111	20120112	20991231	
+35810760	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor	Observation	UK Biobank	Question	S	6152	20120105	20991231	
+35809916	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Blood clot in the leg (DVT)	Observation	UK Biobank	Precoordinated pair		6152-100610-5	20201221	20991231	
+35809912	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Emphysema/chronic bronchitis	Observation	UK Biobank	Precoordinated pair		6152-100610-6	20201221	20991231	
+35809861	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Blood clot in the lung	Observation	UK Biobank	Precoordinated pair		6152-100610-7	20201221	20991231	
+35809890	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Asthma	Observation	UK Biobank	Precoordinated pair		6152-100610-8	20201221	20991231	
+35809819	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Hayfever, allergic rhinitis or eczema	Observation	UK Biobank	Precoordinated pair		6152-100610-9	20201221	20991231	
+35809425	Asthma outcomes	Observation	UK Biobank	Category	C	c45	19700101	20991231	
+4180186	English language	Language	SNOMED	Qualifier Value	S	297487008	20020131	20991231	
+4182948	Chinese language	Language	SNOMED	Qualifier Value	S	297876005	20020131	20991231	

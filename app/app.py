@@ -1,50 +1,72 @@
+from fastapi import FastAPI, HTTPException, Depends
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
+from pydantic import BaseModel
+from typing import List, Optional, Any  
+import secrets
+import os
 
-# Importing Flask and other required modules
-# Import Flask library along with request and jsonify for handling HTTP methods and JSON.
+from utils.calculate_best_OMOP_matches import OMOPMatcher
+from utils.calculate_best_OLS4_matches import OLS4Matcher
 
-from flask import Flask, request, Response
-from flask_restx import Api
+app = FastAPI()
+security = HTTPBasic()
 
-# import custom classes for running the app
-from utils.StandaloneApplication import StandaloneApplication
-from Credentials import Swaggerusername, Swaggerpassword
+# Import OLS4Matcher, OMOPMatcher
+omop_matcher = OMOPMatcher()
+ols4_matcher = OLS4Matcher()
 
-# Initialize Flask application
-# Initialize the Flask web application. The '__name__' argument helps Flask determine the root path.
-app = Flask(__name__)
+class OLS4Request(BaseModel):
+    search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
+    vocabulary_id: Optional[str] = "snomed"
+    search_threshold: Optional[int] = 80
 
-# Initialize API with Flask-RESTx and set metadata
-# Initialize Flask-RESTx API. Set API metadata like version and title for the Swagger UI documentation.
-api = Api(app, version='1.0', title='Medical Vocabulary Concept Mapping API (MVCM-API)', description='A Flask REST API application designed to facilitate the mapping of medical concepts to standardized terms using a MySQL database loaded with concepts from the OMOP Common Data Model and the OLS4 API.')
-ns = api.namespace('API', description='OMOP and OLS4 search functions')
+class OMOPRequest(BaseModel):
+    search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
+    vocabulary_id: Optional[str] = "snomed"
+    concept_ancestor: Optional[str] = "n"
+    max_separation_descendant: Optional[int] = 1
+    max_separation_ancestor: Optional[int] = 1
+    concept_synonym: Optional[str] = "n"
+    concept_relationship: Optional[str] = "n"
+    search_threshold: Optional[int] = 80
 
-# Add swagger auth
-@app.before_request
-def require_auth():
-    if request.path in ['/', '/.json']:
-        auth = request.authorization
-        if not auth or not (auth.username == Swaggerusername and auth.password == Swaggerpassword):
-            return Response(status=401, headers={'WWW-Authenticate': 'Basic realm="Login Required"'})
+def get_credentials() -> (str, str):
+    
+    username = os.environ.get("BASIC_AUTH_USERNAME")
+    password = os.environ.get("BASIC_AUTH_PASSWORD")
 
-       
-# Import routes
-from routes.CalculateBestMatch_OMOP import CalculateBestMatch_OMOP
-from routes.CalculateBestMatch_OLS4 import CalculateBestMatch_OLS4
-from routes.List_OMOP_Vocabularies import List_OMOP_Vocabularies
-from routes.Unit_Test import Test_the_App
+    if not username:
+        username = "APIuser"
+    
+    if not password:
+        password = "psw4API"
 
-# Add the route to the namespace
-ns.add_resource(CalculateBestMatch_OMOP, '/OMOP_search')
-ns.add_resource(CalculateBestMatch_OLS4, '/OLS4_search')
-ns.add_resource(List_OMOP_Vocabularies, '/List_OMOP_Vocabularies')
-ns.add_resource(Test_the_App, '/Test')
-          
-# Main entry point of the application
-if __name__ == '__main__':
+    return username, password
 
-        # Start the App only if tests pass
-        options = {'bind': '0.0.0.0:80'}
-        StandaloneApplication(app, options).run()
+def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> Any:
+    correct_username, correct_password = get_credentials()
+    correct_credentials = secrets.compare_digest(credentials.username, correct_username) and secrets.compare_digest(credentials.password, correct_password)
+    if not correct_credentials:
+        raise HTTPException(
+            status_code=401,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Basic"},
+        )
+    return credentials
 
+@app.post("/search/ols4/")
+async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
+    return ols4_matcher.calculate_best_matches(request.search_terms, 
+                                               request.vocabulary_id, 
+                                               request.search_threshold)
 
-
+@app.post("/search/omop/")
+async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
+    return omop_matcher.calculate_best_matches(search_terms=request.search_terms, 
+                                               vocabulary_id=request.vocabulary_id, 
+                                               concept_ancestor=request.concept_ancestor,
+                                               concept_relationship=request.concept_relationship, 
+                                               concept_synonym=request.concept_synonym, 
+                                               search_threshold=request.search_threshold,
+                                               max_separation_descendant=request.max_separation_descendant,
+                                               max_separation_ancestor=request.max_separation_ancestor)

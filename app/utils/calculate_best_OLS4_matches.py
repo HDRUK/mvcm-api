@@ -18,13 +18,13 @@ class OLS4Matcher:
             overall_results = []
 
             for search_term in search_terms:
-                response_data = self.fetch_ols4_data(search_term, vocabulary_id)
+                response_data = self.fetch_ols4_data(search_term, vocabulary_id, search_threshold)
                 if not response_data:
                     continue
 
                 term_results = {
                     'search_term': search_term,
-                    'matches': self.process_docs(response_data, search_term, search_threshold)
+                    'matches': response_data
                 }
 
                 overall_results.append(term_results)
@@ -34,7 +34,7 @@ class OLS4Matcher:
         except Exception as e:
             raise ValueError(f"Error in calculate_best_OLS4_matches: {e}")
 
-    def fetch_ols4_data(self, search_term, vocabulary_id):
+    def fetch_ols4_data(self, search_term, vocabulary_id, search_threshold):
         search_term_encoded = quote(f"{search_term.upper()},{search_term.lower()},{search_term.capitalize()}")
         url = self.base_url + f"?q={search_term_encoded}&queryFields=label&rows=10000"
 
@@ -47,10 +47,8 @@ class OLS4Matcher:
         if response.status_code == 200:
             json_data = response.json()
             if json_data['response']['numFound'] > 0:
-                return json_data['response']['docs']
-        return None
+                docs = json_data['response']['docs']
 
-    def process_docs(self, docs, search_term, search_threshold):
         matches = []
         for doc in docs:
             label = doc.get('label')

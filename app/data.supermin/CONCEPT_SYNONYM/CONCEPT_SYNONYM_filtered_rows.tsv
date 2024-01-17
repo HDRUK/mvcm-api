@@ -1,8 +1,239 @@
 concept_id	concept_synonym_name	language_concept_id
-35609756	Assessment using Asthma Control Questionnaire (procedure)	4180186
+46236608	Patient Reported Outcomes Information System; PEDS; Point in time; promise; QNT; Quan; Quant; Quantitative; Random; Survey; SURVEY.PROMIS; T prime; T-score	4180186
+46236702	Patient Reported Outcomes Information System; PEDS; Point in time; promise; QNT; Quan; Quant; Quantitative; Random; Scale; Survey; SURVEY.PROMIS	4180186
+46269775	Severe persistent asthma uncontrolled co-occurrent with allergic rhinitis (disorder)	4180186
+46269776	Mild persistent allergic asthma (disorder)	4180186
+46269778	Mild persistent asthma controlled (finding)	4180186
+46269779	Mild persistent asthma controlled co-occurrent with allergic rhinitis (disorder)	4180186
+46269780	Mild persistent allergic asthma uncontrolled (finding)	4180186
+46269783	Moderate persistent asthma controlled (finding)	4180186
+46269784	Moderate persistent allergic asthma (disorder)	4180186
+46269786	Moderate persistent allergic asthma controlled (finding)	4180186
+46269787	Moderate persistent controlled asthma co-occurrent with allergic rhinitis (disorder)	4180186
+46269789	Moderate persistent asthma uncontrolled co-occurrent with allergic rhinitis (disorder)	4180186
+46270028	Severe persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
+46270030	Intermittent asthma co-occurrent with allergic rhinitis (disorder)	4180186
+46270082	Acute exacerbation of mild persistent asthma (disorder)	4180186
+46270573	Intermittent asthma well controlled (finding)	4180186
+46273454	Moderate persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
+46273462	Acute severe exacerbation of moderate persistent allergic asthma (disorder)	4180186
+46274059	Acute severe exacerbation of severe persistent allergic asthma (disorder)	4180186
+46274060	Mild persistent allergic asthma controlled (finding)	4180186
+46274062	Asthma-COPD overlap syndrome (ACOS)	4180186
+46274062	Asthma-chronic obstructive pulmonary disease overlap syndrome (disorder)	4180186
+46274062	ACOS - asthma-chronic obstructive pulmonary disease overlap syndrome	4180186
+46284991	Asthma monitoring short message service text message first invitation (procedure)	4180186
+46284992	Asthma monitoring short message service text message third invitation (procedure)	4180186
+46285153	Severe asthma exacerbation risk assessment (procedure)	4180186
+46286983	Telehealth asthma monitoring (regime/therapy)	4180186
+46287045	Asthma monitoring short message service text message second invitation (procedure)	4180186
+252341	Extrinsic asthma with status asthmaticus (disorder)	4180186
+254980	Intrinsic asthma with asthma attack (disorder)	4180186
+256448	Chronic wheezy bronchitis	4180186
+256448	Chronic asthmatic bronchitis (disorder)	4180186
+256716	Acute severe asthma	4180186
+256716	Asthma with status asthmaticus (disorder)	4180186
+256716	Status asthmaticus	4180186
+261048	Intrinsic asthma with status asthmaticus (disorder)	4180186
+312950	Atopic asthma	4180186
+312950	IgE mediated allergic asthma	4180186
+312950	Immunoglobulin E-mediated allergic asthma	4180186
+312950	Immunoglobulin E-mediated allergic asthma (disorder)	4180186
+312950	Allergic atopic asthma	4180186
+312950	IgE mediated asthma	4180186
+313236	Cough variant asthma (disorder)	4180186
+317009	Asthma (disorder)	4180186
+317009	Bronchial hyperresponsiveness	4180186
+317009	Airway hyperreactivity	4180186
+317009	Bronchial hyperreactivity	4180186
+317009	Bronchial asthma	4180186
+317009	Bronchial hypersensitivity	4180186
+317009	BHR - Bronchial hyperreactivity	4180186
+317009	Hyperreactive airway disease	4180186
+317009	Asthmatic	4180186
+443801	Exercise induced asthma	4180186
+443801	Exercise-induced asthma (disorder)	4180186
+443801	EIA - Exercise-induced asthma	4180186
+608764	Network Contract Directed Enhanced Service - non-salbutamol asthma and chronic obstructive pulmonary disease (COPD) inhalers simple reference set (foundation metadata concept)	4180186
+761844	Inhaled steroid-dependent asthma (disorder)	4180186
+763381	Asthma treatment assessment questionnaire (assessment scale)	4180186
+763381	ATAQ - Asthma treatment assessment questionnaire	4180186
+764677	Persistent asthma (disorder)	4180186
+765656	Asthma trigger education (procedure)	4180186
+765844	Documentation of asthma medication action plan (procedure)	4180186
+1005069	I felt scared that I might have trouble breathing because of my asthma in past 7D	4180186
+1005071	I felt wheezy because of my asthma in past 7D	4180186
+1005072	I had trouble sleeping at night because of my asthma in past 7D	4180186
+1005073	It was hard for me to play sports or exercise because of my asthma in past 7D	4180186
+1005074	It was hard to take a deep breath because of my asthma in past 7D	4180186
+1005076	I coughed because of my asthma in past 7D	4180186
+1005078	I had asthma attacks in past 7D	4180186
+1005082	It was hard for me to play with pets because of my asthma in past 7D	4180186
+1005216	I had trouble breathing because of my asthma in past 7D	4180186
+1012865	ACT	4180186
+1015254	How much of the time did your asthma keep you from getting as much done at work, school or at home in the past 4W	4180186
+1015256	How often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning during the past 4W	4180186
+1015258	How would you rate your asthma control during the past 4W	4180186
+1019268	My child felt scared that he or she might have trouble breathing because of asthma in past 7D	4180186
+1019273	My child had trouble walking because of asthma in past 7D	4180186
+1019277	My child's chest felt tight because of asthma in past 7D	4180186
+1019280	My child coughed because of his or her asthma in past 7D	4180186
+1019283	My child's asthma bothered him or her in past 7D	4180186
+1019284	My child missed school because of asthma in past 7D	4180186
+1574865	Antiasthmatics, not elsewhere classified	4180186
+1574866	Antiasthmatics	4180186
+3044695	Finding; Findings; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen; Survey; SURVEY.MDS	4180186
+3522446	Health education - asthma (regime/therapy)	4180186
+3526770	RCP asthma outcome measure	4180186
+3526771	RCP asthma outcome measure	4180186
+3534450	Asthma unspecified (disorder)	4180186
+3534450	Hyperreactive airways disease	4180186
+3538741	Asthma attack NOS (disorder)	4180186
+3540057	Adverse reaction to antiasthmatic NOS (disorder)	4180186
+3542790	Asthma monitoring administration NOS (record artifact)	4180186
+3544586	Asthma never causes night symptoms (finding)	4180186
+3547213	ACOS - asthma-chronic obstructive pulmonary disease overlap syndrome	4180186
+3547213	Asthma-chronic obstructive pulmonary disease overlap syndrome (disorder)	4180186
+3550767	Asthma monitoring by doctor (regime/therapy)	4180186
+3550773	Asthma confirmed (context-dependent category)	4180186
+3551236	Excepted from asthma quality indicators: Patient unsuitable (finding)	4180186
+3551237	Excepted from asthma quality indicators: Informed dissent (finding)	4180186
+3557204	Did not attend asthma review (finding)	4180186
+3557638	Intrinsic asthma NOS (disorder)	4180186
+3564735	Asthma control test (assessment scale)	4180186
+3572888	Mini AQLQ - Mini asthma quality of life questionnaire	4180186
+3572888	Mini asthma quality of life questionnaire (assessment scale)	4180186
+3573628	Status asthmaticus NOS (disorder)	4180186
+3575186	Asthma monitoring administration NOS (administrative concept)	4180186
+3656330	Asthma medication declined (situation)	4180186
+3656688	Coronavirus disease 2019 (COVID-19) general practice extraction - severe asthma medication simple reference set (foundation metadata concept)	4180186
+3656688	COVID-19 general practice extraction - severe asthma medication simple reference set	4180186
+3657425	Asthma medication not indicated (situation)	4180186
+3661412	Thunderstorm-induced asthma	4180186
+3661412	Thunderstorm asthma (disorder)	4180186
+3661412	Asthma exacerbation due to thunderstorm	4180186
+3661634	Consultation for asthma (procedure)	4180186
+4015947	Asthma causing night waking (finding)	4180186
+4017025	Asthma disturbing sleep (finding)	4180186
+4017026	Asthma not limiting activities (finding)	4180186
+4017188	Asthma severity (regime/therapy)	4180186
+4017191	Asthma sometimes restricts exercise (finding)	4180186
+4017192	Asthma severely restricts exercise (finding)	4180186
+4022592	Millers' cough	4180186
+4022592	Grain worker's asthma	4180186
+4022592	Millers' asthma (disorder)	4180186
+4022592	Mill-workers' asthma	4180186
+4051241	Family history: Asthma (situation)	4180186
+4051241	FH: Asthma	4180186
+4051241	Family history: Asthma	4180186
+4051466	Childhood asthma (disorder)	4180186
+4057273	Asthma control step 4 (procedure)	4180186
+4059321	History of asthma (situation)	4180186
+4059321	History of asthma	4180186
+4077802	Asthma monitoring (regime/therapy)	4180186
+4080964	Asthma control step 2 (procedure)	4180186
+4082254	Asthma control step 5 (procedure)	4180186
+4085315	Attends asthma monitoring (finding)	4180186
+4086119	Asthma monitoring call first letter (procedure)	4180186
+4088882	Refuses asthma monitoring (finding)	4180186
+4088883	Asthma monitor offer default (finding)	4180186
+4090836	Asthma monitoring call verbal invite (procedure)	4180186
+4112831	Extrinsic asthma NOS (disorder)	4180186
+4125022	Acute asthma (disorder)	4180186
+4136456	Asthma clinical management plan (qualifier value)	4180186
+4141978	Intermittent asthma (disorder)	4180186
+4142738	Moderate persistent asthma (disorder)	4180186
+4143828	Mild persistent asthma (disorder)	4180186
+4144104	Status asthmaticus NOS (disorder)	4180186
+4144757	Exacerbation of persistent asthma (disorder)	4180186
+4145108	Recent asthma management (regime/therapy)	4180186
+4146581	Mild intermittent asthma (disorder)	4180186
+4147509	Allergic-infective asthma (disorder)	4180186
+4148757	Asthma monitored	4180186
+4148757	Asthma monitoring check done (finding)	4180186
+4152292	Asthma causes night symptoms 1 to 2 times per month (finding)	4180186
+4152911	Asthma causes daytime symptoms most days (finding)	4180186
+4152912	Number of asthma exacerbations in past year (finding)	4180186
+4152913	Severe asthma (disorder)	4180186
+4155465	Asthma limits walking on the flat (finding)	4180186
+4155469	Moderate asthma (disorder)	4180186
+4155470	Occasional asthma (disorder)	4180186
+4155473	Asthma treatment compliance satisfactory (finding)	4180186
+4156136	Asthma causes daytime symptoms 1 to 2 times per month (finding)	4180186
+4170900	Asthmatic pulmonary alveolitis (disorder)	4180186
+4190879	Step up change in asthma management plan (regime/therapy)	4180186
+4191479	Allergic asthma (disorder)	4180186
+4193019	Absent from work or school due to asthma (finding)	4180186
+4193023	Asthma monitoring due (finding)	4180186
+4194289	Asthma - currently active (finding)	4180186
+4202191	Asthma monitoring status (finding)	4180186
+4203281	Asthma monitoring call (procedure)	4180186
+4207298	Knowledge level about asthma management (observable entity)	4180186
+4207479	Asthma - currently dormant (finding)	4180186
+4211530	Saw dust asthma	4180186
+4211530	Wood pulp workers' lung	4180186
+4211530	Asthma caused by wood dust (disorder)	4180186
+4211530	Wood-workers' lung	4180186
+4211530	Wood dust asthma	4180186
+4211530	Wood-workers' asthma	4180186
+4211530	Wood dust pneumonitis	4180186
+4211530	Wood asthma	4180186
+4214588	Asthma annual review (regime/therapy)	4180186
+4214589	Asthma follow-up (regime/therapy)	4180186
+4217558	Detergent asthma (disorder)	4180186
+4217558	Enzyme lung	4180186
+4217558	Enzyme detergent lung	4180186
+4217558	Detergent workers' lung	4180186
+4217558	Enzyme detergent respiratory disease	4180186
+4217558	Enzyme lung disease	4180186
+4232595	Platinum asthma (disorder)	4180186
+4233784	Asthmatic bronchitis (disorder)	4180186
+4235703	Asthma care	4180186
+4235703	Asthma management (regime/therapy)	4180186
+4244339	Drug-induced asthma (disorder)	4180186
+4245676	Chemical-induced asthma (disorder)	4180186
+4250128	Aspirin-induced asthma (disorder)	4180186
+4279553	Pulmonary eosinophilia (disorder)	4180186
+4279553	PIE - Pulmonary infiltrates with eosinophilia	4180186
+4279553	Andrews syndrome	4180186
+4279553	Pulmonary infiltrates with eosinophilia	4180186
+4279553	Pulmonary eosinophilia	4180186
+4279553	Eosinophilic pneumonia	4180186
+4279553	EP - Eosinophilic pneumonia	4180186
+4293727	Health education - asthma	4180186
+4293727	Asthma education (procedure)	4180186
+4293733	Asthma monitoring by doctor (regime/therapy)	4180186
+4293734	Asthma confirmed (situation)	4180186
+4312524	Substance induced asthma (disorder)	4180186
+4317234	Adverse reaction to antiasthmatic NOS (disorder)	4180186
+19373343	ASA Triad	4180186
+19396652	Anti Asthmatic Agent	4180186
+19396652	Anti Asthmatic Drug	4180186
+19396652	Anti-Asthmatic Drugs	4180186
+19396652	Anti Asthmatic	4180186
+19396652	Anti-Asthmatic Agent	4180186
+19396652	Antiasthmatic Drugs	4180186
+19396652	Drug, Anti-Asthmatic	4180186
+19396652	Antiasthmatic Agent	4180186
+19396652	Agents, Anti-Asthmatic	4180186
+19396652	Agents, Antiasthmatic	4180186
+19396652	Anti Asthmatic Agents	4180186
+19396652	Antiasthmatics	4180186
+19396652	Agent, Anti-Asthmatic	4180186
+19396652	Agent, Antiasthmatic	4180186
+19396652	Anti-Asthmatic	4180186
+19396652	Drug, Antiasthmatic	4180186
+19396652	Anti Asthmatics	4180186
+19396652	Drugs, Anti-Asthmatic	4180186
+19396652	Drugs, Antiasthmatic	4180186
+19396652	Anti Asthmatic Drugs	4180186
+19396652	Antiasthmatic Agents	4180186
+19396652	Antiasthmatic Drug	4180186
+19396652	Anti-Asthmatics	4180186
+19396652	Anti-Asthmatic Drug	4180186
+19396652	Antiasthmatic	4180186
+35225323	Family history of asthma and oth chronic lower resp diseases	4180186
 35609757	Asthma Control Questionnaire score (observable entity)	4180186
-35609795	Assessment using Mini Asthma Quality of Life Questionnaire (procedure)	4180186
-35609796	Mini Asthma Quality of Life Questionnaire score (observable entity)	4180186
 35609846	Life threatening acute exacerbation of allergic asthma (disorder)	4180186
 35609846	Life threatening acute exacerbation of extrinsic asthma	4180186
 35609847	Life threatening acute exacerbation of intrinsic asthma (disorder)	4180186
@@ -12,90 +243,56 @@ concept_id	concept_synonym_name	language_concept_id
 35611666	Quality and Outcomes Framework general practice extraction - chronic asthma medication prescribable within general practice simple reference set (foundation metadata concept)	4180186
 35621821	Asthma Control Questionnaire score (observable entity)	4180186
 35621821	ACQ (Asthma Control Questionnaire) score	4180186
-35621822	Assessment using Asthma Control Questionnaire (procedure)	4180186
-35621822	Assessment using ACQ (Asthma Control Questionnaire)	4180186
-35621931	Asthma monitoring declined	4180186
-35621931	Asthma monitoring declined (situation)	4180186
-35621931	Asthma monitoring refused (situation)	4180186
-35622290	Assessment using Mini Asthma Quality of Life Questionnaire	4180186
-35622290	Assessment using Mini Asthma Quality of Life Questionnaire (procedure)	4180186
-35622291	Mini Asthma Quality of Life Questionnaire score	4180186
-35622291	Mini Asthma Quality of Life Questionnaire score (observable entity)	4180186
 35630685	Asthma action plan (record artifact)	4180186
-35632074	Enhanced services general practice extraction - Seasonal Flu asthma inhaled corticosteroids simple reference set (foundation metadata concept)	4180186
+35810760	Has a doctor ever told you that you have had any of the following conditions? (You can select more than one answer)	4180186
+35811529	"Has a doctor ever told you that you have had any of the conditions below?""<p>""asthma"	4180186
+35811545	User was asked the age at which doctor diagnosed asthma	4180186
 36674432	Antiasthmatic therapeutic role (role)	4180186
 36674599	Asthma never causes night symptoms (finding)	4180186
 36684328	Acute severe exacerbation of allergic asthma (disorder)	4180186
 36684335	Exacerbation of allergic asthma due to infection (disorder)	4180186
-36713252	Asthma medication not prescribed (situation)	4180186
-37007748	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States)) (product)	4180186
-37014070	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States)) 30 vial (product)	4180186
-37108580	Severe controlled persistent asthma (disorder)	4180186
+37019481	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; S prime; Screen; Survey; SURVEY.PROMIS	4180186
+37019491	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37019874	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020406	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; S prime; Screen; Survey; SURVEY.PROMIS	4180186
+37020515	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020600	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020726	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020798	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37021006	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37021412	Pan; Panel; PANEL.SURVEY.PROMIS; Panl; Patient Reported Outcomes Information System; Pnl; Point in time; promise; Random; Survey; SURVEY.PROMIS	4180186
 37108581	Severe uncontrolled persistent asthma (disorder)	4180186
 37109103	Oral steroid-dependent asthma (disorder)	4180186
-37116845	Status asthmaticus	4180186
-37116845	Acute severe refractory exacerbation of asthma (disorder)	4180186
-37116845	Acute severe asthma	4180186
-37206717	NFA - near fatal asthma	4180186
-37206717	Near fatal asthma (disorder)	4180186
 37208056	API (Asthma Predictive Index) total score	4180186
 37208056	Asthma Predictive Index (observable entity)	4180186
 37208352	SAFS - severe asthma with fungal sensitisation	4180186
 37208352	Severe asthma with fungal sensitisation (disorder)	4180186
-37208759	Excepted from asthma quality indicators - service unavailable (finding)	4180186
-37208964	Quality and Outcomes Framework asthma quality indicator-related care invitation (procedure)	4180186
 37310241	Intermittent allergic asthma (disorder)	4180186
 37310762	Declined to register for access to online asthma self-management application (situation)	4180186
 37310765	Registration for access to online asthma self-management application (procedure)	4180186
 37310868	Quality and Outcomes Framework asthma quality indicator-related care invitation using preferred method of communication (procedure)	4180186
 37395612	Asthma action plan not done (situation)	4180186
-37395677	Telehealth asthma monitoring (regime/therapy)	4180186
-37396658	Asthma action care planning (procedure)	4180186
 40297857	Asthma treatment compliance satisfactory (procedure)	4180186
 40297859	Asthma treatment compliance unsatisfactory (procedure)	4180186
-40297860	Asthma daytime symptoms (finding)	4180186
 40298013	FH: Asthma (situation)	4180186
-40300133	Asthma causes night symptoms 1 to 2 times per month (procedure)	4180186
 40300134	Asthma never causes daytime symptoms (procedure)	4180186
-40300136	Asthma causes daytime symptoms 1 to 2 times per month (procedure)	4180186
 40300137	Asthma causes daytime symptoms 1 to 2 times per week (procedure)	4180186
 40300138	Asthma causes daytime symptoms most days (procedure)	4180186
 40300141	Asthma limits walking up hills or stairs (procedure)	4180186
-40300142	Asthma limits walking on the flat (procedure)	4180186
 40300143	Number of asthma exacerbations in past year (procedure)	4180186
-40300394	Asthma society member (finding)	4180186
 40302112	H/O: asthma (situation)	4180186
-40303860	Exercise-induced asthma (finding)	4180186
-40307509	Asthma monitoring	4180186
-40307509	Chronic resp. dis. monitoring	4180186
-40307509	Respiratory disease monitoring	4180186
-40307509	Respiratory disease monitoring (& [asthma] or [chronic]) (procedure)	4180186
-40307535	Asthma disturbing sleep (finding)	4180186
 40307536	Asthma not disturbing sleep (finding)	4180186
-40307537	Asthma limiting activities (finding)	4180186
-40307538	Asthma not limiting activities (finding)	4180186
-40307542	Asthma management plan given (regime/therapy)	4180186
-40307543	Asthma severity (regime/therapy)	4180186
 40307544	Asthma prophylactic medication used (regime/therapy)	4180186
-40307552	Emergency asthma admission since last appointment (regime/therapy)	4180186
-40307553	Asthma restricts exercise (finding)	4180186
 40307554	Asthma never restricts exercise (finding)	4180186
 40307556	Asthma - currently dormant (finding)	4180186
 40307557	Asthma - currently active (finding)	4180186
 40309802	Asthma screening (procedure)	4180186
 40312649	Further asthma - drug prevention (procedure)	4180186
-40312651	Asthma control step 0 (procedure)	4180186
-40312653	Asthma control step 1 (procedure)	4180186
 40312654	Asthma control step 2 (procedure)	4180186
 40312655	Asthma control step 3 (procedure)	4180186
-40312656	Asthma control step 4 (procedure)	4180186
 40312657	Asthma control step 5 (procedure)	4180186
 40315757	Emergency admission, asthma (procedure)	4180186
 40316543	Asthma (disorder)	4180186
-40316544	Atopic asthma	4180186
-40316544	Extrinsic asthma - atopy	4180186
-40316544	Extrinsic asthma - atopy (& pollen) (disorder)	4180186
-40316544	Pollen asthma	4180186
 40316545	Asthma: [intrinsic] or [late onset] (disorder)	4180186
 40316545	Intrinsic asthma	4180186
 40316545	Late onset asthma	4180186
@@ -103,27 +300,8 @@ concept_id	concept_synonym_name	language_concept_id
 40316545	Late-onset asthma (LOA)	4180186
 40316545	LOA - late onset asthma	4180186
 40316546	Status asthmaticus (disorder)	4180186
-40316547	Asthma attack	4180186
-40316547	Asthma attack NOS	4180186
-40316547	Asthma attack (& NOS) (disorder)	4180186
-40316548	Asthma attack	4180186
-40316548	Asthma NOS	4180186
-40316548	Asthma: [NOS] or [attack] (disorder)	4180186
-40317526	Asthma administration: [monitoring] or [clinic] (regime/therapy)	4180186
-40317526	Asthma clinic administration	4180186
-40317526	Asthma monitoring admin.	4180186
-40317527	Attends asthma monitoring (regime/therapy)	4180186
-40317528	Refuses asthma monitoring (regime/therapy)	4180186
-40317529	Asthma monitor offer default (regime/therapy)	4180186
-40317530	Asthma monitoring call first letter (procedure)	4180186
 40317532	Asthma monitoring call second letter (procedure)	4180186
-40317533	Asthma monitoring call third letter (procedure)	4180186
-40317534	Asthma monitoring call verbal invite (procedure)	4180186
 40317535	Asthma monitoring call telephone invite (procedure)	4180186
-40317536	Asthma monitoring deleted (regime/therapy)	4180186
-40317537	Asthma monitored (& check done) (regime/therapy)	4180186
-40317538	Asthma monitoring admin.NOS (regime/therapy)	4180186
-40318547	Patient in asthma study (finding)	4180186
 40322619	Asthma leaflet given (situation)	4180186
 40323849	Seen in asthma clinic (finding)	4180186
 40336554	Atopic asthma	4180186
@@ -131,51 +309,21 @@ concept_id	concept_synonym_name	language_concept_id
 40336554	Extrinsic asthma (disorder)	4180186
 40336554	Allergic asthma	4180186
 40336554	Allergic atopic asthma	4180186
-40336718	Asthma monitoring	4180186
-40336718	Chronic resp. dis. monitoring	4180186
-40336718	Respiratory disease monitoring	4180186
-40336718	Respiratory disease monitoring (& [asthma] or [chronic]) (regime/therapy)	4180186
-40337129	Occasional asthma (procedure)	4180186
 40337130	Mild asthma (procedure)	4180186
-40337131	Moderate asthma (procedure)	4180186
-40337132	Severe asthma (procedure)	4180186
-40337152	Asthma - currently dormant (finding)	4180186
 40337153	Asthma - currently active (finding)	4180186
-40345716	Allergic atopic asthma (disorder)	4180186
-40345717	Extrinsic asthma without status asthmaticus (disorder)	4180186
 40345719	Extrinsic asthma with status asthmaticus (disorder)	4180186
-40345721	Intrinsic asthma with status asthmaticus (disorder)	4180186
 40345758	Atopic asthma	4180186
 40345758	Extrinsic asthma - atopy	4180186
 40345758	Extrinsic asthma - atopy (& pollen) (disorder)	4180186
 40345758	Pollen asthma	4180186
-40345759	Asthma: [intrinsic] or [late onset] (disorder)	4180186
-40345759	Intrinsic asthma	4180186
-40345759	Late onset asthma	4180186
-40345759	Late-onset asthma	4180186
-40345759	Late-onset asthma (LOA)	4180186
-40345759	LOA - late onset asthma	4180186
 40345760	Asthma attack	4180186
 40345760	Asthma NOS	4180186
 40345760	Asthma: [NOS] or [attack] (disorder)	4180186
-40362681	Allergic bronchitis	4180186
-40362681	Asthma	4180186
-40362681	Asthmatic bronchitis (disorder)	4180186
-40362681	Wheezy bronchitis	4180186
 40380713	Asthma monitored	4180186
 40380713	Asthma monitored (& check done) (finding)	4180186
 40380713	Asthma monitoring check done	4180186
 40381380	Asthma	4180186
 40389375	Allergic asthma with stated cause (disorder)	4180186
-40392299	Asthma - cardiac	4180186
-40392299	Cardiac asthma	4180186
-40392299	Impaired left ventricular func	4180186
-40392299	Impaired left ventricular function	4180186
-40392299	Left ventricular failure	4180186
-40392299	(Left ventricular: [failure] or [impaired function]) or (cardiac asthma) or (acute pulmonary oedema)	4180186
-40392299	(Left ventricular: [failure] or [impaired function]) or (cardiac asthma) or (acute pulmonary oedema) (disorder)	4180186
-40392299	Pulmonary edema - acute	4180186
-40392299	Pulmonary oedema - acute	4180186
 40395540	Asthmatic bronchitis (disorder)	4180186
 40395874	Allergic asthma	4180186
 40395874	Asthma: [extrinsic - atopic] or [allergic] or [pollen] or [childhood] or [with hay fever] (disorder)	4180186
@@ -186,14 +334,10 @@ concept_id	concept_synonym_name	language_concept_id
 40395876	Extrinsic asthma without status asthmaticus	4180186
 40395876	Hay fever with asthma	4180186
 40395876	(Hay fever with asthma) or (extrinsic asthma without status asthmaticus) (disorder)	4180186
-40395878	Extrinsic asthma with asthma attack	4180186
-40395878	Extrinsic asthma with: [asthma attack] or [status asthmaticus] (disorder)	4180186
-40395878	Extrinsic asthma with status asthmaticus	4180186
 40395880	Intrinsic asthma	4180186
 40395880	(Intrinsic asthma) or (late onset asthma) (disorder)	4180186
 40395880	Late onset asthma	4180186
 40395880	Late-onset asthma	4180186
-40395881	Intrinsic asthma without status asthmaticus (disorder)	4180186
 40395882	Intrinsic asthma with asthma attack	4180186
 40395882	Intrinsic asthma with: [asthma attack] or [status asthmaticus] (disorder)	4180186
 40395882	Intrinsic asthma with status asthmaticus	4180186
@@ -210,7 +354,6 @@ concept_id	concept_synonym_name	language_concept_id
 40395891	Asthma NOS	4180186
 40395891	Exercise induced asthma	4180186
 40410639	Asthma (disorder)	4180186
-40421675	Adverse reaction to theophylline - asthma (finding)	4180186
 40424943	[X]Antiasthmatics causing adverse effects in therapeutic use, not elsewhere classified (disorder)	4180186
 40436408	Allergic asthma (disorder)	4180186
 40436413	Allergic non-atopic asthma (disorder)	4180186
@@ -220,38 +363,17 @@ concept_id	concept_synonym_name	language_concept_id
 40482037	Mini asthma quality of life questionnaire (assessment scale)	4180186
 40482037	Mini AQLQ (asthma quality of life questionnaire)	4180186
 40482943	Asthma nurse specialist (occupation)	4180186
-40483397	Seasonal asthma (disorder)	4180186
-40483854	Asthma control questionnaire (assessment scale)	4180186
-40483854	ACQ - Asthma control questionnaire	4180186
 40521592	Asthma prophylaxis (product)	4180186
-40521593	Sodium cromoglicate [asthma]	4180186
-40521593	Sodium cromoglycate [asthma] (product)	4180186
 40521605	Ketotifen [asthma prophylaxis] (product)	4180186
 40521613	Nedocromil sodium [asthma] (product)	4180186
 40521909	[X]Family history of asthma and other chronic lower respiratory diseases (situation)	4180186
 40524344	[V]Family history of asthma (situation)	4180186
-40544275	Status asthmaticus (disorder)	4180186
-40545245	Asthma accident and emergency attendance since last visit (regime/therapy)	4180186
-40545246	Asthma treatment compliance satisfactory (finding)	4180186
-40545247	Asthma treatment compliance unsatisfactory (finding)	4180186
-40545248	Asthma causes night symptoms 1 to 2 times per month (finding)	4180186
-40545249	Asthma never causes daytime symptoms (finding)	4180186
-40545251	Asthma causes daytime symptoms 1 to 2 times per month (finding)	4180186
-40545252	Asthma causes daytime symptoms 1 to 2 times per week (finding)	4180186
-40545253	Asthma causes daytime symptoms most days (finding)	4180186
-40545254	Asthma limits walking up hills or stairs (finding)	4180186
 40545255	Asthma limits walking on the flat (finding)	4180186
 40545256	Number of asthma exacerbations in past year (finding)	4180186
 40545661	Asthma accident and emergency attendance since last visit (regime/therapy)	4180186
-40545662	Asthma treatment compliance satisfactory (finding)	4180186
 40545663	Asthma treatment compliance unsatisfactory (finding)	4180186
 40545664	Asthma causes night symptoms 1 to 2 times per month (finding)	4180186
-40545665	Asthma never causes daytime symptoms (finding)	4180186
 40545666	Asthma causes daytime symptoms 1 to 2 times per month (finding)	4180186
-40545667	Asthma causes daytime symptoms 1 to 2 times per week (finding)	4180186
-40545669	Asthma causes daytime symptoms most days (finding)	4180186
-40545670	Asthma limits walking up hills or stairs (finding)	4180186
-40545671	Asthma limits walking on the flat (finding)	4180186
 40545672	Number of asthma exacerbations in past year (observable entity)	4180186
 40546155	Asthma daytime symptoms (finding)	4180186
 40546234	Exacerbation of asthma (disorder)	4180186
@@ -259,29 +381,40 @@ concept_id	concept_synonym_name	language_concept_id
 40547227	Family history of asthma	4180186
 40547227	FH: Asthma (situation)	4180186
 40560099	Change in asthma management plan (regime/therapy)	4180186
-40560103	Step up change in asthma management plan (regime/therapy)	4180186
-40560104	Step down change in asthma management plan (regime/therapy)	4180186
-40560107	Absent from work or school due to asthma (situation)	4180186
-40560109	Asthma monitoring due (regime/therapy)	4180186
-40561392	Suspected asthma (situation)	4180186
-40561687	Extrinsic asthma (disorder)	4180186
-40563015	Asthma annual review (regime/therapy)	4180186
-40563017	Asthma follow-up (regime/therapy)	4180186
-40563020	Asthma night-time symptoms (finding)	4180186
 40563070	Asthma medication review (procedure)	4180186
 40564962	Change in asthma management plan (regime/therapy)	4180186
-40564966	Step up change in asthma management plan (regime/therapy)	4180186
-40564967	Step down change in asthma management plan (regime/therapy)	4180186
-40564969	Absent from work or school due to asthma (situation)	4180186
-40564972	Asthma monitoring due (finding)	4180186
 40566164	Asthma annual review (regime/therapy)	4180186
 40566165	Asthma follow-up (regime/therapy)	4180186
 40566169	Asthma night-time symptoms (finding)	4180186
 40566215	Asthma medication review (procedure)	4180186
-40572458	Suspected asthma (situation)	4180186
-40595784	Work aggravated asthma (disorder)	4180186
 40640771	Intrinsic asthma (disorder)	4180186
-42535716	Asthma in pregnancy (disorder)	4180186
+40757953	Asthma/chronic obstructive lung disease or chronic lung disease in last 7D; COLD; COPD; Dis; Diseases; Dz; Finding; Findings; MDS version 3; Ordinal; Past; QL; Qual; Qualitative; Screen; Survey; SURVEY.MDS	4180186
+40758532	Asthma tracking Pnl	4180186
+40758532	Asthma tracking Pnl; Pan; Panl; PHR panels; Pnl; Point in time; Random	4180186
+40758532	哮喘跟踪组套:-:时间点:^患者:-	4182948
+40758533	1 week; Count/time; Lung; nRate; Number rate; Number Rate = Count/Time; PULMONARY; Pulmonology; QNT; Quan; Quant; Quantitative; Respiratory	4180186
+40758533	Asthma spells 1W nRate	4180186
+40758533	哮喘发作:计数型速率:1星期:^患者:定量型	4182948
+40764829	Pan; Panel; PANEL.SURVEY.PROMIS; Panl; Patient Reported Outcomes Information System; PEDS; Pnl; Point in time; promise; Random; Survey; SURVEY.PROMIS	4180186
+40764831	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764832	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764833	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764839	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764844	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764974	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40766910	Asthma start age PhenX	4180186
+40766910	Asthma start age; Point in time; QNT; Quan; Quant; Quantitative; Random; Started	4180186
+40766910	哮喘开始于多大年龄:时间:时间点:^患者:定量型:PhenX	4182948
+40766911	Asthma stop age PhenX	4180186
+40766911	Asthma stop age; Point in time; QNT; Quan; Quant; Quantitative; Random	4180186
+40766911	如果您不再患有哮喘,那么它是在您多大年龄时停止的:时间:时间点:^患者:定量型:PhenX	4182948
+40766952	Hx parent asthma PhenX	4180186
+40766952	Finding; Findings; Hx parent asthma; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40766952	某位医生是否曾经告诉您的父母之一说,他或她患有哮喘:发现:时间点:^患者:序数型:PhenX	4182948
+40767110	Asthma ever 6; Finding; Findings; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40767110	Asthma ever 6 PhenX	4180186
+40767110	您的孩子是否患有过哮喘:发现:时间点:^患者:序数型:PhenX	4182948
+42528834	4 weeks; Pan; Panel; Panl; Pnl; Survey	4180186
 42535849	Asthma monitoring using asthma symptom diary (regime/therapy)	4180186
 42535849	Asthma monitoring using asthma symptom diary	4180186
 42536207	Life threatening acute exacerbation of asthma (disorder)	4180186
@@ -289,37 +422,22 @@ concept_id	concept_synonym_name	language_concept_id
 42536648	Acute severe exacerbation of asthma co-occurrent and due to allergic asthma (disorder)	4180186
 42536648	Allergic asthma with status asthmaticus	4180186
 42536649	Uncomplicated non-allergic asthma (disorder)	4180186
-42536973	Asthma clinical management plan (record artifact)	4180186
-42538744	Acute allergic asthma	4180186
-42538744	Exacerbation of allergic asthma (disorder)	4180186
 42539549	Uncomplicated allergic asthma (disorder)	4180186
-42689544	Use of asthma symptom diary (regime/therapy)	4180186
-42690582	Moderate acute exacerbation of asthma (disorder)	4180186
-42690663	Life threatening acute exacerbation of asthma (disorder)	4180186
+42868470	DOC.ONT; Document; Finding; Findings; Point in time; Random	4180186
+42868470	哮喘行动计划:发现:时间点:{环境}:文档型:{角色}	4182948
 43021747	Asthma never causes night symptoms (situation)	4180186
-43530693	Acute exacerbation of chronic obstructive airways disease with asthma (disorder)	4180186
 43530700	Chronic obstructive airway disease with asthma (disorder)	4180186
-43530745	Asthma with irreversible airway obstruction (disorder)	4180186
 44783144	Did not attend asthma review (finding)	4180186
-44783610	Asthma self management (regime/therapy)	4180186
-44784373	Under care of asthma specialist nurse (finding)	4180186
 44784453	Education about asthma self management (procedure)	4180186
-44788435	Does not have asthma management plan (finding)	4180186
 44788779	Asthma trigger: respiratory infection	4180186
 44788779	Asthma trigger - respiratory infection (finding)	4180186
 44788779	Asthma trigger: respiratory infection (finding)	4180186
-44788780	Asthma trigger: seasonal	4180186
-44788780	Asthma trigger - seasonal (finding)	4180186
-44788780	Asthma trigger: seasonal (finding)	4180186
 44788781	Asthma trigger - animal	4180186
 44788781	Asthma trigger - animal (finding)	4180186
 44788781	Asthma trigger: animal (finding)	4180186
 44788789	Asthma trigger: cold air	4180186
 44788789	Asthma trigger - cold air (finding)	4180186
 44788789	Asthma trigger: cold air (finding)	4180186
-44788824	Asthma trigger: damp	4180186
-44788824	Asthma trigger - damp (finding)	4180186
-44788824	Asthma trigger: damp (finding)	4180186
 44788825	Asthma trigger: emotion	4180186
 44788825	Asthma trigger - emotion (finding)	4180186
 44788825	Asthma trigger: emotion (finding)	4180186
@@ -334,71 +452,95 @@ concept_id	concept_synonym_name	language_concept_id
 44792264	Asthma trigger: pollen	4180186
 44792264	Asthma trigger: pollen (finding)	4180186
 44792264	Asthma trigger - pollen (finding)	4180186
-44792265	Asthma trigger: warm air	4180186
-44792265	Asthma trigger - warm air (finding)	4180186
-44792265	Asthma trigger: warm air (finding)	4180186
 44794188	[X]Antiasthmatics causing adverse effects in therapeutic use, not elsewhere classified (disorder)	4180186
-44795595	[V]Family history of asthma (situation)	4180186
 44795853	RCP (Royal College of Physicians) asthma assessment	4180186
 44795853	Royal College of Physicians asthma assessment (assessment scale)	4180186
-44797404	[X]Family history of asthma and other chronic lower respiratory diseases (situation)	4180186
 44799960	Asthma trigger: tobacco smoke	4180186
 44799960	Asthma trigger - tobacco smoke (finding)	4180186
 44799960	Asthma trigger: tobacco smoke (finding)	4180186
 44802254	No family history of asthma (situation)	4180186
-44802475	Patient has a written asthma personal action plan (finding)	4180186
 44802476	Health education - asthma self management (procedure)	4180186
-44802477	Health education - structured asthma discussion (procedure)	4180186
 44802478	Health education - structured patient focused asthma discussion (procedure)	4180186
 44802634	Assessment using asthma control test (regime/therapy)	4180186
-44803332	Asthma monitoring administration (record artifact)	4180186
-44803641	Exception reporting - asthma quality indicators (finding)	4180186
-44803764	Excepted from asthma quality indicators - informed dissent (finding)	4180186
-44805087	Asthma causes night time symptoms 1 to 2 times per week (finding)	4180186
-44805089	Asthma causes symptoms most nights (finding)	4180186
-44805091	Asthma limits activities 1 to 2 times per month (finding)	4180186
-44805092	Asthma limits activities 1 to 2 times per week (finding)	4180186
 44805093	Asthma limits activities most days (finding)	4180186
-44805095	Royal College of Physicians asthma assessment three questions score (observable entity)	4180186
 44805526	Asthma review using Royal College of Physicians three questions (regime/therapy)	4180186
 44806120	Asthma self-management plan review (procedure)	4180186
 44806236	Number of days absent from school due to asthma in past 6 months (observable entity)	4180186
 44806313	Seen in school asthma clinic (finding)	4180186
 44806367	Asthma self-management plan agreed (finding)	4180186
 44807084	Asthma monitoring due date (observable entity)	4180186
-44807127	Asthma trigger - wind (finding)	4180186
 44807446	Acute asthma control management (regime/therapy)	4180186
-44807733	Asthma trigger - perfume (finding)	4180186
 44809985	Did not attend asthma clinic (finding)	4180186
 44809985	DNA (did not attend) asthma clinic	4180186
 44810117	Chronic asthma with fixed airflow obstruction (disorder)	4180186
-44810131	No asthma trigger identified by subject (finding)	4180186
-44811196	Asthma management plan declined (situation)	4180186
 44811605	Childhood Asthma Control Test (assessment scale)	4180186
-44811606	Assessment using Childhood Asthma Control Test (procedure)	4180186
-44811607	Childhood Asthma Control Test score (observable entity)	4180186
 44813670	Asthma clinic administration (record artifact)	4180186
 44813771	Excepted from asthma quality indicators - patient unsuitable (finding)	4180186
-44813908	Provision of written information about asthma (procedure)	4180186
-45765802	Asthma clinic (environment)	4180186
+44821468	Adv eff antiasthmatics	4180186
+44823144	Asthma NOS w (ac) exac	4180186
+44824288	Ext asthma w status asth	4180186
+44828510	Family hx-asthma	4180186
+44832424	Asthma w status asthmat	4180186
+44834769	Int asthma w status asth	4180186
+44837135	Int asthma w (ac) exac	4180186
+45575364	Poisoning by antiasthmatics, intentional self-harm, subs	4180186
+45585017	Poisoning by antiasthmatics, accidental, sequela	4180186
+45604356	Poisoning by antiasthmatics, undetermined, subs encntr	4180186
+45611599	Asthma, Exercise Induced	4180186
+45611599	Bronchospasm, Exercise Induced	4180186
+45611599	Bronchospasm, Exercise-Induced	4180186
+45611599	Exercise Induced Asthma	4180186
+45611599	Exercise-Induced Asthma	4180186
+45611599	Exercise-Induced Asthmas	4180186
+45611599	Exercise Induced Bronchospasm	4180186
+45611599	Exercise-Induced Bronchospasm	4180186
+45611599	Exercise-Induced Bronchospasms	4180186
+45612419	Asthmas, Occupational	4180186
+45612419	Occupational Asthma	4180186
+45612419	Occupational Asthmas	4180186
+45612832	Asthma, Bronchial	4180186
+45612832	Asthmas	4180186
+45612832	Bronchial Asthma	4180186
+45613609	Aspirin Induced Asthma	4180186
+45613609	Aspirin-Induced Asthma	4180186
+45613609	Aspirin Induced Asthmas	4180186
+45613609	Aspirin-Induced Asthmas	4180186
+45613609	Aspirin Induced Asthma Syndrome	4180186
+45613609	Aspirin-Induced Asthma Syndrome	4180186
+45613609	Aspirin-Induced Asthma Syndromes	4180186
+45613609	Asthma, Aspirin Induced	4180186
+45613609	Asthma, NSAID induced	4180186
+45613609	Asthma, NSAID-induced	4180186
+45613609	Asthmas, Aspirin Induced	4180186
+45613609	Asthmas, Aspirin-Induced	4180186
+45613609	Asthmas, NSAID-induced	4180186
+45613609	Asthma Syndrome, Aspirin-Induced	4180186
+45613609	Asthma Syndromes, Aspirin-Induced	4180186
+45613609	Induced Asthma, Aspirin	4180186
+45613609	Induced Asthmas, Aspirin	4180186
+45613609	NSAID-induced Asthma	4180186
+45613609	NSAID-induced Asthmas	4180186
+45613609	Syndrome, Aspirin-Induced Asthma	4180186
+45613609	Syndromes, Aspirin-Induced Asthma	4180186
+45616948	Asthmatic Crises	4180186
+45616948	Asthmatic Crisis	4180186
+45616948	Asthmatic Shock	4180186
+45616948	Asthmatic Shocks	4180186
+45616948	Asthmaticus, Status	4180186
+45616948	Crises, Asthmatic	4180186
+45616948	Crisis, Asthmatic	4180186
+45616948	Shock, Asthmatic	4180186
+45616948	Shocks, Asthmatic	4180186
 45766727	Allergic asthma caused by Dermatophagoides pteronyssinus (disorder)	4180186
 45766727	Dermatophagoides pteronyssinus allergic asthma	4180186
 45766727	Asthma caused by house dust mite, Dermatophagoides pteronyssinus	4180186
 45766727	Allergic asthma caused by Dermatophagoides pteronyssinus	4180186
-45766728	Allergic asthma caused by Dermatophagoides farinae	4180186
-45766728	Allergic asthma caused by Dermatophagoides farinae (disorder)	4180186
-45766728	Asthma caused by house dust mite, Dermatophagoides farinae	4180186
-45766728	Dermatophagoides farinae allergic asthma	4180186
 45766769	No family history of asthma (situation)	4180186
 45768910	Uncomplicated asthma (disorder)	4180186
 45768911	Acute mild persistent asthma	4180186
 45768911	Exacerbation of mild persistent asthma (disorder)	4180186
 45768912	Exacerbation of severe persistent asthma (disorder)	4180186
 45768963	Uncomplicated mild persistent asthma (disorder)	4180186
-45768964	Uncomplicated moderate persistent asthma (disorder)	4180186
-45768965	Uncomplicated severe persistent asthma (disorder)	4180186
-45769350	Acute severe exacerbation of severe persistent asthma (disorder)	4180186
-45769351	Acute severe exacerbation of moderate persistent asthma (disorder)	4180186
 45769352	Acute severe exacerbation of mild persistent asthma (disorder)	4180186
 45769438	Acute severe exacerbation of asthma (disorder)	4180186
 45769441	Acute exacerbation of immunoglobulin E-mediated allergic asthma (disorder)	4180186
@@ -407,229 +549,126 @@ concept_id	concept_synonym_name	language_concept_id
 45769442	Acute severe exacerbation of immunoglobin E-mediated allergic asthma (disorder)	4180186
 45769442	Acute severe exacerbation of extrinsic asthma	4180186
 45769443	Acute severe exacerbation of intrinsic asthma (disorder)	4180186
-45769660	Emergency asthma admission since last encounter (situation)	4180186
 45769673	Emergency asthma patient visit since last encounter (situation)	4180186
-45770425	Asthma monitoring invitation short message service text message	4180186
-45770425	Asthma monitoring invitation short message service text message (procedure)	4180186
-45770428	Asthma monitoring invitation email (procedure)	4180186
-45770432	Review of patient at risk of asthma (procedure)	4180186
-45770434	At risk of asthma (finding)	4180186
-45771045	Acute exacerbation of asthma (disorder)	4180186
-45771045	Asthma attack	4180186
 45772073	Asthma in childbirth	4180186
 45772073	Asthma in mother complicating childbirth (disorder)	4180186
 45772937	Acute exacerbation of moderate persistent asthma	4180186
 45772937	Exacerbation of moderate persistent asthma (disorder)	4180186
-45773005	Acute exacerbation of intrinsic asthma (disorder)	4180186
 46269767	Acute severe exacerbation of asthma co-occurrent with allergic rhinitis (disorder)	4180186
 46269770	Severe persistent allergic asthma (disorder)	4180186
 46269771	Acute severe exacerbation of severe persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
 46269772	Severe persistent allergic asthma controlled (finding)	4180186
 46269773	Severe persistent asthma controlled co-occurrent with allergic rhinitis (disorder)	4180186
 46269774	Severe persistent allergic asthma uncontrolled (finding)	4180186
-46269775	Severe persistent asthma uncontrolled co-occurrent with allergic rhinitis (disorder)	4180186
-46269776	Mild persistent allergic asthma (disorder)	4180186
 46269777	Acute severe exacerbation of mild persistent allergic asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46269778	Mild persistent asthma controlled (finding)	4180186
-46269779	Mild persistent asthma controlled co-occurrent with allergic rhinitis (disorder)	4180186
-46269780	Mild persistent allergic asthma uncontrolled (finding)	4180186
 46269781	Mild persistent asthma uncontrolled (finding)	4180186
 46269782	Mild persistent asthma uncontrolled co-occurrent with allergic rhinitis (disorder)	4180186
-46269783	Moderate persistent asthma controlled (finding)	4180186
-46269784	Moderate persistent allergic asthma (disorder)	4180186
 46269785	Acute severe exacerbation of moderate persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46269786	Moderate persistent allergic asthma controlled (finding)	4180186
-46269787	Moderate persistent controlled asthma co-occurrent with allergic rhinitis (disorder)	4180186
 46269788	Moderate persistent allergic asthma uncontrolled (finding)	4180186
-46269789	Moderate persistent asthma uncontrolled co-occurrent with allergic rhinitis (disorder)	4180186
 46269790	Moderate persistent asthma uncontrolled (finding)	4180186
 46269802	Chronic obstructive asthma co-occurrent with acute exacerbation of asthma (disorder)	4180186
-46270028	Severe persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
 46270029	Mild persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46270030	Intermittent asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46270082	Acute exacerbation of mild persistent asthma (disorder)	4180186
 46270322	Intermittent asthma uncontrolled (disorder)	4180186
-46270573	Intermittent asthma well controlled (finding)	4180186
 46272934	Acute asthma control management (procedure)	4180186
 46272979	Recent asthma management (situation)	4180186
 46273452	Acute exacerbation of asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46273454	Moderate persistent asthma co-occurrent with allergic rhinitis (disorder)	4180186
-46273462	Acute severe exacerbation of moderate persistent allergic asthma (disorder)	4180186
 46273487	Acute exacerbation of moderate persistent asthma (disorder)	4180186
 46273635	Steroid dependent asthma (disorder)	4180186
-46274059	Acute severe exacerbation of severe persistent allergic asthma (disorder)	4180186
-46274060	Mild persistent allergic asthma controlled (finding)	4180186
-46274062	Asthma-COPD overlap syndrome (ACOS)	4180186
-46274062	Asthma-chronic obstructive pulmonary disease overlap syndrome (disorder)	4180186
-46274062	ACOS - asthma-chronic obstructive pulmonary disease overlap syndrome	4180186
 46274124	Acute severe exacerbation of mild persistent allergic asthma (disorder)	4180186
-46284991	Asthma monitoring short message service text message first invitation (procedure)	4180186
-46284992	Asthma monitoring short message service text message third invitation (procedure)	4180186
-46285153	Severe asthma exacerbation risk assessment (procedure)	4180186
-46286983	Telehealth asthma monitoring (regime/therapy)	4180186
-46287045	Asthma monitoring short message service text message second invitation (procedure)	4180186
 46287068	At risk of severe asthma exacerbation (finding)	4180186
-252341	Extrinsic asthma with status asthmaticus (disorder)	4180186
 252658	Intrinsic asthma without status asthmaticus (disorder)	4180186
 252942	Asthmatic pulmonary eosinophilia (disorder)	4180186
 252942	Eosinophilic asthma	4180186
-254980	Intrinsic asthma with asthma attack (disorder)	4180186
-256448	Chronic wheezy bronchitis	4180186
-256448	Chronic asthmatic bronchitis (disorder)	4180186
-256716	Acute severe asthma	4180186
-256716	Asthma with status asthmaticus (disorder)	4180186
-256716	Status asthmaticus	4180186
 257581	Exacerbation of asthma	4180186
 257581	Asthma attack	4180186
 257581	Exacerbation of asthma (disorder)	4180186
 259055	Extrinsic asthma with asthma attack (disorder)	4180186
-261048	Intrinsic asthma with status asthmaticus (disorder)	4180186
-312950	Atopic asthma	4180186
-312950	IgE mediated allergic asthma	4180186
-312950	Immunoglobulin E-mediated allergic asthma	4180186
-312950	Immunoglobulin E-mediated allergic asthma (disorder)	4180186
-312950	Allergic atopic asthma	4180186
-312950	IgE mediated asthma	4180186
-313236	Cough variant asthma (disorder)	4180186
 316577	Antiasthmatic poisoning	4180186
 316577	Poisoning by antiasthmatic (disorder)	4180186
-317009	Asthma (disorder)	4180186
-317009	Bronchial hyperresponsiveness	4180186
-317009	Airway hyperreactivity	4180186
-317009	Bronchial hyperreactivity	4180186
-317009	Bronchial asthma	4180186
-317009	Bronchial hypersensitivity	4180186
-317009	BHR - Bronchial hyperreactivity	4180186
-317009	Hyperreactive airway disease	4180186
-317009	Asthmatic	4180186
 440912	Adverse reaction caused by antiasthmatic (disorder)	4180186
 440912	Adverse reaction caused by antiasthmatic	4180186
-443801	Exercise induced asthma	4180186
-443801	Exercise-induced asthma (disorder)	4180186
-443801	EIA - Exercise-induced asthma	4180186
 608758	Network Contract Directed Enhanced Service - short-acting beta-agonist (SABA) inhalers used in asthma and chronic obstructive pulmonary disease (COPD) excluding salbutamol simple reference set (foundation metadata concept)	4180186
 608763	Network Contract Directed Enhanced Service - non-salbutamol asthma and chronic obstructive pulmonary disease (COPD) metered dose inhalers simple reference set (foundation metadata concept)	4180186
-608764	Network Contract Directed Enhanced Service - non-salbutamol asthma and chronic obstructive pulmonary disease (COPD) inhalers simple reference set (foundation metadata concept)	4180186
-761844	Inhaled steroid-dependent asthma (disorder)	4180186
-763381	Asthma treatment assessment questionnaire (assessment scale)	4180186
-763381	ATAQ - Asthma treatment assessment questionnaire	4180186
 764331	Referral for management of asthma (procedure)	4180186
-764677	Persistent asthma (disorder)	4180186
 764949	Persistent asthma, well controlled (disorder)	4180186
-765656	Asthma trigger education (procedure)	4180186
 765657	Asthma attack education (procedure)	4180186
-765844	Documentation of asthma medication action plan (procedure)	4180186
+908216	Asthma Chronic Obstructive Pulmonary Disease Overlap Syndrome	4180186
+908216	Asthma COPD Overlap Syndrome	4180186
+908216	Asthma-COPD Overlap Syndrome	4180186
+908216	Asthma-COPD Overlap Syndromes	4180186
+908216	Overlap Syndrome, Asthma-COPD	4180186
+1005070	My chest felt tight because of my asthma in past 7D	4180186
+1005075	My asthma bothered me in past 7D	4180186
+1005077	I got tired easily because of my asthma in past 7D	4180186
+1005079	I had trouble walking because of my asthma in past 7D	4180186
+1005080	I missed school because of asthma in past 7D	4180186
+1005083	My asthma bothered me when I was with my friends in past 7D	4180186
+1014143	PROMIS pediatric asthma - version 1.0 T-score	4180186
+1019269	My child got tired easily because of his or her asthma in past 7D	4180186
+1019270	My child was bothered by asthma when he or she was with friends in past 7D	4180186
+1019274	It was hard for my child to play sports or exercise because of asthma in past 7D	4180186
+1019275	My child had trouble sleeping at night because of asthma in past 7D	4180186
+1019276	It was hard for my child to play with pets because of asthma in past 7D	4180186
+1019278	My child felt wheezy because of his or her asthma in past 7D	4180186
+1019279	My child had asthma attacks in past 7D	4180186
+1019281	It was hard for my child to take a deep breath because of asthma in past 7D	4180186
+1019282	My child had trouble breathing because of his or her asthma in past 7D	4180186
+1034039	Asthma &or chronic obstructive lung disease or chronic lung disease in last 7D	4180186
 3521979	Asthma administration: [monitoring] or [clinic] (administrative concept)	4180186
 3521979	Asthma clinic administration	4180186
 3521979	Asthma monitoring admin.	4180186
-3522446	Health education - asthma (regime/therapy)	4180186
-3526770	RCP asthma outcome measure	4180186
-3526771	RCP asthma outcome measure	4180186
-3534450	Asthma unspecified (disorder)	4180186
-3534450	Hyperreactive airways disease	4180186
 3537440	Antiasthmatic poisoning NOS (disorder)	4180186
-3538741	Asthma attack NOS (disorder)	4180186
-3540057	Adverse reaction to antiasthmatic NOS (disorder)	4180186
-3542790	Asthma monitoring administration NOS (record artifact)	4180186
-3544586	Asthma never causes night symptoms (finding)	4180186
-3547213	ACOS - asthma-chronic obstructive pulmonary disease overlap syndrome	4180186
-3547213	Asthma-chronic obstructive pulmonary disease overlap syndrome (disorder)	4180186
 3548003	Acute severe exacerbation of asthma (disorder)	4180186
 3550766	Asthma monitoring by nurse (regime/therapy)	4180186
-3550767	Asthma monitoring by doctor (regime/therapy)	4180186
-3550773	Asthma confirmed (context-dependent category)	4180186
-3551236	Excepted from asthma quality indicators: Patient unsuitable (finding)	4180186
-3551237	Excepted from asthma quality indicators: Informed dissent (finding)	4180186
 3551257	Exception reporting: asthma quality indicators (finding)	4180186
 3556874	Asthma control test score (observable entity)	4180186
 3557058	Under care of asthma specialist nurse (finding)	4180186
-3557204	Did not attend asthma review (finding)	4180186
-3557638	Intrinsic asthma NOS (disorder)	4180186
 3557675	Extrinsic asthma NOS (disorder)	4180186
 3563811	ACQ - Asthma control questionnaire	4180186
 3563811	Asthma control questionnaire (assessment scale)	4180186
-3564735	Asthma control test (assessment scale)	4180186
 3565098	Asthma clinic administration (administrative concept)	4180186
 3568225	Asthma monitoring administration (administrative concept)	4180186
-3572888	Mini AQLQ - Mini asthma quality of life questionnaire	4180186
-3572888	Mini asthma quality of life questionnaire (assessment scale)	4180186
 3573386	Allergic asthma NEC (disorder)	4180186
-3573628	Status asthmaticus NOS (disorder)	4180186
-3575186	Asthma monitoring administration NOS (administrative concept)	4180186
 3584392	Asthma NOS (disorder)	4180186
-3656330	Asthma medication declined (situation)	4180186
 3656331	Asthma action plan declined (situation)	4180186
-3656688	Coronavirus disease 2019 (COVID-19) general practice extraction - severe asthma medication simple reference set (foundation metadata concept)	4180186
-3656688	COVID-19 general practice extraction - severe asthma medication simple reference set	4180186
-3657425	Asthma medication not indicated (situation)	4180186
-3661412	Thunderstorm-induced asthma	4180186
-3661412	Thunderstorm asthma (disorder)	4180186
-3661412	Asthma exacerbation due to thunderstorm	4180186
-3661634	Consultation for asthma (procedure)	4180186
 4015819	Asthma disturbs sleep weekly (finding)	4180186
 4015823	Emergency asthma admission since last appointment (regime/therapy)	4180186
-4015947	Asthma causing night waking (finding)	4180186
 4015948	Asthma limiting activities (finding)	4180186
 4015951	Asthma restricts exercise (finding)	4180186
-4017025	Asthma disturbing sleep (finding)	4180186
-4017026	Asthma not limiting activities (finding)	4180186
 4017182	Asthma disturbs sleep frequently (finding)	4180186
 4017183	Asthma not disturbing sleep (finding)	4180186
 4017184	Asthma never disturbs sleep (finding)	4180186
 4017187	Asthma management plan given (regime/therapy)	4180186
-4017188	Asthma severity (regime/therapy)	4180186
 4017189	Asthma prophylactic medication used (situation)	4180186
-4017191	Asthma sometimes restricts exercise (finding)	4180186
-4017192	Asthma severely restricts exercise (finding)	4180186
 4017293	Asthma never restricts exercise (finding)	4180186
 4020163	Antiasthmatic poisoning NOS (disorder)	4180186
-4022592	Millers' cough	4180186
-4022592	Grain worker's asthma	4180186
-4022592	Millers' asthma (disorder)	4180186
-4022592	Mill-workers' asthma	4180186
 4036799	Asthma resolved (finding)	4180186
 4046879	Asthma Accident and Emergency attendance since last visit (regime/therapy)	4180186
-4051241	Family history: Asthma (situation)	4180186
-4051241	FH: Asthma	4180186
-4051241	Family history: Asthma	4180186
-4051466	Childhood asthma (disorder)	4180186
 4052339	Asthma society member (finding)	4180186
 4056816	Further asthma - drug prevention (regime/therapy)	4180186
-4057273	Asthma control step 4 (procedure)	4180186
 4057863	Asthmatoid wheeze (finding)	4180186
 4057863	Jackson's sign	4180186
 4057952	Meat-wrappers' asthma (disorder)	4180186
-4059321	History of asthma (situation)	4180186
-4059321	History of asthma	4180186
 4062501	Asthma screening (procedure)	4180186
 4075237	Brittle asthma (disorder)	4180186
-4077802	Asthma monitoring (regime/therapy)	4180186
 4079383	Asthma leaflet given (situation)	4180186
 4080516	Printers' asthma (disorder)	4180186
 4080962	Asthma control step 0 (procedure)	4180186
 4080963	Asthma control step 1 (procedure)	4180186
-4080964	Asthma control step 2 (procedure)	4180186
 4082252	Asthma control step 3 (procedure)	4180186
-4082254	Asthma control step 5 (procedure)	4180186
 4083422	Seen in asthma clinic (finding)	4180186
 4084667	Emergency hospital admission for asthma (procedure)	4180186
-4085315	Attends asthma monitoring (finding)	4180186
 4085316	Asthma monitoring call second letter (procedure)	4180186
 4085318	Asthma monitoring call third letter (procedure)	4180186
-4086119	Asthma monitoring call first letter (procedure)	4180186
 4086120	Asthma monitoring deleted (finding)	4180186
 4086436	Poisoning caused by herbal asthma mixture	4180186
 4086436	Poisoning caused by herbal asthma mixture (disorder)	4180186
-4088882	Refuses asthma monitoring (finding)	4180186
-4088883	Asthma monitor offer default (finding)	4180186
 4090381	Patient in asthma study (finding)	4180186
-4090836	Asthma monitoring call verbal invite (procedure)	4180186
 4090837	Asthma monitoring call telephone invite (procedure)	4180186
 4110051	Mixed asthma (disorder)	4180186
 4112669	Intrinsic asthma NOS (disorder)	4180186
 4112670	Asthma unspecified (disorder)	4180186
 4112670	Hyperreactive airways disease	4180186
-4112831	Extrinsic asthma NOS (disorder)	4180186
 4119298	Late onset asthma (disorder)	4180186
 4119298	Late-onset asthma	4180186
 4119299	Allergic asthma NEC (disorder)	4180186
@@ -643,43 +682,22 @@ concept_id	concept_synonym_name	language_concept_id
 4123254	Emotional laryngeal wheezing	4180186
 4123254	Factitious asthma (disorder)	4180186
 4123254	Functional laryngeal stridor	4180186
-4125022	Acute asthma (disorder)	4180186
-4136456	Asthma clinical management plan (qualifier value)	4180186
 4138760	Acute intermittent asthma	4180186
 4138760	Exacerbation of intermittent asthma (disorder)	4180186
 4141621	Asthma attack (disorder)	4180186
 4141622	Asthma NOS (disorder)	4180186
-4141978	Intermittent asthma (disorder)	4180186
-4142738	Moderate persistent asthma (disorder)	4180186
 4143474	Bakers' asthma (disorder)	4180186
 4143474	Baker's asthma	4180186
 4143474	Flour asthma	4180186
-4143828	Mild persistent asthma (disorder)	4180186
-4144104	Status asthmaticus NOS (disorder)	4180186
-4144757	Exacerbation of persistent asthma (disorder)	4180186
-4145108	Recent asthma management (regime/therapy)	4180186
 4145356	Severe persistent asthma (disorder)	4180186
 4145497	Non-allergic asthma	4180186
 4145497	Non-allergic asthma (disorder)	4180186
 4145497	Asthma due to internal immunological process	4180186
-4146581	Mild intermittent asthma (disorder)	4180186
-4147509	Allergic-infective asthma (disorder)	4180186
-4148757	Asthma monitored	4180186
-4148757	Asthma monitoring check done (finding)	4180186
-4152292	Asthma causes night symptoms 1 to 2 times per month (finding)	4180186
 4152417	Asthma limits walking up hills or stairs (finding)	4180186
 4152418	Asthma never causes daytime symptoms (finding)	4180186
 4152420	Asthma treatment compliance unsatisfactory (finding)	4180186
-4152911	Asthma causes daytime symptoms most days (finding)	4180186
-4152912	Number of asthma exacerbations in past year (finding)	4180186
-4152913	Severe asthma (disorder)	4180186
 4155464	Asthma causes daytime symptoms 1 to 2 times per week (finding)	4180186
-4155465	Asthma limits walking on the flat (finding)	4180186
 4155468	Mild asthma (disorder)	4180186
-4155469	Moderate asthma (disorder)	4180186
-4155470	Occasional asthma (disorder)	4180186
-4155473	Asthma treatment compliance satisfactory (finding)	4180186
-4156136	Asthma causes daytime symptoms 1 to 2 times per month (finding)	4180186
 4157218	Poisoning caused by herbal asthma mixture of undetermined intent (disorder)	4180186
 4157218	Poisoning caused by herbal asthma mixture of undetermined intent	4180186
 4160262	Accidental poisoning caused by herbal asthma mixture (disorder)	4180186
@@ -688,75 +706,31 @@ concept_id	concept_synonym_name	language_concept_id
 4160263	Intentional poisoning caused by herbal asthma mixture	4180186
 4161595	Asthma daytime symptoms (finding)	4180186
 4170623	Asthma attack NOS (disorder)	4180186
-4170900	Asthmatic pulmonary alveolitis (disorder)	4180186
-4190879	Step up change in asthma management plan (regime/therapy)	4180186
-4191479	Allergic asthma (disorder)	4180186
 4191827	Asthma night-time symptoms (finding)	4180186
 4191827	Nocturnal asthma	4180186
 4192890	Suspected asthma (situation)	4180186
-4193019	Absent from work or school due to asthma (finding)	4180186
-4193023	Asthma monitoring due (finding)	4180186
-4194289	Asthma - currently active (finding)	4180186
 4199706	Asthma control steps (procedure)	4180186
-4202191	Asthma monitoring status (finding)	4180186
-4203281	Asthma monitoring call (procedure)	4180186
 4206340	Asthma without status asthmaticus (disorder)	4180186
-4207298	Knowledge level about asthma management (observable entity)	4180186
-4207479	Asthma - currently dormant (finding)	4180186
-4211530	Saw dust asthma	4180186
-4211530	Wood pulp workers' lung	4180186
-4211530	Asthma caused by wood dust (disorder)	4180186
-4211530	Wood-workers' lung	4180186
-4211530	Wood dust asthma	4180186
-4211530	Wood-workers' asthma	4180186
-4211530	Wood dust pneumonitis	4180186
-4211530	Wood asthma	4180186
 4212099	Industrial asthma	4180186
 4212099	Occupational asthma (disorder)	4180186
 4213782	Referral to asthma clinic (procedure)	4180186
-4214588	Asthma annual review (regime/therapy)	4180186
-4214589	Asthma follow-up (regime/therapy)	4180186
 4214676	Asthma medication review (procedure)	4180186
 4215802	Asthma - cardiac	4180186
 4215802	Cardiac asthma (disorder)	4180186
-4217558	Detergent asthma (disorder)	4180186
-4217558	Enzyme lung	4180186
-4217558	Enzyme detergent lung	4180186
-4217558	Detergent workers' lung	4180186
-4217558	Enzyme detergent respiratory disease	4180186
-4217558	Enzyme lung disease	4180186
 4225553	Cheese-makers' asthma (disorder)	4180186
 4225554	Isocyanate induced asthma (disorder)	4180186
 4225719	Asthma self-management	4180186
 4225719	Asthma self-management behavior (observable entity)	4180186
 4225719	Asthma self-management behaviour	4180186
 4227776	Corticosteroids used in the treatment of asthma (product)	4180186
-4232595	Platinum asthma (disorder)	4180186
-4233784	Asthmatic bronchitis (disorder)	4180186
-4235703	Asthma care	4180186
-4235703	Asthma management (regime/therapy)	4180186
 4236213	Medicinal product acting as antiasthmatic agent (product)	4180186
-4244339	Drug-induced asthma (disorder)	4180186
-4245676	Chemical-induced asthma (disorder)	4180186
-4250128	Aspirin-induced asthma (disorder)	4180186
 4265861	Asthma trigger finding (finding)	4180186
 4268284	Asthma trigger (observable entity)	4180186
 4271333	Allergic asthma without status asthmaticus (disorder)	4180186
 4271333	Extrinsic asthma without status asthmaticus	4180186
-4279553	Pulmonary eosinophilia (disorder)	4180186
-4279553	PIE - Pulmonary infiltrates with eosinophilia	4180186
-4279553	Andrews syndrome	4180186
-4279553	Pulmonary infiltrates with eosinophilia	4180186
-4279553	Pulmonary eosinophilia	4180186
-4279553	Eosinophilic pneumonia	4180186
-4279553	EP - Eosinophilic pneumonia	4180186
 4283362	Hay asthma (disorder)	4180186
 4283362	Hay fever with asthma	4180186
-4293727	Health education - asthma	4180186
-4293727	Asthma education (procedure)	4180186
 4293732	Asthma monitoring by nurse (regime/therapy)	4180186
-4293733	Asthma monitoring by doctor (regime/therapy)	4180186
-4293734	Asthma confirmed (situation)	4180186
 4301938	Tea-makers' asthma (disorder)	4180186
 4305736	Change in asthma management plan (regime/therapy)	4180186
 4308356	Asthma finding (finding)	4180186
@@ -764,5 +738,248 @@ concept_id	concept_synonym_name	language_concept_id
 4309833	Non IgE mediated allergic asthma	4180186
 4309833	Non-immunoglobulin E mediated allergic asthma	4180186
 4309833	Non-immunoglobulin E mediated allergic asthma (disorder)	4180186
-4312524	Substance induced asthma (disorder)	4180186
-4317234	Adverse reaction to antiasthmatic NOS (disorder)	4180186
+35609756	Assessment using Asthma Control Questionnaire (procedure)	4180186
+35609795	Assessment using Mini Asthma Quality of Life Questionnaire (procedure)	4180186
+35609796	Mini Asthma Quality of Life Questionnaire score (observable entity)	4180186
+35621822	Assessment using Asthma Control Questionnaire (procedure)	4180186
+35621822	Assessment using ACQ (Asthma Control Questionnaire)	4180186
+35621931	Asthma monitoring declined	4180186
+35621931	Asthma monitoring declined (situation)	4180186
+35621931	Asthma monitoring refused (situation)	4180186
+35622290	Assessment using Mini Asthma Quality of Life Questionnaire	4180186
+35622290	Assessment using Mini Asthma Quality of Life Questionnaire (procedure)	4180186
+35622291	Mini Asthma Quality of Life Questionnaire score	4180186
+35622291	Mini Asthma Quality of Life Questionnaire score (observable entity)	4180186
+35632074	Enhanced services general practice extraction - Seasonal Flu asthma inhaled corticosteroids simple reference set (foundation metadata concept)	4180186
+35810400	What was your age when the asthma was first diagnosed?	4180186
+35811561	User asked whether they are currently on medication for the asthma which was diagnosed by a doctor	4180186
+36713252	Asthma medication not prescribed (situation)	4180186
+37007748	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States)) (product)	4180186
+37014070	Asthmanefrin 2.25% nebuliser liquid vials (Imported (United States)) 30 vial (product)	4180186
+37019498	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37019697	Patient Reported Outcomes Information System; PEDS; Point in time; promise; QNT; Quan; Quant; Quantitative; Random; Survey; SURVEY.PROMIS; T prime; T-score	4180186
+37019705	Patient Reported Outcomes Information System; Point in time; promise; QNT; Quan; Quant; Quantitative; Random; Survey; SURVEY.PROMIS; T prime; T-score	4180186
+37020512	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020650	EXCZ; Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020738	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37020832	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37021421	Pan; Panel; PANEL.SURVEY.PROMIS; Panl; Patient Reported Outcomes Information System; PEDS; Pnl; Point in time; promise; Random; Survey; SURVEY.PROMIS	4180186
+37021495	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+37108580	Severe controlled persistent asthma (disorder)	4180186
+37116845	Status asthmaticus	4180186
+37116845	Acute severe refractory exacerbation of asthma (disorder)	4180186
+37116845	Acute severe asthma	4180186
+37206717	NFA - near fatal asthma	4180186
+37206717	Near fatal asthma (disorder)	4180186
+37208759	Excepted from asthma quality indicators - service unavailable (finding)	4180186
+37208964	Quality and Outcomes Framework asthma quality indicator-related care invitation (procedure)	4180186
+37395677	Telehealth asthma monitoring (regime/therapy)	4180186
+37396658	Asthma action care planning (procedure)	4180186
+40297860	Asthma daytime symptoms (finding)	4180186
+40300133	Asthma causes night symptoms 1 to 2 times per month (procedure)	4180186
+40300136	Asthma causes daytime symptoms 1 to 2 times per month (procedure)	4180186
+40300142	Asthma limits walking on the flat (procedure)	4180186
+40300394	Asthma society member (finding)	4180186
+40303860	Exercise-induced asthma (finding)	4180186
+40307509	Asthma monitoring	4180186
+40307509	Chronic resp. dis. monitoring	4180186
+40307509	Respiratory disease monitoring	4180186
+40307509	Respiratory disease monitoring (& [asthma] or [chronic]) (procedure)	4180186
+40307535	Asthma disturbing sleep (finding)	4180186
+40307537	Asthma limiting activities (finding)	4180186
+40307538	Asthma not limiting activities (finding)	4180186
+40307542	Asthma management plan given (regime/therapy)	4180186
+40307543	Asthma severity (regime/therapy)	4180186
+40307552	Emergency asthma admission since last appointment (regime/therapy)	4180186
+40307553	Asthma restricts exercise (finding)	4180186
+40312651	Asthma control step 0 (procedure)	4180186
+40312653	Asthma control step 1 (procedure)	4180186
+40312656	Asthma control step 4 (procedure)	4180186
+40316544	Atopic asthma	4180186
+40316544	Extrinsic asthma - atopy	4180186
+40316544	Extrinsic asthma - atopy (& pollen) (disorder)	4180186
+40316544	Pollen asthma	4180186
+40316547	Asthma attack	4180186
+40316547	Asthma attack NOS	4180186
+40316547	Asthma attack (& NOS) (disorder)	4180186
+40316548	Asthma attack	4180186
+40316548	Asthma NOS	4180186
+40316548	Asthma: [NOS] or [attack] (disorder)	4180186
+40317526	Asthma administration: [monitoring] or [clinic] (regime/therapy)	4180186
+40317526	Asthma clinic administration	4180186
+40317526	Asthma monitoring admin.	4180186
+40317527	Attends asthma monitoring (regime/therapy)	4180186
+40317528	Refuses asthma monitoring (regime/therapy)	4180186
+40317529	Asthma monitor offer default (regime/therapy)	4180186
+40317530	Asthma monitoring call first letter (procedure)	4180186
+40317533	Asthma monitoring call third letter (procedure)	4180186
+40317534	Asthma monitoring call verbal invite (procedure)	4180186
+40317536	Asthma monitoring deleted (regime/therapy)	4180186
+40317537	Asthma monitored (& check done) (regime/therapy)	4180186
+40317538	Asthma monitoring admin.NOS (regime/therapy)	4180186
+40318547	Patient in asthma study (finding)	4180186
+40336718	Asthma monitoring	4180186
+40336718	Chronic resp. dis. monitoring	4180186
+40336718	Respiratory disease monitoring	4180186
+40336718	Respiratory disease monitoring (& [asthma] or [chronic]) (regime/therapy)	4180186
+40337129	Occasional asthma (procedure)	4180186
+40337131	Moderate asthma (procedure)	4180186
+40337132	Severe asthma (procedure)	4180186
+40337152	Asthma - currently dormant (finding)	4180186
+40345716	Allergic atopic asthma (disorder)	4180186
+40345717	Extrinsic asthma without status asthmaticus (disorder)	4180186
+40345721	Intrinsic asthma with status asthmaticus (disorder)	4180186
+40345759	Asthma: [intrinsic] or [late onset] (disorder)	4180186
+40345759	Intrinsic asthma	4180186
+40345759	Late onset asthma	4180186
+40345759	Late-onset asthma	4180186
+40345759	Late-onset asthma (LOA)	4180186
+40345759	LOA - late onset asthma	4180186
+40362681	Allergic bronchitis	4180186
+40362681	Asthma	4180186
+40362681	Asthmatic bronchitis (disorder)	4180186
+40362681	Wheezy bronchitis	4180186
+40392299	Asthma - cardiac	4180186
+40392299	Cardiac asthma	4180186
+40392299	Impaired left ventricular func	4180186
+40392299	Impaired left ventricular function	4180186
+40392299	Left ventricular failure	4180186
+40392299	(Left ventricular: [failure] or [impaired function]) or (cardiac asthma) or (acute pulmonary oedema)	4180186
+40392299	(Left ventricular: [failure] or [impaired function]) or (cardiac asthma) or (acute pulmonary oedema) (disorder)	4180186
+40392299	Pulmonary edema - acute	4180186
+40392299	Pulmonary oedema - acute	4180186
+40395878	Extrinsic asthma with asthma attack	4180186
+40395878	Extrinsic asthma with: [asthma attack] or [status asthmaticus] (disorder)	4180186
+40395878	Extrinsic asthma with status asthmaticus	4180186
+40395881	Intrinsic asthma without status asthmaticus (disorder)	4180186
+40421675	Adverse reaction to theophylline - asthma (finding)	4180186
+40483397	Seasonal asthma (disorder)	4180186
+40483854	Asthma control questionnaire (assessment scale)	4180186
+40483854	ACQ - Asthma control questionnaire	4180186
+40521593	Sodium cromoglicate [asthma]	4180186
+40521593	Sodium cromoglycate [asthma] (product)	4180186
+40544275	Status asthmaticus (disorder)	4180186
+40545245	Asthma accident and emergency attendance since last visit (regime/therapy)	4180186
+40545246	Asthma treatment compliance satisfactory (finding)	4180186
+40545247	Asthma treatment compliance unsatisfactory (finding)	4180186
+40545248	Asthma causes night symptoms 1 to 2 times per month (finding)	4180186
+40545249	Asthma never causes daytime symptoms (finding)	4180186
+40545251	Asthma causes daytime symptoms 1 to 2 times per month (finding)	4180186
+40545252	Asthma causes daytime symptoms 1 to 2 times per week (finding)	4180186
+40545253	Asthma causes daytime symptoms most days (finding)	4180186
+40545254	Asthma limits walking up hills or stairs (finding)	4180186
+40545662	Asthma treatment compliance satisfactory (finding)	4180186
+40545665	Asthma never causes daytime symptoms (finding)	4180186
+40545667	Asthma causes daytime symptoms 1 to 2 times per week (finding)	4180186
+40545669	Asthma causes daytime symptoms most days (finding)	4180186
+40545670	Asthma limits walking up hills or stairs (finding)	4180186
+40545671	Asthma limits walking on the flat (finding)	4180186
+40560103	Step up change in asthma management plan (regime/therapy)	4180186
+40560104	Step down change in asthma management plan (regime/therapy)	4180186
+40560107	Absent from work or school due to asthma (situation)	4180186
+40560109	Asthma monitoring due (regime/therapy)	4180186
+40561392	Suspected asthma (situation)	4180186
+40561687	Extrinsic asthma (disorder)	4180186
+40563015	Asthma annual review (regime/therapy)	4180186
+40563017	Asthma follow-up (regime/therapy)	4180186
+40563020	Asthma night-time symptoms (finding)	4180186
+40564966	Step up change in asthma management plan (regime/therapy)	4180186
+40564967	Step down change in asthma management plan (regime/therapy)	4180186
+40564969	Absent from work or school due to asthma (situation)	4180186
+40564972	Asthma monitoring due (finding)	4180186
+40572458	Suspected asthma (situation)	4180186
+40595784	Work aggravated asthma (disorder)	4180186
+40764830	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764834	Activity; EXCZ; Exercise; Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764835	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764836	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764837	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764838	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764840	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764841	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764843	Finding; Findings; Last; Ordinal; Patient Reported Outcomes Information System; promise; QL; Qual; Qualitative; Screen; Survey; SURVEY.PROMIS	4180186
+40764969	Pan; Panel; PANEL.SURVEY.PROMIS; Panl; Patient Reported Outcomes Information System; PEDS; Pnl; Point in time; promise; Random; Survey; SURVEY.PROMIS	4180186
+40766907	Asthma ever; Finding; Findings; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40766907	Asthma ever PhenX	4180186
+40766907	您是否患有哮喘:发现:时间点:^患者:序数型:PhenX	4182948
+40766908	Asthma still have PhenX	4180186
+40766908	Asthma still have; Finding; Findings; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40766908	您仍然患有哮喘吗:发现:时间点:^患者:序数型:PhenX	4182948
+40766909	Asthma Dr confirmed PhenX	4180186
+40766909	Asthma Dr confirmed; Finding; Findings; Ordinal; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40766909	哮喘是否经过了医生确认:发现:时间点:^患者:序数型:PhenX	4182948
+40769049	Long-term health problem PhenX	4180186
+40769049	Dis; Diseases; Dz; Finding; Findings; Ordinal; Othr; Point in time; QL; Qual; Qualitative; Random; Screen	4180186
+40769049	您是否在心脏病、肺病、哮喘、肾病、代谢性疾病、糖尿病、贫血或其他血液病方面存在某种长期的健康问题:发现:时间点:^患者:序数型:PhenX	4182948
+42528833	4 weeks; Finding; Findings; Last; Ordinal; Ql; Qual; Qualitative; Screen; Survey	4180186
+42529245	4 weeks; Arterial Stenosis; Finding; Findings; Job; Last; Occupation; Ordinal; Ql; Qual; Qualitative; Screen; Survey	4180186
+42529247	4 weeks; Finding; Findings; Last; Ordinal; Ql; Qual; Qualitative; Screen; Survey; Sx	4180186
+42535716	Asthma in pregnancy (disorder)	4180186
+42536973	Asthma clinical management plan (record artifact)	4180186
+42538744	Acute allergic asthma	4180186
+42538744	Exacerbation of allergic asthma (disorder)	4180186
+42689544	Use of asthma symptom diary (regime/therapy)	4180186
+42690582	Moderate acute exacerbation of asthma (disorder)	4180186
+42690663	Life threatening acute exacerbation of asthma (disorder)	4180186
+43530693	Acute exacerbation of chronic obstructive airways disease with asthma (disorder)	4180186
+43530745	Asthma with irreversible airway obstruction (disorder)	4180186
+44783610	Asthma self management (regime/therapy)	4180186
+44784373	Under care of asthma specialist nurse (finding)	4180186
+44788435	Does not have asthma management plan (finding)	4180186
+44788780	Asthma trigger: seasonal	4180186
+44788780	Asthma trigger - seasonal (finding)	4180186
+44788780	Asthma trigger: seasonal (finding)	4180186
+44788824	Asthma trigger: damp	4180186
+44788824	Asthma trigger - damp (finding)	4180186
+44788824	Asthma trigger: damp (finding)	4180186
+44792265	Asthma trigger: warm air	4180186
+44792265	Asthma trigger - warm air (finding)	4180186
+44792265	Asthma trigger: warm air (finding)	4180186
+44795595	[V]Family history of asthma (situation)	4180186
+44797404	[X]Family history of asthma and other chronic lower respiratory diseases (situation)	4180186
+44802475	Patient has a written asthma personal action plan (finding)	4180186
+44802477	Health education - structured asthma discussion (procedure)	4180186
+44803332	Asthma monitoring administration (record artifact)	4180186
+44803641	Exception reporting - asthma quality indicators (finding)	4180186
+44803764	Excepted from asthma quality indicators - informed dissent (finding)	4180186
+44805087	Asthma causes night time symptoms 1 to 2 times per week (finding)	4180186
+44805089	Asthma causes symptoms most nights (finding)	4180186
+44805091	Asthma limits activities 1 to 2 times per month (finding)	4180186
+44805092	Asthma limits activities 1 to 2 times per week (finding)	4180186
+44805095	Royal College of Physicians asthma assessment three questions score (observable entity)	4180186
+44807127	Asthma trigger - wind (finding)	4180186
+44807733	Asthma trigger - perfume (finding)	4180186
+44810131	No asthma trigger identified by subject (finding)	4180186
+44811196	Asthma management plan declined (situation)	4180186
+44811606	Assessment using Childhood Asthma Control Test (procedure)	4180186
+44811607	Childhood Asthma Control Test score (observable entity)	4180186
+44813908	Provision of written information about asthma (procedure)	4180186
+44820889	Ch ob asthma w stat asth	4180186
+44821988	Asthma NOS	4180186
+44822511	Poisoning-antiasthmatics	4180186
+44824287	Extrinsic asthma NOS	4180186
+44824289	Intrinsic asthma NOS	4180186
+44831278	Ext asthma w(acute) exac	4180186
+44831280	Chronic obst asthma NOS	4180186
+44837136	Ch obst asth w (ac) exac	4180186
+45585016	Poisoning by antiasthmatics, accidental, init	4180186
+45589860	Poisoning by antiasthmatics, intentional self-harm, init	4180186
+45594711	Poisoning by antiasthmatics, accidental, subs	4180186
+45765802	Asthma clinic (environment)	4180186
+45766728	Allergic asthma caused by Dermatophagoides farinae	4180186
+45766728	Allergic asthma caused by Dermatophagoides farinae (disorder)	4180186
+45766728	Asthma caused by house dust mite, Dermatophagoides farinae	4180186
+45766728	Dermatophagoides farinae allergic asthma	4180186
+45768964	Uncomplicated moderate persistent asthma (disorder)	4180186
+45768965	Uncomplicated severe persistent asthma (disorder)	4180186
+45769350	Acute severe exacerbation of severe persistent asthma (disorder)	4180186
+45769351	Acute severe exacerbation of moderate persistent asthma (disorder)	4180186
+45769660	Emergency asthma admission since last encounter (situation)	4180186
+45770425	Asthma monitoring invitation short message service text message	4180186
+45770425	Asthma monitoring invitation short message service text message (procedure)	4180186
+45770428	Asthma monitoring invitation email (procedure)	4180186
+45770432	Review of patient at risk of asthma (procedure)	4180186
+45770434	At risk of asthma (finding)	4180186
+45771045	Acute exacerbation of asthma (disorder)	4180186
+45771045	Asthma attack	4180186
+45773005	Acute exacerbation of intrinsic asthma (disorder)	4180186

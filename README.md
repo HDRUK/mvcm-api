@@ -61,8 +61,7 @@ If `DB_HOST` is not set, the app will default to using a local MySQL database, a
 
 Build and deploy the application using Docker, following the instructions defined in the `Dockerfile` and `entrypoint.sh`. SQL setup is also defined in the `int_db.sql` file. The application is containerized with all necessary files and scripts, and can be run with the following command:
 ```
-docker build -t app .
-docker run -p 80:80 app
+docker build -t app . ; docker run -p 80:80 app
 ```
 
 ## API Endpoints
@@ -81,6 +80,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 - `max_separation_descendant`: How many degrees of seperation to search downstream in CONCEPT_ANCESTOR. Optional.
 - `max_separation_ancestor`: How many degrees of seperation to search upstream in CONCEPT_ANCESTOR. Optional.
 - `concept_relationship`: Extend Search via CONCEPT_RELATIONSHIP OMOP Table. Optional.
+- `concept_synonym`: Extend Search via CONCEPT_SYNONYM OMOP Table. Optional.
 - `search_threshold`: Filter threshold (default is 80). Optional.
 
 **Example Request:**
@@ -96,6 +96,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
   "max_separation_descendant": 1,
   "max_separation_ancestor": 1,
   "concept_relationship": "y",
+  "concept_synonym": "y",
   "search_threshold": 80
 }
 ```

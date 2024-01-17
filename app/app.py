@@ -15,17 +15,18 @@ omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
 
 class OLS4Request(BaseModel):
-    search_terms: List[str] = ["Asthma", "Heart"]
+    search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
     vocabulary_id: Optional[str] = "snomed"
     search_threshold: Optional[int] = 80
 
 class OMOPRequest(BaseModel):
-    search_terms: List[str] = ["Asthma", "Heart"]
+    search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
     vocabulary_id: Optional[str] = "snomed"
-    concept_ancestor: Optional[str] = "y"
+    concept_ancestor: Optional[str] = "n"
     max_separation_descendant: Optional[int] = 1
     max_separation_ancestor: Optional[int] = 1
-    concept_relationship: Optional[str] = "y"
+    concept_synonym: Optional[str] = "n"
+    concept_relationship: Optional[str] = "n"
     search_threshold: Optional[int] = 80
 
 def get_credentials() -> (str, str):
@@ -67,6 +68,7 @@ async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = 
                                                vocabulary_id=request.vocabulary_id, 
                                                concept_ancestor=request.concept_ancestor,
                                                concept_relationship=request.concept_relationship, 
+                                               concept_synonym=request.concept_synonym, 
                                                search_threshold=request.search_threshold,
                                                max_separation_descendant=request.max_separation_descendant,
                                                max_separation_ancestor=request.max_separation_ancestor)

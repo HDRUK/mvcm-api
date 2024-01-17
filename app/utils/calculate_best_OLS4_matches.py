@@ -19,8 +19,6 @@ class OLS4Matcher:
 
             for search_term in search_terms:
                 response_data = self.fetch_ols4_data(search_term, vocabulary_id, search_threshold)
-                if not response_data:
-                    continue
 
                 term_results = {
                     'search_term': search_term,

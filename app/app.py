@@ -10,6 +10,7 @@ from utils.calculate_best_OLS4_matches import OLS4Matcher
 
 app = FastAPI()
 security = HTTPBasic()
+
 # Import OLS4Matcher, OMOPMatcher
 omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
@@ -55,15 +56,12 @@ def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> 
 
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    ols4_matcher = OLS4Matcher()
     return ols4_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 
 @app.post("/search/omop/")
 async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    omop_matcher = OMOPMatcher()
-
     return omop_matcher.calculate_best_matches(search_terms=request.search_terms, 
                                                vocabulary_id=request.vocabulary_id, 
                                                concept_ancestor=request.concept_ancestor,

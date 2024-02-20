@@ -23,7 +23,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
               with:
-                ref: GAT-3532
+                ref: GAT-3532 #Test
 
             - name: Read VERSION file
               id: getversion

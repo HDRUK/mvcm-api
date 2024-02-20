@@ -16,6 +16,6 @@ spec:
         - name: mvcm-api
           image: hdruk/mvcm-api:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
               name: mvcm-api
       dnsPolicy: ClusterFirst

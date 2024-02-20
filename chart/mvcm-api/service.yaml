@@ -6,8 +6,8 @@ metadata:
     app: mvcm-api
 spec:
   ports:
-    - port: 8080
+    - port: 8085
       protocol: "TCP"
-      targetPort: 8080
+      targetPort: 80
   selector:
     app: mvcm-api

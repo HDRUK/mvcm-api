@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mvcm-api
+spec:
+  selector:
+    matchLabels:
+      app: mvcm-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mvcm-api
+    spec:
+      containers:
+        - name: mvcm-api
+          image: hdruk/mvcm-api:latest
+          ports:
+            - containerPort: 80
+              name: mvcm-api
+      dnsPolicy: ClusterFirst

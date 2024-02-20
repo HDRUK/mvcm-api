@@ -13,7 +13,17 @@ class OMOPMatcher:
             MYSQL_USER = environ.get('DB_USER', 'root')
             MYSQL_PASSWORD = environ.get('DB_PASSWORD', 'psw4MYSQL')
             MYSQL_DB = environ.get('DB_NAME', 'mydb')
-            engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}')
+            #SSL CONFIGURATION
+            MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
+            MYSQL_SSL_CA = environ.get('DB_SSL_CA', '')
+            MYSQL_SSL_CERT = environ.get('DB_SSL_CERT', '')
+            MYSQL_SSL_KEY = environ.get('DB_SSL_KEY', '')
+
+            connection_string = (f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}')
+            if MYSQL_SSL_ENABLED:
+                ssl_args = (f'?ssl_ca={MYSQL_SSL_CA}&ssl_cert={MYSQL_SSL_CERT}&ssl_key={MYSQL_SSL_KEY}&ssl_check_hostname=false') 
+                connection_string = connection_string + ssl_args
+            engine = create_engine(connection_string)
             
         except Exception as e:
             ValueError(f"Failed to connect to MySQL: {e}")

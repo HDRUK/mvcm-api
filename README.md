@@ -221,6 +221,7 @@ Searches for standard concepts using the OLS4 API based on search terms provided
 ```
 **Example response:**
 ```json
+[
   {
     "search_term": "Asthma",
     "matches": [

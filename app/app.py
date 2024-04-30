@@ -76,7 +76,7 @@ async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 
-@app.post("/search/ulms/")
+@app.post("/search/umls/")
 async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
     return UMLS_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 

@@ -11,7 +11,7 @@ from utils.calculate_best_UMLS_matches import UMLSMatcher
 
 app = FastAPI(
     title="MVCM",
-    description="HDR-UK Medical Vocabualry Concept Mapper",
+    description="HDR-UK Medical Vocabulary Concept Mapper",
     version="1.1.0",
     contact={
         "name": "Tom Giles",

@@ -46,7 +46,7 @@ class OMOPRequest(BaseModel):
     concept_relationship: Optional[str] = "n"
     search_threshold: Optional[int] = 80
 
-def get_credentials() -> (str, str):
+def get_credentials() -> tuple[str, str]:
     
     username = os.environ.get("BASIC_AUTH_USERNAME")
     password = os.environ.get("BASIC_AUTH_PASSWORD")

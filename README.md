@@ -63,7 +63,7 @@ pip install -r requirements.txt
  
 ## API Endpoints
 
-### `/API/OMOP_search`
+### `/search/omop/`
 
 #### Method: `POST`
 
@@ -138,7 +138,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 ]
 ```
 
-### `/API/UMLS_search`
+### `/search/umls`
 
 #### Method: `POST`
 
@@ -194,7 +194,7 @@ Please note, the advanced functionality supported by UMLS (relations, parents, c
 ```
 
 
-### `/API/OLS4_search`
+### `/search/ols4`
 
 #### Method: `POST`
 

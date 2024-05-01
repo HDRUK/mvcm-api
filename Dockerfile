@@ -8,8 +8,6 @@ ENV BASIC_AUTH_USERNAME=APIuser
 ENV BASIC_AUTH_PASSWORD=psw4API
 
 ENV UMLS_APIKEY=e8ac4aea-f310-4bcd-aded-3c256465fd94
-# Set environment variables for OMOP Data Model (adjust as needed)
-ENV OMOP_DATA_FOLDER=data
 
 # Copy the database initialization script, your Flask app, and requirements file
 COPY app/ /app/
@@ -24,6 +22,9 @@ RUN pip install -r requirements.txt
 RUN chmod +x /app/entrypoint.sh
 
 EXPOSE 80
+
+# Set environment variables for OMOP Data Model (adjust as needed)
+ENV OMOP_DATA_FOLDER=data
 
 # Use the entrypoint script
 ENTRYPOINT ["/app/entrypoint.sh"]

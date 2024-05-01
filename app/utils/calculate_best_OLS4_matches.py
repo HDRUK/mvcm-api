@@ -47,6 +47,7 @@ class OLS4Matcher:
 
         headers = {"Accept": "application/json"}
         response = requests.get(url, headers=headers)
+        docs = []
         if response.status_code == 200:
             json_data = response.json()
             if json_data['response']['numFound'] > 0:

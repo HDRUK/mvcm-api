@@ -5,7 +5,7 @@ from google.cloud import pubsub_v1
 
 project_id = os.environ.get('PROJECT_ID', None)
 topic_id = os.environ.get('TOPIC_ID', None)
-AUDIT_ENABLED = os.environ.get('AUDIT_ENABLED', False)
+AUDIT_ENABLED = True if os.environ.get('AUDIT_ENABLED', False) in [1, '1'] else False
 
 if AUDIT_ENABLED:
     publisher = pubsub_v1.PublisherClient()

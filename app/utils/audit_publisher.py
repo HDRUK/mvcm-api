@@ -3,15 +3,16 @@ import os
 
 from google.cloud import pubsub_v1
 
-project_id = os.environ['PROJECT_ID']
-topic_id = os.environ['TOPIC_ID']
+project_id = os.environ.get('PROJECT_ID', None)
+topic_id = os.environ.get('TOPIC_ID', None)
 AUDIT_ENABLED = os.environ.get('AUDIT_ENABLED', False)
 
+if AUDIT_ENABLED:
+    publisher = pubsub_v1.PublisherClient()
+    # The `topic_path` method creates a fully qualified identifier
+    # in the form `projects/{project_id}/topics/{topic_id}`
+    topic_path = publisher.topic_path(project_id, topic_id)
 
-publisher = pubsub_v1.PublisherClient()
-# The `topic_path` method creates a fully qualified identifier
-# in the form `projects/{project_id}/topics/{topic_id}`
-topic_path = publisher.topic_path(project_id, topic_id)
 
 def publish_message(action_type="", action_name="", description=""):
     if AUDIT_ENABLED:
@@ -24,4 +25,3 @@ def publish_message(action_type="", action_name="", description=""):
         encoded_json = json.dumps(message_json).encode("utf-8")
         future = publisher.publish(topic_path, encoded_json)
         return future.result()
-    

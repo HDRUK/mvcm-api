@@ -11,7 +11,7 @@ from utils.calculate_best_UMLS_matches import UMLSMatcher
 
 app = FastAPI(
     title="MVCM",
-    description="HDR-UK Medical Vocabualry Concept Mapper",
+    description="HDR-UK Medical Vocabulary Concept Mapper",
     version="1.1.0",
     contact={
         "name": "Tom Giles",
@@ -46,7 +46,7 @@ class OMOPRequest(BaseModel):
     concept_relationship: Optional[str] = "n"
     search_threshold: Optional[int] = 80
 
-def get_credentials() -> (str, str):
+def get_credentials() -> tuple[str, str]:
     
     username = os.environ.get("BASIC_AUTH_USERNAME")
     password = os.environ.get("BASIC_AUTH_PASSWORD")
@@ -76,7 +76,7 @@ async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 
-@app.post("/search/ulms/")
+@app.post("/search/umls/")
 async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
     return UMLS_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 

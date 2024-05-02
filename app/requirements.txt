@@ -7,3 +7,4 @@ gunicorn==21.2.0
 requests==2.31.0
 pymysql==1.1.0
 rapidfuzz==3.3.0
+google-cloud-pubsub==2.21.1

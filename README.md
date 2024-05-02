@@ -14,23 +14,48 @@ The search function of this endpoint primary use SQL natural language queries to
 
 The other two provided endpoints query the UMLS (Unified Medical Language System and OLS4 (Ontology Lookup Service, version 4) API endpoint respectively. These searches are returned in the same array structure as the OMOP search results to improve interoperability. This structured approach to querying and mapping across resources effectively enhances the breadth and depth of search capabilities, providing users with a robust tool for the accurate mapping of medical concepts.
 
-## Database Setup and Deployment
+## App Setup and Deployment
 
 To get a local copy of this applications, first clone the git repo: 
 
+```bash
 gh repo clone HDRUK/mvcm-api
+```
 
-The best way to build and deploy the application using Docker. The application is containerized with all necessary files and scripts, and can be run with the following command:
+The best way to build and deploy the application is using Docker. The application is containerized with all necessary files and scripts (except for the Google Application Credentials file necessary for using PubSub audit), and can be run with the following command:
 
-```docker build -t app . ; docker run -p 80:80 app```
+```bash
+docker build -t app . ; docker run -p 80:80 -e <various environment variables> app
+```
 
+In order to use the PubSub audit functionality, you'll need to place you `application_default_credentials.json` file into the directory before calling the `docker build` command as above.
+
+### Internal/External Database setup
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 
-```docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app```
+```bash
+docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app
+```
 
 If DB_HOST is not set, the app will default to using a local MySQL database, and the `MYSQL_ROOT_PASSWORD` environment variable will be used as the root password for the local database.
 
-If you need to make changes to how the application runs please observe the processes defined in the Dockerfile and entrypoint.sh. The local SQL setup is also defined in the int_db.sql file. The MySQL database is initialized with data from the .tsv files in the data folder, these are loaded into a table structured as defined in the init_db.sql script. The database configuration, including the host and credentials, can be set through environment variables. For Testing a data.supermin folder is also provided, this only has asthma terms to reduce container build time.
+### Audit logging
+To enable audit logging, you must first supply a google application credentials file during the build stage (see above). Then set `AUDIT_ENABLED=1` and then supply the environment variables `PROJECT_ID` and `TOPIC_ID` with the details of the Google PubSub instance, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the (in-container) location of the aforementioned `application_default_credentials.json` file e.g.
+
+```bash
+docker run -p 80:80 -e AUDIT_ENABLED=1 -e PROJECT_ID=myprojectid -e TOPIC_ID=mytopicid -e GOOGLE_APPLICATION_CREDENTIALS=/app/application_default_credentials.json app
+```
+
+### Notes
+If you need to make changes to how the application runs please observe the processes defined in the Dockerfile and entrypoint.sh. 
+
+The local SQL setup is also defined in the int_db.sql file. 
+
+The MySQL database is initialized with data from the .tsv files in the data folder, which are loaded into a table structured as defined in the init_db.sql script. 
+
+The database configuration, including the host and credentials, can be set through environment variables. 
+
+For Testing a data.supermin folder is also provided, this only has asthma terms to reduce container build time.
 
 Unless configured differently, the API service will be exposed on localhost (0.0.0.0) port 80. A swagger is available on `http://0.0.0.0/docs`.
 
@@ -54,7 +79,7 @@ Install the necessary packages with the following command:
 pip install -r requirements.txt
 ``` 
 
-### Directory Structure
+## Directory Structure
 
 - `/app`: Main directory containing the Flask application.
   - `/data`: Directory containing OMOP data.
@@ -63,7 +88,7 @@ pip install -r requirements.txt
  
 ## API Endpoints
 
-### `/API/OMOP_search`
+### `/search/omop/`
 
 #### Method: `POST`
 
@@ -138,7 +163,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 ]
 ```
 
-### `/API/UMLS_search`
+### `/search/umls`
 
 #### Method: `POST`
 
@@ -194,7 +219,7 @@ Please note, the advanced functionality supported by UMLS (relations, parents, c
 ```
 
 
-### `/API/OLS4_search`
+### `/search/ols4`
 
 #### Method: `POST`
 

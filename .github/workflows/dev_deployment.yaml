@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} triggered deploy to DEV pipeline
 on:
   push:
     branches:
-      - "hotfix/numpy"
+      - "dev"
 
 env:
   PROJECT_ID: "${{ secrets.PROJECT_ID }}"
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: hotfix/numpy
+          ref: dev
 
       - name: Read VERSION file
         id: getversion
@@ -71,7 +71,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: hotfix/numpy
+          ref: dev
 
       - name: Google Auth
         id: auth

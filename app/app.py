@@ -5,9 +5,9 @@ from typing import List, Optional, Any
 import secrets
 import os
 
-from utils.calculate_best_OMOP_matches import OMOPMatcher
-from utils.calculate_best_OLS4_matches import OLS4Matcher
-from utils.calculate_best_UMLS_matches import UMLSMatcher
+from .utils.calculate_best_OMOP_matches import OMOPMatcher
+from .utils.calculate_best_OLS4_matches import OLS4Matcher
+from .utils.calculate_best_UMLS_matches import UMLSMatcher
 
 app = FastAPI(
     title="MVCM",
@@ -69,6 +69,10 @@ def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> 
             headers={"WWW-Authenticate": "Basic"},
         )
     return credentials
+
+@app.get("/")
+def read_root():
+    return {"MVCM": "Running"}
 
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:

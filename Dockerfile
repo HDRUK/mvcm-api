@@ -16,7 +16,7 @@ COPY app/ /app/
 WORKDIR /app
 
 # Install Python dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Make the entrypoint script executable
 RUN chmod +x /app/entrypoint.sh

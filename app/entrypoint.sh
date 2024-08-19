@@ -77,8 +77,28 @@ if [ -z "$DB_HOST" ]; then
     mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
     CREATE FULLTEXT INDEX idx_concept_name ON CONCEPT(concept_name);
     CREATE INDEX idx_concept_id ON CONCEPT (concept_id);
-    CREATE INDEX idx_vocabulary_id ON CONCEPT (vocabulary_id);
-    CREATE INDEX idx_standard_concept ON CONCEPT (standard_concept);
+    CREATE INDEX idx_standard_concept_vocabulary_id_concept_id ON CONCEPT (standard_concept,vocabulary_id,concept_id);
+    SELECT COUNT(*) AS 'Number of rows in CONCEPT table' FROM CONCEPT;
+    "
+
+    # Create Table STANDARD_CONCEPTS
+    echo "Creating table STANDARD_CONCEPTS from table CONCEPT in Database" 
+    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
+    CREATE TABLE STANDARD_CONCEPTS AS
+    SELECT * FROM CONCEPT 
+    WHERE standard_concept = 'S';
+    ALTER TABLE STANDARD_CONCEPTS
+    ADD PRIMARY KEY (concept_id),
+    ADD CONSTRAINT fk_concept_id
+    FOREIGN KEY (concept_id)
+    REFERENCES CONCEPT (concept_id);
+    "
+
+    # Create Fulltext index and count rows for STANDARD_CONCEPTS
+    echo "Indexing STANDARD_CONCEPTS in Database" 
+    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
+    CREATE FULLTEXT INDEX ft_concept_name ON STANDARD_CONCEPTS(concept_name);
+    CREATE INDEX idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id,concept_id);
     SELECT COUNT(*) AS 'Number of rows in CONCEPT table' FROM CONCEPT;
     "
 

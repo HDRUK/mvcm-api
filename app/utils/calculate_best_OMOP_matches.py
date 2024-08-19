@@ -74,9 +74,8 @@ class OMOPMatcher:
         query1 = """
             WITH concept_matches AS (
                 SELECT DISTINCT concept_id
-                FROM CONCEPT
+                FROM STANDARD_CONCEPTS
                 WHERE 
-                    standard_concept = 'S' AND
                     (%s IS NULL OR vocabulary_id = %s) AND
                     MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
             ),
@@ -110,9 +109,8 @@ class OMOPMatcher:
                 vocabulary_id, 
                 concept_code
             FROM 
-                CONCEPT
+                STANDARD_CONCEPTS
             WHERE 
-                standard_concept = 'S' AND
                 (%s IS NULL OR vocabulary_id = %s) AND
                 MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) 
             """

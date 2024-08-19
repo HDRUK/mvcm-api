@@ -3,6 +3,8 @@ import re
 from rapidfuzz import fuzz
 from sqlalchemy import create_engine
 from os import environ
+from .audit_publisher import publish_message
+
 
 class OMOPMatcher:
     def __init__(self):
@@ -25,15 +27,21 @@ class OMOPMatcher:
                 connection_string = connection_string + ssl_args
             engine = create_engine(connection_string)
             
-        except Exception as e:
-            ValueError(f"Failed to connect to MySQL: {e}")
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Connected to engine"))
 
+        except Exception as e:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Failed to connect to engine"))
+            raise ValueError(f"Failed to connect to MySQL: {e}")
+        
         self.engine = engine
 
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", concept_synonym="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
         try:
             if not search_terms:
+                print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term values provided"))
                 raise ValueError("No valid search_term values provided")
+
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Valid search_term values provided"))
 
             overall_results = []
 
@@ -53,9 +61,11 @@ class OMOPMatcher:
                     'CONCEPT': OMOP_concepts
                 })
 
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description=f"Best OMOP matches for {str(search_terms)} calculated"))
             return overall_results
         
         except Exception as e:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description=f"Failed to calculate best OMOP matches for {search_terms}"))
             raise ValueError(f"Error in calculate_best_OMOP_matches: {e}")
 
     
@@ -64,9 +74,8 @@ class OMOPMatcher:
         query1 = """
             WITH concept_matches AS (
                 SELECT DISTINCT concept_id
-                FROM CONCEPT
+                FROM STANDARD_CONCEPTS
                 WHERE 
-                    standard_concept = 'S' AND
                     (%s IS NULL OR vocabulary_id = %s) AND
                     MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
             ),
@@ -100,9 +109,8 @@ class OMOPMatcher:
                 vocabulary_id, 
                 concept_code
             FROM 
-                CONCEPT
+                STANDARD_CONCEPTS
             WHERE 
-                standard_concept = 'S' AND
                 (%s IS NULL OR vocabulary_id = %s) AND
                 MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) 
             """

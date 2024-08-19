@@ -2,6 +2,7 @@ import requests
 import re
 from rapidfuzz import fuzz
 from urllib.parse import quote
+from .audit_publisher import publish_message
 
 class OLS4Matcher:
     def __init__(self):
@@ -10,6 +11,7 @@ class OLS4Matcher:
     def calculate_best_matches(self, search_terms, vocabulary_id=None, search_threshold=None):
         try:
             if not search_terms:
+                print(publish_message(action_type="POST", action_name="OLS4Matcher.calculate_best_matches", description="No valid search_term values provided"))
                 raise ValueError("No valid search_term values provided")
             
             overall_results = []
@@ -32,9 +34,11 @@ class OLS4Matcher:
 
                 overall_results.append(term_results)
 
+            print(publish_message(action_type="POST", action_name="OLS4Matcher.calculate_best_matches", description=f"Best OLS4 matches for {str(search_terms)} calculated"))
             return overall_results
 
         except Exception as e:
+            print(publish_message(action_type="POST", action_name="OLS4Matcher.calculate_best_matches", description=f"Failed to calculate best OLS4 matches for {search_terms}"))
             raise ValueError(f"Error in calculate_best_OLS4_matches: {e}")
 
     def fetch_ols4_data(self, search_term, vocabulary_id, search_threshold):
@@ -47,6 +51,7 @@ class OLS4Matcher:
 
         headers = {"Accept": "application/json"}
         response = requests.get(url, headers=headers)
+        docs = []
         if response.status_code == 200:
             json_data = response.json()
             if json_data['response']['numFound'] > 0:

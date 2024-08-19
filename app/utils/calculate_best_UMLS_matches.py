@@ -3,6 +3,8 @@ from urllib.parse import quote
 import requests
 import re
 from os import environ
+from .audit_publisher import publish_message
+
 
 class UMLSMatcher:
     def api_call(self, url):
@@ -18,6 +20,7 @@ class UMLSMatcher:
     def calculate_best_matches(self, search_terms, vocabulary_id=None, search_threshold=None):
         try:
             if not search_terms:
+                print(publish_message(action_type="POST", action_name="UMLSMatcher.calculate_best_matches", description="No valid search_term values provided"))
                 raise ValueError("No valid search_term values provided")
             
             overall_results = []
@@ -40,9 +43,11 @@ class UMLSMatcher:
 
                 overall_results.append(term_results)
 
+            print(publish_message(action_type="POST", action_name="UMLSMatcher.calculate_best_matches", description=f"Best UMLS matches for {str(search_terms)} calculated"))
             return overall_results
 
         except Exception as e:
+            print(publish_message(action_type="POST", action_name="UMLSMatcher.calculate_best_matches", description=f"Failed to calculate best UMLS matches for {search_terms}"))
             raise ValueError(f"Error in calculate_best_UMLS_matches: {e}")
 
     def fetch_umls_data(self, search_term, vocabulary_id, search_threshold):

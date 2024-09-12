@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 from rapidfuzz import fuzz
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from os import environ
 from .audit_publisher import publish_message
 
@@ -34,6 +34,48 @@ class OMOPMatcher:
             raise ValueError(f"Failed to connect to MySQL: {e}")
         
         self.engine = engine
+
+    def provision_indexes(self):
+        try: 
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Running SQL to provision indexes..."))
+            
+            # List of SQL commands
+            sql_commands = [
+                # Create indexes for CONCEPT_RELATIONSHIP
+                "CREATE INDEX IF NOT EXISTS idx_concept_relationship_on_id1_enddate ON CONCEPT_RELATIONSHIP(concept_id_1, valid_end_date);",
+                "CREATE INDEX IF NOT EXISTS idx_concept_relationship_on_id2 ON CONCEPT_RELATIONSHIP(concept_id_2);",
+                
+                # Create indexes for CONCEPT_ANCESTOR
+                "CREATE INDEX IF NOT EXISTS idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);",
+                "CREATE INDEX IF NOT EXISTS idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);",
+                
+                # Create Fulltext index for CONCEPT_SYNONYM
+                "CREATE FULLTEXT INDEX IF NOT EXISTS idx_concept_synonym_name ON CONCEPT_SYNONYM(concept_synonym_name);",
+                "CREATE INDEX IF NOT EXISTS idx_concept_synonym_id ON CONCEPT_SYNONYM (concept_id);",
+                
+                # Create Fulltext index for CONCEPT
+                "CREATE FULLTEXT INDEX IF NOT EXISTS idx_concept_name ON CONCEPT(concept_name);",
+                "CREATE INDEX IF NOT EXISTS idx_concept_id ON CONCEPT (concept_id);",
+                "CREATE INDEX IF NOT EXISTS idx_standard_concept_vocabulary_id_concept_id ON CONCEPT (standard_concept, vocabulary_id, concept_id);",
+                
+                # Create Table STANDARD_CONCEPTS
+                "CREATE TABLE IF NOT EXISTS STANDARD_CONCEPTS AS SELECT * FROM CONCEPT WHERE standard_concept = 'S';",
+                
+                # Create Fulltext index for STANDARD_CONCEPTS
+                "CREATE FULLTEXT INDEX IF NOT EXISTS ft_concept_name ON STANDARD_CONCEPTS(concept_name);",
+                "CREATE INDEX IF NOT EXISTS idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id, concept_id);"
+            ]
+            
+            # Execute each SQL command
+            with self.engine.connect() as connection:
+                for sql_command in sql_commands:
+                    connection.execute(text(sql_command))
+
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Indexes successfully provisioned"))
+
+        except Exception as e:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Failed to provision indexes"))
+            raise ValueError(f"Error in provisioning indexes: {e}")    
 
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", concept_synonym="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
         try:

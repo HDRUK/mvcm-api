@@ -4,7 +4,7 @@ from rapidfuzz import fuzz
 from sqlalchemy import create_engine, text
 from os import environ
 from .audit_publisher import publish_message
-
+from sqlalchemy.exc import OperationalError
 
 class OMOPMatcher:
     def __init__(self):
@@ -15,7 +15,7 @@ class OMOPMatcher:
             MYSQL_USER = environ.get('DB_USER', 'root')
             MYSQL_PASSWORD = environ.get('DB_PASSWORD', 'psw4MYSQL')
             MYSQL_DB = environ.get('DB_NAME', 'mydb')
-            #SSL CONFIGURATION
+            # SSL CONFIGURATION
             MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
             MYSQL_SSL_CA = environ.get('DB_SSL_CA', '')
             MYSQL_SSL_CERT = environ.get('DB_SSL_CERT', '')
@@ -35,48 +35,83 @@ class OMOPMatcher:
         
         self.engine = engine
 
+    def index_exists(self, connection, table_name, index_name):
+        try:
+            query = """
+            SELECT COUNT(1) 
+            FROM INFORMATION_SCHEMA.STATISTICS 
+            WHERE TABLE_SCHEMA = DATABASE() 
+            AND TABLE_NAME = :table_name 
+            AND INDEX_NAME = :index_name;
+            """
+            result = connection.execute(
+                text(query), {"table_name": table_name, "index_name": index_name}
+            )
+            return result.scalar() > 0
+        except Exception as e:
+            raise ValueError(f"Error checking if index exists: {e}")
+
     def provision_indexes(self):
         try: 
             print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Running SQL to provision indexes..."))
-            
-            # List of SQL commands
+
+            # SQL commands with table name and index name
             sql_commands = [
-                # Create indexes for CONCEPT_RELATIONSHIP
-                "CREATE INDEX IF NOT EXISTS idx_concept_relationship_on_id1_enddate ON CONCEPT_RELATIONSHIP(concept_id_1, valid_end_date);",
-                "CREATE INDEX IF NOT EXISTS idx_concept_relationship_on_id2 ON CONCEPT_RELATIONSHIP(concept_id_2);",
+                ("CONCEPT_RELATIONSHIP", "idx_concept_relationship_on_id1_enddate",
+                 "CREATE INDEX idx_concept_relationship_on_id1_enddate ON CONCEPT_RELATIONSHIP(concept_id_1, valid_end_date);"),
+                ("CONCEPT_RELATIONSHIP", "idx_concept_relationship_on_id2",
+                 "CREATE INDEX idx_concept_relationship_on_id2 ON CONCEPT_RELATIONSHIP(concept_id_2);"),
                 
-                # Create indexes for CONCEPT_ANCESTOR
-                "CREATE INDEX IF NOT EXISTS idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);",
-                "CREATE INDEX IF NOT EXISTS idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);",
+                ("CONCEPT_ANCESTOR", "idx_concept_ancestor_on_descendant_id",
+                 "CREATE INDEX idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);"),
+                ("CONCEPT_ANCESTOR", "idx_concept_ancestor_on_ancestor_id",
+                 "CREATE INDEX idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);"),
                 
-                # Create Fulltext index for CONCEPT_SYNONYM
-                "CREATE FULLTEXT INDEX IF NOT EXISTS idx_concept_synonym_name ON CONCEPT_SYNONYM(concept_synonym_name);",
-                "CREATE INDEX IF NOT EXISTS idx_concept_synonym_id ON CONCEPT_SYNONYM (concept_id);",
+                ("CONCEPT_SYNONYM", "idx_concept_synonym_name",
+                 "CREATE FULLTEXT INDEX idx_concept_synonym_name ON CONCEPT_SYNONYM(concept_synonym_name);"),
+                ("CONCEPT_SYNONYM", "idx_concept_synonym_id",
+                 "CREATE INDEX idx_concept_synonym_id ON CONCEPT_SYNONYM(concept_id);"),
                 
-                # Create Fulltext index for CONCEPT
-                "CREATE FULLTEXT INDEX IF NOT EXISTS idx_concept_name ON CONCEPT(concept_name);",
-                "CREATE INDEX IF NOT EXISTS idx_concept_id ON CONCEPT (concept_id);",
-                "CREATE INDEX IF NOT EXISTS idx_standard_concept_vocabulary_id_concept_id ON CONCEPT (standard_concept, vocabulary_id, concept_id);",
+                ("CONCEPT", "idx_concept_name",
+                 "CREATE FULLTEXT INDEX idx_concept_name ON CONCEPT(concept_name);"),
+                ("CONCEPT", "idx_concept_id",
+                 "CREATE INDEX idx_concept_id ON CONCEPT(concept_id);"),
+                ("CONCEPT", "idx_standard_concept_vocabulary_id_concept_id",
+                 "CREATE INDEX idx_standard_concept_vocabulary_id_concept_id ON CONCEPT(standard_concept, vocabulary_id, concept_id);"),
                 
                 # Create Table STANDARD_CONCEPTS
-                "CREATE TABLE IF NOT EXISTS STANDARD_CONCEPTS AS SELECT * FROM CONCEPT WHERE standard_concept = 'S';",
+                ("", "", "CREATE TABLE IF NOT EXISTS STANDARD_CONCEPTS AS SELECT * FROM CONCEPT WHERE standard_concept = 'S';"),
                 
-                # Create Fulltext index for STANDARD_CONCEPTS
-                "CREATE FULLTEXT INDEX IF NOT EXISTS ft_concept_name ON STANDARD_CONCEPTS(concept_name);",
-                "CREATE INDEX IF NOT EXISTS idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id, concept_id);"
+                # Index creation for STANDARD_CONCEPTS
+                ("STANDARD_CONCEPTS", "ft_concept_name",
+                 "CREATE FULLTEXT INDEX ft_concept_name ON STANDARD_CONCEPTS(concept_name);"),
+                ("STANDARD_CONCEPTS", "idx_vocabulary_id_concept_id",
+                 "CREATE INDEX idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id, concept_id);")
             ]
-            
-            # Execute each SQL command
+
+            # Execute each SQL command, checking for index existence where applicable
             with self.engine.connect() as connection:
-                for sql_command in sql_commands:
-                    connection.execute(text(sql_command))
+                for table_name, index_name, sql_command in sql_commands:
+                    if table_name and index_name:  # It's an index creation command
+                        if not self.index_exists(connection, table_name, index_name):
+                            try:
+                                print(f"Running: {sql_command}")
+                                connection.execute(text(sql_command))
+                            except OperationalError as oe:
+                                if "Duplicate key name" in str(oe):
+                                    print(f"Index {index_name} already exists. Skipping.")
+                                else:
+                                    raise
+                    else:
+                        # For other commands like table creation
+                        connection.execute(text(sql_command))
 
             print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Indexes successfully provisioned"))
 
         except Exception as e:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Failed to provision indexes"))
-            raise ValueError(f"Error in provisioning indexes: {e}")    
-
+            raise ValueError(f"Error in provisioning indexes: {e}")
+        
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", concept_synonym="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
         try:
             if not search_terms:
@@ -109,7 +144,6 @@ class OMOPMatcher:
         except Exception as e:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description=f"Failed to calculate best OMOP matches for {search_terms}"))
             raise ValueError(f"Error in calculate_best_OMOP_matches: {e}")
-
     
     def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_synonym, search_threshold,max_separation_descendant,max_separation_ancestor):
         

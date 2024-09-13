@@ -101,7 +101,6 @@ class UMLSMatcher:
 
 #UMLSMatcher().calculate_best_matches(search_terms=["asthma"], vocabulary_id=None, search_threshold=80)
 
-#APIKEY="e8ac4aea-f310-4bcd-aded-3c256465fd94"
 #search_term_encoded="C0004096"
 #url = f"https://uts-ws.nlm.nih.gov/rest/content/current/CUI/{search_term_encoded}/relations?apiKey={APIKEY}&pageSize=10000"
 

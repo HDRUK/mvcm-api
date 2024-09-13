@@ -95,8 +95,8 @@ class OMOPMatcher:
                     if table_name and index_name:  # It's an index creation command
                         if not self.index_exists(connection, table_name, index_name):
                             try:
-                                connection.execute(text(sql_command))
                                 print(f"Running: {sql_command}")
+                                connection.execute(text(sql_command))
                             except OperationalError as oe:
                                 if "Duplicate key name" in str(oe):
                                     print(f"Index {index_name} already exists. Skipping.")

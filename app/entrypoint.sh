@@ -48,60 +48,6 @@ if [ -z "$DB_HOST" ]; then
             done
         done
 
-    # Create indexes for CONCEPT_RELATIONSHIP
-    echo "Indexing CONCEPT_RELATIONSHIP in Database"
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE INDEX idx_concept_relationship_on_id1_enddate ON CONCEPT_RELATIONSHIP(concept_id_1, valid_end_date);
-    CREATE INDEX idx_concept_relationship_on_id2 ON CONCEPT_RELATIONSHIP(concept_id_2);
-     SELECT COUNT(*) AS 'Number of rows in CONCEPT_RELATIONSHIP table' FROM CONCEPT_RELATIONSHIP;
-    "
-
-    # Create indexes for CONCEPT_ANCESTOR
-    echo "Indexing CONCEPT_ANCESTOR in Database"
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE INDEX idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);
-    CREATE INDEX idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);
-    SELECT COUNT(*) AS 'Number of rows in CONCEPT_ANCESTOR table' FROM CONCEPT_ANCESTOR;
-    "
-
-    # Create Fulltext index and count rows for CONCEPT_SYNONYM
-    echo "Indexing CONCEPT_SYNONYM in Database" 
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE FULLTEXT INDEX idx_concept_synonym_name ON CONCEPT_SYNONYM(concept_synonym_name);
-    CREATE INDEX idx_concept_synonym_id ON CONCEPT_SYNONYM (concept_id);
-    SELECT COUNT(*) AS 'Number of rows in CONCEPT_SYNONYM table' FROM CONCEPT_SYNONYM;
-    "
-
-    # Create Fulltext index and count rows for CONCEPT
-    echo "Indexing CONCEPT in Database" 
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE FULLTEXT INDEX idx_concept_name ON CONCEPT(concept_name);
-    CREATE INDEX idx_concept_id ON CONCEPT (concept_id);
-    CREATE INDEX idx_standard_concept_vocabulary_id_concept_id ON CONCEPT (standard_concept,vocabulary_id,concept_id);
-    SELECT COUNT(*) AS 'Number of rows in CONCEPT table' FROM CONCEPT;
-    "
-
-    # Create Table STANDARD_CONCEPTS
-    echo "Creating table STANDARD_CONCEPTS from table CONCEPT in Database" 
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE TABLE STANDARD_CONCEPTS AS
-    SELECT * FROM CONCEPT 
-    WHERE standard_concept = 'S';
-    ALTER TABLE STANDARD_CONCEPTS
-    ADD PRIMARY KEY (concept_id),
-    ADD CONSTRAINT fk_concept_id
-    FOREIGN KEY (concept_id)
-    REFERENCES CONCEPT (concept_id);
-    "
-
-    # Create Fulltext index and count rows for STANDARD_CONCEPTS
-    echo "Indexing STANDARD_CONCEPTS in Database" 
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
-    CREATE FULLTEXT INDEX ft_concept_name ON STANDARD_CONCEPTS(concept_name);
-    CREATE INDEX idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id,concept_id);
-    SELECT COUNT(*) AS 'Number of rows in CONCEPT table' FROM CONCEPT;
-    "
-
 else 
     echo "Using external database"
 fi

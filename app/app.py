@@ -26,6 +26,12 @@ omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
 UMLS_matcher = UMLSMatcher()
 
+# Use the startup event to provision indexes
+@app.on_event("startup")
+async def startup_event():
+    omop_matcher.provision_indexes()
+    print("Indexes provisioned on app startup")
+
 class OLS4Request(BaseModel):
     search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
     vocabulary_id: Optional[str] = "snomed"

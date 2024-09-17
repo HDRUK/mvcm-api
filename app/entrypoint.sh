@@ -1,24 +1,50 @@
 #!/bin/bash
 
-# If DB_HOST is not set, install and start MySQL server locally
-if [ -z "$DB_HOST" ]; then
+if [ "$DB_REBUILD" = "True" ]; then
 
-    echo "Using local database"
-    apt-get update && apt-get install -y mariadb-server dialog
+    echo "Building the database"
 
-    # Start MySQL server manually
-    mysqld_safe & 
-    sleep 10
+    # If DB_HOST is not set, install and start MySQL server locally
+   if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ]; then
+
+        echo "Using local database"
+
+        apt-get update && apt-get install -y mariadb-server dialog
+
+        # Start MySQL server manually
+        mysqld_safe & 
+        sleep 10
+
+        # Create a dedicated application user
+        if [ "$DB_USER" != "root" ]; then
+            echo "Creating new user: $DB_USER"
+            mysql -u root -e "CREATE USER IF NOT EXISTS '${DB_USER}'@'%' IDENTIFIED BY '${DB_PASSWORD}';"
+        else 
+            echo "Using root user"    
+        fi
+
+        # Grant privileges
+        echo "Granting privileges"    
+        mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';"
+
+        echo "Flushing privileges"    
+        mysql -u root -e "FLUSH PRIVILEGES;"
+
+    else 
+        echo "Using external database: $DB_HOST"
+    fi
 
     # Set up MySQL
-    mysql -u root -e "GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY '${MYSQL_ROOT_PASSWORD}'; FLUSH PRIVILEGES;"
-    
+
     # Increase MySQL timeouts
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} -e "SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
+    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} -e "SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
+
+    # Create DATABASE if it doesn't exist
+    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} -e "CREATE DATABASE IF NOT EXISTS ${DB_NAME};"
 
     # Run initial script
-    echo "Running init_db.sql"
-    mysql -u root -p${MYSQL_ROOT_PASSWORD} < /app/init_db.sql
+    echo "Running init_db.sql on: ${DB_NAME} at: ${DB_HOST}:${DB_PORT} as: ${DB_USER}"
+    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} < /app/init_db.sql
 
     # Function to process TSV files
     process_tsv() {
@@ -28,7 +54,7 @@ if [ -z "$DB_HOST" ]; then
         full_path=$(realpath $file)
 
         echo "Importing $file into $table"
-        mysql -u root -p${MYSQL_ROOT_PASSWORD} mydb -e "
+        mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "
         LOAD DATA LOCAL INFILE '$full_path'
         INTO TABLE $table
         FIELDS TERMINATED BY '\t'
@@ -48,8 +74,11 @@ if [ -z "$DB_HOST" ]; then
             done
         done
 
+    # Copy standard concepts across to STANDARD_CONCEPTS
+    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "INSERT INTO STANDARD_CONCEPTS SELECT * FROM CONCEPT WHERE standard_concept = 'S';" 
+
 else 
-    echo "Using external database"
+    echo "Not rebuilding the database"
 fi
 
 # Start Flask app with uvicorn --workers=2 --threads=4

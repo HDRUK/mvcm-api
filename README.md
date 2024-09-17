@@ -37,7 +37,7 @@ To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `D
 docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app
 ```
 
-If DB_HOST is not set, the app will default to using a local MySQL database, and the `MYSQL_ROOT_PASSWORD` environment variable will be used as the root password for the local database.
+If DB_HOST is set to either 127.0.0.1 or localhost, the app will provision a local mariaDB MySQL database.
 
 ### Audit logging
 To enable audit logging, you must first supply a google application credentials file during the build stage (see above). Then set `AUDIT_ENABLED=1` and then supply the environment variables `PROJECT_ID` and `TOPIC_ID` with the details of the Google PubSub instance, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the (in-container) location of the aforementioned `application_default_credentials.json` file e.g.

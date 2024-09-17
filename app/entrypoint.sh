@@ -8,16 +8,12 @@ if [ "$DB_REBUILD" = "True" ]; then
     if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ]; then
 
         echo "Using local database"
+
+        echo "Starting MySQL"
         service mysql start
 
-        # Enable local file uploads in MySQL server configuration
-        echo "Enabling local file upload support in MySQL"
-        sed -i '/\[mysqld\]/a local-infile=1' /etc/mysql/mysql.conf.d/mysqld.cnf
-
-        # Restart MySQL to apply changes
-        service mysql restart
-
         # Check if the MySQL server is running
+        echo "Checking if MySQL is alive"
         mysql_ready() {
             mysqladmin ping --silent
         }
@@ -40,22 +36,40 @@ if [ "$DB_REBUILD" = "True" ]; then
         # Grant privileges
         echo "Granting privileges"    
         mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';"
+        mysql -u root -e "GRANT SYSTEM_VARIABLES_ADMIN ON *.* TO '${DB_USER}'@'%';"
+
+        # Increase MySQL timeouts
+        echo "Increasing timeouts"
+        mysql -u root  -e "SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
+
+        # Allow file uploads
+        echo "Allowing local infile"
+        mysql -u root  -e "SET GLOBAL local_infile = 1;"
 
     else 
         echo "Using external database: $DB_HOST"
     fi
 
+    # Create MySQL configuration file for secure credential storage
+    echo "Creating MySQL config file ~/.my.cnf"
+
+    echo "[client]" >> ~/.my.cnf
+    echo "user=${DB_USER}" >> ~/.my.cnf
+    echo "password=${DB_PASSWORD}" >> ~/.my.cnf
+    echo "host=${DB_HOST}" >> ~/.my.cnf
+    echo "port=${DB_PORT}" >> ~/.my.cnf 
+
+    # Secure the MySQL config file by limiting permissions
+    chmod 600 ~/.my.cnf  # Ensure only the owner can read/write the file
+
     # Set up MySQL
 
-    # Increase MySQL timeouts
-    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} -e "SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
-
     # Create DATABASE if it doesn't exist
-    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} -e "CREATE DATABASE IF NOT EXISTS ${DB_NAME};"
+    mysql -e "CREATE DATABASE IF NOT EXISTS ${DB_NAME};"
 
     # Run initial script
     echo "Running init_db.sql on: ${DB_NAME} at: ${DB_HOST}:${DB_PORT} as: ${DB_USER}"
-    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} < /app/init_db.sql
+    mysql ${DB_NAME} < /app/init_db.sql
 
     # Function to process TSV files
     process_tsv() {
@@ -65,7 +79,7 @@ if [ "$DB_REBUILD" = "True" ]; then
         full_path=$(realpath $file)
 
         echo "Importing $file into $table"
-        mysql  --local-infile=1 -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "
+        mysql --local-infile=1 ${DB_NAME} -e "
         LOAD DATA LOCAL INFILE '$full_path'
         INTO TABLE $table
         FIELDS TERMINATED BY '\t'
@@ -88,10 +102,12 @@ if [ "$DB_REBUILD" = "True" ]; then
     echo "Data import completed."
 
     # Copy standard concepts across to STANDARD_CONCEPTS
-    mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "INSERT INTO STANDARD_CONCEPTS SELECT * FROM CONCEPT WHERE standard_concept = 'S';" 
+    mysql ${DB_NAME} -e "INSERT INTO STANDARD_CONCEPTS SELECT * FROM CONCEPT WHERE standard_concept = 'S';" 
 
 else 
     echo "Not rebuilding the database"
+
+    
 fi
 
 # Start Flask app with uvicorn --workers=2 --threads=4

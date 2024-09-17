@@ -5,15 +5,29 @@ if [ "$DB_REBUILD" = "True" ]; then
     echo "Building the database"
 
     # If DB_HOST is not set, install and start MySQL server locally
-   if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ]; then
+    if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ]; then
 
         echo "Using local database"
+        service mysql start
 
-        apt-get update && apt-get install -y mariadb-server dialog
+        # Enable local file uploads in MySQL server configuration
+        echo "Enabling local file upload support in MySQL"
+        sed -i '/\[mysqld\]/a local-infile=1' /etc/mysql/mysql.conf.d/mysqld.cnf
 
-        # Start MySQL server manually
-        mysqld_safe & 
-        sleep 10
+        # Restart MySQL to apply changes
+        service mysql restart
+
+        # Check if the MySQL server is running
+        mysql_ready() {
+            mysqladmin ping --silent
+        }
+
+        # Wait for MySQL to be ready
+        while !(mysql_ready)
+        do
+            echo "Waiting for MySQL to start..."
+            sleep 2
+        done
 
         # Create a dedicated application user
         if [ "$DB_USER" != "root" ]; then
@@ -26,9 +40,6 @@ if [ "$DB_REBUILD" = "True" ]; then
         # Grant privileges
         echo "Granting privileges"    
         mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';"
-
-        echo "Flushing privileges"    
-        mysql -u root -e "FLUSH PRIVILEGES;"
 
     else 
         echo "Using external database: $DB_HOST"
@@ -54,7 +65,7 @@ if [ "$DB_REBUILD" = "True" ]; then
         full_path=$(realpath $file)
 
         echo "Importing $file into $table"
-        mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "
+        mysql  --local-infile=1 -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "
         LOAD DATA LOCAL INFILE '$full_path'
         INTO TABLE $table
         FIELDS TERMINATED BY '\t'
@@ -73,6 +84,8 @@ if [ "$DB_REBUILD" = "True" ]; then
             process_tsv $table $file
             done
         done
+
+    echo "Data import completed."
 
     # Copy standard concepts across to STANDARD_CONCEPTS
     mysql -h ${DB_HOST} -P ${DB_PORT} -u ${DB_USER} -p${DB_PASSWORD} ${DB_NAME} -e "INSERT INTO STANDARD_CONCEPTS SELECT * FROM CONCEPT WHERE standard_concept = 'S';" 

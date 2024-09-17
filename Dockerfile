@@ -1,6 +1,20 @@
 
-# Use the official Python image from the Docker Hub
-FROM python:3.11-slim
+# Use Ubuntu Focal (20.04)
+FROM ubuntu:22.04
+
+# Set environment variables to prevent interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies and MySQL
+RUN apt-get update && apt-get install -y \
+    wget \
+    lsb-release \
+    gnupg \
+    python3.9 \
+    python3-pip \
+    mysql-server \
+    default-mysql-client \
+    && apt-get clean
 
 # Set database environment variables for auth (adjust as needed)
 ENV DB_HOST=127.0.0.1
@@ -28,7 +42,7 @@ ENV BASIC_AUTH_PASSWORD=psw4API
 ENV UMLS_APIKEY=e8ac4aea-f310-4bcd-aded-3c256465fd94
 
 # Set environment variables for OMOP Data Model folder (adjust as needed)
-ENV OMOP_DATA_FOLDER=data
+ENV OMOP_DATA_FOLDER=data.supermin
 
 # Copy the database initialization script, your Flask app, and requirements file
 COPY app/ /app/

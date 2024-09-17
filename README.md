@@ -32,7 +32,7 @@ In order to use the PubSub audit functionality, you'll need to place you `applic
 
 ### Internal/External Database setup
 
-MVCM runs on an OMOP database. If an OMOP database is already built then database provisioning may be disable. the `DB_REBUILD` is by default set to `TRUE` but can set to `FALSE` to disable rebuiding every time the app is re-provisioned. 
+MVCM runs on an OMOP database. If an OMOP database is already built then database provisioning may be disable. the `DB_REBUILD` is by default set to `True` but can set to `False` to disable rebuiding every time the app is re-provisioned. If `DB_REBUILD=True` then the remote MYSQL server must be configured to allow *LOAD DATA LOCAL INFILE* statements, which are necessary for the script to upload local files to the server.
 
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 

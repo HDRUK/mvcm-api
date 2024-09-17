@@ -14,6 +14,12 @@ ENV DB_REBUILD=True
 #ENV DB_SSL_CERT=
 #ENV DB_SSL_KEY=
 
+# Set Google audit vars
+#ENV AUDIT_ENABLED=1
+#ENV PROJECT_ID=myprojectid 
+#ENV TOPIC_ID=mytopicid
+#ENV GOOGLE_APPLICATION_CREDENTIALS=/app/application_default_credentials.json
+
 # Set API environment variables for auth (adjust as needed)
 ENV BASIC_AUTH_USERNAME=APIuser
 ENV BASIC_AUTH_PASSWORD=psw4API

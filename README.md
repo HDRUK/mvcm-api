@@ -37,6 +37,8 @@ To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `D
 docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app
 ```
 
+This approach also support SSL, the following additional envs must be set: `DB_SSL_ENABLED=True`, `ENV DB_SSL_CA=CertAgency`, `ENV DB_SSL_CERT=cert`, `ENV DB_SSL_KEY=key`.
+
 If DB_HOST is set to either 127.0.0.1 or localhost, the app will provision a local mariaDB MySQL database.
 
 ### Audit logging

@@ -31,6 +31,9 @@ docker build -t app . ; docker run -p 80:80 -e <various environment variables> a
 In order to use the PubSub audit functionality, you'll need to place you `application_default_credentials.json` file into the directory before calling the `docker build` command as above.
 
 ### Internal/External Database setup
+
+MVCM runs on an OMOP database. If an OMOP database is already built then database provisioning may be disable. the `DB_REBUILD` is by default set to `TRUE` but can set to `FALSE` to disable rebuiding every time the app is re-provisioned. 
+
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 
 ```bash

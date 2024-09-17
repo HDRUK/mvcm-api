@@ -11,107 +11,45 @@ class OMOPMatcher:
         # Connect to database
         try:
             print("Initialize the MySQL connection based on the configuration.")
+            
+            # Fetch environment variables
             MYSQL_HOST = environ.get('DB_HOST', '127.0.0.1')
+            MYSQL_PORT = environ.get('DB_PORT', '3306')  # Default to 3306 if DB_PORT is not set
             MYSQL_USER = environ.get('DB_USER', 'root')
             MYSQL_PASSWORD = environ.get('DB_PASSWORD', 'psw4MYSQL')
-            MYSQL_DB = environ.get('DB_NAME', 'mydb')
-            # SSL CONFIGURATION
+            MYSQL_DB = environ.get('DB_NAME', 'OMOP')
+            
+            # SSL Configuration
             MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
-            MYSQL_SSL_CA = environ.get('DB_SSL_CA', '')
-            MYSQL_SSL_CERT = environ.get('DB_SSL_CERT', '')
-            MYSQL_SSL_KEY = environ.get('DB_SSL_KEY', '')
+            MYSQL_SSL_CA = environ.get('DB_SSL_CA', False)
+            MYSQL_SSL_CERT = environ.get('DB_SSL_CERT', False)
+            MYSQL_SSL_KEY = environ.get('DB_SSL_KEY', False)
 
-            connection_string = (f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}')
-            if MYSQL_SSL_ENABLED:
-                ssl_args = (f'?ssl_ca={MYSQL_SSL_CA}&ssl_cert={MYSQL_SSL_CERT}&ssl_key={MYSQL_SSL_KEY}&ssl_check_hostname=false') 
-                connection_string = connection_string + ssl_args
+            # Build the connection string, including the port
+            connection_string = (
+                f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}'
+            )
+
+            # Append SSL arguments if SSL is enabled
+            if MYSQL_SSL_ENABLED and MYSQL_SSL_CA and MYSQL_SSL_CERT and MYSQL_SSL_KEY:
+                ssl_args = (
+                    f'?ssl_ca={MYSQL_SSL_CA}&ssl_cert={MYSQL_SSL_CERT}&ssl_key={MYSQL_SSL_KEY}&ssl_check_hostname=false'
+                )
+                connection_string += ssl_args
+
+            # Create SQLAlchemy engine
             engine = create_engine(connection_string)
             
+            # Log success
             print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Connected to engine"))
 
         except Exception as e:
+            # Log failure and raise an error
             print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Failed to connect to engine"))
             raise ValueError(f"Failed to connect to MySQL: {e}")
         
         self.engine = engine
-
-    def index_exists(self, connection, table_name, index_name):
-        try:
-            query = """
-            SELECT COUNT(1) 
-            FROM INFORMATION_SCHEMA.STATISTICS 
-            WHERE TABLE_SCHEMA = DATABASE() 
-            AND TABLE_NAME = :table_name 
-            AND INDEX_NAME = :index_name;
-            """
-            result = connection.execute(
-                text(query), {"table_name": table_name, "index_name": index_name}
-            )
-            return result.scalar() > 0
-        except Exception as e:
-            raise ValueError(f"Error checking if index exists: {e}")
-
-    def provision_indexes(self):
-        try: 
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Running SQL to provision indexes..."))
-
-            # SQL commands with table name and index name
-            sql_commands = [
-                ("CONCEPT_RELATIONSHIP", "idx_concept_relationship_on_id1_enddate",
-                 "CREATE INDEX idx_concept_relationship_on_id1_enddate ON CONCEPT_RELATIONSHIP(concept_id_1, valid_end_date);"),
-                ("CONCEPT_RELATIONSHIP", "idx_concept_relationship_on_id2",
-                 "CREATE INDEX idx_concept_relationship_on_id2 ON CONCEPT_RELATIONSHIP(concept_id_2);"),
-                
-                ("CONCEPT_ANCESTOR", "idx_concept_ancestor_on_descendant_id",
-                 "CREATE INDEX idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);"),
-                ("CONCEPT_ANCESTOR", "idx_concept_ancestor_on_ancestor_id",
-                 "CREATE INDEX idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);"),
-                
-                ("CONCEPT_SYNONYM", "idx_concept_synonym_name",
-                 "CREATE FULLTEXT INDEX idx_concept_synonym_name ON CONCEPT_SYNONYM(concept_synonym_name);"),
-                ("CONCEPT_SYNONYM", "idx_concept_synonym_id",
-                 "CREATE INDEX idx_concept_synonym_id ON CONCEPT_SYNONYM(concept_id);"),
-                
-                ("CONCEPT", "idx_concept_name",
-                 "CREATE FULLTEXT INDEX idx_concept_name ON CONCEPT(concept_name);"),
-                ("CONCEPT", "idx_concept_id",
-                 "CREATE INDEX idx_concept_id ON CONCEPT(concept_id);"),
-                ("CONCEPT", "idx_standard_concept_vocabulary_id_concept_id",
-                 "CREATE INDEX idx_standard_concept_vocabulary_id_concept_id ON CONCEPT(standard_concept, vocabulary_id, concept_id);"),
-                
-                # Create Table STANDARD_CONCEPTS
-                ("", "", "CREATE TABLE IF NOT EXISTS STANDARD_CONCEPTS AS SELECT * FROM CONCEPT WHERE standard_concept = 'S';"),
-                
-                # Index creation for STANDARD_CONCEPTS
-                ("STANDARD_CONCEPTS", "ft_concept_name",
-                 "CREATE FULLTEXT INDEX ft_concept_name ON STANDARD_CONCEPTS(concept_name);"),
-                ("STANDARD_CONCEPTS", "idx_vocabulary_id_concept_id",
-                 "CREATE INDEX idx_vocabulary_id_concept_id ON STANDARD_CONCEPTS(vocabulary_id, concept_id);")
-            ]
-
-            # Execute each SQL command, checking for index existence where applicable
-            with self.engine.connect() as connection:
-                for table_name, index_name, sql_command in sql_commands:
-                    if table_name and index_name:  # It's an index creation command
-                        if not self.index_exists(connection, table_name, index_name):
-                            try:
-                                print(f"Running: {sql_command}")
-                                connection.execute(text(sql_command))
-                            except OperationalError as oe:
-                                if "Duplicate key name" in str(oe):
-                                    print(f"Index {index_name} already exists. Skipping.")
-                                else:
-                                    raise
-                    else:
-                        # For other commands like table creation
-                        connection.execute(text(sql_command))
-
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Indexes successfully provisioned"))
-
-        except Exception as e:
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.provision_indexes", description="Failed to provision indexes"))
-            raise ValueError(f"Error in provisioning indexes: {e}")
-        
+    
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", concept_synonym="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
         try:
             if not search_terms:

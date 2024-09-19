@@ -1,20 +1,7 @@
 
 # Use Ubuntu Focal (20.04)
-FROM ubuntu:22.04
+FROM python:3.11-slim
 
-# Set environment variables to prevent interactive prompts
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Install dependencies and MySQL
-RUN apt-get update && apt-get install -y \
-    wget \
-    lsb-release \
-    gnupg \
-    python3.9 \
-    python3-pip \
-    mysql-server \
-    default-mysql-client \
-    && apt-get clean
 
 # DEFAULT database environment variables (adjust as needed)
 ENV DB_HOST=127.0.0.1

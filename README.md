@@ -31,13 +31,18 @@ docker build -t app . ; docker run -p 80:80 -e <various environment variables> a
 In order to use the PubSub audit functionality, you'll need to place you `application_default_credentials.json` file into the directory before calling the `docker build` command as above.
 
 ### Internal/External Database setup
+
+MVCM runs on an OMOP database. If an OMOP database is already built then database provisioning may be disable. the `DB_REBUILD` is by default set to `True` but can set to `False` to disable rebuiding every time the app is re-provisioned. If `DB_REBUILD=True` then the remote MYSQL server must be configured to allow *LOAD DATA LOCAL INFILE* statements, which are necessary for the script to upload local files to the server.
+
 To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 
 ```bash
 docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app
 ```
 
-If DB_HOST is not set, the app will default to using a local MySQL database, and the `MYSQL_ROOT_PASSWORD` environment variable will be used as the root password for the local database.
+This approach also support SSL, the following additional envs must be set: `DB_SSL_ENABLED=True`, `ENV DB_SSL_CA=CertAgency`, `ENV DB_SSL_CERT=cert`, `ENV DB_SSL_KEY=key`.
+
+If DB_HOST is set to either 127.0.0.1 or localhost, the app will provision a local mariaDB MySQL database.
 
 ### Audit logging
 To enable audit logging, you must first supply a google application credentials file during the build stage (see above). Then set `AUDIT_ENABLED=1` and then supply the environment variables `PROJECT_ID` and `TOPIC_ID` with the details of the Google PubSub instance, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the (in-container) location of the aforementioned `application_default_credentials.json` file e.g.

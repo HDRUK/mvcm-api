@@ -1,8 +1,13 @@
 import pandas as pd
 import re
+import json
 from rapidfuzz import fuzz
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine
+from sqlalchemy.exc import SQLAlchemyError
 from os import environ
+import time
+from sqlalchemy.dialects.mysql import insert
+import json
 from .audit_publisher import publish_message
 from sqlalchemy.exc import OperationalError
 
@@ -13,12 +18,12 @@ class OMOPMatcher:
             print("Initialize the MySQL connection based on the configuration.")
             
             # Fetch environment variables
-            MYSQL_HOST = environ.get('DB_HOST', '127.0.0.1')
-            MYSQL_PORT = environ.get('DB_PORT', '3306')  # Default to 3306 if DB_PORT is not set
-            MYSQL_USER = environ.get('DB_USER', 'root')
-            MYSQL_PASSWORD = environ.get('DB_PASSWORD', 'psw4MYSQL')
-            MYSQL_DB = environ.get('DB_NAME', 'OMOP')
-            
+            MYSQL_HOST=environ.get('DB_HOST', '0.0.0.0')
+            MYSQL_PORT=environ.get('DB_PORT', '3306')  # Default to 3306 if DB_PORT is not set
+            MYSQL_USER=environ.get('DB_USER', 'OMOP_user')
+            MYSQL_PASSWORD=environ.get('DB_PASSWORD', 'psw4MYSQL')
+            MYSQL_DB=environ.get('DB_NAME', 'OMOP')
+
             # SSL Configuration
             MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
             MYSQL_SSL_CA = environ.get('DB_SSL_CA', False)
@@ -49,40 +54,118 @@ class OMOPMatcher:
             raise ValueError(f"Failed to connect to MySQL: {e}")
         
         self.engine = engine
+
+        self.set_up_cache()
+        print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Set up cache"))
     
-    def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y", concept_relationship="y", concept_synonym="y", search_threshold=None, max_separation_descendant=1, max_separation_ancestor=1):
+    def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y",
+                            concept_relationship="y", concept_synonym="y", search_threshold=0,
+                            max_separation_descendant=1, max_separation_ancestor=1):
+        if not search_terms:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term"))
+            raise ValueError("No valid search_term values provided")
+
+        if not isinstance(vocabulary_id, str) or not vocabulary_id.strip():
+            vocabulary_id = None
+
+        if not isinstance(search_threshold, (float, int)):
+            search_threshold = 0
+
+        overall_results = []
+
+        for search_term in search_terms:
+            # Check if the result is cached
+            cached_result = self.get_cached_result(
+                search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
+            )
+
+            if cached_result is not None:
+                # Use the cached result
+                print("Using cached result for search term: {search_term}")
+                concepts = cached_result
+            else:
+                # Fetch concepts and store in cache
+                concepts = self.fetch_OMOP_concepts(
+                    search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                    concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
+                )
+
+                if concepts:
+                    # Cache the result
+                    self.cache_result(
+                        search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                        concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
+                        concepts
+                    )
+
+            overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
+
+        return overall_results
+    
+    def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                        concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
+        query = """
+            SELECT result FROM omop_matcher_cache
+            WHERE
+                search_term = %s AND
+                (%s IS NULL OR vocabulary_id = %s) AND
+                concept_ancestor = %s AND
+                concept_relationship = %s AND
+                concept_synonym = %s AND
+                search_threshold = %s AND
+                max_separation_descendant = %s AND
+                max_separation_ancestor = %s
+        """
+        params = (
+            search_term,
+            vocabulary_id, vocabulary_id,
+            concept_ancestor,
+            concept_relationship,
+            concept_synonym,
+            search_threshold,
+            max_separation_descendant,
+            max_separation_ancestor
+        )
         try:
-            if not search_terms:
-                print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term values provided"))
-                raise ValueError("No valid search_term values provided")
 
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Valid search_term values provided"))
-
-            overall_results = []
-
-            # Assuming vocabulary_id is meant to be a not empty string
-            if not isinstance(vocabulary_id, str) or not vocabulary_id.strip():
-                vocabulary_id = None
-
-            # search_threshold should be a float or integer, so check if it's a number
-            if not isinstance(search_threshold, (float, int)):
-                search_threshold = 0
-         
-            for search_term in search_terms:
-                OMOP_concepts = self.fetch_OMOP_concepts(search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_synonym, search_threshold,max_separation_descendant,max_separation_ancestor)
-
-                overall_results.append({
-                    'search_term': search_term,
-                    'CONCEPT': OMOP_concepts
-                })
-
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description=f"Best OMOP matches for {str(search_terms)} calculated"))
-            return overall_results
+            result = pd.read_sql(query, con=self.engine, params=params)
+            if not result.empty:
+                cached_result = result['result'].iloc[0]
+                return json.loads(cached_result)
+            else:
+                return None
+        except SQLAlchemyError as e:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.get_cached_result", description="Error fetching cached result"))
+            print(f"Error fetching cached result: {e}")
+            return None
         
-        except Exception as e:
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description=f"Failed to calculate best OMOP matches for {search_terms}"))
-            raise ValueError(f"Error in calculate_best_OMOP_matches: {e}")
-    
+    def cache_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                    concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
+                    concepts):
+        # Serialize the concepts to JSON
+        result_json = json.dumps(concepts)
+        
+        # Create a DataFrame for the new record
+        data = {
+            'search_term': [search_term],
+            'vocabulary_id': [vocabulary_id],
+            'concept_ancestor': [concept_ancestor],
+            'concept_relationship': [concept_relationship],
+            'concept_synonym': [concept_synonym],
+            'search_threshold': [search_threshold],
+            'max_separation_descendant': [max_separation_descendant],
+            'max_separation_ancestor': [max_separation_ancestor],
+            'result': [result_json]
+        }
+        df = pd.DataFrame(data)
+        
+        try:
+            df.to_sql('omop_matcher_cache', con=self.engine, if_exists='append', index=False)
+        except SQLAlchemyError as e:
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.cache_result", description="Error caching result"))
+            print(f"Error caching/updating result for search_term '{search_term}': {e}")
+        
     def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_synonym, search_threshold,max_separation_descendant,max_separation_ancestor):
         
         query1 = """
@@ -291,3 +374,101 @@ class OMOPMatcher:
                 'concept_id_2': row['concept_id_2']
             }
         } for _, row in results.iterrows()]
+    
+
+    def set_up_cache(self):
+
+        medical_terms = [
+            "asthma", "heart", "diabetes", "hypertension", "stroke", "cancer", "arthritis", "depression", "anxiety", "migraine",
+            "eczema", "bronchitis", "pneumonia", "sepsis", "anemia", "chronic pain", "osteoporosis", "glaucoma", "cataract", "allergy",
+            "influenza", "obesity", "hypothyroidism", "hyperthyroidism", "renal failure", "liver disease", "hepatitis", "fibromyalgia",
+            "dementia", "schizophrenia", "bipolar disorder", "epilepsy", "multiple sclerosis", "parkinson's disease", "alzheimer's disease",
+            "sleep apnea", "gastroenteritis", "cholecystitis", "ulcerative colitis", "crohn's disease", "irritable bowel syndrome", "diverticulitis",
+            "cirrhosis", "pancreatitis", "gout", "tuberculosis", "leukemia", "lymphoma", "melanoma", "psoriasis", "rheumatoid arthritis", "scoliosis",
+            "kyphosis", "spina bifida", "cystic fibrosis", "COPD", "emphysema", "sinusitis", "otitis media", "hearing loss", "tinnitus", "vertigo",
+            "conjunctivitis", "uveitis", "macular degeneration", "retinopathy", "hypertensive heart disease", "ischemic heart disease", "myocardial infarction",
+            "angina", "atrial fibrillation", "ventricular fibrillation", "tachycardia", "bradycardia", "cardiomyopathy", "congestive heart failure",
+            "pericarditis", "endocarditis", "valvular heart disease", "deep vein thrombosis", "pulmonary embolism", "varicose veins", "aneurysm", "peripheral artery disease",
+            "raynaud's disease", "sickle cell anemia", "thalassemia", "hemophilia", "von willebrand disease", "lupus", "scleroderma", "sjogren's syndrome",
+            "guillain-barre syndrome", "amyloidosis", "celiac disease", "vitamin D deficiency", "iron deficiency", "vitamin B12 deficiency", "rickets",
+            "hypercalcemia", "hypocalcemia", "hypokalemia", "hyperkalemia", "metabolic syndrome", "polycystic ovary syndrome", "endometriosis", "uterine fibroids",
+            "ovarian cysts", "pelvic inflammatory disease", "ectopic pregnancy", "miscarriage", "preeclampsia", "gestational diabetes", "menopause",
+            "prostate cancer", "testicular cancer", "erectile dysfunction", "benign prostatic hyperplasia", "male infertility", "female infertility",
+            "urinary tract infection", "kidney stones", "bladder cancer", "nephrotic syndrome", "acute kidney injury", "chronic kidney disease",
+            "pyelonephritis", "interstitial cystitis", "overactive bladder", "glomerulonephritis", "prostatitis", "urethritis", "enuresis",
+            "epididymitis", "hydrocele", "varicocele", "inguinal hernia", "hemorrhoids", "anal fissures", "rectal prolapse", "colorectal cancer",
+            "appendicitis", "hernia", "celiac sprue", "gastroparesis", "esophageal varices", "gastritis", "duodenal ulcer", "peptic ulcer disease",
+            "barrett's esophagus", "gastroesophageal reflux disease", "achalasia", "hepatocellular carcinoma", "liver abscess", "biliary atresia",
+            "primary biliary cirrhosis", "portal hypertension", "esophageal cancer", "stomach cancer", "small intestine cancer", "colon cancer",
+            "rectal cancer", "anal cancer", "carcinoid tumors", "neuroendocrine tumors", "pheochromocytoma", "hyperparathyroidism", "hypoparathyroidism",
+            "hypoglycemia", "hyperglycemia", "gestational hypertension", "tension headache", "cluster headache", "temporal arteritis", "trigeminal neuralgia",
+            "sciatica", "lumbar stenosis", "cervical stenosis", "herniated disc", "carpal tunnel syndrome", "cubital tunnel syndrome", "thoracic outlet syndrome",
+            "plantar fasciitis", "rotator cuff tear", "bursitis", "tendinitis", "achilles tendon rupture", "patellar tendonitis", "anterior cruciate ligament tear",
+            "meniscus tear", "osteomyelitis", "septic arthritis", "bone cancer", "osteosarcoma", "ewing's sarcoma", "chondrosarcoma", "rhabdomyosarcoma",
+            "soft tissue sarcoma", "myeloma", "neutropenia", "thrombocytopenia", "pancytopenia", "myelodysplastic syndrome", "aplastic anemia",
+            "chronic lymphocytic leukemia", "chronic myelogenous leukemia", "acute lymphoblastic leukemia", "acute myeloid leukemia", "non-hodgkin lymphoma",
+            "hodgkin lymphoma", "multiple myeloma", "skin cancer", "basal cell carcinoma", "squamous cell carcinoma", "actinic keratosis", "seborrheic keratosis",
+            "keloid", "lipoma", "dermatofibroma", "alopecia areata", "seborrheic dermatitis", "contact dermatitis", "atopic dermatitis", "vitiligo",
+            "melasma", "hidradenitis suppurativa", "tinea corporis", "onychomycosis", "herpes simplex", "herpes zoster", "human papillomavirus", "molluscum contagiosum",
+            "impetigo", "cellulitis"]
+        
+        results = self.calculate_best_matches(
+            search_terms=medical_terms, 
+            vocabulary_id="", 
+            concept_ancestor="y",
+            concept_relationship="y", 
+            concept_synonym="y", 
+            search_threshold=80,  # Use integer instead of string
+            max_separation_descendant=1,
+            max_separation_ancestor=1
+        )
+
+        return results
+
+    # Outside the class definition for testing only! 
+
+
+# if __name__ == "__main__":
+#     # Record the start time
+    
+
+#     # Initialize the OMOPMatcher class
+#     matcher = OMOPMatcher()
+#     start_time = time.time()
+#     results = matcher.set_up_cache()
+
+#     # Record the end time
+#     end_time = time.time()
+#     # Iterate over results to count objects at each level
+#     # Initialize counters for JSON objects at each level
+#     concept_count = 0
+#     concept_synonym_count = 0
+#     concept_ancestor_count = 0
+#     concept_relationship_count = 0
+
+#     # Iterate over results to count objects at each level
+#     for result in results:
+#         if result and 'CONCEPT' in result and result['CONCEPT']:  # Check if 'CONCEPT' exists and is not None
+#             for concept in result['CONCEPT']:
+#                 concept_count += 1  # Increment by 1 for each concept
+#                 if concept and 'CONCEPT_SYNONYM' in concept and concept['CONCEPT_SYNONYM']:
+#                     concept_synonym_count += len(concept['CONCEPT_SYNONYM'])
+#                 if concept and 'CONCEPT_ANCESTOR' in concept and concept['CONCEPT_ANCESTOR']:
+#                     concept_ancestor_count += len(concept['CONCEPT_ANCESTOR'])
+#                 if concept and 'CONCEPT_RELATIONSHIP' in concept and concept['CONCEPT_RELATIONSHIP']:
+#                     concept_relationship_count += len(concept['CONCEPT_RELATIONSHIP'])
+
+#     # Calculate the total execution time
+#     execution_time = end_time - start_time
+
+#     # Print the execution time
+#     print(f"Execution Time: {execution_time:.2f} seconds")
+
+#     # Print the counts for each level
+#     print(f"Number of CONCEPT objects: {concept_count}")
+#     print(f"Number of CONCEPT_SYNONYM objects: {concept_synonym_count}")
+#     print(f"Number of CONCEPT_ANCESTOR objects: {concept_ancestor_count}")
+#     print(f"Number of CONCEPT_RELATIONSHIP objects: {concept_relationship_count}")
+
+#     # Optionally print the results (if needed)
+#     #print("Results:", results)

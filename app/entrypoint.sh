@@ -5,7 +5,7 @@ if [ "$DB_REBUILD" = "True" ]; then
     echo "Building the database"
 
     # If DB_HOST is not set, install and start MySQL server locally
-    if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ]; then
+    if [ "$DB_HOST" = "127.0.0.1" ] || [ "$DB_HOST" = "localhost" ] || [ "$DB_HOST" = "0.0.0.0" ]; then
 
         echo "Using local database"
 
@@ -38,16 +38,42 @@ if [ "$DB_REBUILD" = "True" ]; then
         mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';"
         mysql -u root -e "GRANT SYSTEM_VARIABLES_ADMIN ON *.* TO '${DB_USER}'@'%';"
 
-        # Increase MySQL timeouts
-        echo "Increasing timeouts"
-        mysql -u root  -e "SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
-
         # Allow file uploads
-        echo "Allowing local infile"
-        mysql -u root  -e "SET GLOBAL local_infile = 1;"
+        echo "Allowing local infile and larger timeouts"
+        mysql -u root  -e "SET GLOBAL local_infile = 1; SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
 
     else 
         echo "Using external database: $DB_HOST"
+    fi
+
+    # If DB_HOST is exposed change the endpoint to allow external connections
+    if [ "$DB_HOST" = "0.0.0.0" ]; then
+
+    # Modify bind-address to allow external connections
+        echo "Configuring MySQL to allow external connections"
+        sed -i 's/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
+
+        # Restart MySQL to apply the changes
+        echo "Restarting MySQL to apply bind-address changes"
+        service mysql restart
+
+        # Check if the MySQL server is running
+        echo "Checking if MySQL is alive"
+        mysql_ready() {
+            mysqladmin ping --silent
+        }
+
+        # Wait for MySQL to be ready
+        while !(mysql_ready)
+        do
+            echo "Waiting for MySQL to start..."
+            sleep 2
+        done
+
+        # Allow file uploads
+        echo "Re-enabling local infile and larger timeouts"
+        mysql -u root  -e "SET GLOBAL local_infile = 1; SET GLOBAL wait_timeout=28800; SET GLOBAL interactive_timeout=28800;"
+
     fi
 
     # Create MySQL configuration file for secure credential storage
@@ -89,16 +115,23 @@ if [ "$DB_REBUILD" = "True" ]; then
     }
     export -f process_tsv
 
-    # Process file import
+    # Process file import with progress bar
+    total_files=$(find ./${OMOP_DATA_FOLDER}/*/*.tsv | wc -l)
+    current_file=0
+
     for table in CONCEPT CONCEPT_SYNONYM CONCEPT_ANCESTOR CONCEPT_RELATIONSHIP; 
         do
         echo "Processing $table files"
         for file in ./${OMOP_DATA_FOLDER}/$table/*.tsv; 
             do
+            ((current_file++))
+            progress=$(echo "scale=2; $current_file/$total_files*100" | bc)
+            echo -ne "Progress: $progress%\r"
             process_tsv $table $file
             done
         done
 
+    echo -ne "Progress: 100%\n"
     echo "Data import completed."
 
     # Copy standard concepts across to STANDARD_CONCEPTS

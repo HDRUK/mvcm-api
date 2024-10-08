@@ -82,6 +82,29 @@ CREATE TABLE IF NOT EXISTS CONCEPT_ANCESTOR (
     FOREIGN KEY (descendant_concept_id) REFERENCES CONCEPT(concept_id)
 );
 
+CREATE TABLE omop_matcher_cache (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    search_term VARCHAR(255) NOT NULL,
+    vocabulary_id VARCHAR(255),
+    concept_ancestor ENUM('y', 'n') NOT NULL,
+    concept_relationship ENUM('y', 'n') NOT NULL,
+    concept_synonym ENUM('y', 'n') NOT NULL,
+    search_threshold FLOAT NOT NULL,
+    max_separation_descendant INT NOT NULL,
+    max_separation_ancestor INT NOT NULL,
+    result MEDIUMTEXT NOT NULL,
+    UNIQUE KEY unique_cache (
+        search_term,
+        vocabulary_id,
+        concept_ancestor,
+        concept_relationship,
+        concept_synonym,
+        search_threshold,
+        max_separation_descendant,
+        max_separation_ancestor
+    )
+);
+
 CREATE INDEX idx_concept_ancestor_on_descendant_id ON CONCEPT_ANCESTOR(descendant_concept_id);
 CREATE INDEX idx_concept_ancestor_on_ancestor_id ON CONCEPT_ANCESTOR(ancestor_concept_id);
 SELECT 'Table CONCEPT_ANCESTOR created' AS message;

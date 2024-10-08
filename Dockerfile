@@ -13,11 +13,12 @@ RUN apt-get update && apt-get install -y \
     python3.9 \
     python3-pip \
     mysql-server \
+    bc \
     default-mysql-client \
     && apt-get clean
 
 # DEFAULT database environment variables (adjust as needed)
-ENV DB_HOST=127.0.0.1
+ENV DB_HOST=0.0.0.0
 ENV DB_USER=OMOP_user
 ENV DB_PORT=3306
 ENV DB_PASSWORD=psw4MYSQL
@@ -57,6 +58,7 @@ RUN pip install -r requirements.txt
 RUN chmod +x /app/entrypoint.sh
 
 EXPOSE 80
+EXPOSE 3306
 
 # Use the entrypoint script
 ENTRYPOINT ["/app/entrypoint.sh"]

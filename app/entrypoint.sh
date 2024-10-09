@@ -10,6 +10,7 @@ if [ "$DB_REBUILD" = "True" ]; then
         echo "Using local database"
 
         echo "Starting MySQL"
+        usermod -d /var/lib/mysql/ mysql
         service mysql start
 
         # Check if the MySQL server is running
@@ -131,6 +132,7 @@ if [ "$DB_REBUILD" = "True" ]; then
                 echo -ne "Progress: $progress%\r"
                 process_tsv $table $file
             done
+            echo "Progress: 100.00"
             echo "$table imported"
         done
 

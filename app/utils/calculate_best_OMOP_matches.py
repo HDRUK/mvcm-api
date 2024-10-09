@@ -6,7 +6,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 from os import environ
 import time
-from sqlalchemy.dialects.mysql import insert
 import json
 from .audit_publisher import publish_message
 from sqlalchemy.exc import OperationalError
@@ -55,7 +54,64 @@ class OMOPMatcher:
         
         self.engine = engine
 
-        self.set_up_cache()
+        medical_terms = [
+            "asthma", "heart", "diabetes", "hypertension", "stroke", "cancer", "arthritis", "depression", "anxiety", "migraine",
+            "eczema", "bronchitis", "pneumonia", "sepsis", "anemia", "chronic pain", "osteoporosis", "glaucoma", "cataract", "allergy",
+            "influenza", "obesity", "hypothyroidism", "hyperthyroidism", "renal failure", "liver disease", "hepatitis", "fibromyalgia",
+            "dementia", "schizophrenia", "bipolar disorder", "epilepsy", "multiple sclerosis", "parkinson's disease", "alzheimer's disease",
+            "sleep apnea", "gastroenteritis", "cholecystitis", "ulcerative colitis", "crohn's disease", "irritable bowel syndrome", "diverticulitis",
+            "cirrhosis", "pancreatitis", "gout", "tuberculosis", "leukemia", "lymphoma", "melanoma", "psoriasis", "rheumatoid arthritis", "scoliosis",
+            "kyphosis", "spina bifida", "cystic fibrosis", "COPD", "emphysema", "sinusitis", "otitis media", "hearing loss", "tinnitus", "vertigo",
+            "conjunctivitis", "uveitis", "macular degeneration", "retinopathy", "hypertensive heart disease", "ischemic heart disease", "myocardial infarction",
+            "angina", "atrial fibrillation", "ventricular fibrillation", "tachycardia", "bradycardia", "cardiomyopathy", "congestive heart failure",
+            "pericarditis", "endocarditis", "valvular heart disease", "deep vein thrombosis", "pulmonary embolism", "varicose veins", "aneurysm", "peripheral artery disease",
+            "raynaud's disease", "sickle cell anemia", "thalassemia", "hemophilia", "von willebrand disease", "lupus", "scleroderma", "sjogren's syndrome",
+            "guillain-barre syndrome", "amyloidosis", "celiac disease", "vitamin D deficiency", "iron deficiency", "vitamin B12 deficiency", "rickets",
+            "hypercalcemia", "hypocalcemia", "hypokalemia", "hyperkalemia", "metabolic syndrome", "polycystic ovary syndrome", "endometriosis", "uterine fibroids",
+            "ovarian cysts", "pelvic inflammatory disease", "ectopic pregnancy", "miscarriage", "preeclampsia", "gestational diabetes", "menopause",
+            "prostate cancer", "testicular cancer", "erectile dysfunction", "benign prostatic hyperplasia", "male infertility", "female infertility",
+            "urinary tract infection", "kidney stones", "bladder cancer", "nephrotic syndrome", "acute kidney injury", "chronic kidney disease",
+            "pyelonephritis", "interstitial cystitis", "overactive bladder", "glomerulonephritis", "prostatitis", "urethritis", "enuresis",
+            "epididymitis", "hydrocele", "varicocele", "inguinal hernia", "hemorrhoids", "anal fissures", "rectal prolapse", "colorectal cancer",
+            "appendicitis", "hernia", "celiac sprue", "gastroparesis", "esophageal varices", "gastritis", "duodenal ulcer", "peptic ulcer disease",
+            "barrett's esophagus", "gastroesophageal reflux disease", "achalasia", "hepatocellular carcinoma", "liver abscess", "biliary atresia",
+            "primary biliary cirrhosis", "portal hypertension", "esophageal cancer", "stomach cancer", "small intestine cancer", "colon cancer",
+            "rectal cancer", "anal cancer", "carcinoid tumors", "neuroendocrine tumors", "pheochromocytoma", "hyperparathyroidism", "hypoparathyroidism",
+            "hypoglycemia", "hyperglycemia", "gestational hypertension", "tension headache", "cluster headache", "temporal arteritis", "trigeminal neuralgia",
+            "sciatica", "lumbar stenosis", "cervical stenosis", "herniated disc", "carpal tunnel syndrome", "cubital tunnel syndrome", "thoracic outlet syndrome",
+            "plantar fasciitis", "rotator cuff tear", "bursitis", "tendinitis", "achilles tendon rupture", "patellar tendonitis", "anterior cruciate ligament tear",
+            "meniscus tear", "osteomyelitis", "septic arthritis", "bone cancer", "osteosarcoma", "ewing's sarcoma", "chondrosarcoma", "rhabdomyosarcoma",
+            "soft tissue sarcoma", "myeloma", "neutropenia", "thrombocytopenia", "pancytopenia", "myelodysplastic syndrome", "aplastic anemia",
+            "chronic lymphocytic leukemia", "chronic myelogenous leukemia", "acute lymphoblastic leukemia", "acute myeloid leukemia", "non-hodgkin lymphoma",
+            "hodgkin lymphoma", "multiple myeloma", "skin cancer", "basal cell carcinoma", "squamous cell carcinoma", "actinic keratosis", "seborrheic keratosis",
+            "keloid", "lipoma", "dermatofibroma", "alopecia areata", "seborrheic dermatitis", "contact dermatitis", "atopic dermatitis", "vitiligo",
+            "melasma", "hidradenitis suppurativa", "tinea corporis", "onychomycosis", "herpes simplex", "herpes zoster", "human papillomavirus", "molluscum contagiosum",
+            "impetigo", "cellulitis", "clavicle fracture", "humerus fracture", "radius fracture", "ulna fracture", "scaphoid fracture", "carpal fracture", 
+            "metacarpal fracture", "phalangeal fracture", "femur fracture", "patella fracture", "tibia fracture", "fibula fracture", "tarsal fracture", 
+            "metatarsal fracture", "calcaneal fracture", "talus fracture", "shoulder dislocation", "hip dislocation", "knee dislocation", "ankle sprain",
+            "wrist sprain", "shoulder impingement", "frozen shoulder", "tennis elbow", "golfer's elbow", "ganglion cyst", "trigger finger", "de Quervain's tenosynovitis",
+            "radial nerve palsy", "ulnar nerve palsy", "foot drop", "peripheral neuropathy", "diabetic neuropathy", "trigeminal neuralgia", "brachial plexus injury", 
+            "thoracic outlet syndrome", "meralgia paresthetica", "herpes zoster ophthalmicus", "optic neuritis", "papilledema", "retinal detachment", 
+            "macular hole", "retinitis pigmentosa", "keratoconus", "corneal abrasion", "corneal ulcer", "conjunctival hemorrhage", "anterior uveitis", "glaucoma",
+            "scleritis", "episcleritis", "ptosis", "blepharitis", "dacryocystitis", "hordeolum", "chalazion", "cataract", "orbital cellulitis", "thyroid eye disease", 
+            "strabismus", "amblyopia", "nystagmus", "hypertropia", "hypotropia", "esotropia", "exotropia", "neonatal jaundice", "hyperbilirubinemia", "kernicterus", 
+            "galactosemia", "phenylketonuria", "maple syrup urine disease", "homocystinuria", "ornithine transcarbamylase deficiency", "cystinuria", "tyrosinemia", 
+            "methylmalonic acidemia", "propionic acidemia", "isovaleric acidemia", "glutaric acidemia", "holocarboxylase synthetase deficiency", "biotinidase deficiency", 
+            "zinc deficiency", "copper deficiency", "iodine deficiency", "selenium deficiency", "magnesium deficiency", "phosphorus deficiency", "calcium deficiency", 
+            "potassium deficiency", "vitamin A deficiency", "vitamin K deficiency", "vitamin C deficiency", "vitamin E deficiency"
+        ]
+
+        self.calculate_best_matches(
+            search_terms=medical_terms, 
+            vocabulary_id="", 
+            concept_ancestor="y",
+            concept_relationship="y", 
+            concept_synonym="y", 
+            search_threshold=80,  
+            max_separation_descendant=1,
+            max_separation_ancestor=1
+        )
+    
         print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Set up cache"))
     
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y",
@@ -74,6 +130,10 @@ class OMOPMatcher:
         overall_results = []
 
         for search_term in search_terms:
+
+            #make lowercase
+            search_term = search_term.lower()
+            
             # Check if the result is cached
             cached_result = self.get_cached_result(
                 search_term, vocabulary_id, concept_ancestor, concept_relationship,
@@ -82,7 +142,7 @@ class OMOPMatcher:
 
             if cached_result is not None:
                 # Use the cached result
-                print("Using cached result for search term: {search_term}")
+                print("Using cached result for search term: {}".format(search_term))
                 concepts = cached_result
             else:
                 # Fetch concepts and store in cache
@@ -226,7 +286,7 @@ class OMOPMatcher:
                 if row is None:
                     return 0  # Return a default score (e.g., 0) for null values
                 cleaned_concept_name = re.sub(r'\(.*?\)', '', row).strip()
-                score = fuzz.ratio(search_term.lower(), cleaned_concept_name.lower())
+                score = fuzz.ratio(search_term, cleaned_concept_name.lower())
                 return score
 
             # Apply the score function to 'concept_name' and 'concept_synonym_name' columns
@@ -374,58 +434,10 @@ class OMOPMatcher:
                 'concept_id_2': row['concept_id_2']
             }
         } for _, row in results.iterrows()]
-    
 
-    def set_up_cache(self):
-
-        medical_terms = [
-            "asthma", "heart", "diabetes", "hypertension", "stroke", "cancer", "arthritis", "depression", "anxiety", "migraine",
-            "eczema", "bronchitis", "pneumonia", "sepsis", "anemia", "chronic pain", "osteoporosis", "glaucoma", "cataract", "allergy",
-            "influenza", "obesity", "hypothyroidism", "hyperthyroidism", "renal failure", "liver disease", "hepatitis", "fibromyalgia",
-            "dementia", "schizophrenia", "bipolar disorder", "epilepsy", "multiple sclerosis", "parkinson's disease", "alzheimer's disease",
-            "sleep apnea", "gastroenteritis", "cholecystitis", "ulcerative colitis", "crohn's disease", "irritable bowel syndrome", "diverticulitis",
-            "cirrhosis", "pancreatitis", "gout", "tuberculosis", "leukemia", "lymphoma", "melanoma", "psoriasis", "rheumatoid arthritis", "scoliosis",
-            "kyphosis", "spina bifida", "cystic fibrosis", "COPD", "emphysema", "sinusitis", "otitis media", "hearing loss", "tinnitus", "vertigo",
-            "conjunctivitis", "uveitis", "macular degeneration", "retinopathy", "hypertensive heart disease", "ischemic heart disease", "myocardial infarction",
-            "angina", "atrial fibrillation", "ventricular fibrillation", "tachycardia", "bradycardia", "cardiomyopathy", "congestive heart failure",
-            "pericarditis", "endocarditis", "valvular heart disease", "deep vein thrombosis", "pulmonary embolism", "varicose veins", "aneurysm", "peripheral artery disease",
-            "raynaud's disease", "sickle cell anemia", "thalassemia", "hemophilia", "von willebrand disease", "lupus", "scleroderma", "sjogren's syndrome",
-            "guillain-barre syndrome", "amyloidosis", "celiac disease", "vitamin D deficiency", "iron deficiency", "vitamin B12 deficiency", "rickets",
-            "hypercalcemia", "hypocalcemia", "hypokalemia", "hyperkalemia", "metabolic syndrome", "polycystic ovary syndrome", "endometriosis", "uterine fibroids",
-            "ovarian cysts", "pelvic inflammatory disease", "ectopic pregnancy", "miscarriage", "preeclampsia", "gestational diabetes", "menopause",
-            "prostate cancer", "testicular cancer", "erectile dysfunction", "benign prostatic hyperplasia", "male infertility", "female infertility",
-            "urinary tract infection", "kidney stones", "bladder cancer", "nephrotic syndrome", "acute kidney injury", "chronic kidney disease",
-            "pyelonephritis", "interstitial cystitis", "overactive bladder", "glomerulonephritis", "prostatitis", "urethritis", "enuresis",
-            "epididymitis", "hydrocele", "varicocele", "inguinal hernia", "hemorrhoids", "anal fissures", "rectal prolapse", "colorectal cancer",
-            "appendicitis", "hernia", "celiac sprue", "gastroparesis", "esophageal varices", "gastritis", "duodenal ulcer", "peptic ulcer disease",
-            "barrett's esophagus", "gastroesophageal reflux disease", "achalasia", "hepatocellular carcinoma", "liver abscess", "biliary atresia",
-            "primary biliary cirrhosis", "portal hypertension", "esophageal cancer", "stomach cancer", "small intestine cancer", "colon cancer",
-            "rectal cancer", "anal cancer", "carcinoid tumors", "neuroendocrine tumors", "pheochromocytoma", "hyperparathyroidism", "hypoparathyroidism",
-            "hypoglycemia", "hyperglycemia", "gestational hypertension", "tension headache", "cluster headache", "temporal arteritis", "trigeminal neuralgia",
-            "sciatica", "lumbar stenosis", "cervical stenosis", "herniated disc", "carpal tunnel syndrome", "cubital tunnel syndrome", "thoracic outlet syndrome",
-            "plantar fasciitis", "rotator cuff tear", "bursitis", "tendinitis", "achilles tendon rupture", "patellar tendonitis", "anterior cruciate ligament tear",
-            "meniscus tear", "osteomyelitis", "septic arthritis", "bone cancer", "osteosarcoma", "ewing's sarcoma", "chondrosarcoma", "rhabdomyosarcoma",
-            "soft tissue sarcoma", "myeloma", "neutropenia", "thrombocytopenia", "pancytopenia", "myelodysplastic syndrome", "aplastic anemia",
-            "chronic lymphocytic leukemia", "chronic myelogenous leukemia", "acute lymphoblastic leukemia", "acute myeloid leukemia", "non-hodgkin lymphoma",
-            "hodgkin lymphoma", "multiple myeloma", "skin cancer", "basal cell carcinoma", "squamous cell carcinoma", "actinic keratosis", "seborrheic keratosis",
-            "keloid", "lipoma", "dermatofibroma", "alopecia areata", "seborrheic dermatitis", "contact dermatitis", "atopic dermatitis", "vitiligo",
-            "melasma", "hidradenitis suppurativa", "tinea corporis", "onychomycosis", "herpes simplex", "herpes zoster", "human papillomavirus", "molluscum contagiosum",
-            "impetigo", "cellulitis"]
         
-        results = self.calculate_best_matches(
-            search_terms=medical_terms, 
-            vocabulary_id="", 
-            concept_ancestor="y",
-            concept_relationship="y", 
-            concept_synonym="y", 
-            search_threshold=80,  # Use integer instead of string
-            max_separation_descendant=1,
-            max_separation_ancestor=1
-        )
 
-        return results
-
-    # Outside the class definition for testing only! 
+# Outside the class definition for testing only! 
 
 
 # if __name__ == "__main__":

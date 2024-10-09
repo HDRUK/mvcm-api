@@ -104,7 +104,6 @@ if [ "$DB_REBUILD" = "True" ]; then
 
         full_path=$(realpath $file)
 
-        echo "Importing $file into $table"
         mysql --local-infile=1 ${DB_NAME} -e "
         LOAD DATA LOCAL INFILE '$full_path'
         INTO TABLE $table
@@ -115,23 +114,27 @@ if [ "$DB_REBUILD" = "True" ]; then
     }
     export -f process_tsv
 
-    # Process file import with progress bar
-    total_files=$(find ./${OMOP_DATA_FOLDER}/*/*.tsv | wc -l)
-    current_file=0
+    
 
     for table in CONCEPT CONCEPT_SYNONYM CONCEPT_ANCESTOR CONCEPT_RELATIONSHIP; 
         do
         echo "Processing $table files"
+
+        # Process file import with progress bar
+        total_files=$(find ./${OMOP_DATA_FOLDER}/$table/*.tsv | wc -l)
+        current_file=0
+
         for file in ./${OMOP_DATA_FOLDER}/$table/*.tsv; 
             do
-            ((current_file++))
-            progress=$(echo "scale=2; $current_file/$total_files*100" | bc)
-            echo -ne "Progress: $progress%\r"
-            process_tsv $table $file
+                ((current_file++))
+                progress=$(echo "scale=2; $current_file/$total_files*100" | bc)
+                echo -ne "Progress: $progress%\r"
+                process_tsv $table $file
             done
+            echo "$table imported"
         done
 
-    echo -ne "Progress: 100%\n"
+    
     echo "Data import completed."
 
     # Copy standard concepts across to STANDARD_CONCEPTS

@@ -100,13 +100,13 @@ class OMOPMatcher:
                 search_terms=medical_terms, 
                 vocabulary_id="", 
                 concept_ancestor="y",
-                concept_relationship="y", 
-                concept_synonym="y", 
-                search_threshold=80,  
-                max_separation_descendant=1,
+                concept_relationship="n", 
+                concept_synonym="n", 
+                search_threshold=95,  
+                max_separation_descendant=0,
                 max_separation_ancestor=1
             )
-        
+            
             print("Cache initiated")
 
         except Exception as e:

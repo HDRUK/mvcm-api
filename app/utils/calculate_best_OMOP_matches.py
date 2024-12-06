@@ -6,7 +6,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 from os import environ
 import time
-import json
 from .audit_publisher import publish_message
 from sqlalchemy.exc import OperationalError
 

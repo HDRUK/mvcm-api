@@ -103,8 +103,8 @@ class OMOPMatcher:
                 concept_relationship="n", 
                 concept_synonym="n", 
                 search_threshold=95,  
-                max_separation_descendant=0,
-                max_separation_ancestor=1
+                max_separation_descendant=1,
+                max_separation_ancestor=2
             )
             
             print("Cache initiated")

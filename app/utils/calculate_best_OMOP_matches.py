@@ -16,11 +16,11 @@ class OMOPMatcher:
             print("Initialize the MySQL connection based on the configuration.")
             
             # Fetch environment variables
-            MYSQL_HOST=environ.get('DB_HOST', '0.0.0.0')
-            MYSQL_PORT=environ.get('DB_PORT', '3306')  # Default to 3306 if DB_PORT is not set
-            MYSQL_USER=environ.get('DB_USER', 'OMOP_user')
-            MYSQL_PASSWORD=environ.get('DB_PASSWORD', 'psw4MYSQL')
-            MYSQL_DB=environ.get('DB_NAME', 'OMOP')
+            MYSQL_HOST=environ.get('DB_HOST')
+            MYSQL_PORT=environ.get('DB_PORT')  # Default to 3306 if DB_PORT is not set
+            MYSQL_USER=environ.get('DB_USER')
+            MYSQL_PASSWORD=environ.get('DB_PASSWORD')
+            MYSQL_DB=environ.get('DB_NAME')
 
             # SSL Configuration
             MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
@@ -85,6 +85,7 @@ class OMOPMatcher:
                 concepts = cached_result
             else:
                 # Fetch concepts and store in cache
+                print("New database query for search term: {}".format(search_term))
                 concepts = self.fetch_OMOP_concepts(
                     search_term, vocabulary_id, concept_ancestor, concept_relationship,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
@@ -170,7 +171,7 @@ class OMOPMatcher:
         query1 = """
             WITH concept_matches AS (
                 SELECT DISTINCT concept_id
-                FROM STANDARD_CONCEPTS
+                FROM CONCEPT
                 WHERE 
                     (%s IS NULL OR vocabulary_id = %s) AND
                     MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
@@ -205,7 +206,7 @@ class OMOPMatcher:
                 vocabulary_id, 
                 concept_code
             FROM 
-                STANDARD_CONCEPTS
+                CONCEPT
             WHERE 
                 (%s IS NULL OR vocabulary_id = %s) AND
                 MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) 
@@ -361,7 +362,7 @@ class OMOPMatcher:
                 cr.valid_end_date > NOW()
         """
         results = pd.read_sql(query, con=self.engine, params=(concept_id,)).drop_duplicates().query("concept_id != @concept_id")
-
+    
         return [{
             'concept_name': row['concept_name'],
             'concept_id': row['concept_id'],

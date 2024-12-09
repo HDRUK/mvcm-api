@@ -21,29 +21,11 @@ app = FastAPI(
 
 security = HTTPBasic()
 
-# Import OLS4Matcher, OMOPMatcher
+# Import OLS4Matcher, OMOPMatcher 
 
-# Initialize OMOPMatcher only when it's first needed
-omop_matcher = None
-def get_omop_matcher():
-    global omop_matcher
-    if omop_matcher is None:
-        omop_matcher = OMOPMatcher()
-    return omop_matcher
-
-ols4_matcher = None
-def get_ols4_matcher():
-    global ols4_matcher
-    if ols4_matcher is None:
-        ols4_matcher = OLS4Matcher()
-    return ols4_matcher
-
-UMLS_matcher = None
-def get_UMLS_matcher():
-    global UMLS_matcher
-    if UMLS_matcher is None:
-        UMLS_matcher = UMLSMatcher()
-    return UMLS_matcher
+omop_matcher = OMOPMatcher()
+ols4_matcher = OLS4Matcher()
+UMLS_matcher = UMLSMatcher()
 
 
 class OLS4Request(BaseModel):
@@ -92,21 +74,18 @@ def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> 
 
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    ols4_matcher = get_ols4_matcher()
     return ols4_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 
 @app.post("/search/umls/")
 async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    UMLS_matcher = get_UMLS_matcher()
     return UMLS_matcher.calculate_best_matches(request.search_terms, 
                                                request.vocabulary_id, 
                                                request.search_threshold)
 
 @app.post("/search/omop/")
 async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    omop_matcher = get_omop_matcher()
     return omop_matcher.calculate_best_matches(search_terms=request.search_terms, 
                                                vocabulary_id=request.vocabulary_id, 
                                                concept_ancestor=request.concept_ancestor,

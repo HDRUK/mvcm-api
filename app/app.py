@@ -21,11 +21,10 @@ app = FastAPI(
 
 security = HTTPBasic()
 
-# Import OLS4Matcher, OMOPMatcher 
+# Import OLS4Matcher, OMOPMatcher
 omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
 UMLS_matcher = UMLSMatcher()
-
 
 class OLS4Request(BaseModel):
     search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]

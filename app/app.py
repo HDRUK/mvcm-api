@@ -22,7 +22,6 @@ app = FastAPI(
 security = HTTPBasic()
 
 # Import OLS4Matcher, OMOPMatcher 
-
 omop_matcher = OMOPMatcher()
 ols4_matcher = OLS4Matcher()
 UMLS_matcher = UMLSMatcher()

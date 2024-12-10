@@ -82,11 +82,9 @@ class OMOPMatcher:
 
             if cached_result is not None:
                 # Use the cached result
-                print("Using cached result for search term: {}".format(search_term))
                 concepts = cached_result
             else:
                 # Fetch concepts and store in cache
-                print("New database query for search term: {}".format(search_term))
                 concepts = self.fetch_OMOP_concepts(
                     search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
@@ -175,7 +173,6 @@ class OMOPMatcher:
             df.to_sql('omop_matcher_cache', con=self.engine, if_exists='append', index=False)
         except SQLAlchemyError as e:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.cache_result", description="Error caching result"))
-            print(f"Error caching/updating result for search_term '{search_term}': {e}")
         
     def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, 
                             concept_relationship_types, concept_synonym, search_threshold, max_separation_descendant, 
@@ -357,14 +354,12 @@ class OMOPMatcher:
                 }
             } for _, row in results.iterrows()]
         except Exception as e:
-            print(f"Error fetching concept ancestors: {e}")
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.fetch_concept_ancestor", description="Error fetching concept ancestors"))
             return []
 
     def fetch_concept_relationship(self, concept_id, concept_relationship_types):
         # Clean the `concept_relationship_types` list by removing empty strings
         concept_relationship_types = [t for t in concept_relationship_types if t.strip()] if concept_relationship_types else None
-
-        print("using relationship filter =", concept_relationship_types)
 
         try:
             if not concept_relationship_types:
@@ -429,7 +424,7 @@ class OMOPMatcher:
                 }
             } for _, row in results.iterrows()]
         except Exception as e:
-            print(f"Error fetching concept relationships: {e}")
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.fetch_concept_relationship", description="Error fetching concept relationships"))
             return []
 
     

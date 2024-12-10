@@ -17,7 +17,7 @@ class OMOPMatcher:
             
             # Fetch environment variables
             MYSQL_HOST=environ.get('DB_HOST')
-            MYSQL_PORT=environ.get('DB_PORT')  # Default to 3306 if DB_PORT is not set
+            MYSQL_PORT=environ.get('DB_PORT')
             MYSQL_USER=environ.get('DB_USER')
             MYSQL_PASSWORD=environ.get('DB_PASSWORD')
             MYSQL_DB=environ.get('DB_NAME')

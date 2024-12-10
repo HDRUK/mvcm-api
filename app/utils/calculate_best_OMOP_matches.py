@@ -52,10 +52,11 @@ class OMOPMatcher:
             # Log failure and raise an error
             print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Failed to connect to engine"))
             raise ValueError(f"Failed to connect to MySQL: {e}")
-    
+        
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y",
-                            concept_relationship="y", concept_synonym="y", search_threshold=0,
+                            concept_relationship="y", concept_relationship_types="Mapped from", concept_synonym="y", search_threshold=0,
                             max_separation_descendant=1, max_separation_ancestor=1):
+        
         if not search_terms:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term"))
             raise ValueError("No valid search_term values provided")
@@ -75,7 +76,7 @@ class OMOPMatcher:
             
             # Check if the result is cached
             cached_result = self.get_cached_result(
-                search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
                 concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
             )
 
@@ -87,14 +88,14 @@ class OMOPMatcher:
                 # Fetch concepts and store in cache
                 print("New database query for search term: {}".format(search_term))
                 concepts = self.fetch_OMOP_concepts(
-                    search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                    search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
                 )
 
                 if concepts:
                     # Cache the result
                     self.cache_result(
-                        search_term, vocabulary_id, concept_ancestor, concept_relationship,
+                        search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                         concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
                         concepts
                     )
@@ -103,8 +104,11 @@ class OMOPMatcher:
 
         return overall_results
     
-    def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,
-                        concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
+    def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
+                      concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
+            # Serialize `concept_relationship_types` to a JSON string
+        concept_relationship_types_serialized = json.dumps(concept_relationship_types) if concept_relationship_types else None
+
         query = """
             SELECT result FROM omop_matcher_cache
             WHERE
@@ -112,6 +116,7 @@ class OMOPMatcher:
                 (%s IS NULL OR vocabulary_id = %s) AND
                 concept_ancestor = %s AND
                 concept_relationship = %s AND
+                concept_relationship_types = %s AND
                 concept_synonym = %s AND
                 search_threshold = %s AND
                 max_separation_descendant = %s AND
@@ -122,13 +127,14 @@ class OMOPMatcher:
             vocabulary_id, vocabulary_id,
             concept_ancestor,
             concept_relationship,
+            concept_relationship_types_serialized,
             concept_synonym,
             search_threshold,
             max_separation_descendant,
             max_separation_ancestor
         )
-        try:
 
+        try:
             result = pd.read_sql(query, con=self.engine, params=params)
             if not result.empty:
                 cached_result = result['result'].iloc[0]
@@ -136,15 +142,19 @@ class OMOPMatcher:
             else:
                 return None
         except SQLAlchemyError as e:
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.get_cached_result", description="Error fetching cached result"))
-            print(f"Error fetching cached result: {e}")
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.get_cached_result",
+                                description=f"Error fetching cached result: {e}"))
             return None
         
-    def cache_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,
+    def cache_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
                     concepts):
         # Serialize the concepts to JSON
         result_json = json.dumps(concepts)
+
+        # Serialize the relationship types to a string (e.g., JSON or comma-separated)
+        if concept_relationship_types is not None:
+            concept_relationship_types = json.dumps(concept_relationship_types)
         
         # Create a DataFrame for the new record
         data = {
@@ -152,6 +162,7 @@ class OMOPMatcher:
             'vocabulary_id': [vocabulary_id],
             'concept_ancestor': [concept_ancestor],
             'concept_relationship': [concept_relationship],
+            'concept_relationship_types': [concept_relationship_types],
             'concept_synonym': [concept_synonym],
             'search_threshold': [search_threshold],
             'max_separation_descendant': [max_separation_descendant],
@@ -166,7 +177,9 @@ class OMOPMatcher:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.cache_result", description="Error caching result"))
             print(f"Error caching/updating result for search_term '{search_term}': {e}")
         
-    def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_synonym, search_threshold,max_separation_descendant,max_separation_ancestor):
+    def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, 
+                            concept_relationship_types, concept_synonym, search_threshold, max_separation_descendant, 
+                            max_separation_ancestor):
         
         query1 = """
             WITH concept_matches AS (
@@ -269,10 +282,10 @@ class OMOPMatcher:
                     'concept_synonym_name_similarity_score': syn_score
                 } for syn_name, syn_score in zip(row['concept_synonym_name'], row['concept_synonym_name_similarity_score']) if syn_name is not None],
                 'CONCEPT_ANCESTOR': self.fetch_concept_ancestor(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
-                'CONCEPT_RELATIONSHIP': self.fetch_concept_relationship(row['concept_id']) if concept_relationship == "y" else []
+                'CONCEPT_RELATIONSHIP': self.fetch_concept_relationship(row['concept_id'], concept_relationship_types) if concept_relationship == "y" else []
             } for _, row in grouped_results.iterrows()]
 
-    def fetch_concept_ancestor(self, concept_id,max_separation_descendant,max_separation_ancestor):
+    def fetch_concept_ancestor(self, concept_id, max_separation_descendant, max_separation_ancestor):
         query = """
             (
                 SELECT 
@@ -326,51 +339,97 @@ class OMOPMatcher:
                   min_separation_descendant, 
                   max_separation_descendant,)
         
-        results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates().query("concept_id != @concept_id")
+        try:
+        
+            results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates().query("concept_id != @concept_id")
 
-        return [{
-            'concept_name': row['concept_name'],
-            'concept_id': row['concept_id'],
-            'vocabulary_id': row['vocabulary_id'],
-            'concept_code': row['concept_code'],
-            'relationship': {
-                'relationship_type': row['relationship_type'],
-                'ancestor_concept_id': row['ancestor_concept_id'],
-                'descendant_concept_id': row['descendant_concept_id'],
-                'min_levels_of_separation': row['min_levels_of_separation'],
-                'max_levels_of_separation': row['max_levels_of_separation']
-            }
-        } for _, row in results.iterrows()]
+            return [{
+                'concept_name': row['concept_name'],
+                'concept_id': row['concept_id'],
+                'vocabulary_id': row['vocabulary_id'],
+                'concept_code': row['concept_code'],
+                'relationship': {
+                    'relationship_type': row['relationship_type'],
+                    'ancestor_concept_id': row['ancestor_concept_id'],
+                    'descendant_concept_id': row['descendant_concept_id'],
+                    'min_levels_of_separation': row['min_levels_of_separation'],
+                    'max_levels_of_separation': row['max_levels_of_separation']
+                }
+            } for _, row in results.iterrows()]
+        except Exception as e:
+            print(f"Error fetching concept ancestors: {e}")
+            return []
 
+    def fetch_concept_relationship(self, concept_id, concept_relationship_types):
+        # Clean the `concept_relationship_types` list by removing empty strings
+        concept_relationship_types = [t for t in concept_relationship_types if t.strip()] if concept_relationship_types else None
 
-    def fetch_concept_relationship(self, concept_id):
-        query = """
-            SELECT 
-                cr.concept_id_2 AS concept_id,
-                cr.concept_id_1,
-                cr.relationship_id,
-                cr.concept_id_2, 
-                c.concept_name, 
-                c.vocabulary_id, 
-                c.concept_code
-            FROM 
-                CONCEPT_RELATIONSHIP cr
-            JOIN 
-                CONCEPT c ON cr.concept_id_2 = c.concept_id
-            WHERE 
-                cr.concept_id_1 = %s AND
-                cr.valid_end_date > NOW()
-        """
-        results = pd.read_sql(query, con=self.engine, params=(concept_id,)).drop_duplicates().query("concept_id != @concept_id")
+        print("using relationship filter =", concept_relationship_types)
+
+        try:
+            if not concept_relationship_types:
+                # Query when no relationship types are provided
+                query = """
+                        SELECT 
+                            cr.concept_id_2 AS concept_id,
+                            cr.concept_id_1,
+                            cr.relationship_id,
+                            cr.concept_id_2, 
+                            c.concept_name, 
+                            c.vocabulary_id, 
+                            c.concept_code
+                        FROM 
+                            CONCEPT_RELATIONSHIP cr
+                        JOIN 
+                            CONCEPT c ON cr.concept_id_2 = c.concept_id
+                        WHERE 
+                            cr.concept_id_1 = %s
+                            AND cr.valid_end_date > NOW()
+                    """
+                
+                params = (concept_id,)
+                results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates()
+            else:
+                # Query when relationship types are provided
+                results = pd.DataFrame()  # Initialize an empty DataFrame
+                for concept_relationship_type in concept_relationship_types:
+                    query = """
+                        SELECT 
+                            cr.concept_id_2 AS concept_id,
+                            cr.concept_id_1,
+                            cr.relationship_id,
+                            cr.concept_id_2, 
+                            c.concept_name, 
+                            c.vocabulary_id, 
+                            c.concept_code
+                        FROM 
+                            CONCEPT_RELATIONSHIP cr
+                        JOIN 
+                            CONCEPT c ON cr.concept_id_2 = c.concept_id
+                        WHERE 
+                            cr.concept_id_1 = %s
+                            AND cr.relationship_id = %s
+                            AND cr.valid_end_date > NOW()
+                    """
+                    # Execute the query for the current relationship type
+                    params = (concept_id, concept_relationship_type)
+                    result = pd.read_sql(query, con=self.engine, params=params).drop_duplicates()
+                    results = pd.concat([results, result], ignore_index=True)  # Concatenate the new result
+
+            # Process the DataFrame into the desired output format
+            return [{
+                'concept_name': row['concept_name'],
+                'concept_id': row['concept_id'],
+                'vocabulary_id': row['vocabulary_id'],
+                'concept_code': row['concept_code'],
+                'relationship': {
+                    'concept_id_1': row['concept_id_1'],
+                    'relationship_id': row['relationship_id'],
+                    'concept_id_2': row['concept_id_2']
+                }
+            } for _, row in results.iterrows()]
+        except Exception as e:
+            print(f"Error fetching concept relationships: {e}")
+            return []
+
     
-        return [{
-            'concept_name': row['concept_name'],
-            'concept_id': row['concept_id'],
-            'vocabulary_id': row['vocabulary_id'],
-            'concept_code': row['concept_code'],
-            'relationship': {
-                'concept_id_1': row['concept_id_1'],
-                'relationship_id': row['relationship_id'],
-                'concept_id_2': row['concept_id_2']
-            }
-        } for _, row in results.iterrows()]

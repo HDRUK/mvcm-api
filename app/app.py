@@ -28,7 +28,7 @@ UMLS_matcher = UMLSMatcher()
 
 class OLS4Request(BaseModel):
     search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
-    vocabulary_id: Optional[str] = "snomed"
+    vocabulary_id: Optional[str] = ""
     search_threshold: Optional[int] = 80
 
 class UMLSRequest(BaseModel):
@@ -38,12 +38,13 @@ class UMLSRequest(BaseModel):
 
 class OMOPRequest(BaseModel):
     search_terms: List[str] = ["Asthma", "Heart", "Bronchial hyperreactivity"]
-    vocabulary_id: Optional[str] = "snomed"
-    concept_ancestor: Optional[str] = "n"
-    max_separation_descendant: Optional[int] = 1
+    vocabulary_id: Optional[str] = ""
+    concept_ancestor: Optional[str] = "y"
+    max_separation_descendant: Optional[int] = 0
     max_separation_ancestor: Optional[int] = 1
     concept_synonym: Optional[str] = "n"
     concept_relationship: Optional[str] = "n"
+    concept_relationship_types: List[str] = ["Concept same_as to", "Mapped from", "Concept same_as from"]
     search_threshold: Optional[int] = 80
 
 def get_credentials() -> tuple[str, str]:
@@ -88,6 +89,7 @@ async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = 
                                                vocabulary_id=request.vocabulary_id, 
                                                concept_ancestor=request.concept_ancestor,
                                                concept_relationship=request.concept_relationship, 
+                                               concept_relationship_types=request.concept_relationship_types, 
                                                concept_synonym=request.concept_synonym, 
                                                search_threshold=request.search_threshold,
                                                max_separation_descendant=request.max_separation_descendant,

@@ -107,6 +107,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 - `max_separation_descendant`: How many degrees of seperation to search downstream in CONCEPT_ANCESTOR. Optional.
 - `max_separation_ancestor`: How many degrees of seperation to search upstream in CONCEPT_ANCESTOR. Optional.
 - `concept_relationship`: Extend Search via CONCEPT_RELATIONSHIP OMOP Table. Optional.
+- `concept_relationship_types`: List of CONCEPT_RELATIONSHIP types, i.e. ["Concept same_as to", "Mapped from", "Concept same_as from"]
 - `concept_synonym`: Extend Search via CONCEPT_SYNONYM OMOP Table. Optional.
 - `search_threshold`: Filter threshold (default is 80). Optional.
 
@@ -117,10 +118,11 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
   "search_terms": ["Heart"],
   "vocabulary_id": "",
   "concept_ancestor": "n",
-  "max_separation_descendant": 1,
+  "max_separation_descendant": 0,
   "max_separation_ancestor": 1,
   "concept_synonym": "y",
-  "concept_relationship": "n",
+  "concept_relationship": "y",
+  "concept_relationship_types": ["Concept same_as to", "Mapped from", "Concept same_as from"],
   "search_threshold": 80
 }
 ```
@@ -128,7 +130,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 ```json
 [
   {
-    "search_term": "Heart",
+    "search_term": "heart",
     "CONCEPT": [
       {
         "concept_name": "Heart structure",
@@ -151,6 +153,48 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
           }
         ],
         "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": [
+          {
+            "concept_name": "[SO]Heart NEC",
+            "concept_id": 45479486,
+            "vocabulary_id": "Read",
+            "concept_code": "7N41z00",
+            "relationship": {
+              "concept_id_1": 4217142,
+              "relationship_id": "Mapped from",
+              "concept_id_2": 45479486
+            }
+          }
+        ]
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 19391039,
+        "vocabulary_id": "MeSH",
+        "concept_code": "D006321",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [
+          {
+            "concept_synonym_name": "Hearts",
+            "concept_synonym_name_similarity_score": 90.9090909090909
+          }
+        ],
+        "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": []
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 21496060,
+        "vocabulary_id": "LOINC",
+        "concept_code": "LP191607-3",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [
+          {
+            "concept_synonym_name": "Chest>Heart",
+            "concept_synonym_name_similarity_score": 62.5
+          }
+        ],
+        "CONCEPT_ANCESTOR": [],
         "CONCEPT_RELATIONSHIP": []
       },
       {
@@ -158,6 +202,16 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
         "concept_id": 36308337,
         "vocabulary_id": "LOINC",
         "concept_code": "LA21016-3",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [],
+        "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": []
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 40791756,
+        "vocabulary_id": "LOINC",
+        "concept_code": "LP7289-4",
         "concept_name_similarity_score": 100,
         "CONCEPT_SYNONYM": [],
         "CONCEPT_ANCESTOR": [],

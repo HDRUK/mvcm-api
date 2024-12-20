@@ -21,7 +21,7 @@ class OMOPMatcher:
             MYSQL_USER=environ.get('DB_USER')
             MYSQL_PASSWORD=environ.get('DB_PASSWORD')
             MYSQL_DB=environ.get('DB_NAME')
-
+            
             # SSL Configuration
             MYSQL_SSL_ENABLED = environ.get('DB_SSL_ENABLED', False)
             MYSQL_SSL_CA = environ.get('DB_SSL_CA', False)
@@ -99,9 +99,12 @@ class OMOPMatcher:
                     )
 
             overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
-
+            
+        print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully"))
+        
         return overall_results
     
+        
     def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
                       concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
             # Serialize `concept_relationship_types` to a JSON string

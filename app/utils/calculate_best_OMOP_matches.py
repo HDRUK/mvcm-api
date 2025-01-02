@@ -101,7 +101,7 @@ class OMOPMatcher:
             overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
             
         print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully"))
-        
+        print("Query ran sucessfully")
         return overall_results
     
         

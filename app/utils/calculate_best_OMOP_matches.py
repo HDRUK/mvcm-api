@@ -57,6 +57,8 @@ class OMOPMatcher:
                             concept_relationship="y", concept_relationship_types="Mapped from", concept_synonym="y", search_threshold=0,
                             max_separation_descendant=1, max_separation_ancestor=1):
         
+        print("Query initiated")
+
         if not search_terms:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term"))
             raise ValueError("No valid search_term values provided")
@@ -82,9 +84,12 @@ class OMOPMatcher:
 
             if cached_result is not None:
                 # Use the cached result
+                print("Using cached results for:",search_term)
                 concepts = cached_result
             else:
                 # Fetch concepts and store in cache
+                print("Searching for:",search_term)
+
                 concepts = self.fetch_OMOP_concepts(
                     search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
@@ -92,6 +97,8 @@ class OMOPMatcher:
 
                 if concepts:
                     # Cache the result
+                    print("Caching result for:",search_term)
+
                     self.cache_result(
                         search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                         concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
@@ -101,7 +108,7 @@ class OMOPMatcher:
             overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
             
         print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully"))
-        print("Query ran sucessfully")
+        
         return overall_results
     
         

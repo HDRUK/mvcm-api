@@ -68,6 +68,7 @@ class OMOPMatcher:
             search_threshold = 0
 
         overall_results = []
+        cache_usage_info = []
 
         for search_term in search_terms:
 
@@ -82,13 +83,10 @@ class OMOPMatcher:
 
             if cached_result is not None:
                 # Use the cached result
-                print("Using cached results for:",search_term)
                 concepts = cached_result
-                print("retreieved:",concepts)
+                cache_usage_info.append({'search_term': search_term, 'cache_used': True})
             else:
                 # Fetch concepts and store in cache
-                print("Searching for:",search_term)
-
                 concepts = self.fetch_OMOP_concepts(
                     search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                     concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
@@ -96,16 +94,24 @@ class OMOPMatcher:
 
                 if concepts:
                     # Cache the result
-                    print("Caching:",search_term)
-                    print("Inserting:",concepts)
-
                     self.cache_result(
                         search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
                         concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
                         concepts
                     )
+                    cache_usage_info.append({'search_term': search_term, 'cache_used': False})
+
 
             overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
+
+
+        # Print cache usage summary at the end
+        cache_summary = "\n".join([
+            f"{entry['search_term']}: {'Cache Used' if entry['cache_used'] else 'Not Cached'}"
+            for entry in cache_usage_info
+        ])
+
+        print(f"INFO:   Cache usage summary:\n{cache_summary}")
             
         print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully"))
         

@@ -84,6 +84,7 @@ class OMOPMatcher:
                 # Use the cached result
                 print("Using cached results for:",search_term)
                 concepts = cached_result
+                print("retreieved:",concepts)
             else:
                 # Fetch concepts and store in cache
                 print("Searching for:",search_term)
@@ -95,7 +96,8 @@ class OMOPMatcher:
 
                 if concepts:
                     # Cache the result
-                    print("Caching:", concepts)
+                    print("Caching:",search_term)
+                    print("Inserting:",concepts)
 
                     self.cache_result(
                         search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,

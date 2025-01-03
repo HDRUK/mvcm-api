@@ -53,9 +53,9 @@ class OMOPMatcher:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Failed to connect to engine"))
             raise ValueError(f"Failed to connect to MySQL: {e}")
         
-    def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y",
-                            concept_relationship="y", concept_relationship_types="Mapped from", concept_synonym="y", search_threshold=0,
-                            max_separation_descendant=1, max_separation_ancestor=1):
+    def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="n",
+                            concept_relationship="n", concept_relationship_types="Mapped from", concept_synonym="n", search_threshold=80,
+                            max_separation_descendant=0, max_separation_ancestor=1):
 
         if not search_terms:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term"))
@@ -115,8 +115,13 @@ class OMOPMatcher:
     def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
                       concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
         
-        # Serialize the relationship types to a string (e.g., JSON or comma-separated)
-        if concept_relationship_types is not None:
+        # gracefully handle nulls
+        if vocabulary_id is None:
+            vocabulary_id = "not-set"
+
+        if concept_relationship_types is None:
+            concept_relationship_types = "not-set"
+        else:     
             concept_relationship_types = json.dumps(concept_relationship_types)
         
         query = """
@@ -162,8 +167,13 @@ class OMOPMatcher:
         # Serialize the concepts to JSON
         result_json = json.dumps(concepts)
 
-        # Serialize the relationship types to a string (e.g., JSON or comma-separated)
-        if concept_relationship_types is not None:
+        # gracefully handle nulls
+        if vocabulary_id is None:
+            vocabulary_id = "not-set"
+
+        if concept_relationship_types is None:
+            concept_relationship_types = "not-set"
+        else:     
             concept_relationship_types = json.dumps(concept_relationship_types)
         
         # Create a DataFrame for the new record

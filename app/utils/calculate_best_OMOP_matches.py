@@ -56,8 +56,6 @@ class OMOPMatcher:
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="y",
                             concept_relationship="y", concept_relationship_types="Mapped from", concept_synonym="y", search_threshold=0,
                             max_separation_descendant=1, max_separation_ancestor=1):
-        
-        print("Query initiated")
 
         if not search_terms:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="No valid search_term"))
@@ -97,7 +95,7 @@ class OMOPMatcher:
 
                 if concepts:
                     # Cache the result
-                    print("Caching result for:",search_term)
+                    print("Caching:", concepts)
 
                     self.cache_result(
                         search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
@@ -114,9 +112,11 @@ class OMOPMatcher:
         
     def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
                       concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
-            # Serialize `concept_relationship_types` to a JSON string
-        concept_relationship_types_serialized = json.dumps(concept_relationship_types) if concept_relationship_types else None
-
+        
+        # Serialize the relationship types to a string (e.g., JSON or comma-separated)
+        if concept_relationship_types is not None:
+            concept_relationship_types = json.dumps(concept_relationship_types)
+        
         query = """
             SELECT result FROM omop_matcher_cache
             WHERE

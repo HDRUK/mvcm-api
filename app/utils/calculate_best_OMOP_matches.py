@@ -115,13 +115,8 @@ class OMOPMatcher:
     def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
                       concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
         
-        # gracefully handle nulls
-        if vocabulary_id is None:
-            vocabulary_id = "not-set"
-
-        if concept_relationship_types is None:
-            concept_relationship_types = "not-set"
-        else:     
+        # gracefully handle json
+        if concept_relationship_types is not None:
             concept_relationship_types = json.dumps(concept_relationship_types)
         
         query = """
@@ -167,13 +162,8 @@ class OMOPMatcher:
         # Serialize the concepts to JSON
         result_json = json.dumps(concepts)
 
-        # gracefully handle nulls
-        if vocabulary_id is None:
-            vocabulary_id = "not-set"
-
-        if concept_relationship_types is None:
-            concept_relationship_types = "not-set"
-        else:     
+        # gracefully handle json
+        if concept_relationship_types is not None:   
             concept_relationship_types = json.dumps(concept_relationship_types)
         
         # Create a DataFrame for the new record

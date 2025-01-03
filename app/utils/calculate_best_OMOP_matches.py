@@ -106,14 +106,14 @@ class OMOPMatcher:
 
 
         # Print cache usage summary at the end
-        cache_summary = "\n".join([
+        cache_summary = ": ".join([
             f"{entry['search_term']}: {'Cache Used' if entry['cache_used'] else 'Not Cached'}"
             for entry in cache_usage_info
         ])
 
-        print(f"INFO:   Cache usage summary:\n{cache_summary}")
+        print(f"INFO:   Cache usage summary: {cache_summary}")
             
-        print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully"))
+        print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully: summary: {cache_summary}"))
         
         return overall_results
     

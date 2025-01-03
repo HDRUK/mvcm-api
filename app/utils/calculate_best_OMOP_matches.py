@@ -137,7 +137,7 @@ class OMOPMatcher:
             vocabulary_id, vocabulary_id,
             concept_ancestor,
             concept_relationship,
-            concept_relationship_types_serialized,
+            concept_relationship_types,
             concept_synonym,
             search_threshold,
             max_separation_descendant,

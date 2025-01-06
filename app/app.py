@@ -73,6 +73,18 @@ def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)) -> 
         )
     return credentials
 
+@app.get("/search/omop/statistics")
+async def get_omop_statistics(credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> dict:
+    try:
+        # Retrieve statistics from the OMOPMatcher class
+        return omop_matcher.get_statistics()
+
+    except Exception as e:
+        # Log the error and return a 500 response
+        print(publish_message(action_type="GET", action_name="get_omop_statistics", description=f"Error: {e}"))
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+
+
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
     try:

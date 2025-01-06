@@ -130,6 +130,46 @@ class OMOPMatcher:
         
         return overall_results
     
+    def get_statistics(self):
+        try:
+            with self.engine.begin() as connection:
+
+                concept_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT", con=connection)
+                concept_count = concept_count_df['count'].iloc[0]
+                print("concept_count=",concept_count)
+                
+                concept_relationship_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_RELATIONSHIP", con=connection)
+                concept_relationship_count = concept_relationship_count_df['count'].iloc[0]
+                print("concept_relationship_count=",concept_relationship_count)
+
+                concept_ancestor_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_ANCESTOR", con=connection)
+                concept_ancestor_count = concept_ancestor_count_df['count'].iloc[0]
+                print("concept_ancestor_count=",concept_ancestor_count)
+
+                concept_synonym_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_SYNONYM", con=connection)
+                concept_synonym_count = concept_synonym_count_df['count'].iloc[0]
+                print("concept_synonym_count=",concept_synonym_count)
+
+                omop_matcher_cache_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM omop_matcher_cache", con=connection)
+                omop_matcher_cache_count = omop_matcher_cache_count_df['count'].iloc[0]
+                print("omop_matcher_cache_count=",omop_matcher_cache_count)
+
+                statistics={
+                    "concept_count": int(concept_count),
+                    "concept_relationship_count": int(concept_relationship_count),
+                    "concept_ancestor_count": int(concept_ancestor_count),
+                    "concept_synonym_count": int(concept_synonym_count),
+                    "omop_matcher_cache_count": int(omop_matcher_cache_count)
+                }
+            
+                return statistics
+
+        except SQLAlchemyError as e:
+            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Error retrieving statistics: {e}"))
+
+        except Exception as e:
+            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Unexpected error occurred: {e}"))
+    
     def delete_all_cache(self):
         try:
             with self.engine.begin() as connection:

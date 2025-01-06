@@ -105,6 +105,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 - `concept_relationship`: Extend Search via CONCEPT_RELATIONSHIP OMOP Table. Optional.
 - `concept_relationship_types`: List of CONCEPT_RELATIONSHIP types, i.e. ["Concept same_as to", "Mapped from", "Concept same_as from"]
 - `concept_synonym`: Extend Search via CONCEPT_SYNONYM OMOP Table. Optional.
+- `concept_synonym_language_concept_id`: Concept ID of a language to restrict synonym searches. I.e. 4180186 for english.
 - `search_threshold`: Filter threshold (default is 80). Optional.
 
 **Example Request:**
@@ -117,6 +118,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
   "max_separation_descendant": 0,
   "max_separation_ancestor": 1,
   "concept_synonym": "y",
+  "concept_synonym_language_concept_id": "4180186",
   "concept_relationship": "y",
   "concept_relationship_types": ["Concept same_as to", "Mapped from", "Concept same_as from"],
   "search_threshold": 80

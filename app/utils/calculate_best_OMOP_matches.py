@@ -1,8 +1,9 @@
 import pandas as pd
 import re
 import json
+import hashlib
 from rapidfuzz import fuzz
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from os import environ
 import time
@@ -53,8 +54,17 @@ class OMOPMatcher:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.__init__", description="Failed to connect to engine"))
             raise ValueError(f"Failed to connect to MySQL: {e}")
         
+    def compute_search_params_hash(self, search_parameters):
+        # Serialize the JSON with consistent ordering
+        search_parameters_json = json.dumps(search_parameters, sort_keys=True)
+        # Compute the SHA256 hash
+        return hashlib.sha256(search_parameters_json.encode()).hexdigest()
+
+        
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="n",
-                            concept_relationship="n", concept_relationship_types="Mapped from", concept_synonym="n", search_threshold=80,
+                            concept_relationship="n", concept_relationship_types="Mapped from", 
+                            concept_synonym="n", concept_synonym_language_concept_id="4180186",
+                            search_threshold=80,
                             max_separation_descendant=0, max_separation_ancestor=1):
 
         if not search_terms:
@@ -74,35 +84,45 @@ class OMOPMatcher:
 
             #make lowercase
             search_term = search_term.lower()
+
+            cached_search_parameters = {
+                "vocabulary_id": vocabulary_id,
+                "concept_ancestor": concept_ancestor,
+                "max_separation_descendant": max_separation_descendant,
+                "max_separation_ancestor": max_separation_descendant,
+                "concept_synonym": concept_synonym,
+                "concept_synonym_language_concept_id": concept_synonym_language_concept_id,
+                "concept_relationship": concept_relationship,
+                "concept_relationship_types": concept_relationship_types,
+                "search_threshold": search_threshold
+            }
+
+            search_params_hash = self.compute_search_params_hash(cached_search_parameters)
+
             
             # Check if the result is cached
             cached_result = self.get_cached_result(
-                search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
-                concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
+                search_term, search_params_hash
             )
 
             if cached_result is not None:
                 # Use the cached result
-                concepts = cached_result
+                results = cached_result
                 cache_usage_info.append({'search_term': search_term, 'cache_used': True})
             else:
                 # Fetch concepts and store in cache
-                concepts = self.fetch_OMOP_concepts(
+                results = self.fetch_OMOP_concepts(
                     search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
-                    concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor
+                    concept_synonym, concept_synonym_language_concept_id, search_threshold, max_separation_descendant, max_separation_ancestor
                 )
 
-                if concepts:
+                if results:
                     # Cache the result
-                    self.cache_result(
-                        search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
-                        concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
-                        concepts
-                    )
+                    self.cache_result(search_term, search_params_hash, results)
                     cache_usage_info.append({'search_term': search_term, 'cache_used': False})
 
 
-            overall_results.append({'search_term': search_term, 'CONCEPT': concepts})
+            overall_results.append({'search_term': search_term, 'CONCEPT': results})
 
 
         # Print cache usage summary at the end
@@ -117,38 +137,50 @@ class OMOPMatcher:
         
         return overall_results
     
-        
-    def get_cached_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, concept_relationship_types,
-                      concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor):
-        
-        # gracefully handle json
-        if concept_relationship_types is not None:
-            concept_relationship_types = json.dumps(concept_relationship_types)
+    def delete_all_cache(self):
+        try:
+            with self.engine.begin() as connection:
+
+                # Step 1: Count rows before deletion
+                pre_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM omop_matcher_cache", con=connection)
+                pre_delete_count = pre_delete_count_df['count'].iloc[0]
+
+                # Step 2: Perform the deletion
+                delete_query = text("DELETE FROM omop_matcher_cache")
+                connection.execute(delete_query)
+                
+                # Step 3: Count rows after deletion
+                post_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM omop_matcher_cache", con=connection)
+                post_delete_count = post_delete_count_df['count'].iloc[0]
+
+                # Step 4: Calculate the number of rows deleted
+                deleted_rows = pre_delete_count - post_delete_count
+                
+                # Log the number of deleted rows
+                print(f"Info:    Rows before Deletion: {pre_delete_count}: Deleted rows: {deleted_rows}")  # Debug statement
+                print(publish_message(action_type="POST", action_name="OMOPMatcher.delete_all_cache", description=f"{deleted_rows} cache entries deleted."))
+
+                # Return the number of rows deleted
+                return deleted_rows
+
+        except SQLAlchemyError as e:
+            print("SQLAlchemyError occurred")  # Debug statement
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.delete_all_cache", description=f"Error deleting all cache: {e}"))
+            raise  # Re-raise the exception for full trace
+
+        except Exception as e:
+            print("General exception occurred")  # Debug statement
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.delete_all_cache", description=f"Unexpected error occurred: {e}"))
+            raise  # Re-raise the exception for full trace
+
+
+    def get_cached_result(self, search_term, search_params_hash):
         
         query = """
             SELECT result FROM omop_matcher_cache
-            WHERE
-                search_term = %s AND
-                (%s IS NULL OR vocabulary_id = %s) AND
-                concept_ancestor = %s AND
-                concept_relationship = %s AND
-                concept_relationship_types = %s AND
-                concept_synonym = %s AND
-                search_threshold = %s AND
-                max_separation_descendant = %s AND
-                max_separation_ancestor = %s
+            WHERE search_term = %s AND search_parameters = %s
         """
-        params = (
-            search_term,
-            vocabulary_id, vocabulary_id,
-            concept_ancestor,
-            concept_relationship,
-            concept_relationship_types,
-            concept_synonym,
-            search_threshold,
-            max_separation_descendant,
-            max_separation_ancestor
-        )
+        params = (search_term, search_params_hash)
 
         try:
             result = pd.read_sql(query, con=self.engine, params=params)
@@ -161,39 +193,28 @@ class OMOPMatcher:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.get_cached_result",
                                 description=f"Error fetching cached result: {e}"))
             return None
-        
-    def cache_result(self, search_term, vocabulary_id, concept_ancestor, concept_relationship,concept_relationship_types,
-                    concept_synonym, search_threshold, max_separation_descendant, max_separation_ancestor,
-                    concepts):
-        # Serialize the concepts to JSON
-        result_json = json.dumps(concepts)
 
-        # gracefully handle json
-        if concept_relationship_types is not None:   
-            concept_relationship_types = json.dumps(concept_relationship_types)
-        
+    def cache_result(self, search_term, search_params_hash, results):
+
+        # Serialize results to JSON
+        result_json = json.dumps(results)
+
         # Create a DataFrame for the new record
         data = {
             'search_term': [search_term],
-            'vocabulary_id': [vocabulary_id],
-            'concept_ancestor': [concept_ancestor],
-            'concept_relationship': [concept_relationship],
-            'concept_relationship_types': [concept_relationship_types],
-            'concept_synonym': [concept_synonym],
-            'search_threshold': [search_threshold],
-            'max_separation_descendant': [max_separation_descendant],
-            'max_separation_ancestor': [max_separation_ancestor],
+            'search_parameters': [search_params_hash],
             'result': [result_json]
         }
         df = pd.DataFrame(data)
-        
+
         try:
             df.to_sql('omop_matcher_cache', con=self.engine, if_exists='append', index=False)
         except SQLAlchemyError as e:
-            print(publish_message(action_type="POST", action_name="OMOPMatcher.cache_result", description="Error caching result"))
-        
+            print(publish_message(action_type="POST", action_name="OMOPMatcher.cache_result",
+                                description=f"Error caching result: {e}"))
+
     def fetch_OMOP_concepts(self, search_term, vocabulary_id, concept_ancestor, concept_relationship, 
-                            concept_relationship_types, concept_synonym, search_threshold, max_separation_descendant, 
+                            concept_relationship_types, concept_synonym, concept_synonym_language_concept_id, search_threshold, max_separation_descendant, 
                             max_separation_ancestor):
         
         query1 = """
@@ -207,7 +228,9 @@ class OMOPMatcher:
             synonym_matches AS (
                 SELECT DISTINCT concept_id
                 FROM CONCEPT_SYNONYM
-                WHERE MATCH(concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
+                WHERE 
+                    (%s IS NULL OR language_concept_id = %s) AND
+                    MATCH(concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
             ),
             combined_matches AS (
                 SELECT concept_id FROM concept_matches
@@ -242,7 +265,7 @@ class OMOPMatcher:
         
         # use CS.language_concept_id = '4180186' as additional filter if needed
         if concept_synonym == "y":
-            params = (vocabulary_id, vocabulary_id, search_term, search_term,)
+            params = (vocabulary_id, vocabulary_id, search_term, concept_synonym_language_concept_id, concept_synonym_language_concept_id, search_term, )
             results = pd.read_sql(query1, con=self.engine, params=params)
         else:
             params = (vocabulary_id, vocabulary_id, search_term,)

@@ -60,7 +60,6 @@ class OMOPMatcher:
         # Compute the SHA256 hash
         return hashlib.sha256(search_parameters_json.encode()).hexdigest()
 
-        
     def calculate_best_matches(self, search_terms, vocabulary_id=None, concept_ancestor="n",
                             concept_relationship="n", concept_relationship_types="Mapped from", 
                             concept_synonym="n", concept_synonym_language_concept_id="4180186",
@@ -98,7 +97,6 @@ class OMOPMatcher:
             }
 
             search_params_hash = self.compute_search_params_hash(cached_search_parameters)
-
             
             # Check if the result is cached
             cached_result = self.get_cached_result(
@@ -116,14 +114,10 @@ class OMOPMatcher:
                     concept_synonym, concept_synonym_language_concept_id, search_threshold, max_separation_descendant, max_separation_ancestor
                 )
 
-                if results:
-                    # Cache the result
-                    self.cache_result(search_term, search_params_hash, results)
-                    cache_usage_info.append({'search_term': search_term, 'cache_used': False})
-
+                self.cache_result(search_term, search_params_hash, results)
+                cache_usage_info.append({'search_term': search_term, 'cache_used': False})
 
             overall_results.append({'search_term': search_term, 'CONCEPT': results})
-
 
         # Print cache usage summary at the end
         cache_summary = ": ".join([
@@ -132,7 +126,6 @@ class OMOPMatcher:
         ])
 
         print(f"INFO:   Cache usage summary: {cache_summary}")
-            
         print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully: summary: {cache_summary}"))
         
         return overall_results
@@ -164,15 +157,10 @@ class OMOPMatcher:
                 return deleted_rows
 
         except SQLAlchemyError as e:
-            print("SQLAlchemyError occurred")  # Debug statement
             print(publish_message(action_type="POST", action_name="OMOPMatcher.delete_all_cache", description=f"Error deleting all cache: {e}"))
-            raise  # Re-raise the exception for full trace
 
         except Exception as e:
-            print("General exception occurred")  # Debug statement
             print(publish_message(action_type="POST", action_name="OMOPMatcher.delete_all_cache", description=f"Unexpected error occurred: {e}"))
-            raise  # Re-raise the exception for full trace
-
 
     def get_cached_result(self, search_term, search_params_hash):
         
@@ -378,7 +366,6 @@ class OMOPMatcher:
                   max_separation_descendant,)
         
         try:
-        
             results = pd.read_sql(query, con=self.engine, params=params).drop_duplicates().query("concept_id != @concept_id")
 
             return [{

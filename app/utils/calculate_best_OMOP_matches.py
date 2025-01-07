@@ -148,18 +148,18 @@ class OMOPMatcher:
                         'vocabulary_id': row['vocabulary_id'],
                         'concept_code': row['concept_code'],
                         'concept_name_similarity_score': row['concept_name_similarity_score'],
-                        'CONCEPT_SYNONYM': [{
+                        'concept_synonym': [{
                             'concept_synonym_name': syn_name,
                             'concept_synonym_name_similarity_score': syn_score
                         } for syn_name, syn_score in zip(row['concept_synonym_name'], row['concept_synonym_name_similarity_score']) if syn_name is not None],
-                        'CONCEPT_ANCESTOR': self.concept_ancestor_sql_query(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
-                        'CONCEPT_RELATIONSHIP': self.concept_relationship_sql_query(row['concept_id'], concept_relationship_types) if concept_relationship == "y" else []
+                        'concept_ancestor': self.concept_ancestor_sql_query(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
+                        'concept_relationship': self.concept_relationship_sql_query(row['concept_id'], concept_relationship_types) if concept_relationship == "y" else []
                     } for _, row in grouped_results.iterrows()]
 
                 self.save_results(search_term, search_params_hash, results)
                 saved_results_usage_info.append({'search_term': search_term, 'saved_results_used': False})
 
-            overall_results.append({'search_term': search_term, 'CONCEPT': results})
+            overall_results.append({'search_term': search_term, 'concept': results})
 
         # Print saved_results usage summary at the end
         saved_results_summary = ": ".join([
@@ -176,23 +176,23 @@ class OMOPMatcher:
         try:
             with self.engine.begin() as connection:
 
-                concept_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT", con=connection)
+                concept_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept", con=connection)
                 concept_count = concept_count_df['count'].iloc[0]
                 print("concept_count=",concept_count)
                 
-                concept_relationship_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_RELATIONSHIP", con=connection)
+                concept_relationship_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_relationship", con=connection)
                 concept_relationship_count = concept_relationship_count_df['count'].iloc[0]
                 print("concept_relationship_count=",concept_relationship_count)
 
-                concept_ancestor_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_ANCESTOR", con=connection)
+                concept_ancestor_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_ancestor", con=connection)
                 concept_ancestor_count = concept_ancestor_count_df['count'].iloc[0]
                 print("concept_ancestor_count=",concept_ancestor_count)
 
-                concept_synonym_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM CONCEPT_SYNONYM", con=connection)
+                concept_synonym_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_synonym", con=connection)
                 concept_synonym_count = concept_synonym_count_df['count'].iloc[0]
                 print("concept_synonym_count=",concept_synonym_count)
 
-                saved_mvcm_results_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM SAVED_MVCM_RESULTS", con=connection)
+                saved_mvcm_results_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM saved_mvcm_results", con=connection)
                 saved_mvcm_results_count = saved_mvcm_results_count_df['count'].iloc[0]
                 print("saved_mvcm_results_count=",saved_mvcm_results_count)
 
@@ -218,14 +218,14 @@ class OMOPMatcher:
             query1 = """
                 WITH concept_matches AS (
                     SELECT DISTINCT concept_id
-                    FROM CONCEPT
+                    FROM concept
                     WHERE 
                         (%s IS NULL OR vocabulary_id = %s) AND
                         MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
                 ),
                 synonym_matches AS (
                     SELECT DISTINCT concept_id
-                    FROM CONCEPT_SYNONYM
+                    FROM concept_synonym
                     WHERE 
                         (%s IS NULL OR language_concept_id = %s) AND
                         MATCH(concept_synonym_name) AGAINST (%s IN NATURAL LANGUAGE MODE)
@@ -243,8 +243,8 @@ class OMOPMatcher:
                     C.concept_code
                 FROM 
                     combined_matches CM
-                JOIN CONCEPT C ON CM.concept_id = C.concept_id
-                LEFT JOIN CONCEPT_SYNONYM CS ON C.concept_id = CS.concept_id
+                JOIN concept C ON CM.concept_id = C.concept_id
+                LEFT JOIN concept_synonym CS ON C.concept_id = CS.concept_id
                 """
             
             query2 = """
@@ -255,7 +255,7 @@ class OMOPMatcher:
                     vocabulary_id, 
                     concept_code
                 FROM 
-                    CONCEPT
+                    concept
                 WHERE 
                     (%s IS NULL OR vocabulary_id = %s) AND
                     MATCH(concept_name) AGAINST (%s IN NATURAL LANGUAGE MODE) 
@@ -289,9 +289,9 @@ class OMOPMatcher:
                         ca.min_levels_of_separation,
                         ca.max_levels_of_separation
                     FROM 
-                        CONCEPT_ANCESTOR ca
+                        concept_ancestor ca
                     JOIN 
-                        CONCEPT c ON ca.ancestor_concept_id = c.concept_id
+                        concept c ON ca.ancestor_concept_id = c.concept_id
                     WHERE 
                         ca.descendant_concept_id = %s AND
                         ca.min_levels_of_separation >= %s AND
@@ -310,9 +310,9 @@ class OMOPMatcher:
                         ca.min_levels_of_separation,
                         ca.max_levels_of_separation
                     FROM 
-                        CONCEPT_ANCESTOR ca
+                        concept_ancestor ca
                     JOIN 
-                        CONCEPT c ON ca.descendant_concept_id = c.concept_id
+                        concept c ON ca.descendant_concept_id = c.concept_id
                     WHERE 
                         ca.ancestor_concept_id = %s AND
                         ca.min_levels_of_separation >= %s AND
@@ -365,9 +365,9 @@ class OMOPMatcher:
                             c.vocabulary_id, 
                             c.concept_code
                         FROM 
-                            CONCEPT_RELATIONSHIP cr
+                            concept_relationship cr
                         JOIN 
-                            CONCEPT c ON cr.concept_id_2 = c.concept_id
+                            concept c ON cr.concept_id_2 = c.concept_id
                         WHERE 
                             cr.concept_id_1 = %s
                             AND cr.valid_end_date > NOW()
@@ -389,9 +389,9 @@ class OMOPMatcher:
                             c.vocabulary_id, 
                             c.concept_code
                         FROM 
-                            CONCEPT_RELATIONSHIP cr
+                            concept_relationship cr
                         JOIN 
-                            CONCEPT c ON cr.concept_id_2 = c.concept_id
+                            concept c ON cr.concept_id_2 = c.concept_id
                         WHERE 
                             cr.concept_id_1 = %s
                             AND cr.relationship_id = %s
@@ -421,7 +421,7 @@ class OMOPMatcher:
     def get_saved_result(self, search_term, search_params_hash):
         
         query = """
-            SELECT result FROM SAVED_MVCM_RESULTS
+            SELECT result FROM saved_mvcm_results
             WHERE search_term = %s AND search_parameters = %s
         """
         params = (search_term, search_params_hash)
@@ -452,7 +452,7 @@ class OMOPMatcher:
         df = pd.DataFrame(data)
 
         try:
-            df.to_sql('SAVED_MVCM_RESULTS', con=self.engine, if_exists='append', index=False)
+            df.to_sql('saved_mvcm_results', con=self.engine, if_exists='append', index=False)
         except SQLAlchemyError as e:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.save_results",
                                 description=f"Error caching result: {e}"))
@@ -462,15 +462,15 @@ class OMOPMatcher:
             with self.engine.begin() as connection:
 
                 # Step 1: Count rows before deletion
-                pre_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM SAVED_MVCM_RESULTS", con=connection)
+                pre_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM saved_mvcm_results", con=connection)
                 pre_delete_count = pre_delete_count_df['count'].iloc[0]
 
                 # Step 2: Perform the deletion
-                delete_query = text("DELETE FROM SAVED_MVCM_RESULTS")
+                delete_query = text("DELETE FROM saved_mvcm_results")
                 connection.execute(delete_query)
                 
                 # Step 3: Count rows after deletion
-                post_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM SAVED_MVCM_RESULTS", con=connection)
+                post_delete_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM saved_mvcm_results", con=connection)
                 post_delete_count = post_delete_count_df['count'].iloc[0]
 
                 # Step 4: Calculate the number of rows deleted

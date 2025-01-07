@@ -84,7 +84,41 @@ async def get_omop_statistics(credentials: HTTPBasicCredentials = Depends(authen
         print(publish_message(action_type="GET", action_name="get_omop_statistics", description=f"Error: {e}"))
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
 
+@app.post("/search/omop/")
+async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
+    try:
+        # Attempt to calculate best matches
+        return omop_matcher.calculate_best_matches(
+            search_terms=request.search_terms,
+            vocabulary_id=request.vocabulary_id,
+            concept_ancestor=request.concept_ancestor,
+            concept_relationship=request.concept_relationship,
+            concept_relationship_types=request.concept_relationship_types,
+            concept_synonym=request.concept_synonym,
+            concept_synonym_language_concept_id=request.concept_synonym_language_concept_id,
+            search_threshold=request.search_threshold,
+            max_separation_descendant=request.max_separation_descendant,
+            max_separation_ancestor=request.max_separation_ancestor
+        )
+    except Exception as e:
+        # Log the error and return a 500 response
+        print(publish_message(action_type="POST", action_name="search_omop", description=f"Error: {e}"))
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
 
+@app.delete("/search/omop/clear_saved_results/")
+async def clear_search_results(credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> dict:
+    try:
+        deleted_rows = omop_matcher.delete_all_saved_results()
+        if deleted_rows is None:
+            # Handle the case where deletion fails or returns None
+            raise HTTPException(status_code=500, detail="Failed to clear the saved results")
+        return {"message": f"{deleted_rows} saved results deleted."}
+    
+    except Exception as e:
+        # Catch unexpected exceptions and return an appropriate HTTP error
+        print(publish_message(action_type="POST", action_name="clear saved results", description=f"Error: {e}"))
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")    
+    
 @app.post("/search/ols4/")
 async def search_ols4(request: OLS4Request, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
     try:
@@ -114,38 +148,3 @@ async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = 
         print(publish_message(action_type="POST", action_name="search_umls", description=f"Error: {e}"))
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
 
-
-@app.post("/search/omop/")
-async def search_omop(request: OMOPRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> Any:
-    try:
-        # Attempt to calculate best matches
-        return omop_matcher.calculate_best_matches(
-            search_terms=request.search_terms,
-            vocabulary_id=request.vocabulary_id,
-            concept_ancestor=request.concept_ancestor,
-            concept_relationship=request.concept_relationship,
-            concept_relationship_types=request.concept_relationship_types,
-            concept_synonym=request.concept_synonym,
-            concept_synonym_language_concept_id=request.concept_synonym_language_concept_id,
-            search_threshold=request.search_threshold,
-            max_separation_descendant=request.max_separation_descendant,
-            max_separation_ancestor=request.max_separation_ancestor
-        )
-    except Exception as e:
-        # Log the error and return a 500 response
-        print(publish_message(action_type="POST", action_name="search_omop", description=f"Error: {e}"))
-        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
-
-@app.delete("/search/omop/clear_cache/")
-async def clear_cache(credentials: HTTPBasicCredentials = Depends(authenticate_user)) -> dict:
-    try:
-        deleted_rows = omop_matcher.delete_all_cache()
-        if deleted_rows is None:
-            # Handle the case where deletion fails or returns None
-            raise HTTPException(status_code=500, detail="Failed to clear the cache")
-        return {"message": f"{deleted_rows} cache entries deleted."}
-    
-    except Exception as e:
-        # Catch unexpected exceptions and return an appropriate HTTP error
-        print(publish_message(action_type="POST", action_name="clear cache", description=f"Error: {e}"))
-        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")    

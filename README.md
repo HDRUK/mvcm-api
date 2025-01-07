@@ -28,9 +28,14 @@ The best way to build and deploy the application is using Docker. The applicatio
 docker build -t app . ; docker run -p 80:80 -e <various environment variables> app
 ```
 
+a .env_example is provided and can be deployed as follows: 
+```bash
+docker build -t app . ; docker run -p 80:80 - --env-file app/.env_example app
+```
+
 In order to use the PubSub audit functionality, you'll need to place you `application_default_credentials.json` file into the directory before calling the `docker build` command as above.
 
-### Internal/External Database setup
+### Database setup
 
 MVCM runs on an external OMOP database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 
@@ -39,6 +44,23 @@ docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWO
 ```
 
 This approach also support SSL, the following additional envs must be set: `DB_SSL_ENABLED=True`, `ENV DB_SSL_CA=CertAgency`, `ENV DB_SSL_CERT=cert`, `ENV DB_SSL_KEY=key`. 
+
+Please not that if deploying locally with a sql database also running in docker the two application will need to be on the same network space. 
+
+```bash
+docker network create app-network
+docker network connect app-network app
+docker network connect app-network mysql-app
+```
+
+In addition to the core omop tables: CONCEPT, CONCEPT_RELATIONSHIP, CONCEPT_SYNONYM and CONCEPT_ANCESTOR, it is strongly recommend an additional table "SAVED_MVCM_RESULTS" is created to store the saved results. 
+
+This additional table should have the following columns: 
+
+id - int
+search_term - varchar(255)
+result - mediumtext
+search_parameters - varchar(255)
 
 ### Audit logging
 To enable audit logging, you must first supply a google application credentials file during the build stage (see above). Then set `AUDIT_ENABLED=1` and then supply the environment variables `PROJECT_ID` and `TOPIC_ID` with the details of the Google PubSub instance, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the (in-container) location of the aforementioned `application_default_credentials.json` file e.g.
@@ -105,7 +127,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 - `concept_relationship`: Extend Search via CONCEPT_RELATIONSHIP OMOP Table. Optional.
 - `concept_relationship_types`: List of CONCEPT_RELATIONSHIP types, i.e. ["Concept same_as to", "Mapped from", "Concept same_as from"]
 - `concept_synonym`: Extend Search via CONCEPT_SYNONYM OMOP Table. Optional.
-- `concept_synonym_language_concept_id`: Concept ID of a language to restrict synonym searches. I.e. 4180186 for english.
+- `concept_synonym_language_concept_id`: Concept ID of a language to restrict synonym searches. I.e. 4180186 for english. alternative language_concept_id can be found via https://athena.ohdsi.org/search-terms/
 - `search_threshold`: Filter threshold (default is 80). Optional.
 
 **Example Request:**
@@ -218,6 +240,40 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
     ]
   }
 ]
+```
+
+### `/search/omop/statistics`
+
+#### Method: `get`
+
+Generates statistics on the database
+
+**Example response:**
+```json
+{
+  "concept_count": 2010596,
+  "concept_relationship_count": 19540390,
+  "concept_ancestor_count": 10308884,
+  "concept_synonym_count": 2262387,
+  "mvcm_saved_results_count": 5
+}
+```
+
+### `/search/omop/clear_saved_results`
+
+#### Method: `delete`
+
+clears the saved results stored in the SAVED_MVCM_RESULTS table of the database
+
+**Example response:**
+```json
+{
+  "concept_count": 2010596,
+  "concept_relationship_count": 19540390,
+  "concept_ancestor_count": 10308884,
+  "concept_synonym_count": 2262387,
+  "mvcm_saved_results_count": 5
+}
 ```
 
 ### `/search/umls`

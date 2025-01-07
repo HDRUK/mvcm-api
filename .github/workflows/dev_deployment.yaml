@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - "dev"
+
 env:
   PROJECT_ID: "${{ secrets.PROJECT_ID }}"
   GAR_LOCATION: "${{ secrets.GAR_LOCATION }}"

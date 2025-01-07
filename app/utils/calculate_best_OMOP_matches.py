@@ -142,7 +142,7 @@ class OMOPMatcher:
                     }).reset_index()
 
                     # Define the final output format and run ancestor / relationship searches
-                    return [{
+                    results = [{
                         'concept_name': row['concept_name'],
                         'concept_id': row['concept_id'],
                         'vocabulary_id': row['vocabulary_id'],
@@ -167,7 +167,7 @@ class OMOPMatcher:
             for entry in saved_results_usage_info
         ])
 
-        print(f"INFO:   Cache usage summary: {saved_results_summary}")
+        print(f"INFO:     Cache usage summary: {saved_results_summary}")
         print(publish_message(action_type="POST", action_name="OMOPMatcher.calculate_best_matches", description="Query ran sucessfully: summary: {saved_results_summary}"))
         
         return overall_results
@@ -402,11 +402,11 @@ class OMOPMatcher:
                 print("saved_mvcm_results_count=",saved_mvcm_results_count)
 
                 statistics={
-                    "concept_count": int(concept_count),
-                    "concept_relationship_count": int(concept_relationship_count),
-                    "concept_ancestor_count": int(concept_ancestor_count),
-                    "concept_synonym_count": int(concept_synonym_count),
-                    "saved_mvcm_results_count": int(saved_mvcm_results_count)
+                    "concept_count": str(concept_count),
+                    "concept_relationship_count": str(concept_relationship_count),
+                    "concept_ancestor_count": str(concept_ancestor_count),
+                    "concept_synonym_count": str(concept_synonym_count),
+                    "saved_mvcm_results_count": str(saved_mvcm_results_count)
                 }
             
                 return statistics

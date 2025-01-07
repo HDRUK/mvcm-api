@@ -148,18 +148,18 @@ class OMOPMatcher:
                         'vocabulary_id': row['vocabulary_id'],
                         'concept_code': row['concept_code'],
                         'concept_name_similarity_score': row['concept_name_similarity_score'],
-                        'concept_synonym': [{
+                        'CONCEPT_SYNONYM': [{
                             'concept_synonym_name': syn_name,
                             'concept_synonym_name_similarity_score': syn_score
                         } for syn_name, syn_score in zip(row['concept_synonym_name'], row['concept_synonym_name_similarity_score']) if syn_name is not None],
-                        'concept_ancestor': self.concept_ancestor_sql_query(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
-                        'concept_relationship': self.concept_relationship_sql_query(row['concept_id'], concept_relationship_types) if concept_relationship == "y" else []
+                        'CONCEPT_ANCESTOR': self.concept_ancestor_sql_query(row['concept_id'], max_separation_descendant, max_separation_ancestor) if concept_ancestor == "y" else [],
+                        'CONCEPT_RELATIONSHIP': self.concept_relationship_sql_query(row['concept_id'], concept_relationship_types) if concept_relationship == "y" else []
                     } for _, row in grouped_results.iterrows()]
 
                 self.save_results(search_term, search_params_hash, results)
                 saved_results_usage_info.append({'search_term': search_term, 'saved_results_used': False})
 
-            overall_results.append({'search_term': search_term, 'concept': results})
+            overall_results.append({'search_term': search_term, 'CONCEPT': results})
 
         # Print saved_results usage summary at the end
         saved_results_summary = ": ".join([
@@ -172,47 +172,6 @@ class OMOPMatcher:
         
         return overall_results
     
-    def get_statistics(self):
-        try:
-            with self.engine.begin() as connection:
-
-                concept_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept", con=connection)
-                concept_count = concept_count_df['count'].iloc[0]
-                print("concept_count=",concept_count)
-                
-                concept_relationship_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_relationship", con=connection)
-                concept_relationship_count = concept_relationship_count_df['count'].iloc[0]
-                print("concept_relationship_count=",concept_relationship_count)
-
-                concept_ancestor_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_ancestor", con=connection)
-                concept_ancestor_count = concept_ancestor_count_df['count'].iloc[0]
-                print("concept_ancestor_count=",concept_ancestor_count)
-
-                concept_synonym_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_synonym", con=connection)
-                concept_synonym_count = concept_synonym_count_df['count'].iloc[0]
-                print("concept_synonym_count=",concept_synonym_count)
-
-                saved_mvcm_results_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM saved_mvcm_results", con=connection)
-                saved_mvcm_results_count = saved_mvcm_results_count_df['count'].iloc[0]
-                print("saved_mvcm_results_count=",saved_mvcm_results_count)
-
-                statistics={
-                    "concept_count": int(concept_count),
-                    "concept_relationship_count": int(concept_relationship_count),
-                    "concept_ancestor_count": int(concept_ancestor_count),
-                    "concept_synonym_count": int(concept_synonym_count),
-                    "saved_mvcm_results_count": int(saved_mvcm_results_count)
-                }
-            
-                return statistics
-
-        except SQLAlchemyError as e:
-            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Error retrieving statistics: {e}"))
-
-        except Exception as e:
-            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Unexpected error occurred: {e}"))
-    
-
     def main_sql_query(self, search_term, vocabulary_id,concept_synonym, concept_synonym_language_concept_id):
         try:
             query1 = """
@@ -417,6 +376,48 @@ class OMOPMatcher:
         except Exception as e:
             print(publish_message(action_type="POST", action_name="OMOPMatcher.concept_relationship_sql_query", description="Error fetching concept relationships"))
             return []
+
+    def get_statistics(self):
+        try:
+            with self.engine.begin() as connection:
+
+                concept_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept", con=connection)
+                concept_count = concept_count_df['count'].iloc[0]
+                print("concept_count=",concept_count)
+                
+                concept_relationship_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_relationship", con=connection)
+                concept_relationship_count = concept_relationship_count_df['count'].iloc[0]
+                print("concept_relationship_count=",concept_relationship_count)
+
+                concept_ancestor_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_ancestor", con=connection)
+                concept_ancestor_count = concept_ancestor_count_df['count'].iloc[0]
+                print("concept_ancestor_count=",concept_ancestor_count)
+
+                concept_synonym_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM concept_synonym", con=connection)
+                concept_synonym_count = concept_synonym_count_df['count'].iloc[0]
+                print("concept_synonym_count=",concept_synonym_count)
+
+                saved_mvcm_results_count_df = pd.read_sql("SELECT COUNT(*) AS count FROM saved_mvcm_results", con=connection)
+                saved_mvcm_results_count = saved_mvcm_results_count_df['count'].iloc[0]
+                print("saved_mvcm_results_count=",saved_mvcm_results_count)
+
+                statistics={
+                    "concept_count": int(concept_count),
+                    "concept_relationship_count": int(concept_relationship_count),
+                    "concept_ancestor_count": int(concept_ancestor_count),
+                    "concept_synonym_count": int(concept_synonym_count),
+                    "saved_mvcm_results_count": int(saved_mvcm_results_count)
+                }
+            
+                return statistics
+
+        except SQLAlchemyError as e:
+            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Error retrieving statistics: {e}"))
+
+        except Exception as e:
+            print(publish_message(action_type="GET", action_name="OMOPMatcher.get_statistics", description=f"Unexpected error occurred: {e}"))
+    
+
 
     def get_saved_result(self, search_term, search_params_hash):
         

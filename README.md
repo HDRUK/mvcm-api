@@ -28,21 +28,39 @@ The best way to build and deploy the application is using Docker. The applicatio
 docker build -t app . ; docker run -p 80:80 -e <various environment variables> app
 ```
 
+a .env_example is provided and can be deployed as follows: 
+```bash
+docker build -t app . ; docker run -p 80:80 - --env-file app/.env_example app
+```
+
 In order to use the PubSub audit functionality, you'll need to place you `application_default_credentials.json` file into the directory before calling the `docker build` command as above.
 
-### Internal/External Database setup
+### Database setup
 
-MVCM runs on an OMOP database. If an OMOP database is already built then database provisioning may be disable. the `DB_REBUILD` is by default set to `True` but can set to `False` to disable rebuiding every time the app is re-provisioned. If `DB_REBUILD=True` then the remote MYSQL server must be configured to allow *LOAD DATA LOCAL INFILE* statements, which are necessary for the script to upload local files to the server.
-
-To use an external database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
+MVCM runs on an external OMOP database, set the `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` environment variables to the appropriate values for your database server before running the app. These can be set using the `-e` option with the docker run command. For example:
 
 ```bash
 docker run -p 80:80 -e DB_HOST=your_db_host -e DB_USER=your_db_user -e DB_PASSWORD=your_db_password -e DB_NAME=your_db_name app
 ```
 
-This approach also support SSL, the following additional envs must be set: `DB_SSL_ENABLED=True`, `ENV DB_SSL_CA=CertAgency`, `ENV DB_SSL_CERT=cert`, `ENV DB_SSL_KEY=key`.
+This approach also support SSL, the following additional envs must be set: `DB_SSL_ENABLED=True`, `ENV DB_SSL_CA=CertAgency`, `ENV DB_SSL_CERT=cert`, `ENV DB_SSL_KEY=key`. 
 
-If DB_HOST is set to either 127.0.0.1 or localhost, the app will provision a local mariaDB MySQL database.
+Please not that if deploying locally with a sql database also running in docker the two application will need to be on the same network space. 
+
+```bash
+docker network create app-network
+docker network connect app-network app
+docker network connect app-network mysql-app
+```
+
+In addition to the core omop tables: CONCEPT, CONCEPT_RELATIONSHIP, CONCEPT_SYNONYM and CONCEPT_ANCESTOR, it is strongly recommend an additional table "SAVED_MVCM_RESULTS" is created to store the saved results. 
+
+This additional table should have the following columns: 
+
+id - int
+search_term - varchar(255)
+result - mediumtext
+search_parameters - varchar(255)
 
 ### Audit logging
 To enable audit logging, you must first supply a google application credentials file during the build stage (see above). Then set `AUDIT_ENABLED=1` and then supply the environment variables `PROJECT_ID` and `TOPIC_ID` with the details of the Google PubSub instance, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the (in-container) location of the aforementioned `application_default_credentials.json` file e.g.
@@ -107,7 +125,9 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 - `max_separation_descendant`: How many degrees of seperation to search downstream in CONCEPT_ANCESTOR. Optional.
 - `max_separation_ancestor`: How many degrees of seperation to search upstream in CONCEPT_ANCESTOR. Optional.
 - `concept_relationship`: Extend Search via CONCEPT_RELATIONSHIP OMOP Table. Optional.
+- `concept_relationship_types`: List of CONCEPT_RELATIONSHIP types, i.e. ["Concept same_as to", "Mapped from", "Concept same_as from"]
 - `concept_synonym`: Extend Search via CONCEPT_SYNONYM OMOP Table. Optional.
+- `concept_synonym_language_concept_id`: Concept ID of a language to restrict synonym searches. I.e. 4180186 for english. alternative language_concept_id can be found via https://athena.ohdsi.org/search-terms/
 - `search_threshold`: Filter threshold (default is 80). Optional.
 
 **Example Request:**
@@ -117,10 +137,12 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
   "search_terms": ["Heart"],
   "vocabulary_id": "",
   "concept_ancestor": "n",
-  "max_separation_descendant": 1,
+  "max_separation_descendant": 0,
   "max_separation_ancestor": 1,
   "concept_synonym": "y",
-  "concept_relationship": "n",
+  "concept_synonym_language_concept_id": "4180186",
+  "concept_relationship": "y",
+  "concept_relationship_types": ["Concept same_as to", "Mapped from", "Concept same_as from"],
   "search_threshold": 80
 }
 ```
@@ -128,7 +150,7 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
 ```json
 [
   {
-    "search_term": "Heart",
+    "search_term": "heart",
     "CONCEPT": [
       {
         "concept_name": "Heart structure",
@@ -151,6 +173,48 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
           }
         ],
         "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": [
+          {
+            "concept_name": "[SO]Heart NEC",
+            "concept_id": 45479486,
+            "vocabulary_id": "Read",
+            "concept_code": "7N41z00",
+            "relationship": {
+              "concept_id_1": 4217142,
+              "relationship_id": "Mapped from",
+              "concept_id_2": 45479486
+            }
+          }
+        ]
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 19391039,
+        "vocabulary_id": "MeSH",
+        "concept_code": "D006321",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [
+          {
+            "concept_synonym_name": "Hearts",
+            "concept_synonym_name_similarity_score": 90.9090909090909
+          }
+        ],
+        "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": []
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 21496060,
+        "vocabulary_id": "LOINC",
+        "concept_code": "LP191607-3",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [
+          {
+            "concept_synonym_name": "Chest>Heart",
+            "concept_synonym_name_similarity_score": 62.5
+          }
+        ],
+        "CONCEPT_ANCESTOR": [],
         "CONCEPT_RELATIONSHIP": []
       },
       {
@@ -162,10 +226,54 @@ Searches for standard concepts in the OMOP vocabulary based on search terms prov
         "CONCEPT_SYNONYM": [],
         "CONCEPT_ANCESTOR": [],
         "CONCEPT_RELATIONSHIP": []
+      },
+      {
+        "concept_name": "Heart",
+        "concept_id": 40791756,
+        "vocabulary_id": "LOINC",
+        "concept_code": "LP7289-4",
+        "concept_name_similarity_score": 100,
+        "CONCEPT_SYNONYM": [],
+        "CONCEPT_ANCESTOR": [],
+        "CONCEPT_RELATIONSHIP": []
       }
     ]
   }
 ]
+```
+
+### `/search/omop/statistics`
+
+#### Method: `get`
+
+Generates statistics on the database
+
+**Example response:**
+```json
+{
+  "concept_count": 2010596,
+  "concept_relationship_count": 19540390,
+  "concept_ancestor_count": 10308884,
+  "concept_synonym_count": 2262387,
+  "mvcm_saved_results_count": 5
+}
+```
+
+### `/search/omop/clear_saved_results`
+
+#### Method: `delete`
+
+clears the saved results stored in the SAVED_MVCM_RESULTS table of the database
+
+**Example response:**
+```json
+{
+  "concept_count": 2010596,
+  "concept_relationship_count": 19540390,
+  "concept_ancestor_count": 10308884,
+  "concept_synonym_count": 2262387,
+  "mvcm_saved_results_count": 5
+}
 ```
 
 ### `/search/umls`

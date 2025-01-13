@@ -43,6 +43,17 @@ jobs:
           sed -n 's/^appVersion:\(.*\)/\1/p' < chart/mvcm-api/Chart.yaml > version
           echo "version=$(sed '/.*\"\(.*\)\".*/ s//\1/g' version)" >> $GITHUB_OUTPUT
 
+      - name: Create the release
+        id: create_release
+        uses: comnoco/create-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: '${{ steps.getversion.outputs.version }}'
+          release_name: Release ${{ steps.getversion.outputs.version }}
+          draft: false
+          prerelease: false
+          
       - name: Deploy to Cloud Run
         uses: actions-hub/gcloud@master
         id: deploy
@@ -52,7 +63,6 @@ jobs:
           GAR_NAME: ${{ secrets.GAR_NAME }}
           SERVICE_NAME: "${{ secrets.SERVICE_NAME }}"
           SERVICE_REGION: "${{ secrets.SERVICE_REGION }}"
-
         with:
           args: run services update '${{ env.SERVICE_NAME }}' --image='${{ env.GAR_LOCATION }}'-docker.pkg.dev/'${{ env.PROJECT_ID }}'/'${{ env.GAR_NAME }}'/${{ steps.getversion.outputs.version }}:latest --region='${{ env.SERVICE_REGION }}' --project='${{ env.PROJECT_ID }}'
           

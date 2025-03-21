@@ -6,11 +6,11 @@ FROM python:3.11-slim
 # DEFAULT database environment variables (adjust as needed)
 ENV DB_PORT=3306
 # API environment variables for auth (adjust as needed)
-ENV BASIC_AUTH_USERNAME=APIuser
-ENV BASIC_AUTH_PASSWORD=psw4API
+ENV BASIC_AUTH_USERNAME=**********
+ENV BASIC_AUTH_PASSWORD=**********
 
 # Set UMLS key (adjust as needed)
-ENV UMLS_APIKEY=e8ac4aea-f310-4bcd-aded-3c256465fd94
+ENV UMLS_APIKEY=**********
 
 
 # Copy the database initialization script, your Flask app, and requirements file

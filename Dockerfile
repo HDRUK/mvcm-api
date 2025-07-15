@@ -1,6 +1,6 @@
 
 # Use Ubuntu Focal (20.04)
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 
 # DEFAULT database environment variables (adjust as needed)

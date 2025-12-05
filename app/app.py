@@ -148,3 +148,8 @@ async def search_umls(request: UMLSRequest, credentials: HTTPBasicCredentials = 
         print(publish_message(action_type="POST", action_name="search_umls", description=f"Error: {e}"))
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
 
+@app.get("/status")
+async def status() -> dict:
+    """Health check endpoint that returns a simple OK message as JSON."""
+    return {"message": "OK"}
+

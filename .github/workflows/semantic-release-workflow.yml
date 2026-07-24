@@ -1,0 +1,13 @@
+name: Semantic Release workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  semantic:
+    uses: HDRUK/github-actions-templates/.github/workflows/semantic.yaml@main
+    with:
+      chart_path: chart/mvcm-api/Chart.yaml
+    secrets: inherit

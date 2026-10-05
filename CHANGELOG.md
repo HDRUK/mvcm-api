@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/HDRUK/mvcm-api/compare/v1.1.0...v1.1.1) (2026-10-05)
+
+### 🐛 Bug Fixes
+
+* **GAT-8642:** update the base OS version (#75) ([e27e149](https://github.com/HDRUK/mvcm-api/commit/e27e1496a00529bade9a34076cd0be90853c7d72)), closes [GAT-8642](undefinedGAT-8642)
+
 ## [1.1.0](https://github.com/HDRUK/mvcm-api/compare/v1.0.1...v1.1.0) (2026-07-24)
 
 ### ✨ Features
